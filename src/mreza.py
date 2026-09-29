@@ -1,33 +1,48 @@
-import platform
-
 class CvorMreze:
-    def __init__(self, naziv, operater, uloga):
+    def __init__(self, naziv, operater, uloga, OS, verifikovan=True):
         self.naziv = naziv
         self.operater = operater
         self.uloga = uloga
-        self.sistem = platform.system()
+        self.OS = OS
+        self.verifikovan = verifikovan
 
-    def dobi_info(self):
-        return f"Čvor: {self.naziv:<10} | Operater: {self.operater:<23} | Uloga: {self.uloga:<15} | OS: {self.sistem}"
+class iPhoneConsoleNode(CvorMreze):
+    def __init__(self):
+        super().__init__(
+            naziv="danijela@IPHONE_ISH",
+            operater="Danijela Đurović Keskin",
+            uloga="Human Gate Ultra-Mobile Console",
+            OS="Alpine Linux (iSH)",
+            verifikovan=True
+        )
+        self.ssh_kljuc_aktivan = True
+        self.venv_aktivan = False
+        self.git_grana = "dev"
+
+    def aktiviraj_ai_okruzenje(self):
+        self.venv_aktivan = True
+        return "Virtuelno okruzenje uspešno aktivirano."
+
+    def izvrsi_git_sinhronizaciju(self, grana="dev"):
+        if not self.ssh_kljuc_aktivan:
+            raise PermissionError("SSH neautorizovan!")
+        self.git_grana = grana
+        return f"Sinhronizovana grana {grana}."
+
+    def autorizuj_promenu(self, opis):
+        return f"[HUMAN GATE APPROVAL] Danijela Đurović Keskin: {opis}"
 
 class TitanGrid:
-    DOPUSTENI_CVOROVI = [
-        ("Asus", "Danijela Đurović Keskin", "Human Gate"),
-        ("Lenovo WSL", "Danijela Đurović Keskin", "Human Gate"),
-        ("Android Termux", "Danijela Đurović Keskin", "Human Gate"),
-        ("iPhone iSH", "Danijela Đurović Keskin", "Human Gate"),
-        ("MSI Debian", "Onur Keskin", "Drugi operater"),
-        ("MacBook Air", "Onur Keskin", "Drugi operater"),
-    ]
-
     def __init__(self):
-        self.cvorovi = [CvorMreze(naziv, op, uloga) for naziv, op, uloga in self.DOPUSTENI_CVOROVI]
+        self.iphone_cvor = iPhoneConsoleNode()
+        self.cvorovi = [
+            CvorMreze("Asus Laptop", "Danijela Đurović Keskin", "Human Gate Primary Node", "Windows"),
+            CvorMreze("Lenovo Laptop", "Danijela Đurović Keskin", "Human Gate Node", "Ubuntu WSL"),
+            CvorMreze("Android Telefon", "Danijela Đurović Keskin", "Human Gate Mobile", "Android Termux"),
+            self.iphone_cvor,
+            CvorMreze("MSI Laptop", "Onur Keskin", "Secondary Operator Node", "Debian"),
+            CvorMreze("MacBook Air", "Onur Keskin", "Secondary Operator Node", "macOS")
+        ]
 
-    def izlistaj_mrezu(self):
-        return [cvor.dobi_info() for cvor in self.cvorovi]
-
-if __name__ == "__main__":
-    grid = TitanGrid()
-    print("=== TITAN GRID REGISTAR (6 ČVOTOVA) ===")
-    for info in grid.izlistaj_mrezu():
-        print(info)
+    def dobij_human_gate_cvorove(self):
+        return [c for c in self.cvorovi if "Human Gate" in c.uloga]
