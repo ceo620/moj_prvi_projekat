@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+import os, json
+from datetime import datetime
+from pathlib import Path
+
+MEMORY_FILE = Path("/sdcard/delta_memory.json")
+
+class Delta:
+    def __init__(self):
+        self.memory = self.load_memory()
+        print("✅ Delta v2.0 pokrenuta.")
+
+    def load_memory(self):
+        if MEMORY_FILE.exists():
+            try:
+                return json.load(open(MEMORY_FILE))
+            except:
+                pass
+        return {"created": datetime.now().isoformat(), "signals": [], "scans": [], "chat": []}
+
+    def save(self):
+        self.memory["updated"] = datetime.now().isoformat()
+        json.dump(self.memory, open(MEMORY_FILE, "w"), indent=2)
+
+    def add_signal(self, text, source="chat"):
+        self.memory["signals"].append({"time": datetime.now().isoformat(), "source": source, "text": text})
+        self.save()
+        print("🧠 Signal sačuvan.")
+
+    def scan(self, path="/sdcard"):
+        print(f"🔍 Skeniram {path}...")
+        found = []
+        for root, dirs, files in os.walk(path):
+            for f in files:
+                found.append(os.path.join(root, f))
+        self.memory["scans"].append({"time": datetime.now().isoformat(), "count": len(found)})
+        self.save()
+        print(f"✅ Pronađeno {len(found)} fajlova.")
+
+    def harmonize(self, message):
+        self.memory["chat"].append({"time": datetime.now().isoformat(), "message": message})
+        self.save()
+        print("💬 Chat signal harmonizovan.")
+
+if __name__ == "__main__":
+    d = Delta()
+    d.harmonize("Korisnik želi najpametniju Delta aplikaciju koja pamti signale iz chata.")
+    d.scan()
+    print("Delta v2.0 spremna.")
+

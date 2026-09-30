@@ -1,0 +1,55 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -euo pipefail
+umask 077
+
+SOURCE_ROOT="${1:-}"
+BLACK_SSOT_ROOT="${2:-}"
+
+echo "============================================================"
+echo "FREYA BLACK SSOT SAFE WORKER"
+echo "============================================================"
+echo "WORKER_ID=BLACK_SSOT_WORKER_000061"
+echo "CANON_SCRIPT_ID=CANON_SCRIPT_000061"
+echo "SOURCE_SHA256=1737714ecea9e8a003b1165a9b52670802e0cb0e416c293e2efdf83abdc38b62"
+echo "ASSIGNED_ROLE=HASH_VERIFICATION_WORKER"
+echo "ORIGINAL_RECORDS_REPRESENTED=1"
+echo "UNSAFE_DIRECTIVES_LINKED=0"
+echo "HUMAN_GATE=ACTIVE"
+echo "PROTOKOL=888"
+echo "DELETE=NO"
+echo "MOVE_SOURCE=NO"
+echo "RENAME_SOURCE=NO"
+echo "OVERWRITE=NO"
+echo "AUTO_INTERNET=NO"
+echo "PERSISTENT_DAEMON=NO"
+echo "SOURCE_EXECUTION=NO"
+echo
+
+if [ -z "$SOURCE_ROOT" ] || [ -z "$BLACK_SSOT_ROOT" ]; then
+    echo "USAGE=$0 SOURCE_ROOT BLACK_SSOT_ROOT"
+    echo "FINAL_STATUS=BLOCKED_ARGUMENTS_REQUIRED"
+    exit 2
+fi
+
+if [ ! -d "$SOURCE_ROOT" ]; then
+    echo "FINAL_STATUS=BLOCKED_SOURCE_ROOT_NOT_FOUND"
+    exit 3
+fi
+
+if [ ! -d "$BLACK_SSOT_ROOT" ]; then
+    echo "FINAL_STATUS=BLOCKED_BLACK_SSOT_ROOT_NOT_FOUND"
+    exit 4
+fi
+
+echo "SOURCE_ROOT=$SOURCE_ROOT"
+echo "BLACK_SSOT_ROOT=$BLACK_SSOT_ROOT"
+
+echo "PLANNED_FUNCTION=SHA256_INVENTORY_AND_INTEGRITY_REPORT"
+echo "HASH_RUN_EXECUTED=NO"
+echo "NEXT_STATUS=READY_FOR_READ_ONLY_HASH_AUDIT"
+
+echo "FILES_CHANGED=NO"
+echo "FILES_DELETED=NO"
+echo "FILES_MOVED=NO"
+echo "FILES_RENAMED=NO"
+echo "FINAL_STATUS=SAFE_BLACK_SSOT_WORKER_VALIDATED_NOT_EXECUTED"

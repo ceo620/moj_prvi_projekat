@@ -1,0 +1,218 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -u
+
+ROOT="$HOME/storage/shared/MONTENEGRO_DOCUMENT_FACTORY"
+PKG_ROOT="$ROOT/03_DEEP_ANDROID_BUILDER_INGESTION_SEARCH"
+STAMP=$(date +"%Y%m%d_%H%M%S")
+
+PACKAGE="$PKG_ROOT/MDF_DEEP_ANDROID_BUILDERS_$STAMP"
+FILES="$PACKAGE/01_COPIED_CANDIDATES"
+CONTROL="$PACKAGE/99_CONTROL"
+
+mkdir -p "$FILES" "$CONTROL"
+
+SOURCE_LIST="$CONTROL/MDF_DEEP_SOURCE_LIST_$STAMP.txt"
+CONTENT_MATCHES="$CONTROL/MDF_DEEP_CONTENT_MATCHES_$STAMP.txt"
+PATH_MATCHES="$CONTROL/MDF_DEEP_PATH_MATCHES_$STAMP.txt"
+COMBINED="$CONTROL/MDF_DEEP_COMBINED_UNIQUE_SOURCES_$STAMP.txt"
+INVENTORY="$CONTROL/MDF_DEEP_INVENTORY_$STAMP.csv"
+HASH="$CONTROL/MDF_DEEP_SHA256_$STAMP.csv"
+STATUS="$CONTROL/MDF_DEEP_SEARCH_PACKAGE_STATUS_$STAMP.txt"
+README="$CONTROL/MDF_DEEP_README_$STAMP.txt"
+TAR="$PKG_ROOT/MDF_DEEP_ANDROID_BUILDERS_$STAMP.tar.gz"
+
+SEARCH_TERMS='builder|vdr|ingest|ingestion|bulk ingestion|bulk_ingestion|factory|document factory|pipeline|engine|manifest|ledger|register|evidence|hash|sha256|sha-256|classifier|validator|export|intake|review|V8.8.9|8.8.9|v889|VDR_BUILDER|V10.1|10.1|v101|BULK_INGESTION|MONTENEGRO_DOCUMENT_FACTORY|TITAN|DELTA|CMU'
+
+SEARCH_ROOTS="
+$HOME
+$HOME/storage/shared
+/storage/emulated/0
+/sdcard
+"
+
+echo "" > "$PATH_MATCHES"
+echo "" > "$CONTENT_MATCHES"
+
+for SR in $SEARCH_ROOTS; do
+  [ -d "$SR" ] || continue
+
+  find "$SR" -type f 2>/dev/null \
+    | grep -Eiv 'cache|thumbnail|tmp|temp|Trash|Android/data|\.nomedia|DCIM/Camera|Pictures/Screenshots|password|passwd|token|cookie|secret|known_hosts|authorized_keys|id_rsa|id_ed25519' \
+    | grep -Ei 'builder|vdr|ingest|ingestion|bulk|factory|document|pipeline|engine|phase|register|manifest|evidence|hash|sha|excel|xlsx|python|\.py$|\.sh$|\.ps1$|script|workflow|intake|review|export|index|ledger|classifier|validator|v8|v889|8\.8\.9|v10|v101|10\.1|mdf|montenegro|titan|delta|cmu' \
+    >> "$PATH_MATCHES"
+
+  find "$SR" -type f 2>/dev/null \
+    | grep -Ei '\.(txt|md|csv|json|yml|yaml|xml|html|py|sh|ps1|bat|cmd|sql|log)$' \
+    | grep -Eiv 'cache|thumbnail|tmp|temp|Trash|Android/data|\.nomedia|DCIM/Camera|Pictures/Screenshots|password|passwd|token|cookie|secret|known_hosts|authorized_keys|id_rsa|id_ed25519' \
+    | while IFS= read -r F; do
+        grep -Eiq "$SEARCH_TERMS" "$F" 2>/dev/null && echo "$F" >> "$CONTENT_MATCHES"
+      done
+done
+
+cat "$PATH_MATCHES" "$CONTENT_MATCHES" 2>/dev/null | sed '/^$/d' | sort -u > "$COMBINED"
+
+echo "MATCH_TYPE,SOURCE_PATH,PACKAGE_PATH,FILE_NAME,SIZE_BYTES,LAST_MODIFIED" > "$INVENTORY"
+
+N=0
+while IFS= read -r F; do
+  [ -f "$F" ] || continue
+
+  BASE="$(basename "$F")"
+  SIZE="$(wc -c < "$F" 2>/dev/null | tr -d ' ')"
+  MTIME="$(stat -c "%y" "$F" 2>/dev/null)"
+
+  MATCH="DEEP_ANDROID_BUILDER_INGESTION_CANDIDATE"
+  echo "$F" | grep -Eiq 'v8|v889|8\.8\.9|VDR_BUILDER|vdr.builder' && MATCH="V8_8_9_OR_VDR_BUILDER_SIGNAL"
+  echo "$F" | grep -Eiq 'v10|v101|10\.1|bulk|ingest|ingestion' && MATCH="V10_1_OR_BULK_INGESTION_SIGNAL"
+  echo "$F" | grep -Eiq '\.py$|\.ps1$|\.sh$|\.bat$|\.cmd$|script|pipeline|workflow|engine' && MATCH="SCRIPT_ENGINE_SIGNAL"
+  echo "$F" | grep -Eiq 'factory|document|review|intake|export|index|classifier|validator|mdf|montenegro' && MATCH="DOCUMENT_FACTORY_SIGNAL"
+  echo "$F" | grep -Eiq 'manifest|ledger|register|sha|hash' && MATCH="HASH_LEDGER_REGISTER_SIGNAL"
+
+  N=$((N+1))
+  SAFE_BASE="$(echo "$BASE" | tr '/: ' '___')"
+  TARGET="$FILES/ITEM_${N}_${SAFE_BASE}"
+
+  cp "$F" "$TARGET" 2>/dev/null
+
+  if [ -f "$TARGET" ]; then
+    echo "\"$MATCH\",\"$F\",\"$TARGET\",\"$BASE\",$SIZE,\"$MTIME\"" >> "$INVENTORY"
+  fi
+done < "$COMBINED"
+
+echo "SHA256,SIZE_BYTES,FILE_PATH" > "$HASH"
+find "$PACKAGE" -type f 2>/dev/null | sort | while IFS= read -r F; do
+  SHA="$(sha256sum "$F" | awk '{print $1}')"
+  SIZE="$(wc -c < "$F" | tr -d ' ')"
+  echo "$SHA,$SIZE,\"$F\"" >> "$HASH"
+done
+
+PATH_MATCH_COUNT="$(sed '/^$/d' "$PATH_MATCHES" | sort -u | wc -l | tr -d ' ')"
+CONTENT_MATCH_COUNT="$(sed '/^$/d' "$CONTENT_MATCHES" | sort -u | wc -l | tr -d ' ')"
+TOTAL_UNIQUE="$(wc -l < "$COMBINED" | tr -d ' ')"
+COPIED_FILES="$(find "$FILES" -type f 2>/dev/null | wc -l | tr -d ' ')"
+HASHED_FILES="$(($(wc -l < "$HASH")-1))"
+
+V8_COUNT="$(grep -c 'V8_8_9_OR_VDR_BUILDER_SIGNAL' "$INVENTORY" 2>/dev/null || true)"
+V10_COUNT="$(grep -c 'V10_1_OR_BULK_INGESTION_SIGNAL' "$INVENTORY" 2>/dev/null || true)"
+SCRIPT_COUNT="$(grep -c 'SCRIPT_ENGINE_SIGNAL' "$INVENTORY" 2>/dev/null || true)"
+FACTORY_COUNT="$(grep -c 'DOCUMENT_FACTORY_SIGNAL' "$INVENTORY" 2>/dev/null || true)"
+HASH_SIGNAL_COUNT="$(grep -c 'HASH_LEDGER_REGISTER_SIGNAL' "$INVENTORY" 2>/dev/null || true)"
+
+cat > "$README" <<EOF2
+MDF DEEP ANDROID BUILDER / INGESTION SEARCH
+
+PURPOSE:
+Deep visible Android search for builder, ingestion, VDR, factory, pipeline, script-engine, manifest, ledger, register, hash, classifier, validator, review, intake, and export candidates.
+
+METHOD:
+1. Search by path/name signals.
+2. Search by content inside text/script/config files.
+3. Exclude secret/key/token/password-looking files.
+4. Copy visible candidates into review package.
+5. Hash package for transfer to Mac.
+
+LIMITS:
+No root scan.
+No hidden Android system extraction.
+No secret files copied.
+No execution.
+No final canonical selection.
+
+GUARDRAILS:
+COPY_ONLY=YES
+DELETE=NO
+MOVE=NO
+RENAME=NO
+PATCH=NO
+RUN_ALL=NO
+AUTO_REPAIR=NO
+AUTO_POSTING=NO
+HUMAN_REVIEW_REQUIRED=YES
+EOF2
+
+cat > "$STATUS" <<EOF2
+MDF_DEEP_SEARCH_PACKAGE_STATUS
+Timestamp: $(date)
+
+STATUS:
+MDF_DEEP_ANDROID_BUILDER_SEARCH_CREATED=YES
+COPY_ONLY=YES
+TAR_PACKAGE_CREATED=PENDING
+
+PACKAGE=$PACKAGE
+FILES_FOLDER=$FILES
+
+COUNTS:
+PATH_MATCHES=$PATH_MATCH_COUNT
+CONTENT_MATCHES=$CONTENT_MATCH_COUNT
+TOTAL_UNIQUE_SOURCES=$TOTAL_UNIQUE
+COPIED_FILES=$COPIED_FILES
+HASHED_FILES=$HASHED_FILES
+V8_8_9_OR_VDR_BUILDER_SIGNALS=$V8_COUNT
+V10_1_OR_BULK_INGESTION_SIGNALS=$V10_COUNT
+SCRIPT_ENGINE_SIGNALS=$SCRIPT_COUNT
+DOCUMENT_FACTORY_SIGNALS=$FACTORY_COUNT
+HASH_LEDGER_REGISTER_SIGNALS=$HASH_SIGNAL_COUNT
+
+OUTPUTS:
+PATH_MATCHES_FILE=$PATH_MATCHES
+CONTENT_MATCHES_FILE=$CONTENT_MATCHES
+COMBINED_SOURCE_LIST=$COMBINED
+INVENTORY=$INVENTORY
+HASH_REGISTER=$HASH
+README=$README
+TAR_PACKAGE=$TAR
+
+VERDICT:
+Deep Android visible search completed.
+Canonical selection is not approved yet.
+Human review and Mac comparison required.
+
+GUARDRAILS:
+SEARCH_AND_COPY_ONLY=YES
+SECRET_FILES_EXCLUDED=YES
+DELETE_DONE=NO
+MOVE_DONE=NO
+RENAME_DONE=NO
+PATCH_DONE=NO
+RUN_ALL_DONE=NO
+AUTO_REPAIR_DONE=NO
+AUTO_POSTING_DONE=NO
+
+NEXT_ALLOWED:
+TRANSFER_TAR_TO_MAC
+REVIEW_DEEP_ANDROID_PACKAGE_ON_MAC
+COMPARE_WITH_MAC_AND_LENOVO_VAULTS
+EOF2
+
+tar -czf "$TAR" -C "$PKG_ROOT" "$(basename "$PACKAGE")" 2>/dev/null
+
+TAR_EXISTS="NO"
+[ -f "$TAR" ] && TAR_EXISTS="YES"
+TAR_SIZE="0"
+[ -f "$TAR" ] && TAR_SIZE="$(wc -c < "$TAR" | tr -d ' ')"
+TAR_SHA="NOT_AVAILABLE"
+[ -f "$TAR" ] && TAR_SHA="$(sha256sum "$TAR" | awk '{print $1}')"
+
+{
+  echo ""
+  echo "TAR_FINAL:"
+  echo "TAR_PACKAGE_CREATED=$TAR_EXISTS"
+  echo "TAR_SIZE_BYTES=$TAR_SIZE"
+  echo "TAR_SHA256=$TAR_SHA"
+} >> "$STATUS"
+
+echo "MDF_DEEP_ANDROID_BUILDER_SEARCH_CREATED=YES"
+echo "PATH_MATCHES=$PATH_MATCH_COUNT"
+echo "CONTENT_MATCHES=$CONTENT_MATCH_COUNT"
+echo "TOTAL_UNIQUE_SOURCES=$TOTAL_UNIQUE"
+echo "COPIED_FILES=$COPIED_FILES"
+echo "HASHED_FILES=$HASHED_FILES"
+echo "TAR_PACKAGE_CREATED=$TAR_EXISTS"
+echo "TAR_PACKAGE=$TAR"
+echo "TAR_SHA256=$TAR_SHA"
+echo "STATUS=$STATUS"
+echo "DELETE_DONE=NO"
+echo "MOVE_DONE=NO"
+echo "PATCH_DONE=NO"
+echo "RUN_ALL_DONE=NO"

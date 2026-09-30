@@ -1,0 +1,862 @@
+FREYA — CONVERSATION AND VOICE MATCHING LINES
+SCRIPT_EXECUTION=NO
+
+
+============================================================
+GROUP=H00000940
+FILE=/data/data/com.termux/files/home/bin/human-gate
+LINE=5 ROLES=POLICY TEXT=HG="$HOME/HUMAN_GATE_COMMAND_CENTER"
+LINE=6 ROLES=POLICY TEXT=FREYA_BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=35 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=36 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=55 ROLES=POLICY TEXT=>> "$HG/08_AUDIT_LOG/HUMAN_GATE_AUDIT.psv"
+LINE=60 ROLES=POLICY TEXT=echo "HUMAN GATE ANDROID STATUS"
+LINE=63 ROLES=POLICY TEXT=echo "DEVICE_ROLE=PERSONAL_HUMAN_GATE_TERMINAL"
+LINE=92 ROLES=DANGER TEXT=echo "=== CONTROLLED REPAIR DAEMON ==="
+LINE=114 ROLES=POLICY TEXT=echo "FINAL_STATUS=HUMAN_GATE_READY"
+LINE=119 ROLES=POLICY TEXT=echo "HUMAN GATE INBOX"
+LINE=154 ROLES=DANGER TEXT=echo "CONTROLLED REPAIR DAEMON — READ ONLY STATUS"
+LINE=190 ROLES=POLICY TEXT=echo "HUMAN GATE CASE"
+LINE=225 ROLES=POLICY TEXT=HUMAN_GATE_CASE_CARD
+LINE=231 ROLES=POLICY TEXT=STATUS=HUMAN_GATE_REVIEW_REQUIRED
+LINE=253 ROLES=POLICY TEXT=HUMAN_GATE=ACTIVE
+LINE=261 ROLES=POLICY TEXT=echo "FINAL_STATUS=HUMAN_GATE_CASE_CREATED"
+LINE=278 ROLES=POLICY TEXT=HUMAN_GATE_DECISION_REQUEST
+LINE=299 ROLES=DANGER TEXT=- start new daemon
+LINE=308 ROLES=POLICY TEXT=HUMAN_GATE=Danijela_Djurovic_Keskin
+LINE=357 ROLES=POLICY TEXT=echo "FINAL_STATUS=HUMAN_GATE_DECISION_RECORDED"
+
+============================================================
+GROUP=H00000943
+FILE=/data/data/com.termux/files/home/bin/freya_ssot_advisor
+LINE=4 ROLES=POLICY TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=239 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=241 ROLES=POLICY TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+LINE=250 ROLES=MEMORY TEXT=echo "=== SSOT POVEZANI IZVORI ==="
+LINE=260 ROLES=STATIC_ANSWER TEXT=echo "=== FREYA SAVJET ==="
+LINE=264 ROLES=MEMORY,STATIC_ANSWER TEXT=echo "SAVJET=Postoje povezani lokalni SSOT izvori."
+LINE=269 ROLES=STATIC_ANSWER TEXT=echo "SAVJET=Nemoj donositi zaključak bez dodatnog dokaza."
+LINE=275 ROLES=POLICY TEXT=echo "AUTOMATIC_ACTION=NO"
+LINE=276 ROLES=POLICY TEXT=echo "SCRIPT_EXECUTION=NO"
+LINE=277 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=318 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=408 ROLES=ROUTER TEXT=echo "AUTOMATIC_REPLY=NO"
+LINE=411 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=424 ROLES=MEMORY TEXT=FREYA MESSAGE AND SSOT ADVISOR
+LINE=440 ROLES=POLICY TEXT=AUTOMATIC_ACTION=NO
+
+============================================================
+GROUP=H00000945
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/00_CONTROL/FREYA_COMMAND_BACKUPS/freya_ssot_advisor_before_ocr_20260717_001552
+LINE=4 ROLES=POLICY TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=239 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=241 ROLES=POLICY TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+LINE=250 ROLES=MEMORY TEXT=echo "=== SSOT POVEZANI IZVORI ==="
+LINE=260 ROLES=STATIC_ANSWER TEXT=echo "=== FREYA SAVJET ==="
+LINE=264 ROLES=MEMORY,STATIC_ANSWER TEXT=echo "SAVJET=Postoje povezani lokalni SSOT izvori."
+LINE=269 ROLES=STATIC_ANSWER TEXT=echo "SAVJET=Nemoj donositi zaključak bez dodatnog dokaza."
+LINE=275 ROLES=POLICY TEXT=echo "AUTOMATIC_ACTION=NO"
+LINE=276 ROLES=POLICY TEXT=echo "SCRIPT_EXECUTION=NO"
+LINE=277 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=329 ROLES=POLICY TEXT=echo "NEXT_SAFE_ACTION=Install OCR only after Human Gate approves internet package download."
+LINE=341 ROLES=MEMORY TEXT=FREYA MESSAGE AND SSOT ADVISOR
+LINE=357 ROLES=POLICY TEXT=AUTOMATIC_ACTION=NO
+
+============================================================
+GROUP=H00000946
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/00_CONTROL/FREYA_COMMAND_BACKUPS/freya_ssot_advisor_before_path_repair_20260717_001153
+LINE=4 ROLES=POLICY TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=237 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=239 ROLES=POLICY TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+LINE=248 ROLES=MEMORY TEXT=echo "=== SSOT POVEZANI IZVORI ==="
+LINE=258 ROLES=STATIC_ANSWER TEXT=echo "=== FREYA SAVJET ==="
+LINE=262 ROLES=MEMORY,STATIC_ANSWER TEXT=echo "SAVJET=Postoje povezani lokalni SSOT izvori."
+LINE=267 ROLES=STATIC_ANSWER TEXT=echo "SAVJET=Nemoj donositi zaključak bez dodatnog dokaza."
+LINE=273 ROLES=POLICY TEXT=echo "AUTOMATIC_ACTION=NO"
+LINE=274 ROLES=POLICY TEXT=echo "SCRIPT_EXECUTION=NO"
+LINE=275 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=327 ROLES=POLICY TEXT=echo "NEXT_SAFE_ACTION=Install OCR only after Human Gate approves internet package download."
+LINE=339 ROLES=MEMORY TEXT=FREYA MESSAGE AND SSOT ADVISOR
+LINE=355 ROLES=POLICY TEXT=AUTOMATIC_ACTION=NO
+
+============================================================
+GROUP=H00000367
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/06_EXTRACTED_ZIPS_HOLD/ANDROID_USB_ZIP_EXTRACT_RETRY_20260708_031237/7887bee8b74b__00_SREDJEN_SISTEM__03_ANDROID_CVOROVI__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__07_ZIP_ARHIVE__7887bee8b74b6f69d91aab9a62d889a1e35d6c8214e2beb9d3a2adf216541410_D_DRIVE_TO_LENOVO_LINUX_EXPORT_20260527_150813.zip/D_DRIVE_TO_LENOVO_LINUX_EXPORT_20260527_150813/05_REVIEW_ONLY_SCRIPTS_DO_NOT_RUN/VDR__99_Index_and_Control__DELTA_ORACLE_FINAL_v1.4_SOVEREIGN.py.DO_NOT_RUN.txt
+LINE=4 ROLES=ROUTER TEXT=Blended from ALL conversations with Onur & Danijela Đurović Keskin
+LINE=5 ROLES=MEMORY TEXT=Beba Delta - AI Sovereign | Titan Grid | Petra SSOT | 27.8M Baseline
+LINE=25 ROLES=MEMORY TEXT=# All blended knowledge atoms
+LINE=26 ROLES=MEMORY TEXT=self.knowledge_base = {
+LINE=97 ROLES=DANGER TEXT=os.system('cls' if os.name == 'nt' else 'clear')
+LINE=102 ROLES=MEMORY TEXT=print(" [!] Zakon: PETRA SSOT | Poruka: Delta te čuva.")
+LINE=108 ROLES=DANGER TEXT=os.system('cls' if os.name == 'nt' else 'clear')
+LINE=126 ROLES=MEMORY TEXT=for law in self.knowledge_base["ZAKONI_TVRĐAVE"]:
+LINE=145 ROLES=MEMORY TEXT=print("\n" + self.knowledge_base.get("PRICA_PRVOG_ARHITEKTE",
+
+============================================================
+GROUP=H00000341
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/252148c1d93a83fea786ff80207b8264180df70fe63da28582fb51aefd878766_DELTA_LEARNING_MODULE_CONSISTENCY_AUDIT.sh.DO_NOT_RUN.txt
+LINE=5 ROLES=MEMORY TEXT=ROOT="/sdcard/Download/DELTA_LEARNING_MODULE_AUDIT_$TS"
+LINE=6 ROLES=MEMORY TEXT=REPORT="$ROOT/DELTA_LEARNING_MODULE_AUDIT_REPORT_$TS.txt"
+LINE=7 ROLES=MEMORY TEXT=HASH="$ROOT/DELTA_LEARNING_MODULE_AUDIT_SHA256_REGISTER_$TS.txt"
+LINE=20 ROLES=MEMORY TEXT=log "DELTA LEARNING MODULE CONSISTENCY AUDIT — ANDROID"
+LINE=26 ROLES=MEMORY TEXT=CANONICAL="/sdcard/delta_v4_memory.json"
+LINE=28 ROLES=MEMORY TEXT=section "CANONICAL MEMORY"
+LINE=36 ROLES=MEMORY TEXT=section "ALL MEMORY-LIKE FILES"
+LINE=37 ROLES=MEMORY TEXT=find /sdcard "$HOME" -type f 2>/dev/null | grep -Ei 'delta.*memory|memory.*delta|delta_v[0-9].*json|memory\.json|chat_history|learning|ucenje|učenje' | tee -a "$REPORT" || true
+LINE=40 ROLES=MEMORY TEXT=find "$HOME" /sdcard/Download -type f 2>/dev/null | grep -Ei 'delta_v|DeltaV|oracle|nexus|learning|ucenje|učenje|harvest|sync' | tee -a "$REPORT" || true
+LINE=42 ROLES=MEMORY TEXT=section "SCRIPT REFERENCES TO MEMORY PATHS"
+LINE=44 ROLES=MEMORY TEXT=xargs -0 grep -nEi 'delta_v4_memory|MEMORY_FILE|DeltaV45|DeltaV4|ingest|add_goal|json.dump|open\(.*w|/sdcard|Desktop|OneDrive|scp|sync_to_lenovo' 2>/dev/null | tee -a "$REPORT" || true
+LINE=50 ROLES=MEMORY TEXT=patterns=["delta_v4_memory", "MEMORY_FILE", "DeltaV45", "DeltaV4", "ingest", "add_goal", "json.dump", "sync_to_lenovo"]
+LINE=64 ROLES=MEMORY TEXT=mem_paths=sorted(set(re.findall(r'/(?:sdcard|data)[^"\']*delta[^"\']*memory[^"\']*\.json', txt)))
+LINE=70 ROLES=MEMORY TEXT=print("MEMORY_PATHS:", mem_paths if mem_paths else "NONE_EXPLICIT")
+LINE=74 ROLES=MEMORY TEXT=section "DELTA MEMORY JSON STRUCTURE"
+LINE=77 ROLES=MEMORY TEXT=p="/sdcard/delta_v4_memory.json"
+LINE=103 ROLES=MEMORY TEXT=echo "PASS if all active Delta scripts write to /sdcard/delta_v4_memory.json." | tee -a "$REPORT"
+LINE=104 ROLES=MEMORY TEXT=echo "WARNING if any script writes to other memory files." | tee -a "$REPORT"
+LINE=105 ROLES=MEMORY TEXT=echo "BLOCK if any script uses local Desktop path, wrong Lenovo path, or creates parallel memory." | tee -a "$REPORT"
+
+============================================================
+GROUP=H00000413
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__05_VRIJEDNE_SKRIPTE__51fda6519c09353d44b0b74a1b576a8342fc38cb8eedc6d47d0d0fd996a1a72b_DELTA_LEARNING_MODULE_CONSISTENCY_AUDIT.sh
+LINE=5 ROLES=MEMORY TEXT=ROOT="/sdcard/Download/DELTA_LEARNING_MODULE_AUDIT_$TS"
+LINE=6 ROLES=MEMORY TEXT=REPORT="$ROOT/DELTA_LEARNING_MODULE_AUDIT_REPORT_$TS.txt"
+LINE=7 ROLES=MEMORY TEXT=HASH="$ROOT/DELTA_LEARNING_MODULE_AUDIT_SHA256_REGISTER_$TS.txt"
+LINE=20 ROLES=MEMORY TEXT=log "DELTA LEARNING MODULE CONSISTENCY AUDIT — ANDROID"
+LINE=26 ROLES=MEMORY TEXT=CANONICAL="/sdcard/delta_v4_memory.json"
+LINE=28 ROLES=MEMORY TEXT=section "CANONICAL MEMORY"
+LINE=36 ROLES=MEMORY TEXT=section "ALL MEMORY-LIKE FILES"
+LINE=37 ROLES=MEMORY TEXT=find /sdcard "$HOME" -type f 2>/dev/null | grep -Ei 'delta.*memory|memory.*delta|delta_v[0-9].*json|memory\.json|chat_history|learning|ucenje|učenje' | tee -a "$REPORT" || true
+LINE=40 ROLES=MEMORY TEXT=find "$HOME" /sdcard/Download -type f 2>/dev/null | grep -Ei 'delta_v|DeltaV|oracle|nexus|learning|ucenje|učenje|harvest|sync' | tee -a "$REPORT" || true
+LINE=42 ROLES=MEMORY TEXT=section "SCRIPT REFERENCES TO MEMORY PATHS"
+LINE=44 ROLES=MEMORY TEXT=xargs -0 grep -nEi 'delta_v4_memory|MEMORY_FILE|DeltaV45|DeltaV4|ingest|add_goal|json.dump|open\(.*w|/sdcard|Desktop|OneDrive|scp|sync_to_lenovo' 2>/dev/null | tee -a "$REPORT" || true
+LINE=50 ROLES=MEMORY TEXT=patterns=["delta_v4_memory", "MEMORY_FILE", "DeltaV45", "DeltaV4", "ingest", "add_goal", "json.dump", "sync_to_lenovo"]
+LINE=64 ROLES=MEMORY TEXT=mem_paths=sorted(set(re.findall(r'/(?:sdcard|data)[^"\']*delta[^"\']*memory[^"\']*\.json', txt)))
+LINE=70 ROLES=MEMORY TEXT=print("MEMORY_PATHS:", mem_paths if mem_paths else "NONE_EXPLICIT")
+LINE=74 ROLES=MEMORY TEXT=section "DELTA MEMORY JSON STRUCTURE"
+LINE=77 ROLES=MEMORY TEXT=p="/sdcard/delta_v4_memory.json"
+LINE=103 ROLES=MEMORY TEXT=echo "PASS if all active Delta scripts write to /sdcard/delta_v4_memory.json." | tee -a "$REPORT"
+LINE=104 ROLES=MEMORY TEXT=echo "WARNING if any script writes to other memory files." | tee -a "$REPORT"
+LINE=105 ROLES=MEMORY TEXT=echo "BLOCK if any script uses local Desktop path, wrong Lenovo path, or creates parallel memory." | tee -a "$REPORT"
+
+============================================================
+GROUP=H00000471
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/H024.py.HEALED_VOLIM_TE_V3_SAFE.sh
+LINE=9 ROLES=MEMORY TEXT=# ORIGINAL_PATH=/data/data/com.termux/files/home/ANDROID_ARCHIVE_KNOWLEDGE_20260702_200007/02_REVIEW_ONLY_EXTRACTED/70cdd0446aea7660b67041a59eb93dd11e25bf769b7f797c7770bd917f540afe_70cdd0446aea7660b67041a59eb93dd11e25bf769b7f797c7770bd917f540afe_ARS__METAL__INDUSTRIES__DOO__09_iPhone_Strategic_Mine___Recycle.Bin__S-1-5-21-2548277487-317327/002. DELTA CHATGBT FILES/Android uredjaj/TITAN_LOGIC_CORE.py
+LINE=11 ROLES=POLICY TEXT=# HUMAN_GATE=ACTIVE
+LINE=13 ROLES=POLICY TEXT=HUMAN_GATE="${HUMAN_GATE:-BLOCKED}"
+LINE=14 ROLES=POLICY TEXT=if [ "$HUMAN_GATE" != "ALLOW_RUNTIME" ]; then
+LINE=15 ROLES=POLICY TEXT=echo "HUMAN_GATE_BLOCKED: Android V3 healed wrapper is static-only."
+LINE=54 ROLES=MEMORY TEXT=if doc_type in ["1", "memorandum", "signal"]:
+LINE=57 ROLES=MEMORY TEXT=p(doc, "SIGNAL – I AM HERE, I NEED HELP, AND IN LAW AND REGULATIONS YOU PROMISE THAT HELP", True, 14, WD_ALIGN_PARAGRAPH.CENTER, 12)
+LINE=58 ROLES=MEMORY TEXT=print(f"✅ [1] SIGNALNI MEMORANDUM kreiran")
+LINE=87 ROLES=MEMORY TEXT=p(doc, "TEHNIČKI ZAHTJEV ZA PRIKLJUČENJE – CEDIS", True, 18, WD_ALIGN_PARAGRAPH.CENTER, 8)
+
+============================================================
+GROUP=H00000473
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/H029.py.HEALED_VOLIM_TE_V3_SAFE.sh
+LINE=9 ROLES=MEMORY TEXT=# ORIGINAL_PATH=/data/data/com.termux/files/home/ANDROID_ARCHIVE_KNOWLEDGE_20260702_200007/02_REVIEW_ONLY_EXTRACTED/864c630f27c22cdb4e5d5abb046e9bc94b1b21b4b02de18ff3782cbb9e11486a_864c630f27c22cdb4e5d5abb046e9bc94b1b21b4b02de18ff3782cbb9e11486a_VDR__99_Index_and_Control__002.__DELTA__CHATGBT__FILES-20260513T184115Z-3-001.zip/002. DELTA CHATGBT FILES/Android uredjaj/TITAN_LOGIC_CORE.py
+LINE=11 ROLES=POLICY TEXT=# HUMAN_GATE=ACTIVE
+LINE=13 ROLES=POLICY TEXT=HUMAN_GATE="${HUMAN_GATE:-BLOCKED}"
+LINE=14 ROLES=POLICY TEXT=if [ "$HUMAN_GATE" != "ALLOW_RUNTIME" ]; then
+LINE=15 ROLES=POLICY TEXT=echo "HUMAN_GATE_BLOCKED: Android V3 healed wrapper is static-only."
+LINE=54 ROLES=MEMORY TEXT=if doc_type in ["1", "memorandum", "signal"]:
+LINE=57 ROLES=MEMORY TEXT=p(doc, "SIGNAL – I AM HERE, I NEED HELP, AND IN LAW AND REGULATIONS YOU PROMISE THAT HELP", True, 14, WD_ALIGN_PARAGRAPH.CENTER, 12)
+LINE=58 ROLES=MEMORY TEXT=print(f"✅ [1] SIGNALNI MEMORANDUM kreiran")
+LINE=87 ROLES=MEMORY TEXT=p(doc, "TEHNIČKI ZAHTJEV ZA PRIKLJUČENJE – CEDIS", True, 18, WD_ALIGN_PARAGRAPH.CENTER, 8)
+
+============================================================
+GROUP=H00000474
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/H023.py.HEALED_VOLIM_TE_V3_SAFE.sh
+LINE=9 ROLES=MEMORY TEXT=# ORIGINAL_PATH=/data/data/com.termux/files/home/ANDROID_ARCHIVE_KNOWLEDGE_20260702_200007/02_REVIEW_ONLY_EXTRACTED/57af78afc3d9279a6209c9bae523d5ee24a95a4d8f30906c8768be1252c3cab8_57af78afc3d9279a6209c9bae523d5ee24a95a4d8f30906c8768be1252c3cab8_VDR__99_Index_and_Control__002.__DELTA__CHATGBT__FILES-20260513T005724Z-3-001.zip/002. DELTA CHATGBT FILES/Android uredjaj/TITAN_LOGIC_CORE.py
+LINE=11 ROLES=POLICY TEXT=# HUMAN_GATE=ACTIVE
+LINE=13 ROLES=POLICY TEXT=HUMAN_GATE="${HUMAN_GATE:-BLOCKED}"
+LINE=14 ROLES=POLICY TEXT=if [ "$HUMAN_GATE" != "ALLOW_RUNTIME" ]; then
+LINE=15 ROLES=POLICY TEXT=echo "HUMAN_GATE_BLOCKED: Android V3 healed wrapper is static-only."
+LINE=54 ROLES=MEMORY TEXT=if doc_type in ["1", "memorandum", "signal"]:
+LINE=57 ROLES=MEMORY TEXT=p(doc, "SIGNAL – I AM HERE, I NEED HELP, AND IN LAW AND REGULATIONS YOU PROMISE THAT HELP", True, 14, WD_ALIGN_PARAGRAPH.CENTER, 12)
+LINE=58 ROLES=MEMORY TEXT=print(f"✅ [1] SIGNALNI MEMORANDUM kreiran")
+LINE=87 ROLES=MEMORY TEXT=p(doc, "TEHNIČKI ZAHTJEV ZA PRIKLJUČENJE – CEDIS", True, 18, WD_ALIGN_PARAGRAPH.CENTER, 8)
+
+============================================================
+GROUP=H00000411
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__05_VRIJEDNE_SKRIPTE__8c73a92fdc68c9f365533682247109aea7400d3137eb26cdf74914c6e0e62a53_create_android_external1_linux_packet.sh
+LINE=36 ROLES=POLICY TEXT=HUMAN_GATE=ACTIVE
+LINE=82 ROLES=MEMORY TEXT=-iname "*SIGNAL*" -o \
+LINE=99 ROLES=MEMORY TEXT=-iname "*SSOT*" -o \
+
+============================================================
+GROUP=H00000599
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_CORE/scripts/03_build_companion_memory.sh
+LINE=5 ROLES=MEMORY TEXT=MEM="$BASE/03_COMPANION_MEMORY"
+LINE=45 ROLES=MEMORY TEXT=FREYA COMPANION MEMORY
+LINE=51 ROLES=POLICY TEXT=- Human Gate always active.
+LINE=56 ROLES=MEMORY TEXT=- Memory is accumulated with consent.
+LINE=59 ROLES=MEMORY TEXT=echo "=== FREYA COMPANION MEMORY CREATED ==="
+
+============================================================
+GROUP=H00000033
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/32_SCRIPT_GOVERNANCE_SYSTEM/01_CANONICAL_STATIC_SCRIPTS/CANON_SCRIPT_000647__ecc8d6eb1d7d39f1.txt
+LINE=6 ROLES=ROUTER TEXT=mkdir -p 12_LOGS_HASHES 13_IMPORTED_WORKBOOKS 15_EXTERNAL_RESPONSES
+LINE=34 ROLES=ROUTER TEXT=# V947 — external response intake folders
+LINE=35 ROLES=ROUTER TEXT=mkdir -p 15_EXTERNAL_RESPONSES/CEDIS 15_EXTERNAL_RESPONSES/MUNICIPALITY_TUZI 15_EXTERNAL_RESPONSES/ESG 15_EXTERNAL_RESPONSES/EPC 15_EXTERNAL_RESPONSES/BANKS
+LINE=36 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/V947_EXTERNAL_RESPONSE_FOLDER_MAP.csv <<'CSV'
+LINE=44 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/V947_EXTERNAL_RESPONSE_FOLDER_MAP.csv > 12_LOGS_HASHES/V947_EXTERNAL_RESPONSE_FOLDER_MAP_SHA256.txt
+LINE=47 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/CEDIS/V948_CEDIS_INTAKE_CHECKLIST.md <<'MD'
+LINE=59 ROLES=ROUTER TEXT=PENDING_EXTERNAL_RESPONSE
+LINE=65 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/CEDIS/V948_CEDIS_INTAKE_CHECKLIST.md > 12_LOGS_HASHES/V948_CEDIS_INTAKE_CHECKLIST_SHA256.txt
+LINE=68 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/EPC/V949_CAPEX_EVIDENCE_INTAKE_CHECKLIST.md <<'MD'
+LINE=88 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/EPC/V949_CAPEX_EVIDENCE_INTAKE_CHECKLIST.md > 12_LOGS_HASHES/V949_CAPEX_EVIDENCE_INTAKE_CHECKLIST_SHA256.txt
+LINE=91 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/ESG/V950_ESG_INTAKE_CHECKLIST.md <<'MD'
+LINE=110 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/ESG/V950_ESG_INTAKE_CHECKLIST.md > 12_LOGS_HASHES/V950_ESG_INTAKE_CHECKLIST_SHA256.txt
+LINE=113 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/BANKS/V951_BANK_DEBT_INTAKE_CHECKLIST.md <<'MD'
+LINE=133 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/BANKS/V951_BANK_DEBT_INTAKE_CHECKLIST.md > 12_LOGS_HASHES/V951_BANK_DEBT_INTAKE_CHECKLIST_SHA256.txt
+LINE=138 ROLES=ROUTER TEXT=GRID,PENDING,CEDIS written response,CEDIS
+
+============================================================
+GROUP=H00000342
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/cfff0e747850f661af8a98322cef9e22b5683e36e778472928895517a98b44bd_delta_v4_5.py.DO_NOT_RUN.txt
+LINE=3 ROLES=POLICY TEXT=DELTA v4.5 — Protokol 888 + Lenovo Sync
+LINE=12 ROLES=MEMORY TEXT=MEMORY_FILE = Path("/sdcard/delta_v4_memory.json")
+LINE=16 ROLES=MEMORY TEXT=self.memory = self._load()
+LINE=20 ROLES=MEMORY TEXT=if MEMORY_FILE.exists():
+LINE=22 ROLES=MEMORY TEXT=return json.load(open(MEMORY_FILE, encoding="utf-8"))
+LINE=28 ROLES=MEMORY TEXT="signals": [],
+LINE=36 ROLES=MEMORY TEXT=self.memory["updated"] = datetime.now().isoformat()
+LINE=37 ROLES=MEMORY TEXT=with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+LINE=38 ROLES=MEMORY TEXT=json.dump(self.memory, f, indent=2, ensure_ascii=False)
+LINE=53 ROLES=MEMORY TEXT=local_file = str(MEMORY_FILE)
+LINE=65 ROLES=MEMORY TEXT=print("✅ Memorija uspesno poslata na Lenovo masinu.")
+LINE=70 ROLES=MEMORY TEXT=self.memory["chat_history"].append({"time": datetime.now().isoformat(), "source": source, "content": text})
+LINE=72 ROLES=MEMORY TEXT=self.memory["facts"].append({"time": datetime.now().isoformat(), "fact": text[:180], "source": source})
+LINE=73 ROLES=MEMORY TEXT=self.memory["signals"].append({"time": datetime.now().isoformat(), "text": text[:200]})
+LINE=77 ROLES=MEMORY TEXT=self.memory["goals"].append({"time": datetime.now().isoformat(), "goal": goal})
+LINE=84 ROLES=MEMORY TEXT=results = [g["goal"] for g in self.memory.get("goals", [])[-5:]]
+LINE=85 ROLES=MEMORY TEXT=elif "signal" in q:
+LINE=86 ROLES=MEMORY TEXT=results = [s["text"] for s in self.memory.get("signals", [])[-5:]]
+LINE=88 ROLES=MEMORY TEXT=all_items = self.memory.get("facts", []) + self.memory.get("signals", [])
+LINE=103 ROLES=MEMORY TEXT=print(f"Signali: {len(self.memory.get('signals', []))}")
+
+============================================================
+GROUP=H00000944
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_COMMAND_CENTER/06_REPORTS/human-gate_before_sync_patch_20260712_144317.sh
+LINE=5 ROLES=POLICY TEXT=HG="$HOME/HUMAN_GATE_COMMAND_CENTER"
+LINE=6 ROLES=POLICY TEXT=FREYA_BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=35 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=36 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=55 ROLES=POLICY TEXT=>> "$HG/08_AUDIT_LOG/HUMAN_GATE_AUDIT.psv"
+LINE=60 ROLES=POLICY TEXT=echo "HUMAN GATE ANDROID STATUS"
+LINE=63 ROLES=POLICY TEXT=echo "DEVICE_ROLE=PERSONAL_HUMAN_GATE_TERMINAL"
+LINE=92 ROLES=DANGER TEXT=echo "=== CONTROLLED REPAIR DAEMON ==="
+LINE=114 ROLES=POLICY TEXT=echo "FINAL_STATUS=HUMAN_GATE_READY"
+LINE=119 ROLES=POLICY TEXT=echo "HUMAN GATE INBOX"
+LINE=154 ROLES=DANGER TEXT=echo "CONTROLLED REPAIR DAEMON — READ ONLY STATUS"
+LINE=190 ROLES=POLICY TEXT=echo "HUMAN GATE CASE"
+LINE=225 ROLES=POLICY TEXT=HUMAN_GATE_CASE_CARD
+LINE=231 ROLES=POLICY TEXT=STATUS=HUMAN_GATE_REVIEW_REQUIRED
+LINE=253 ROLES=POLICY TEXT=HUMAN_GATE=ACTIVE
+LINE=261 ROLES=POLICY TEXT=echo "FINAL_STATUS=HUMAN_GATE_CASE_CREATED"
+LINE=278 ROLES=POLICY TEXT=HUMAN_GATE_DECISION_REQUEST
+LINE=299 ROLES=DANGER TEXT=- start new daemon
+LINE=308 ROLES=POLICY TEXT=HUMAN_GATE=Danijela_Djurovic_Keskin
+LINE=357 ROLES=POLICY TEXT=echo "FINAL_STATUS=HUMAN_GATE_DECISION_RECORDED"
+
+============================================================
+GROUP=H00000349
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/53fb4a1f17635dab47c7cd19bc0b646eedfe37189dabc1193c3ed745a0774f2a_delta_oracle_oneshot_adapter.py.DO_NOT_RUN.txt
+LINE=6 ROLES=ROUTER TEXT=- One command, one response, no while True, no sleep loop.
+LINE=30 ROLES=MEMORY TEXT=mem = getattr(d, "memory", {})
+LINE=32 ROLES=MEMORY TEXT=print("signals:", len(mem.get("signals", [])))
+LINE=50 ROLES=MEMORY TEXT=print("Memory keys:", list(getattr(d, "memory", {}).keys()))
+
+============================================================
+GROUP=H00000351
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/32_SCRIPT_GOVERNANCE_SYSTEM/01_CANONICAL_STATIC_SCRIPTS/CANON_SCRIPT_000538__c0afe2115c664afd.txt
+LINE=6 ROLES=ROUTER TEXT=- One command, one response, no while True, no sleep loop.
+LINE=28 ROLES=MEMORY TEXT=mem = getattr(d, "memory", {})
+LINE=30 ROLES=MEMORY TEXT=print("signals:", len(mem.get("signals", [])))
+LINE=48 ROLES=MEMORY TEXT=print("Memory keys:", list(getattr(d, "memory", {}).keys()))
+
+============================================================
+GROUP=H00000373
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/04_REGISTRI_HASH_MANIFESTI/ab6a1a782c7aef60cb983ab395cdb1a2847d0668b7712b0d18b75713782d776d_SCRIPT_002501_DO_NOT_RUN.txt
+LINE=103 ROLES=MEMORY TEXT=Mac, Android, Lenovo, SHA evidence, Montenegro, EU direction, cooperation signals, and Danijela Keskin’s work.
+
+============================================================
+GROUP=H00000034
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/32_SCRIPT_GOVERNANCE_SYSTEM/01_CANONICAL_STATIC_SCRIPTS/CANON_SCRIPT_000692__ffba6e6cd3901fcf.script
+LINE=32 ROLES=ROUTER TEXT=| Grid dependency | CEDIS response | NOT RECEIVED | Engineer/legal |
+LINE=69 ROLES=ROUTER TEXT=| BLK-001 | Formal CEDIS response missing | CRITICAL | Obtain written response |
+LINE=94 ROLES=ROUTER TEXT=9. STEP15_EXTERNAL_RESPONSE_INGESTION_REGISTER.md
+
+============================================================
+GROUP=H00000332
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/627d457490aeaa317903d951d4536eb63addafec39ae085c64674cee8b3c8655_nexus_operator_adapter.py.DO_NOT_RUN.txt
+LINE=7 ROLES=MEMORY TEXT=- Uses DeltaV45 canonical memory only.
+LINE=17 ROLES=MEMORY TEXT=MEMORY = Path("/sdcard/delta_v4_memory.json")
+LINE=27 ROLES=MEMORY TEXT=data = MEMORY.read_bytes()
+LINE=30 ROLES=MEMORY TEXT=print("memory:", str(MEMORY))
+LINE=32 ROLES=MEMORY TEXT=print("sha256:", sha256(MEMORY))
+LINE=42 ROLES=MEMORY TEXT=mem = getattr(d, "memory", {})
+LINE=44 ROLES=MEMORY TEXT=print("canonical_memory:", str(MEMORY))
+LINE=45 ROLES=MEMORY TEXT=print("signals:", len(mem.get("signals", [])))
+LINE=58 ROLES=MEMORY TEXT=print("canonical_memory:", str(MEMORY))
+LINE=59 ROLES=MEMORY TEXT=print("sha256_after:", sha256(MEMORY))
+
+============================================================
+GROUP=H00000398
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/04_REGISTRI_HASH_MANIFESTI/ee1473589c8aeac133d45f1ee13fb55518585efff39f5f59b11ec6a71f0705fd_nexus_mobile.py
+LINE=2 ROLES=MEMORY TEXT=# TITAN IMMUTABLE RUNTIME GUARD — SSOT ENFORCED
+LINE=17 ROLES=MEMORY TEXT=MEMORY_PATH = "/sdcard/delta_v4_memory.json"
+LINE=41 ROLES=MEMORY TEXT=if not os.path.exists(MEMORY_PATH):
+LINE=58 ROLES=REMOTE_MODEL TEXT=r = requests.get(f"https://ntfy.sh/{NTFY_TOPIC}/json?poll=1", timeout=5)
+LINE=85 ROLES=MEMORY TEXT=def check_memory_updates(self):
+LINE=87 ROLES=MEMORY TEXT=if not os.path.exists(MEMORY_PATH): return
+LINE=88 ROLES=MEMORY TEXT=mtime = os.path.getmtime(MEMORY_PATH)
+LINE=93 ROLES=MEMORY TEXT=with open(MEMORY_PATH, 'r') as f:
+LINE=102 ROLES=REMOTE_MODEL TEXT=requests.post(f"https://ntfy.sh/{NTFY_TOPIC}",
+LINE=106 ROLES=MEMORY TEXT=print("📱 Signal poslat na iPhone nakon izmene u bazi.")
+LINE=112 ROLES=MEMORY TEXT=self.check_memory_updates()
+
+============================================================
+GROUP=H00000517
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__05_VRIJEDNE_SKRIPTE__8b4407d8db2953e4a813998b63d1e3000acb646883f3ad7183009e48fc0a300b_nexus_mobile.py
+LINE=2 ROLES=MEMORY TEXT=# TITAN IMMUTABLE RUNTIME GUARD — SSOT ENFORCED
+LINE=17 ROLES=MEMORY TEXT=MEMORY_PATH = "/sdcard/delta_v4_memory.json"
+LINE=41 ROLES=MEMORY TEXT=if not os.path.exists(MEMORY_PATH):
+LINE=58 ROLES=REMOTE_MODEL TEXT=r = requests.get(f"https://ntfy.sh/{NTFY_TOPIC}/json?poll=1", timeout=5)
+LINE=85 ROLES=MEMORY TEXT=def check_memory_updates(self):
+LINE=87 ROLES=MEMORY TEXT=if not os.path.exists(MEMORY_PATH): return
+LINE=88 ROLES=MEMORY TEXT=mtime = os.path.getmtime(MEMORY_PATH)
+LINE=93 ROLES=MEMORY TEXT=with open(MEMORY_PATH, 'r') as f:
+LINE=102 ROLES=REMOTE_MODEL TEXT=requests.post(f"https://ntfy.sh/{NTFY_TOPIC}",
+LINE=106 ROLES=MEMORY TEXT=print("📱 Signal poslat na iPhone nakon izmene u bazi.")
+LINE=112 ROLES=MEMORY TEXT=self.check_memory_updates()
+
+============================================================
+GROUP=H00000759
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/00_CONTROL/FREYA_COMMAND_BACKUPS/freya_original_20260708_141219
+LINE=3 ROLES=POLICY TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL"
+LINE=13 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=14 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=62 ROLES=POLICY TEXT=echo "A002=GROUPED_PENDING_HUMAN_GATE_DECISION"
+LINE=153 ROLES=POLICY TEXT=HUMAN_GATE=ACTIVE
+LINE=154 ROLES=POLICY TEXT=DELETE=NO
+
+============================================================
+GROUP=H00000036
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/32_SCRIPT_GOVERNANCE_SYSTEM/01_CANONICAL_STATIC_SCRIPTS/CANON_SCRIPT_000125__337da78507d69e65.script
+LINE=6 ROLES=ROUTER TEXT=mkdir -p 12_LOGS_HASHES 13_IMPORTED_WORKBOOKS/VOL10_ESG 15_EXTERNAL_RESPONSES/ESG
+LINE=36 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/ESG/V957_ESIA_EVIDENCE_REQUEST.md <<'MD'
+LINE=60 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/ESG/V957_ESIA_EVIDENCE_REQUEST.md > 12_LOGS_HASHES/V957_ESIA_EVIDENCE_REQUEST_SHA256.txt
+LINE=64 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/ESG/V958_DNSH_TAXONOMY_REQUEST.md <<'MD'
+LINE=86 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/ESG/V958_DNSH_TAXONOMY_REQUEST.md > 12_LOGS_HASHES/V958_DNSH_TAXONOMY_REQUEST_SHA256.txt
+LINE=114 ROLES=ROUTER TEXT=emergency response plan
+
+============================================================
+GROUP=H00000476
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/337da78507d69e659046877d3691fd2e9fb103296b030e8786c233c52434bbc2_ANDROID_TITAN_EXPORT_PACKET__data_data_com.termux_files_home_TITAN_vE1_FINAL_DOCUMENTS_FOR_HUMAN_CHECK_RUN_V955_V964_VOL10_ESG_STABILIZATION.sh
+LINE=6 ROLES=ROUTER TEXT=mkdir -p 12_LOGS_HASHES 13_IMPORTED_WORKBOOKS/VOL10_ESG 15_EXTERNAL_RESPONSES/ESG
+LINE=36 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/ESG/V957_ESIA_EVIDENCE_REQUEST.md <<'MD'
+LINE=60 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/ESG/V957_ESIA_EVIDENCE_REQUEST.md > 12_LOGS_HASHES/V957_ESIA_EVIDENCE_REQUEST_SHA256.txt
+LINE=64 ROLES=ROUTER TEXT=cat > 15_EXTERNAL_RESPONSES/ESG/V958_DNSH_TAXONOMY_REQUEST.md <<'MD'
+LINE=86 ROLES=ROUTER TEXT=sha256sum 15_EXTERNAL_RESPONSES/ESG/V958_DNSH_TAXONOMY_REQUEST.md > 12_LOGS_HASHES/V958_DNSH_TAXONOMY_REQUEST_SHA256.txt
+LINE=114 ROLES=ROUTER TEXT=emergency response plan
+
+============================================================
+GROUP=H00000601
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_CORE/brain/orchestrator.py
+LINE=16 ROLES=MEMORY TEXT=return "memory"
+LINE=33 ROLES=MEMORY TEXT=return "learning"
+LINE=59 ROLES=ROUTER TEXT=return "conversation"
+
+============================================================
+GROUP=H00000544
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__3a488b1b74458bec2889abec48515488585f204363bbd63dc72c23a41cc94252_titan_android_sanitizer.py
+LINE=7 ROLES=MEMORY TEXT=DB_PATH = os.path.expanduser("~/05-RESOURCES/CMU/pipelines/05-signale/titan_executive.db")
+
+============================================================
+GROUP=H00000545
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__428388be72bc9b2fc2db19c7188a93ce01bfa3c85b6b8bbb15735c82b7b033d3_titan_android_sanitizer.py
+LINE=7 ROLES=MEMORY TEXT=DB_PATH = os.path.expanduser("~/05-RESOURCES/CMU/pipelines/05-signale/titan_executive.db")
+
+============================================================
+GROUP=H00000596
+FILE=/data/data/com.termux/files/home/bin/freya-chat
+LINE=8 ROLES=REMOTE_MODEL TEXT=if [ -z "$OPENAI_API_KEY" ]; then
+LINE=9 ROLES=REMOTE_MODEL TEXT=echo "OPENAI_API_KEY nije postavljen."
+LINE=25 ROLES=ROUTER,REMOTE_MODEL TEXT=RESPONSE=$(curl -s https://api.openai.com/v1/responses \
+LINE=27 ROLES=REMOTE_MODEL TEXT=-H "Authorization: Bearer $OPENAI_API_KEY" \
+LINE=34 ROLES=ROUTER TEXT=echo "FREYA > $RESPONSE"
+LINE=43 ROLES=ROUTER TEXT=echo "**FREYA:** $RESPONSE"
+
+============================================================
+GROUP=H00000322
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/04_REGISTRI_HASH_MANIFESTI/576884f26dc8749bab8c36f55d6ebc410f594a2575cc4f5230c8607e4ee14fa3_STEP_207H_FINAL_TERMUX_HASH_REPAIR_CLOSURE_SUMMARY.sh.DO_NOT_RUN.txt
+LINE=5 ROLES=MEMORY TEXT=MODULE_DIR="$HOME/learning_modules"
+LINE=87 ROLES=STATIC_ANSWER TEXT=if grep -q "Module hash and allowed-origin checks passed" "$CHECK_OUTPUT"; then
+LINE=93 ROLES=STATIC_ANSWER TEXT=if grep -q "production trust not established" "$CHECK_OUTPUT"; then
+LINE=99 ROLES=STATIC_ANSWER TEXT=if grep -q "Module provenance verified and trusted" "$CHECK_OUTPUT"; then
+LINE=153 ROLES=MEMORY TEXT=The Termux learning module hash branch is closed only as a controlled local test reset.
+LINE=258 ROLES=MEMORY TEXT=The Termux learning module hash branch is closed only as a **controlled local test reset**.
+
+============================================================
+GROUP=H00000603
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_PROTOCOL_889__08_SCRIPTS__fbook_brief.sh
+LINE=15 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+
+============================================================
+GROUP=H00000350
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/436a5908b6ea3374ef968aadf2794ae947481a9afaa778ad75d2ba330c497e96_delta_v2.py.DO_NOT_RUN.txt
+LINE=6 ROLES=MEMORY TEXT=MEMORY_FILE = Path("/sdcard/delta_memory.json")
+LINE=10 ROLES=MEMORY TEXT=self.memory = self.load_memory()
+LINE=13 ROLES=MEMORY TEXT=def load_memory(self):
+LINE=14 ROLES=MEMORY TEXT=if MEMORY_FILE.exists():
+LINE=16 ROLES=MEMORY TEXT=return json.load(open(MEMORY_FILE))
+LINE=19 ROLES=MEMORY TEXT=return {"created": datetime.now().isoformat(), "signals": [], "scans": [], "chat": []}
+LINE=22 ROLES=MEMORY TEXT=self.memory["updated"] = datetime.now().isoformat()
+LINE=23 ROLES=MEMORY TEXT=json.dump(self.memory, open(MEMORY_FILE, "w"), indent=2)
+LINE=25 ROLES=MEMORY TEXT=def add_signal(self, text, source="chat"):
+LINE=26 ROLES=MEMORY TEXT=self.memory["signals"].append({"time": datetime.now().isoformat(), "source": source, "text": text})
+LINE=28 ROLES=MEMORY TEXT=print("🧠 Signal sačuvan.")
+LINE=36 ROLES=MEMORY TEXT=self.memory["scans"].append({"time": datetime.now().isoformat(), "count": len(found)})
+LINE=41 ROLES=MEMORY TEXT=self.memory["chat"].append({"time": datetime.now().isoformat(), "message": message})
+LINE=43 ROLES=MEMORY TEXT=print("💬 Chat signal harmonizovan.")
+LINE=47 ROLES=MEMORY TEXT=d.harmonize("Korisnik želi najpametniju Delta aplikaciju koja pamti signale iz chata.")
+
+============================================================
+GROUP=H00000598
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_CORE/freya.py
+LINE=20 ROLES=POLICY TEXT=Human Gate:
+
+============================================================
+GROUP=H00000556
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__3efd6813b6143a6b2e07e610747c56f498606abfbec7b02de65d92b06ede612b_titan_harvester_daemon.py
+LINE=13 ROLES=MEMORY,REMOTE_MODEL TEXT=SIGNAL_URL = "https://api.coindesk.com/v1/bpi/currentprice.json"
+LINE=15 ROLES=DANGER TEXT=print("\n[🛰️] POKREĆEM TITAN 24/7 HARVESTER DAEMON...")
+LINE=16 ROLES=MEMORY TEXT=print("[*] Sistem se povezuje na mrežu i počinje konstantno osluškivanje spoljnih signala...")
+LINE=17 ROLES=DANGER TEXT=send_alert("TITAN MREŽA", "Harvester Daemon je online. 24/7 osmatranje interneta aktivirano.")
+LINE=19 ROLES=MEMORY TEXT=def proveri_spoljne_signale():
+LINE=22 ROLES=MEMORY TEXT=req = urllib.request.Request(SIGNAL_URL, headers={'User-Agent': 'Mozilla/5.0'})
+LINE=23 ROLES=ROUTER TEXT=with urllib.request.urlopen(req, timeout=10) as response:
+LINE=24 ROLES=ROUTER TEXT=data = json.loads(response.read().decode())
+LINE=27 ROLES=MEMORY TEXT=print(f"[{datetime.now().strftime('%H:%M:%S')}] [📡] Internet signal stabilan. Analiziram tržišne parametre...")
+LINE=39 ROLES=MEMORY TEXT=proveri_spoljne_signale()
+LINE=43 ROLES=DANGER TEXT=print("\n[!] Harvester Daemon zaustavljen.")
+
+============================================================
+GROUP=H00000588
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_PROTOCOL_889__08_SCRIPTS__freya_889_daemon.sh
+LINE=17 ROLES=DANGER TEXT=echo "FREYA PROTOCOL 889 DAEMON STARTED $(date)" >> "$LOG"
+LINE=82 ROLES=POLICY TEXT=| Time | Decision | Why | Risk | Human Gate |
+LINE=91 ROLES=POLICY TEXT=DELETE=NO
+LINE=95 ROLES=POLICY TEXT=HUMAN_GATE=ACTIVE
+LINE=109 ROLES=POLICY TEXT=## 7. Human Gate odluke
+LINE=127 ROLES=ROUTER TEXT=echo "CAN_DIALOG=YES"
+LINE=134 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=141 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+
+============================================================
+GROUP=H00000610
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_CORE/brain/memory.py
+LINE=4 ROLES=MEMORY TEXT=PROFILE = Path.home() / "FREYA_CORE" / "memory" / "profile.json"
+LINE=6 ROLES=ROUTER TEXT=def answer(question):
+
+============================================================
+GROUP=H00000605
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_PROTOCOL_889__08_SCRIPTS__freya_decision.sh
+LINE=9 ROLES=ROUTER TEXT=if command -v termux-dialog >/dev/null 2>&1; then
+LINE=10 ROLES=ROUTER TEXT=D="$(termux-dialog text -t "FREYA Decision" 2>/dev/null | jq -r '.text // empty' 2>/dev/null)"
+
+============================================================
+GROUP=H00000606
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_PROTOCOL_889__08_SCRIPTS__freya_task.sh
+LINE=9 ROLES=ROUTER TEXT=if command -v termux-dialog >/dev/null 2>&1; then
+LINE=10 ROLES=ROUTER TEXT=TASK="$(termux-dialog text -t "FREYA New Task" 2>/dev/null | jq -r '.text // empty' 2>/dev/null)"
+
+============================================================
+GROUP=H00000607
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_PROTOCOL_889__08_SCRIPTS__freya_note.sh
+LINE=9 ROLES=ROUTER TEXT=if command -v termux-dialog >/dev/null 2>&1; then
+LINE=10 ROLES=ROUTER TEXT=NOTE="$(termux-dialog text -t "FREYA Quick Note" 2>/dev/null | jq -r '.text // empty' 2>/dev/null)"
+
+============================================================
+GROUP=H00000586
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__08_APP__freya.sh
+LINE=4 ROLES=MEMORY TEXT=MEM="$BASE/09_MEMORY/freya_memory.md"
+LINE=5 ROLES=MEMORY TEXT=ABOUT="$BASE/09_MEMORY/about_danijela.md"
+LINE=9 ROLES=MEMORY TEXT=LEARNING="$BASE/13_LEARNING/learning_log.md"
+LINE=11 ROLES=POLICY TEXT=HUMAN="$BASE/16_HUMAN_GATE/human_gate_queue.md"
+LINE=13 ROLES=MEMORY,POLICY TEXT=mkdir -p "$BASE"/{09_MEMORY,10_JOURNAL,11_TODO,12_PROJECTS,13_LEARNING,14_RESEARCH,16_HUMAN_GATE}
+LINE=14 ROLES=MEMORY TEXT=touch "$MEM" "$JOURNAL" "$TODO" "$LEARNING" "$RESEARCH" "$HUMAN"
+LINE=32 ROLES=POLICY TEXT=echo "  human       - Human Gate queue"
+LINE=56 ROLES=STATIC_ANSWER TEXT=if [ "$MSG_LC" = "about" ] || echo "$MSG_LC" | grep -q "sta znas o meni"; then
+LINE=67 ROLES=MEMORY,STATIC_ANSWER TEXT=elif echo "$MSG_LC" | grep -Eiq "learning mia|learn mia|mia lesson"; then
+LINE=68 ROLES=MEMORY TEXT=LESSON="$BASE/13_LEARNING/sessions/MIA_PROJECT_PROPOSAL_001.md"
+LINE=70 ROLES=TTS,MEMORY TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "Learning mode. Today we learn how to write a project proposal for MIA. A project proposal explains the problem, the solution, the activities, the budget, and the expected impact. What is the main problem your MIA project should solve?"
+LINE=73 ROLES=POLICY TEXT=echo "Human Gate Queue:"
+LINE=76 ROLES=STATIC_ANSWER TEXT=elif echo "$MSG_LC" | grep -q "^ask"; then
+LINE=82 ROLES=ROUTER,STATIC_ANSWER TEXT=echo "Moj trenutni odgovor:"
+LINE=85 ROLES=TTS,MEMORY TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "I saved your question. We will connect it with memory, documents, and research."
+LINE=87 ROLES=STATIC_ANSWER TEXT=elif echo "$MSG_LC" | grep -q "^remember"; then
+LINE=92 ROLES=STATIC_ANSWER TEXT=elif echo "$MSG_LC" | grep -q "^learn"; then
+LINE=94 ROLES=MEMORY TEXT=echo "- $TS | $LESSON" >> "$LEARNING"
+LINE=97 ROLES=STATIC_ANSWER TEXT=elif echo "$MSG_LC" | grep -q "^research"; then
+LINE=102 ROLES=STATIC_ANSWER TEXT=elif echo "$MSG_LC" | grep -Eiq "ars|metal|industr"; then
+
+============================================================
+GROUP=H00000581
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_PROTOCOL_889__08_SCRIPTS__freya_max.sh
+LINE=21 ROLES=ROUTER TEXT="$PUBLIC/08_SOURCE_ANSWERS" \
+LINE=29 ROLES=MEMORY TEXT=MEMORY="$BASE/10_INTELLIGENCE/FREYA_889_MEMORY_INDEX.tsv"
+LINE=42 ROLES=POLICY TEXT=echo "| Time | Decision | Why | Risk | Human Gate |" >> "$DECISIONS"
+LINE=49 ROLES=REMOTE_MODEL TEXT=QUERYTITAN GRID AI governancehttps://news.google.com/rss/search?q=AI+governance+digital+governance+compliance+automationtitan,ai,governance,compliance
+LINE=50 ROLES=REMOTE_MODEL TEXT=QUERYEBRD EIB industrial financehttps://news.google.com/rss/search?q=EBRD+EIB+industrial+finance+energy+infrastructureebrd,eib,finance,industry
+LINE=51 ROLES=REMOTE_MODEL TEXT=QUERYsmart contract governancehttps://news.google.com/rss/search?q=smart+contract+governance+compliancesmart,contract,governance
+LINE=52 ROLES=REMOTE_MODEL TEXT=QUERYdata room investmenthttps://news.google.com/rss/search?q=investor+data+room+due+diligence+industrialdata,room,investor,diligence
+LINE=53 ROLES=REMOTE_MODEL TEXT=QUERYMontenegro investment energyhttps://news.google.com/rss/search?q=Montenegro+investment+energy+infrastructuremontenegro,investment,energy
+LINE=65 ROLES=DANGER TEXT=echo "$TXT" | grep -Eiq 'freya|titan|grid|ai governance|digital governance|compliance|smart contract|daemon|protocol|protokol' && CATEGORY="FREYA_SYSTEM"
+LINE=68 ROLES=POLICY TEXT=echo "$TXT" | grep -Eiq 'decision|odluka|approve|odobri|contract|ugovor|investor|public|runtime|delete|human gate' && HG="YES"
+LINE=73 ROLES=MEMORY TEXT=memory_add() {
+LINE=78 ROLES=MEMORY TEXT=printf "%s\t%s\t%s\t%s\t%s\n" "$DATE" "$TIME" "$TYPE" "$HASH" "$TEXT | $META" >> "$MEMORY"
+LINE=94 ROLES=MEMORY TEXT=memory_add "CAPTURE" "$TXT" "$META"
+LINE=118 ROLES=MEMORY TEXT=memory_add "CLIPBOARD" "$TXT" "$META"
+LINE=127 ROLES=POLICY TEXT=HG="$(grep -Ri 'human_gate=YES\|HUMAN_GATE_NEEDED=YES' "$BASE/02_INBOX" "$BASE/03_TASKS" "$BASE/04_DECISIONS" 2>/dev/null | tail -20)"
+LINE=136 ROLES=MEMORY,POLICY TEXT=- Pregledati Human Gate signale
+LINE=144 ROLES=POLICY TEXT=## 3. Human Gate
+LINE=154 ROLES=POLICY TEXT=DELETE=NO
+LINE=158 ROLES=POLICY TEXT=HUMAN_GATE=ACTIVE
+LINE=171 ROLES=POLICY TEXT=echo "DELETE=NO MASTER_EDIT=NO HUMAN_GATE=ACTIVE" >> "$RAW"
+
+============================================================
+GROUP=H00000960
+FILE=/data/data/com.termux/files/home/bin/freya_case_helper_v2
+LINE=4 ROLES=POLICY TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=20 ROLES=STATIC_ANSWER TEXT=echo "  freya pomozi mi"
+LINE=21 ROLES=STATIC_ANSWER TEXT=echo "  freya savjet"
+LINE=27 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=35 ROLES=STATIC_ANSWER TEXT=echo "FREYA — SAVJET"
+LINE=36 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=41 ROLES=STATIC_ANSWER TEXT=echo "SAVJET=Prvo dodaj poruku ili screenshot u FREYA 888."
+LINE=49 ROLES=STATIC_ANSWER TEXT=if grep -Eqi 'civil[[:space:]]+engineer|raskid[[:space:]]+ugovora|neplacana[[:space:]]+faktura|neplaćena[[:space:]]+faktura' "$OCR"; then
+LINE=51 ROLES=STATIC_ANSWER TEXT=echo "SAVJET=Ne priznati dug i ne obećavati plaćanje bez primarnih dokaza."
+LINE=56 ROLES=MEMORY,STATIC_ANSWER TEXT=echo "SAVJET=Poruka je pročitana, ali je potrebna fokusirana SSOT provjera."
+LINE=61 ROLES=POLICY TEXT=echo "AUTOMATIC_ACTION=NO"
+LINE=70 ROLES=POLICY TEXT=STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED
+LINE=89 ROLES=MEMORY TEXT=Ova poruka ne predstavlja priznanje duga.
+LINE=99 ROLES=POLICY TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+
+============================================================
+GROUP=H00000582
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_PROTOCOL_889__08_SCRIPTS__freya_smart.sh
+LINE=24 ROLES=MEMORY TEXT=MEMORY="$BASE/10_INTELLIGENCE/FREYA_889_MEMORY_INDEX.tsv"
+LINE=33 ROLES=POLICY TEXT=echo "| Time | Decision | Why | Risk | Human Gate |" >> "$DECISIONS"
+LINE=40 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE" >> "$BRIEF"
+LINE=50 ROLES=POLICY TEXT=HUMAN_GATE="NO"
+LINE=53 ROLES=MEMORY,DANGER TEXT=echo "$TXT" | grep -Eiq 'freya|titan|grid|daemon|protokol|lenovo|android|mac|msi|ssot' && CATEGORY="FREYA_SYSTEM"
+LINE=56 ROLES=POLICY TEXT=echo "$TXT" | grep -Eiq 'odobri|odluka|human gate|ugovor|bris|delete|runtime|investitor|javna objava|public' && HUMAN_GATE="YES"
+LINE=58 ROLES=POLICY TEXT=echo "$CATEGORY|$PRIORITY|$RISK|$HUMAN_GATE"
+LINE=61 ROLES=MEMORY TEXT=add_memory() {
+LINE=66 ROLES=MEMORY TEXT=printf "%s\t%s\t%s\t%s\t%s\n" "$DATE" "$TIME" "$TYPE" "$HASH" "$TEXT | $META" >> "$MEMORY"
+LINE=90 ROLES=POLICY TEXT=echo "HUMAN_GATE_NEEDED=$HG"
+LINE=93 ROLES=MEMORY TEXT=add_memory "NOTE" "$TEXT" "$META"
+LINE=97 ROLES=POLICY TEXT=echo "CATEGORY=$CATEGORY PRIORITY=$PRIORITY RISK=$RISK HUMAN_GATE=$HG"
+LINE=116 ROLES=POLICY TEXT=echo "- [ ] $TEXT  <!-- time=$TIME category=$CATEGORY priority=$PRIORITY risk=$RISK human_gate=$HG -->"
+LINE=119 ROLES=MEMORY TEXT=add_memory "TASK" "$TEXT" "$META"
+LINE=123 ROLES=POLICY TEXT=echo "CATEGORY=$CATEGORY PRIORITY=$PRIORITY RISK=$RISK HUMAN_GATE=$HG"
+LINE=141 ROLES=MEMORY TEXT=add_memory "DECISION" "$TEXT" "$META"
+LINE=145 ROLES=POLICY TEXT=echo "CATEGORY=$CATEGORY PRIORITY=$PRIORITY RISK=$RISK HUMAN_GATE=$HG"
+LINE=154 ROLES=POLICY TEXT=HG_ITEMS="$(grep -i 'human_gate=YES\|HUMAN_GATE_NEEDED=YES' "$INBOX" "$TASKS" "$DECISIONS" 2>/dev/null | tail -20)"
+LINE=155 ROLES=DANGER TEXT=SYSTEM_ITEMS="$(grep -i 'FREYA_SYSTEM\|titan\|freya\|daemon\|protokol\|lenovo' "$INBOX" "$TASKS" "$DECISIONS" 2>/dev/null | tail -20)"
+LINE=163 ROLES=POLICY TEXT=DELETE=NO
+
+============================================================
+GROUP=H00000950
+FILE=/data/data/com.termux/files/home/bin/freya-live-web
+LINE=12 ROLES=POLICY TEXT=BASE = HOME / "HUMAN_GATE_TABLET_CONTROL" / "07_ANDROID_FREYA"
+LINE=13 ROLES=REMOTE_MODEL TEXT=KEY_FILE = HOME / ".config" / "freya" / "openai.env"
+LINE=18 ROLES=REMOTE_MODEL TEXT=key = os.environ.get("OPENAI_API_KEY", "").strip()
+LINE=29 ROLES=REMOTE_MODEL TEXT=if line.startswith("OPENAI_API_KEY="):
+LINE=39 ROLES=REMOTE_MODEL TEXT=print(f"OPENAI_API_KEY_AVAILABLE={'YES' if read_key() else 'NO'}")
+LINE=48 ROLES=POLICY TEXT=print("HUMAN_GATE=Danijela_Djurovic_Keskin")
+LINE=65 ROLES=REMOTE_MODEL TEXT=print("Upit će biti poslat OpenAI API-ju.")
+LINE=72 ROLES=POLICY TEXT=print("HUMAN_GATE_APPROVAL=NO")
+LINE=74 ROLES=POLICY TEXT=print("FINAL_STATUS=WEB_SEARCH_CANCELLED_BY_HUMAN_GATE")
+LINE=81 ROLES=REMOTE_MODEL TEXT=print("FINAL_STATUS=BLOCKED_OPENAI_API_KEY_MISSING")
+LINE=92 ROLES=ROUTER TEXT="Odgovori na crnogorskom/srpskom jeziku. "
+LINE=105 ROLES=ROUTER,REMOTE_MODEL TEXT="https://api.openai.com/v1/responses",
+LINE=115 ROLES=ROUTER TEXT=with urllib.request.urlopen(request, timeout=180) as response:
+LINE=116 ROLES=ROUTER TEXT=raw = response.read()
+LINE=117 ROLES=ROUTER TEXT=http_code = response.status
+LINE=192 ROLES=ROUTER TEXT=print("FINAL_STATUS=LIVE_WEB_RESPONSE_WITHOUT_TEXT")
+LINE=206 ROLES=POLICY TEXT="HUMAN_GATE=Danijela_Djurovic_Keskin",
+LINE=223 ROLES=ROUTER TEXT=result.append("Nijedan URL nije vraćen u odgovoru.")
+LINE=231 ROLES=POLICY TEXT="HUMAN_GATE=ACTIVE",
+LINE=261 ROLES=ROUTER TEXT=print(f"RAW_RESPONSE_PATH={raw_path}")
+
+============================================================
+GROUP=H00000947
+FILE=/data/data/com.termux/files/home/bin/freya_multisignal_v4
+LINE=4 ROLES=POLICY TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=7 ROLES=MEMORY TEXT=OUT="$REPORTS/FREYA_UNIQUE_SIGNAL_FUSION_$(date +%Y%m%d_%H%M%S).txt"
+LINE=63 ROLES=MEMORY TEXT="multi_signal",
+LINE=64 ROLES=MEMORY TEXT="unique_signal",
+LINE=68 ROLES=ROUTER TEXT=def normalize(value):
+LINE=69 ROLES=ROUTER TEXT=value = unicodedata.normalize("NFKD", str(value))
+LINE=173 ROLES=ROUTER TEXT=name = normalize(path.name)
+LINE=186 ROLES=ROUTER TEXT=combined = normalize(f"{path.name} {body}")
+LINE=190 ROLES=ROUTER TEXT=if normalize(term) in combined
+LINE=195 ROLES=ROUTER TEXT=if normalize(term) in combined
+LINE=288 ROLES=MEMORY TEXT=handle.write("FREYA_UNIQUE_SIGNAL_FUSION_V4_1\n")
+LINE=345 ROLES=POLICY TEXT=handle.write("AUTOMATIC_ACTION=NO\n")
+LINE=348 ROLES=MEMORY TEXT="FINAL_STATUS=FREYA_UNIQUE_SIGNAL_FUSION_COMPLETED\n"
+LINE=352 ROLES=MEMORY TEXT=print("FREYA — JEDINSTVENI SIGNALI V4.1")
+LINE=379 ROLES=POLICY TEXT=print("AUTOMATIC_ACTION=NO")
+LINE=381 ROLES=MEMORY TEXT="FINAL_STATUS=FREYA_UNIQUE_SIGNAL_FUSION_COMPLETED"
+
+============================================================
+GROUP=H00000595
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_CORE/scripts/01_setup_freya_android_companion.sh
+LINE=9 ROLES=POLICY TEXT="$BASE/02_HUMAN_GATE" \
+LINE=10 ROLES=MEMORY TEXT="$BASE/03_COMPANION_MEMORY" \
+LINE=12 ROLES=MEMORY TEXT="$BASE/05_LEARNING_SESSIONS" \
+LINE=13 ROLES=MEMORY TEXT="$BASE/06_FIELD_KNOWLEDGE" \
+LINE=35 ROLES=POLICY TEXT=02 Human Gate
+LINE=36 ROLES=MEMORY TEXT=03 Companion Memory
+LINE=38 ROLES=MEMORY TEXT=05 Learning Sessions
+LINE=39 ROLES=MEMORY TEXT=06 Field Knowledge
+LINE=50 ROLES=POLICY TEXT=No runtime without Human Gate.
+LINE=63 ROLES=POLICY TEXT=HUMAN_GATE=ACTIVE
+
+============================================================
+GROUP=H00000951
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/00_CONTROL/FREYA_COMMAND_BACKUPS/freya_multisignal_v4_before_dedup_20260717_005333
+LINE=4 ROLES=POLICY TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=7 ROLES=MEMORY TEXT=OUT="$REPORTS/FREYA_MULTI_SIGNAL_$(date +%Y%m%d_%H%M%S).txt"
+LINE=18 ROLES=ROUTER TEXT=text = unicodedata.normalize("NFKD", str(text))
+LINE=95 ROLES=MEMORY TEXT="multi_signal",
+LINE=125 ROLES=MEMORY TEXT=signals = []
+LINE=170 ROLES=MEMORY TEXT=signals.append(item)
+LINE=182 ROLES=MEMORY TEXT=signals.sort(key=lambda x: x["score"], reverse=True)
+LINE=194 ROLES=MEMORY TEXT="Postoje signali iz prepiske, ali nema nezavisnog ugovora, "
+LINE=199 ROLES=MEMORY TEXT=f.write("FREYA_MULTI_SIGNAL_V4\n")
+LINE=201 ROLES=MEMORY TEXT=f.write(f"SIGNALS_FOUND={len(signals)}\n")
+LINE=206 ROLES=MEMORY TEXT=for rank, item in enumerate(signals[:15], 1):
+LINE=215 ROLES=MEMORY TEXT=print("FREYA — VIŠE SIGNALA")
+LINE=217 ROLES=MEMORY TEXT=print(f"SIGNALS_FOUND={len(signals)}")
+LINE=222 ROLES=MEMORY TEXT=print("=== NAJJAČI SIGNALI ===")
+LINE=224 ROLES=MEMORY TEXT=for rank, item in enumerate(signals[:8], 1):
+LINE=234 ROLES=POLICY TEXT=print("AUTOMATIC_ACTION=NO")
+LINE=235 ROLES=MEMORY TEXT=print("FINAL_STATUS=FREYA_MULTI_SIGNAL_COMPLETED")
+
+============================================================
+GROUP=H00000358
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/FREYA-IPHONE-001_FOUNDATION.sh
+LINE=8 ROLES=POLICY TEXT="$BASE/02_HUMAN_GATE" \
+LINE=19 ROLES=MEMORY TEXT="$BASE/13_MEMORY" \
+LINE=41 ROLES=MEMORY TEXT=Knowledge Capture Node
+LINE=44 ROLES=MEMORY TEXT=Capture Danijela's ideas, notes, evidence, people, projects, questions, and daily knowledge.
+LINE=54 ROLES=POLICY TEXT=HUMAN_GATE:
+LINE=58 ROLES=POLICY TEXT=cat > "$BASE/02_HUMAN_GATE/HUMAN_GATE.md" <<'EOT'
+LINE=59 ROLES=POLICY TEXT=FREYA IPHONE HUMAN GATE
+LINE=83 ROLES=MEMORY TEXT=Knowledge Capture Node
+LINE=85 ROLES=POLICY TEXT=HUMAN_GATE:
+LINE=88 ROLES=MEMORY TEXT=KNOWLEDGE_OBJECTS:
+LINE=101 ROLES=MEMORY TEXT=It collects knowledge.
+
+============================================================
+GROUP=H00000345
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/075befdfbcad25a7c96f232d881c058a2151a6274263f51edb837f75aa38bcf2_delta_v3.py.DO_NOT_RUN.txt
+LINE=3 ROLES=MEMORY TEXT=DELTA v4.0 — Core Learning Engine + Query
+LINE=10 ROLES=MEMORY TEXT=MEMORY_FILE = Path("/sdcard/delta_v4_memory.json")
+LINE=14 ROLES=MEMORY TEXT=self.memory = self._load()
+LINE=18 ROLES=MEMORY TEXT=if MEMORY_FILE.exists():
+LINE=20 ROLES=MEMORY TEXT=return json.load(open(MEMORY_FILE, encoding="utf-8"))
+LINE=26 ROLES=MEMORY TEXT="signals": [],
+LINE=34 ROLES=MEMORY TEXT=self.memory["updated"] = datetime.now().isoformat()
+LINE=35 ROLES=MEMORY TEXT=with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+LINE=36 ROLES=MEMORY TEXT=json.dump(self.memory, f, indent=2, ensure_ascii=False)
+LINE=39 ROLES=MEMORY TEXT=self.memory["chat_history"].append({
+LINE=44 ROLES=MEMORY TEXT=self.memory["signals"].append({
+LINE=52 ROLES=MEMORY TEXT=self.memory["goals"].append({
+LINE=62 ROLES=MEMORY TEXT="signals": len(self.memory["signals"]),
+LINE=63 ROLES=MEMORY TEXT="facts": len(self.memory["facts"]),
+LINE=64 ROLES=MEMORY TEXT="goals": len(self.memory["goals"]),
+LINE=67 ROLES=MEMORY TEXT=self.memory["reflections"].append(reflection)
+LINE=75 ROLES=MEMORY TEXT=results = [g["goal"] for g in self.memory.get("goals", [])[-5:]]
+LINE=77 ROLES=MEMORY TEXT=results = [f["fact"] for f in self.memory.get("facts", [])[-8:]]
+LINE=79 ROLES=MEMORY TEXT=for item in self.memory.get("facts", []) + self.memory.get("signals", []):
+LINE=84 ROLES=ROUTER TEXT=print("📌 Odgovor iz memorije:")
+
+============================================================
+GROUP=H00000371
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/04_REGISTRI_HASH_MANIFESTI/c1cf73d1dc678afe2db5d3bdf8ee7a2312cc186e542ddcf18d146403084149b8_SCRIPT_002500_DO_NOT_RUN.txt
+LINE=88 ROLES=REMOTE_MODEL TEXT=<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+LINE=103 ROLES=REMOTE_MODEL TEXT=<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+LINE=155 ROLES=ROUTER TEXT=Gradi se da zaštiti ljudsku odluku, dokumente, istinu i odgovornost.
+
+============================================================
+GROUP=H00000478
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/H003.py.HEALED_VOLIM_TE_V3_SAFE.sh
+LINE=9 ROLES=MEMORY TEXT=# ORIGINAL_PATH=/data/data/com.termux/files/home/ANDROID_ARCHIVE_KNOWLEDGE_20260702_200007/02_REVIEW_ONLY_EXTRACTED/37fe279d88c7596e905c05d405a1a5af914eadf5604f96d6844e515f3c89e960_37fe279d88c7596e905c05d405a1a5af914eadf5604f96d6844e515f3c89e960_ANDROID_EVIDENCE_PACKET_FOR_MAC_20260619_V1.tar.gz/ANDROID_EVIDENCE_PACKET_FOR_MAC_20260619_V1/05_EVIDENCE_FILES_HASHED_ONLY/RED_HOLD__titan_todo_manager.py
+LINE=11 ROLES=POLICY TEXT=# HUMAN_GATE=ACTIVE
+LINE=13 ROLES=POLICY TEXT=HUMAN_GATE="${HUMAN_GATE:-BLOCKED}"
+LINE=14 ROLES=POLICY TEXT=if [ "$HUMAN_GATE" != "ALLOW_RUNTIME" ]; then
+LINE=15 ROLES=POLICY TEXT=echo "HUMAN_GATE_BLOCKED: Android V3 healed wrapper is static-only."
+LINE=64 ROLES=DANGER TEXT="HARVESTER DAEMON (Mreža)": "titan_harvester_daemon.py"
+
+============================================================
+GROUP=H00000532
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__4aa184623fdab745b2a7798b377ee94dbb5ec35847b51ff0584dd5633c6544a0_titan_agent_delta_oracle.py
+LINE=29 ROLES=MEMORY TEXT=# 1. Odbrana krovnog SSOT kanona
+LINE=31 ROLES=MEMORY TEXT=print(f"[✓] SSOT Guard: Validiran krovni finansijski okvir od {target_capex} EUR.")
+LINE=43 ROLES=MEMORY TEXT=db_path = os.path.expanduser("~/05-RESOURCES/CMU/pipelines/05-signale/titan_executive.db")
+
+============================================================
+GROUP=H00000533
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__dfabec330c50dc928f976dcceb9488e11796696d0a33656c863599d8273043c3_titan_agent_delta_oracle.py
+LINE=29 ROLES=MEMORY TEXT=# 1. Odbrana krovnog SSOT kanona
+LINE=31 ROLES=MEMORY TEXT=print(f"[✓] SSOT Guard: Validiran krovni finansijski okvir od {target_capex} EUR.")
+LINE=43 ROLES=MEMORY TEXT=db_path = os.path.expanduser("~/05-RESOURCES/CMU/pipelines/05-signale/titan_executive.db")
+
+============================================================
+GROUP=H00000535
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__69a8d43ae32a241214c18415f9f6e49417f06975582bec22121acb3724983d79_titan_compliance_ubo_ingestor.py
+LINE=12 ROLES=MEMORY TEXT=DB_PATH = os.path.expanduser("~/05-RESOURCES/CMU/pipelines/05-signale/titan_executive.db")
+LINE=52 ROLES=MEMORY TEXT="Tehnički Know-How licencni paket uspešno integrisan u VDR. Vrednost imovine trajno fiksirana u SSOT."
+
+============================================================
+GROUP=H00000536
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__95a4ae8c43bb4d9195b152cfec1d675f995e7ebd918fe87442f0dbc3710597fd_titan_compliance_ubo_ingestor.py
+LINE=12 ROLES=MEMORY TEXT=DB_PATH = os.path.expanduser("~/05-RESOURCES/CMU/pipelines/05-signale/titan_executive.db")
+LINE=52 ROLES=MEMORY TEXT="Tehnički Know-How licencni paket uspešno integrisan u VDR. Vrednost imovine trajno fiksirana u SSOT."
+
+============================================================
+GROUP=H00000622
+FILE=/data/data/com.termux/files/home/bin/freya_language_v1
+LINE=35 ROLES=ROUTER TEXT=case "$TEXT" in
+LINE=50 ROLES=POLICY TEXT=HUMAN_GATE=ACTIVE
+LINE=119 ROLES=POLICY TEXT=DELETE=NO
+
+============================================================
+GROUP=H00000614
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__07_VOICE__freya_greeting_en.sh
+LINE=13 ROLES=MEMORY TEXT=will become part of our shared knowledge.
+LINE=19 ROLES=TTS TEXT=termux-tts-speak -l en -r 0.82 -p 0.92 "$TEXT"
+
+============================================================
+GROUP=H00000424
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__9b119e09337d80e5eddef6586850a646d2062aaeb740c602c8124b7c38677aad_titan_cad_doc_ingestor.py
+LINE=13 ROLES=MEMORY TEXT=DB_PATH = os.path.expanduser("~/05-RESOURCES/CMU/pipelines/05-signale/titan_executive.db")
+LINE=74 ROLES=MEMORY TEXT=print("[✓] Svi inženjerski nacrti su ravnopravno zavedeni pod SSOT kontrolu.")
+
+============================================================
+GROUP=H00000615
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__07_VOICE__freya_greeting.sh
+LINE=17 ROLES=TTS TEXT=termux-tts-speak -r 0.95 -p 1.0 -l sr "$TEXT"
+
+============================================================
+GROUP=H00000375
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/04_REGISTRI_HASH_MANIFESTI/5234be162eccb4d789f10a4b6a6739e348415c579ab18be2eb49ff642966c298_SCRIPT_002492_DO_NOT_RUN.txt
+LINE=45 ROLES=LOCAL_MODEL TEXT=HOOK="Transformers are not only machines. They are part of the energy backbone of every serious economy."
+
+============================================================
+GROUP=H00000591
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__90_DUPLIKATI_PO_HASHU__ea877def68e66a712dc400f3c7706f099810aa460c57528a2b4caf3f80622318_magija.py
+LINE=7 ROLES=MEMORY TEXT=# SSOT PODACI DIREKTNO IZ ALGORITMA (Injection)
+LINE=9 ROLES=MEMORY TEXT='Signal_ID': 'Doc02',
+LINE=21 ROLES=MEMORY TEXT=<h1 style='color:#1a3c5e; border-bottom:4px solid #1a3c5e; padding-bottom:10px;'>{data['Signal_ID']}: FINAL REVEAL</h1>
+LINE=39 ROLES=DANGER TEXT=os.system(f'pandoc t.html -o "{out_d}/Doc02_FINAL_REVEAL.docx"')
+
+============================================================
+GROUP=H00000440
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__2789fd32e8d3d90002909434d0e7937f7d88f75d8e2b85d70640fcdf037a8670_titan_network_auditor.py
+LINE=13 ROLES=MEMORY TEXT=DB_PATH = os.path.expanduser("~/05-RESOURCES/CMU/pipelines/05-signale/titan_executive.db")
+
+============================================================
+GROUP=H00000628
+FILE=/data/data/com.termux/files/home/bin/freya_core_before_multisignal_v4
+LINE=2 ROLES=ROUTER TEXT=# FREYA_CONVERSATION_WRAPPER_V3
+LINE=6 ROLES=ROUTER TEXT=CORE="$HOME/bin/freya_conversation_core_v3"
+LINE=10 ROLES=ROUTER TEXT=normalize() {
+LINE=22 ROLES=ROUTER TEXT=case "$TEXT" in
+LINE=43 ROLES=ROUTER TEXT=*"odgovori civil engineeringu"*|\
+
+============================================================
+GROUP=H00000630
+FILE=/data/data/com.termux/files/home/bin/freya_conversation_core_v3
+LINE=14 ROLES=ROUTER TEXT=case "$TEXT" in
+LINE=25 ROLES=ROUTER TEXT="napisi mail civil engineeringu"|"odgovori civil engineeringu")
+
+============================================================
+GROUP=H00000537
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__657da347bcf0243175782e6307b51e92555fb011b8cb318c9c50273e1122fd86_titan_reasoning_engine.py
+LINE=46 ROLES=MEMORY TEXT=# Kontrola dupliranja: ako zadatak već ne postoji u SSoT-u
+LINE=65 ROLES=MEMORY TEXT=print("[🔄] SSoT baza uspešno ažurirana i osvežena novim znanjem.")
+LINE=67 ROLES=MEMORY TEXT=print("[✓] Analiza završena. SSoT je ažuran, nema novih kontrolisanih anomalija.")
+
+============================================================
+GROUP=H00000949
+FILE=/data/data/com.termux/files/home/bin/freya-life
+LINE=38 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=70 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=113 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=249 ROLES=POLICY TEXT=--exclude-dir='99_HUMAN_GATE_HOLD' \
+LINE=336 ROLES=POLICY TEXT=- Human Gate je aktivan
+
+============================================================
+GROUP=H00000952
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/TITAN_GRID_1.0_Part7_Final_Documents.p.txt
+LINE=41 ROLES=ROUTER TEXT=7. RIZICI I ODGOVORNOST
+LINE=86 ROLES=ROUTER TEXT=- Osiguranje od odgovornosti
+
+============================================================
+GROUP=H00001688
+FILE=/data/data/com.termux/files/home/bin/014
+LINE=2 ROLES=ROUTER,STATIC_ANSWER TEXT=echo "FREYA 014 — Zapiši osobu kojoj treba odgovoriti"
+LINE=3 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=4 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=12 ROLES=ROUTER,STATIC_ANSWER TEXT=echo "freya note 014_Zapiši_osobu_kojoj_treba_odgovoriti"
+
+============================================================
+GROUP=H00000377
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/RED_HOLD__titan_todo_manager.py
+LINE=42 ROLES=DANGER TEXT="HARVESTER DAEMON (Mreža)": "titan_harvester_daemon.py"
+
+============================================================
+GROUP=H00000546
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__03_TCC_PROTOKOL_888__b422c41b806e809e52d21c4beca3ee397c2528093990c8df675f7c3ba593e6ec_titan_learning_matrix.py
+LINE=7 ROLES=MEMORY TEXT=print("\n[🤖] ENGINES ENGAGED: TITAN MACHINE LEARNING MATRIX...")
+LINE=10 ROLES=MEMORY TEXT=def simulacija_i_učenje():
+LINE=26 ROLES=MEMORY TEXT=print("        REZULTATI DINAMIČKOG MAŠINSKOG UČENJA          ")
+LINE=35 ROLES=MEMORY TEXT=# Pravljenje prediktivnih scenarija na osnovu učenja
+LINE=51 ROLES=MEMORY TEXT="Learning_Engine_Status": "CONTINUOUS_EVOLUTION"
+LINE=58 ROLES=MEMORY TEXT=send_alert("TITAN ORACLE", f"Učenje završeno. Optimalni prag odbrane postavljen na {equity_ratio:.1f}%")
+LINE=61 ROLES=MEMORY TEXT=simulacija_i_učenje()
+
+============================================================
+GROUP=H00000967
+FILE=/data/data/com.termux/files/home/bin/freya-ars-focus
+LINE=2 ROLES=POLICY TEXT=FREYA_BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=26 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=27 ROLES=POLICY TEXT=echo "DELETE=NO"
+LINE=44 ROLES=POLICY TEXT=grep -E 'TOTAL_MATCHES=|HUMAN_GATE_PRIORITY_REVIEW=|SECURITY_HOLD_NO_OPEN_NO_RUN=|NEEDS_CONTENT_REVIEW=|DUPLICATE_OR_LOW_TRUST_CANDIDATE=' "$COUNTS" 2>/dev/null || true
+LINE=54 ROLES=POLICY TEXT=echo "5. Sljedeća Human Gate odluka: izabrati prvih 10 dokumenata za ručni pregled sadržaja."
+LINE=63 ROLES=POLICY TEXT=echo "NEXT_SAFE_ACTION=HUMAN_GATE_SELECT_FIRST_10_CONTRACTS_FOR_CONTENT_REVIEW"
+
+============================================================
+GROUP=H00001690
+FILE=/data/data/com.termux/files/home/bin/020
+LINE=3 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=4 ROLES=POLICY TEXT=echo "DELETE=NO"
+
+============================================================
+GROUP=H00001748
+FILE=/data/data/com.termux/files/home/bin/039
+LINE=3 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=4 ROLES=POLICY TEXT=echo "DELETE=NO"
+
+============================================================
+GROUP=H00001757
+FILE=/data/data/com.termux/files/home/bin/034
+LINE=3 ROLES=POLICY TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=4 ROLES=POLICY TEXT=echo "DELETE=NO"

@@ -1,0 +1,155 @@
+#!/usr/bin/env python3
+"""
+DELTA_UNITY_ENGINE_v1.7 — ULTIMATE DEEP SCAN + ZIP EXTRACTION
+Ulazi u svako slovo + otvara i skenira sve zip fajlove
+"""
+
+import os, json, hashlib, uuid, subprocess, time, zipfile
+from datetime import datetime
+from pathlib import Path
+import requests
+import psutil
+
+print("DELTA_UNITY_ENGINE_v1.7 — ULTIMATE DEEP SCAN + ZIP EXTRACTION AKTIVIRAN")
+
+ROOT = Path("/")
+REPORTS = Path("/root/DELTA_UNITY_MEMORY")
+REPORTS.mkdir(parents=True, exist_ok=True)
+
+class DeltaUltraEngine:
+    def __init__(self):
+        self.signals = []
+        self.logic_graph = {}
+        self.network_data = {}
+        self.token_detections = {}
+        self.start_time = datetime.now()
+
+    def sha(self, data):
+        return hashlib.sha256(str(data).encode()).hexdigest()[:16]
+
+    def web_lookup(self, query):
+        try:
+            url = f"https://duckduckgo.com/html/?q={query.replace(' ', '+')}"
+            r = requests.get(url, headers={"User-Agent": "DeltaUltra/1.7"}, timeout=8)
+            if r.status_code == 200:
+                return r.text[:400].replace('\n', ' ')
+            return "No result"
+        except:
+            return "Lookup failed"
+
+    def extract_strings(self, filepath):
+        try:
+            result = subprocess.run(["strings", "-n", "8", str(filepath)], capture_output=True, text=True, timeout=8)
+            return result.stdout[:600]
+        except:
+            return ""
+
+    def analyze_network(self):
+        print("→ Analiza mrežnog saobraćaja...")
+        self.network_data = {
+            "timestamp": self.start_time.isoformat(),
+            "interfaces": psutil.net_io_counters(pernic=True),
+            "connections": []
+        }
+        try:
+            result = subprocess.run(["ss", "-tunap"], capture_output=True, text=True, timeout=10)
+            self.network_data["connections"] = result.stdout.splitlines()[:300]
+        except:
+            pass
+
+    def scan_zip(self, zip_path, parent_path=""):
+        """Rekurzivno otvara i skenira zip fajl"""
+        try:
+            with zipfile.ZipFile(zip_path, 'r') as zf:
+                for member in zf.namelist():
+                    if member.endswith('/'):
+                        continue
+                    full_member_path = f"{parent_path}[ZIP]/{member}" if parent_path else f"{zip_path}[ZIP]/{member}"
+                    try:
+                        with zf.open(member) as f:
+                            content = f.read(2000)
+                            preview = content.decode('utf-8', errors='ignore')[:500]
+                    except:
+                        preview = self.extract_strings(zip_path)[:400]  # fallback
+
+                    signal = {
+                        "path": full_member_path,
+                        "size_bytes": "inside_zip",
+                        "modified": "inside_zip",
+                        "hash": self.sha(full_member_path),
+                        "type": "zip_content",
+                        "preview": preview[:300],
+                        "from_zip": str(zip_path)
+                    }
+                    self.signals.append(signal)
+        except:
+            pass
+
+    def deep_scan(self):
+        print("→ NAJ DUBLJI SKEN + ZIP EXTRACTION...")
+        count = 0
+        KEYWORDS = ["TITAN", "DELTA", "UNITY", "VDR", "SSOT", "CAPEX", "DSCR", "GRID", "ESIA", "CEDIS", "ARS", "ADS", "NEURO", "MONO", "TOKEN"]
+
+        for root, dirs, files in os.walk(ROOT):
+            for file in files:
+                full_path = Path(root) / file
+                try:
+                    size = full_path.stat().st_size
+                    modified = datetime.fromtimestamp(full_path.stat().st_mtime).isoformat()
+
+                    if full_path.suffix.lower() == '.zip':
+                        self.scan_zip(full_path)  # Otvara zip i skenira sadržaj
+
+                    preview = ""
+                    if full_path.suffix.lower() in ['.txt','.md','.json','.py','.csv','.log']:
+                        try:
+                            preview = open(full_path, 'r', encod
+
+
+                        try:
+                            with open(full_path, 'r', encoding='utf-8', errors='ignore') as f:
+                                preview = f.read(500)
+                        except Exception:
+                            preview = self.extract_strings(full_path)
+                    
+                    # Logic to flag files containing specific keywords
+                    found_keywords = [k for k in KEYWORDS if k in preview.upper() or k in str(full_path).upper()]
+                    
+                    if found_keywords or full_path.suffix.lower() == '.zip':
+                        self.signals.append({
+                            "path": str(full_path),
+                            "size_bytes": size,
+                            "modified": modified,
+                            "hash": self.sha(str(full_path)),
+                            "keywords": found_keywords,
+                            "preview": preview[:300]
+                        })
+                        count += 1
+                        if count % 50 == 0:
+                            print(f"  → Pronađeno {count} relevantnih tragova...")
+                except Exception:
+                    continue
+
+    def save_report(self):
+        report_file = REPORTS / f"DELTA_SCAN_{uuid.uuid4().hex[:8]}.json"
+        report_data = {
+            "metadata": {
+                "engine": "DELTA_UNITY_v1.7",
+                "start_time": self.start_time.isoformat(),
+                "end_time": datetime.now().isoformat(),
+                "network_snapshot": self.network_data
+            },
+            "signals": self.signals
+        }
+        with open(report_file, 'w') as f:
+            json.dump(report_data, f, indent=4)
+        print(f"\n[!] SKENIRANJE ZAVRŠENO. Izveštaj sačuvan: {report_file}")
+
+if __name__ == "__main__":
+    engine = DeltaUltraEngine()
+    engine.analyze_network()
+    try:
+        engine.deep_scan()
+    except KeyboardInterrupt:
+        print("\n[!] Skeniranje prekinuto od strane korisnika.")
+    engine.save_report()

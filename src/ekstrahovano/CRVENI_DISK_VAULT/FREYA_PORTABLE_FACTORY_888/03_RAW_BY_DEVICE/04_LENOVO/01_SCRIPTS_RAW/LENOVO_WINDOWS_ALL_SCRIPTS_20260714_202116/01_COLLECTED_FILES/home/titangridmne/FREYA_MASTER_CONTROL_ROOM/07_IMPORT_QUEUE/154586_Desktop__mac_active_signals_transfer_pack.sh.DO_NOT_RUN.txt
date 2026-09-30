@@ -1,0 +1,155 @@
+#!/bin/zsh
+
+# === PROTOKOL 888 — MAC ACTIVE SIGNALS TO LENOVO LINUX PACK ===
+# MODE: COPY_ONLY / REVIEW_ONLY / NO_DELETE / NO_MOVE / NO_RENAME / NO_RUNTIME
+
+TS=$(date +"%Y%m%d_%H%M%S")
+PKG="$HOME/Desktop/LENOVO_LINUX_READY_PACKET_20260527_142316"
+OUT="$PKG/01_PAYLOAD/MAC_ACTIVE_SIGNALS_TRANSFER_$TS"
+
+mkdir -p "$OUT/00_EXISTING_MAPS"
+mkdir -p "$OUT/01_STATIC_CANDIDATE_FILES"
+mkdir -p "$OUT/02_REVIEW_ONLY_SCRIPTS_DO_NOT_RUN"
+mkdir -p "$OUT/03_AI_BROWSER_STORAGE_PATHS_ONLY"
+mkdir -p "$OUT/04_MANIFESTS"
+
+MANIFEST="$OUT/04_MANIFESTS/MAC_ACTIVE_SIGNALS_TRANSFER_MANIFEST_$TS.txt"
+REGISTER="$OUT/04_MANIFESTS/MAC_ACTIVE_SIGNALS_TRANSFER_SHA256_$TS.txt"
+CANDIDATES="$OUT/04_MANIFESTS/MAC_ACTIVE_SIGNAL_CANDIDATE_PATHS_$TS.txt"
+
+echo "=== MAC ACTIVE SIGNALS TRANSFER MANIFEST ===" > "$MANIFEST"
+echo "TIMESTAMP=$TS" >> "$MANIFEST"
+echo "SOURCE_NODE=MAC" >> "$MANIFEST"
+echo "TARGET_NODE=LENOVO_LINUX" >> "$MANIFEST"
+echo "MODE=COPY_ONLY" >> "$MANIFEST"
+echo "DELETE=BLOCKED" >> "$MANIFEST"
+echo "MOVE=BLOCKED" >> "$MANIFEST"
+echo "RENAME=BLOCKED" >> "$MANIFEST"
+echo "RUNTIME=BLOCKED" >> "$MANIFEST"
+echo "SCRIPT_EXECUTION=BLOCKED" >> "$MANIFEST"
+echo "HUMAN_GATE=ACTIVE" >> "$MANIFEST"
+echo "" >> "$MANIFEST"
+
+echo "=== COPYING EXISTING MAPS ===" >> "$MANIFEST"
+
+for f in \
+"$HOME/Desktop/MAC_TO_LENOVO_STATIC_CANDIDATE_MAP_20260527_142709.txt" \
+"$HOME/Desktop/MAC_CONTROL_TOWER_DEEP_STATIC_MAP_20260527_142759.txt" \
+"$HOME/Desktop/MAC_FINAL_BROAD_METADATA_SWEEP_FOR_LENOVO_20260527_143024.txt" \
+"$HOME/Desktop/MAC_GEMINI_STATIC_SWEEP_20260527_143519.txt" \
+"$HOME/Desktop/MAC_GROK_STATIC_SWEEP_20260527_143639.txt" \
+"$HOME/Desktop/MAC_GROK_XAI_PATHS_ONLY_20260527_143901.txt" \
+"$HOME/Desktop/MAC_LIVE_PROCESS_MAP_20260527_144047.txt" \
+"$HOME/Desktop/MAC_LIVE_NETWORK_MAP_20260527_144211.txt"
+do
+  if [ -f "$f" ]; then
+    cp "$f" "$OUT/00_EXISTING_MAPS/"
+    echo "COPIED_MAP=$f" >> "$MANIFEST"
+  else
+    echo "MISSING_MAP=$f" >> "$MANIFEST"
+  fi
+done
+
+echo "=== AI BROWSER STORAGE PATHS ONLY — NO RAW DATABASE COPY ===" > "$OUT/03_AI_BROWSER_STORAGE_PATHS_ONLY/AI_BROWSER_STORAGE_PATHS_ONLY_$TS.txt"
+echo "GROK_CHROME_INDEXEDDB_PATH=/Users/danijeladjurovic/Library/Application Support/Google/Chrome/Profile 2/IndexedDB/https_grok.com_0.indexeddb.leveldb" >> "$OUT/03_AI_BROWSER_STORAGE_PATHS_ONLY/AI_BROWSER_STORAGE_PATHS_ONLY_$TS.txt"
+echo "RAW_BROWSER_DB_COPY=NO" >> "$OUT/03_AI_BROWSER_STORAGE_PATHS_ONLY/AI_BROWSER_STORAGE_PATHS_ONLY_$TS.txt"
+echo "REASON=Privacy and security; path evidence only for Lenovo review." >> "$OUT/03_AI_BROWSER_STORAGE_PATHS_ONLY/AI_BROWSER_STORAGE_PATHS_ONLY_$TS.txt"
+
+echo "=== FINDING USER-SPACE CANDIDATES ===" >> "$MANIFEST"
+
+find "$HOME/Desktop" "$HOME/Documents" "$HOME/Downloads" -maxdepth 8 \( \
+  -iname "*signal*" -o \
+  -iname "*script*" -o \
+  -iname "*algorithm*" -o \
+  -iname "*algoritam*" -o \
+  -iname "*adapter*" -o \
+  -iname "*transformer*" -o \
+  -iname "*router*" -o \
+  -iname "*pipeline*" -o \
+  -iname "*model*" -o \
+  -iname "*ingestion*" -o \
+  -iname "*builder*" -o \
+  -iname "*titan*" -o \
+  -iname "*cmu*" -o \
+  -iname "*delta*" -o \
+  -iname "*manifest*" -o \
+  -iname "*register*" -o \
+  -iname "*sha*" -o \
+  -iname "*hash*" -o \
+  -iname "*.py" -o \
+  -iname "*.sh" -o \
+  -iname "*.command" -o \
+  -iname "*.ps1" -o \
+  -iname "*.bat" -o \
+  -iname "*.js" -o \
+  -iname "*.ts" -o \
+  -iname "*.json" -o \
+  -iname "*.jsonl" -o \
+  -iname "*.yaml" -o \
+  -iname "*.yml" -o \
+  -iname "*.md" -o \
+  -iname "*.txt" -o \
+  -iname "*.csv" \
+\) \
+  ! -path "$PKG/*" \
+  ! -path "$HOME/Desktop/LENOVO_LINUX_READY_PACKET_*" \
+  ! -name ".DS_Store" \
+  ! -iname "SpotifyInstaller.zip" \
+  -type f -print 2>/dev/null | sort > "$CANDIDATES"
+
+echo "CANDIDATE_LIST=$CANDIDATES" >> "$MANIFEST"
+echo "=== COPYING SAFE CANDIDATES ===" >> "$MANIFEST"
+
+while IFS= read -r f; do
+  [ -f "$f" ] || continue
+
+  size=$(stat -f "%z" "$f" 2>/dev/null || echo 0)
+  base=$(echo "$f" | sed "s#^$HOME/##" | sed 's#[/: ]#__#g')
+
+  case "$f" in
+    *.sh|*.command|*.ps1|*.bat|*.py|*.js|*.ts)
+      if [ "$size" -le 5000000 ]; then
+        cp "$f" "$OUT/02_REVIEW_ONLY_SCRIPTS_DO_NOT_RUN/${base}.DO_NOT_RUN.txt"
+        echo "SCRIPT_REVIEW_ONLY_COPIED=$f SIZE=$size" >> "$MANIFEST"
+      else
+        echo "SCRIPT_TOO_LARGE_NOT_COPIED=$f SIZE=$size" >> "$MANIFEST"
+      fi
+      ;;
+    *.json|*.jsonl|*.yaml|*.yml|*.md|*.txt|*.csv)
+      if [ "$size" -le 10000000 ]; then
+        cp "$f" "$OUT/01_STATIC_CANDIDATE_FILES/$base"
+        echo "STATIC_FILE_COPIED=$f SIZE=$size" >> "$MANIFEST"
+      else
+        echo "STATIC_FILE_TOO_LARGE_NOT_COPIED=$f SIZE=$size" >> "$MANIFEST"
+      fi
+      ;;
+    *)
+      echo "PATH_RECORDED_ONLY_NOT_COPIED=$f SIZE=$size" >> "$MANIFEST"
+      ;;
+  esac
+done < "$CANDIDATES"
+
+echo "" >> "$MANIFEST"
+echo "=== TRANSFER RULES ===" >> "$MANIFEST"
+echo "BROWSER_RAW_DATABASES_COPIED=NO" >> "$MANIFEST"
+echo "SYSTEM_LIBRARY_RAW_COPY=NO" >> "$MANIFEST"
+echo "SCRIPT_EXECUTION_ALLOWED=NO" >> "$MANIFEST"
+echo "LENOVO_ACTION=STATIC_REVIEW_ONLY" >> "$MANIFEST"
+
+find "$OUT" -type f -print0 | xargs -0 shasum -a 256 > "$REGISTER"
+find "$PKG" -type f -print0 | xargs -0 shasum -a 256 > "$PKG/02_HASH_REGISTER/SHA256_REGISTER.txt"
+
+cd "$HOME/Desktop" || exit 1
+
+FINAL_ZIP="LENOVO_LINUX_READY_PACKET_20260527_142316_WITH_ACTIVE_SIGNALS_$TS.zip"
+zip -r "$FINAL_ZIP" "LENOVO_LINUX_READY_PACKET_20260527_142316"
+
+FINAL_SHA=$(shasum -a 256 "$FINAL_ZIP" | awk '{print $1}')
+
+open "$HOME/Desktop"
+
+echo "DONE"
+echo "ACTIVE_TRANSFER_FOLDER=$OUT"
+echo "FINAL_ZIP=$HOME/Desktop/$FINAL_ZIP"
+echo "FINAL_SHA256=$FINAL_SHA"
+echo "STATUS=MAC_ACTIVE_SIGNALS_TRANSFER_READY_FOR_LENOVO"

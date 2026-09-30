@@ -1,0 +1,14 @@
+FREYA ISOLATED VOICE POLICY V1
+HUMAN_GATE=Danijela_Djurovic_Keskin
+PROTOKOL=888
+
+1. Glasovna sesija počinje samo eksplicitnom naredbom Human Gate-a.
+2. Samo jedno slušanje i jedan odgovor po sesiji.
+3. Nema stalnog mikrofona, daemon procesa niti rada u pozadini.
+4. Audio se ne snima i ne čuva.
+5. Prepoznati tekst se nikada ne izvršava kao komanda.
+6. Aktivna FREYA ostaje nepromijenjena.
+7. Lokalni odgovor mora proći postojeći policy checker.
+8. Mrežni odgovor nije dio lokalnog prototipa V1.
+9. TTS izgovara samo filtrirani tekst odgovora.
+10. Prototip nije kanonski dok ne prođe izolovani test i Human Gate pregled.

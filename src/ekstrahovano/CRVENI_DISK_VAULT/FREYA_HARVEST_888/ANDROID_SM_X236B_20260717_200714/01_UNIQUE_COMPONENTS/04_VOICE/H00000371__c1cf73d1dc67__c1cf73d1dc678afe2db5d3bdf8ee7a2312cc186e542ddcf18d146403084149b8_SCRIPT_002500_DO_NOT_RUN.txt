@@ -1,0 +1,266 @@
+#!/bin/zsh
+
+VAULT="/Volumes/DANIJELA HARD DISK/MEC_CMU_MACBOOK_BACKUP_VAULT"
+
+ROOT="$VAULT/29_DAILY_PIPELINE_HARMONIZATION"
+CONTROL="$ROOT/99_CONTROL"
+DAILY="$ROOT/01_DAILY_HARMONIZATION_LOGS"
+PACKAGES="$ROOT/02_EVERY_3RD_DAY_PUBLICATION_PACKETS"
+
+PIPELINE_A="$VAULT/27_LENOVO_LINKEDIN_PIPELINE_INTAKE"
+PIPELINE_B="$VAULT/28_IPHONE_METADATA_TO_ANDROID_LINKEDIN_BRIDGE"
+
+STATE="$CONTROL/DAY_COUNTER.txt"
+STAMP=$(date +"%Y%m%d_%H%M%S")
+TODAY=$(date +"%Y-%m-%d")
+
+mkdir -p "$CONTROL" "$DAILY" "$PACKAGES"
+
+if [ ! -f "$STATE" ]; then
+  echo "0" > "$STATE"
+fi
+
+DAY_COUNT=$(cat "$STATE" 2>/dev/null)
+case "$DAY_COUNT" in
+  ''|*[!0-9]*) DAY_COUNT=0 ;;
+esac
+
+DAY_COUNT=$((DAY_COUNT + 1))
+echo "$DAY_COUNT" > "$STATE"
+
+DAILY_STATUS="$DAILY/DAILY_PIPELINE_HARMONIZATION_STATUS_${STAMP}.txt"
+DAILY_HASH="$DAILY/DAILY_PIPELINE_HARMONIZATION_SHA256_${STAMP}.csv"
+
+echo "SHA256,SIZE_BYTES,FILE_PATH" > "$DAILY_HASH"
+
+for BASE in "$PIPELINE_A" "$PIPELINE_B"; do
+  if [ -d "$BASE" ]; then
+    find "$BASE" -type f \( -name "*.txt" -o -name "*.csv" -o -name "*.md" -o -name "*.json" -o -name "*.svg" -o -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.pdf" \) 2>/dev/null | sort | tail -300 | while IFS= read -r F; do
+      SHA=$(shasum -a 256 "$F" 2>/dev/null | awk '{print $1}')
+      SIZE=$(stat -f%z "$F" 2>/dev/null)
+      echo "$SHA,$SIZE,\"$F\"" >> "$DAILY_HASH"
+    done
+  fi
+done
+
+HASHED_FILES=$(( $(wc -l < "$DAILY_HASH") - 1 ))
+
+{
+  echo "DAILY_PIPELINE_HARMONIZATION_STATUS"
+  echo "Timestamp: $(date)"
+  echo ""
+  echo "STATUS:"
+  echo "DAILY_PIPELINE_HARMONIZATION_CREATED=YES"
+  echo "DAY_COUNTER=$DAY_COUNT"
+  echo ""
+  echo "PIPELINES:"
+  echo "LENOVO_LINKEDIN_PIPELINE=$PIPELINE_A"
+  echo "PVE_IPHONE_ANDROID_LINKEDIN_BRIDGE=$PIPELINE_B"
+  echo ""
+  echo "OUTPUTS:"
+  echo "DAILY_HASH_REGISTER=$DAILY_HASH"
+  echo ""
+  echo "COUNTS:"
+  echo "HASHED_FILES=$HASHED_FILES"
+  echo ""
+  echo "GUARDRAILS:"
+  echo "DAILY_HARMONIZATION_ONLY=YES"
+  echo "AUTO_POSTING_DONE=NO"
+  echo "AUTO_EMAIL_SEND_DONE=NO"
+  echo "DELETE_DONE=NO"
+  echo "PATCH_DONE=NO"
+  echo "RUN_ALL_DONE=NO"
+} > "$DAILY_STATUS"
+
+if [ $((DAY_COUNT % 3)) -eq 0 ]; then
+  PACKET="$PACKAGES/PUBLICATION_PACKET_DAY_${DAY_COUNT}_${STAMP}"
+  mkdir -p "$PACKET"
+
+  STORY_VISUAL="$PACKET/REAL_LIFE_STORY_VISUAL_${STAMP}.svg"
+  SHA_VISUAL="$PACKET/SHA_CERTIFICATE_VISUAL_${STAMP}.svg"
+  LINKEDIN_TEXT="$PACKET/LINKEDIN_TEXT_DRAFT_${STAMP}.txt"
+  INSTAGRAM_TEXT="$PACKET/INSTAGRAM_TEXT_DRAFT_${STAMP}.txt"
+  EMAIL_DRAFT="$PACKET/EMAIL_DRAFT_TO_DANIJELA_${STAMP}.eml"
+  PACKAGE_HASH="$PACKET/PUBLICATION_PACKET_SHA256_${STAMP}.csv"
+  PACKET_STATUS="$PACKET/PUBLICATION_PACKET_STATUS_${STAMP}.txt"
+
+  cat > "$STORY_VISUAL" <<SVG
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+  <rect width="1600" height="900" fill="#07111f"/>
+  <rect x="70" y="70" width="1460" height="760" rx="40" fill="#10233f" stroke="#7aa7d9" stroke-width="4"/>
+  <text x="120" y="170" font-family="Arial" font-size="54" fill="#ffffff">TITAN GRID — Real Life Story</text>
+  <text x="120" y="250" font-family="Arial" font-size="34" fill="#d9e8ff">Every claim must pass through evidence, structure, and human review.</text>
+  <text x="120" y="330" font-family="Arial" font-size="30" fill="#ffffff">Built from Montenegro by Danijela Keskin</text>
+  <text x="120" y="395" font-family="Arial" font-size="28" fill="#b9d7ff">Daily pipeline harmonization: active</text>
+  <text x="120" y="455" font-family="Arial" font-size="28" fill="#b9d7ff">Publication package: generated every 3rd day</text>
+  <text x="120" y="515" font-family="Arial" font-size="28" fill="#b9d7ff">Human-controlled. Evidence-first. Manual publication only.</text>
+  <text x="120" y="710" font-family="Arial" font-size="24" fill="#ffffff">No approval, funding, contract, partnership, endorsement, or institutional validation claim.</text>
+  <text x="120" y="770" font-family="Arial" font-size="22" fill="#9fbce0">Generated: $TODAY | Protocol 888</text>
+</svg>
+SVG
+
+  cat > "$SHA_VISUAL" <<SVG
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+  <rect width="1600" height="900" fill="#0b0f17"/>
+  <rect x="80" y="80" width="1440" height="740" rx="32" fill="#f4f7fb" stroke="#333333" stroke-width="4"/>
+  <text x="130" y="170" font-family="Arial" font-size="48" fill="#111111">SHA-256 Publication Evidence Certificate</text>
+  <text x="130" y="250" font-family="Arial" font-size="30" fill="#333333">TITAN GRID daily harmonization package</text>
+  <text x="130" y="330" font-family="Arial" font-size="28" fill="#111111">Operator: Danijela Keskin</text>
+  <text x="130" y="390" font-family="Arial" font-size="26" fill="#333333">SHA-256 confirms file fingerprint and publication-evidence record only.</text>
+  <text x="130" y="450" font-family="Arial" font-size="26" fill="#333333">It does not prove ownership, approval, partnership, certification, funding, or contract award.</text>
+  <text x="130" y="510" font-family="Arial" font-size="26" fill="#333333">Public use remains under operator responsibility and applicable rights-to-use conditions.</text>
+  <text x="130" y="650" font-family="Arial" font-size="24" fill="#333333">Generated: $TODAY</text>
+  <text x="130" y="710" font-family="Arial" font-size="24" fill="#333333">Manual publication only. No auto-posting.</text>
+</svg>
+SVG
+
+  cat > "$LINKEDIN_TEXT" <<TEXT
+The strongest project is not the loudest one.
+
+It is the one whose evidence can survive review.
+
+This is the discipline I am building inside TITAN GRID:
+
+evidence before claims,
+structure before promotion,
+human review before public confidence.
+
+Every third day, my local system creates a new publication draft package from the harmonized evidence chain.
+
+It does not publish automatically.
+It does not claim approval.
+It does not claim funding.
+It does not claim partnership.
+
+It prepares a human-reviewed story, a visual, a SHA-256 certificate visual, and a clean record for responsible public communication.
+
+For me, this is what responsible AI governance looks like:
+
+truth before promotion,
+evidence before claims,
+human responsibility before automation.
+
+Danijela Keskin
+Operator & Architect — TITAN GRID
+CEO, Ars Metal Industries DOO Montenegro
+
+#TITANGRID #Protocol888 #EvidenceFirst #AIGovernance #DataRoom #HumanControlledAI #Montenegro #CrnaGora #MNE #EuropeanUnion #EU #Turkey #Türkiye #IndustrialDevelopment #ResponsibleAI #WomenInBusiness #BuiltFromMontenegro #GlobalVision #World
+TEXT
+
+  cat > "$INSTAGRAM_TEXT" <<TEXT
+Svaka jaka priča mora imati dokaz iza sebe.
+
+TITAN GRID se ne gradi da zamijeni čovjeka.
+
+Gradi se da zaštiti ljudsku odluku, dokumente, istinu i odgovornost.
+
+Moj sistem sada svakog dana harmonizuje dokazni lanac, a svakog trećeg dana priprema novi paket za javnu komunikaciju:
+
+vizual,
+SHA-256 evidence certificate,
+LinkedIn tekst,
+Instagram tekst,
+i email draft za ljudski pregled.
+
+Ništa se ne objavljuje automatski.
+
+Sve ostaje pod mojom ljudskom kontrolom.
+
+Evidence before claims.
+Human before automation.
+
+Danijela Keskin
+Operator & Architect — TITAN GRID
+CEO, Ars Metal Industries DOO Montenegro
+
+#TITANGRID #Protocol888 #EvidenceFirst #AIGovernance #DataRoom #HumanControlledAI #Montenegro #CrnaGora #MNE #EuropeanUnion #EU #Turkey #Türkiye #IndustrialDevelopment #ResponsibleAI #WomenInBusiness #BuiltFromMontenegro #GlobalVision #World
+TEXT
+
+  cat > "$EMAIL_DRAFT" <<EMAIL
+To: danijela.meps@gmail.com
+Subject: TITAN GRID — 3rd Day Publication Package — $TODAY
+
+Danijela,
+
+The 3rd-day TITAN GRID publication package has been created locally for human review.
+
+Package folder:
+$PACKET
+
+Included:
+1. Real-life story visual
+2. SHA-256 certificate visual
+3. LinkedIn text draft
+4. Instagram text draft
+5. SHA-256 package register
+
+Guardrails:
+AUTO_POSTING_TO_LINKEDIN=NO
+AUTO_POSTING_TO_INSTAGRAM=NO
+AUTO_EMAIL_SEND=NO
+HUMAN_REVIEW_REQUIRED=YES
+
+This is an email-ready draft only. Manual review and manual sending remain required.
+
+TITAN GRID Protocol 888
+EMAIL
+
+  echo "SHA256,SIZE_BYTES,FILE_PATH" > "$PACKAGE_HASH"
+  for F in "$STORY_VISUAL" "$SHA_VISUAL" "$LINKEDIN_TEXT" "$INSTAGRAM_TEXT" "$EMAIL_DRAFT"; do
+    SHA=$(shasum -a 256 "$F" | awk '{print $1}')
+    SIZE=$(stat -f%z "$F" 2>/dev/null)
+    echo "$SHA,$SIZE,\"$F\"" >> "$PACKAGE_HASH"
+  done
+
+  {
+    echo "THIRD_DAY_PUBLICATION_PACKET_STATUS"
+    echo "Timestamp: $(date)"
+    echo ""
+    echo "STATUS:"
+    echo "THIRD_DAY_PUBLICATION_PACKET_CREATED=YES"
+    echo ""
+    echo "PACKET_FOLDER=$PACKET"
+    echo "REAL_LIFE_STORY_VISUAL=$STORY_VISUAL"
+    echo "SHA_CERTIFICATE_VISUAL=$SHA_VISUAL"
+    echo "LINKEDIN_TEXT=$LINKEDIN_TEXT"
+    echo "INSTAGRAM_TEXT=$INSTAGRAM_TEXT"
+    echo "EMAIL_DRAFT=$EMAIL_DRAFT"
+    echo "PACKAGE_HASH_REGISTER=$PACKAGE_HASH"
+    echo ""
+    echo "GUARDRAILS:"
+    echo "AUTO_POSTING_TO_LINKEDIN=NO"
+    echo "AUTO_POSTING_TO_INSTAGRAM=NO"
+    echo "AUTO_EMAIL_SEND=NO"
+    echo "EMAIL_DRAFT_ONLY=YES"
+    echo "HUMAN_REVIEW_REQUIRED=YES"
+    echo "DELETE_DONE=NO"
+    echo "PATCH_DONE=NO"
+    echo "RUN_ALL_DONE=NO"
+  } > "$PACKET_STATUS"
+
+  open "$PACKET"
+fi
+
+exit 0
+
+# TITAN GRID AVATAR VISUAL RULE
+# All future third-day visuals must use the approved Danijela Keskin avatar reference when available.
+# No random face generation. No alternate avatar identity.
+# Avatar reference path:
+# /Volumes/DANIJELA HARD DISK/MEC_CMU_MACBOOK_BACKUP_VAULT/29_DAILY_PIPELINE_HARMONIZATION/00_AVATAR_REFERENCE/danijela_keskin_avatar.png
+
+
+# PROTOCOL LINKEDIN LIVE — DAILY WORKDAY HARMONIZATION RULE
+# Every daily harmonization and every third-day publication packet must follow:
+# - TITAN GRID parent project framing
+# - Danijela Keskin progress narrative
+# - Mac / Android / Lenovo harmonization status
+# - SHA-256 evidence chain
+# - educational / attractive / lightly sarcastic but professional tone
+# - no approval/funding/contract/partnership/institutional-validation overclaim
+# - manual publication only
+# - email draft only
+# - no browser automation / scraping / following / comments / DMs
+# Protocol file:
+# /Volumes/DANIJELA HARD DISK/MEC_CMU_MACBOOK_BACKUP_VAULT/29_DAILY_PIPELINE_HARMONIZATION/03_LINKEDIN_LIVE_PROTOCOL/
+

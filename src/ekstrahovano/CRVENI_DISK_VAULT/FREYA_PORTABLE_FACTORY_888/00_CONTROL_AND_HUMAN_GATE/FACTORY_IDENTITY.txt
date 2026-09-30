@@ -1,0 +1,12 @@
+============================================================
+FREYA PORTABLE FACTORY 888
+============================================================
+HUMAN_GATE=Danijela_Djurovic_Keskin
+PROTOKOL=888
+CREATED_AT=2026-07-14T14:33:25
+DISK_VOLUME=FREYARED888
+DISK_DEVICE=/dev/disk4s1
+FACTORY_ROOT=/Users/danijeladjurovic/FREYA_RED_MOUNT_888/FREYA_PORTABLE_FACTORY_888
+DEVICE_COUNT=6
+PRIMARY_CURRENT_DEVICE=01_MAC
+============================================================

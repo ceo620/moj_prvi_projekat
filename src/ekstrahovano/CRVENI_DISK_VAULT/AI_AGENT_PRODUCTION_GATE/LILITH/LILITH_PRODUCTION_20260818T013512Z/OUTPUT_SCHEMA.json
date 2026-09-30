@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "agent": {
+      "const": "LILITH"
+    },
+    "agent_id": {
+      "const": "LILITH_MAC_AI_AGENT_888"
+    },
+    "model": {
+      "const": "llama3.1:latest"
+    },
+    "role": {
+      "const": "SIGNAL_RESEARCH"
+    },
+    "signals": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "category": {
+            "enum": [
+              "important",
+              "normal",
+              "noise",
+              "review_required"
+            ],
+            "type": "string"
+          },
+          "confidence": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "evidence": {
+            "maxLength": 1000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "label": {
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "category",
+          "evidence",
+          "confidence"
+        ],
+        "type": "object"
+      },
+      "maxItems": 50,
+      "type": "array"
+    },
+    "status": {
+      "const": "LOCAL_DRY_RUN_ONLY"
+    }
+  },
+  "required": [
+    "agent",
+    "agent_id",
+    "role",
+    "model",
+    "status",
+    "signals"
+  ],
+  "type": "object"
+}

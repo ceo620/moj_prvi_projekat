@@ -1,0 +1,21 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+TARGET_DIR="$HOME/learning_modules"
+TARGET_FILE="$TARGET_DIR/core_model.bin"
+LOG_FILE="$TARGET_DIR/pipeline.log"
+
+# Clean up older daemon processes if they are hanging around
+pkill -f inotifywait
+
+inotifywait -q -m -e modify -e close_write "$TARGET_DIR" | while read -r directory events filename; do
+    if [ "$filename" = "core_model.bin" ]; then
+        TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+        echo "[$TIMESTAMP] [!] INTERCEPT: Active file event ($events) on $filename" >> "$LOG_FILE"
+        
+        # Run verification engine
+        $HOME/run_engine.sh >> "$LOG_FILE" 2>&1
+        
+        # Introduce a cool-down buffer to prevent rapid multi-firing loops
+        sleep 3
+    fi
+done

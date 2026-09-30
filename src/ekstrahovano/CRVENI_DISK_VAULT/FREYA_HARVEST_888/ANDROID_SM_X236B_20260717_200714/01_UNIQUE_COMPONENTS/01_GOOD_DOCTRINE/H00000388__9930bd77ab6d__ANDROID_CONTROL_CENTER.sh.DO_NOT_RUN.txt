@@ -1,0 +1,172 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -u
+
+MEM="/sdcard/delta_v4_memory.json"
+DL="/sdcard/Download"
+TS="$(date +%Y%m%d_%H%M%S)"
+LOG="$DL/ANDROID_CONTROL_CENTER_LOG_$TS.txt"
+
+log() {
+  echo "$1" | tee -a "$LOG"
+}
+
+pause() {
+  echo ""
+  read -r -p "Pritisni ENTER za nastavak..."
+}
+
+status_check() {
+  log "===== ANDROID CONTROL STATUS ====="
+  log "Timestamp: $(date '+%Y-%m-%d %H:%M:%S')"
+  log "User: $(whoami)"
+  log "Home: $HOME"
+  log "Shell: $SHELL"
+  log ""
+
+  log "===== WIFI ====="
+  if command -v termux-wifi-connectioninfo >/dev/null 2>&1; then
+    termux-wifi-connectioninfo 2>&1 | tee -a "$LOG"
+  else
+    log "termux-wifi-connectioninfo not available"
+  fi
+
+  log ""
+  log "===== SSHD ====="
+  ps aux | grep '[s]shd' | tee -a "$LOG" || log "sshd not running"
+
+  log ""
+  log "===== LOCAL SSH TEST ====="
+  python3 - <<'PY' 2>&1 | tee -a "$LOG"
+import socket
+try:
+    s = socket.create_connection(("127.0.0.1", 8022), timeout=5)
+    print("LOCAL_SSH_8022: PASS")
+    print("BANNER:", s.recv(120).decode(errors="ignore").strip())
+    s.close()
+except Exception as e:
+    print("LOCAL_SSH_8022: FAIL")
+    print("ERROR:", e)
+PY
+
+  log ""
+  log "===== MEMORY ====="
+  if [ -f "$MEM" ]; then
+    ls -lah "$MEM" | tee -a "$LOG"
+    sha256sum "$MEM" | tee -a "$LOG"
+  else
+    log "MISSING: $MEM"
+  fi
+}
+
+start_ssh() {
+  log "===== START SSHD ====="
+  pkill sshd 2>/dev/null || true
+  sshd -p 8022
+  sleep 1
+  ps aux | grep '[s]shd' | tee -a "$LOG" || log "sshd did not start"
+}
+
+stop_ssh() {
+  log "===== STOP SSHD ====="
+  pkill sshd 2>/dev/null || true
+  log "sshd stop command issued."
+  ps aux | grep '[s]shd' | tee -a "$LOG" || log "sshd not running"
+}
+
+validate_memory() {
+  log "===== DELTA MEMORY VALIDATION ====="
+  python3 - <<'PY' 2>&1 | tee -a "$LOG"
+import json, os, hashlib
+path="/sdcard/delta_v4_memory.json"
+if not os.path.exists(path):
+    print("MEMORY_STATUS: MISSING")
+else:
+    data=open(path,"rb").read()
+    print("SIZE_BYTES:", len(data))
+    print("SHA256:", hashlib.sha256(data).hexdigest())
+    try:
+        obj=json.loads(data.decode("utf-8"))
+        print("JSON_PARSE: PASS")
+        print("ROOT_TYPE:", type(obj).__name__)
+        if isinstance(obj, dict):
+            print("TOP_KEYS:", list(obj.keys())[:30])
+    except Exception as e:
+        print("JSON_PARSE: FAIL")
+        print("ERROR:", e)
+PY
+}
+
+export_package() {
+  TS2="$(date +%Y%m%d_%H%M%S)"
+  ROOT="$DL/ANDROID_OPERATOR_CONTROL_EXPORT_$TS2"
+  mkdir -p "$ROOT"
+
+  REPORT="$ROOT/ANDROID_OPERATOR_CONTROL_REPORT_$TS2.txt"
+  HASH="$ROOT/ANDROID_OPERATOR_CONTROL_SHA256_REGISTER_$TS2.txt"
+
+  {
+    echo "ANDROID OPERATOR CONTROL EXPORT"
+    echo "Timestamp: $(date '+%Y-%m-%d %H:%M:%S')"
+    echo "Mode: CONTROLLED_EXPORT_ONLY"
+    echo "Controls: NO DELETE | NO MOVE | NO LOOP | NO FAKE SYNC"
+    echo ""
+    echo "User: $(whoami)"
+    echo "Home: $HOME"
+    echo ""
+    echo "WiFi:"
+    termux-wifi-connectioninfo 2>/dev/null || echo "wifi info unavailable"
+    echo ""
+    echo "SSHD:"
+    ps aux | grep '[s]shd' || echo "sshd not running"
+    echo ""
+    echo "Memory:"
+    ls -lah "$MEM" 2>/dev/null || echo "memory missing"
+  } > "$REPORT"
+
+  if [ -f "$MEM" ]; then
+    cp "$MEM" "$ROOT/delta_v4_memory_COPY_$TS2.json"
+  fi
+
+  sha256sum "$REPORT" > "$HASH"
+  if [ -f "$ROOT/delta_v4_memory_COPY_$TS2.json" ]; then
+    sha256sum "$ROOT/delta_v4_memory_COPY_$TS2.json" >> "$HASH"
+  fi
+
+  cd "$DL"
+  tar -czf "ANDROID_OPERATOR_CONTROL_EXPORT_$TS2.tar.gz" "ANDROID_OPERATOR_CONTROL_EXPORT_$TS2"
+  sha256sum "ANDROID_OPERATOR_CONTROL_EXPORT_${TS2}.tar.gz" > "ANDROID_OPERATOR_CONTROL_EXPORT_${TS2}_TAR_SHA256.txt"
+
+  echo ""
+  echo "EXPORT PACKAGE CREATED:"
+  echo "$ROOT"
+  echo ""
+  echo "TAR:"
+  echo "$DL/ANDROID_OPERATOR_CONTROL_EXPORT_$TS2.tar.gz"
+  echo ""
+  cat "$DL/ANDROID_OPERATOR_CONTROL_EXPORT_${TS2}_TAR_SHA256.txt"
+}
+
+while true; do
+  clear
+  echo "========================================="
+  echo "ANDROID CONTROL CENTER — OPERATOR MODE"
+  echo "========================================="
+  echo "1) Status check"
+  echo "2) Start SSHD on port 8022"
+  echo "3) Stop SSHD"
+  echo "4) Validate Delta memory"
+  echo "5) Create control export package"
+  echo "6) Exit"
+  echo "========================================="
+  read -r -p "Choose option: " choice
+
+  case "$choice" in
+    1) status_check; pause ;;
+    2) start_ssh; pause ;;
+    3) stop_ssh; pause ;;
+    4) validate_memory; pause ;;
+    5) export_package; pause ;;
+    6) echo "Exit."; exit 0 ;;
+    *) echo "Invalid option."; pause ;;
+  esac
+done

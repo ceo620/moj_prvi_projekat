@@ -1,0 +1,17 @@
+{
+    "sender":  "FREYA_LENOVO_NODE_888",
+    "receiver":  "FREYA_MAC_LAP_TOP",
+    "human_gate":  "ACTIVE",
+    "scheduled_time":  "09:00",
+    "timezone":  "Europe/Podgorica",
+    "delivery_enabled":  false,
+    "scheduler_enabled":  false,
+    "mac_endpoint_approved":  false,
+    "mac_host":  null,
+    "mac_username":  null,
+    "mac_destination":  null,
+    "authentication":  null,
+    "acknowledgement_needed":  true,
+    "retry_policy":  "FAIL_CLOSED",
+    "blocked_reason":  "MAC_ENDPOINT_NOT_YET_VALIDATED"
+}

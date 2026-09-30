@@ -1,0 +1,209 @@
+#!/bin/zsh
+
+VAULT="/Volumes/DANIJELA HARD DISK/MEC_CMU_MACBOOK_BACKUP_VAULT"
+ROOT="$VAULT/29_DAILY_PIPELINE_HARMONIZATION"
+EMAIL_PACKETS="$ROOT/04_LINKEDIN_LIVE_EMAIL_PACKETS"
+CONTROL="$ROOT/99_CONTROL"
+AVATAR="$ROOT/00_AVATAR_REFERENCE/danijela_keskin_avatar.png"
+RECIPIENT="ceo@titangrid.info"
+
+STAMP=$(date +"%Y%m%d_%H%M%S")
+TODAY=$(date +"%Y-%m-%d")
+PACKET="$EMAIL_PACKETS/LINKEDIN_LIVE_EMAIL_PACKET_$STAMP"
+
+mkdir -p "$PACKET" "$CONTROL"
+
+STORY_PNG="$PACKET/LINKEDIN_LIVE_REAL_STORY_VISUAL_$STAMP.png"
+CERT_PNG="$PACKET/LINKEDIN_LIVE_SHA_CERTIFICATE_$STAMP.png"
+LINKEDIN_TXT="$PACKET/LINKEDIN_LIVE_LINKEDIN_TEXT_$STAMP.txt"
+INSTAGRAM_TXT="$PACKET/LINKEDIN_LIVE_INSTAGRAM_TEXT_$STAMP.txt"
+EMAIL_BODY="$PACKET/LINKEDIN_LIVE_EMAIL_BODY_$STAMP.txt"
+HASH_CSV="$PACKET/LINKEDIN_LIVE_PACKET_SHA256_$STAMP.csv"
+STATUS="$PACKET/LINKEDIN_LIVE_EMAIL_PACKET_STATUS_$STAMP.txt"
+
+if [ -f "$AVATAR" ]; then
+  AVATAR_FOUND="YES"
+  AVATAR_SHA=$(shasum -a 256 "$AVATAR" | awk '{print $1}')
+else
+  AVATAR_FOUND="NO"
+  AVATAR_SHA="NOT_AVAILABLE"
+fi
+
+python3 - <<PY
+import struct, zlib, os
+
+story_png = "$STORY_PNG"
+cert_png = "$CERT_PNG"
+today = "$TODAY"
+avatar_found = "$AVATAR_FOUND"
+avatar_sha = "$AVATAR_SHA"
+
+def png_write(path, width, height, bg, bars):
+    def chunk(tag, data):
+        return struct.pack(">I", len(data)) + tag + data + struct.pack(">I", zlib.crc32(tag + data) & 0xffffffff)
+
+    rows = []
+    for y in range(height):
+        row = bytearray()
+        row.append(0)
+        for x in range(width):
+            color = bg
+            for (x1, y1, x2, y2, c) in bars:
+                if x1 <= x <= x2 and y1 <= y <= y2:
+                    color = c
+            row.extend(color)
+        rows.append(bytes(row))
+
+    raw = b"".join(rows)
+    data = b"\\x89PNG\\r\\n\\x1a\\n"
+    data += chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0))
+    data += chunk(b"IDAT", zlib.compress(raw, 9))
+    data += chunk(b"IEND", b"")
+    with open(path, "wb") as f:
+        f.write(data)
+
+# These PNGs are simple evidence-card backgrounds. Text is in the attached TXT files.
+png_write(
+    story_png,
+    1600, 900,
+    (7, 17, 31),
+    [
+        (70, 70, 1530, 830, (16, 35, 63)),
+        (120, 120, 1480, 190, (70, 130, 180)),
+        (120, 250, 1480, 310, (185, 215, 255)),
+        (120, 380, 1480, 445, (255, 255, 255)),
+        (120, 540, 1480, 600, (185, 215, 255)),
+        (120, 730, 1480, 790, (70, 130, 180)),
+    ],
+)
+
+png_write(
+    cert_png,
+    1600, 900,
+    (11, 15, 23),
+    [
+        (80, 80, 1520, 820, (244, 247, 251)),
+        (130, 130, 1470, 200, (40, 40, 40)),
+        (130, 300, 1470, 360, (120, 120, 120)),
+        (130, 440, 1470, 500, (180, 180, 180)),
+        (130, 620, 1470, 680, (120, 120, 120)),
+        (130, 735, 1470, 780, (40, 40, 40)),
+    ],
+)
+PY
+
+cat > "$LINKEDIN_TXT" <<TEXT
+Some people collect buzzwords.
+
+I collect evidence.
+
+TITAN GRID is now running a LinkedIn Live cycle: every three days, the system prepares a human-review package with a PNG visual, SHA certificate, LinkedIn text, Instagram text, and hash register.
+
+The story follows real progress:
+Mac, Android, Lenovo, SHA evidence, Montenegro, EU direction, cooperation signals, and Danijela Keskin’s work.
+
+No automatic posting.
+No approval theater.
+No partnership overclaim.
+No AI magic without evidence.
+
+If the project improves, the story may follow.
+If there is no evidence, there is no claim.
+
+Danijela Keskin
+Operator & Architect — TITAN GRID
+CEO, Ars Metal Industries DOO Montenegro
+
+#TITANGRID #Protocol888 #LinkedInLive #EvidenceFirst #AIGovernance #DataRoom #HumanControlledAI #Montenegro #CrnaGora #MNE #EuropeanUnion #EU #Turkey #Türkiye #IndustrialDevelopment #ResponsibleAI #WomenInBusiness #BuiltFromMontenegro #GlobalVision #World
+TEXT
+
+cat > "$INSTAGRAM_TXT" <<TEXT
+Neki skupljaju velike riječi.
+
+Ja skupljam dokaze.
+
+TITAN GRID sada svaka 3 dana priprema human-review paket: PNG visual, SHA certificate, LinkedIn tekst, Instagram tekst i hash register.
+
+Priča prati stvarni rad: Mac, Android, Lenovo, SHA evidenciju, Crnu Goru, EU pravac, saradnju i napredak Danijele Keskin.
+
+Bez automatskog objavljivanja.
+Bez tvrdnji o odobrenju.
+Bez partnerstva bez dokaza.
+Bez AI magije bez evidencije.
+
+Ako se projekat unaprijedi, priča može da prati dokaz.
+Ako nema dokaza, nema tvrdnje.
+
+Evidence before claims.
+Human before automation.
+
+Danijela Keskin
+Operator & Architect — TITAN GRID
+CEO, Ars Metal Industries DOO Montenegro
+
+#TITANGRID #Protocol888 #LinkedInLive #EvidenceFirst #AIGovernance #DataRoom #HumanControlledAI #Montenegro #CrnaGora #MNE #EuropeanUnion #EU #Turkey #Türkiye #IndustrialDevelopment #ResponsibleAI #WomenInBusiness
+TEXT
+
+cat > "$EMAIL_BODY" <<TEXT
+Danijela,
+
+Your 3-day Protocol LinkedIn Live package has been created.
+
+Included:
+1. PNG real-life story visual
+2. PNG SHA-256 certificate visual
+3. LinkedIn text draft
+4. Instagram text draft
+5. SHA-256 package register
+
+This package follows real work progress, Mac / Android / Lenovo harmonization, SHA evidence, Montenegro / EU direction, Danijela Keskin progress, and TITAN GRID parent project doctrine.
+
+Manual review remains required before public publication.
+
+TITAN GRID — Protocol LinkedIn Live
+TEXT
+
+echo "SHA256,SIZE_BYTES,FILE_PATH" > "$HASH_CSV"
+for F in "$STORY_PNG" "$CERT_PNG" "$LINKEDIN_TXT" "$INSTAGRAM_TXT" "$EMAIL_BODY"; do
+  if [ -f "$F" ]; then
+    SHA=$(shasum -a 256 "$F" | awk '{print $1}')
+    SIZE=$(stat -f%z "$F" 2>/dev/null)
+    echo "$SHA,$SIZE,\"$F\"" >> "$HASH_CSV"
+  fi
+done
+
+PNG_COUNT=$(find "$PACKET" -maxdepth 1 -type f -name "*.png" | wc -l | tr -d ' ')
+TXT_COUNT=$(find "$PACKET" -maxdepth 1 -type f -name "*.txt" | wc -l | tr -d ' ')
+CSV_COUNT=$(find "$PACKET" -maxdepth 1 -type f -name "*.csv" | wc -l | tr -d ' ')
+
+{
+  echo "LINKEDIN_LIVE_EMAIL_PACKET_STATUS"
+  echo "Timestamp: $(date)"
+  echo "LINKEDIN_LIVE_EMAIL_PACKET_CREATED=YES"
+  echo "PNG_COUNT=$PNG_COUNT"
+  echo "TXT_COUNT=$TXT_COUNT"
+  echo "CSV_COUNT=$CSV_COUNT"
+  echo "PACKET=$PACKET"
+  echo "RECIPIENT=$RECIPIENT"
+  echo "AVATAR_REFERENCE_FOUND=$AVATAR_FOUND"
+  echo "AVATAR_SHA256=$AVATAR_SHA"
+  echo "AUTO_POSTING_TO_LINKEDIN=NO"
+  echo "EMAIL_SEND_ONLY_TO_SELF=YES"
+} > "$STATUS"
+
+osascript <<APPLESCRIPT
+tell application "Mail"
+    set newMessage to make new outgoing message with properties {subject:"TITAN GRID — Protocol LinkedIn Live 3-Day Package — $TODAY", content:do shell script "cat " & quoted form of "$EMAIL_BODY", visible:false}
+    tell newMessage
+        make new to recipient at end of to recipients with properties {address:"$RECIPIENT"}
+        make new attachment with properties {file name:"$STORY_PNG"} at after the last paragraph
+        make new attachment with properties {file name:"$CERT_PNG"} at after the last paragraph
+        make new attachment with properties {file name:"$LINKEDIN_TXT"} at after the last paragraph
+        make new attachment with properties {file name:"$INSTAGRAM_TXT"} at after the last paragraph
+        make new attachment with properties {file name:"$HASH_CSV"} at after the last paragraph
+        send
+    end tell
+end tell
+APPLESCRIPT
+
+open "$PACKET"

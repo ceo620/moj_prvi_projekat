@@ -1,0 +1,56 @@
+import pandas as pd
+import os
+import subprocess
+from openpyxl.styles import PatternFill
+
+data = [
+    {"ID": "FIN-REV-001", "Source": "Financial Model v7", "Truth": "TRUE", "Value": "12,500 €/unit", "IC_DOC": "YES", "Doc_Name": "Revenue Model", "Pillars": "REVENUE", "Sub": "Pricing", "DNA": "Defines top-line capacity-linked revenue ceiling", "Level": "FINANCIAL", "Owner": "CFO", "Date": "04.04.26", "Priority": "HIGH", "Notes": "Core pricing driver", "Project_Phase": "T1/T2/T3", "Sensitivity_Flag": "YES"},
+    {"ID": "IND-CAP-002", "Source": "Tech Spec", "Truth": "TRUE", "Value": "3,600 units/year", "IC_DOC": "YES", "Doc_Name": "Capacity Plan", "Pillars": "INDUSTRIAL", "Sub": "Capacity", "DNA": "Defines max revenue ceiling", "Level": "STRATEGIC", "Owner": "COO", "Date": "04.04.26", "Priority": "HIGH", "Notes": "-", "Project_Phase": "T1", "Sensitivity_Flag": "NO"},
+    {"ID": "CAPEX-001", "Source": "CAPEX Sheet", "Truth": "TRUE", "Value": "€19.92M", "IC_DOC": "YES", "Doc_Name": "CAPEX Master", "Pillars": "CAPEX", "Sub": "Total", "DNA": "Base investment size", "Level": "FINANCIAL", "Owner": "CFO", "Date": "04.04.26", "Priority": "HIGH", "Notes": "-", "Project_Phase": "T1/T2", "Sensitivity_Flag": "YES"},
+    {"ID": "OPEX-003", "Source": "Ops Model", "Truth": "ASSUMPTION", "Value": "140 h/unit", "IC_DOC": "YES", "Doc_Name": "OPEX Model", "Pillars": "OPEX", "Sub": "Labor", "DNA": "Core cost driver", "Level": "TECHNICAL", "Owner": "COO", "Date": "04.04.26", "Priority": "HIGH", "Notes": "-", "Project_Phase": "T1", "Sensitivity_Flag": "YES"},
+    {"ID": "ESG-002", "Source": "ESG Plan", "Truth": "TRUE", "Value": "1.4 MW solar", "IC_DOC": "YES", "Doc_Name": "ESG Strategy", "Pillars": "ESG", "Sub": "Energy", "DNA": "Reduces energy cost risk", "Level": "STRATEGIC", "Owner": "CTO", "Date": "04.04.26", "Priority": "HIGH", "Notes": "-", "Project_Phase": "T1/T2", "Sensitivity_Flag": "NO"},
+
+    {"ID": "REG-BUD-001", "Source": "Zakon o budžetu CG 2025 (SL 11/2025)", "Truth": "TRUE", "Value": "Capital budget 280M €", "IC_DOC": "YES", "Doc_Name": "Zakon o budžetu Crne Gore za 2025. godinu", "Pillars": "CAPEX + PPP_REGULATORY", "Sub": "Public infrastructure", "DNA": "Provides legal & fiscal foundation for state co-financing / guarantees", "Level": "FINANCIAL", "Owner": "MoF", "Date": "10.02.25", "Priority": "HIGH", "Notes": "Uključuje >100M € za Bar-Boljare highway", "Project_Phase": "T1/T2/T3", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-BUD-002", "Source": "Zakon o budžetu CG 2025", "Truth": "TRUE", "Value": "Deficit 278M € (~3.5% GDP)", "IC_DOC": "YES", "Doc_Name": "Zakon o budžetu Crne Gore za 2025. godinu", "Pillars": "FINANCIAL", "Sub": "Fiscal balance", "DNA": "Directly impacts sovereign risk, DSCR i mogućnost državnih garancija", "Level": "STRATEGIC", "Owner": "MoF", "Date": "10.02.25", "Priority": "HIGH", "Notes": "Granična fiskalna sloboda", "Project_Phase": "T1/T2/T3", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-BUD-003", "Source": "Zakon o budžetu CG 2025", "Truth": "TRUE", "Value": "State guarantees do 87.5M €", "IC_DOC": "YES", "Doc_Name": "Zakon o budžetu Crne Gore za 2025. godinu", "Pillars": "PPP_REGULATORY", "Sub": "Government support", "DNA": "Pokazuje spremnost države da podrži strateške projekte garancijama", "Level": "STRATEGIC", "Owner": "Legal", "Date": "10.02.25", "Priority": "MED", "Notes": "Ključno za PPP strukturu TITAN-a", "Project_Phase": "T1", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-BUD-004", "Source": "Zakon o budžetu CG 2025", "Truth": "TRUE", "Value": "Objavljen 10.02.2025.", "IC_DOC": "YES", "Doc_Name": "Zakon o budžetu Crne Gore za 2025. godinu", "Pillars": "PPP_REGULATORY", "Sub": "Fiscal authorization", "DNA": "Definira pravni okvir za sve budžetske izdatke i potencijalne PPP doprinose u 2025.", "Level": "STRATEGIC", "Owner": "Legal/CFO", "Date": "10.02.25", "Priority": "HIGH", "Notes": "Izmjena 80/2025 nije u prečišćenom tekstu", "Project_Phase": "T1", "Sensitivity_Flag": "NO"},
+
+    {"ID": "REG-CUS-001", "Source": "Zakon o carinskoj tarifi (SL CG 28/2012) + Član 8", "Truth": "TRUE", "Value": "Obavezna godišnja Uredba Vlade (novembar za narednu godinu)", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj tarifi", "Pillars": "PPP_REGULATORY", "Sub": "Customs Framework", "DNA": "Establishes mandatory legal base and annual updating mechanism for all import duties affecting CAPEX/OPEX of industrial projects", "Level": "STRATEGIC", "Owner": "Legal/MoF", "Date": "30.05.2012 (važi 2025.)", "Priority": "HIGH", "Notes": "Referenca na Uredbu 126/2024 za 2025. — mora se linkovati", "Project_Phase": "T1/T2/T3", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-CUS-002", "Source": "Zakon o carinskoj tarifi Član 5", "Truth": "TRUE", "Value": "Poseban režim za dijelove za neposrednu ugradnju (odjeljci VII–XVIII)", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj tarifi", "Pillars": "INDUSTRIAL + CAPEX", "Sub": "Assembly Parts Regime", "DNA": "Allows parts for direct installation in machinery/vehicles to use the finished product's tariff heading (potential significant duty reduction)", "Level": "TECHNICAL", "Owner": "COO/Procurement", "Date": "30.05.2012", "Priority": "HIGH", "Notes": "Ključno za uvoz mašina/aparata/prevoznih sredstava — može smanjiti CAPEX za 5–15 %", "Project_Phase": "T1", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-CUS-003", "Source": "Zakon o carinskoj tarifi + Uredba 126/2024", "Truth": "TRUE", "Value": "Stvarne carinske stope za 2025. (ad valorem + specifične)", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj tarifi + Uredba 126/2024", "Pillars": "CAPEX + OPEX", "Sub": "2025 Tariff Rates", "DNA": "Actual 2025 duty rates directly determine import cost of equipment, spare parts and raw materials", "Level": "FINANCIAL", "Owner": "CFO", "Date": "2024 (Uredba)", "Priority": "HIGH", "Notes": "Uredba 126/2024 još nije učitana — prioritet za DD", "Project_Phase": "T1/T2", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-CUS-004", "Source": "Zakon o carinskoj tarifi Član 6 & 7", "Truth": "TRUE", "Value": "Privremeni uvoz radi oplemenjivanja + sukcesivni uvoz rastavljenih proizvoda (CKD)", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj tarifi", "Pillars": "INDUSTRIAL", "Sub": "Temporary Import & CKD", "DNA": "Enables duty optimization through temporary processing and successive import of disassembled products", "Level": "TECHNICAL", "Owner": "COO", "Date": "30.05.2012", "Priority": "MED", "Notes": "Procedura se propisuje posebnom uredbom Ministarstva finansija — treba provjeriti primjenu", "Project_Phase": "T1", "Sensitivity_Flag": "NO"},
+
+    {"ID": "REG-CUS-005", "Source": "Zakon o carinskoj službi (SL CG 3/2016 + 160/2025) Član 10", "Truth": "TRUE", "Value": "Odobravanje ovlašćenih carinskih statusa i pojednostavljenih postupaka (AEO)", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj službi", "Pillars": "PPP_REGULATORY + INDUSTRIAL", "Sub": "AEO & Simplified Regimes", "DNA": "Enables reduced physical controls, faster clearance and lower compliance costs for qualified importers", "Level": "STRATEGIC", "Owner": "COO / Legal", "Date": "2025 (amandman)", "Priority": "HIGH", "Notes": "Ključno za TITAN — AEO status smanjuje rizik kašnjenja opreme", "Project_Phase": "T1/T2/T3", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-CUS-006", "Source": "Zakon o carinskoj službi Član 24 + Član 41", "Truth": "TRUE", "Value": "Ovlašćenja carinskih službenika (pregled, pretres, privremeno oduzimanje robe/prostora)", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj službi", "Pillars": "RISK + INDUSTRIAL", "Sub": "Inspection Powers", "DNA": "Defines scope and limits of customs controls — directly impacts clearance timelines and potential operational downtime", "Level": "TECHNICAL", "Owner": "COO", "Date": "2016–2025", "Priority": "HIGH", "Notes": "Visok rizik kašnjenja CAPEX uvoza ako nema AEO", "Project_Phase": "T1", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-CUS-007", "Source": "Zakon o carinskoj službi Član 42 + Član 44", "Truth": "TRUE", "Value": "Privremeno oduzimanje robe / prevoznih sredstava i sredstava plaćanja + garancije carinskog duga", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj službi", "Pillars": "CAPEX + FINANCIAL", "Sub": "Guarantee & Seizure", "DNA": "Requires financial instruments or cash guarantees for high-value imports — increases upfront CAPEX cash-flow pressure", "Level": "FINANCIAL", "Owner": "CFO", "Date": "2016–2025", "Priority": "HIGH", "Notes": "Direktno utiče na DSCR i liquidity u prvim 12–18 mjeseci", "Project_Phase": "T1/T2", "Sensitivity_Flag": "YES"},
+    {"ID": "REG-CUS-008", "Source": "Zakon o carinskoj službi Član 6 + Član 10 (u vezi sa Član 5 Tarifnog zakona)", "Truth": "TRUE", "Value": "Nadzor i odobravanje carinski dozvoljenog postupanja (uključujući privremeni uvoz i oplemenjivanje)", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj službi", "Pillars": "INDUSTRIAL + OPEX", "Sub": "Temporary Import / Inward Processing", "DNA": "Operationalizes Član 6 & 7 Tarifnog zakona — omogućava odlaganje plaćanja carine uz garanciju", "Level": "TECHNICAL", "Owner": "COO", "Date": "2016–2025", "Priority": "MED", "Notes": "Ključno za CKD/skupštinske režime — smanjuje OPEX na sirovine", "Project_Phase": "T1", "Sensitivity_Flag": "NO"},
+    {"ID": "REG-CUS-009", "Source": "Zakon o carinskoj službi Član 20 + Član 78", "Truth": "TRUE", "Value": "Obaveza saradnje državnih organa + neometano obavljanje nadzora i carinsko-sigurnosnih mjera", "IC_DOC": "YES", "Doc_Name": "Zakon o carinskoj službi", "Pillars": "PPP_REGULATORY + RISK", "Sub": "Institutional Cooperation", "DNA": "Creates binding inter-agency framework — reduces risk of conflicting approvals and bureaucratic delays", "Level": "STRATEGIC", "Owner": "Legal / CFO", "Date": "2016–2025", "Priority": "MED", "Notes": "Podržava PPP strukturu TITAN-a sa državnim garancijama", "Project_Phase": "T1/T2/T3", "Sensitivity_Flag": "NO"},
+]
+
+df = pd.DataFrame(data)
+columns_order = ["ID", "Source", "Truth", "Value", "IC_DOC", "Doc_Name", "Pillars", "Sub", "DNA", "Level", "Owner", "Date", "Priority", "Notes", "Project_Phase", "Sensitivity_Flag"]
+df = df[columns_order]
+
+desktop = os.path.join(os.path.expanduser("~"), "Desktop")
+full_path = os.path.join(desktop, "TITAN_Pillar_Engine.xlsx")
+
+with pd.ExcelWriter(full_path, engine="openpyxl") as writer:
+    df.to_excel(writer, index=False, sheet_name="Master_Index")
+    worksheet = writer.sheets["Master_Index"]
+    worksheet.auto_filter.ref = worksheet.dimensions
+    worksheet.freeze_panes = "A2"
+    for col, width in zip("ABCDEFGHIJKLMNOP", [12,35,10,25,10,35,18,25,60,15,15,12,12,40,15,15]):
+        worksheet.column_dimensions[col].width = width
+    high_fill = PatternFill(start_color="FFCCCC", end_color="FFCCCC", fill_type="solid")
+    med_fill = PatternFill(start_color="FFFFCC", end_color="FFFFCC", fill_type="solid")
+    for row in range(2, len(df) + 2):
+        cell = worksheet.cell(row=row, column=13)
+        if cell.value == "HIGH":
+            cell.fill = high_fill
+        elif cell.value == "MED":
+            cell.fill = med_fill
+
+print(f"✅ Fajl sačuvan: {full_path}")
+if os.name == 'nt':
+    os.startfile(full_path)
+print("🚀 Excel je AUTOMATSKI otvoren!")

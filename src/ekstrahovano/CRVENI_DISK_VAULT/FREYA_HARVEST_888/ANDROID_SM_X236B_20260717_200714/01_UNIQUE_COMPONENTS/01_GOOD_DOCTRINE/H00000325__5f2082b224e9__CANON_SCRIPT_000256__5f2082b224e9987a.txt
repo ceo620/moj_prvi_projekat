@@ -1,0 +1,197 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -u
+
+TS="$(date +%Y%m%d_%H%M%S)"
+OUT="/sdcard/Download/ARCHIVE_DO_NOT_RUN_EXECUTION_MANIFEST_DRAFT_$TS.txt"
+HASH="/sdcard/Download/ARCHIVE_DO_NOT_RUN_EXECUTION_MANIFEST_DRAFT_$TS.sha256"
+
+CANONICAL_MEMORY="/sdcard/delta_v4_memory.json"
+ARCHIVE_ROOT="/sdcard/Download/ARCHIVE_DO_NOT_RUN_DELTA_LEGACY_DRAFT_TARGET"
+
+write_entry() {
+  LABEL="$1"
+  SRC="$2"
+  CLASS="$3"
+  REASON="$4"
+  TARGET="$5"
+
+  echo "" >> "$OUT"
+  echo "[$LABEL]" >> "$OUT"
+  echo "Source path: $SRC" >> "$OUT"
+  echo "Proposed archive target: $TARGET" >> "$OUT"
+  echo "Classification: $CLASS" >> "$OUT"
+  echo "Reason: $REASON" >> "$OUT"
+  echo "Execution status: DRAFT_ONLY_NOT_EXECUTED" >> "$OUT"
+
+  if [ -f "$SRC" ]; then
+    echo "Source exists: YES" >> "$OUT"
+    echo "Source metadata:" >> "$OUT"
+    ls -lah "$SRC" >> "$OUT" 2>&1
+    echo "Source SHA256:" >> "$OUT"
+    sha256sum "$SRC" >> "$OUT"
+  else
+    echo "Source exists: NO" >> "$OUT"
+    echo "Source SHA256: MISSING" >> "$OUT"
+  fi
+}
+
+{
+  echo "ARCHIVE_DO_NOT_RUN_EXECUTION_MANIFEST_DRAFT"
+  echo "Timestamp: $(date '+%Y-%m-%d %H:%M:%S')"
+  echo ""
+  echo "Mode:"
+  echo "DRAFT_ONLY"
+  echo ""
+  echo "This manifest defines the future archive execution plan."
+  echo "It does not move, delete, rename, overwrite, execute, or disable any file."
+  echo ""
+  echo "Hard controls:"
+  echo "NO DELETE"
+  echo "NO MOVE"
+  echo "NO RENAME"
+  echo "NO OVERWRITE"
+  echo "NO SCRIPT EXECUTION"
+  echo "NO OLD LOOP"
+  echo "NO delta_v2 runtime"
+  echo "NO DELTA_ORACLE runtime"
+  echo "NO nexus_mobile runtime"
+  echo ""
+  echo "Canonical active core:"
+  echo "/data/data/com.termux/files/home/delta_v4_5.py"
+  echo ""
+  echo "Canonical active class:"
+  echo "DeltaV45"
+  echo ""
+  echo "Canonical active memory:"
+  echo "$CANONICAL_MEMORY"
+  echo ""
+  echo "Canonical memory proof:"
+  if [ -f "$CANONICAL_MEMORY" ]; then
+    ls -lah "$CANONICAL_MEMORY"
+    sha256sum "$CANONICAL_MEMORY"
+  else
+    echo "MISSING"
+  fi
+  echo ""
+  echo "Proposed future archive root:"
+  echo "$ARCHIVE_ROOT"
+  echo ""
+  echo "Future archive execution conditions:"
+  echo "1. Human operator confirms execution."
+  echo "2. Source SHA256 is verified immediately before copy."
+  echo "3. File is copied to ARCHIVE_DO_NOT_RUN target."
+  echo "4. Archive copy SHA256 equals source SHA256."
+  echo "5. Only after verified copy may runtime references be disabled."
+  echo "6. Deletion remains separate and is not part of archive execution."
+  echo ""
+  echo "Approved active files to keep outside archive:"
+  echo "/data/data/com.termux/files/home/delta_v4_5.py"
+  echo "/data/data/com.termux/files/home/ANDROID_CONTROL_CENTER.sh"
+  echo "/data/data/com.termux/files/home/delta_legacy_compat_adapter.py"
+  echo "/data/data/com.termux/files/home/delta_oracle_oneshot_adapter.py"
+  echo "/data/data/com.termux/files/home/nexus_operator_adapter.py"
+} > "$OUT"
+
+write_entry \
+  "DRAFT_ARCHIVE_001_DELTA_V2" \
+  "$HOME/delta_v2.py" \
+  "BLOCK_FROM_RUNTIME_SPLIT_BRAIN_RISK" \
+  "Writes to /sdcard/delta_memory.json instead of canonical /sdcard/delta_v4_memory.json." \
+  "$ARCHIVE_ROOT/delta_v2.py"
+
+write_entry \
+  "DRAFT_ARCHIVE_002_DELTA_V3" \
+  "$HOME/delta_v3.py" \
+  "LEGACY_SAME_MEMORY_MODULE" \
+  "Older module superseded by DeltaV45; not approved as active core." \
+  "$ARCHIVE_ROOT/delta_v3.py"
+
+write_entry \
+  "DRAFT_ARCHIVE_003_DELTA_V4" \
+  "$HOME/delta_v4.py" \
+  "LEGACY_SAME_MEMORY_MODULE" \
+  "Older module superseded by DeltaV45; not approved as active core." \
+  "$ARCHIVE_ROOT/delta_v4.py"
+
+write_entry \
+  "DRAFT_ARCHIVE_004_DELTA_ORACLE" \
+  "$HOME/DELTA_ORACLE.py" \
+  "BLOCK_FROM_RUNTIME_LOOP_RISK" \
+  "Contains while True / sleep behavior; replaced by delta_oracle_oneshot_adapter.py." \
+  "$ARCHIVE_ROOT/DELTA_ORACLE.py"
+
+write_entry \
+  "DRAFT_ARCHIVE_005_NEXUS_MOBILE" \
+  "$HOME/nexus_mobile.py" \
+  "BLOCK_FROM_RUNTIME_LOOP_RISK" \
+  "Contains uncontrolled loop behavior; replaced by nexus_operator_adapter.py." \
+  "$ARCHIVE_ROOT/nexus_mobile.py"
+
+{
+  echo ""
+  echo "Adapter layer proof:"
+  for f in \
+    "$HOME/delta_v4_5.py" \
+    "$HOME/ANDROID_CONTROL_CENTER.sh" \
+    "$HOME/delta_legacy_compat_adapter.py" \
+    "$HOME/delta_oracle_oneshot_adapter.py" \
+    "$HOME/nexus_operator_adapter.py"
+  do
+    echo ""
+    echo "Keep-active file: $f"
+    if [ -f "$f" ]; then
+      ls -lah "$f"
+      sha256sum "$f"
+    else
+      echo "MISSING"
+    fi
+  done
+
+  echo ""
+  echo "Reference locked manifests:"
+  for f in \
+    /sdcard/Download/DELTA_LEARNING_MODULE_CONSISTENCY_DECISION_20260514.txt \
+    /sdcard/Download/DELTA_LEGACY_SCRIPT_RETIREMENT_REGISTER_20260514.txt \
+    /sdcard/Download/DELTA_LEGACY_SCRIPT_HASH_BASELINE_20260514.txt \
+    /sdcard/Download/DELTA_ADAPTER_TEST_REGISTER_20260514.txt \
+    /sdcard/Download/DELTA_ADAPTER_RETIREMENT_LOCK_MANIFEST_20260514_222043.txt \
+    /sdcard/Download/ARCHIVE_DO_NOT_RUN_PREP_MANIFEST_20260514_222143.txt
+  do
+    echo ""
+    echo "Reference: $f"
+    if [ -f "$f" ]; then
+      sha256sum "$f"
+    else
+      echo "MISSING"
+    fi
+  done
+
+  echo ""
+  echo "Execution decision:"
+  echo "This is a draft only."
+  echo "Archive execution is NOT performed."
+  echo "Archive execution remains NOT AUTHORIZED inside this manifest."
+  echo ""
+  echo "Next possible phase:"
+  echo "ARCHIVE_DO_NOT_RUN_EXECUTION_COPY_ONLY"
+  echo ""
+  echo "Current safe stopping point:"
+  echo "Full circle closed for tonight at draft execution-manifest level."
+  echo ""
+  echo "Final night controls:"
+  echo "ANDROID CONTROL: OPERATOR-CONTROLLED"
+  echo "DELTA CORE: delta_v4_5.py / DeltaV45"
+  echo "DELTA MEMORY: /sdcard/delta_v4_memory.json"
+  echo "ADAPTERS: CREATED AND LOCKED"
+  echo "LEGACY SCRIPTS: BLOCKED FROM RUNTIME"
+  echo "ARCHIVE EXECUTION: NOT YET AUTHORIZED"
+  echo "DELETE: NO"
+  echo "MOVE: NO"
+} >> "$OUT"
+
+sha256sum "$OUT" > "$HASH"
+
+echo "ARCHIVE_DO_NOT_RUN_EXECUTION_MANIFEST_DRAFT CREATED"
+echo "MANIFEST: $OUT"
+echo "MANIFEST SHA256:"
+cat "$HASH"

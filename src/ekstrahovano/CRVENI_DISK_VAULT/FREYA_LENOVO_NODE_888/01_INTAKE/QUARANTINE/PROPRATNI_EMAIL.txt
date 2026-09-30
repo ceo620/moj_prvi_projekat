@@ -1,0 +1,15 @@
+﻿ZA: email@primjer.com
+PRIMALAC: IME I PREZIME PRIMAOCA
+ORGANIZACIJA: NAZIV ORGANIZACIJE
+PREDMET: Dokumentacija za potpisivanje
+
+Poštovani/Poštovana IME I PREZIME PRIMAOCA,
+
+u prilogu dostavljam dokumentaciju pripremljenu za potpisivanje i dalji postupak.
+
+Molim Vas da potvrdite prijem dokumentacije. Ukoliko su potrebne dodatne informacije ili izmjene, molim da me obavijestite.
+
+Srdačan pozdrav,
+
+Danijela Đurović Keskin
+ARS Metal Industries DOO

@@ -1,0 +1,130 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -u
+
+TS="$(date +%Y%m%d_%H%M%S)"
+OUT="$HOME/ANDROID_DELTA_FULL_CHECK_$TS.txt"
+
+log() {
+  echo "$1" | tee -a "$OUT"
+}
+
+run() {
+  log ""
+  log "===== $1 ====="
+  shift
+  "$@" 2>&1 | tee -a "$OUT"
+}
+
+log "ANDROID / TERMUX / DELTA FULL CHECK"
+log "Timestamp: $(date '+%Y-%m-%d %H:%M:%S')"
+log "Mode: READ_ONLY_DIAGNOSTIC"
+log "Controls: NO DELETE | NO MOVE | NO PATCH | NO LOOP"
+
+run "WHOAMI" whoami
+run "PWD" pwd
+run "UNAME" uname -a
+
+log ""
+log "===== TERMUX PATHS ====="
+log "HOME=$HOME"
+log "PREFIX=${PREFIX:-N/A}"
+log "SHELL=$SHELL"
+
+run "TERMUX PACKAGES CHECK" bash -lc 'command -v python3; command -v sshd; command -v scp; command -v sha256sum; command -v termux-wifi-connectioninfo || true'
+
+log ""
+log "===== WIFI CONNECTION INFO ====="
+if command -v termux-wifi-connectioninfo >/dev/null 2>&1; then
+  termux-wifi-connectioninfo 2>&1 | tee -a "$OUT"
+else
+  log "termux-wifi-connectioninfo NOT FOUND"
+fi
+
+log ""
+log "===== SSHD PROCESS CHECK ====="
+ps aux | grep '[s]shd' | tee -a "$OUT" || log "sshd process not found"
+
+log ""
+log "===== LOCAL SSH PORT 8022 BANNER TEST ====="
+python3 - <<'PY' 2>&1 | tee -a "$OUT"
+import socket
+try:
+    s = socket.create_connection(("127.0.0.1", 8022), timeout=5)
+    banner = s.recv(120).decode(errors="ignore").strip()
+    print("LOCAL_SSH_8022: PASS")
+    print("BANNER:", banner)
+    s.close()
+except Exception as e:
+    print("LOCAL_SSH_8022: FAIL")
+    print("ERROR:", e)
+PY
+
+log ""
+log "===== DELTA MEMORY FILE CHECK ====="
+MEM="/sdcard/delta_v4_memory.json"
+if [ -f "$MEM" ]; then
+  ls -lah "$MEM" | tee -a "$OUT"
+  sha256sum "$MEM" | tee -a "$OUT"
+else
+  log "MISSING: $MEM"
+fi
+
+log ""
+log "===== DELTA MEMORY JSON BASIC VALIDATION ====="
+python3 - <<'PY' 2>&1 | tee -a "$OUT"
+import json, os, hashlib
+path="/sdcard/delta_v4_memory.json"
+if not os.path.exists(path):
+    print("JSON_VALIDATION: FAIL — file missing")
+else:
+    try:
+        with open(path, "rb") as f:
+            data=f.read()
+        h=hashlib.sha256(data).hexdigest()
+        print("SIZE_BYTES:", len(data))
+        print("SHA256:", h)
+        try:
+            obj=json.loads(data.decode("utf-8"))
+            print("JSON_PARSE: PASS")
+            print("ROOT_TYPE:", type(obj).__name__)
+            if isinstance(obj, dict):
+                print("TOP_KEYS:", list(obj.keys())[:30])
+            elif isinstance(obj, list):
+                print("LIST_LENGTH:", len(obj))
+        except Exception as je:
+            print("JSON_PARSE: FAIL")
+            print("JSON_ERROR:", je)
+    except Exception as e:
+        print("READ_ERROR:", e)
+PY
+
+log ""
+log "===== DELTA MODULE IMPORT TEST ====="
+python3 - <<'PY' 2>&1 | tee -a "$OUT"
+try:
+    from delta_v4_5 import DeltaV45
+    d = DeltaV45()
+    print("DELTA_V4_5_IMPORT: PASS")
+    print("DELTA_OBJECT:", type(d).__name__)
+except Exception as e:
+    print("DELTA_V4_5_IMPORT: FAIL")
+    print("ERROR:", e)
+PY
+
+log ""
+log "===== STORAGE PERMISSION CHECK ====="
+python3 - <<'PY' 2>&1 | tee -a "$OUT"
+import os
+paths=["/sdcard", "/sdcard/delta_v4_memory.json"]
+for p in paths:
+    print(p, "EXISTS=", os.path.exists(p), "READABLE=", os.access(p, os.R_OK))
+PY
+
+log ""
+log "===== CONTROL DECISION ====="
+log "Android local checks completed."
+log "If LOCAL_SSH_8022=PASS and delta_v4_memory.json exists, Android side is operational."
+log "If Lenovo still cannot connect, issue is network path / Wi-Fi isolation / firewall, not Delta memory file."
+
+log ""
+log "REPORT_PATH: $OUT"

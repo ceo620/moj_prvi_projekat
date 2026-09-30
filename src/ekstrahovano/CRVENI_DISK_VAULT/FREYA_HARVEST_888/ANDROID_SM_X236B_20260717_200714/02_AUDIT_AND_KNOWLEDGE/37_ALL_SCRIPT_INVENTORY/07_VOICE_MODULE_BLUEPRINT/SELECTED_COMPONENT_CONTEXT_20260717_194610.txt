@@ -1,0 +1,451 @@
+FREYA — SELECTED COMPONENT STATIC CONTEXT
+SCRIPT_EXECUTION=NO
+ORIGINALS_CHANGED=NO
+
+======================================================================
+ROLE=TTS_OUTPUT
+RANK=1
+GROUP=H00000586
+SHA256=1e42fdc3ff4efea031b42bfc17ec13a067c1c0b0dcbbd92e9b21ac24d3cb8e1c
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__08_APP__freya.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=MEM="$BASE/09_MEMORY/freya_memory.md"
+LINE=5 TEXT=ABOUT="$BASE/09_MEMORY/about_danijela.md"
+LINE=11 TEXT=HUMAN="$BASE/16_HUMAN_GATE/human_gate_queue.md"
+LINE=13 TEXT=mkdir -p "$BASE"/{09_MEMORY,10_JOURNAL,11_TODO,12_PROJECTS,13_LEARNING,14_RESEARCH,16_HUMAN_GATE}
+LINE=32 TEXT=echo "  human       - Human Gate queue"
+LINE=70 TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "Learning mode. Today we learn how to write a project proposal for MIA. A project proposal explains the problem, the solution, the activities, the budget, and the expected impact. What is the main problem your MIA project should solve?"
+LINE=73 TEXT=echo "Human Gate Queue:"
+LINE=82 TEXT=echo "Moj trenutni odgovor:"
+LINE=85 TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "I saved your question. We will connect it with memory, documents, and research."
+LINE=114 TEXT=echo "Još nemam dovoljno lokalnog znanja za pun odgovor."
+LINE=123 TEXT=echo "Human Gate: active."
+LINE=124 TEXT=echo "FREYA: odgovor završen." >> "$MEM"
+
+======================================================================
+ROLE=TTS_OUTPUT
+RANK=2
+GROUP=H00000614
+SHA256=d3bb426039113ab3fc9bfacef23e322cda40111812f6164c73f8c2db7a61bbdb
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__07_VOICE__freya_greeting_en.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=13 TEXT=will become part of our shared knowledge.
+LINE=19 TEXT=termux-tts-speak -l en -r 0.82 -p 0.92 "$TEXT"
+
+======================================================================
+ROLE=TTS_OUTPUT
+RANK=3
+GROUP=H00000615
+SHA256=de855c2b18b64714276b019149ae55df9bc7d6936ae0ac337988b88e6d6f2421
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__07_VOICE__freya_greeting.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=17 TEXT=termux-tts-speak -r 0.95 -p 1.0 -l sr "$TEXT"
+
+======================================================================
+ROLE=TEXT_ROUTER
+RANK=1
+GROUP=H00000628
+SHA256=af391fbbe3f2d085e2f3112356f57b206909a9ac373b0ab65e5db9a114430380
+FILE=/data/data/com.termux/files/home/bin/freya_core_before_multisignal_v4
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=2 TEXT=# FREYA_CONVERSATION_WRAPPER_V3
+LINE=6 TEXT=CORE="$HOME/bin/freya_conversation_core_v3"
+LINE=8 TEXT=ADVISOR="$HOME/bin/freya_ssot_advisor"
+LINE=43 TEXT=*"odgovori civil engineeringu"*|\
+
+======================================================================
+ROLE=TEXT_ROUTER
+RANK=2
+GROUP=H00000943
+SHA256=759854d8a811b3236c97ee0e53672dfd0f5b783a617f74b3892f33f5ea8cd257
+FILE=/data/data/com.termux/files/home/bin/freya_ssot_advisor
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=185 TEXT=REPORT="$REPORTS/FREYA_LOCAL_SSOT_ADVICE_$RUN_ID.txt"
+LINE=237 TEXT=echo "FREYA_LOCAL_SSOT_ADVICE"
+LINE=239 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=241 TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+LINE=250 TEXT=echo "=== SSOT POVEZANI IZVORI ==="
+LINE=251 TEXT=echo "SSOT_HIT_COUNT=$HIT_COUNT"
+LINE=263 TEXT=echo "SSOT_CONNECTION=FOUND"
+LINE=264 TEXT=echo "SAVJET=Postoje povezani lokalni SSOT izvori."
+LINE=268 TEXT=echo "SSOT_CONNECTION=NOT_FOUND"
+LINE=280 TEXT=echo "FINAL_STATUS=LOCAL_SSOT_ADVICE_DRAFT_CREATED"
+LINE=318 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=424 TEXT=FREYA MESSAGE AND SSOT ADVISOR
+
+======================================================================
+ROLE=TEXT_ROUTER
+RANK=3
+GROUP=H00000586
+SHA256=1e42fdc3ff4efea031b42bfc17ec13a067c1c0b0dcbbd92e9b21ac24d3cb8e1c
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__08_APP__freya.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=MEM="$BASE/09_MEMORY/freya_memory.md"
+LINE=5 TEXT=ABOUT="$BASE/09_MEMORY/about_danijela.md"
+LINE=11 TEXT=HUMAN="$BASE/16_HUMAN_GATE/human_gate_queue.md"
+LINE=13 TEXT=mkdir -p "$BASE"/{09_MEMORY,10_JOURNAL,11_TODO,12_PROJECTS,13_LEARNING,14_RESEARCH,16_HUMAN_GATE}
+LINE=32 TEXT=echo "  human       - Human Gate queue"
+LINE=70 TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "Learning mode. Today we learn how to write a project proposal for MIA. A project proposal explains the problem, the solution, the activities, the budget, and the expected impact. What is the main problem your MIA project should solve?"
+LINE=73 TEXT=echo "Human Gate Queue:"
+LINE=82 TEXT=echo "Moj trenutni odgovor:"
+LINE=85 TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "I saved your question. We will connect it with memory, documents, and research."
+LINE=114 TEXT=echo "Još nemam dovoljno lokalnog znanja za pun odgovor."
+LINE=123 TEXT=echo "Human Gate: active."
+LINE=124 TEXT=echo "FREYA: odgovor završen." >> "$MEM"
+
+======================================================================
+ROLE=TEXT_ROUTER
+RANK=4
+GROUP=H00000947
+SHA256=f1dd2054042c894c3383fd4e8d26977d897e7c7d8743d83d54580e57eb58a202
+FILE=/data/data/com.termux/files/home/bin/freya_multisignal_v4
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=65 TEXT="local_ssot_advice",
+
+======================================================================
+ROLE=TEXT_ROUTER
+RANK=5
+GROUP=H00000951
+SHA256=19a1b0d8bac9493bf26305a9d906cd81d0797eac30ceca75b08d113a326b929c
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/00_CONTROL/FREYA_COMMAND_BACKUPS/freya_multisignal_v4_before_dedup_20260717_005333
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=94 TEXT="local_ssot_advice",
+
+======================================================================
+ROLE=TEXT_ROUTER
+RANK=6
+GROUP=H00001688
+SHA256=456d108903abb7a2e58e9dacdb62650dd393b5d54d003b2acd221e5329ec1cc2
+FILE=/data/data/com.termux/files/home/bin/014
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=2 TEXT=echo "FREYA 014 — Zapiši osobu kojoj treba odgovoriti"
+LINE=3 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=12 TEXT=echo "freya note 014_Zapiši_osobu_kojoj_treba_odgovoriti"
+
+======================================================================
+ROLE=TEXT_ROUTER
+RANK=7
+GROUP=H00000630
+SHA256=bdbb7d4194e34c8844b5cdb73fc04a9ab47e72ddce2ccf2b34cb0405f18d61cc
+FILE=/data/data/com.termux/files/home/bin/freya_conversation_core_v3
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=2 TEXT=# FREYA_INTENT_WRAPPER_V2
+LINE=5 TEXT=CORE="$HOME/bin/freya_intent_core_v2"
+LINE=25 TEXT="napisi mail civil engineeringu"|"odgovori civil engineeringu")
+
+======================================================================
+ROLE=TEXT_ROUTER
+RANK=8
+GROUP=H00000345
+SHA256=075befdfbcad25a7c96f232d881c058a2151a6274263f51edb837f75aa38bcf2
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/075befdfbcad25a7c96f232d881c058a2151a6274263f51edb837f75aa38bcf2_delta_v3.py.DO_NOT_RUN.txt
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=10 TEXT=MEMORY_FILE = Path("/sdcard/delta_v4_memory.json")
+LINE=14 TEXT=self.memory = self._load()
+LINE=18 TEXT=if MEMORY_FILE.exists():
+LINE=20 TEXT=return json.load(open(MEMORY_FILE, encoding="utf-8"))
+LINE=34 TEXT=self.memory["updated"] = datetime.now().isoformat()
+LINE=35 TEXT=with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+LINE=36 TEXT=json.dump(self.memory, f, indent=2, ensure_ascii=False)
+LINE=39 TEXT=self.memory["chat_history"].append({
+LINE=44 TEXT=self.memory["signals"].append({
+LINE=52 TEXT=self.memory["goals"].append({
+LINE=62 TEXT="signals": len(self.memory["signals"]),
+LINE=63 TEXT="facts": len(self.memory["facts"]),
+LINE=64 TEXT="goals": len(self.memory["goals"]),
+LINE=67 TEXT=self.memory["reflections"].append(reflection)
+LINE=75 TEXT=results = [g["goal"] for g in self.memory.get("goals", [])[-5:]]
+LINE=77 TEXT=results = [f["fact"] for f in self.memory.get("facts", [])[-8:]]
+LINE=79 TEXT=for item in self.memory.get("facts", []) + self.memory.get("signals", []):
+LINE=84 TEXT=print("📌 Odgovor iz memorije:")
+LINE=94 TEXT=print(f"Signali: {len(self.memory['signals'])}")
+LINE=95 TEXT=print(f"Činjenice: {len(self.memory['facts'])}")
+LINE=96 TEXT=print(f"Ciljevi: {len(self.memory['goals'])}")
+
+======================================================================
+ROLE=LOCAL_MEMORY_RETRIEVAL
+RANK=1
+GROUP=H00000586
+SHA256=1e42fdc3ff4efea031b42bfc17ec13a067c1c0b0dcbbd92e9b21ac24d3cb8e1c
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__08_APP__freya.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=MEM="$BASE/09_MEMORY/freya_memory.md"
+LINE=5 TEXT=ABOUT="$BASE/09_MEMORY/about_danijela.md"
+LINE=11 TEXT=HUMAN="$BASE/16_HUMAN_GATE/human_gate_queue.md"
+LINE=13 TEXT=mkdir -p "$BASE"/{09_MEMORY,10_JOURNAL,11_TODO,12_PROJECTS,13_LEARNING,14_RESEARCH,16_HUMAN_GATE}
+LINE=32 TEXT=echo "  human       - Human Gate queue"
+LINE=70 TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "Learning mode. Today we learn how to write a project proposal for MIA. A project proposal explains the problem, the solution, the activities, the budget, and the expected impact. What is the main problem your MIA project should solve?"
+LINE=73 TEXT=echo "Human Gate Queue:"
+LINE=82 TEXT=echo "Moj trenutni odgovor:"
+LINE=85 TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "I saved your question. We will connect it with memory, documents, and research."
+LINE=114 TEXT=echo "Još nemam dovoljno lokalnog znanja za pun odgovor."
+LINE=123 TEXT=echo "Human Gate: active."
+LINE=124 TEXT=echo "FREYA: odgovor završen." >> "$MEM"
+
+======================================================================
+ROLE=LOCAL_MEMORY_RETRIEVAL
+RANK=2
+GROUP=H00000471
+SHA256=8e0c54f726e34caa9c767f541a949200b539a422358f003b57a219bef9feebe8
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/H024.py.HEALED_VOLIM_TE_V3_SAFE.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=9 TEXT=# ORIGINAL_PATH=/data/data/com.termux/files/home/ANDROID_ARCHIVE_KNOWLEDGE_20260702_200007/02_REVIEW_ONLY_EXTRACTED/70cdd0446aea7660b67041a59eb93dd11e25bf769b7f797c7770bd917f540afe_70cdd0446aea7660b67041a59eb93dd11e25bf769b7f797c7770bd917f540afe_ARS__METAL__INDUSTRIES__DOO__09_iPhone_Strategic_Mine___Recycle.Bin__S-1-5-21-2548277487-317327/002. DELTA CHATGBT FILES/Android uredjaj/TITAN_LOGIC_CORE.py
+LINE=11 TEXT=# HUMAN_GATE=ACTIVE
+LINE=13 TEXT=HUMAN_GATE="${HUMAN_GATE:-BLOCKED}"
+LINE=14 TEXT=if [ "$HUMAN_GATE" != "ALLOW_RUNTIME" ]; then
+LINE=15 TEXT=echo "HUMAN_GATE_BLOCKED: Android V3 healed wrapper is static-only."
+
+======================================================================
+ROLE=LOCAL_MEMORY_RETRIEVAL
+RANK=3
+GROUP=H00000473
+SHA256=4124426055a4c44181515a15d9d808b4162491fe90d85442533b6e8b69c5d25b
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/H029.py.HEALED_VOLIM_TE_V3_SAFE.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=9 TEXT=# ORIGINAL_PATH=/data/data/com.termux/files/home/ANDROID_ARCHIVE_KNOWLEDGE_20260702_200007/02_REVIEW_ONLY_EXTRACTED/864c630f27c22cdb4e5d5abb046e9bc94b1b21b4b02de18ff3782cbb9e11486a_864c630f27c22cdb4e5d5abb046e9bc94b1b21b4b02de18ff3782cbb9e11486a_VDR__99_Index_and_Control__002.__DELTA__CHATGBT__FILES-20260513T184115Z-3-001.zip/002. DELTA CHATGBT FILES/Android uredjaj/TITAN_LOGIC_CORE.py
+LINE=11 TEXT=# HUMAN_GATE=ACTIVE
+LINE=13 TEXT=HUMAN_GATE="${HUMAN_GATE:-BLOCKED}"
+LINE=14 TEXT=if [ "$HUMAN_GATE" != "ALLOW_RUNTIME" ]; then
+LINE=15 TEXT=echo "HUMAN_GATE_BLOCKED: Android V3 healed wrapper is static-only."
+
+======================================================================
+ROLE=LOCAL_MEMORY_RETRIEVAL
+RANK=4
+GROUP=H00000474
+SHA256=5a09956ec5b9659d66ce7c4a5654c77283fca89611951f4b6d2e7302626c0056
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/H023.py.HEALED_VOLIM_TE_V3_SAFE.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=9 TEXT=# ORIGINAL_PATH=/data/data/com.termux/files/home/ANDROID_ARCHIVE_KNOWLEDGE_20260702_200007/02_REVIEW_ONLY_EXTRACTED/57af78afc3d9279a6209c9bae523d5ee24a95a4d8f30906c8768be1252c3cab8_57af78afc3d9279a6209c9bae523d5ee24a95a4d8f30906c8768be1252c3cab8_VDR__99_Index_and_Control__002.__DELTA__CHATGBT__FILES-20260513T005724Z-3-001.zip/002. DELTA CHATGBT FILES/Android uredjaj/TITAN_LOGIC_CORE.py
+LINE=11 TEXT=# HUMAN_GATE=ACTIVE
+LINE=13 TEXT=HUMAN_GATE="${HUMAN_GATE:-BLOCKED}"
+LINE=14 TEXT=if [ "$HUMAN_GATE" != "ALLOW_RUNTIME" ]; then
+LINE=15 TEXT=echo "HUMAN_GATE_BLOCKED: Android V3 healed wrapper is static-only."
+
+======================================================================
+ROLE=LOCAL_MEMORY_RETRIEVAL
+RANK=5
+GROUP=H00000595
+SHA256=c511fcb496b2216ccc0f5e20e776b6ed6a40d7d5ae30787f0a4a506fabaff3fb
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_CORE/scripts/01_setup_freya_android_companion.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=9 TEXT="$BASE/02_HUMAN_GATE" \
+LINE=10 TEXT="$BASE/03_COMPANION_MEMORY" \
+LINE=13 TEXT="$BASE/06_FIELD_KNOWLEDGE" \
+LINE=35 TEXT=02 Human Gate
+LINE=36 TEXT=03 Companion Memory
+LINE=39 TEXT=06 Field Knowledge
+LINE=50 TEXT=No runtime without Human Gate.
+LINE=63 TEXT=HUMAN_GATE=ACTIVE
+
+======================================================================
+ROLE=LOCAL_MEMORY_RETRIEVAL
+RANK=6
+GROUP=H00000345
+SHA256=075befdfbcad25a7c96f232d881c058a2151a6274263f51edb837f75aa38bcf2
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/075befdfbcad25a7c96f232d881c058a2151a6274263f51edb837f75aa38bcf2_delta_v3.py.DO_NOT_RUN.txt
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=10 TEXT=MEMORY_FILE = Path("/sdcard/delta_v4_memory.json")
+LINE=14 TEXT=self.memory = self._load()
+LINE=18 TEXT=if MEMORY_FILE.exists():
+LINE=20 TEXT=return json.load(open(MEMORY_FILE, encoding="utf-8"))
+LINE=34 TEXT=self.memory["updated"] = datetime.now().isoformat()
+LINE=35 TEXT=with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+LINE=36 TEXT=json.dump(self.memory, f, indent=2, ensure_ascii=False)
+LINE=39 TEXT=self.memory["chat_history"].append({
+LINE=44 TEXT=self.memory["signals"].append({
+LINE=52 TEXT=self.memory["goals"].append({
+LINE=62 TEXT="signals": len(self.memory["signals"]),
+LINE=63 TEXT="facts": len(self.memory["facts"]),
+LINE=64 TEXT="goals": len(self.memory["goals"]),
+LINE=67 TEXT=self.memory["reflections"].append(reflection)
+LINE=75 TEXT=results = [g["goal"] for g in self.memory.get("goals", [])[-5:]]
+LINE=77 TEXT=results = [f["fact"] for f in self.memory.get("facts", [])[-8:]]
+LINE=79 TEXT=for item in self.memory.get("facts", []) + self.memory.get("signals", []):
+LINE=84 TEXT=print("📌 Odgovor iz memorije:")
+LINE=94 TEXT=print(f"Signali: {len(self.memory['signals'])}")
+LINE=95 TEXT=print(f"Činjenice: {len(self.memory['facts'])}")
+LINE=96 TEXT=print(f"Ciljevi: {len(self.memory['goals'])}")
+
+======================================================================
+ROLE=LOCAL_MEMORY_RETRIEVAL
+RANK=7
+GROUP=H00000341
+SHA256=252148c1d93a83fea786ff80207b8264180df70fe63da28582fb51aefd878766
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/09_IMPORTED_MOVED_FROM_00_SREDJEN_SISTEM/03_ANDROID_CVOROVI/ANDROID_TERMUX_ZLATO_FINAL_20260623_214230/02_ARS_CAPEX_VDR/252148c1d93a83fea786ff80207b8264180df70fe63da28582fb51aefd878766_DELTA_LEARNING_MODULE_CONSISTENCY_AUDIT.sh.DO_NOT_RUN.txt
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=26 TEXT=CANONICAL="/sdcard/delta_v4_memory.json"
+LINE=28 TEXT=section "CANONICAL MEMORY"
+LINE=36 TEXT=section "ALL MEMORY-LIKE FILES"
+LINE=37 TEXT=find /sdcard "$HOME" -type f 2>/dev/null | grep -Ei 'delta.*memory|memory.*delta|delta_v[0-9].*json|memory\.json|chat_history|learning|ucenje|učenje' | tee -a "$REPORT" || true
+LINE=42 TEXT=section "SCRIPT REFERENCES TO MEMORY PATHS"
+LINE=44 TEXT=xargs -0 grep -nEi 'delta_v4_memory|MEMORY_FILE|DeltaV45|DeltaV4|ingest|add_goal|json.dump|open\(.*w|/sdcard|Desktop|OneDrive|scp|sync_to_lenovo' 2>/dev/null | tee -a "$REPORT" || true
+LINE=50 TEXT=patterns=["delta_v4_memory", "MEMORY_FILE", "DeltaV45", "DeltaV4", "ingest", "add_goal", "json.dump", "sync_to_lenovo"]
+LINE=64 TEXT=mem_paths=sorted(set(re.findall(r'/(?:sdcard|data)[^"\']*delta[^"\']*memory[^"\']*\.json', txt)))
+LINE=70 TEXT=print("MEMORY_PATHS:", mem_paths if mem_paths else "NONE_EXPLICIT")
+LINE=74 TEXT=section "DELTA MEMORY JSON STRUCTURE"
+LINE=77 TEXT=p="/sdcard/delta_v4_memory.json"
+LINE=103 TEXT=echo "PASS if all active Delta scripts write to /sdcard/delta_v4_memory.json." | tee -a "$REPORT"
+LINE=104 TEXT=echo "WARNING if any script writes to other memory files." | tee -a "$REPORT"
+LINE=105 TEXT=echo "BLOCK if any script uses local Desktop path, wrong Lenovo path, or creates parallel memory." | tee -a "$REPORT"
+
+======================================================================
+ROLE=LOCAL_MEMORY_RETRIEVAL
+RANK=8
+GROUP=H00000413
+SHA256=51fda6519c09353d44b0b74a1b576a8342fc38cb8eedc6d47d0d0fd996a1a72b
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__ANDROID_TERMUX_ZLATO_FINAL_20260623_214230__05_VRIJEDNE_SKRIPTE__51fda6519c09353d44b0b74a1b576a8342fc38cb8eedc6d47d0d0fd996a1a72b_DELTA_LEARNING_MODULE_CONSISTENCY_AUDIT.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=26 TEXT=CANONICAL="/sdcard/delta_v4_memory.json"
+LINE=28 TEXT=section "CANONICAL MEMORY"
+LINE=36 TEXT=section "ALL MEMORY-LIKE FILES"
+LINE=37 TEXT=find /sdcard "$HOME" -type f 2>/dev/null | grep -Ei 'delta.*memory|memory.*delta|delta_v[0-9].*json|memory\.json|chat_history|learning|ucenje|učenje' | tee -a "$REPORT" || true
+LINE=42 TEXT=section "SCRIPT REFERENCES TO MEMORY PATHS"
+LINE=44 TEXT=xargs -0 grep -nEi 'delta_v4_memory|MEMORY_FILE|DeltaV45|DeltaV4|ingest|add_goal|json.dump|open\(.*w|/sdcard|Desktop|OneDrive|scp|sync_to_lenovo' 2>/dev/null | tee -a "$REPORT" || true
+LINE=50 TEXT=patterns=["delta_v4_memory", "MEMORY_FILE", "DeltaV45", "DeltaV4", "ingest", "add_goal", "json.dump", "sync_to_lenovo"]
+LINE=64 TEXT=mem_paths=sorted(set(re.findall(r'/(?:sdcard|data)[^"\']*delta[^"\']*memory[^"\']*\.json', txt)))
+LINE=70 TEXT=print("MEMORY_PATHS:", mem_paths if mem_paths else "NONE_EXPLICIT")
+LINE=74 TEXT=section "DELTA MEMORY JSON STRUCTURE"
+LINE=77 TEXT=p="/sdcard/delta_v4_memory.json"
+LINE=103 TEXT=echo "PASS if all active Delta scripts write to /sdcard/delta_v4_memory.json." | tee -a "$REPORT"
+LINE=104 TEXT=echo "WARNING if any script writes to other memory files." | tee -a "$REPORT"
+LINE=105 TEXT=echo "BLOCK if any script uses local Desktop path, wrong Lenovo path, or creates parallel memory." | tee -a "$REPORT"
+
+======================================================================
+ROLE=ANSWER_ENGINE_REFERENCE
+RANK=1
+GROUP=H00000586
+SHA256=1e42fdc3ff4efea031b42bfc17ec13a067c1c0b0dcbbd92e9b21ac24d3cb8e1c
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/data__data__com.termux__files__home__FREYA_TABLET_NODE_888__08_APP__freya.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=MEM="$BASE/09_MEMORY/freya_memory.md"
+LINE=5 TEXT=ABOUT="$BASE/09_MEMORY/about_danijela.md"
+LINE=11 TEXT=HUMAN="$BASE/16_HUMAN_GATE/human_gate_queue.md"
+LINE=13 TEXT=mkdir -p "$BASE"/{09_MEMORY,10_JOURNAL,11_TODO,12_PROJECTS,13_LEARNING,14_RESEARCH,16_HUMAN_GATE}
+LINE=32 TEXT=echo "  human       - Human Gate queue"
+LINE=70 TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "Learning mode. Today we learn how to write a project proposal for MIA. A project proposal explains the problem, the solution, the activities, the budget, and the expected impact. What is the main problem your MIA project should solve?"
+LINE=73 TEXT=echo "Human Gate Queue:"
+LINE=82 TEXT=echo "Moj trenutni odgovor:"
+LINE=85 TEXT=termux-tts-speak -l en -r 0.85 -p 0.92 "I saved your question. We will connect it with memory, documents, and research."
+LINE=114 TEXT=echo "Još nemam dovoljno lokalnog znanja za pun odgovor."
+LINE=123 TEXT=echo "Human Gate: active."
+LINE=124 TEXT=echo "FREYA: odgovor završen." >> "$MEM"
+
+======================================================================
+ROLE=ANSWER_ENGINE_REFERENCE
+RANK=2
+GROUP=H00000943
+SHA256=759854d8a811b3236c97ee0e53672dfd0f5b783a617f74b3892f33f5ea8cd257
+FILE=/data/data/com.termux/files/home/bin/freya_ssot_advisor
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=185 TEXT=REPORT="$REPORTS/FREYA_LOCAL_SSOT_ADVICE_$RUN_ID.txt"
+LINE=237 TEXT=echo "FREYA_LOCAL_SSOT_ADVICE"
+LINE=239 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=241 TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+LINE=250 TEXT=echo "=== SSOT POVEZANI IZVORI ==="
+LINE=251 TEXT=echo "SSOT_HIT_COUNT=$HIT_COUNT"
+LINE=263 TEXT=echo "SSOT_CONNECTION=FOUND"
+LINE=264 TEXT=echo "SAVJET=Postoje povezani lokalni SSOT izvori."
+LINE=268 TEXT=echo "SSOT_CONNECTION=NOT_FOUND"
+LINE=280 TEXT=echo "FINAL_STATUS=LOCAL_SSOT_ADVICE_DRAFT_CREATED"
+LINE=318 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=424 TEXT=FREYA MESSAGE AND SSOT ADVISOR
+
+======================================================================
+ROLE=ANSWER_ENGINE_REFERENCE
+RANK=3
+GROUP=H00000960
+SHA256=2ea240fa42803c36a849dfe4457b20a61e384d2630c7629122e48d2c79416101
+FILE=/data/data/com.termux/files/home/bin/freya_case_helper_v2
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=27 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=36 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=56 TEXT=echo "SAVJET=Poruka je pročitana, ali je potrebna fokusirana SSOT provjera."
+LINE=70 TEXT=STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED
+LINE=89 TEXT=Ova poruka ne predstavlja priznanje duga.
+LINE=99 TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+
+======================================================================
+ROLE=ANSWER_ENGINE_REFERENCE
+RANK=4
+GROUP=H00000945
+SHA256=475c19d0c94e9fee3d0ce1d5ceec6cf8ffd325f649f0d29399f0f793847400f3
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/00_CONTROL/FREYA_COMMAND_BACKUPS/freya_ssot_advisor_before_ocr_20260717_001552
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=185 TEXT=REPORT="$REPORTS/FREYA_LOCAL_SSOT_ADVICE_$RUN_ID.txt"
+LINE=237 TEXT=echo "FREYA_LOCAL_SSOT_ADVICE"
+LINE=239 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=241 TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+LINE=250 TEXT=echo "=== SSOT POVEZANI IZVORI ==="
+LINE=251 TEXT=echo "SSOT_HIT_COUNT=$HIT_COUNT"
+LINE=263 TEXT=echo "SSOT_CONNECTION=FOUND"
+LINE=264 TEXT=echo "SAVJET=Postoje povezani lokalni SSOT izvori."
+LINE=268 TEXT=echo "SSOT_CONNECTION=NOT_FOUND"
+LINE=280 TEXT=echo "FINAL_STATUS=LOCAL_SSOT_ADVICE_DRAFT_CREATED"
+LINE=329 TEXT=echo "NEXT_SAFE_ACTION=Install OCR only after Human Gate approves internet package download."
+LINE=341 TEXT=FREYA MESSAGE AND SSOT ADVISOR
+
+======================================================================
+ROLE=ANSWER_ENGINE_REFERENCE
+RANK=5
+GROUP=H00000946
+SHA256=b24677dffa14a072c714d44f625bdff33de62ec6dc0d313bab21ba893b43a221
+FILE=/data/data/com.termux/files/home/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA/00_CONTROL/FREYA_COMMAND_BACKUPS/freya_ssot_advisor_before_path_repair_20260717_001153
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=4 TEXT=BASE="$HOME/HUMAN_GATE_TABLET_CONTROL/07_ANDROID_FREYA"
+LINE=183 TEXT=REPORT="$REPORTS/FREYA_LOCAL_SSOT_ADVICE_$RUN_ID.txt"
+LINE=235 TEXT=echo "FREYA_LOCAL_SSOT_ADVICE"
+LINE=237 TEXT=echo "HUMAN_GATE=ACTIVE"
+LINE=239 TEXT=echo "STATUS=DRAFT_HUMAN_GATE_REVIEW_REQUIRED"
+LINE=248 TEXT=echo "=== SSOT POVEZANI IZVORI ==="
+LINE=249 TEXT=echo "SSOT_HIT_COUNT=$HIT_COUNT"
+LINE=261 TEXT=echo "SSOT_CONNECTION=FOUND"
+LINE=262 TEXT=echo "SAVJET=Postoje povezani lokalni SSOT izvori."
+LINE=266 TEXT=echo "SSOT_CONNECTION=NOT_FOUND"
+LINE=278 TEXT=echo "FINAL_STATUS=LOCAL_SSOT_ADVICE_DRAFT_CREATED"
+LINE=327 TEXT=echo "NEXT_SAFE_ACTION=Install OCR only after Human Gate approves internet package download."
+LINE=339 TEXT=FREYA MESSAGE AND SSOT ADVISOR
+
+======================================================================
+ROLE=ANSWER_ENGINE_REFERENCE
+RANK=6
+GROUP=H00000471
+SHA256=8e0c54f726e34caa9c767f541a949200b539a422358f003b57a219bef9feebe8
+FILE=/data/data/com.termux/files/home/00_SREDJEN_SISTEM/02_FREYA_CVOROVI/FREYA_MASTER_CONTROL_ROOM/02_KNOWLEDGE/FREYA/H024.py.HEALED_VOLIM_TE_V3_SAFE.sh
+HASH_VERIFICATION=PASS
+MATCHING_LINES=
+LINE=9 TEXT=# ORIGINAL_PATH=/data/data/com.termux/files/home/ANDROID_ARCHIVE_KNOWLEDGE_20260702_200007/02_REVIEW_ONLY_EXTRACTED/70cdd0446aea7660b67041a59eb93dd11e25bf769b7f797c7770bd917f540afe_70cdd0446aea7660b67041a59eb93dd11e25bf769b7f797c7770bd917f540afe_ARS__METAL__INDUSTRIES__DOO__09_iPhone_Strategic_Mine___Recycle.Bin__S-1-5-21-2548277487-317327/002. DELTA CHATGBT FILES/Android uredjaj/TITAN_LOGIC_CORE.py
+LINE=11 TEXT=# HUMAN_GATE=ACTIVE
+LINE=13 TEXT=HUMAN_GATE="${HUMAN_GATE:-BLOCKED}"
+LINE=14 TEXT=if [ "$HUMAN_GATE" != "ALLOW_RUNTIME" ]; then
+LINE=15 TEXT=echo "HUMAN_GATE_BLOCKED: Android V3 healed wrapper is static-only."
+

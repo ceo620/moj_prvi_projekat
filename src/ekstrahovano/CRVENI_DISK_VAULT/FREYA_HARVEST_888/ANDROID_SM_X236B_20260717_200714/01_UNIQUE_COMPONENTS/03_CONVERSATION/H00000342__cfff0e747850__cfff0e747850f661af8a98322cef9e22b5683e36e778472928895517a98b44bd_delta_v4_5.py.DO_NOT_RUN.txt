@@ -1,0 +1,109 @@
+#!/usr/bin/env python3
+"""
+DELTA v4.5 — Protokol 888 + Lenovo Sync
+"""
+
+import json
+import os
+import subprocess
+from datetime import datetime
+from pathlib import Path
+
+MEMORY_FILE = Path("/sdcard/delta_v4_memory.json")
+
+class DeltaV45:
+    def __init__(self):
+        self.memory = self._load()
+        print("🧠 Delta v4.5 (Lenovo Link) aktivna.")
+
+    def _load(self):
+        if MEMORY_FILE.exists():
+            try:
+                return json.load(open(MEMORY_FILE, encoding="utf-8"))
+            except:
+                pass
+        return {
+            "created": datetime.now().isoformat(),
+            "updated": datetime.now().isoformat(),
+            "signals": [],
+            "facts": [],
+            "goals": [],
+            "reflections": [],
+            "chat_history": []
+        }
+
+    def save(self):
+        self.memory["updated"] = datetime.now().isoformat()
+        with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(self.memory, f, indent=2, ensure_ascii=False)
+
+    def sanitize_path(self, target_path: str) -> str:
+        cleaned = target_path.replace(r"\~", "~").replace("~", "/data/data/com.termux/files/home")
+        cleaned = cleaned.replace("//", "/")
+        return os.path.abspath(cleaned)
+
+    def generate_ready_command(self, action_type: str, target_file: str, content: str) -> str:
+        real_path = self.sanitize_path(target_file)
+        redirect = ">" if action_type == "create" else ">>"
+        return f"cat << 'EOF' {redirect} {real_path}\n{content.strip()}\nEOF"
+
+    def sync_to_lenovo(self, user: str, ip: str, remote_path: str = "~/"):
+        """Automatski salje centralnu memoriju na Lenovo masinu preko SSH"""
+        print(f"🚀 Pokrecem sinhronizaciju sa Lenovo ({ip})...")
+        local_file = str(MEMORY_FILE)
+        
+        # SSH komanda sa koriscenjem naseg delta kljuca
+        cmd = [
+            "scp", 
+            "-i", os.path.expanduser("~/.ssh/id_delta"),
+            local_file, 
+            f"{user}@{ip}:{remote_path}"
+        ]
+        
+        try:
+            result = subprocess.run(cmd, check=True, capture_output=True, text=True)
+            print("✅ Memorija uspesno poslata na Lenovo masinu.")
+        except subprocess.CalledProcessError as e:
+            print(f"❌ Greska pri sinhronizaciji: {e.stderr}")
+
+    def ingest(self, text: str, source: str = "chat"):
+        self.memory["chat_history"].append({"time": datetime.now().isoformat(), "source": source, "content": text})
+        if any(word in text.lower() for word in ["želi", "hoće", "umoran", "frustriran", "protokol"]):
+            self.memory["facts"].append({"time": datetime.now().isoformat(), "fact": text[:180], "source": source})
+        self.memory["signals"].append({"time": datetime.now().isoformat(), "text": text[:200]})
+        self.save()
+
+    def add_goal(self, goal: str):
+        self.memory["goals"].append({"time": datetime.now().isoformat(), "goal": goal})
+        self.save()
+
+    def query(self, question: str):
+        q = question.lower()
+        results = []
+        if "cilj" in q or "goal" in q:
+            results = [g["goal"] for g in self.memory.get("goals", [])[-5:]]
+        elif "signal" in q:
+            results = [s["text"] for s in self.memory.get("signals", [])[-5:]]
+        else:
+            all_items = self.memory.get("facts", []) + self.memory.get("signals", [])
+            for item in all_items:
+                text_to_check = item.get("fact", item.get("text", ""))
+                if any(word in text_to_check.lower() for word in q.split()):
+                    results.append(text_to_check)
+
+        print(f"\n[DELTA 888]: {question.upper()}")
+        if results:
+            for r in list(set(results))[:5]:
+                print(f"• {r}")
+        else:
+            print("Nema podataka.")
+
+    def status(self):
+        print(f"\n--- DELTA v4.5 STATUS ---")
+        print(f"Signali: {len(self.memory.get('signals', []))}")
+        print(f"Ciljevi: {len(self.memory.get('goals', []))}")
+        print(f"-------------------------\n")
+
+if __name__ == "__main__":
+    d = DeltaV45()
+    d.status()

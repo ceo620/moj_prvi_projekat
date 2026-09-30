@@ -1,0 +1,232 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -u
+
+TS="$(date +%Y%m%d_%H%M%S)"
+ROOT="/sdcard/Download/SHA256_REGISTERED_BASH_VERIFY_$TS"
+REPORT="$ROOT/SHA256_REGISTERED_BASH_VERIFY_REPORT_$TS.txt"
+CSV="$ROOT/SHA256_REGISTERED_BASH_VERIFY_TABLE_$TS.csv"
+HASH="$ROOT/SHA256_REGISTERED_BASH_VERIFY_REPORT_$TS.sha256"
+
+mkdir -p "$ROOT"
+
+python3 - <<PY
+import os, re, csv, hashlib
+from pathlib import Path
+from datetime import datetime
+
+home = Path.home()
+download = Path("/sdcard/Download")
+root = Path("$ROOT")
+report = Path("$REPORT")
+csv_path = Path("$CSV")
+
+scan_roots = [home, download]
+sha_line = re.compile(r"^([a-fA-F0-9]{64})\\s+(.+?)\\s*$")
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+def safe_walk(base: Path):
+    for dp, dns, fns in os.walk(base):
+        dpp = Path(dp)
+        # avoid self-generated folder and huge archive trees where possible
+        if str(dpp).startswith(str(root)):
+            continue
+        for fn in fns:
+            yield dpp / fn
+
+def is_register_file(p: Path) -> bool:
+    name = p.name.lower()
+    if p.stat().st_size > 10 * 1024 * 1024:
+        return False
+    return (
+        "sha256" in name or
+        "hash" in name or
+        "manifest" in name or
+        "register" in name
+    ) and p.suffix.lower() in {".txt", ".csv", ".sha256", ".md", ".log"}
+
+def normalize_registered_path(raw: str, reg_dir: Path):
+    raw = raw.strip().strip('"').strip("'")
+    raw = raw.replace("\\\\", "/")
+    candidates = []
+
+    p = Path(raw)
+    if p.is_absolute():
+        candidates.append(p)
+    else:
+        candidates.append(reg_dir / raw)
+        candidates.append(Path.cwd() / raw)
+        candidates.append(home / raw)
+        candidates.append(download / raw)
+
+    for c in candidates:
+        try:
+            if c.exists():
+                return c
+        except Exception:
+            pass
+    return candidates[0] if candidates else p
+
+register_files = []
+bash_files = []
+
+for base in scan_roots:
+    if not base.exists():
+        continue
+    for p in safe_walk(base):
+        try:
+            if not p.is_file():
+                continue
+            if p.suffix == ".sh" or p.name.endswith(".bash") or p.name.endswith(".bashrc") or p.name == ".bashrc":
+                bash_files.append(p)
+            if is_register_file(p):
+                register_files.append(p)
+        except Exception:
+            continue
+
+registered_entries = []
+for reg in sorted(set(register_files)):
+    try:
+        text = reg.read_text(encoding="utf-8", errors="ignore").splitlines()
+    except Exception:
+        continue
+
+    for i, line in enumerate(text, 1):
+        m = sha_line.match(line.strip())
+        if not m:
+            continue
+        expected = m.group(1).lower()
+        raw_path = m.group(2).strip()
+        target = normalize_registered_path(raw_path, reg.parent)
+        registered_entries.append({
+            "register": str(reg),
+            "line": i,
+            "expected": expected,
+            "raw_path": raw_path,
+            "target": str(target),
+        })
+
+rows = []
+registered_hashes = set(e["expected"] for e in registered_entries)
+registered_targets = set(e["target"] for e in registered_entries)
+
+# Verify every parsed register entry
+for e in registered_entries:
+    target = Path(e["target"])
+    status = "MISSING_TARGET"
+    actual = ""
+    is_bash = "NO"
+
+    try:
+        if target.exists() and target.is_file():
+            actual = sha256_file(target)
+            status = "MATCH" if actual.lower() == e["expected"] else "HASH_MISMATCH"
+            if target.suffix == ".sh" or target.name.endswith(".bash") or target.name.endswith(".bashrc") or target.name == ".bashrc":
+                is_bash = "YES"
+    except Exception as ex:
+        status = "ERROR_" + str(ex).replace(",", " ")[:80]
+
+    rows.append({
+        "check_type": "REGISTER_ENTRY_VERIFY",
+        "status": status,
+        "is_bash": is_bash,
+        "path": str(target),
+        "actual_sha256": actual,
+        "registered_sha256": e["expected"],
+        "register": e["register"],
+        "register_line": e["line"],
+    })
+
+# Verify every bash script is registered somewhere
+for b in sorted(set(bash_files)):
+    try:
+        actual = sha256_file(b)
+        if actual.lower() in registered_hashes or str(b) in registered_targets:
+            status = "BASH_REGISTERED"
+        else:
+            status = "BASH_NOT_REGISTERED"
+        rows.append({
+            "check_type": "BASH_FILE_COVERAGE",
+            "status": status,
+            "is_bash": "YES",
+            "path": str(b),
+            "actual_sha256": actual,
+            "registered_sha256": actual if status == "BASH_REGISTERED" else "",
+            "register": "",
+            "register_line": "",
+        })
+    except Exception as ex:
+        rows.append({
+            "check_type": "BASH_FILE_COVERAGE",
+            "status": "ERROR_" + str(ex).replace(",", " ")[:80],
+            "is_bash": "YES",
+            "path": str(b),
+            "actual_sha256": "",
+            "registered_sha256": "",
+            "register": "",
+            "register_line": "",
+        })
+
+summary = {
+    "register_files_found": len(set(register_files)),
+    "sha256_entries_parsed": len(registered_entries),
+    "bash_files_found": len(set(bash_files)),
+    "matches": sum(1 for r in rows if r["status"] == "MATCH"),
+    "hash_mismatches": sum(1 for r in rows if r["status"] == "HASH_MISMATCH"),
+    "missing_targets": sum(1 for r in rows if r["status"] == "MISSING_TARGET"),
+    "bash_registered": sum(1 for r in rows if r["status"] == "BASH_REGISTERED"),
+    "bash_not_registered": sum(1 for r in rows if r["status"] == "BASH_NOT_REGISTERED"),
+}
+
+with csv_path.open("w", newline="", encoding="utf-8") as f:
+    w = csv.DictWriter(f, fieldnames=[
+        "check_type", "status", "is_bash", "path",
+        "actual_sha256", "registered_sha256", "register", "register_line"
+    ])
+    w.writeheader()
+    for r in rows:
+        w.writerow(r)
+
+with report.open("w", encoding="utf-8") as f:
+    f.write("SHA256 REGISTERED BASH VERIFY REPORT\\n")
+    f.write(f"Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\\n")
+    f.write("Mode: READ_ONLY_VERIFY\\n")
+    f.write("Controls: NO DELETE | NO MOVE | NO PATCH | NO EXECUTION OF FOUND SCRIPTS\\n\\n")
+
+    f.write("SUMMARY\\n")
+    for k, v in summary.items():
+        f.write(f"{k}: {v}\\n")
+
+    f.write("\\nIMPORTANT STATUS MEANINGS\\n")
+    f.write("MATCH = register hash matches current file.\\n")
+    f.write("HASH_MISMATCH = file exists but content changed after registration.\\n")
+    f.write("MISSING_TARGET = register points to file not found.\\n")
+    f.write("BASH_NOT_REGISTERED = bash script exists but no matching SHA256 registration found.\\n")
+
+    f.write("\\nPROBLEM ROWS\\n")
+    for r in rows:
+        if r["status"] in {"HASH_MISMATCH", "MISSING_TARGET", "BASH_NOT_REGISTERED"}:
+            f.write(f"{r['status']} | {r['path']} | register={r['register']} | line={r['register_line']}\\n")
+
+    f.write("\\nCSV_TABLE\\n")
+    f.write(str(csv_path) + "\\n")
+
+print("SHA256 REGISTERED BASH VERIFY COMPLETE")
+print("REPORT:", report)
+print("CSV:", csv_path)
+print("SUMMARY:")
+for k, v in summary.items():
+    print(f"{k}: {v}")
+PY
+
+sha256sum "$REPORT" > "$HASH"
+sha256sum "$CSV" >> "$HASH"
+
+echo ""
+echo "REPORT SHA256:"
+cat "$HASH"
