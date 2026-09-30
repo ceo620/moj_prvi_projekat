@@ -1,4 +1,4 @@
-﻿import os; from docx import Document
+import os; from docx import Document
 DIR = 'C:/TITAN_KONACNO'; RAW = 'C:/TITAN_CENTRAL_BRAIN/Raw_Data'
 
 # Skeniramo tekstualne briefing-e i checkliste

@@ -1,4 +1,4 @@
-﻿import os; import pandas as pd; from docx import Document
+import os; import pandas as pd; from docx import Document
 DIR = 'C:/TITAN_KONACNO'; RAW = 'C:/TITAN_CENTRAL_BRAIN/Raw_Data'
 EXCEL = os.path.join(RAW, 'TITAN_Master_Key_Facts_v2.0_DUBLJE.xlsx - STRATEŠKI.csv')
 

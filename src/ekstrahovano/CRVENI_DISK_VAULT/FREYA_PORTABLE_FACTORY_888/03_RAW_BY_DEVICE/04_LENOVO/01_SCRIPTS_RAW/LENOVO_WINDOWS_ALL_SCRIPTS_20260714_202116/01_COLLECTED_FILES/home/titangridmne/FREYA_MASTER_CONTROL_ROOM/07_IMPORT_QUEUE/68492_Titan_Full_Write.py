@@ -1,4 +1,4 @@
-﻿import os
+import os
 from docx import Document
 D = 'C:/TITAN_KONACNO'
 os.makedirs(D, exist_ok=True)

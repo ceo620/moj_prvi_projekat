@@ -1,4 +1,4 @@
-﻿import os; from docx import Document
+import os; from docx import Document
 D = 'C:/TITAN_KONACNO'
 
 doc = Document()

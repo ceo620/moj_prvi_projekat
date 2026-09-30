@@ -1,4 +1,4 @@
-﻿import pandas as pd
+import pandas as pd
 import os
 
 IN_FILE = os.path.join(os.environ['USERPROFILE'], 'Desktop', '02_MAJKA_TITANA_NEURAL_v33_FINAL.xlsx')
