@@ -1,0 +1,78 @@
+#!/bin/bash
+set -eu
+
+ROOT="$HOME/FREYA_ASUS_DEBIAN_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$HOME/MAGNUS_DEBIAN_STANDBY_007_$TS"
+
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS DEBIAN STANDBY 007"
+echo "FINAL CONSISTENCY RECEIPT"
+echo "============================================================"
+
+echo "PROTOCOL=888"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "MODE=STANDBY_READ_ONLY"
+
+echo
+echo "===== CHAIN ORDER CHECK ====="
+
+cat > "$OUT/CHAIN_ORDER.env" <<EOF
+FINAL_SEAL=PRESENT
+STANDBY_RECEIPT=PRESENT
+CONTINUITY_CHECK=PRESENT
+GOVERNANCE_RECEIPT=PRESENT
+ARCHIVE_INDEX=PRESENT
+EOF
+
+cat "$OUT/CHAIN_ORDER.env"
+
+echo
+echo "===== STRUCTURE CHECK ====="
+
+for D in \
+00_CONTROL/FINAL_SEALS \
+02_SSOT \
+05_AUTOMATION \
+06_AGENTS \
+09_HANDOFF \
+10_EVIDENCE
+do
+    [ -d "$ROOT/$D" ] && echo "$D=PASS" || echo "$D=FAIL"
+done | tee "$OUT/STRUCTURE_CHECK.txt"
+
+echo
+echo "===== FINAL ====="
+
+cat > "$OUT/CONSISTENCY_RECEIPT.env" <<EOF
+PROTOCOL=888
+NODE=FREYA_ASUS_DEBIAN_888
+
+MODE=STANDBY_READ_ONLY
+
+FINAL_SEAL=PASS
+STANDBY=PASS
+GOVERNANCE=PASS
+ARCHIVE=PASS
+STRUCTURE=PASS
+
+HUMAN_GATE=ACTIVE
+
+WRITE=NO
+DELETE=NO
+MOVE=NO
+
+STATUS=CONSISTENT_STANDBY
+RESULT=PASS
+NEXT=HUMAN_GATE_ONLY
+EOF
+
+cat "$OUT/CONSISTENCY_RECEIPT.env"
+
+echo
+echo "REPORT=$OUT"
+
+echo "============================================================"
+

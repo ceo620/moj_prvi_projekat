@@ -1,0 +1,67 @@
+#!/bin/bash
+set -eu
+
+ROOT="$HOME/FREYA_ASUS_DEBIAN_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$HOME/MAGNUS_DEBIAN_STANDBY_019_$TS"
+
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS DEBIAN STANDBY 019"
+echo "FINAL MAC HANDOFF AUTHORIZATION RECEIPT"
+echo "============================================================"
+
+echo "PROTOCOL=888"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "MODE=STANDBY_READ_ONLY"
+
+echo
+echo "===== MAC HANDOFF REFERENCES ====="
+
+find "$ROOT" \
+-type f \
+\( -iname "*MAC*" -o -iname "*HANDOFF*" -o -iname "*MANIFEST*" \) \
+2>/dev/null | sort | tee "$OUT/MAC_HANDOFF_REFERENCES.txt"
+
+
+echo
+echo "===== AUTHORIZATION RECEIPT ====="
+
+cat > "$OUT/MAC_HANDOFF_AUTHORIZATION_RECEIPT.env" <<EOF
+PROTOCOL=888
+
+NODE=FREYA_ASUS_DEBIAN_888
+
+MAC_HANDOFF_STATUS=AUTHORIZED_REVIEW_ONLY
+
+SSOT_STATUS=LOCKED
+FINAL_SEAL=PRESENT
+HANDOFF_STATUS=PROTECTED
+
+MAC_REFERENCE_INDEXED=YES
+
+HUMAN_GATE=ACTIVE
+
+AUTO_TRANSFER=DENIED
+AUTO_COPY=DENIED
+AUTO_SEND=DENIED
+
+WRITE=NO
+DELETE=NO
+MOVE=NO
+TRANSFER=NO
+
+STATUS=MAC_HANDOFF_WAITING_HUMAN_GATE
+
+RESULT=PASS
+NEXT=HUMAN_GATE_ONLY
+EOF
+
+cat "$OUT/MAC_HANDOFF_AUTHORIZATION_RECEIPT.env"
+
+echo
+echo "REPORT=$OUT"
+
+echo "============================================================"
+

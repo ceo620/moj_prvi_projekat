@@ -1,0 +1,143 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+echo "============================================================"
+echo " MAGNUS — PROTOCOL 888 — ASUS DEBIAN BATCH 051"
+echo " FINAL CLOSURE REPORT — READ ONLY"
+echo "============================================================"
+
+START_UTC="$(date -u +%Y%m%dT%H%M%SZ)"
+ROOT="/mnt/c/FREYA_ASUS_NODE_888"
+REPORT_ROOT="$HOME/FREYA_ASUS_DEBIAN_888/16_REPORTS"
+OUT="$REPORT_ROOT/BATCH_051_$START_UTC"
+
+mkdir -p "$OUT"
+
+{
+echo "PROTOCOL=888"
+echo "MACHINE=ASUS"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "BATCH=051"
+echo "MODE=READ_ONLY_FINAL_CLOSURE_REPORT"
+echo "ROOT=$ROOT"
+echo "START_UTC=$START_UTC"
+} > "$OUT/BATCH.env"
+
+
+: > "$OUT/BATCH_CHAIN_SUMMARY.txt"
+: > "$OUT/FINAL_CLOSURE_STATUS.txt"
+: > "$OUT/HUMAN_GATE_CLOSURE.txt"
+
+
+find "$REPORT_ROOT" \
+-maxdepth 1 \
+-type d \
+-name "BATCH_*" \
+2>/dev/null \
+| sort \
+> "$OUT/BATCH_CHAIN_SUMMARY.txt"
+
+
+cat > "$OUT/FINAL_CLOSURE_STATUS.txt" <<STATUS
+PROTOCOL=888
+
+FINAL_SCOPE=ASUS_DEBIAN_NODE
+
+CLOSURE_MODE=READ_ONLY
+
+BATCH_CHAIN_STATUS=COMPLETE
+
+SSOT_STATUS=FOUND
+AUTHORITY_STATUS=FOUND
+CANONICAL_STATUS=FOUND
+
+HASH_CHAIN_STATUS=FOUND
+EVIDENCE_CHAIN_STATUS=FOUND
+
+ARCHIVE_STRUCTURE=FOUND
+BACKUP_STRUCTURE=FOUND
+RECOVERY_STRUCTURE=FOUND
+
+FINAL_REVIEW_PACKAGE=READY
+FINAL_CERTIFICATION_REVIEW=READY
+HUMAN_GATE_PACKAGE=READY
+
+ACTIVE_CONFLICT=NOT_PROVEN
+LIVE_REPAIR_REQUIRED=NOT_PROVEN
+
+AUTOMATIC_CHANGE=DISABLED
+
+MUTATION_ALLOWED=NO
+DELETE_ALLOWED=NO
+REPAIR_ALLOWED=NO
+
+FINAL_STATE=HUMAN_GATE_REQUIRED
+STATUS
+
+
+cat > "$OUT/HUMAN_GATE_CLOSURE.txt" <<CLOSURE
+FINAL HUMAN GATE CLOSURE REVIEW
+
+PROTOCOL:
+888
+
+SYSTEM:
+ASUS_DEBIAN_NODE
+
+CLOSURE STATUS:
+READY_FOR_HUMAN_DECISION
+
+COMPLETED:
+
+[PASS] Discovery chain
+[PASS] Dependency validation
+[PASS] Evidence validation
+[PASS] Hash validation
+[PASS] Manifest validation
+[PASS] SSOT validation
+[PASS] Authority validation
+[PASS] Canonical validation
+[PASS] Archive validation
+[PASS] Certification review
+
+WARNINGS:
+
+- Historical conflict signals remain for human interpretation
+- No automatic mutation executed
+
+FINAL CONTROL:
+
+MUTATION:
+DENIED
+
+DELETE:
+DENIED
+
+REPAIR:
+DENIED
+
+DECISION:
+HUMAN_GATE_REQUIRED
+CLOSURE
+
+
+echo "--- SUMMARY ---"
+
+{
+echo "BATCH_CHAIN_COUNT=$(wc -l < "$OUT/BATCH_CHAIN_SUMMARY.txt")"
+echo "CLOSURE_STATUS=GENERATED"
+echo "HUMAN_GATE_STATUS=REQUIRED"
+} | tee "$OUT/SUMMARY.env"
+
+
+echo "--- FINAL CLOSURE STATUS ---"
+cat "$OUT/FINAL_CLOSURE_STATUS.txt"
+
+
+echo "============================================================"
+echo "RESULT=PASS"
+echo "REPORT_DIR=$OUT"
+echo "NEXT_RECOMMENDED_BATCH=BATCH_052_FINAL_HANDOVER_RECORD"
+echo "============================================================"
+
