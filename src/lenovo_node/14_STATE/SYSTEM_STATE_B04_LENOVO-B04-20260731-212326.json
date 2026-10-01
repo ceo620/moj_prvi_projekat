@@ -1,0 +1,23 @@
+{
+    "system":  "FREYA_LENOVO_NODE_888",
+    "status":  "SANDBOX_STATIC_PASS_WITH_BLOCKS",
+    "protocol":  888,
+    "human_gate":  "ACTIVE",
+    "tested_components":  39,
+    "static_pass":  17,
+    "adapter_required":  18,
+    "blocked_components":  4,
+    "hash_failures":  0,
+    "copy_failures":  0,
+    "parse_failures":  0,
+    "critical_pattern_blocks":  4,
+    "source_components_executed":  0,
+    "modules_imported":  0,
+    "network_actions":  0,
+    "scheduled_tasks_changed":  0,
+    "mac_delivery_enabled":  false,
+    "scheduler_0900_ready":  false,
+    "next_batch":  "BATCH_05_CREATE_SAFE_EXECUTION_ADAPTERS",
+    "run_id":  "LENOVO-B04-20260731-212326",
+    "updated_at":  "2026-07-31T21:23:32.6811607+02:00"
+}

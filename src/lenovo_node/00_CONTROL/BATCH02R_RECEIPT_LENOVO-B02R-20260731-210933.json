@@ -1,0 +1,18 @@
+{
+    "receipt_type":  "FREYA_LENOVO_BATCH02R",
+    "status":  "PASS",
+    "run_id":  "LENOVO-B02R-20260731-210933",
+    "protocol":  888,
+    "registry_candidates":  89,
+    "unique_hashes":  43,
+    "duplicate_hash_groups":  40,
+    "source_files_copied":  0,
+    "source_files_moved":  0,
+    "source_files_deleted":  0,
+    "candidates_executed":  0,
+    "scheduled_tasks_created":  0,
+    "network_actions":  0,
+    "human_gate":  "ACTIVE",
+    "mac_delivery":  "BLOCKED_PENDING_VALIDATION",
+    "generated_at":  "2026-07-31T21:10:39.7910350+02:00"
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "DELTA_STAGING_ONLY",
+  "path": "/Users/danijeladjurovic/FREYA_MAC_CONTROL_TOWER_888/11_AI_AGENT_FACTORY_888/DELTA",
+  "original_files_modified": false,
+  "red_disk_modified": false,
+  "ssot_modified": false,
+  "rollback_action": "REMOVE_ONLY_THIS_NEW_STAGING_DIRECTORY_AFTER_HUMAN_GATE_APPROVAL",
+  "automatic_rollback": false
+}

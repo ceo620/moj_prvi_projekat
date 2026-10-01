@@ -1,0 +1,17 @@
+{
+    "receiver":  "FREYA_MAC_LAP_TOP_HUMAN_GATE",
+    "target_time":  "09:00",
+    "target_timezone":  "Europe/Podgorica",
+    "hostname":  "NOT_PROVIDED",
+    "address":  "NOT_PROVIDED",
+    "remote_user":  "NOT_PROVIDED",
+    "remote_intake_path":  "NOT_PROVIDED",
+    "transport_protocol":  "NOT_SELECTED",
+    "endpoint_validated":  false,
+    "credentials_present":  false,
+    "authentication":  "NOT_TESTED",
+    "acknowledgement":  "NOT_TESTED",
+    "delivery_enabled":  false,
+    "delivery_status":  "NOT_SENT_OFFLINE_DRY_RUN",
+    "network_used":  false
+}

@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "required": [
+    "agent",
+    "role",
+    "model",
+    "status",
+    "analysis"
+  ],
+  "properties": {
+    "agent": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "analysis": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "system":  "FREYA_LENOVO_NODE_888",
+    "protocol":  888,
+    "human_gate":  "ACTIVE",
+    "candidate_execution":  "BLOCKED",
+    "canonical_execution":  "BLOCKED_PENDING_SANDBOX_TEST",
+    "network_access":  "BLOCKED",
+    "scheduler_changes":  "BLOCKED",
+    "target_delivery_time":  "09:00",
+    "target_receiver":  "FREYA_MAC_LAP_TOP_HUMAN_GATE",
+    "selected_components":  39,
+    "generated_at":  "2026-07-31T21:15:51.6636668+02:00",
+    "run_id":  "LENOVO-B03-20260731-211544",
+    "next_batch":  "BATCH_04_CONTROLLED_SANDBOX_IMPORT_TEST"
+}

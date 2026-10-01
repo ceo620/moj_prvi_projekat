@@ -1,0 +1,6 @@
+﻿TIME_UTC=2026-08-01T11:43:44.4534489Z
+ERROR_TYPE=System.ArgumentException
+ERROR_MESSAGE=Argument types do not match
+SCRIPT_STACK=at <ScriptBlock>, D:\FREYA_LENOVO_NODE_888\12_TESTS\BATCH10R1_AGENT_ROSTER_REPAIR_LENOVO-B10R1-20260801-133808\BATCH10R1_EXECUTION.ps1: line 1151
+at <ScriptBlock>, <No file>: line 1922
+at <ScriptBlock>, <No file>: line 1
