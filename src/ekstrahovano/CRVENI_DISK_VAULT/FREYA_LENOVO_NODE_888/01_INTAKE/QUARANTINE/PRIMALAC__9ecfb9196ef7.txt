@@ -1,8 +1,0 @@
-﻿PRIMALAC
-
-Ime i prezime: IME I PREZIME PRIMAOCA
-Email: email@primjer.com
-Organizacija: NAZIV ORGANIZACIJE
-Predmet: Dokumentacija za potpisivanje
-
-STATUS_PRIMAOCA: PROVJERITI_PRIJE_SLANJA
