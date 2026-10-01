@@ -16,6 +16,7 @@ except ImportError:
 
 FREYA_RESOURCES = {
     "node_type": "HUMAN_GATE_MOBILE",
+    "integrated_segments": ["FREYA_PORTABLE_FACTORY_888", "output_harmonized_factory"],
     "resources": ["FREYA_PORTABLE_FACTORY_888", "output_harmonized_factory"]
 }
 
