@@ -1,0 +1,20 @@
+{
+    "status":  "OFFLINE_DRY_RUN_PASS",
+    "system":  "FREYA_LENOVO_NODE_888",
+    "approved_components":  35,
+    "blocked_components":  4,
+    "agents_running":  0,
+    "agents_executed":  0,
+    "modules_imported":  0,
+    "heartbeats_ok":  0,
+    "restarts":  0,
+    "network_connections_started":  0,
+    "scheduled_tasks_changed":  0,
+    "endpoint_validated":  false,
+    "credentials_present":  false,
+    "scheduler_enabled":  false,
+    "mac_delivery_enabled":  false,
+    "delivery_status":  "NOT_SENT_OFFLINE_DRY_RUN",
+    "human_gate":  "ACTIVE",
+    "generated_at":  "2026-07-31T21:58:03.5704496+02:00"
+}

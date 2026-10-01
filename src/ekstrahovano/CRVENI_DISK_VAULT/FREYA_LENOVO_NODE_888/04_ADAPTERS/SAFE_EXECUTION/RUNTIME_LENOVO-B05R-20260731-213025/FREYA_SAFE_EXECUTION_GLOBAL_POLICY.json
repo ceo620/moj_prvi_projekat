@@ -1,0 +1,30 @@
+{
+    "schema_version":  "1.0",
+    "system":  "FREYA_LENOVO_NODE_888",
+    "protocol":  888,
+    "human_gate":  "ACTIVE",
+    "fail_closed":  true,
+    "default_mode":  "DENY",
+    "adapter_mode":  "LOCKED_VALIDATE_ONLY",
+    "supported_modes":  [
+                            "Inspect",
+                            "Validate"
+                        ],
+    "run_mode_available":  false,
+    "component_execution":  "BLOCKED",
+    "module_import":  "BLOCKED",
+    "network":  "DENY",
+    "scheduler":  "DENY",
+    "process_spawn":  "DENY",
+    "filesystem_write":  "DENY",
+    "source_modification":  "DENY",
+    "source_move":  "DENY",
+    "source_delete":  "DENY",
+    "canonical_hash_required":  true,
+    "approval_token_required":  true,
+    "target_receiver":  "FREYA_MAC_LAP_TOP_HUMAN_GATE",
+    "target_delivery_time":  "09:00",
+    "delivery_enabled":  false,
+    "created_at":  "2026-07-31T21:30:30.0392409+02:00",
+    "run_id":  "LENOVO-B05R-20260731-213025"
+}

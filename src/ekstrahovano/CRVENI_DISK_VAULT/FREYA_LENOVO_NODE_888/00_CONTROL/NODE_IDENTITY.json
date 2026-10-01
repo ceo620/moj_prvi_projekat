@@ -1,0 +1,18 @@
+{
+    "schema_version":  "1.0",
+    "system_name":  "FREYA_LENOVO_NODE_888",
+    "computer_name":  "DELTA",
+    "operator":  "titangrid.info",
+    "protocol":  888,
+    "human_gate":  "ACTIVE",
+    "fail_closed":  true,
+    "default_mode":  "DENY",
+    "all_agents_one_system":  true,
+    "canonical_root":  "D:\\FREYA_LENOVO_NODE_888",
+    "target_receiver":  "FREYA_MAC_LAP_TOP_HUMAN_GATE",
+    "target_time":  "09:00",
+    "timezone":  "Europe/Podgorica",
+    "delivery_enabled":  false,
+    "created_at":  "2026-07-31T21:09:36.0667857+02:00",
+    "run_id":  "LENOVO-B02R-20260731-210933"
+}

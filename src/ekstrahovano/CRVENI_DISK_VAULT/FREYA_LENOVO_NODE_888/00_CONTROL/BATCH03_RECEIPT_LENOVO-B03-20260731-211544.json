@@ -1,0 +1,47 @@
+{
+    "receipt_type":  "FREYA_LENOVO_BATCH03",
+    "status":  "PASS",
+    "system":  "FREYA_LENOVO_NODE_888",
+    "protocol":  888,
+    "run_id":  "LENOVO-B03-20260731-211544",
+    "registry_rows":  89,
+    "unique_hash_groups":  43,
+    "selected_components":  39,
+    "duplicate_rows_not_copied":  46,
+    "blocked_components":  4,
+    "source_missing":  0,
+    "hash_mismatches":  0,
+    "parse_failures":  3,
+    "copy_failures":  0,
+    "verification_failures":  0,
+    "candidates_executed":  0,
+    "source_files_moved":  0,
+    "source_files_deleted":  0,
+    "scheduled_tasks_changed":  0,
+    "network_actions":  0,
+    "human_gate":  "ACTIVE",
+    "mac_delivery":  "BLOCKED_PENDING_VALIDATION",
+    "selected_by_role":  [
+                             {
+                                 "role":  "ADAPTER",
+                                 "count":  3
+                             },
+                             {
+                                 "role":  "AGENT",
+                                 "count":  7
+                             },
+                             {
+                                 "role":  "ORCHESTRATOR",
+                                 "count":  3
+                             },
+                             {
+                                 "role":  "SUPPORT_COMPONENT",
+                                 "count":  23
+                             },
+                             {
+                                 "role":  "VALIDATOR",
+                                 "count":  3
+                             }
+                         ],
+    "generated_at":  "2026-07-31T21:15:51.7494558+02:00"
+}

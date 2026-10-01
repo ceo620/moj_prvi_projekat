@@ -1,0 +1,9 @@
+{
+  "provider": "OLLAMA_LOCAL",
+  "model": "llama3.1:latest",
+  "endpoint": "http://127.0.0.1:11434",
+  "transport": "LOOPBACK_HTTP",
+  "external_api_required": false,
+  "model_download_allowed": false,
+  "production_binding": false
+}

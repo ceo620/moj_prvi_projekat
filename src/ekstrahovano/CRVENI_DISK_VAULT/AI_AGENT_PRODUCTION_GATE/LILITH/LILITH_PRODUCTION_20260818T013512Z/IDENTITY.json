@@ -1,0 +1,13 @@
+{
+  "agent_id": "LILITH_MAC_AI_AGENT_888",
+  "agent_name": "LILITH",
+  "human_gate": "ACTIVE",
+  "node": "FREYA_MAC_NODE_888",
+  "production_authority": false,
+  "promotion_authority": false,
+  "protocol": "888",
+  "purpose": "EXTRACT_AND_CLASSIFY_SIGNALS_FROM_EXPLICITLY_APPROVED_LOCAL_INPUT",
+  "role": "SIGNAL_RESEARCH",
+  "self_activation_authority": false,
+  "status": "STAGING_ONLY_NOT_PRODUCTION"
+}

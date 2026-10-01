@@ -1,0 +1,11 @@
+{
+    "system":  "FREYA_LENOVO_NODE_888",
+    "protocol":  888,
+    "node_type":  "LENOVO_WINDOWS",
+    "computer_name":  "DELTA",
+    "user_name":  "titangrid.info",
+    "timezone":  "Europe/Podgorica",
+    "run_id":  "LENOVO-B06R-20260731-215758",
+    "packet_name":  "FREYA_LENOVO_TO_MAC_20260731_090000_888_DRYRUN_LENOVO-B06R-20260731-215758",
+    "generated_at":  "2026-07-31T21:58:03.5704496+02:00"
+}

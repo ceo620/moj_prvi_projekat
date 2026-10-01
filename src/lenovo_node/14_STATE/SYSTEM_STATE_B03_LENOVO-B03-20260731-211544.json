@@ -1,0 +1,20 @@
+{
+    "system":  "FREYA_LENOVO_NODE_888",
+    "status":  "CANONICAL_COMPONENTS_SELECTED",
+    "protocol":  888,
+    "human_gate":  "ACTIVE",
+    "registry_rows":  89,
+    "unique_hash_groups":  43,
+    "selected_components":  39,
+    "duplicate_rows_not_copied":  46,
+    "blocked_components":  4,
+    "agents_executed":  0,
+    "source_files_moved":  0,
+    "source_files_deleted":  0,
+    "scheduler_0900_ready":  false,
+    "mac_delivery_enabled":  false,
+    "network_enabled":  false,
+    "next_batch":  "BATCH_04_CONTROLLED_SANDBOX_IMPORT_TEST",
+    "updated_at":  "2026-07-31T21:15:51.6974380+02:00",
+    "run_id":  "LENOVO-B03-20260731-211544"
+}

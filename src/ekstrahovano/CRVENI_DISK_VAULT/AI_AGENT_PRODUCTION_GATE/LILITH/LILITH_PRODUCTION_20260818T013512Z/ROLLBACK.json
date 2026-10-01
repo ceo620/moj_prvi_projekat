@@ -1,0 +1,11 @@
+{
+  "automatic_delete": false,
+  "original_files_modified": false,
+  "production_modified": false,
+  "protocol": "888",
+  "red_disk_modified": false,
+  "rollback_requires_separate_human_gate": true,
+  "scope": "LILITH_STAGING_ONLY",
+  "ssot_modified": false,
+  "staging_root": "/Users/danijeladjurovic/FREYA_MAC_CONTROL_TOWER_888/11_AI_AGENT_FACTORY_888/LILITH"
+}

@@ -1,0 +1,20 @@
+{
+    "PROTOCOL":  888,
+    "NODE":  "FREYA_LENOVO_DELTA_888",
+    "COMPUTER":  "DELTA",
+    "MODE":  "B01R5_DISCOVERY_CLOSURE_EXECUTED",
+    "ACTIVE_DESKTOP":  "C:\\Users\\titangrid.info\\ONE_DESKTOP_888",
+    "CANONICAL_ROOT":  "D:\\FREYA_LENOVO_NODE_888",
+    "PROGRAMDATA_ROOT":  "C:\\ProgramData\\FREYA_LENOVO_888",
+    "LEGACY_ARCHIVE":  "C:\\Users\\titangrid.info\\ONE_DESKTOP_888\\DESKTOP_SIGURNA_ARHIVA",
+    "LEGACY_EXECUTION_ALLOWED":  false,
+    "LEGACY_MIGRATION_BLOCKING":  false,
+    "LEGACY_PRESERVE":  true,
+    "RED_DISK_FULL_RESCAN":  false,
+    "RANDOM_EXECUTION":  false,
+    "MOVE_PERFORMED":  false,
+    "DELETE_PERFORMED":  false,
+    "OVERWRITE_PERFORMED":  false,
+    "NETWORK_STARTED":  false,
+    "NEXT_STEP":  "BATCH_01R5_REPAIR"
+}
