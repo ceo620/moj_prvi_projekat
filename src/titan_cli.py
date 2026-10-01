@@ -21,12 +21,12 @@ def meni():
         print("0. Izlaz")
         print("=============================================")
         
-        izbor = input("Izaberi opciju [0-6]: ").strip()
+        izbor = sys.stdin.readline().strip("Izaberi opciju [0-6]: ").strip()
         
         if izbor == "3":
             print("\n[+] Pokrećem Mrežni Kontrolor...")
             proveri_mrezu(generisi_pdf=True)
-            input("\n[Pritisni ENTER za povratak u meni...]")
+            sys.stdin.readline().strip("\n[Pritisni ENTER za povratak u meni...]")
         elif izbor == "0":
             print("\nExiting TITAN CLI...")
             break
