@@ -2,18 +2,9 @@ import sys
 import os
 from pathlib import Path
 
-# Prilagođavanje putanje prema R8-25 (Android/Termux fallback)
-primary_root = Path("/mnt/c/Users/ceo/OneDrive/Desktop/FIRMA_DOKUMENTACIJA")
-
-try:
-    if os.path.exists("/mnt/c"):
-        ROOT = primary_root
-    else:
-        ROOT = Path.home() / "projekti" / "moj_prvi_projekat" / "out" / "FIRMA_DOKUMENTACIJA"
-    ROOT.mkdir(parents=True, exist_ok=True)
-except Exception:
-    ROOT = Path.home() / "projekti" / "moj_prvi_projekat" / "out" / "FIRMA_DOKUMENTACIJA"
-    ROOT.mkdir(parents=True, exist_ok=True)
+# Univerzalna putanja za izlaz unutar projekta
+ROOT = Path.home() / "projekti" / "moj_prvi_projekat" / "izlaz" / "dokumenti"
+ROOT.mkdir(parents=True, exist_ok=True)
 
 try:
     from reportlab.lib.pagesizes import A4
@@ -24,7 +15,7 @@ except ModuleNotFoundError:
     print("MISSING_PYTHON_MODULE=No module named 'reportlab'")
     sys.exit(20)
 
-def napravi_memorandum(naziv_fajla="memorandum.pdf", naslov="TITAN GRID", tekst="Sistem aktivan"):
+def napravi_memorandum(naziv_fajla="memorandum.pdf", naslov="TITAN GRID 888", tekst="Memorandum Factory - Mreža usklađena i operativna."):
     target = ROOT / naziv_fajla
     doc = SimpleDocTemplate(str(target), pagesize=A4)
     styles = getSampleStyleSheet()
