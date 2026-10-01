@@ -6,3 +6,4 @@ __pycache__/
 *.pyc
 src/ekstrahovano/CRVENI_DISK_VAULT/**/.venvs/
 src/ekstrahovano/**/site-packages/
+izlaz/
