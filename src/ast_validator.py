@@ -7,7 +7,6 @@ def validiraj_python_fajlove(root_dir="src"):
     pukle_skripte = []
     
     for py_fajl in putanja.rglob("*.py"):
-        # Preskačemo ekstrahovane/arhivske foldere ako postoje unutar src
         if "ekstrahovano" in py_fajl.parts:
             continue
         try:
@@ -22,7 +21,7 @@ def validiraj_python_fajlove(root_dir="src"):
             print(f"  - {fajl}: {err}")
         return False
     else:
-        print(f"[OK] Svi glavne Python skripte u '{root_dir}' su sintaksno ispravne (AST Validacija Uspjesna).")
+        print(f"[OK] Sve glavne Python skripte u '{root_dir}' su sintaksno ispravne (AST Validacija Uspjesna).")
         return True
 
 if __name__ == "__main__":
