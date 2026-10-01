@@ -4,3 +4,4 @@ FREYA_PLATFORM_2_0/
 # Python cache
 __pycache__/
 *.pyc
+venv/
