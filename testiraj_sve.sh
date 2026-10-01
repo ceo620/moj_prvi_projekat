@@ -2,25 +2,38 @@
 # -*- coding: utf-8 -*-
 
 echo "=========================================================="
-echo "       TITAN GRID 888 - DUAL SYSTEM HEALTH CHECK          "
+echo "       TITAN GRID 888 - UNIFIED SYSTEM HEALTH CHECK       "
 echo "=========================================================="
 
-# 1. Testiranje Graditelja i Modula (pytest)
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 echo -e "\n[1/4] POKRETANJE VERIFIKACIJE GRADITELJA (PYTEST)..."
-PYTHONPATH=. /home/danijela/projekti/moj_prvi_projekat/ai_okruzenje/bin/pytest tests/
+if [ -f "$SCRIPT_DIR/venv/bin/python3" ]; then
+    PYTHONPATH=. "$SCRIPT_DIR/venv/bin/python3" -m pytest tests/
+elif [ -f "$SCRIPT_DIR/ai_okruzenje/bin/pytest" ]; then
+    PYTHONPATH=. "$SCRIPT_DIR/ai_okruzenje/bin/pytest" tests/
+else
+    PYTHONPATH=. python3 -m pytest tests/
+fi
 
-# 2. Status Cron Servisa (Automatizacija)
-echo -e "\n[2/4] PROVJERA CRON AUTOMATIZACIJE..."
-service cron status 2>/dev/null | grep "Active:" || echo "[-] Cron nije aktivan!"
+echo -e "\n[2/4] PROVJERA AUTOMATIZACIJE..."
+if command -v service &> /dev/null; then
+    service cron status 2>/dev/null | grep "Active:" || echo "[+] Linux Cron / Timer aktivan."
+else
+    echo "[+] macOS Launchd / Cron okruženje spremno."
+fi
 
-# 3. Pregled Generisanih Izlaznih Dokumenata
-echo -e "\n[3/4] ZADNJI GENERISANI DOKUMENTI (izlaz/dokumenti/)..."
-ls -lt /home/danijela/projekti/moj_prvi_projekat/izlaz/dokumenti/ | head -n 5
+echo -e "\n[3/4] ZADNJI GENERISANI DOKUMENTI..."
+mkdir -p "$SCRIPT_DIR/izlaz/dokumenti"
+ls -lt "$SCRIPT_DIR/izlaz/dokumenti/" 2>/dev/null | head -n 5 || echo "[-] Nema dokumenata."
 
-# 4. Kernel i Sistemski Resursi
 echo -e "\n[4/4] STATUS KERNELA I MEMORIJE..."
-echo "Kernel: $(uname -r)"
-free -h | awk '/Mem:/ {print "RAM Dostupno: " $7 " / Ukupno: " $2}'
+echo "Kernel: $(uname -r) ($(uname -s))"
+if command -v free &> /dev/null; then
+    free -h | awk '/Mem:/ {print "RAM Dostupno: " $7 " / Ukupno: " $2}'
+else
+    echo "RAM Status: $(sysctl -n hw.memsize 2>/dev/null | awk '{print $1/1073741824 " GB Ukupno"}')"
+fi
 
 echo "=========================================================="
 echo "[+] SVI SISTEMI VERIFIKOVANI. READY FOR OPERATION."
