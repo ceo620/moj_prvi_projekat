@@ -7,3 +7,5 @@ __pycache__/
 src/ekstrahovano/CRVENI_DISK_VAULT/**/.venvs/
 src/ekstrahovano/**/site-packages/
 izlaz/
+ai_okruzenje/
+venv/
