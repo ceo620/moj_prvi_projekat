@@ -1,4 +1,4 @@
-﻿import os; import pandas as pd; from docx import Document
+import os; import pandas as pd; from docx import Document
 DIR = 'C:/TITAN_KONACNO'; RAW = 'C:/TITAN_CENTRAL_BRAIN/Raw_Data'
 
 # Uzimamo prvi validan tabelarni fajl koji nađemo

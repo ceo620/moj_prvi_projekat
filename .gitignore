@@ -4,4 +4,5 @@ FREYA_PLATFORM_2_0/
 # Python cache
 __pycache__/
 *.pyc
-venv/
+src/ekstrahovano/CRVENI_DISK_VAULT/**/.venvs/
+src/ekstrahovano/**/site-packages/

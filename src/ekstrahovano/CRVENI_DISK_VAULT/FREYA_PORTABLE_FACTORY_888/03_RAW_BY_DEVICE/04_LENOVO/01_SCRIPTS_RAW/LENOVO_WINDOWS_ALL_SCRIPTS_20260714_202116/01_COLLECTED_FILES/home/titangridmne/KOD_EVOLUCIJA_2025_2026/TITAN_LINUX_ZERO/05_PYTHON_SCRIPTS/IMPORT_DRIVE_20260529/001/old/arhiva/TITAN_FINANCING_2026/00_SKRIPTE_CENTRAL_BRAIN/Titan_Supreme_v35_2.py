@@ -1,4 +1,4 @@
-﻿import pandas as pd
+import pandas as pd
 import os, warnings, re
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, PatternFill

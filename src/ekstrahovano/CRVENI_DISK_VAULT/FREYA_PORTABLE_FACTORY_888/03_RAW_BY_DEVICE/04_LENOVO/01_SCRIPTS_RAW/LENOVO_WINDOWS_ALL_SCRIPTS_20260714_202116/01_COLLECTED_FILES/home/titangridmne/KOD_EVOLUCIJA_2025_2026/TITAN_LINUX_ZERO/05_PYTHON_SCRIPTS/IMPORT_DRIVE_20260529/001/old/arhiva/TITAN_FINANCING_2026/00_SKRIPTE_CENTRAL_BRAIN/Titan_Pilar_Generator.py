@@ -1,4 +1,4 @@
-﻿import os
+import os
 
 def generate_pilar():
     print("\n--- 🏛️ TITAN GRID: PILAR GENERATOR v1.0 ---")

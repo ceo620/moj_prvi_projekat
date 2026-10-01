@@ -1,4 +1,4 @@
-﻿import os, re, pandas as pd, warnings
+import os, re, pandas as pd, warnings
 from datetime import datetime
 try:
     from docx import Document

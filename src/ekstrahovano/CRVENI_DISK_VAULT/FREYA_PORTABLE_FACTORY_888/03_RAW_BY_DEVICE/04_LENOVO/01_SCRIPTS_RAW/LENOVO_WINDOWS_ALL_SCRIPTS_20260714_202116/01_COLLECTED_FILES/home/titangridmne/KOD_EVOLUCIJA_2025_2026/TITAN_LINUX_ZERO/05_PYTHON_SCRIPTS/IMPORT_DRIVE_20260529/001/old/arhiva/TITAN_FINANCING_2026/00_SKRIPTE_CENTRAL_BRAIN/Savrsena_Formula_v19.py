@@ -1,4 +1,4 @@
-﻿import os, re, pandas as pd, warnings
+import os, re, pandas as pd, warnings
 from datetime import datetime
 from docx import Document
 from openpyxl import Workbook
