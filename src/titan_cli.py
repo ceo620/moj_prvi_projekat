@@ -41,7 +41,7 @@ def main():
             print(f"[USPJEH] FREYA izvještaj kreiran: {pdf}")
             
         elif izbor == "3":
-            proveri_mrezu()
+            proveri_mrezu(generisi_pdf=True)
             print("[USPJEH] Mrežna dijagnostika kompletirana.")
             
         elif izbor == "4":
