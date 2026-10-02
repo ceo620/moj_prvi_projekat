@@ -1,8 +1,8 @@
 import sys
 import os
 
-from src.ast_validator import validiraj_projekat
-from src.freya_integracija import pokreni_integraciju
+from src.ast_validator import validiraj_kod
+from src.freya_integracija import status_integracije
 from src.mrezni_kontrolor import proveri_mrezu
 
 def prikazi_meni():
@@ -27,16 +27,15 @@ def meni():
 
         if izbor == "1":
             print("[+] Generišem Službeni Memorandum...")
-            # Poziv po potrebi
         elif izbor == "2":
             print("[+] Pokrećem FREYA Integraciju...")
-            pokreni_integraciju()
+            status_integracije()
         elif izbor == "3":
             print("[+] Pokrećem Mrežni Kontrolor...")
             proveri_mrezu()
         elif izbor == "4":
             print("[+] Pokrećem AST Validaciju...")
-            validiraj_projekat()
+            validiraj_kod()
         elif izbor == "5":
             print("[+] Otvaram Izlazni Folder...")
             os.system("explorer.exe . 2>/dev/null || open . 2>/dev/null || true")
