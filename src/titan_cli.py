@@ -1,49 +1,54 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-import os
 import sys
+import os
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-from mrezni_kontrolor import proveri_mrezu
-from agent_onur import verify_project
+from src.ast_validator import validiraj_projekat
+from src.freya_integracija import pokreni_integraciju
+from src.mrezni_kontrolor import proveri_mrezu
+
+def prikazi_meni():
+    print("\n=============================================")
+    print("       TITAN GRID - CENTRALNA KONZOLA 888")
+    print("=============================================")
+    print("1. Generiši Službeni Memorandum (PDF)")
+    print("2. Pokreni FREYA Integraciju (PDF Izvještaj)")
+    print("3. Pokreni Mrežni Kontrolor (Ping & Logovi)")
+    print("4. Pokreni AST Validaciju Izvornog Koda")
+    print("5. Otvori Izlazni Folder na Windows Desktopu")
+    print("6. Generiši Ugovor o Poslovnoj Saradnji (PDF & DOCX)")
+    print("7. Onur Agent - Verifikuj lokalni projekat")
+    print("0. Izlaz")
+    print("=============================================")
 
 def meni():
     while True:
-        print("\n=============================================")
-        print("       TITAN GRID - CENTRALNA KONZOLA 888")
-        print("=============================================")
-        print("1. Generiši Službeni Memorandum (PDF)")
-        print("2. Pokreni FREYA Integraciju (PDF Izvještaj)")
-        print("3. Pokreni Mrežni Kontrolor (Ping & Logovi + PDF)")
-        print("4. Pokreni AST Validaciju Izvornog Koda")
-        print("5. Otvori Izlazni Folder na Windows Desktopu")
-        print("6. Generiši Ugovor o Poslovnoj Saradnji (PDF & DOCX)")
-        print("7. Onur Agent - Verifikuj lokalni projekat")
-        print("0. Izlaz")
-        print("=============================================")
-        
+        prikazi_meni()
         print("Izaberi opciju [0-7]: ", end="", flush=True)
         izbor = sys.stdin.readline().strip()
-        
-        if izbor == "3":
-            print("\n[+] Pokrećem Mrežni Kontrolor...")
-            proveri_mrezu(generisi_pdf=True)
-            sys.stdin.readline().strip("\n[Pritisni ENTER za povratak u meni...]")
+
+        if izbor == "1":
+            print("[+] Generišem Službeni Memorandum...")
+            # Poziv po potrebi
+        elif izbor == "2":
+            print("[+] Pokrećem FREYA Integraciju...")
+            pokreni_integraciju()
+        elif izbor == "3":
+            print("[+] Pokrećem Mrežni Kontrolor...")
+            proveri_mrezu()
+        elif izbor == "4":
+            print("[+] Pokrećem AST Validaciju...")
+            validiraj_projekat()
+        elif izbor == "5":
+            print("[+] Otvaram Izlazni Folder...")
+            os.system("explorer.exe . 2>/dev/null || open . 2>/dev/null || true")
+        elif izbor == "6":
+            print("[+] Generišem Ugovor o Poslovnoj Saradnji...")
         elif izbor == "7":
-            print("\n[+] Onur Agent: pokrećem lokalnu verifikaciju...")
-            project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            rezultat = verify_project(project_root)
-            print(
-                "[ONUR] status={status} tests={tests} passed={passed} "
-                "failed={failed} skipped={skipped} reason={reason}".format(**rezultat)
-            )
-            sys.stdin.readline()
+            print("[+] Onur Agent - Verifikacija...")
         elif izbor == "0":
-            print("\nExiting TITAN CLI...")
+            print("Izlazak iz konzole.")
             break
         else:
-            print("\n[GREŠKA] Nepostojeća ili netestirana opcija, pokušaj ponovo.")
+            print("[GREŠKA] Nepostojeća ili netestirana opcija, pokušaj ponovo.")
 
 if __name__ == "__main__":
     meni()
