@@ -1,2 +1,4 @@
 izlaz/
 main
+__pycache__/
+*.pyc
