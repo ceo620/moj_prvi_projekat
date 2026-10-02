@@ -1,0 +1,21 @@
+{
+    "protocol":  888,
+    "system":  "FREYA_LENOVO_NODE_888",
+    "all_agents_one_system":  true,
+    "human_gate":  "ACTIVE",
+    "read_only_first":  true,
+    "evidence_first":  true,
+    "fail_closed":  true,
+    "unknown_execution":  "BLOCKED",
+    "raw_execution":  "BLOCKED",
+    "archive_execution":  "BLOCKED",
+    "import_queue_execution":  "BLOCKED",
+    "do_not_run_execution":  "BLOCKED",
+    "automatic_delete":  "BLOCKED",
+    "automatic_overwrite":  "BLOCKED",
+    "network_delivery":  "BLOCKED_PENDING_MAC_VALIDATION",
+    "scheduled_delivery":  "BLOCKED_PENDING_PACKET_VALIDATION",
+    "target_delivery_time":  "09:00",
+    "target_receiver":  "FREYA_MAC_LAP_TOP_HUMAN_GATE",
+    "duplicate_delivery_policy":  "SEND_ONLY_MISSING_HASHES"
+}

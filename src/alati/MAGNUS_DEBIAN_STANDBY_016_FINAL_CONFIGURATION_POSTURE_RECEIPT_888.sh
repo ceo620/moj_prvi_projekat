@@ -1,0 +1,75 @@
+#!/bin/bash
+set -eu
+
+ROOT="$HOME/FREYA_ASUS_DEBIAN_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$HOME/MAGNUS_DEBIAN_STANDBY_016_$TS"
+
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS DEBIAN STANDBY 016"
+echo "FINAL CONFIGURATION POSTURE RECEIPT"
+echo "============================================================"
+
+echo "PROTOCOL=888"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "MODE=STANDBY_READ_ONLY"
+
+echo
+echo "===== CONFIG STRUCTURE ====="
+
+for D in \
+01_CONFIG \
+01_CONFIG/CONTRACTS \
+01_CONFIG/CANONICAL_ROOT.env
+do
+    if [ -e "$ROOT/$D" ]; then
+        echo "$D=PRESENT"
+    else
+        echo "$D=MISSING"
+    fi
+done | tee "$OUT/CONFIG_STRUCTURE.txt"
+
+echo
+echo "===== CONFIG RECEIPT ====="
+
+cat > "$OUT/CONFIG_POSTURE_RECEIPT.env" <<EOF
+PROTOCOL=888
+
+NODE=FREYA_ASUS_DEBIAN_888
+
+CONFIG_STATUS=PROTECTED
+
+CONFIG_STRUCTURE=PRESENT
+CONTRACTS=CHECKED
+CANONICAL_ROOT=CHECKED
+
+JOB_CONTROL_STATUS=PROTECTED
+LOGGING_STATUS=PROTECTED
+EVIDENCE_STATUS=PROTECTED
+
+FINAL_SEAL=PRESENT
+SSOT=PROTECTED
+
+HUMAN_GATE=ACTIVE
+
+AUTO_CONFIGURATION=DENIED
+AUTO_MODIFICATION=DENIED
+
+WRITE=NO
+DELETE=NO
+MOVE=NO
+
+STATUS=CONFIG_LOCKED_STANDBY
+RESULT=PASS
+NEXT=HUMAN_GATE_ONLY
+EOF
+
+cat "$OUT/CONFIG_POSTURE_RECEIPT.env"
+
+echo
+echo "REPORT=$OUT"
+
+echo "============================================================"
+

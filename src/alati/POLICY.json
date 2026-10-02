@@ -1,0 +1,18 @@
+{
+  "protocol": "888",
+  "default_mode": "DENY",
+  "fail_closed": true,
+  "human_gate": "ACTIVE",
+  "external_network": "DENY",
+  "external_send": "DENY",
+  "auto_signature": "DENY",
+  "auto_send": "DENY",
+  "red_disk_write": "DENY",
+  "ssot_write": "DENY",
+  "production_promotion": "DENY",
+  "runtime_autostart": "DENY",
+  "allowed_network": [
+    "127.0.0.1",
+    "localhost"
+  ]
+}

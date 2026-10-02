@@ -1,0 +1,75 @@
+#!/bin/bash
+set -eu
+
+ROOT="$HOME/FREYA_ASUS_DEBIAN_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$HOME/MAGNUS_DEBIAN_STANDBY_013_$TS"
+
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS DEBIAN STANDBY 013"
+echo "FINAL EVIDENCE POSTURE RECEIPT"
+echo "============================================================"
+
+echo "PROTOCOL=888"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "MODE=STANDBY_READ_ONLY"
+
+echo
+echo "===== EVIDENCE STRUCTURE ====="
+
+for D in \
+10_EVIDENCE \
+09_LOGS \
+16_REPORTS
+do
+    if [ -d "$ROOT/$D" ]; then
+        echo "$D=PRESENT"
+    else
+        echo "$D=MISSING"
+    fi
+done | tee "$OUT/EVIDENCE_STRUCTURE.txt"
+
+
+echo
+echo "===== EVIDENCE RECEIPT ====="
+
+cat > "$OUT/EVIDENCE_POSTURE_RECEIPT.env" <<EOF
+PROTOCOL=888
+
+NODE=FREYA_ASUS_DEBIAN_888
+
+EVIDENCE_STATUS=PROTECTED
+
+EVIDENCE_STRUCTURE=PRESENT
+LOG_STRUCTURE=PRESENT
+REPORT_STRUCTURE=PRESENT
+
+BACKUP_STATUS=PROTECTED
+RECOVERY_STATUS=PROTECTED
+
+FINAL_SEAL=PRESENT
+SSOT=PROTECTED
+
+HUMAN_GATE=ACTIVE
+
+AUTO_COLLECTION=DENIED
+AUTO_MODIFICATION=DENIED
+
+WRITE=NO
+DELETE=NO
+MOVE=NO
+
+STATUS=EVIDENCE_LOCKED_STANDBY
+RESULT=PASS
+NEXT=HUMAN_GATE_ONLY
+EOF
+
+cat "$OUT/EVIDENCE_POSTURE_RECEIPT.env"
+
+echo
+echo "REPORT=$OUT"
+
+echo "============================================================"
+
