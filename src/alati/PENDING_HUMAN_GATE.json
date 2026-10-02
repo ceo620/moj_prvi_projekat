@@ -1,0 +1,10 @@
+{
+    "human_gate":  "ACTIVE",
+    "agent_execution":  "NOT_REQUESTED_IN_BATCH06R",
+    "mac_endpoint_validation":  "PENDING_FUTURE_BATCH",
+    "credentials_validation":  "PENDING_FUTURE_BATCH",
+    "test_transfer":  "PENDING_FUTURE_BATCH",
+    "scheduler_registration":  "PENDING_FUTURE_BATCH",
+    "real_delivery":  "PENDING_FUTURE_BATCH",
+    "current_mode":  "OFFLINE_DRY_RUN"
+}

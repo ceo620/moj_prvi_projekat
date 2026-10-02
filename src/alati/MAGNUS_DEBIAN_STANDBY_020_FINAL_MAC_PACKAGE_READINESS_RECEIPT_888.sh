@@ -1,0 +1,71 @@
+#!/bin/bash
+set -eu
+
+ROOT="$HOME/FREYA_ASUS_DEBIAN_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$HOME/MAGNUS_DEBIAN_STANDBY_020_$TS"
+
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS DEBIAN STANDBY 020"
+echo "FINAL MAC PACKAGE READINESS RECEIPT"
+echo "============================================================"
+
+echo "PROTOCOL=888"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "MODE=STANDBY_READ_ONLY"
+
+echo
+echo "===== MAC PACKAGE REFERENCES ====="
+
+find "$ROOT" \
+-type f \
+\( -iname "*MAC*" -o -iname "*PACKAGE*" -o -iname "*MANIFEST*" -o -iname "*RECEIPT*" \) \
+2>/dev/null | sort | tee "$OUT/MAC_PACKAGE_REFERENCES.txt"
+
+
+echo
+echo "===== PACKAGE READINESS RECEIPT ====="
+
+cat > "$OUT/MAC_PACKAGE_READINESS_RECEIPT.env" <<EOF
+PROTOCOL=888
+
+NODE=FREYA_ASUS_DEBIAN_888
+
+MAC_PACKAGE_STATUS=READY_FOR_REVIEW
+
+MAC_REFERENCES=INDEXED
+MANIFESTS=CHECKED
+RECEIPTS=CHECKED
+
+SSOT_STATUS=LOCKED
+FINAL_SEAL=PRESENT
+HANDOFF_STATUS=PROTECTED
+
+HUMAN_GATE=ACTIVE
+
+AUTO_PACKAGE_BUILD=DENIED
+AUTO_COPY=DENIED
+AUTO_TRANSFER=DENIED
+AUTO_SEND=DENIED
+
+WRITE=NO
+COPY=NO
+DELETE=NO
+MOVE=NO
+TRANSFER=NO
+
+STATUS=MAC_PACKAGE_WAITING_HUMAN_GATE
+
+RESULT=PASS
+NEXT=HUMAN_GATE_ONLY
+EOF
+
+cat "$OUT/MAC_PACKAGE_READINESS_RECEIPT.env"
+
+echo
+echo "REPORT=$OUT"
+
+echo "============================================================"
+

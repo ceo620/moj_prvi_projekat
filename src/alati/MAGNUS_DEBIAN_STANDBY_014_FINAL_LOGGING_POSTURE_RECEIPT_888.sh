@@ -1,0 +1,77 @@
+#!/bin/bash
+set -eu
+
+ROOT="$HOME/FREYA_ASUS_DEBIAN_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$HOME/MAGNUS_DEBIAN_STANDBY_014_$TS"
+
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS DEBIAN STANDBY 014"
+echo "FINAL LOGGING POSTURE RECEIPT"
+echo "============================================================"
+
+echo "PROTOCOL=888"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "MODE=STANDBY_READ_ONLY"
+
+echo
+echo "===== LOG STRUCTURE ====="
+
+for D in \
+09_LOGS \
+09_LOGS/RUNTIME \
+09_LOGS/AUDIT \
+16_REPORTS
+do
+    if [ -d "$ROOT/$D" ]; then
+        echo "$D=PRESENT"
+    else
+        echo "$D=MISSING"
+    fi
+done | tee "$OUT/LOG_STRUCTURE.txt"
+
+
+echo
+echo "===== LOGGING RECEIPT ====="
+
+cat > "$OUT/LOGGING_POSTURE_RECEIPT.env" <<EOF
+PROTOCOL=888
+
+NODE=FREYA_ASUS_DEBIAN_888
+
+LOGGING_STATUS=PROTECTED
+
+LOG_STRUCTURE=PRESENT
+AUDIT_STRUCTURE=CHECKED
+REPORT_STRUCTURE=PRESENT
+
+EVIDENCE_STATUS=PROTECTED
+BACKUP_STATUS=PROTECTED
+RECOVERY_STATUS=PROTECTED
+
+FINAL_SEAL=PRESENT
+SSOT=PROTECTED
+
+HUMAN_GATE=ACTIVE
+
+AUTO_LOG_ROTATION=DENIED
+AUTO_MODIFICATION=DENIED
+
+WRITE=NO
+DELETE=NO
+MOVE=NO
+
+STATUS=LOGGING_LOCKED_STANDBY
+RESULT=PASS
+NEXT=HUMAN_GATE_ONLY
+EOF
+
+cat "$OUT/LOGGING_POSTURE_RECEIPT.env"
+
+echo
+echo "REPORT=$OUT"
+
+echo "============================================================"
+

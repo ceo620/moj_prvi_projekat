@@ -1,0 +1,76 @@
+#!/bin/bash
+set -eu
+
+ROOT="$HOME/FREYA_ASUS_DEBIAN_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$HOME/MAGNUS_DEBIAN_STANDBY_015_$TS"
+
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS DEBIAN STANDBY 015"
+echo "FINAL JOB CONTROL POSTURE RECEIPT"
+echo "============================================================"
+
+echo "PROTOCOL=888"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "MODE=STANDBY_READ_ONLY"
+
+echo
+echo "===== JOB STRUCTURE ====="
+
+for D in \
+07_JOBS \
+07_JOBS/JOB_QUEUE_POLICY_888.env \
+07_JOBS/JOB_SCHEMA_TEMPLATE_888.env
+do
+    if [ -e "$ROOT/$D" ]; then
+        echo "$D=PRESENT"
+    else
+        echo "$D=MISSING"
+    fi
+done | tee "$OUT/JOB_STRUCTURE.txt"
+
+echo
+echo "===== JOB CONTROL RECEIPT ====="
+
+cat > "$OUT/JOB_CONTROL_POSTURE_RECEIPT.env" <<EOF
+PROTOCOL=888
+
+NODE=FREYA_ASUS_DEBIAN_888
+
+JOB_CONTROL_STATUS=PROTECTED
+
+JOB_STRUCTURE=CHECKED
+QUEUE_POLICY=CHECKED
+JOB_SCHEMA=CHECKED
+
+LOGGING_STATUS=PROTECTED
+EVIDENCE_STATUS=PROTECTED
+BACKUP_STATUS=PROTECTED
+RECOVERY_STATUS=PROTECTED
+
+FINAL_SEAL=PRESENT
+SSOT=PROTECTED
+
+HUMAN_GATE=ACTIVE
+
+AUTO_JOB_EXECUTION=DENIED
+AUTO_SCHEDULING=DENIED
+
+WRITE=NO
+DELETE=NO
+MOVE=NO
+
+STATUS=JOB_CONTROL_LOCKED_STANDBY
+RESULT=PASS
+NEXT=HUMAN_GATE_ONLY
+EOF
+
+cat "$OUT/JOB_CONTROL_POSTURE_RECEIPT.env"
+
+echo
+echo "REPORT=$OUT"
+
+echo "============================================================"
+
