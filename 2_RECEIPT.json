@@ -1,0 +1,14 @@
+{
+  "bytes": 39987,
+  "classification": "DOCUMENT",
+  "extension": ".docx",
+  "mtime_utc": "2026-09-13T14:28:28.864499+00:00",
+  "network_action": "NONE",
+  "original_modified": "NO",
+  "result": "PASS",
+  "risk": [
+    "NONE"
+  ],
+  "sha256": "c1e64e1506aba002109dee6e7866d1011f6d46f4795856fa59bc822b1cd45039",
+  "source": "/root/IPHONE_888_LOKALNI_h2a8tu_8/BUSINESS/OBJECT_07/INPUT/source.docx"
+}

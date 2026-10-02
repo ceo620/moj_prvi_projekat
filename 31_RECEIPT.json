@@ -1,0 +1,14 @@
+{
+  "bytes": 51,
+  "classification": "FINANCIAL",
+  "extension": ".csv",
+  "mtime_utc": "2026-09-13T14:28:06.319636+00:00",
+  "network_action": "NONE",
+  "original_modified": "NO",
+  "result": "PASS",
+  "risk": [
+    "NONE"
+  ],
+  "sha256": "70472fa058784c8cf0954790ebc9babe5fef4fd9bdc09ef4b116266cc9a0ef2b",
+  "source": "/root/IPHONE_888_LOKALNI_h2a8tu_8/TESTS/CSV_FIRST/INPUT/source.csv"
+}

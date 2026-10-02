@@ -1,0 +1,17 @@
+{
+  "business_approval": "NOT_GRANTED",
+  "bytes": 1203,
+  "completed_utc": "2026-09-13T14:28:30.366194+00:00",
+  "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+  "financial_content_accuracy": "NOT_ASSESSED",
+  "kind": "REUSED_VERIFIED_INPUT",
+  "receipt": "BUSINESS/OBJECT_08/PROCESSOR/RECEIPT.json",
+  "receipt_sha256": "a2596c6c327fa0bbc46fde65e68b47228cc702ad8ec2a4a6f190cc6cfffa0854",
+  "source": "/root/IPHONE_888_OBRADA_9dltg97z/BUSINESS/OBJECT_08/INPUT/source.csv",
+  "source_content_unchanged_observed": true,
+  "source_name": "source.csv",
+  "source_sha256": "e79df4ca18a25a7cd259303a0efd5a1ce3963954b658b1f0fb613bc36525174b",
+  "source_sha256_after": "e79df4ca18a25a7cd259303a0efd5a1ce3963954b658b1f0fb613bc36525174b",
+  "started_utc": "2026-09-13T14:28:29.623747+00:00",
+  "xlsx_keyword_check": "NOT_APPLICABLE"
+}

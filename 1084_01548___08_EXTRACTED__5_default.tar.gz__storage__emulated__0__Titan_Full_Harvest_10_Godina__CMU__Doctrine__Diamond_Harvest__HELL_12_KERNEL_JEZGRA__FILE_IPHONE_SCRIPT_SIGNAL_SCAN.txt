@@ -1,0 +1,200 @@
+/root/Documents/003 DELTA/37_system_index_builder.py:2:# TITAN_KERNEL: 37_system_index_builder.py
+/root/Documents/003 DELTA/37_system_index_builder.py:9:import hashlib
+/root/Documents/003 DELTA/37_system_index_builder.py:28:    "SSOT_WRITE_ALLOWED": "NO",
+/root/Documents/003 DELTA/37_system_index_builder.py:40:def sha256_file(path):
+/root/Documents/003 DELTA/37_system_index_builder.py:41:    h = hashlib.sha256()
+/root/Documents/003 DELTA/37_system_index_builder.py:62:            "SHA256": sha256_file(p),
+/root/Documents/003 DELTA/37_system_index_builder.py:98:    parser = argparse.ArgumentParser(description="TITAN system index builder")
+/root/Documents/003 DELTA/37_system_index_builder.py:124:        "decision": "System index is an operator/audit artifact only.",
+/root/Documents/TITAN FINAL/03.03/grok_payload_v6_2.py:3:  "model_scope": "TITAN Central Brain Base",
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:14:# TITAN CENTRAL BRAIN v6.1
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:18:OUTPUT_FILE = "/root/Documents/TITAN_Central_Brain_Finance_Master_v6_1.xlsx"
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:210:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Total_Base_CAPEX", 43_560_000, "EUR", "Central Brain brief", "Locked", 51_400_000, "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:211:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "P90_CAPEX", 51_400_000, "EUR", "Central Brain brief", "Locked", 51_400_000, "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:212:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "ASP", 6_200, "EUR/unit", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:213:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Gross_Margin", 0.48, "%", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:214:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Senior_Debt_Percent", 0.62, "%", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:215:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Equity_Percent", 0.13, "%", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:216:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Grant_Percent", 0.25, "%", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:217:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Project_IRR", 0.265, "%", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:218:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Equity_IRR", 0.38, "%", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:219:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Min_DSCR", 1.95, "x", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:220:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Simple_Payback", 3.6, "years", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:221:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Factories", 3, "count", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:222:    BaselineRecord("TITAN_CB_v5", "v5", "Base", "Full_Capacity", 3_600, "units/year", "Central Brain brief", "Locked", "", "High", "Yes"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:227:    ("Current_Baseline_ID", "TITAN_CB_v5", "text", "Control"),
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:257:    add_title(ws, "TITAN Central Brain Finance Master v6.1", 8)
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:259:    ws["B3"] = "TITAN Central Brain Finance Master v6.1"
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:261:    ws["B4"] = "ARS Metal / ADS Metal / TITAN Central Brain"
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:263:    ws["B5"] = "Harmonized multi-baseline finance master with audit controls"
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:603:def build_audit_checks(ws):
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py:658:        ("Audit_Checks", build_audit_checks),
+/root/Documents/TITAN FINAL/03.03/grok_payload_v6_2.json:3:  "model_scope": "TITAN Central Brain Base",
+/root/Documents/TITAN FINAL/03.03/build_control_tower_v1.py:9:# Generates TITAN GRID 1 - CONTROL TOWER v1 workbook.
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/AUTOMATE_ALL_DOCUMENTS.py:21:def inject_document_owner(owner_name="TITAN Team"):
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py:8:SRC = "/mnt/data/TITAN_v5_0_dashboard_version.xlsx"
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py:9:OUT = "/mnt/data/TITAN_v5_0_board_ic_dashboard_version.xlsx"
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py:88:ws['A1'] = 'TITAN v5.0 | Board & IC Dashboard'
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py:402:    ('CP closure', 'Complete documentary and evidence package', 'Drawdown-ready CP binder', 'Borrower / Sponsor', 'Weeks 3-5'),
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py:456:ws.oddFooter.center.text = 'TITAN v5.0 | Board & IC Dashboard | Confidential | Page &[Page] of &[Pages]'
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:4:TITANGRID / DELTA SELF-HEALING PROTOCOL 888
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:5:DIGITAL TRANSFORMER FOR BABY DELTA
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:20:    This script transforms an input atom register into a controlled Excel workbook with:
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:28:        - manifest
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:29:        - SHA-256 audit snapshot
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:36:    .json manifest
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:37:    .jsonl audit log
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:38:    .sha256.txt digest file
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:44:    SSOT is sovereign.
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:48:    Folder name is not evidence.
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:51:    AI output is not issuer evidence.
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:62:import hashlib
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:89:PROTOCOL_ID = "DELTA_SELF_HEALING_PROTOCOL_888"
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:90:ENGINE_ID = "TITANGRID_DELTA_NEURO_MONO_TRANSFORMER"
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:163:    "NON-TITAN",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:243:    "SSOT is sovereign.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:247:    "Folder name is not evidence.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:252:    "AI output is not issuer evidence.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:280:    source_sha256: str = ""
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:311:            "SOURCE_SHA256": self.source_sha256,
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:329:    input_sha256: str
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:331:    output_sha256: str
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:332:    manifest_path: str
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:333:    audit_log_path: str
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:348:def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:349:    h = hashlib.sha256()
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:639:    if record.external_verification == "YES" and record.source_sha256:
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:641:    if record.source_sha256 and record.external_verification in ["NO", "UNKNOWN"]:
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:712:    return hashlib.sha256(base.encode("utf-8")).hexdigest().upper()[:24]
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:745:    if record.source_sha256 and record.external_verification != "YES":
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:746:        notes.append("HASH_INTEGRITY_ONLY: hash does not prove external validity.")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:783:        root_cause = "Source row requires evidence, issuer, hash and review mapping before external use."
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:789:        next_step = "Review row, bind evidence, classify risk and update next safe action."
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:808:        source_sha256=source_sha,
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:831:            root_cause="The transformer cannot infer missing atom content without source evidence.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:843:            source_sha256="",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1034:        ["TRUTH_GATE", "External verification YES + source hash present", "PASS"],
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1035:        ["TRUTH_GATE", "Missing evidence / pending / unknown", "GAP"],
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1038:        ["HALLUCINATION_GATE", "Missing source/issuer/evidence language", "WARNING"],
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1063:        ws.append(["FORBIDDEN_TERM", term, "Flag as OVERCLAIM_RISK unless backed by explicit external issuer/lender evidence"])
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1073:        "EVIDENCE_BINDING": "Needs issuer/source/hash/review evidence.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1079:        "PATH_HASH_CONTROL": "Needs path/hash/manifest/integrity control.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1080:        "EVIDENCE_GAP_CLOSURE": "Requires issuer or external evidence.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1082:        "BACKLOG_COMPLETION": "Missing extraction/export/self-audit work.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1091:        "MEDIUM": "Incomplete control/refactor/path/hash/document review.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1101:        ["Purpose", "Transform atom register into neuro-mono signal map with truth and safety gates."],
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1133:    wb.properties.title = "TITANGRID DELTA 888 NEURO MONO ATOM SIGNAL MAP"
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1135:    wb.properties.keywords = "TITANGRID, DELTA, PROTOCOL 888, REPORT_ONLY, NEURO_MONO_MAP"
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1143:def build_manifest(
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1166:            "sha256": input_sha,
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1172:            "sha256": output_sha,
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1190:def write_audit_log(path: Path, events: List[Dict[str, Any]], overwrite: bool) -> None:
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1213:    audit: List[Dict[str, Any]] = []
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1218:    audit.append({
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1229:        input_sha = sha256_file(input_path)
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1247:    audit.append({
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1256:    output_sha = sha256_file(output_path)
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1258:    manifest_path = output_path.with_suffix(output_path.suffix + ".manifest.json")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1259:    audit_path = output_path.with_suffix(output_path.suffix + ".audit.jsonl")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1260:    digest_path = output_path.with_suffix(output_path.suffix + ".sha256.txt")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1262:    manifest = build_manifest(
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1271:    write_json(manifest_path, manifest, overwrite=overwrite)
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1273:    audit.append({
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1277:        "output_sha256": output_sha,
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1278:        "manifest_path": str(manifest_path),
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1282:    write_audit_log(audit_path, audit, overwrite=overwrite)
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1287:        input_sha256=input_sha,
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1289:        output_sha256=output_sha,
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1290:        manifest_path=str(manifest_path),
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1291:        audit_log_path=str(audit_path),
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1305:        description="TITANGRID DELTA 888 Neuro-Mono Atom Signal Map Transformer"
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1312:        help="Input Excel/CSV/TSV atom register path. Read-only.",
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1337:    print("DELTA SELF-HEALING PROTOCOL 888 — DIGITAL TRANSFORMER COMPLETE")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1341:    print(f"INPUT_SHA256   : {result.input_sha256}")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1343:    print(f"OUTPUT_SHA256  : {result.output_sha256}")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1344:    print(f"MANIFEST       : {result.manifest_path}")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1345:    print(f"AUDIT_LOG      : {result.audit_log_path}")
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py:1378:        print("DELTA SELF-HEALING PROTOCOL 888 — DIGITAL TRANSFORMER BLOCKED", file=sys.stderr)
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:145:    ws.oddHeader.left.text = "TITAN GRID - Credit Committee Pack"
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:155:    ws["A2"] = "TITAN GRID"
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:171:        ("Project", "ARS Metal Industries / TITAN GRID"),
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:1060:    ws["N32"] = "Key audit"
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:1099:    merge_header(ws, 1, 1, 8, "TITAN GRID - Integrated Dashboard", styles)
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:1282:    audits = [
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:1302:    write_block(21, 7, audits)
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:1494:        ("Revenue ramp", "Order intake slower than base case", "High", "Medium", "Diversified market pipeline and phased ramp", "Medium"),
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py:1589:        "TITAN GRID v5.2 Data Room Ready package\n\n"
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:2:  "system": "TITAN1_CTOS",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:6:  "scope": "TITAN_1_ONLY",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:7:  "description": "Jedini autoritativni i obavezujući token register za sve aktivne dokumente TITAN 1.",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:9:    "project_name": "TITAN 1 – Fabrika transformatorskih kazana (tankova)",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:10:    "short_name": "TITAN 1",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:29:      "TITAN 1",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:63:      "token": "TITAN 2",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:65:      "action": "BLOCK_IN_ACTIVE_TITAN1_DOCUMENTS",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:69:      "token": "TITAN 3",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:71:      "action": "BLOCK_IN_ACTIVE_TITAN1_DOCUMENTS",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:139:    "hash_required": true,
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json:141:    "scope_enforcement": "STRICT_TITAN1_ONLY",
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json:4:    "SIGNALNI_MEMORANDUM_TITAN1": {
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json:8:      "hash": null,
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json:11:    "ANEKS_1_REVIZIJA_CAPEX_TITAN1": {
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json:15:      "hash": null,
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json:22:      "hash": null,
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json:25:    "FINAL_SEND_PACKAGE_TITAN1": {
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json:29:      "hash": null,
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888_SUMMARY.json:6:  "evidence_candidate_rows": 3,
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888_SUMMARY.json:12:  "evidence_approved": 0,
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888_SUMMARY.json:15:  "final_verdict": "TITAN_UPLOAD_PDF_HARVEST_100_888_REVIEW_REQUIRED",
+/root/Documents/titan1_light_harmonizer.py:1:import os, re, json, hashlib, glob
+/root/Documents/titan1_light_harmonizer.py:4:# === TITAN 1 ACTIVE TOKEN BASELINE (kanonski) ===
+/root/Documents/titan1_light_harmonizer.py:6:    "project_id": "TITAN_1",
+/root/Documents/titan1_light_harmonizer.py:10:        r"43\.5M", r"51\.4M", r"3 factories", r"TITAN 2", r"TITAN 3",
+/root/Documents/titan1_light_harmonizer.py:17:REPORT_DIR = f"/root/Documents/TITAN1_HARMONIZED_REPORT_{datetime.now().strftime('%Y%m%d_%H%M')}"
+/root/Documents/titan1_light_harmonizer.py:20:print("🔒 TITAN 1 LIGHT HARMONIZER — ACTIVE SCOPE ONLY")
+/root/Documents/titan1_light_harmonizer.py:21:print("   Status: ACTIVE_TITAN1_SCOPE_CANONICAL_WORKING_BASELINE\n")
+/root/Documents/titan1_light_harmonizer.py:23:titan_folder = "/root/Documents/TITAN FINAL"
+/root/Documents/titan1_light_harmonizer.py:52:with open(f"{REPORT_DIR}/TITAN1_HARMONIZATION_REPORT.json", "w") as f:
+/root/Documents/titan1_light_harmonizer.py:58:print("\nSljedeći korak: reci mi da li želiš automatsko čišćenje bleedthrough-a ili kreiranje čistog TITAN1_ONLY generatora.")
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:6:TITAN LOCAL EVIDENCE RAG ENGINE
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:12:Create a deterministic, audit-grade, read-only inventory of candidate files for
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:13:TITAN Local Evidence RAG. V8 adds a bounded HeuristicsEngine for forensic
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:39:classification, legal verification, financial validation, or lender evidence.
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:47:import hashlib
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:70:SSOT_DOMAIN = "TITAN_LOCAL_EVIDENCE_RAG"
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:75:DEFAULT_BASE_DIR = Path(r"C:\Users\Korisnik\Desktop\TITAN_FULL_RAG")
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:82:OUTPUT_MANIFEST_JSON = Path("05_reports") / "discovery_manifest.json"
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:83:OUTPUT_LATEST_MANIFEST_JSON = Path("05_reports") / "discovery_manifest.latest.json"
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:85:OUTPUT_SSOT_REGISTER_JSON = Path("05_reports") / "discovery_ssot_register.json"
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:87:OUTPUT_MERKLE_LEDGER_JSON = Path("05_reports") / "discovery_merkle_ledger.json"
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:91:OUTPUT_RUN_LEDGER_JSONL = Path("05_reports") / "discovery_run_ledger.jsonl"
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:92:AUDIT_LOG = Path("06_logs") / "discovery_audit.jsonl"
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:139:    "AppData", "node_modules", ".git", ".svn", ".hg", ".venv", "venv", "env",
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:151:    "capex", "opex", "eib", "ebrd", "ifc", "kfw", "budget", "finance", "audit",
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:159:    "project_name": "TITAN_LOCAL_EVIDENCE_RAG_ENGINE",
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:177:    "hash_enabled_default": False,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:178:    "hash_limit_mb": DEFAULT_HASH_LIMIT_MB,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:181:    "write_latest_manifest": True,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:191:    "merkle_ledger_enabled": True,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:207:    manifest_json: Path
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:208:    latest_manifest_json: Path
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:210:    ssot_register_json: Path
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:212:    merkle_ledger_json: Path
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:216:    run_ledger_jsonl: Path
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:217:    audit_log: Path
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:418:def stable_policy_hash(config: dict[str, Any]) -> str:
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:431:    return hashlib.sha256(json.dumps(policy_fields, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:464:        manifest_json=base_dir / OUTPUT_MANIFEST_JSON,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:465:        latest_manifest_json=base_dir / OUTPUT_LATEST_MANIFEST_JSON,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:467:        ssot_register_json=base_dir / OUTPUT_SSOT_REGISTER_JSON,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:469:        merkle_ledger_json=base_dir / OUTPUT_MERKLE_LEDGER_JSON,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:473:        run_ledger_jsonl=base_dir / OUTPUT_RUN_LEDGER_JSONL,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:474:        audit_log=base_dir / AUDIT_LOG,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:505:def file_sha256(path: Path, size_mb: float, hash_limit_mb: int) -> tuple[str | None, str]:
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:506:    if size_mb > hash_limit_mb:
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:507:        return None, f"HASH_SKIPPED_OVER_LIMIT_MB:{hash_limit_mb}"
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:509:        digest = hashlib.sha256()
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:539:        "path_key_sha256": hashlib.sha256(canonical.lower().encode("utf-8", errors="ignore")).hexdigest(),
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:585:def classify_evidence_class(path: Path) -> str:
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:668:    compute_hash: bool,
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py:669:    hash_limit_mb: int,

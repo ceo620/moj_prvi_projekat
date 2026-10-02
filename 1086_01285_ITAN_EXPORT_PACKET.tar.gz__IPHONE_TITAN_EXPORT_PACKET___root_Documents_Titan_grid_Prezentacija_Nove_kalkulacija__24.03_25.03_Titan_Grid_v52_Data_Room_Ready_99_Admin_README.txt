@@ -1,0 +1,6 @@
+TITAN GRID v5.2 Data Room Ready package
+
+01_Model: editable Excel workbook
+02_PDF: PDF committee pack exported from Excel
+03_Exports: export copy used for PDF generation
+99_Admin: generator script and notes

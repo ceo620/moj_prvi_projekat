@@ -1,0 +1,15 @@
+{
+  "asus_receipt": null,
+  "background_service_started": false,
+  "batch": "IPHONE_MOZAK_001_PRIPREMA_888",
+  "network_calls": 0,
+  "observed_utc": "2026-09-20T22:37:44.714778+00:00",
+  "packet": "/root/mozak uzivo iphone/ZA_SLANJE/PAKET_cc5b080b7027_07dc7d558863/IPHONE_ZA_ASUS_888.zip",
+  "packet_bytes": 476332,
+  "packet_sha256": "09372246860fb8ad08a063b1ecba5d181dc80cbc656b501b4945ad16a6f8a59f",
+  "readback": "PASS",
+  "result": "LOCAL_REVIEW_PACKET_READY_NOT_SENT",
+  "saved_findings": 43,
+  "snapshot_id": "cc5b080b7027e198ce5a59bf4ba18acf0e96f98a0da51fd458e92f4bf1235d85",
+  "source_count": 11
+}

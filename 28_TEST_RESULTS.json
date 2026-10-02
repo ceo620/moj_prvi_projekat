@@ -1,0 +1,8 @@
+{
+  "corrupt_xlsx_rejected": true,
+  "document_receipt_verified": true,
+  "missing_input_rejected": true,
+  "repeat_input_same_content_hash": true,
+  "xlsx_no_formula_hold_despite_exit_zero": true,
+  "xlsx_positive_fixture": true
+}

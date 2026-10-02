@@ -1,0 +1,109 @@
+{
+  "api_calls": 0,
+  "background_service": "NOT_STARTED",
+  "batch": "LOCAL-REPAIR-01",
+  "canonical_runtime_changed": false,
+  "completed_utc": "2026-09-13T14:28:30.384487+00:00",
+  "error": null,
+  "files": [
+    {
+      "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+      "formula_count_changed": true,
+      "name": "TITAN_Central_Brain_Finance_Master_v6_1.xlsx",
+      "new_formula_count": 84,
+      "old_formula_count": 104,
+      "source_sha256": "5fd549f68d05f46311e5fdd02395ea79c62d1997f688252bbfe9ae42def3859b",
+      "source_unchanged": true,
+      "status": "PROCESSED",
+      "xlsx_limited_check": "PASS_LIMITED_CHECK"
+    },
+    {
+      "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+      "formula_count_changed": false,
+      "name": "Titan_Grid_v6_2_Live_Lender_Linkage_Pack.xlsx",
+      "new_formula_count": 144,
+      "old_formula_count": 144,
+      "source_sha256": "dcf135675f6b2331786ecb6891f77769022282ad2c8b7cbc00340be34f4b4c2f",
+      "source_unchanged": true,
+      "status": "PROCESSED",
+      "xlsx_limited_check": "PASS_LIMITED_CHECK"
+    },
+    {
+      "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+      "formula_count_changed": true,
+      "name": "UNI-MAK_CAPEX_LOG-001_A4_READY.xlsx",
+      "new_formula_count": 263,
+      "old_formula_count": 0,
+      "source_sha256": "1ecbad9e91f9263cfd09c1dae6cf419cbab7fadde856085dcfc7904f7ba958e1",
+      "source_unchanged": true,
+      "status": "PROCESSED",
+      "xlsx_limited_check": "PASS_LIMITED_CHECK"
+    },
+    {
+      "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+      "formula_count_changed": false,
+      "name": "ORG-005_TITAN_Grid_Teaser_v4.xlsx",
+      "new_formula_count": 0,
+      "old_formula_count": 0,
+      "source_sha256": "11db09c8450a8f09ddf19d1e761250e3815ff115700c9355666f6a6c58e1d48d",
+      "source_unchanged": true,
+      "status": "PROCESSED",
+      "xlsx_limited_check": "HOLD"
+    },
+    {
+      "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+      "formula_count_changed": false,
+      "name": "ORG-016_TITAN_Grid_Project_Charter_v4.xlsx",
+      "new_formula_count": 0,
+      "old_formula_count": 0,
+      "source_sha256": "631f3548b020e686f7caba4222209d6263a0ae5c0b4df3f0fedd9a3b2ab1fea3",
+      "source_unchanged": true,
+      "status": "PROCESSED",
+      "xlsx_limited_check": "HOLD"
+    },
+    {
+      "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+      "name": "ANEKS_1_REVIZIJA_CAPEX_TITAN1_PROFESSIONAL_FINAL_2026-05-10.docx",
+      "source_sha256": "c337b1f1ca30b13429600d36d98e98e26709088903ce7f2b866024650d87284e",
+      "source_unchanged": true,
+      "status": "PROCESSED",
+      "xlsx_limited_check": "NOT_APPLICABLE"
+    },
+    {
+      "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+      "name": "Titan_Grid_Collateral_Overview_v2_Bank_Ready.docx",
+      "source_sha256": "c1e64e1506aba002109dee6e7866d1011f6d46f4795856fa59bc822b1cd45039",
+      "source_unchanged": true,
+      "status": "PROCESSED",
+      "xlsx_limited_check": "NOT_APPLICABLE"
+    },
+    {
+      "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+      "name": "Debt.csv",
+      "source_sha256": "e79df4ca18a25a7cd259303a0efd5a1ce3963954b658b1f0fb613bc36525174b",
+      "source_unchanged": true,
+      "status": "PROCESSED",
+      "xlsx_limited_check": "NOT_APPLICABLE"
+    }
+  ],
+  "financial_accuracy": "NOT_ASSESSED",
+  "previous_summary_sha256": "7c2391c246c92dbe0249442a1165bc747db1d4d6b8b4461218959c5a998edf7b",
+  "protocol": "888",
+  "result": "LOCAL_MODULE_REPAIR_AND_TEST_PASS",
+  "script_sha256": "01cd6ee9c07d76f2b974b655791c4bcb8426e128bdb29ca221cfcce502064525",
+  "source_workbooks_edited": false,
+  "started_utc": "2026-09-13T14:28:06.283364+00:00",
+  "tests": {
+    "corrupt_xlsx_rejected": true,
+    "document_receipt_verified": true,
+    "formula_count_default": true,
+    "formula_count_prefixed": true,
+    "formula_count_strict": true,
+    "formula_count_zero": true,
+    "malformed_worksheet_rejected": true,
+    "missing_input_rejected": true,
+    "repeat_input_same_content_hash": true,
+    "xlsx_no_formula_hold_despite_exit_zero": true,
+    "xlsx_positive_fixture": true
+  }
+}

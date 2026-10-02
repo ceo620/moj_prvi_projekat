@@ -1,0 +1,516 @@
+ALPINE IPHONE STORAGE CENSUS
+Timestamp: Sun May 24 14:43:43 UTC 2026
+Guardrails: READ_ONLY / NO_DELETE / NO_MOVE / NO_RENAME
+
+=== ENVIRONMENT ===
+root
+/root
+Linux localhost 4.20.69-ish SUPER AWESOME May 20 2023 23:41:32 i686 Linux
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.14.3
+PRETTY_NAME="Alpine Linux v3.14"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://bugs.alpinelinux.org/"
+
+=== DISK ===
+Filesystem                Size      Used Available Use% Mounted on
+/private/var/mobile/Containers/Shared/AppGroup/311C53DD-F02E-4003-8F0B-555043CEBB88/File\040Provider\040Storage
+                        953.1G    220.1G    733.0G  23% /root/Documents
+/private/var/mobile/Containers/Shared/AppGroup/195DD384-0A39-4161-BF62-D0A2B5865539/roots/default/data
+                        953.1G    220.1G    733.0G  23% /
+
+=== ROOT HOME TOP LEVEL ===
+total 340K   
+drwx------   16 root     root         992 May 24 14:43 .
+drwxr-xr-x   20 root     root         768 May 23 01:31 ..
+-rw-------    1 root     root      183.6K May 24 14:43 .ash_history
+drwxr-xr-x    3 root     root          96 May 10 11:04 .cache
+-rw-r--r--    1 root     root         850 May 24 14:43 ALPINE_IPHONE_STORAGE_CENSUS_20260524_144342.txt
+drwxr-xr-x    2 root     root         576 May 23 01:34 CMU_IPHONE_CENSUS
+-rw-r--r--    1 root     root        1.4K May 14 08:54 DELTA_CORE_v1_0.py
+drwxr-xr-x   13 root     root         544 May 19 12:39 DELTA_FINAL_EXPORT
+drwxr-xr-x   13 root     root         416 May 18 00:28 DELTA_LENOVO_CENTRAL
+-rwxr-xr-x    1 root     root        6.0K May 14 08:45 DELTA_UNITY_ENGINE_v1_7.py
+drwxr-xr-x   36 501      501         1.8K May 20 20:34 Documents
+-rw-r--r--    1 root     root        2.3K May 10 10:43 FAJLOVI_SA_TOKENIMA.txt
+drwxr-xr-x    2 root     root         224 May 19 08:21 IPHONE_LOCAL_STATIC_CENSUS_20260519_082140
+drwxr-xr-x    2 root     root         192 May 16 07:55 IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075526
+drwxr-xr-x    2 root     root         192 May 16 07:56 IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558
+-rw-r--r--    1 root     root        2.3K May 16 08:18 IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558.tar.gz
+-rw-r--r--    1 root     root         131 May 16 08:18 IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558_TAR_SHA256.txt
+drwxr-xr-x    5 root     root         160 May 19 08:24 IPHONE_STATIC_EXPORT_PACKET_MANIFEST_ONLY_20260519_082406
+-rw-r--r--    1 root     root       59.0K May 19 08:30 IPHONE_STATIC_EXPORT_PACKET_MANIFEST_ONLY_20260519_082406_FOR_MSI.tar.gz
+-rw-r--r--    1 root     root         145 May 19 08:30 IPHONE_STATIC_EXPORT_PACKET_MANIFEST_ONLY_20260519_082406_FOR_MSI_SHA256.txt
+drwxr-xr-x    2 root     root         192 May 23 18:38 ISH_003_PROJECT_LAYER_STATIC_CENSUS_20260523_183737
+drwxr-xr-x    2 root     root         128 May 23 18:38 ISH_003_PROJECT_LAYER_STATIC_CENSUS_20260523_183840
+drwxr-xr-x    2 root     root         192 May 23 18:40 ISH_003_PROJECT_LAYER_STATIC_CENSUS_20260523_183935
+drwxr-xr-x    2 root     root         160 May 23 18:48 ISH_004_CLASSIFY_IPHONE_TO_MSI_EXPORTS_AND_DELTA_CORE_20260523_184130
+drwxr-xr-x    2 root     root         416 May 23 18:50 ISH_005_EXPORT_CLASSIFICATION_STATUS_FOR_BIG_UNITY_COMPARE_20260523_185017
+-rw-r--r--    1 root     root           0 May 10 10:48 TITAN_SIMPLE_SEARCH.txt
+-rw-r--r--    1 root     root           0 May 10 10:46 TITAN_TOKENS_I_SIGNALI.txt
+-rw-r--r--    1 root     root           0 May 23 01:31 done
+-rw-r--r--    1 root     root       59.0K May 19 08:43 iphone_manifest_for_msi.tar.gz
+-rw-r--r--    1 root     root         145 May 19 08:43 iphone_manifest_for_msi_sha256.txt
+-rw-r--r--    1 root     root           0 May 23 01:31 sha256sum
+
+=== /mnt ===
+total 0      
+drwxr-xr-x    4 root     root         128 May 16 08:21 .
+drwxr-xr-x   20 root     root         768 May 23 01:31 ..
+drwxr-xr-x    2 root     root         128 May 16 08:19 ios
+drwxr-xr-x    2 root     root         128 May 16 08:22 marel_transfer
+
+=== /mnt/ios ===
+total 8K     
+drwxr-xr-x    2 root     root         128 May 16 08:19 .
+drwxr-xr-x    4 root     root         128 May 16 08:21 ..
+-rw-r--r--    1 root     root        2.3K May 16 08:19 IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558.tar.gz
+-rw-r--r--    1 root     root         131 May 16 08:19 IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558_TAR_SHA256.txt
+
+=== /mnt/marel_transfer ===
+total 8K     
+drwxr-xr-x    2 root     root         128 May 16 08:22 .
+drwxr-xr-x    4 root     root         128 May 16 08:21 ..
+-rw-r--r--    1 root     root        2.3K May 16 08:25 IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558.tar.gz
+-rw-r--r--    1 root     root         131 May 16 08:25 IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558_TAR_SHA256.txt
+
+=== DOCUMENTS TOP LEVEL ===
+total 1M     
+drwxr-xr-x   36 501      501         1.8K May 20 20:34 .
+drwx------   16 root     root         992 May 24 14:43 ..
+drwxr-xr-x    3 501      501         1.3K May 21 08:11 .Trash
+drwxr-xr-x    2 501      501          768 May  5 14:51 000. Titan
+drwxr-xr-x    6 501      501          320 May 18 13:21 0000000000000
+drwxr-xr-x    3 501      501           96 Apr  7 00:50 001. AKTIVNA DOKUMENTA
+drwxr-xr-x    2 501      501          160 May  5 15:27 001. Zakoni i regulative
+drwxr-xr-x    3 501      501           96 Apr  7 01:02 002. Materijal za Tik tok
+drwxr-xr-x    3 501      501         2.0K May  6 03:12 003 DELTA
+drwxr-xr-x    2 501      501          448 May  4 23:51 003. PPP
+drwxr-xr-x    2 501      501          192 May  6 06:58 004. Extrakcije iz chatova
+drwxr-xr-x    2 501      501          544 May 11 07:10 00_MASTER_TOKEN_AUTHORITY
+drwxr-xr-x    2 501      501          128 May 20 20:34 01. DELTA REAL-TIME SSOT GENERATION POPLINE 
+drwxr-xr-x    2 501      501           64 May 20 20:32 01. Del
+-rw-r--r--    1 501      501        36.2K May 10 19:32 ANEKS_1_REVIZIJA_CAPEX_TITAN1_2026-05-10.docx
+-rw-r--r--    1 501      501        36.8K May 10 19:39 ANEKS_1_REVIZIJA_CAPEX_TITAN1_EU_BRAND_2026-05-10.docx
+-rw-r--r--    1 501      501        36.9K May 10 19:40 ANEKS_1_REVIZIJA_CAPEX_TITAN1_EU_FOOTER_2026-05-10.docx
+-rw-r--r--    1 501      501        36.5K May 10 19:43 ANEKS_1_REVIZIJA_CAPEX_TITAN1_FINAL_2026-05-10.docx
+-rw-r--r--    1 501      501        37.3K May 10 19:43 ANEKS_1_REVIZIJA_CAPEX_TITAN1_IMPROVED_2026-05-10.docx
+-rw-r--r--    1 501      501        36.5K May 10 19:44 ANEKS_1_REVIZIJA_CAPEX_TITAN1_INSTITUTIONAL_FINAL_2026-05-10.docx
+-rw-r--r--    1 501      501        36.6K May 10 19:45 ANEKS_1_REVIZIJA_CAPEX_TITAN1_INSTITUTIONAL_ULTRA_2026-05-10.docx
+-rw-r--r--    1 501      501        37.2K May 11 07:10 ANEKS_1_REVIZIJA_CAPEX_TITAN1_PROFESSIONAL_FINAL_2026-05-10.docx
+-rw-r--r--    1 501      501        36.2K May 11 06:50 ANEKS_1_REVIZIJA_CAPEX_TITAN1_v4_2026-05-10.docx
+drwxr-xr-x   11 501      501          672 Mar  8 03:16 Ars documents
+drwxr-xr-x    2 501      501          160 Mar  8 05:45 Chatgbt informacije
+drwxr-xr-x    2 501      501          480 Mar 10 02:49 Drive dokumenta 
+drwxr-xr-x    3 501      501         2.3K Mar 23 12:48 Exeli
+drwxr-xr-x    2 501      501          320 May 11 06:52 FINAL_SEND_PACKAGE_TITAN1_2026-05-10
+drwxr-xr-x    2 501      501          384 Mar 15 23:42 Finansiski model 
+drwxr-xr-x    2 501      501          128 May 11 11:08 IZVOZ_ZA_WINDOWS
+drwxr-xr-x    2 501      501          224 Mar  9 23:19 Irf
+drwx------    2 501      501          128 May 19 12:55 LAS_VEGAS_GOLD_PACKAGE
+-rw-r--r--    1 501      501       422.1K May 11 10:25 LAS_VEGAS_GOLD_PACKAGE.tar.gz
+drwxr-xr-x    2 501      501          160 Mar 13 00:36 M
+-rw-r--r--    1 501      501        47.4K May 10 10:36 MAPA_CIJELOG_UREDAJA.txt
+drwxr-xr-x    2 501      501           64 May 16 08:24 MAREL_TRANSFER
+drwxr-xr-x    2 501      501          128 Mar 17 02:24 Mantre
+drwxr-xr-x    3 501      501          288 Sep 26  2025 Move to iOS
+drwxr-xr-x    3 501      501          576 May  5 02:13 O02 chatgbt 
+-rw-r--r--    1 501      501        69.5K May 10 10:36 PUNA_MAPA.txt
+-rw-r--r--    1 501      501        36.4K May 10 19:35 SIGNALNI_MEMORANDUM_TITAN1_2026-05-10.docx
+-rw-r--r--    1 501      501        36.9K May 10 19:39 SIGNALNI_MEMORANDUM_TITAN1_EU_BRAND_2026-05-10.docx
+drwxr-xr-x    6 501      501          224 May 19 12:32 SOUL_EXPORT_20260519_1232
+-rw-r--r--    1 501      501       131.2K May 19 12:43 SOUL_EXPORT_FULL_20260519_1234.tar.gz
+-rw-r--r--    1 501      501       131.2K May 19 12:43 SOUL_EXPORT_FULL_20260519_1235.tar.gz
+-rw-r--r--    1 501      501            0 May 10 10:41 SVE_OSJETLJIVO.txt
+drwxr-xr-x    2 501      501          288 May  1 23:34 Sistem final 
+drwxr-xr-x   11 501      501          352 Apr  4 12:57 TITAN FINAL
+drwxr-xr-x    2 501      501           96 May 10 12:28 TITAN1_DEEP_HARVEST_20260510_1153
+drwxr-xr-x    2 501      501           64 May 10 11:41 TITAN1_HARMONIZED_REPORT_20260510_1141
+-rw-r--r--    1 501      501        24.6K May 10 11:10 TITAN_Central_Brain_Finance_Master_v6_1.xlsx
+drwxr-xr-x    3 501      501           96 May 10 20:11 TITAN_SCRIPT_MODULE_INTAKE
+-rw-r--r--    1 501      501          161 May 10 10:38 TOKENS.txt
+-rw-r--r--    1 501      501            0 May 10 10:37 TOKENS_I_SIGNALI.txt
+drwxr-xr-x    5 501      501          384 Mar 28 12:12 Titan grid
+-rw-r--r--    1 501      501         2.6K May 10 11:52 extract_titan1_deep_harvest.py
+-rw-r--r--    1 501      501         2.2K May 10 11:41 titan1_light_harmonizer.py
+drwxr-xr-x    2 501      501           64 May  6 01:21 untitled folder
+
+=== PROJECT/EXPORT FOLDERS ===
+/root
+/root/.cache
+/root/.cache/pip
+/root/CMU_IPHONE_CENSUS
+/root/DELTA_FINAL_EXPORT
+/root/DELTA_FINAL_EXPORT/Adapters
+/root/DELTA_FINAL_EXPORT/Archives
+/root/DELTA_FINAL_EXPORT/Configs
+/root/DELTA_FINAL_EXPORT/Documentation
+/root/DELTA_FINAL_EXPORT/Inventories
+/root/DELTA_FINAL_EXPORT/Reports
+/root/DELTA_FINAL_EXPORT/SAFE_BACKUP
+/root/DELTA_FINAL_EXPORT/SOUL_EXPORT_20260519_1232
+/root/DELTA_FINAL_EXPORT/Scripts
+/root/DELTA_FINAL_EXPORT/iPhone_Exports
+/root/DELTA_FINAL_EXPORT/{Scripts,Reports
+/root/DELTA_LENOVO_CENTRAL
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_NOTES_FILES_INTAKE
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_NOTES_PRIORITY_INTAKE
+/root/DELTA_LENOVO_CENTRAL/01_HASH_REGISTERS
+/root/DELTA_LENOVO_CENTRAL/02_INDEX
+/root/DELTA_LENOVO_CENTRAL/03_SCRIPT_INVENTORY
+/root/DELTA_LENOVO_CENTRAL/04_CORE_CANDIDATE_REVIEW
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL
+/root/DELTA_LENOVO_CENTRAL/50_HARMONIZATION
+/root/DELTA_LENOVO_CENTRAL/99_DO_NOT_DELETE
+/root/DELTA_LENOVO_CENTRAL/99_STATIC_REPORTS
+/root/Documents
+/root/Documents/.Trash
+/root/Documents/000. Titan
+/root/Documents/0000000000000
+/root/Documents/001. AKTIVNA DOKUMENTA
+/root/Documents/001. Zakoni i regulative
+/root/Documents/002. Materijal za Tik tok
+/root/Documents/003 DELTA
+/root/Documents/003. PPP
+/root/Documents/004. Extrakcije iz chatova
+/root/Documents/00_MASTER_TOKEN_AUTHORITY
+/root/Documents/01. DELTA REAL-TIME SSOT GENERATION POPLINE 
+/root/Documents/01. Del
+/root/Documents/Ars documents
+/root/Documents/Chatgbt informacije
+/root/Documents/Drive dokumenta 
+/root/Documents/Exeli
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10
+/root/Documents/Finansiski model 
+/root/Documents/IZVOZ_ZA_WINDOWS
+/root/Documents/Irf
+/root/Documents/LAS_VEGAS_GOLD_PACKAGE
+/root/Documents/M
+/root/Documents/MAREL_TRANSFER
+/root/Documents/Mantre
+/root/Documents/Move to iOS
+/root/Documents/O02 chatgbt 
+/root/Documents/SOUL_EXPORT_20260519_1232
+/root/Documents/Sistem final 
+/root/Documents/TITAN FINAL
+/root/Documents/TITAN1_DEEP_HARVEST_20260510_1153
+/root/Documents/TITAN1_HARMONIZED_REPORT_20260510_1141
+/root/Documents/TITAN_SCRIPT_MODULE_INTAKE
+/root/Documents/Titan grid
+/root/Documents/untitled folder
+/root/IPHONE_LOCAL_STATIC_CENSUS_20260519_082140
+/root/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075526
+/root/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558
+/root/IPHONE_STATIC_EXPORT_PACKET_MANIFEST_ONLY_20260519_082406
+/root/IPHONE_STATIC_EXPORT_PACKET_MANIFEST_ONLY_20260519_082406/01_REPORTS
+/root/IPHONE_STATIC_EXPORT_PACKET_MANIFEST_ONLY_20260519_082406/02_MARKERS
+/root/IPHONE_STATIC_EXPORT_PACKET_MANIFEST_ONLY_20260519_082406/03_HASH_REGISTER
+/root/ISH_003_PROJECT_LAYER_STATIC_CENSUS_20260523_183737
+/root/ISH_003_PROJECT_LAYER_STATIC_CENSUS_20260523_183840
+/root/ISH_003_PROJECT_LAYER_STATIC_CENSUS_20260523_183935
+/root/ISH_004_CLASSIFY_IPHONE_TO_MSI_EXPORTS_AND_DELTA_CORE_20260523_184130
+/root/ISH_005_EXPORT_CLASSIFICATION_STATUS_FOR_BIG_UNITY_COMPARE_20260523_185017
+
+=== MEDIA-LIKE FILES SAMPLE ===
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_8849d777-99b8-4060-8f66-19a62b65a5fb_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0229.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0215.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0017.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0003.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0201.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_dcd06b65-2de7-447e-ae71-cea4a76dd07d_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0200.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0002.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0016.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0214.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0228.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/fe6d4fe93443467fb0b29d1cb9ccd18b.MOV
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_bb6c9248-325e-49a6-8f45-0e657269197f_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0216.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9959.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0028.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0014.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0202.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0217.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0015.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0001.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9958.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/60292C09-83C1-4419-A0EB-91EA55373AE7.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0175.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/66609BCA-9D18-4121-ABB3-B45A1A70BA5A.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9948.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9960.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0005.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0011.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0207.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0010.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0004.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0212.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0206.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9949.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_f965d8ae-9c21-494d-9c1d-bdde761ea10e_generated_video 2.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_911aa78b-d5fc-41b6-97eb-1c7b85d3f3c0_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/92309000-3F67-4DA6-8323-D13783F33146.MOV
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0199.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0172.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0210.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9988.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0012.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0006.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0204.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/34846FE0-A03D-499D-B799-7D33810127DB.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0211.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0007.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9989.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0013.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0205.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0198.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0225 2.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_18c9eb43-57dc-45fd-a28c-827aa6ef3f77_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_8716b86a-5a6a-45a3-ac93-d230d2e4b05e_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9911.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_ad693823-366d-43f8-8423-2b05ee147522_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9910.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_45d6c0af-c896-42ea-9c95-272472925f53_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9906.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9912.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9907.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_efc3603e-f170-46ca-b4cc-ad5479102842_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_4f6f6b43-5670-44af-be44-faad452559ac_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_528c8d77-39f5-4fe3-9857-f3efe11a574b_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9903.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_585b366b-976c-43e8-9cfc-39ae31a9dfaf_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_b3b76b07-b474-4298-98f9-ad92fc5f7dae_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0073.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_174666aa-e544-4927-8d8d-26be9e39a630_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/99ADA493-534D-7581-7F83-444D3C629ADF.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/5104eea5f48648d2b084252e9b18594d.MOV
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0065.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/v14044g50000d79va17og65j3i1sr990.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_f965d8ae-9c21-494d-9c1d-bdde761ea10e_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/24f23ba87da645c5bdfdb6665f41911a.MOV
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_d6a5b292-5dad-4232-baf3-5202f08b32a7_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0212 2.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_d6a5b292-5dad-4232-baf3-5202f08b32a7_generated_video 2.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_d6a5b292-5dad-4232-baf3-5202f08b32a7_generated_video 3.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_a4a9c3f7-eb87-4fd7-9ae5-815dcd11965b_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_51354302-2944-4caf-99f6-ca2016a72854_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_ba3e3129-58ac-4e66-980e-bf3bae867de9_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_8b0f43de-806e-4ebc-9664-36b98f66777f_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_b5d5a169-d8fc-41eb-9b02-bc0a6635f1ac_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_6f3128d4-e6f2-47bd-b3d8-6d28c23eba2d_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_31f4b453-48f6-4a7c-af05-96fe6f9d60c8_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_0f3e91ba-cad3-4e1b-abd9-dc351dd1504b_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_3943d317-d22a-4e2e-b620-e14ba14b50fb_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0208.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9990.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0022.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9953.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0220.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0209.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0023.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_8849d777-99b8-4060-8f66-19a62b65a5fb_generated_video 2.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9991.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0221.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9952.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/9b7d361d8d13463ab2f7fbc47c8d5508.MOV
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0196.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9950.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_efc3603e-f170-46ca-b4cc-ad5479102842_generated_video 2.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0021.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0223.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_1dfe8e9b-429a-455f-b924-33c09c800803_generated_video 3.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_1dfe8e9b-429a-455f-b924-33c09c800803_generated_video 2.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0020.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0008.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9992.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0222.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9951.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_c053668a-289f-4e05-a268-9d2967b8d86a_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/73537ffeb2d64da6b1e5d1d9c621988c.MOV
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_4f6f6b43-5670-44af-be44-faad452559ac_generated_video 2.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_5e007c5b-1b8c-49ad-b0ef-4908e45b7dd9_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_45d6c0af-c896-42ea-9c95-272472925f53_generated_video 2.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0024.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0018.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9996.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0227.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0019.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0025.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_1dfe8e9b-429a-455f-b924-33c09c800803_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0153.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_c758d754-952e-4cbb-b4de-0520a0b07f94_generated_video.MP4
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0225.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9956.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0219.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0027.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9995.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0230.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0026.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9994.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0218.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_9957.PNG
+/root/Documents/002. Materijal za Tik tok/07.04/IMG_0224.JPG
+/root/Documents/002. Materijal za Tik tok/07.04/v14044g50000d79lpovog65iarsl55g0.MP4
+/root/Documents/M/ScreenRecording_03-13-2026 01-11-42_1.MP4
+/root/Documents/M/Manta 90.MP4
+/root/Documents/M/ScreenRecording_03-13-2026 00-59-20_1.MP4
+/root/Documents/Mantre/ScreenRecording_03-17-2026 02-56-51_1.MP4
+/root/Documents/Mantre/ScreenRecording_03-17-2026 03-04-27_1.MP4
+/root/Documents/TITAN FINAL/01.04/Instagram 1 story.MOV
+/root/Documents/TITAN FINAL/Arhiva informacija/003. Excel video tutorial/v12025gd0000d39bp9vog65sa9ahkf4g.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre/ScreenRecording_02-18-2026 00-29-45_1.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre/ScreenRecording_02-18-2026 00-09-48_1.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre/ScreenRecording_02-18-2026 00-14-49_1.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre/ScreenRecording_02-18-2026 00-10-39_1.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7750.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7744.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7745.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7751.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7747.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7753.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7752.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7746.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7742.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7756.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7757.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7743.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7755.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7741.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7740.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7754.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7733.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7727.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7726.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7732.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7724.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7730.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7731.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7725.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7735.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7734.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7736.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7723.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7737.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7739.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7738.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7728.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7729.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7759.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7758.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7764.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7763.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7762.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7748.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7760.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7761.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7749.PNG
+/root/Documents/0000000000000/DANASSSSS/PHOTO-2026-04-06-07-59-08.jpg
+/root/Documents/0000000000000/DANASSSSS/PHOTO-2026-03-22-23-40-42.jpg
+/root/Documents/0000000000000/DANASSSSS/PHOTO-2026-04-20-09-17-46.jpg
+/root/Documents/0000000000000/DANASSSSS/PHOTO-2026-04-06-07-59-05.jpg
+/root/Documents/0000000000000/DANASSSSS/PHOTO-2026-04-06-07-59-07.jpg
+/root/Documents/.Trash/02. Neki LinkedIn postovi/D34B80BA-9E01-455D-8EF2-2242CC6A441E.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/3720A27F-37A1-419A-9F19-22CAADBE0B85.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/4BD9FFF8-142D-4578-AB95-F8D74685F7A7.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/6A21C8E2-86A9-43A3-B3A1-325AB952A472.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/89A4CB56-5144-42FA-9AF8-7BEA6F922B08 2.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/D4084BAF-7BAF-43B5-BD19-9EEAD1B8AAAB.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/C458E6CE-50EF-473F-BDA2-335461AD6690.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/F9AF67D5-F251-4B0B-A6B7-B2580117A65E.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/89F3EFF6-2ACE-4FA0-AFB9-3B473612E10D.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/6F217806-0859-4E2D-8E73-9280530C4748.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/375274A3-F66B-48C3-A123-5FE824A3DAA3.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/68173AD2-A58D-4558-ABAE-72DA49B51182.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/A0208FDE-8356-461D-BABD-0A1B02A13750.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/019E3534-B752-4B3D-90AD-0EDCA1715F75.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/74A1BBDE-6E37-45E1-9CA7-6B17A20EB394.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/177090be-b370-4776-8478-385ab2981914.JPG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/1AA31326-455A-4EBF-8F6A-D9796C33D5DC.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/B1DB1D6F-9107-4CE7-802F-E757E641FCAF.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/A62C59F7-DF87-4BC6-903C-28C2114612B7.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/89A4CB56-5144-42FA-9AF8-7BEA6F922B08.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/0007141C-6DD0-42E3-8F4E-C3353D3423BB.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/9BE23F54-EEE0-40C6-9960-2D64E03E4D59.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/7A63DD09-7BD1-486C-9473-D9952189D8A6.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/74A869FD-82FD-4ED3-B456-868B52EB5496.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/454E7C1E-8AB4-4C39-91B5-71638E83465A.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_8849d777-99b8-4060-8f66-19a62b65a5fb_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0229.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0215.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0017.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0003.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0201.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_dcd06b65-2de7-447e-ae71-cea4a76dd07d_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0200.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0002.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0016.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0214.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0228.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/fe6d4fe93443467fb0b29d1cb9ccd18b.MOV
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_bb6c9248-325e-49a6-8f45-0e657269197f_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0216.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9959.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0028.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0014.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0202.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0217.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0015.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0001.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9958.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/60292C09-83C1-4419-A0EB-91EA55373AE7.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0175.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/66609BCA-9D18-4121-ABB3-B45A1A70BA5A.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9948.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9960.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0005.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0011.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0207.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0010.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0004.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0212.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0206.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9949.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_f965d8ae-9c21-494d-9c1d-bdde761ea10e_generated_video 2.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_911aa78b-d5fc-41b6-97eb-1c7b85d3f3c0_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/92309000-3F67-4DA6-8323-D13783F33146.MOV
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0199.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0172.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0210.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9988.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0012.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0006.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0204.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/34846FE0-A03D-499D-B799-7D33810127DB.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0211.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0007.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9989.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0013.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0205.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0198.PNG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0225 2.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_18c9eb43-57dc-45fd-a28c-827aa6ef3f77_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_8716b86a-5a6a-45a3-ac93-d230d2e4b05e_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9911.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_ad693823-366d-43f8-8423-2b05ee147522_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9910.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_45d6c0af-c896-42ea-9c95-272472925f53_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9906.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9912.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9907.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_efc3603e-f170-46ca-b4cc-ad5479102842_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_4f6f6b43-5670-44af-be44-faad452559ac_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_528c8d77-39f5-4fe3-9857-f3efe11a574b_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_9903.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_585b366b-976c-43e8-9cfc-39ae31a9dfaf_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_b3b76b07-b474-4298-98f9-ad92fc5f7dae_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0073.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_174666aa-e544-4927-8d8d-26be9e39a630_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/99ADA493-534D-7581-7F83-444D3C629ADF.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/5104eea5f48648d2b084252e9b18594d.MOV
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/IMG_0065.JPG
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/v14044g50000d79va17og65j3i1sr990.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/_users_e324f777-8af8-4911-b526-8915719636fe_generated_f965d8ae-9c21-494d-9c1d-bdde761ea10e_generated_video.MP4
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04/24f23ba87da645c5bdfdb6665f41911a.MOV

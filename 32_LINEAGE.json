@@ -1,0 +1,17 @@
+{
+  "business_approval": "NOT_GRANTED",
+  "bytes": 51,
+  "completed_utc": "2026-09-13T14:28:08.384817+00:00",
+  "document_processor": "PASS_HASH_AND_CLASSIFICATION",
+  "financial_content_accuracy": "NOT_ASSESSED",
+  "kind": "SYNTHETIC_TEST",
+  "receipt": "TESTS/CSV_REPEAT/PROCESSOR/RECEIPT.json",
+  "receipt_sha256": "eb6c3b660525f89fc2b501dac17df29933a51e94bff16d228f9da15b120c09df",
+  "source": "/root/IPHONE_888_LOKALNI_h2a8tu_8/TESTS/FIXTURES/synthetic.csv",
+  "source_content_unchanged_observed": true,
+  "source_name": "synthetic.csv",
+  "source_sha256": "70472fa058784c8cf0954790ebc9babe5fef4fd9bdc09ef4b116266cc9a0ef2b",
+  "source_sha256_after": "70472fa058784c8cf0954790ebc9babe5fef4fd9bdc09ef4b116266cc9a0ef2b",
+  "started_utc": "2026-09-13T14:28:07.346782+00:00",
+  "xlsx_keyword_check": "NOT_APPLICABLE"
+}

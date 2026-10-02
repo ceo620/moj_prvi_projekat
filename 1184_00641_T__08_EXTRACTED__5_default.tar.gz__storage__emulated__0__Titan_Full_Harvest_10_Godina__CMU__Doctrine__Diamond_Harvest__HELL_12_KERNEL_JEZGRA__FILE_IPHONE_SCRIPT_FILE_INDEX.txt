@@ -1,0 +1,46 @@
+/root/DELTA_CORE_v1_0.py
+/root/DELTA_UNITY_ENGINE_v1_7.py
+/root/Documents/.Trash/titan_grid_vdr_ultimate_final_clean.py
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py
+/root/Documents/003 DELTA/37_system_index_builder.py
+/root/Documents/003. PPP/titan_grid_v5_max_pojaczony.py
+/root/Documents/003. PPP/titan_grid_vdr_enterprise_v3_4.py
+/root/Documents/003. PPP/titan_grid_vdr_ultimate_final_clean.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/ACTIVE_DOCUMENT_REGISTRY.json
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/DOCUMENT_SCOPE_POLICY.json
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/MASTER_TOKEN_REGISTER.json
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/MASTER_TOKEN_REGISTER_v4.0.json
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1_final.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1_improved.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1_institutional_final.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1_institutional_ultra.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1_professional_final.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1_strict_v2.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1_v4.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_ANEKS1_with_footer.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_EU_BRAND.py
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_SIGNALNI_MEMORANDUM_TITAN1.py
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888_SUMMARY.json
+/root/Documents/Sistem final /01_discover_files_v8_1_AUDIT_LOCKED.py
+/root/Documents/Sistem final /01_discover_files_v8_AUDIT_LOCKED.py
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py
+/root/Documents/TITAN FINAL/01.04/grok_central_brain_exporter.py
+/root/Documents/TITAN FINAL/01.04/grok_central_brain_lookup.json
+/root/Documents/TITAN FINAL/03.03/build_control_tower_v1.py
+/root/Documents/TITAN FINAL/03.03/grok_payload_v6_2.json
+/root/Documents/TITAN FINAL/03.03/grok_payload_v6_2.py
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/AUTOMATE_ALL_DOCUMENTS.py
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py
+/root/Documents/TITAN FINAL/31.03/grok_automated_mutation_generator.py
+/root/Documents/TITAN FINAL/31.03/grok_mutation_generator_safe_only.json
+/root/Documents/TITAN1_DEEP_HARVEST_20260510_1153/TITAN1_DEEP_SIGNALS.json
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/MASTER_ASSUMPTIONS_V45.json
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/sources_uses_bridge.py
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/validator.py
+/root/Documents/extract_titan1_deep_harvest.py
+/root/Documents/titan1_light_harmonizer.py

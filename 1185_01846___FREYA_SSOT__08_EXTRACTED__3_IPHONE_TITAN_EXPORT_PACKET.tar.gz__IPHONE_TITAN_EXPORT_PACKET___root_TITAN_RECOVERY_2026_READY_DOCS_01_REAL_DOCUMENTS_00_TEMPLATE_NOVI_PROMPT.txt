@@ -1,0 +1,11 @@
+# === NOVI PROMPT TEMPLATE ===
+Datum: $(date '+%d.%m.%Y %H:%M')
+Naziv prompta: 
+
+=== PROMPT POČINJE OVDE ===
+
+[zalijepi prompt ovdje]
+
+=== KRAJ PROMPTA ===
+
+Komentar / rezultat / zašto je dobar:

@@ -1,0 +1,14 @@
+{
+  "bytes": 8126,
+  "classification": "FINANCIAL",
+  "extension": ".xlsx",
+  "mtime_utc": "2026-09-13T14:28:24.720353+00:00",
+  "network_action": "NONE",
+  "original_modified": "NO",
+  "result": "PASS",
+  "risk": [
+    "NONE"
+  ],
+  "sha256": "11db09c8450a8f09ddf19d1e761250e3815ff115700c9355666f6a6c58e1d48d",
+  "source": "/root/IPHONE_888_LOKALNI_h2a8tu_8/BUSINESS/OBJECT_04/INPUT/source.xlsx"
+}

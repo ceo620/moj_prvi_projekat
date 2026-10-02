@@ -1,0 +1,20 @@
+348:def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
+505:def get_value(row: Dict[str, Any], canonical: str) -> str:
+561:def detect_forbidden_terms(*texts: str) -> List[str]:
+571:def classify_priority(text: str, provided: str = "") -> str:
+588:def classify_healing_type(text: str, provided: str = "") -> str:
+625:def derive_truth_gate(record: AtomRecord) -> str:
+646:def derive_hallucination_gate(record: AtomRecord) -> str:
+664:def derive_execution_gate(record: AtomRecord) -> str:
+678:def derive_canonical_decision(record: AtomRecord) -> str:
+701:def derive_zero_mistake_status(record: AtomRecord) -> str:
+710:def build_mono_signal_key(record: AtomRecord) -> str:
+715:def enrich_record(record: AtomRecord) -> AtomRecord:
+756:def row_to_atom_record(row: Dict[str, Any], index: int, input_path: Path, input_sha: str) -> AtomRecord:
+961:def write_records_sheet(wb: Workbook, records: List[AtomRecord]) -> None:
+980:def count_by(records: List[AtomRecord], attr: str) -> Dict[str, int]:
+988:def write_dashboard_sheet(wb: Workbook, records: List[AtomRecord], input_sha: str) -> None:
+1030:def write_truth_gates_sheet(wb: Workbook) -> None:
+1123:def write_workbook(records: List[AtomRecord], output_path: Path, input_sha: str) -> None:
+1143:def build_manifest(
+1190:def write_audit_log(path: Path, events: List[Dict[str, Any]], overwrite: bool) -> None:

@@ -1,0 +1,12 @@
+TITAN GRID — SOUL EXPORT
+========================
+Datum izvoza: $(date)
+Mašina: Alpine Linux (Lenovo)
+Status: SYSTEM RED — STEP102 LOCKED — NO FINAL USE
+
+Ovo je kompletna duša sistema u ovom trenutku.
+Sadrži sve važne skripte, iPhone izvoze, forenzičke inventare i izvještaje.
+
+Folder: SOUL_EXPORT_$(date +%Y%m%d_%H%M)
+
+Arhitekta: Danijela Đurović Keskin / Onur

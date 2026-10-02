@@ -1,0 +1,31 @@
+{
+  "source": "/root/FREYA_RECOVERY_009_888_ugk9zsdm/RECOVERED/root/IPHONE_ALL_SCRIPTS_DOCTRINES_20260713_212404/IPHONE_ALL_SCRIPTS_DOCTRINES.tar.gz",
+  "decode": {
+    "source_bytes": 47710208,
+    "prefix_bytes": 214924229,
+    "gzip_members_completed": 0,
+    "gzip_eof": false,
+    "error": null,
+    "gzip_integrity": "INCOMPLETE_OR_DAMAGED",
+    "note": "Only fully read selected TAR regular files can be recovered; missing bytes cannot be recreated."
+  },
+  "counts": {
+    "tar_entries": 17108,
+    "matched_recorded_content": 12715,
+    "complete_selected_members": 12715,
+    "new_objects": 0,
+    "skipped": 4393
+  },
+  "issues": [
+    {
+      "reason": "ReadError: unexpected end of data"
+    }
+  ],
+  "objects": {},
+  "new_vs_full_009": "NOT_ESTABLISHED",
+  "comparison_scope": "Hashes recorded by 016 and 017 selected-file recovery",
+  "originals_modified": 0,
+  "project_code_executed": false,
+  "giant_266GiB_opened": false,
+  "empty_nested_archive": "No bytes to recover; not retried"
+}

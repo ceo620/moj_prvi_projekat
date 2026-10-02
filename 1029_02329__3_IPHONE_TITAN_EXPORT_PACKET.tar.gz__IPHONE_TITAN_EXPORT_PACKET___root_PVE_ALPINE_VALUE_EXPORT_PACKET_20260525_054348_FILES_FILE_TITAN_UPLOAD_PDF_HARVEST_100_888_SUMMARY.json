@@ -1,0 +1,17 @@
+{
+  "scan_epoch_utc": "2026-05-05T02:11:40Z",
+  "mode": "REPORT_ONLY / READ_ONLY / ZERO_TRUST / NO_FINAL_USE",
+  "physical_files_processed": 3,
+  "pdf_files_processed": 3,
+  "evidence_candidate_rows": 3,
+  "high_value_signal_rows": 3,
+  "unsafe_wording_hits": 16,
+  "human_review_rows": 3,
+  "conflict_candidate_rows": 1,
+  "duplicate_content_groups": 0,
+  "evidence_approved": 0,
+  "step102_accepted": "NO",
+  "final_use_allowed_yes_count": 0,
+  "final_verdict": "TITAN_UPLOAD_PDF_HARVEST_100_888_REVIEW_REQUIRED",
+  "final_status": "SYSTEM RED — STEP102 LOCKED — NO FINAL USE"
+}

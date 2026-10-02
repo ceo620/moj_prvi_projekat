@@ -1,0 +1,62 @@
+57:from __future__ import annotations
+59:import argparse
+60:import csv
+61:import dataclasses
+62:import hashlib
+63:import json
+64:import os
+65:import re
+66:import sys
+67:from datetime import datetime, timezone
+68:from pathlib import Path
+69:from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
+263:class AtomRecord:
+327:class TransformResult:
+344:def now_utc_iso() -> str:
+348:def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
+359:def normalize_text(value: Any) -> str:
+367:def normalize_header(value: Any) -> str:
+375:def atom_sort_key(atom_id: str) -> Tuple[int, str]:
+382:def ensure_no_overwrite(path: Path, overwrite: bool = False) -> None:
+389:def safe_sheet_name(name: str) -> str:
+394:def detect_delimiter(path: Path) -> str:
+406:def split_action_text(text: str) -> List[str]:
+417:def read_input_table(path: Path) -> List[Dict[str, Any]]:
+429:def read_xlsx(path: Path) -> List[Dict[str, Any]]:
+467:def read_delimited(path: Path) -> List[Dict[str, Any]]:
+505:def get_value(row: Dict[str, Any], canonical: str) -> str:
+515:def derive_atom_id(row: Dict[str, Any], index: int) -> str:
+525:def normalize_status(status: str) -> str:
+544:def normalize_external_verification(value: str) -> str:
+561:def detect_forbidden_terms(*texts: str) -> List[str]:
+571:def classify_priority(text: str, provided: str = "") -> str:
+588:def classify_healing_type(text: str, provided: str = "") -> str:
+625:def derive_truth_gate(record: AtomRecord) -> str:
+646:def derive_hallucination_gate(record: AtomRecord) -> str:
+664:def derive_execution_gate(record: AtomRecord) -> str:
+678:def derive_canonical_decision(record: AtomRecord) -> str:
+701:def derive_zero_mistake_status(record: AtomRecord) -> str:
+710:def build_mono_signal_key(record: AtomRecord) -> str:
+715:def enrich_record(record: AtomRecord) -> AtomRecord:
+756:def row_to_atom_record(row: Dict[str, Any], index: int, input_path: Path, input_sha: str) -> AtomRecord:
+818:def build_fallback_atoms(count: int = 416) -> List[AtomRecord]:
+854:class ExcelStyler:
+907:def add_validations(ws, header_map: Dict[str, int]) -> None:
+928:def add_conditional_formatting(ws, header_map: Dict[str, int]) -> None:
+961:def write_records_sheet(wb: Workbook, records: List[AtomRecord]) -> None:
+980:def count_by(records: List[AtomRecord], attr: str) -> Dict[str, int]:
+988:def write_dashboard_sheet(wb: Workbook, records: List[AtomRecord], input_sha: str) -> None:
+1030:def write_truth_gates_sheet(wb: Workbook) -> None:
+1052:def write_dictionary_sheet(wb: Workbook) -> None:
+1071:def meaning_for_healing_type(value: str) -> str:
+1087:def meaning_for_risk_level(value: str) -> str:
+1097:def write_readme_sheet(wb: Workbook) -> None:
+1123:def write_workbook(records: List[AtomRecord], output_path: Path, input_sha: str) -> None:
+1143:def build_manifest(
+1185:def write_json(path: Path, data: Dict[str, Any], overwrite: bool) -> None:
+1190:def write_audit_log(path: Path, events: List[Dict[str, Any]], overwrite: bool) -> None:
+1197:def write_digest(path: Path, digest: str, output_path: Path, overwrite: bool) -> None:
+1206:def transform(
+1303:def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
+1335:def print_result(result: TransformResult) -> None:
+1362:def main(argv: Optional[Sequence[str]] = None) -> int:

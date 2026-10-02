@@ -1,0 +1,41 @@
+330:    output_path: str
+331:    output_sha256: str
+332:    manifest_path: str
+334:    digest_path: str
+1123:def write_workbook(records: List[AtomRecord], output_path: Path, input_sha: str) -> None:
+1136:    wb.save(output_path)
+1146:    output_path: Path,
+1147:    output_sha: str,
+1171:            "path": str(output_path),
+1172:            "sha256": output_sha,
+1173:            "size_bytes": output_path.stat().st_size if output_path.exists() else None,
+1197:def write_digest(path: Path, digest: str, output_path: Path, overwrite: bool) -> None:
+1199:    path.write_text(f"{digest}  {output_path.name}\n", encoding="utf-8")
+1208:    output_path: Path,
+1215:    ensure_no_overwrite(output_path, overwrite=overwrite)
+1223:        "output_path": str(output_path),
+1254:    output_path.parent.mkdir(parents=True, exist_ok=True)
+1255:    write_workbook(records, output_path, input_sha)
+1256:    output_sha = sha256_file(output_path)
+1258:    manifest_path = output_path.with_suffix(output_path.suffix + ".manifest.json")
+1259:    audit_path = output_path.with_suffix(output_path.suffix + ".audit.jsonl")
+1260:    digest_path = output_path.with_suffix(output_path.suffix + ".sha256.txt")
+1265:        output_path=output_path,
+1266:        output_sha=output_sha,
+1271:    write_json(manifest_path, manifest, overwrite=overwrite)
+1276:        "output_path": str(output_path),
+1277:        "output_sha256": output_sha,
+1278:        "manifest_path": str(manifest_path),
+1282:    write_audit_log(audit_path, audit, overwrite=overwrite)
+1283:    write_digest(digest_path, output_sha, output_path, overwrite=overwrite)
+1288:        output_path=str(output_path),
+1289:        output_sha256=output_sha,
+1290:        manifest_path=str(manifest_path),
+1291:        audit_log_path=str(audit_path),
+1292:        digest_path=str(digest_path),
+1342:    print(f"OUTPUT_PATH    : {result.output_path}")
+1343:    print(f"OUTPUT_SHA256  : {result.output_sha256}")
+1344:    print(f"MANIFEST       : {result.manifest_path}")
+1346:    print(f"DIGEST         : {result.digest_path}")
+1365:    output_path = Path(args.output).expanduser().resolve()
+1370:            output_path=output_path,
