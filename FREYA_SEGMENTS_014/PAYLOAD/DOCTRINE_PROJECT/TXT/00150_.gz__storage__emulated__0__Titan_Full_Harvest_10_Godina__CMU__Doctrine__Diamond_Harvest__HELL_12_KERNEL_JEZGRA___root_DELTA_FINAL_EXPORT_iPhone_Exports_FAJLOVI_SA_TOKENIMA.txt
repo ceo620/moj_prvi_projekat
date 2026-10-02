@@ -1,0 +1,49 @@
+./TOKENS.txt
+./003 DELTA/TITAN_134_135_136_HandoffBoundary_Reconciliation_v1.zip
+./003 DELTA/TITAN_155_156_157_ReviewOnly_SuperIndex_Seal_v1.zip
+./PUNA_MAPA.txt
+./MAPA_CIJELOG_UREDAJA.txt
+./002. Materijal za Tik tok/07.04/IMG_0201.PNG
+./002. Materijal za Tik tok/07.04/IMG_9959.PNG
+./002. Materijal za Tik tok/07.04/IMG_0202.PNG
+./002. Materijal za Tik tok/07.04/IMG_0217.PNG
+./002. Materijal za Tik tok/07.04/IMG_9958.PNG
+./002. Materijal za Tik tok/07.04/IMG_9948.PNG
+./002. Materijal za Tik tok/07.04/IMG_9960.PNG
+./002. Materijal za Tik tok/07.04/IMG_0207.PNG
+./002. Materijal za Tik tok/07.04/IMG_9949.PNG
+./002. Materijal za Tik tok/07.04/IMG_0172.PNG
+./002. Materijal za Tik tok/07.04/IMG_9988.PNG
+./002. Materijal za Tik tok/07.04/IMG_0204.PNG
+./002. Materijal za Tik tok/07.04/IMG_0211.PNG
+./002. Materijal za Tik tok/07.04/IMG_0220.PNG
+./002. Materijal za Tik tok/07.04/IMG_0209.PNG
+./002. Materijal za Tik tok/07.04/IMG_9991.PNG
+./002. Materijal za Tik tok/07.04/IMG_9952.PNG
+./002. Materijal za Tik tok/07.04/IMG_9950.PNG
+./002. Materijal za Tik tok/07.04/IMG_0223.PNG
+./002. Materijal za Tik tok/07.04/IMG_9992.PNG
+./002. Materijal za Tik tok/07.04/IMG_9951.PNG
+./002. Materijal za Tik tok/07.04/IMG_0227.PNG
+./002. Materijal za Tik tok/07.04/IMG_0153.PNG
+./002. Materijal za Tik tok/07.04/IMG_9956.PNG
+./002. Materijal za Tik tok/07.04/IMG_0230.PNG
+./002. Materijal za Tik tok/07.04/IMG_9994.PNG
+./002. Materijal za Tik tok/07.04/IMG_9957.PNG
+./TITAN FINAL/03.03/grok_payload_v6_2.py
+./TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py
+./TITAN FINAL/03.03/grok_payload_v6_2.json
+./Titan grid/Onur/FIN-2.1 Executive Financial Dashboard.pdf
+./O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888_SUMMARY.json
+./O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888.md
+./Sistem final /01_discover_files_v9_AUDIT_LOCKED.py
+./Sistem final /01_discover_files_v8_AUDIT_LOCKED.py
+./Sistem final /01_discover_files_v8_1_AUDIT_LOCKED.py
+./.Trash/titan_grid_vdr_ultimate_final_clean.py
+./003. PPP/titan_grid_vdr_enterprise_v3_4.py
+./003. PPP/titan_grid_v5_max_pojaczony.py
+./003. PPP/titan_grid_vdr_ultimate_final_clean.py
+./004. Extrakcije iz chatova/4.md
+./004. Extrakcije iz chatova/TITAN_DEEP_FORENSIC_CONTEXT_EXTRACTION_RAG_READY_v2.md
+./004. Extrakcije iz chatova/3.md
+./004. Extrakcije iz chatova/2.md

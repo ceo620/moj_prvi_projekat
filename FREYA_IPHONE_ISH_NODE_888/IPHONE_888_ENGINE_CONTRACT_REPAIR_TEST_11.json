@@ -1,0 +1,126 @@
+{
+  "protocol": "888",
+  "batch": "IPHONE_888_ENGINE_CONTRACT_REPAIR_TEST_11",
+  "engine_sha256": "01cd6ee9c07d76f2b974b655791c4bcb8426e128bdb29ca221cfcce502064525",
+  "repair_mode": true,
+  "path_literals": [
+    "/root",
+    "/root/FREYA_RECOVERY_009_888_ugk9zsdm/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888",
+    "/root/IPHONE_888_OBRADA_9dltg97z",
+    "/tmp/ISH_EXPORT_888.w75MRJ",
+    "/usr/bin:/bin",
+    "15_RUNTIME/FOREGROUND_BUSINESS_RELEASES/V1R3_20260805T230000Z_SSOT_EVIDENCE_CANDIDATE/document_processor.py",
+    "16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/agent_intelligence_888/financial_validator_v2_888.py",
+    "<!doctype html><html lang=\"sr\"><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'; style-src 'unsafe-inline'\">\n<title>FREYA lokalna provjera</title><style>body{font:17px system-ui;background:#f2f5f7;color:#182e3b;padding:20px}main{max-width:950px;margin:auto}table{border-collapse:collapse;width:100%;background:white}td,th{padding:12px;border-bottom:1px solid #ddd;text-align:left;overflow-wrap:anywhere}p{line-height:1.6}.table{overflow-x:auto}</style><main><h1>FREYA lokalna provjera</h1>",
+    "<%sf>1+1</%sf><%sf t=\"shared\" si=\"0\"/>",
+    "<%sworksheet %s><%ssheetData><%srow><%sc>%s</%sc></%srow></%ssheetData></%sworksheet>",
+    "</b></p><p>Popravljen je način prepoznavanja Excel formula. Broj uključuje i formule u audit listovima. Ova provjera ne preračunava formule i ne potvrđuje cijene ili finansijsku tačnost.</p>",
+    "</c></row></sheetData></worksheet>",
+    "</main></html>",
+    "</p>",
+    "</table></div>",
+    "</td></tr>",
+    "</td><td>",
+    "<Types xmlns=\"http://schemas.openxmlformats.org/package/2006/content-types\"/>",
+    "<Types/>",
+    "<div class=\"table\"><table><tr><th>Fajl</th><th>Ranije formule</th><th>Sada formule</th><th>Obrada</th></tr>",
+    "<f>1+1</f><v>2</v>",
+    "<p>CAPEX audit list i poslovni podaci nijesu mijenjani. Pozadinski agenti nijesu pokrenuti. API pozivi: 0.</p>",
+    "<p>Raniji izvještaj ostaje sačuvan. Za isti hash fajla koristi noviji nalaz broja formula. Prethodni AI tekst zasnovan na nula formula zahtijeva ispravku.</p>",
+    "<root><f>NOT_A_CELL_FORMULA</f></root>",
+    "<v>2</v>",
+    "<workbook xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\"/>",
+    "<workbook/>",
+    "<worksheet><f>1+1</worksheet>",
+    "<worksheet><sheetData><row><c><is><t>SYNTHETIC TEST ONLY assumption EUR 2026 capex opex debt irr scenario sensitivity</t></is></c><c>",
+    "ANEKS_1_REVIZIJA_CAPEX_TITAN1_PROFESSIONAL_FINAL_2026-05-10.docx",
+    "Debt.csv",
+    "LINEAGE.json",
+    "MODULE_LINEAGE.json",
+    "ORG-005_TITAN_Grid_Teaser_v4.xlsx",
+    "ORG-016_TITAN_Grid_Project_Charter_v4.xlsx",
+    "RECEIPT.json",
+    "REGRESSION_RESULTS.json",
+    "REZULTAT.json",
+    "SHA256.json",
+    "SUMMARY.json",
+    "TEST_RESULTS.json",
+    "TITAN_Central_Brain_Finance_Master_v6_1.xlsx",
+    "Titan_Grid_Collateral_Overview_v2_Bank_Ready.docx",
+    "Titan_Grid_v6_2_Live_Lender_Linkage_Pack.xlsx",
+    "UNI-MAK_CAPEX_LOG-001_A4_READY.xlsx",
+    "customXml/test.xml",
+    "does_not_exist.csv",
+    "http://purl.oclc.org/ooxml/spreadsheetml/main",
+    "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
+    "malformed.xlsx",
+    "not_a_zip.xlsx",
+    "synthetic.csv",
+    "synthetic_no_formula.xlsx",
+    "synthetic_with_formula.xlsx",
+    "xl/workbook.xml",
+    "xl/worksheets/sheet1.xml"
+  ],
+  "canonical_literals": [
+    "/root/FREYA_RECOVERY_009_888_ugk9zsdm/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888"
+  ],
+  "stale_literals": [],
+  "relevant_calls": [
+    {
+      "fn": "path.parent.mkdir",
+      "args": []
+    },
+    {
+      "fn": "path.parent.mkdir",
+      "args": []
+    },
+    {
+      "fn": "path.open",
+      "args": [
+        "xb"
+      ]
+    },
+    {
+      "fn": "path.open",
+      "args": [
+        "rb"
+      ]
+    },
+    {
+      "fn": "json.dumps",
+      "args": [
+        null
+      ]
+    }
+  ],
+  "dangerous_pattern": false,
+  "safe_to_execute": true,
+  "execution": {
+    "attempted": true,
+    "exit": 2,
+    "stdout": "RESULT=HOLD\nREASON=FileNotFoundError\n",
+    "stderr": ""
+  },
+  "changed_files": [
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/09_EVIDENCE/IPHONE_888_RUNTIME_PRODUCT_ACCEPTANCE_03.json",
+      "size": 147,
+      "sha256": "46ceb7c94e6483b720c29b006c66d4c424b340ee5c16fc9cedb15988fc81dc67"
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/09_EVIDENCE/IPHONE_888_PROVENANCE_RUNTIME_BIND_05R1.json",
+      "size": 570,
+      "sha256": "56921530697c74736814b895debcc2cb4dcf24e4d64b7b28ccf65bfda7d3bb4e"
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/09_EVIDENCE/IPHONE_888_RUNTIME_CONTENT_RECOVERY_04.json",
+      "size": 7379,
+      "sha256": "c141f22945d7b3977b1a4f90011ff69b12088217c042ad886d5c42af83ff6855"
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/09_EVIDENCE/IPHONE_888_UNION_INTEGRATE_REPAIR_02.json",
+      "size": 118846,
+      "sha256": "368c9ed8cd78c966c512052ec50a7f378cb1131213e63e44ee7ea19eeb3e29bc"
+    }
+  ]
+}

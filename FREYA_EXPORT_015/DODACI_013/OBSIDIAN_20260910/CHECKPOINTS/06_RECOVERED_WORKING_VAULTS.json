@@ -1,0 +1,7 @@
+{
+  "batch": "IPHONE_7B02",
+  "completed_utc": "2026-09-10T16:23:25Z",
+  "result_sha256": "7d84494788abf8b18b70382d1497f3c7b831067c169121d4e95569d21571a48b",
+  "script_sha256": "375865ae8ba44e1773be76eabfcfcfafab925ac00d1b628d9eae83d89fdd359d",
+  "step": "06_RECOVERED_WORKING_VAULTS"
+}

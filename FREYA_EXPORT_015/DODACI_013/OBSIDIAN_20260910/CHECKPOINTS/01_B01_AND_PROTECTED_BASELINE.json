@@ -1,0 +1,7 @@
+{
+  "batch": "IPHONE_7B02",
+  "completed_utc": "2026-09-10T16:21:35Z",
+  "result_sha256": "70fc04779c05758f51be556964bb2e2ff6429b735b6e6950f4819446e204f711",
+  "script_sha256": "375865ae8ba44e1773be76eabfcfcfafab925ac00d1b628d9eae83d89fdd359d",
+  "step": "01_B01_AND_PROTECTED_BASELINE"
+}

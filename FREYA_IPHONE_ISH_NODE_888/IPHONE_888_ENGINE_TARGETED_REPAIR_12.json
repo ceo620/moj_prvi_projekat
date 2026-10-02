@@ -1,0 +1,21 @@
+{
+  "protocol": "888",
+  "batch": "IPHONE_888_ENGINE_TARGETED_REPAIR_12",
+  "prior_execution": {
+    "attempted": true,
+    "exit": 2,
+    "stdout": "RESULT=HOLD\nREASON=FileNotFoundError\n",
+    "stderr": ""
+  },
+  "diagnostic": "\nRESULT=HOLD\nREASON=FileNotFoundError\n",
+  "repairs": [],
+  "missing_module": null,
+  "retry": {
+    "attempted": true,
+    "exit": 2,
+    "stdout": "RESULT=HOLD\nREASON=FileNotFoundError\n",
+    "stderr": "",
+    "engine": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/ENGINE__01cd6ee9c07d.py"
+  },
+  "passed": false
+}

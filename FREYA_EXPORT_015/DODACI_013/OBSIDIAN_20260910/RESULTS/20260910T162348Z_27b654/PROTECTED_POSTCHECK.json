@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/AUTOPILOT/STATE/STOP_REQUESTED",
+    "unchanged": true
+  },
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/CORE_STATE/CHECKPOINT.env",
+    "unchanged": true
+  },
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/CORE_STATE/INDEX.json",
+    "unchanged": true
+  },
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/CORE_STATE/STOP",
+    "unchanged": true
+  },
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/INPUT/P03_IPHONE_P03_20260910T113128Z_7b9b3a8732_ARS_TG_PC_001.docx",
+    "unchanged": true
+  },
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/IPHONE_ORG_B07_20260804T153841Z_PID2882/SSOT_INDEX.tsv",
+    "unchanged": true
+  },
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/REGISTRY/SSOT_CURRENT.tsv",
+    "unchanged": true
+  },
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/AUTOPILOT_CURRENT",
+    "unchanged": true
+  },
+  {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_FOREGROUND_BUSINESS_CURRENT",
+    "unchanged": true
+  }
+]

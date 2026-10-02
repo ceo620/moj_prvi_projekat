@@ -1,0 +1,27 @@
+TRANSFER_INSTRUCTIONS_NOTE
+Tue May 26 23:55:53 UTC 2026
+
+SOURCE_NODE=MACHINE_001_IPHONE_ALPINE
+EXPORT_ARCHIVE=/root/TITAN_RECOVERY_2026_EXPORT_COPY.tar.gz
+EXPORT_HASH=/root/TITAN_RECOVERY_2026_EXPORT_COPY.tar.gz.sha256.txt
+
+TRANSFER_METHOD_ALLOWED:
+1. COPY_ONLY_TO_MAC_CONTROL_TOWER
+2. COPY_ONLY_TO_ANDROID_RELAY
+3. NO_DELETE_AFTER_TRANSFER
+
+TRANSFER_METHOD_BLOCKED:
+- direct sync with --delete
+- rsync --delete
+- overwrite without hash check
+- archive extraction before control tower review
+
+AFTER_TRANSFER_REQUIRED:
+1. verify archive hash on receiving machine
+2. extract only into review folder
+3. create receiving register
+4. keep original export archive
+
+TRANSFER_STATUS=NOT_DONE
+CLEANING_ALLOWED=NO
+HUMAN_GATE=ACTIVE

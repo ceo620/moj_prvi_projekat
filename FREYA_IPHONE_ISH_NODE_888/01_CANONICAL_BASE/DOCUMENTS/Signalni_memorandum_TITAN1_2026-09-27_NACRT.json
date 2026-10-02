@@ -1,0 +1,14 @@
+{
+  "result": "PASS_DOCX_STRUCTURE_AND_APPROVED_AMOUNT",
+  "document": "/root/FREYA_IPHONE_ISH_NODE_888/01_CANONICAL_BASE/DOCUMENTS/Signalni_memorandum_TITAN1_2026-09-27_NACRT.docx",
+  "sha256": "846873e37f7701a55f61d852ca4fdd9ece8528796c4ecc57dee811bb9ae0bf89",
+  "source_sha256": "ea9c69abccabbe86a81bdb1cc25c51c0712345f1043dda069bc66b26c6b34f47",
+  "approval_sha256": "76561f132e67ca66fbe265c38b626af5148d9262194cc6f5b88f6c4f16950110",
+  "identity_source_sha256": "0e48b67c613112084747ba9edcb58faa383d78653a8ee020ff49eb6157a35c5e",
+  "identity_review": "PENDING_HUMAN_REVIEW_OF_ARCHIVAL_IDENTITY",
+  "total_project_cost_eur": 27796156,
+  "document_signoff": "PENDING",
+  "external_send": "NONE",
+  "financial_model_validation": "NOT_PERFORMED",
+  "visual_review_on_iphone": "PENDING"
+}

@@ -1,0 +1,34 @@
+#!/bin/sh
+set -eu
+BRIDGE="/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888"
+CMD="${1:-STATUS}"
+case "$CMD" in
+ STATUS)
+   echo "PROTOCOL=888"
+   echo "ENGINE=FREYA_888_LIVE"
+   echo "ENGINE_STATUS=LIVE"
+   echo "SHORTCUT=FREYA 888"
+   echo "ISH_NODE=PASS"
+   echo "HUMAN_GATE=ACTIVE"
+   echo "RESULT=PASS"
+   ;;
+ PING)
+   echo "PROTOCOL=888"
+   echo "PAYLOAD_CHANNEL=ISH_NATIVE"
+   echo "PING=PONG"
+   echo "RESULT=PASS"
+   ;;
+ PREPARE_ASUS)
+   echo "PROTOCOL=888"
+   echo "SOURCE=IPHONE_ISH"
+   echo "TARGET=ASUS_DANIJELA"
+   echo "PACKAGE_ROOT=$BRIDGE/08_PACKAGES"
+   echo "TRANSFER_EXECUTED=NO"
+   echo "HUMAN_GATE_REQUIRED=YES"
+   echo "RESULT=READY"
+   ;;
+ *)
+   echo "RESULT=DENY_UNKNOWN_COMMAND"
+   exit 64
+   ;;
+esac

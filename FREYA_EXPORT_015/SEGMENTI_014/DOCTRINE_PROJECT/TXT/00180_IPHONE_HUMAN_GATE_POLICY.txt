@@ -1,0 +1,29 @@
+FREYA_IPHONE_HUMAN_GATE_POLICY
+
+HUMAN_GATE=Danijela_Djurovic_Keskin
+PROTOCOL=888
+DEVICE_ROLE=VISIBLE_EVIDENCE_CAPTURE_AND_HANDOFF
+
+ALLOWED:
+- receive photographs
+- receive screenshots
+- receive PDF scans
+- receive exported emails and documents
+- register file metadata
+- calculate SHA-256
+- create copy-only handoff packets after Human Gate approval
+
+PROHIBITED:
+- delete originals
+- move originals automatically
+- rename originals automatically
+- open or extract archives automatically
+- execute scripts from evidence
+- start daemons
+- automatic internet use
+- automatic sending
+- publication
+
+EVIDENCE_FIRST=YES
+SOURCE_LINEAGE_REQUIRED=YES
+HUMAN_GATE_ALWAYS_ACTIVE=YES

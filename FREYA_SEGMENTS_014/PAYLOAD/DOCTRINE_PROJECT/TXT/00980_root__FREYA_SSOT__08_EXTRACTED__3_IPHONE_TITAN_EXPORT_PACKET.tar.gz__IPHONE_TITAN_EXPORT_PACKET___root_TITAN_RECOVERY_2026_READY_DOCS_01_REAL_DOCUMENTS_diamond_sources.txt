@@ -1,0 +1,200 @@
+/root/ISH_005_EXPORT_CLASSIFICATION_STATUS_FOR_BIG_UNITY_COMPARE_20260523_185017/ISH_005_CMU_CENSUS_NAMES.csv
+/root/ISH_005_EXPORT_CLASSIFICATION_STATUS_FOR_BIG_UNITY_COMPARE_20260523_185017/ISH_005_HASH_REGISTER.txt
+/root/ISH_005_EXPORT_CLASSIFICATION_STATUS_FOR_BIG_UNITY_COMPARE_20260523_185017/ISH_005_TITAN_DOCUMENTS_NAMES.csv
+/root/ALPINE_IPHONE_STORAGE_CENSUS_20260524_144342.txt
+/root/Documents/Exeli/TITAN_GRID_v5_Full_Lender_Closing_Book.pdf
+/root/Documents/003 DELTA/TITAN_FINAL_HUMAN_REVIEW_CHECKLIST.md
+/root/Documents/Finansiski model /Eco Transformer doo- analitical card.pdf
+/root/Documents/Finansiski model /IRF - PRIRUCNIK ZA IZRADU INV PROJEKATA 2013 - do 50.pdf
+/root/Documents/000. Titan/Izjava o Uskladjivanju-pp.pdf
+/root/Documents/000. Titan/srkretarijat za Urbanizam - Rešenje 07-322-25-8472-1 od 26.11.2025.pdf
+/root/Documents/000. Titan/CRPS 4 Rjesenje Uskladjivanje +Promjena Dir.pdf
+/root/Documents/000. Titan/ARS 24.pdf.pdf
+/root/Documents/000. Titan/Odluka o promjeni Direktora-pp.pdf
+/root/Documents/000. Titan/ARS 25.pdf.pdf
+/root/Documents/000. Titan/Saglasnost Imenovanje Ovl.Zastup.-pp.pdf
+/root/Documents/000. Titan/Odluka o promjeni Kontakta-pp.pdf
+/root/Documents/000. Titan/ARS 23.pdf.pdf
+/root/Documents/000. Titan/BU 2025.pdf
+/root/Documents/000. Titan/BU 2024.pdf
+/root/Documents/000. Titan/BS 24 (2).pdf
+/root/Documents/000. Titan/Odluka o imenovanju Ovl.Zastup.-pp.pdf
+/root/Documents/000. Titan/BU 2023.pdf
+/root/Documents/000. Titan/Odluka o prom. Tipa posl. Uloge-pp.pdf
+/root/Documents/000. Titan/CRPS 4 Izvod sa SVIM podaci.pdf
+/root/Documents/000. Titan/Odluka o promjeni Prefiksa-pp.pdf
+/root/Documents/000. Titan/Odluka o usvajanju novog Statuta-pp.pdf
+/root/Documents/000. Titan/BS 2023.pdf
+/root/Documents/000. Titan/Statut (mne+eng)-pp.pdf
+/root/Documents/000. Titan/BS 2025.pdf
+/root/Documents/000. Titan/BS 2024.pdf
+/root/Documents/SOUL_EXPORT_20260519_1232/Scripts/iphone_sha_analyzer.py
+/root/Documents/SOUL_EXPORT_20260519_1232/iPhone_Exports/iphone_manifest_for_msi_sha256.txt
+/root/Documents/SOUL_EXPORT_20260519_1232/iPhone_Exports/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558_TAR_SHA256.txt
+/root/Documents/SOUL_EXPORT_20260519_1232/iPhone_Exports/IPHONE_STATIC_EXPORT_PACKET_MANIFEST_ONLY_20260519_082406_FOR_MSI_SHA256.txt
+/root/Documents/01. DELTA REAL-TIME SSOT GENERATION POPLINE /DELTA_SSOT_SIGNAL_TO_DOCUMENT_GOVERNANCE_MAP.csv
+/root/Documents/01. DELTA REAL-TIME SSOT GENERATION POPLINE /README_DELTA_SSOT_SIGNAL_TO_DOCUMENT_GOVERNANCE_MAP.md
+/root/Documents/TITAN FINAL/01.04/README_GROK_CENTRAL_BRAIN.txt
+/root/Documents/TITAN FINAL/01.04/grok_central_brain_exporter.py
+/root/Documents/TITAN FINAL/01.04/GROK_CENTRAL_BRAIN_INSTRUCTIONS.txt
+/root/Documents/TITAN FINAL/01.04/grok_central_brain_lookup.csv
+/root/Documents/TITAN FINAL/01.04/grok_central_brain_lookup.json
+/root/Documents/TITAN FINAL/31.03/grok_mutation_generator_safe_only.csv
+/root/Documents/TITAN FINAL/31.03/grok_only_step_by_step.txt
+/root/Documents/TITAN FINAL/31.03/grok_mutation_generator_safe_only.json
+/root/Documents/TITAN FINAL/31.03/grok_mutation_generator_candidates.csv
+/root/Documents/TITAN FINAL/31.03/grok_automated_mutation_generator.py
+/root/Documents/TITAN FINAL/Marija/izvjestaj_Marija_Đurović.pdf
+/root/Documents/TITAN FINAL/Marija/Medical Report Analysis and Research.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Analiza snaga tri firme za EU platformu.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Kontrola nabavke: Moć u industriji.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Implementacioni Plan: Od Stabilizacije do Hegemoni....pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/ECO + ARS: Komercijalna Ekspanzija i Liderstvo.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Industrijska Transformacija: Od Haosa Ka Sistemu.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateški Plan za Industrijsku Moć.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Ljudski kapital: Mikro-koraci za Fabriku.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strategija Visoko Svjesnog Bića.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Poslovni plan za investitora: 20 tačaka.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Plan Implementacije Industrijske Hegemonije.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Fabrika: Od Kvaliteta do Transformacije.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateški model akvizicije ECO-a.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateške prilike za industrijsku ekspanziju.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7750.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7744.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7745.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7751.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7747.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7753.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7752.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7746.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7742.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7756.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7757.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7743.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7755.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7741.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7740.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7754.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7733.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7727.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7726.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7732.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7724.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7730.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7731.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7725.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7735.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7734.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7736.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7723.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7737.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7739.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7738.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7728.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7729.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7759.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7758.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7764.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7763.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7762.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7748.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7760.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7761.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7749.PNG
+/root/Documents/TITAN FINAL/29.03/Irf investicioni plan.pdf
+/root/Documents/TITAN FINAL/28.03/Memory Update and Conversation Synthesis.pdf
+/root/Documents/TITAN FINAL/03.03/04.04/Assignment tracker.pdf
+/root/Documents/TITAN FINAL/03.03/grok_payload_v6_2.py
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py
+/root/Documents/TITAN FINAL/03.03/README.md
+/root/Documents/TITAN FINAL/03.03/grok_payload_v6_2.json
+/root/Documents/TITAN FINAL/03.03/build_control_tower_v1.py
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/AUTOMATE_ALL_DOCUMENTS.py
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/README_AUTOMATION.md
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_Annex.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_FINAL.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py
+/root/Documents/TITAN FINAL/27.03/TITAN_Investment_Memo_v6_2.pdf
+/root/Documents/0000000000000/vDR/Kopija Plana.pdf
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py
+/root/Documents/0000000000000/DANASSSSS/ARS 24.pdf.pdf
+/root/Documents/0000000000000/DANASSSSS/ARS 25.pdf.pdf
+/root/Documents/0000000000000/DANASSSSS/ECO + ARS Komercijalna Ekspanzija i Liderstvo.pdf
+/root/Documents/0000000000000/DANASSSSS/ADS GAZETE SON.pdf
+/root/Documents/0000000000000/DANASSSSS/Titan_Grid_v52_Credit_Committee_Pack.pdf
+/root/Documents/0000000000000/DANASSSSS/ADS İMZA SİRKÜSÜ 2027.pdf
+/root/Documents/0000000000000/DANASSSSS/TITAN_GRID_Risk_Allocation_Matrix_Annex.pdf
+/root/Documents/0000000000000/DANASSSSS/FIN-2.2 CAPEX Schedule – Capital Deployment Strategy.pdf
+/root/Documents/0000000000000/DANASSSSS/ads vl 2025.pdf
+/root/Documents/0000000000000/DANASSSSS/ARS 23.pdf.pdf
+/root/Documents/0000000000000/DANASSSSS/FIN-2.2 CAPEX Schedule .pdf
+/root/Documents/0000000000000/DANASSSSS/TITAN_GRID_v5_Full_Lender_Closing_Book.pdf
+/root/Documents/0000000000000/DANASSSSS/Strateški model akvizicije ECO-a.pdf
+/root/Documents/Titan grid/Prezentacija/Osnovna dokument/CFO REPORT 2023 BILANS STANJA I USPJEHA.pdf
+/root/Documents/Titan grid/Prezentacija/Osnovna dokument/List Nepokretnosti 3301.pdf
+/root/Documents/Titan grid/Prezentacija/Osnovna dokument/BILANSI FINAL 2024.pdf
+/root/Documents/Titan grid/Prezentacija/Osnovna dokument/REŠENJE O PIB-U ADS METAL INDUSTRIES.pdf
+/root/Documents/Titan grid/Prezentacija/Osnovna dokument/Rješenje o registraciji - ARS METAL INDUSTRIES DOO Podgorica.pdf
+/root/Documents/Titan grid/Prezentacija/Osnovna dokument/012. DECEMBAR 2025.pdf
+/root/Documents/Titan grid/Prezentacija/Osnovna dokument/Kopija Plana.pdf
+/root/Documents/Titan grid/Prezentacija/1 (1).pdf
+/root/Documents/Titan grid/Prezentacija/Preliminary Information Memorandum (PIM) .pdf
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/MAREL_Lead_Magnet_eBook.pdf
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/MAREL_Ecosystem_Guide.pdf
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/MAREL_Ecosystem_eBook.pdf
+/root/Documents/Titan grid/Onur/00_Cover_Letter_EBRD.pdf.pdf
+/root/Documents/Titan grid/Onur/01.1_DSCR.pdf
+/root/Documents/Titan grid/Onur/FIN-2.5 ENERGETSKA ARBITRAŽA I SOLARNI PRINOS (LCOE MODEL).pdf
+/root/Documents/Titan grid/Onur/FIN-2.4 OPEX & Labor Matrix .pdf
+/root/Documents/Titan grid/Onur/00_Cover_Letter_EIB.pdf.pdf
+/root/Documents/Titan grid/Onur/FIN-2.2 CAPEX Schedule – Capital Deployment Strategy.pdf
+/root/Documents/Titan grid/Onur/FIN-2.2 CAPEX Schedule – Capital Deployment Strategy..pdf
+/root/Documents/Titan grid/Onur/01.4_Security.pdf
+/root/Documents/Titan grid/Onur/FIN-2.4 OPERATIVNI TROŠKOVI I MATRICA RADNE SNAGE (OPEX & LABOR).pdf
+/root/Documents/Titan grid/Onur/01.2_Stress_Test.pdf
+/root/Documents/Titan grid/Onur/FIN-2.2 CAPEX Schedule .pdf
+/root/Documents/Titan grid/Onur/FIN-2.5 Energy Arbitrage (1.4 MWp).pdf
+/root/Documents/Titan grid/Onur/FIN-2.1 Executive Financial Dashboard.pdf
+/root/Documents/Titan grid/Onur/00_STRATESKI_MEMORANDUM_OPSTINA_TUZI_TITAN_GRID.pdf.pdf
+/root/Documents/Titan grid/Onur/00_STRATESKI_MEMORANDUM_Vlada_CG.pdf.pdf
+/root/Documents/Titan grid/Onur/01.3_Pass-Through.pdf
+/root/Documents/Titan grid/Onur/FIN-2.1 EXECUTIVE FINANCIAL DASHBOARD (PREGLED).pdf
+/root/Documents/Titan grid/Onur/FIN-2.4 OPEX & Labor Matrix.pdf
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ACTIVE_DOCUMENT_REGISTRY.json
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/README_TITAN1_FINAL_PACKAGE.txt
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/HASH_LEDGER.txt
+/root/Documents/O02 chatgbt /FIN-2.5 ENERGETSKA ARBITRAŽA I SOLARNI PRINOS (LCOE MODEL).pdf
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888_SUMMARY.json
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888.md
+/root/Documents/titan1_light_harmonizer.py
+/root/Documents/Sistem final /01_discover_files_v9_AUDIT_LOCKED.py
+/root/Documents/Sistem final /TITAN_MASTER_SSOT_v1.0.pdf
+/root/Documents/Sistem final /01_discover_files_v8_AUDIT_LOCKED.py
+/root/Documents/Sistem final /01_discover_files_v8_1_AUDIT_LOCKED.py
+/root/Documents/extract_titan1_deep_harvest.py
+/root/Documents/.Trash/02. Neki LinkedIn postovi/D34B80BA-9E01-455D-8EF2-2242CC6A441E.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/3720A27F-37A1-419A-9F19-22CAADBE0B85.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/4BD9FFF8-142D-4578-AB95-F8D74685F7A7.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/6A21C8E2-86A9-43A3-B3A1-325AB952A472.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/89A4CB56-5144-42FA-9AF8-7BEA6F922B08 2.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/D4084BAF-7BAF-43B5-BD19-9EEAD1B8AAAB.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/C458E6CE-50EF-473F-BDA2-335461AD6690.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/F9AF67D5-F251-4B0B-A6B7-B2580117A65E.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/89F3EFF6-2ACE-4FA0-AFB9-3B473612E10D.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/6F217806-0859-4E2D-8E73-9280530C4748.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/375274A3-F66B-48C3-A123-5FE824A3DAA3.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/68173AD2-A58D-4558-ABAE-72DA49B51182.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/A0208FDE-8356-461D-BABD-0A1B02A13750.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/019E3534-B752-4B3D-90AD-0EDCA1715F75.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/74A1BBDE-6E37-45E1-9CA7-6B17A20EB394.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/177090be-b370-4776-8478-385ab2981914.JPG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/1AA31326-455A-4EBF-8F6A-D9796C33D5DC.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/B1DB1D6F-9107-4CE7-802F-E757E641FCAF.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/A62C59F7-DF87-4BC6-903C-28C2114612B7.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/89A4CB56-5144-42FA-9AF8-7BEA6F922B08.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/0007141C-6DD0-42E3-8F4E-C3353D3423BB.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/9BE23F54-EEE0-40C6-9960-2D64E03E4D59.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/7A63DD09-7BD1-486C-9473-D9952189D8A6.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/74A869FD-82FD-4ED3-B456-868B52EB5496.PNG
+/root/Documents/.Trash/02. Neki LinkedIn postovi/454E7C1E-8AB4-4C39-91B5-71638E83465A.PNG

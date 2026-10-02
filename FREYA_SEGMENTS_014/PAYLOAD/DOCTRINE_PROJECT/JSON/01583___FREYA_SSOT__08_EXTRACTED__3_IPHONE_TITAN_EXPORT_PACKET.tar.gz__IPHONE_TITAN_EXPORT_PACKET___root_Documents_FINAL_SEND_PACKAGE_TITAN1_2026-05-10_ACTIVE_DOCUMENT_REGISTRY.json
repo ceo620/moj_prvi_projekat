@@ -1,0 +1,33 @@
+{
+  "last_updated": "2026-05-10",
+  "documents": {
+    "SIGNALNI_MEMORANDUM_TITAN1": {
+      "version": "v1",
+      "status": "DRAFT",
+      "last_generated": null,
+      "hash": null,
+      "human_signoff": false
+    },
+    "ANEKS_1_REVIZIJA_CAPEX_TITAN1": {
+      "version": "v1",
+      "status": "DRAFT",
+      "last_generated": null,
+      "hash": null,
+      "human_signoff": false
+    },
+    "CEDIS_TUZI_TEHNICKI_DOPIS": {
+      "version": "v1",
+      "status": "DRAFT",
+      "last_generated": null,
+      "hash": null,
+      "human_signoff": false
+    },
+    "FINAL_SEND_PACKAGE_TITAN1": {
+      "version": "v1",
+      "status": "READY",
+      "last_generated": null,
+      "hash": null,
+      "human_signoff": false
+    }
+  }
+}

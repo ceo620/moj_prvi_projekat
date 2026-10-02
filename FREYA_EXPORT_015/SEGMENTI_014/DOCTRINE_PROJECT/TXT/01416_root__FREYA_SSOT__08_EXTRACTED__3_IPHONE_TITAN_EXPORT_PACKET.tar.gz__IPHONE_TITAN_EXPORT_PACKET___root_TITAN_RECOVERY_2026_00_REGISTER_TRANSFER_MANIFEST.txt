@@ -1,0 +1,26 @@
+TRANSFER_MANIFEST
+Tue May 26 23:53:01 UTC 2026
+
+SOURCE_NODE=MACHINE_001_IPHONE_ALPINE
+PACKET_ROOT=/root/TITAN_RECOVERY_2026
+TRANSFER_STATUS=NOT_TRANSFERRED_YET
+DESTINATION_CANDIDATE=MAC_CONTROL_TOWER_OR_ANDROID_RELAY
+
+INCLUDES:
+- static map
+- document hash register
+- document register
+- script risk register
+- archive candidates register
+- ready docs folder
+- human gate checklist
+- full packet hash register
+- export packet map
+
+ORIGINALS_UNTOUCHED=YES
+RUNTIME_DONE=NO
+DELETE_DONE=NO
+MOVE_DONE=NO
+PUBLICATION_DONE=NO
+
+NEXT_ALLOWED=HUMAN_REVIEW_OR_TRANSFER_COPY_ONLY

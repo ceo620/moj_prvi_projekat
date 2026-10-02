@@ -1,0 +1,8 @@
+Depreciation Schedule,,,,,,,,,,,
+,,,,,,,,,,,
+Metric,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,
+Opening Gross PP&E,0,=B8,=C8,=D8,=E8,=F8,=G8,=H8,=I8,=J8,
+CAPEX Additions,=CAPEX!B8,=CAPEX!C8,=CAPEX!D8,=CAPEX!E8,=CAPEX!F8,=CAPEX!G8,=CAPEX!H8,=CAPEX!I8,=CAPEX!J8,=CAPEX!K8,
+Depreciable Base,=B4+B5,=C4+C5,=D4+D5,=E4+E5,=F4+F5,=G4+G5,=H4+H5,=I4+I5,=J4+J5,=K4+K5,
+Depreciation Expense,"=IF(B$3<2028,0,B6*10%)","=IF(C$3<2028,0,C6*10%)","=IF(D$3<2028,0,D6*10%)","=IF(E$3<2028,0,E6*10%)","=IF(F$3<2028,0,F6*10%)","=IF(G$3<2028,0,G6*10%)","=IF(H$3<2028,0,H6*10%)","=IF(I$3<2028,0,I6*10%)","=IF(J$3<2028,0,J6*10%)","=IF(K$3<2028,0,K6*10%)",
+Closing Net PP&E,=B6-B7,=C6-C7,=D6-D7,=E6-E7,=F6-F7,=G6-G7,=H6-H7,=I6-I7,=J6-J7,=K6-K7,

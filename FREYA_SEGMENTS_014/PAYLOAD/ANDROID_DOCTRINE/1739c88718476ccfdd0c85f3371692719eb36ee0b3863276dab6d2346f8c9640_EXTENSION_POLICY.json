@@ -1,0 +1,1 @@
+{"archive":"HOLD_NO_AUTOMATIC_EXTRACTION","code_allowed_for_static_review_only":[".py",".sh",".bash",".zsh",".command"],"default":"DENY","passive_text_allowed_for_review":[".txt",".md",".json",".jsonl",".yaml",".yml",".toml",".ini",".cfg",".conf",".env",".csv",".tsv",".xml",".manifest",".receipt",".sha256"],"schema_id":"FREYA_EXTENSION_POLICY_V1_888","unknown_binary":"REJECT"}

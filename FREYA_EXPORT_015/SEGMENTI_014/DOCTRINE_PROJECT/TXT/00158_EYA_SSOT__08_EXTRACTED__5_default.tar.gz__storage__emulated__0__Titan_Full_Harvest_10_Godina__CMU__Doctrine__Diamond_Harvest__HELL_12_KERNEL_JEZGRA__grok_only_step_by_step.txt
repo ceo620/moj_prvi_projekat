@@ -1,0 +1,20 @@
+GROK-ONLY SIMPLIFIED WORKFLOW PACK
+
+1) Open grok_only_simplified_workflow_pack.xlsx
+2) Go to Prompts_30
+3) Start with CONTROL prompts only
+4) Copy formatted_prompt_grok into Grok
+5) Save outputs as [prompt_id]_[01-99].jpg
+6) Enter each generated image on Manual_Scoring
+7) Score only identity, geometry, realism, fit, and lighting
+8) Review Shortlist
+9) Only after control is stable, move to BUSINESS, then INVESTOR
+
+Naming rule example:
+CTR_0001_01.jpg
+BUS_0011_02.jpg
+INV_0021_01.jpg
+
+Scoring rule:
+Identity consistency is the highest weight.
+Any image that changes face geometry should be rejected even if it looks attractive.

@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='1350' viewBox='0 0 1080 1350'>
+  <rect width='1080' height='1350' fill='#111827'/>
+  <rect x='70' y='70' width='940' height='1210' rx='28' fill='#1f2937' stroke='#374151' stroke-width='2'/>
+  <text x='110' y='180' fill='#f9fafb' font-size='42' font-family='Arial'>Controlled Authority</text>
+  <text x='110' y='245' fill='#9ca3af' font-size='28' font-family='Arial'>Asset: AST_8BBC565E0D</text>
+  <text x='110' y='330' fill='#f3f4f6' font-size='32' font-family='Arial'>Environment</text>
+  <text x='110' y='375' fill='#d1d5db' font-size='26' font-family='Arial'>luxury apartment with clean architectural </text>
+  <text x='110' y='470' fill='#f3f4f6' font-size='32' font-family='Arial'>Wardrobe</text>
+  <text x='110' y='515' fill='#d1d5db' font-size='26' font-family='Arial'>minimal luxury dark tailored dress</text>
+  <text x='110' y='610' fill='#f3f4f6' font-size='32' font-family='Arial'>Pose</text>
+  <text x='110' y='655' fill='#d1d5db' font-size='26' font-family='Arial'>standing still with direct eye contact</text>
+  <text x='110' y='750' fill='#f3f4f6' font-size='32' font-family='Arial'>Platform</text>
+  <text x='110' y='795' fill='#d1d5db' font-size='26' font-family='Arial'>Instagram</text>
+  <text x='110' y='935' fill='#f3f4f6' font-size='32' font-family='Arial'>Generator Mode</text>
+  <text x='110' y='980' fill='#d1d5db' font-size='26' font-family='Arial'>Placeholder creative for QA pipeline testing</text>
+  <text x='110' y='1120' fill='#f9fafb' font-size='58' font-family='Arial'>QA Candidate</text>
+</svg>

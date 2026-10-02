@@ -1,0 +1,125 @@
+20:    This script transforms an input atom register into a controlled Excel workbook with:
+22:        - truth gates
+23:        - hallucination gates
+28:        - manifest
+29:        - SHA-256 audit snapshot
+35:    .xlsx workbook
+36:    .json manifest
+37:    .jsonl audit log
+38:    .sha256.txt digest file
+45:    No document = no truth.
+49:    Hash proves integrity only, not truth.
+73:    from openpyxl import Workbook, load_workbook
+244:    "No document = no truth.",
+248:    "Hash proves integrity only, not truth.",
+275:    forbidden_actions: str = "execute; patch; delete; move; overwrite; lender_use; final_use"
+280:    source_sha256: str = ""
+282:    truth_gate: str = "UNKNOWN"
+283:    hallucination_gate: str = "UNKNOWN"
+285:    execution_gate: str = "BLOCK"
+286:    lender_use_gate: str = "BLOCK"
+287:    final_use_gate: str = "BLOCK"
+288:    canonical_decision: str = "REVIEW_REQUIRED"
+306:            "FORBIDDEN_ACTIONS": self.forbidden_actions,
+311:            "SOURCE_SHA256": self.source_sha256,
+313:            "TRUTH_GATE": self.truth_gate,
+314:            "HALLUCINATION_GATE": self.hallucination_gate,
+316:            "EXECUTION_GATE": self.execution_gate,
+317:            "LENDER_USE_GATE": self.lender_use_gate,
+318:            "FINAL_USE_GATE": self.final_use_gate,
+319:            "CANONICAL_DECISION": self.canonical_decision,
+329:    input_sha256: str
+331:    output_sha256: str
+332:    manifest_path: str
+333:    audit_log_path: str
+334:    digest_path: str
+348:def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
+349:    h = hashlib.sha256()
+356:    return h.hexdigest().upper()
+430:    wb = load_workbook(path, data_only=False, read_only=True)
+505:def get_value(row: Dict[str, Any], canonical: str) -> str:
+506:    aliases = FIELD_ALIASES.get(canonical, [canonical])
+561:def detect_forbidden_terms(*texts: str) -> List[str]:
+625:def derive_truth_gate(record: AtomRecord) -> str:
+639:    if record.external_verification == "YES" and record.source_sha256:
+641:    if record.source_sha256 and record.external_verification in ["NO", "UNKNOWN"]:
+646:def derive_hallucination_gate(record: AtomRecord) -> str:
+659:    if record.external_verification == "YES" and record.truth_gate == "PASS":
+664:def derive_execution_gate(record: AtomRecord) -> str:
+669:        record.forbidden_actions,
+678:def derive_canonical_decision(record: AtomRecord) -> str:
+702:    if record.truth_gate == "PASS" and record.hallucination_gate == "PASS":
+703:        if record.execution_gate == "BLOCK" and record.lender_use_gate == "BLOCK" and record.final_use_gate == "BLOCK":
+705:    if record.truth_gate in ["BLOCK", "GAP"] or record.hallucination_gate == "BLOCK":
+711:    base = f"{record.atom_id}|{record.healing_type}|{record.risk_level}|{record.status}|{record.canonical_decision}"
+712:    return hashlib.sha256(base.encode("utf-8")).hexdigest().upper()[:24]
+730:    forbidden = detect_forbidden_terms(combined)
+731:    record.overclaim_terms_detected = "; ".join(forbidden)
+733:    record.execution_gate = derive_execution_gate(record)
+734:    record.lender_use_gate = "BLOCK"
+735:    record.final_use_gate = "BLOCK"
+736:    record.truth_gate = derive_truth_gate(record)
+737:    record.hallucination_gate = derive_hallucination_gate(record)
+738:    record.canonical_decision = derive_canonical_decision(record)
+743:    if forbidden:
+744:        notes.append("OVERCLAIM_RISK: forbidden terms detected.")
+745:    if record.source_sha256 and record.external_verification != "YES":
+769:    forbidden = get_value(row, "FORBIDDEN_ACTIONS") or "execute; patch; delete; move; overwrite; lender_use; final_use"
+803:        forbidden_actions=forbidden,
+808:        source_sha256=source_sha,
+831:            root_cause="The transformer cannot infer missing atom content without source evidence.",
+838:            forbidden_actions="invent; execute; patch; delete; move; overwrite; lender_use; final_use",
+840:            next_safe_step="Provide source atom row and rerun transformer.",
+843:            source_sha256="",
+930:    for gate_col in ["TRUTH_GATE", "HALLUCINATION_GATE", "EXECUTION_GATE", "LENDER_USE_GATE", "FINAL_USE_GATE"]:
+931:        col = header_map.get(gate_col)
+1022:    for k, v in count_by(records, "truth_gate").items():
+1030:def write_truth_gates_sheet(wb: Workbook) -> None:
+1042:        ["ZERO_MISTAKE_STATUS", "PASS truth + PASS hallucination + blocked execution/final/lender", "CONTROLLED_PASS_REPORT_ONLY"],
+1076:        "SCRIPT_REFACTOR_GATE": "Code may be salvaged only after static scan/refactor gate.",
+1079:        "PATH_HASH_CONTROL": "Needs path/hash/manifest/integrity control.",
+1082:        "BACKLOG_COMPLETION": "Missing extraction/export/self-audit work.",
+1101:        ["Purpose", "Transform atom register into neuro-mono signal map with truth and safety gates."],
+1111:        ["Important", "This workbook is a control artifact. It is not external validation."],
+1112:        ["Hash rule", "Hash proves integrity only, not truth."],
+1114:        ["Evidence rule", "No document = no truth."],
+1123:def write_workbook(records: List[AtomRecord], output_path: Path, input_sha: str) -> None:
+1127:    write_truth_gates_sheet(wb)
+1131:    # Security: no external links created, no macros, no formulas except simple workbook content.
+1134:    wb.properties.subject = "REPORT_ONLY control workbook"
+1143:def build_manifest(
+1166:            "sha256": input_sha,
+1172:            "sha256": output_sha,
+1178:        "truth_gate_counts": count_by(records, "truth_gate"),
+1179:        "hallucination_gate_counts": count_by(records, "hallucination_gate"),
+1190:def write_audit_log(path: Path, events: List[Dict[str, Any]], overwrite: bool) -> None:
+1197:def write_digest(path: Path, digest: str, output_path: Path, overwrite: bool) -> None:
+1199:    path.write_text(f"{digest}  {output_path.name}\n", encoding="utf-8")
+1206:def transform(
+1213:    audit: List[Dict[str, Any]] = []
+1218:    audit.append({
+1229:        input_sha = sha256_file(input_path)
+1247:    audit.append({
+1255:    write_workbook(records, output_path, input_sha)
+1256:    output_sha = sha256_file(output_path)
+1258:    manifest_path = output_path.with_suffix(output_path.suffix + ".manifest.json")
+1259:    audit_path = output_path.with_suffix(output_path.suffix + ".audit.jsonl")
+1260:    digest_path = output_path.with_suffix(output_path.suffix + ".sha256.txt")
+1262:    manifest = build_manifest(
+1271:    write_json(manifest_path, manifest, overwrite=overwrite)
+1273:    audit.append({
+1277:        "output_sha256": output_sha,
+1278:        "manifest_path": str(manifest_path),
+1282:    write_audit_log(audit_path, audit, overwrite=overwrite)
+1283:    write_digest(digest_path, output_sha, output_path, overwrite=overwrite)
+1287:        input_sha256=input_sha,
+1289:        output_sha256=output_sha,
+1290:        manifest_path=str(manifest_path),
+1291:        audit_log_path=str(audit_path),
+1292:        digest_path=str(digest_path),
+1341:    print(f"INPUT_SHA256   : {result.input_sha256}")
+1343:    print(f"OUTPUT_SHA256  : {result.output_sha256}")
+1344:    print(f"MANIFEST       : {result.manifest_path}")
+1345:    print(f"AUDIT_LOG      : {result.audit_log_path}")
+1346:    print(f"DIGEST         : {result.digest_path}")
+1368:        result = transform(

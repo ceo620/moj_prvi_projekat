@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "base": "/root/FREYA_ADDITIONS_013_1e9xhcop",
+      "journal_sha256": "b5bb14eaea5e9c83b85daa0cb6b4255d774c34572a911dca813c1891a825bdb1",
+      "path_key": "path",
+      "prefix": "DODACI_013",
+      "files": 1170,
+      "bytes": 24369934
+    },
+    {
+      "base": "/root/FREYA_SEGMENTS_014_d_20s9r2",
+      "journal_sha256": "907ad69db3db8974fc2ec361ab65a911baa9e874dc42b9b00eb5f2bd127fb793",
+      "path_key": "saved_path",
+      "prefix": "SEGMENTI_014",
+      "files": 1582,
+      "bytes": 61703395
+    }
+  ],
+  "payload_files": 2752,
+  "payload_bytes": 86073329,
+  "base_009_payload_included": false,
+  "originals_modified": 0,
+  "project_code_executed": false,
+  "scope": "All recorded PAYLOAD files of additions 013 and segments 014. Existing paths are retained, including vault structure."
+}

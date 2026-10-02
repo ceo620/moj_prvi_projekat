@@ -1,0 +1,231 @@
+{
+  "b01_live_archive": {
+    "captured_utc": "2026-09-10T16:21:34Z",
+    "hash_scope": "COMPLETE_FILE",
+    "lstat": [
+      264,
+      36462873,
+      33152,
+      1,
+      134909,
+      1789054886946553045,
+      1789054886946553045
+    ],
+    "path": "/root/IPHONE_7B01_1c622445f159/IPHONE_7B01_20260910T154123Z_7da92d_RETURN.zip",
+    "sha256": "e6f1427df26b3ff68d8c6caa1dfded0943f8f8ffe14c9b8f66c7e1abf7353d14"
+  },
+  "index_restores": 0,
+  "pointers": [
+    {
+      "before_link": "/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/IPHONE_ORG_B07_20260804T153841Z_PID2882/SSOT_INDEX.tsv",
+      "matches_b01": true,
+      "now": {
+        "content_read_allowed": false,
+        "link_text": "/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/IPHONE_ORG_B07_20260804T153841Z_PID2882/SSOT_INDEX.tsv",
+        "lstat": [
+          264,
+          36432114,
+          41471,
+          1,
+          112,
+          1785967339227282162,
+          1785967339227282162
+        ],
+        "mount": {
+          "options": "rw",
+          "target": "/",
+          "type": "fake"
+        },
+        "path": "/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/REGISTRY/SSOT_CURRENT.tsv",
+        "restriction": "SYMLINK_COMPONENT:/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/REGISTRY/SSOT_CURRENT.tsv",
+        "target_evaluated": false,
+        "type": "SYMLINK"
+      },
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/REGISTRY/SSOT_CURRENT.tsv"
+    },
+    {
+      "before_link": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/AUTOPILOT_RELEASES/V1_20260810T090839Z_PID4250",
+      "matches_b01": true,
+      "now": {
+        "content_read_allowed": false,
+        "link_text": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/AUTOPILOT_RELEASES/V1_20260810T090839Z_PID4250",
+        "lstat": [
+          264,
+          36440690,
+          41471,
+          1,
+          89,
+          1786352920008818178,
+          1786352920012327787
+        ],
+        "mount": {
+          "options": "rw",
+          "target": "/",
+          "type": "fake"
+        },
+        "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/AUTOPILOT_CURRENT",
+        "restriction": "SYMLINK_COMPONENT:/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/AUTOPILOT_CURRENT",
+        "target_evaluated": false,
+        "type": "SYMLINK"
+      },
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/AUTOPILOT_CURRENT"
+    },
+    {
+      "before_link": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FOREGROUND_BUSINESS_RELEASES/V1R3_20260805T230000Z_SSOT_EVIDENCE_CANDIDATE",
+      "matches_b01": true,
+      "now": {
+        "content_read_allowed": false,
+        "link_text": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FOREGROUND_BUSINESS_RELEASES/V1R3_20260805T230000Z_SSOT_EVIDENCE_CANDIDATE",
+        "lstat": [
+          264,
+          36435679,
+          41471,
+          1,
+          117,
+          1786056352471292282,
+          1786056352471292282
+        ],
+        "mount": {
+          "options": "rw",
+          "target": "/",
+          "type": "fake"
+        },
+        "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_FOREGROUND_BUSINESS_CURRENT",
+        "restriction": "SYMLINK_COMPONENT:/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_FOREGROUND_BUSINESS_CURRENT",
+        "target_evaluated": false,
+        "type": "SYMLINK"
+      },
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_FOREGROUND_BUSINESS_CURRENT"
+    }
+  ],
+  "protected_files": [
+    {
+      "captured_utc": "2026-09-10T16:21:34Z",
+      "expected_sha256": "d5609c36a9245f39e7984679f3bc00515f62513f505bd71a395ae40c0e81051e",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462615,
+        33152,
+        1,
+        49,
+        1789039890873372253,
+        1789039890873372253
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/AUTOPILOT/STATE/STOP_REQUESTED",
+      "return_raw": false,
+      "role": "PROTECTED_RUNTIME_STATE",
+      "sha256": "d5609c36a9245f39e7984679f3bc00515f62513f505bd71a395ae40c0e81051e",
+      "snapshot": "SOURCE_EVIDENCE/bc73714e35da1e00/STOP_REQUESTED",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:34Z",
+      "expected_sha256": "0d001b51b7028ec36150512ddf04ac322a83b28d374d1a6da85d1c02a60f0975",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462609,
+        33152,
+        1,
+        466,
+        1789039890684398179,
+        1789039890684899049
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/CORE_STATE/CHECKPOINT.env",
+      "return_raw": false,
+      "role": "PROTECTED_RUNTIME_STATE",
+      "sha256": "0d001b51b7028ec36150512ddf04ac322a83b28d374d1a6da85d1c02a60f0975",
+      "snapshot": "SOURCE_EVIDENCE/851dfc149e10fb9a/CHECKPOINT.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:34Z",
+      "expected_sha256": "ab8e1da22a64a24e180b0da645bf9b90eb246d744ff154cbf39f0d8cc8450ba2",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462608,
+        33152,
+        1,
+        441,
+        1789039890681705622,
+        1789039890682187909
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/CORE_STATE/INDEX.json",
+      "return_raw": false,
+      "role": "PROTECTED_RUNTIME_STATE",
+      "sha256": "ab8e1da22a64a24e180b0da645bf9b90eb246d744ff154cbf39f0d8cc8450ba2",
+      "snapshot": "SOURCE_EVIDENCE/f2385dff88fb0d47/INDEX.json",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": "d5609c36a9245f39e7984679f3bc00515f62513f505bd71a395ae40c0e81051e",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462616,
+        33152,
+        1,
+        49,
+        1789039890874521909,
+        1789039890874521909
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/CORE_STATE/STOP",
+      "return_raw": false,
+      "role": "PROTECTED_RUNTIME_STATE",
+      "sha256": "d5609c36a9245f39e7984679f3bc00515f62513f505bd71a395ae40c0e81051e",
+      "snapshot": "SOURCE_EVIDENCE/f5b1f6ad2b698c2b/STOP",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": "1aae4071cb903d9e72c0fd6b88a1833a0d16cff1ceaf5d0fc5a56c5d80cf6f64",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462585,
+        33152,
+        1,
+        41929,
+        1789039888589175275,
+        1789039888589175275
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_HANDOFF/IPHONE_P02R1_20260910T104601Z_41b432eccb/INPUT/P03_IPHONE_P03_20260910T113128Z_7b9b3a8732_ARS_TG_PC_001.docx",
+      "return_raw": false,
+      "role": "PROTECTED_RUNTIME_STATE",
+      "sha256": "1aae4071cb903d9e72c0fd6b88a1833a0d16cff1ceaf5d0fc5a56c5d80cf6f64",
+      "snapshot": "SOURCE_EVIDENCE/a9c95cc589d71cdf/P03_IPHONE_P03_20260910T113128Z_7b9b3a8732_ARS_TG_PC_001.docx",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": "682b667e57d847f0f2f71b7b8ac868dc153316cef889e3dd3c64c5073662c8e4",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36430134,
+        33188,
+        1,
+        9251,
+        1785857921780968524,
+        1785857921780968524
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/IPHONE_ORG_B07_20260804T153841Z_PID2882/SSOT_INDEX.tsv",
+      "return_raw": false,
+      "role": "PROTECTED_RUNTIME_STATE",
+      "sha256": "682b667e57d847f0f2f71b7b8ac868dc153316cef889e3dd3c64c5073662c8e4",
+      "snapshot": "SOURCE_EVIDENCE/f57edd35decc2eac/SSOT_INDEX.tsv",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    }
+  ],
+  "runtime_starts": 0,
+  "status": "B01_AND_PROTECTED_BASELINE_VERIFIED"
+}

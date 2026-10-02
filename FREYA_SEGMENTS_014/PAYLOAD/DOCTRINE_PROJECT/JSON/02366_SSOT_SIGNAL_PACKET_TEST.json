@@ -1,0 +1,78 @@
+{
+  "packet_type": "SSOT_IP_SIGNAL_TEST_V1",
+  "created_at_utc": "2026-07-02T14:43:51.553856+00:00",
+  "source_node": "MAC_CONTROL_TOWER",
+  "target_node": "IPHONE_ALPINE",
+  "transport": "LOCAL_HTTP_PULL",
+  "public_internet": "NO",
+  "daemon_runtime": "NO",
+  "engine_run": "NO",
+  "real_data_engine_run": "NO",
+  "source_mutation": "NO",
+  "human_gate": "ACTIVE",
+  "one_big_ssot_csv_sha256": "6493359f0265e73f30ad66f9ec722030d2c789d62fb2959599c3b98fb21ecca4",
+  "one_big_ssot_xlsx_sha256": "88bd6f6744d16bdbd4e82eef2684c95fd802044fb7e644183e83abc975952cca",
+  "signal_count_in_packet": 5,
+  "signals": [
+    {
+      "signal_id": "Doc02",
+      "entity_category": "Legal",
+      "canonical_value": "Sworn Founders Agreement",
+      "confidence_score_poa": "1.0",
+      "nearby_keywords": "Partnership, ADS, Ars Metal",
+      "ssot_status": "LOCKED",
+      "strategic_impact": "Pravna garancija saradnje osnivača.",
+      "source_node": "MAC_CONTROL_TOWER",
+      "target_node": "IPHONE_ALPINE",
+      "human_gate": "ACTIVE"
+    },
+    {
+      "signal_id": "Doc03",
+      "entity_category": "Legal",
+      "canonical_value": "Articles of Association",
+      "confidence_score_poa": "1.0",
+      "nearby_keywords": "Statut, TITAN-GRID DOO",
+      "ssot_status": "LOCKED",
+      "strategic_impact": "Definisanje korporativnog upravljanja SPV-a.",
+      "source_node": "MAC_CONTROL_TOWER",
+      "target_node": "IPHONE_ALPINE",
+      "human_gate": "ACTIVE"
+    },
+    {
+      "signal_id": "Doc04",
+      "entity_category": "Legal",
+      "canonical_value": "Ars Metal Registration",
+      "confidence_score_poa": "0.95",
+      "nearby_keywords": "PIB, PDV, Identity",
+      "ssot_status": "LOCKED",
+      "strategic_impact": "Identitet nosioca projekta i inkubatora.",
+      "source_node": "MAC_CONTROL_TOWER",
+      "target_node": "IPHONE_ALPINE",
+      "human_gate": "ACTIVE"
+    },
+    {
+      "signal_id": "Doc05",
+      "entity_category": "Legal",
+      "canonical_value": "Official Seal Registration",
+      "confidence_score_poa": "1.0",
+      "nearby_keywords": "Stamp, Authorization, MNE",
+      "ssot_status": "LOCKED",
+      "strategic_impact": "Administrativna validnost dokumenata.",
+      "source_node": "MAC_CONTROL_TOWER",
+      "target_node": "IPHONE_ALPINE",
+      "human_gate": "ACTIVE"
+    },
+    {
+      "signal_id": "Doc06",
+      "entity_category": "Legal",
+      "canonical_value": "UBO Declaration",
+      "confidence_score_poa": "0.95",
+      "nearby_keywords": "Beneficial Owner, KYC",
+      "ssot_status": "LOCKED",
+      "strategic_impact": "Institucionalni compliance i AML provera.",
+      "source_node": "MAC_CONTROL_TOWER",
+      "target_node": "IPHONE_ALPINE",
+      "human_gate": "ACTIVE"
+    }
+  ]
+}

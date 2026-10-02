@@ -1,0 +1,7 @@
+{
+  "batch": "IPHONE_7B02",
+  "completed_utc": "2026-09-10T16:22:31Z",
+  "result_sha256": "7ffb6e107f6ec4271c99a3d76ba28a4ce429edb2339712b2f9d1ae2eaebdf2b5",
+  "script_sha256": "375865ae8ba44e1773be76eabfcfcfafab925ac00d1b628d9eae83d89fdd359d",
+  "step": "03_EXISTING_CATALOGUES"
+}

@@ -9,3 +9,5 @@ src/ekstrahovano/**/site-packages/
 izlaz/
 ai_okruzenje/
 venv/
+*.sqlite
+*.tar

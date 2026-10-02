@@ -1,0 +1,13 @@
+CAPEX Module,,,,,,,,,,
+,,,,,,,,,,
+Category,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035
+Industrial Real Estate,2500000,1200000,300000,0,0,0,0,0,0,0
+Robotic Assets,1200000,5200000,1200000,0,0,0,0,0,0,0
+Energy Utility - Solar,0,1400000,0,0,0,0,0,0,0,0
+Other / IDC / Permits,300000,2600000,1300000,0,0,0,0,0,0,0
+Total CAPEX,=SUM(B4:B7),=SUM(C4:C7),=SUM(D4:D7),=SUM(E4:E7),=SUM(F4:F7),=SUM(G4:G7),=SUM(H4:H7),=SUM(I4:I7),=SUM(J4:J7),=SUM(K4:K7)
+,,,,,,,,,,
+Funding Source,,,,,,,,,,
+Senior Debt,=B8*Assumptions!$B$8,=C8*Assumptions!$B$8,=D8*Assumptions!$B$8,=E8*Assumptions!$B$8,=F8*Assumptions!$B$8,=G8*Assumptions!$B$8,=H8*Assumptions!$B$8,=I8*Assumptions!$B$8,=J8*Assumptions!$B$8,=K8*Assumptions!$B$8
+Equity,=B8*Assumptions!$B$9,=C8*Assumptions!$B$9,=D8*Assumptions!$B$9,=E8*Assumptions!$B$9,=F8*Assumptions!$B$9,=G8*Assumptions!$B$9,=H8*Assumptions!$B$9,=I8*Assumptions!$B$9,=J8*Assumptions!$B$9,=K8*Assumptions!$B$9
+Grant,=B8*Assumptions!$B$10,=C8*Assumptions!$B$10,=D8*Assumptions!$B$10,=E8*Assumptions!$B$10,=F8*Assumptions!$B$10,=G8*Assumptions!$B$10,=H8*Assumptions!$B$10,=I8*Assumptions!$B$10,=J8*Assumptions!$B$10,=K8*Assumptions!$B$10

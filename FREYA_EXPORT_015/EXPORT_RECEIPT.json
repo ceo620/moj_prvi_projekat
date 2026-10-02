@@ -1,0 +1,15 @@
+{
+  "result": "ADDITIONS_EXPORT_VERIFIED",
+  "payload_files": 2752,
+  "payload_bytes": 86073329,
+  "zip_bytes": 39336586,
+  "zip_sha256": "45d44f3bf42d77ae30f1078939ea44921dcf168266080dba7aa9914ffe2b9867",
+  "zip": "/tmp/ISH_EXPORT_888.w75MRJ/FREYA_HOME_888/FREYA_IPHONE_DODACI_015_20260912T092322Z_5f0b9741.zip",
+  "checksum_file": "/tmp/ISH_EXPORT_888.w75MRJ/FREYA_HOME_888/FREYA_IPHONE_DODACI_015_20260912T092322Z_5f0b9741.zip.sha256",
+  "local_verified_zip": "/root/FREYA_EXPORT_015_bspyf8yj/FREYA_IPHONE_DODACI_015_20260912T092322Z_5f0b9741.zip",
+  "originals_modified": 0,
+  "source_files_hash_verified": 2752,
+  "project_code_executed": false,
+  "copy_on_external_usb_confirmed": false,
+  "MSI_import_performed": false
+}

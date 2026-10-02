@@ -1,0 +1,328 @@
+{
+  "code_text_is_not_execution_evidence": true,
+  "export_action_summaries": [],
+  "native_reminders_access": "NOT_ATTEMPTED",
+  "project_code_executed": 0,
+  "repaired_shortcuts": 0,
+  "reviewed_named_shortcuts": 0,
+  "shortcuts_canary": "NOT_RUN",
+  "source_files": [
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888"
+      ],
+      "captured_utc": "2026-09-10T16:22:31Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36429867,
+        33216,
+        1,
+        1289,
+        1785851832078001665,
+        1785851832078001665
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_OBSIDIAN_DAILY_EXPORT.sh",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "b7242aed6ab7bb9d9c095eceedb128a72d0793ddb2e7571a032c06de93c3f393",
+      "snapshot": "SOURCE_EVIDENCE/5b5ad88d9f418045/FREYA_OBSIDIAN_DAILY_EXPORT.sh",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [],
+      "captured_utc": "2026-09-10T16:22:31Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36447555,
+        33188,
+        1,
+        285,
+        1787128169535977845,
+        1787128169539808949
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/00_CONTROL/IOS_SHORTCUT_ENTRYPOINT.env",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "3f0440c166b0c316e350e3c9b3d6cd0585e80e2430512a6d8f5e1415e02f1330",
+      "snapshot": "SOURCE_EVIDENCE/4d7b703803cd8d0d/IOS_SHORTCUT_ENTRYPOINT.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36446122,
+        33188,
+        1,
+        252,
+        1786957768963076075,
+        1786957768963076075
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/00_CONTROL/BRIDGE_IDENTITY.env",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "c065d0d89ac09118807a17d77d3978080854bdaa36cd43ee36723310a24c12b7",
+      "snapshot": "SOURCE_EVIDENCE/5af253a73d3c751e/BRIDGE_IDENTITY.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888"
+      ],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36446132,
+        33216,
+        1,
+        661,
+        1786959413871156421,
+        1786959413871156421
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/03_COMMANDS/manifest_hash.sh",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "1bb8c28341a455abc5b60ca2416b99c017b7d7f1d6509278e1eae0f7d9e6da4e",
+      "snapshot": "SOURCE_EVIDENCE/dc9f3833f7946c53/manifest_hash.sh",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888"
+      ],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36446123,
+        33216,
+        1,
+        298,
+        1786957768964073375,
+        1786957768964073375
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/03_COMMANDS/status.sh",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "77ebab5ed6043d194cf3fff2f2ee38489095c56338dc644537fe295062e40c6b",
+      "snapshot": "SOURCE_EVIDENCE/0bdc74f30128c3b0/status.sh",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888"
+      ],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36447554,
+        33188,
+        1,
+        425,
+        1787128169523915029,
+        1787128169531870656
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/03_COMMANDS/shortcut_entry.sh",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "292b48ebde45c522836e5244992400735d8b92e5e5064b90fc11b80ee29f6487",
+      "snapshot": "SOURCE_EVIDENCE/c461c37b967ed550/shortcut_entry.sh",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888"
+      ],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36446131,
+        33216,
+        1,
+        360,
+        1786959369242079696,
+        1786959369242079696
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/03_COMMANDS/intake.sh",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "dfd4fd720bdbeda666a6a9d28dea82d82e470e0fe6d46f9869ae882f1351acd9",
+      "snapshot": "SOURCE_EVIDENCE/8c0f40da88b0be1b/intake.sh",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888"
+      ],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36447553,
+        33216,
+        1,
+        724,
+        1787128169507828192,
+        1787128169507828192
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/03_COMMANDS/android_canary_handoff.sh",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "f08e71640e01c1ed117fe450dd9dd186488de25a3bbc29c80939d6dbf3a6dac2",
+      "snapshot": "SOURCE_EVIDENCE/69802397f2b53f09/android_canary_handoff.sh",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888"
+      ],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36446134,
+        33216,
+        1,
+        828,
+        1786959457459267320,
+        1786959457459267320
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/03_COMMANDS/build_package.sh",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "1b7ed2ed2a2a0ca72a8a33ec18838182bd51915486b35a419d6236eb199ea1d6",
+      "snapshot": "SOURCE_EVIDENCE/6f54fcabc2424d8f/build_package.sh",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888"
+      ],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36457026,
+        33216,
+        1,
+        729,
+        1788098803275569589,
+        1788098803275569589
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/03_COMMANDS/freya888_live.sh",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "013c03b773eb534f3088d5dfdf9cd3ddd8ce7ea0348856ad04ccf3e4d5f84514",
+      "snapshot": "SOURCE_EVIDENCE/66e00cd48e0cbda5/freya888_live.sh",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/01_INBOX/R072_STRUCTURE.txt"
+      ],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36446136,
+        33188,
+        1,
+        150,
+        1786959613806640776,
+        1786959613812456829
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/SHORTCUTS_BRIDGE_888/05_MANIFESTS/LATEST_SHA256_MANIFEST.txt",
+      "return_raw": false,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "ce615c3911bdfd773efd5f6a47ac9e7b59bb8d562660f85fdc61e0aa9096d3e8",
+      "snapshot": "SOURCE_EVIDENCE/73d157e7de0fcb82/LATEST_SHA256_MANIFEST.txt",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36440648,
+        33188,
+        1,
+        1042,
+        1786300618913540735,
+        1786300618913540735
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/REMINDERS_BRIDGE/SHORTCUTS/B19_20260809T183658Z/FREYA_888_CONSUMER_SPEC.env",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "c0c1ca2bd702f774ea39ac2e752070c2a27222def9ca550edf4896bd9586b8ae",
+      "snapshot": "SOURCE_EVIDENCE/174160aa80fbc517/FREYA_888_CONSUMER_SPEC.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "absolute_path_literals": [],
+      "captured_utc": "2026-09-10T16:22:32Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36440645,
+        33188,
+        1,
+        947,
+        1786300572402538934,
+        1786300572402538934
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/REMINDERS_BRIDGE/CONTRACTS/B18_20260809T183612Z/NATIVE_IOS_CONSUMER_CONTRACT.env",
+      "return_raw": true,
+      "role": "UNEXECUTED_SOURCE_REVIEW",
+      "secret_like_assignment_detected": false,
+      "sha256": "e9a28b52efddaeaa5168b0a8bde9c060b72d33132b6926d1889fbb71fad05e4d",
+      "snapshot": "SOURCE_EVIDENCE/34cba9af13d880b1/NATIVE_IOS_CONSUMER_CONTRACT.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    }
+  ]
+}

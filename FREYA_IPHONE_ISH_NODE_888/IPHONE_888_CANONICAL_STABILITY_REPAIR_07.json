@@ -1,0 +1,699 @@
+{
+  "protocol": "888",
+  "batch": "IPHONE_888_CANONICAL_STABILITY_REPAIR_07",
+  "before": {
+    "root": {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888",
+      "exists": true,
+      "lexists": true,
+      "mode": "0o40700",
+      "inode": 54139615,
+      "dev": 268,
+      "size": 224,
+      "is_symlink": false,
+      "is_dir": true,
+      "resolved": "/root/FREYA_IPHONE_ISH_NODE_888"
+    },
+    "source": {
+      "path": "/root/FREYA_RAD_888",
+      "exists": true,
+      "lexists": true,
+      "mode": "0o40700",
+      "inode": 54138039,
+      "dev": 268,
+      "size": 1088,
+      "is_symlink": false,
+      "is_dir": true,
+      "resolved": "/root/FREYA_RAD_888"
+    },
+    "evidence": {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/09_EVIDENCE",
+      "exists": true,
+      "lexists": true,
+      "mode": "0o40755",
+      "inode": 54140138,
+      "dev": 268,
+      "size": 192,
+      "is_symlink": false,
+      "is_dir": true,
+      "resolved": "/root/FREYA_IPHONE_ISH_NODE_888/09_EVIDENCE"
+    },
+    "root_top": [
+      {
+        "name": "01_CANONICAL_BASE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139656,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "09_EVIDENCE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54140138,
+        "dev": 268,
+        "size": 192
+      },
+      {
+        "name": "IPHONE_888_PERSISTENCE_PROBE_23.json",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139654,
+        "dev": 268,
+        "size": 368
+      },
+      {
+        "name": "IPHONE_CANONICAL_888",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139707,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "PREGLED_I_POPRAVKA",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139699,
+        "dev": 268,
+        "size": 96
+      }
+    ],
+    "source_top": [
+      {
+        "name": "00_ULAZ",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139348,
+        "dev": 268,
+        "size": 544
+      },
+      {
+        "name": "01_PROIZVODI",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139349,
+        "dev": 268,
+        "size": 160
+      },
+      {
+        "name": "02_REZULTATI_TEHNICKI",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139350,
+        "dev": 268,
+        "size": 96
+      },
+      {
+        "name": "03_ARHIVA",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139351,
+        "dev": 268,
+        "size": 64
+      },
+      {
+        "name": "04_HUMAN_GATE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139352,
+        "dev": 268,
+        "size": 64
+      },
+      {
+        "name": "05_SISTEM",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139354,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "AI_PILOT_1USD_01",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138154,
+        "dev": 268,
+        "size": 320
+      },
+      {
+        "name": "AI_SADRZAJ_01",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138166,
+        "dev": 268,
+        "size": 416
+      },
+      {
+        "name": "AI_SADRZAJ_01R1",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138221,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "AI_SVAKODNEVNI_888",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138244,
+        "dev": 268,
+        "size": 224
+      },
+      {
+        "name": "CODE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138040,
+        "dev": 268,
+        "size": 224
+      },
+      {
+        "name": "DAN1.env",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138406,
+        "dev": 268,
+        "size": 252
+      },
+      {
+        "name": "DIJAMANTI",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138390,
+        "dev": 268,
+        "size": 512
+      },
+      {
+        "name": "DIJAMANTI_POPIS.csv",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138389,
+        "dev": 268,
+        "size": 1400693
+      },
+      {
+        "name": "FREYA_888_IPHONE_FACTORY_TEST_INPUT.xlsx",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139282,
+        "dev": 268,
+        "size": 5134
+      },
+      {
+        "name": "FREYA_888_PRVI_PROIZVOD.xlsx",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139288,
+        "dev": 268,
+        "size": 5134
+      },
+      {
+        "name": "FREYA_888_PRVI_PROIZVOD_RECEIPT.env",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139290,
+        "dev": 268,
+        "size": 607
+      },
+      {
+        "name": "FREYA_888_PRVI_PROIZVOD_REZULTAT.txt",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139289,
+        "dev": 268,
+        "size": 312
+      },
+      {
+        "name": "IDENTITY.json",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138049,
+        "dev": 268,
+        "size": 306
+      },
+      {
+        "name": "INDEX.json",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138304,
+        "dev": 268,
+        "size": 5437
+      },
+      {
+        "name": "IPHONE_CANONICAL_888",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139090,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "IZLAZ_REAL_TEST_20260921T230415Z_8",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139284,
+        "dev": 268,
+        "size": 160
+      },
+      {
+        "name": "NE_DIRATI.txt",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138405,
+        "dev": 268,
+        "size": 426
+      },
+      {
+        "name": "POSLJEDNJI_REZULTAT.txt",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138387,
+        "dev": 268,
+        "size": 66
+      },
+      {
+        "name": "PREGLED.html",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138386,
+        "dev": 268,
+        "size": 2219
+      },
+      {
+        "name": "PRONADJENI_DIJELOVI_888",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138364,
+        "dev": 268,
+        "size": 256
+      },
+      {
+        "name": "REZULTATI",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138042,
+        "dev": 268,
+        "size": 992
+      },
+      {
+        "name": "REZULTATI_V2",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139291,
+        "dev": 268,
+        "size": 832
+      },
+      {
+        "name": "RUN.lock",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138050,
+        "dev": 268,
+        "size": 0
+      },
+      {
+        "name": "SESIJE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138043,
+        "dev": 268,
+        "size": 416
+      },
+      {
+        "name": "ULAZ",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138041,
+        "dev": 268,
+        "size": 448
+      },
+      {
+        "name": "UNI_MAK_CFO_REVIEW.txt",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139347,
+        "dev": 268,
+        "size": 369
+      }
+    ],
+    "root_files": 454,
+    "source_files": 881
+  },
+  "after": {
+    "root": {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888",
+      "exists": true,
+      "lexists": true,
+      "mode": "0o40700",
+      "inode": 54139615,
+      "dev": 268,
+      "size": 224,
+      "is_symlink": false,
+      "is_dir": true,
+      "resolved": "/root/FREYA_IPHONE_ISH_NODE_888"
+    },
+    "source": {
+      "path": "/root/FREYA_RAD_888",
+      "exists": true,
+      "lexists": true,
+      "mode": "0o40700",
+      "inode": 54138039,
+      "dev": 268,
+      "size": 1088,
+      "is_symlink": false,
+      "is_dir": true,
+      "resolved": "/root/FREYA_RAD_888"
+    },
+    "evidence": {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/09_EVIDENCE",
+      "exists": true,
+      "lexists": true,
+      "mode": "0o40755",
+      "inode": 54140138,
+      "dev": 268,
+      "size": 192,
+      "is_symlink": false,
+      "is_dir": true,
+      "resolved": "/root/FREYA_IPHONE_ISH_NODE_888/09_EVIDENCE"
+    },
+    "root_top": [
+      {
+        "name": "01_CANONICAL_BASE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139656,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "09_EVIDENCE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54140138,
+        "dev": 268,
+        "size": 192
+      },
+      {
+        "name": "IPHONE_888_PERSISTENCE_PROBE_23.json",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139654,
+        "dev": 268,
+        "size": 368
+      },
+      {
+        "name": "IPHONE_CANONICAL_888",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139707,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "PREGLED_I_POPRAVKA",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139699,
+        "dev": 268,
+        "size": 96
+      }
+    ],
+    "source_top": [
+      {
+        "name": "00_ULAZ",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139348,
+        "dev": 268,
+        "size": 544
+      },
+      {
+        "name": "01_PROIZVODI",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139349,
+        "dev": 268,
+        "size": 160
+      },
+      {
+        "name": "02_REZULTATI_TEHNICKI",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139350,
+        "dev": 268,
+        "size": 96
+      },
+      {
+        "name": "03_ARHIVA",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139351,
+        "dev": 268,
+        "size": 64
+      },
+      {
+        "name": "04_HUMAN_GATE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139352,
+        "dev": 268,
+        "size": 64
+      },
+      {
+        "name": "05_SISTEM",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139354,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "AI_PILOT_1USD_01",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138154,
+        "dev": 268,
+        "size": 320
+      },
+      {
+        "name": "AI_SADRZAJ_01",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138166,
+        "dev": 268,
+        "size": 416
+      },
+      {
+        "name": "AI_SADRZAJ_01R1",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138221,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "AI_SVAKODNEVNI_888",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138244,
+        "dev": 268,
+        "size": 224
+      },
+      {
+        "name": "CODE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138040,
+        "dev": 268,
+        "size": 224
+      },
+      {
+        "name": "DAN1.env",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138406,
+        "dev": 268,
+        "size": 252
+      },
+      {
+        "name": "DIJAMANTI",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138390,
+        "dev": 268,
+        "size": 512
+      },
+      {
+        "name": "DIJAMANTI_POPIS.csv",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138389,
+        "dev": 268,
+        "size": 1400693
+      },
+      {
+        "name": "FREYA_888_IPHONE_FACTORY_TEST_INPUT.xlsx",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139282,
+        "dev": 268,
+        "size": 5134
+      },
+      {
+        "name": "FREYA_888_PRVI_PROIZVOD.xlsx",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139288,
+        "dev": 268,
+        "size": 5134
+      },
+      {
+        "name": "FREYA_888_PRVI_PROIZVOD_RECEIPT.env",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139290,
+        "dev": 268,
+        "size": 607
+      },
+      {
+        "name": "FREYA_888_PRVI_PROIZVOD_REZULTAT.txt",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139289,
+        "dev": 268,
+        "size": 312
+      },
+      {
+        "name": "IDENTITY.json",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138049,
+        "dev": 268,
+        "size": 306
+      },
+      {
+        "name": "INDEX.json",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138304,
+        "dev": 268,
+        "size": 5437
+      },
+      {
+        "name": "IPHONE_CANONICAL_888",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139090,
+        "dev": 268,
+        "size": 288
+      },
+      {
+        "name": "IZLAZ_REAL_TEST_20260921T230415Z_8",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139284,
+        "dev": 268,
+        "size": 160
+      },
+      {
+        "name": "NE_DIRATI.txt",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138405,
+        "dev": 268,
+        "size": 426
+      },
+      {
+        "name": "POSLJEDNJI_REZULTAT.txt",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138387,
+        "dev": 268,
+        "size": 66
+      },
+      {
+        "name": "PREGLED.html",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138386,
+        "dev": 268,
+        "size": 2219
+      },
+      {
+        "name": "PRONADJENI_DIJELOVI_888",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138364,
+        "dev": 268,
+        "size": 256
+      },
+      {
+        "name": "REZULTATI",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138042,
+        "dev": 268,
+        "size": 992
+      },
+      {
+        "name": "REZULTATI_V2",
+        "dir": true,
+        "symlink": false,
+        "inode": 54139291,
+        "dev": 268,
+        "size": 832
+      },
+      {
+        "name": "RUN.lock",
+        "dir": false,
+        "symlink": false,
+        "inode": 54138050,
+        "dev": 268,
+        "size": 0
+      },
+      {
+        "name": "SESIJE",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138043,
+        "dev": 268,
+        "size": 416
+      },
+      {
+        "name": "ULAZ",
+        "dir": true,
+        "symlink": false,
+        "inode": 54138041,
+        "dev": 268,
+        "size": 448
+      },
+      {
+        "name": "UNI_MAK_CFO_REVIEW.txt",
+        "dir": false,
+        "symlink": false,
+        "inode": 54139347,
+        "dev": 268,
+        "size": 369
+      }
+    ],
+    "root_files": 454,
+    "source_files": 881
+  },
+  "processes": [
+    {
+      "pid": 124,
+      "cmd": "python3 -u -I -S -B IPHONE_888_CANONICAL_STABILITY_REPAIR_07.py"
+    },
+    {
+      "pid": 8,
+      "cmd": "-ash"
+    }
+  ],
+  "mount_hits": [
+    "/private/var/mobile/Containers/Shared/AppGroup/FDCA0FAF-3F69-4BED-BB64-1143B318BE96/roots/default/data / fake rw 0 0"
+  ],
+  "evidence_repair": "NOT_NEEDED",
+  "canonical_stable_during_probe": true
+}

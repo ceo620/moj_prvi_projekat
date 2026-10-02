@@ -1,0 +1,14 @@
+DELTA FINAL EXPORT
+==================
+Glavni folder za finalne i važne fajlove Titan Grid / Delta sistema.
+
+Struktura:
+- Scripts/          → Sve važne Python i PowerShell skripte
+- Reports/Excel/    → Excel izvještaji
+- Reports/JSON/     → JSON izvještaji
+- Inventories/      → Forenzički inventari i template-i
+- Adapters/         → Modularni adapteri (u izradi)
+- Configs/          → Konfiguracioni fajlovi
+- Documentation/    → Važna dokumentacija
+
+STATUS: SYSTEM RED — STEP102 LOCKED — NO FINAL USE
