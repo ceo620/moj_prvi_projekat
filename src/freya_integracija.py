@@ -3,16 +3,9 @@
 
 import os
 import sys
+import glob
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-try:
-    from memorandum_factory import napravi_memorandum
-except ImportError:
-    try:
-        from src.memorandum_factory import napravi_memorandum
-    except ImportError as e:
-        napravi_memorandum = None
 
 FREYA_RESOURCES = {
     "node_type": "HUMAN_GATE_MOBILE",
@@ -21,7 +14,10 @@ FREYA_RESOURCES = {
 }
 
 def status_integracije():
-    return f"[FREYA CORE] ONLINE | Memorandum dostupan: {napravi_memorandum is not None}"
+    # Provera postojanja kreiranih PDF memoranduma/ugovora u izlaznom folderu
+    pdf_fajlovi = glob.glob("izlaz/dokumenti/*.pdf")
+    memorandum_dostupan = len(pdf_fajlovi) > 0
+    return f"[FREYA CORE] ONLINE | Memorandum dostupan: {memorandum_dostupan}"
 
 if __name__ == "__main__":
     print(status_integracije())

@@ -26,8 +26,8 @@ def proveri_mrezu():
     
     # Generisanje PDF izvještaja putem memorandum_factory
     try:
-        from memorandum_factory import napravi_memorandum
-        napravi_memorandum()
+        from ugovor_factory import generisi_ugovor_pdf as napravi_memorandum
+        napravi_memorandum("NET-888-2026", "TITAN GRID 888", "Mrežni Kontrolor", "Mrežni Status i Logovi", "0")
     except Exception as e:
         print(f"[ UPOZORENJE ] Generisanje PDF-a preskočeno: {e}")
 

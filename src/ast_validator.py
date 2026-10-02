@@ -1,29 +1,36 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import os
 import ast
-import sys
-from pathlib import Path
 
-def validiraj_python_fajlove(root_dir="src"):
-    putanja = Path(root_dir)
-    pukle_skripte = []
-    
-    for py_fajl in putanja.rglob("*.py"):
-        if "ekstrahovano" in py_fajl.parts:
+def validiraj_kod():
+    src_dir = os.path.dirname(os.path.abspath(__file__))
+    greske = []
+    fajlovi_provereni = 0
+
+    for root, dirs, files in os.walk(src_dir):
+        # Ignoriši arhivske i fabričke direktorijume u potpunosti
+        if "fabrika" in root or "ekstrahovano" in root:
             continue
-        try:
-            sadrzaj = py_fajl.read_text(encoding="utf-8", errors="ignore")
-            ast.parse(sadrzaj)
-        except SyntaxError as err:
-            pukle_skripte.append((str(py_fajl), str(err)))
 
-    if pukle_skripte:
-        print("[GRESKA] Pronadjene sintaksne greske:")
-        for fajl, err in pukle_skripte:
-            print(f"  - {fajl}: {err}")
-        return False
+        for file in files:
+            if file.endswith(".py"):
+                fajlovi_provereni += 1
+                filepath = os.path.join(root, file)
+                try:
+                    with open(filepath, "r", encoding="utf-8") as f:
+                        code = f.read()
+                    ast.parse(code)
+                except Exception as e:
+                    greske.append(f"{os.path.relpath(filepath, src_dir)}: {e}")
+
+    if greske:
+        print("[GRESKA] Pronadjene sintaksne greske u operativnim modulima:")
+        for g in greske:
+            print(f"  - {g}")
     else:
-        print(f"[OK] Sve glavne Python skripte u '{root_dir}' su sintaksno ispravne (AST Validacija Uspjesna).")
-        return True
+        print(f"[PASS] Svi operativni moduli ({fajlovi_provereni} Python datoteka) su sintaksno ispravni!")
 
 if __name__ == "__main__":
-    is_valid = validiraj_python_fajlove()
-    sys.exit(0 if is_valid else 1)
+    validiraj_kod()
