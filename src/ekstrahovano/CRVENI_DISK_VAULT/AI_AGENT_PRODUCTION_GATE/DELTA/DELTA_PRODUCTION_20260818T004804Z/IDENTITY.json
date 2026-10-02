@@ -1,0 +1,11 @@
+{
+  "protocol": "888",
+  "agent_id": "DELTA_MAC_AI_AGENT_888",
+  "agent_name": "DELTA",
+  "role": "ANALYST_VALIDATOR",
+  "system": "FREYA_MAC_RED_UNION_888",
+  "node": "FREYA_MAC_NODE_888",
+  "status": "STAGING_NOT_PRODUCTION",
+  "production_authority": false,
+  "human_gate_required": true
+}

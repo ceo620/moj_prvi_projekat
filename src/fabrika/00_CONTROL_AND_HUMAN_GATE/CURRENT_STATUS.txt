@@ -1,0 +1,11 @@
+============================================================
+CURRENT FACTORY STATUS
+============================================================
+UPDATED_AT=2026-07-14T14:33:25
+FACTORY_STRUCTURE=CREATED
+RED_DISK_WRITABLE=YES
+MAC_INGEST_ACTIVE=NO
+FILES_COPIED_FROM_MAC=NO
+WORKERS_ACTIVE=NO
+NEXT=INSTALL_AND_RUN_01_MAC_INGEST_WORKER
+============================================================

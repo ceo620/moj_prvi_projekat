@@ -1,0 +1,46 @@
+{
+    "schema_version":  "1.0",
+    "system":  "FREYA_LENOVO_NODE_888",
+    "run_id":  "LENOVO-B02R-20260731-210933",
+    "generated_at":  "2026-07-31T21:10:39.4071801+02:00",
+    "total_candidates":  89,
+    "unique_paths":  89,
+    "unique_hashes":  43,
+    "duplicate_hash_groups":  40,
+    "hash_errors":  0,
+    "scan_errors":  268,
+    "canonical_agents":  0,
+    "agents_executed":  0,
+    "source_files_copied":  0,
+    "source_files_moved":  0,
+    "source_files_deleted":  0,
+    "role_summary":  [
+                         {
+                             "role":  "ADAPTER",
+                             "count":  8
+                         },
+                         {
+                             "role":  "AGENT",
+                             "count":  16
+                         },
+                         {
+                             "role":  "ORCHESTRATOR",
+                             "count":  6
+                         },
+                         {
+                             "role":  "SUPPORT_COMPONENT",
+                             "count":  53
+                         },
+                         {
+                             "role":  "VALIDATOR",
+                             "count":  6
+                         }
+                     ],
+    "state_summary":  [
+                          {
+                              "state":  "REVIEW_REQUIRED",
+                              "count":  89
+                          }
+                      ],
+    "next_batch":  "BATCH_03_STATIC_VALIDATION_AND_CANONICAL_SELECTION"
+}

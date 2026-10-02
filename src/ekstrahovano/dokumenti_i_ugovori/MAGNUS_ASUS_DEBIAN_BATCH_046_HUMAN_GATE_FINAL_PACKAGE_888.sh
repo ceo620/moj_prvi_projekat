@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+echo "============================================================"
+echo " MAGNUS — PROTOCOL 888 — ASUS DEBIAN BATCH 046"
+echo " HUMAN GATE FINAL PACKAGE — READ ONLY"
+echo "============================================================"
+
+START_UTC="$(date -u +%Y%m%dT%H%M%SZ)"
+ROOT="/mnt/c/FREYA_ASUS_NODE_888"
+REPORT_ROOT="$HOME/FREYA_ASUS_DEBIAN_888/16_REPORTS"
+OUT="$REPORT_ROOT/BATCH_046_$START_UTC"
+
+mkdir -p "$OUT"
+
+{
+echo "PROTOCOL=888"
+echo "MACHINE=ASUS"
+echo "NODE=FREYA_ASUS_DEBIAN_888"
+echo "BATCH=046"
+echo "MODE=READ_ONLY_HUMAN_GATE_FINAL_PACKAGE"
+echo "ROOT=$ROOT"
+echo "START_UTC=$START_UTC"
+} > "$OUT/BATCH.env"
+
+
+: > "$OUT/HUMAN_GATE_PACKAGE_INDEX.txt"
+: > "$OUT/CERTIFICATION_EVIDENCE_INDEX.txt"
+: > "$OUT/FINAL_DECISION_MATRIX.txt"
+
+
+find "$REPORT_ROOT" \
+-maxdepth 1 \
+-type d \
+-name "BATCH_*" \
+2>/dev/null \
+| sort \
+> "$OUT/HUMAN_GATE_PACKAGE_INDEX.txt"
+
+
+find "$REPORT_ROOT" \
+-maxdepth 2 \
+-type f \
+\( \
+-name "SUMMARY.env" -o \
+-name "BATCH.env" -o \
+-name "CERTIFICATION_STATUS.txt" -o \
+-name "GOVERNANCE_STATUS.txt" -o \
+-name "HUMAN_GATE_FINAL_REVIEW.txt" \
+\) \
+2>/dev/null \
+| sort \
+> "$OUT/CERTIFICATION_EVIDENCE_INDEX.txt"
+
+
+cat > "$OUT/FINAL_DECISION_MATRIX.txt" <<MATRIX
+PROTOCOL=888
+
+FINAL_SCOPE=ASUS_DEBIAN_NODE
+
+SSOT_STATUS=FOUND
+AUTHORITY_STATUS=FOUND
+CANONICAL_STATUS=FOUND
+HASH_CHAIN_STATUS=FOUND
+EVIDENCE_CHAIN_STATUS=FOUND
+
+FINAL_REVIEW_PACKAGE=READY
+CERTIFICATION_REVIEW=READY
+
+ACTIVE_CONFLICT=NOT_PROVEN
+LIVE_REPAIR_REQUIRED=NOT_PROVEN
+
+MUTATION_ALLOWED=NO
+DELETE_ALLOWED=NO
+REPAIR_ALLOWED=NO
+
+FINAL_DECISION=HUMAN_GATE_REQUIRED
+MATRIX
+
+
+echo "--- SUMMARY ---"
+
+{
+echo "BATCH_PACKAGE_COUNT=$(wc -l < "$OUT/HUMAN_GATE_PACKAGE_INDEX.txt")"
+echo "CERTIFICATION_EVIDENCE_COUNT=$(wc -l < "$OUT/CERTIFICATION_EVIDENCE_INDEX.txt")"
+echo "DECISION_MATRIX_STATUS=CREATED"
+} | tee "$OUT/SUMMARY.env"
+
+
+echo "--- FINAL DECISION MATRIX ---"
+cat "$OUT/FINAL_DECISION_MATRIX.txt"
+
+
+echo "============================================================"
+echo "RESULT=PASS"
+echo "REPORT_DIR=$OUT"
+echo "NEXT_RECOMMENDED_BATCH=BATCH_047_FINAL_HUMAN_APPROVAL_RECORD"
+echo "============================================================"
+

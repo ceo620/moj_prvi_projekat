@@ -1,0 +1,17 @@
+{
+    "request_type":  "FREYA_PACKET_ACKNOWLEDGEMENT",
+    "protocol":  888,
+    "sender":  "FREYA_LENOVO_NODE_888",
+    "receiver":  "FREYA_MAC_LAP_TOP_HUMAN_GATE",
+    "packet_name":  "FREYA_LENOVO_TO_MAC_20260731_090000_888_DRYRUN_LENOVO-B06R-20260731-215758",
+    "acknowledgement_test":  "NOT_EXECUTED",
+    "delivery_enabled":  false,
+    "required_fields":  [
+                            "packet_name",
+                            "received_at",
+                            "manifest_sha256",
+                            "hash_verification_status",
+                            "duplicate_status",
+                            "receiver_status"
+                        ]
+}
