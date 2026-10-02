@@ -1,0 +1,12 @@
+01_SCRIPTS_RAW=Scripts and executable source text
+02_DOCTRINES_README_SPECS=Doctrine README specifications and architecture
+03_CONFIG_AND_DEPENDENCIES=Configuration requirements and dependencies
+04_TESTS_LOGS_AND_EXAMPLES=Tests logs expected results and examples
+05_DOCUMENTATION=Supporting technical documentation
+06_ARCHIVES_PENDING_REVIEW=Archives preserved but not automatically extracted
+07_SOURCE_PATH_REGISTER=Original device and original source path
+08_SHA256_MANIFEST=Source and destination SHA256 records
+09_DUPLICATE_MAP=Duplicate hashes and all known paths
+10_TRANSFER_RECEIPTS=Copy and verification receipts
+11_REVIEW_REQUIRED=Unknown ambiguous or sensitive candidates
+12_DEVICE_GAP_REGISTER=What this device still lacks
