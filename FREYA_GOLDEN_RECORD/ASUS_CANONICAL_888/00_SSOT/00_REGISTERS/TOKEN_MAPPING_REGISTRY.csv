@@ -1,0 +1,2 @@
+﻿"MappingId","SourceDataId","TargetTemplateId","TokenProfileId","MappingRelativePath","MappedTokens","RequiredTokens","SHA256","CreatedAt","Status"
+"MAP-ARS-REPORT-0001","SRC-ARS-20260721-0001","TPL-ARS-REPORT-0001","TOK-ARS-REPORT-0001","00_SSOT\04_SOURCE_CATALOG\02_TOKEN_MAPPINGS\MAP-ARS-REPORT-0001.json","9","9","d87c0d78f8ff558fb4062e488a3ddff1a521da9654969b70149ac03c58d26a0a","2026-07-21T16:45:52+02:00","ACTIVE"

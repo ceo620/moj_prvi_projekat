@@ -1,0 +1,30 @@
+{
+    "schema_id":  "SOURCE_DATA_REGISTRY_SCHEMA_V1",
+    "schema_version":  "1.0.0",
+    "primary_key":  "SourceDataId",
+    "fields":  [
+                   "SourceDataId",
+                   "Title",
+                   "DataClass",
+                   "Status",
+                   "RevisionId",
+                   "CanonicalRelativePath",
+                   "TargetTemplateId",
+                   "TokenProfileId",
+                   "ManifestRelativePath",
+                   "CurrentSHA256",
+                   "Bytes",
+                   "CreatedAt",
+                   "UpdatedAt",
+                   "Owner",
+                   "HumanGateRequired",
+                   "ProductionUseAllowed"
+               ],
+    "source_data_id_pattern":  "^SRC-ARS-[0-9]{8}-[0-9]{4}$",
+    "revision_pattern":  "^REV-[0-9]{3}$",
+    "target_template_pattern":  "^TPL-ARS-[A-Z0-9]{2,12}-[0-9]{4}$",
+    "hash_algorithm":  "SHA256",
+    "production_use_requires_human_gate":  true,
+    "overwrite_allowed":  false,
+    "created_at":  "2026-07-21T16:45:52+02:00"
+}

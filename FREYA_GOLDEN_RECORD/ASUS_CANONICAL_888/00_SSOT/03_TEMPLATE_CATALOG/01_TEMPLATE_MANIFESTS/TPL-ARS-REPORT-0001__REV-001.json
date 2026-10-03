@@ -1,0 +1,19 @@
+{
+    "template_id": "TPL-ARS-REPORT-0001",
+    "revision_id": "REV-001",
+    "title": "Controlled Report",
+    "template_class": "REPORT",
+    "source_format": "MARKDOWN_TEMPLATE",
+    "output_target": "DOCX_AND_PDF",
+    "canonical_relative_path": "00_SSOT\\03_TEMPLATE_CATALOG\\00_TEMPLATE_PACKAGES\\TPL-ARS-REPORT-0001\\REV-001\\TPL-ARS-REPORT-0001__CONTROLLED_REPORT__REV-001__REGISTERED.template.md",
+    "token_profile_id": "TOK-ARS-REPORT-0001",
+    "template_sha256": "50babac6028abfbe2ffcfec0b51c82f52bc4e21df04c9a1114edd0931644d6e3",
+    "template_bytes": 562,
+    "status": "REGISTERED",
+    "production_allowed": false,
+    "human_gate_required": true,
+    "macros_allowed": false,
+    "external_links_allowed": false,
+    "network_required": false,
+    "created_at": "2026-07-21T16:33:04+02:00"
+}

@@ -1,0 +1,31 @@
+{
+    "schema_id":  "BUILD_REGISTRY_SCHEMA_V1",
+    "schema_version":  "1.0.0",
+    "primary_key":  "BuildId",
+    "fields":  [
+                   "BuildId",
+                   "DocumentId",
+                   "TemplateId",
+                   "SourceDataId",
+                   "Status",
+                   "BuildProfileId",
+                   "RenderedTextRelativePath",
+                   "DocxRelativePath",
+                   "PdfRelativePath",
+                   "ManifestRelativePath",
+                   "DocxSHA256",
+                   "PdfSHA256",
+                   "CreatedAt",
+                   "BuiltBy",
+                   "HumanGateRequired",
+                   "ReleaseAllowed"
+               ],
+    "build_id_pattern":  "^BLD-ARS-[0-9]{8}-[0-9]{4}$",
+    "hash_algorithm":  "SHA256",
+    "docx_required":  true,
+    "pdf_required":  true,
+    "production_build_allowed":  false,
+    "release_requires_human_gate":  true,
+    "overwrite_allowed":  false,
+    "created_at":  "2026-07-21T16:59:56+02:00"
+}

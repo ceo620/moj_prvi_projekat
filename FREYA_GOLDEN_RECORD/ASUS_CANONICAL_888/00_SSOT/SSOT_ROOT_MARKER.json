@@ -1,0 +1,11 @@
+{
+    "marker":  "CANONICAL_SSOT_ROOT",
+    "platform_id":  "FREYA_PLATFORM_2_0",
+    "product_id":  "ARS_METAL_DOCUMENT_FACTORY",
+    "canonical_ssot":  "C:\\FREYA_PLATFORM_2_0\\01_PRODUCTS\\ARS_METAL_DOCUMENT_FACTORY\\00_SSOT",
+    "alternate_canonical_ssot_allowed":  false,
+    "automatic_legacy_import":  false,
+    "human_gate":  "ACTIVE",
+    "protocol":  "888",
+    "created_at":  "2026-07-21T15:34:22+02:00"
+}
