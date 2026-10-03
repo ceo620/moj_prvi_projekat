@@ -1,0 +1,35 @@
+#!/bin/sh
+set -eu
+unset ENV BASH_ENV PYTHONPATH PYTHONHOME
+export PATH=/usr/bin:/bin
+d=/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888
+(cd "$d" && sha256sum -c SHA256SUMS >/dev/null) || exit 3
+case "${1-status}" in
+lista)
+  printf '%s\n' auto_harvest freya_dashboard freya_enclave_journal freya_energy_vault freya_final_copy freya_focus_reset freya_generate_whitepaper freya_just_human freya_knjiga_engine freya_master_node freya_needs_scheduler freya_next_steps freya_panic_grounding freya_producer_ready freya_scheduler freya_secure_dist freya_shield_active freya_srednja_klasa freya_storage_node freya_zena_balkanska hardening_closure human_gate_active javi_status network_comm_audit neural_shield_wall skeniraj_status spyware_jb_detect titan_self_heal titan_sentinel_d freya_mail_orchestrator
+  exit 0 ;;
+pokreni)
+  [ "$#" -ge 2 ] || exit 2
+  n=$2
+  shift 2
+  case "$n" in
+    auto_harvest|freya_dashboard|freya_enclave_journal|freya_energy_vault|freya_final_copy|freya_focus_reset|freya_generate_whitepaper|freya_just_human|freya_knjiga_engine|freya_master_node|freya_needs_scheduler|freya_next_steps|freya_panic_grounding|freya_producer_ready|freya_scheduler|freya_secure_dist|freya_shield_active|freya_srednja_klasa|freya_storage_node|freya_zena_balkanska|hardening_closure|human_gate_active|javi_status|network_comm_audit|neural_shield_wall|skeniraj_status|spyware_jb_detect|titan_self_heal|titan_sentinel_d) exec /bin/sh "$d/$n.sh" "$@" ;;
+    freya_mail_orchestrator)
+      exec /usr/bin/python3 -I -S -B "$d/$n.py" "$@" ;;
+    *) exit 2 ;;
+  esac ;;
+status)
+  [ "$#" -le 1 ] || exit 2
+  exec /bin/sh "$d/freya_dashboard.sh" ;;
+zapis|dnevnik)
+  [ "$#" -eq 2 ] || exit 2
+  p=javi_status.sh
+  [ "$1" != dnevnik ] || p=freya_enclave_journal.sh
+  exec /bin/sh "$d/$p" "$2" ;;
+paket)
+  [ "$#" -eq 1 ] || exit 2
+  exec /bin/sh "$d/freya_secure_dist.sh" ;;
+*)
+  echo 'Upotreba: freya-sobe status|zapis "tekst"|dnevnik "tekst"|paket'
+  exit 2 ;;
+esac
