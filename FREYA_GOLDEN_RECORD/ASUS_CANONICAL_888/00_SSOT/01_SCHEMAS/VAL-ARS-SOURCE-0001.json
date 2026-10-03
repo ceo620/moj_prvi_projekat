@@ -1,0 +1,32 @@
+{
+    "validation_profile_id":  "VAL-ARS-SOURCE-0001",
+    "source_data_class":  "REPORT_INPUT",
+    "target_template_id":  "TPL-ARS-REPORT-0001",
+    "token_profile_id":  "TOK-ARS-REPORT-0001",
+    "required_fields":  [
+                            "DOCUMENT_ID",
+                            "TITLE",
+                            "COMPANY_NAME",
+                            "ISSUE_DATE",
+                            "PREPARED_BY",
+                            "SUMMARY",
+                            "BODY",
+                            "HUMAN_GATE_STATUS",
+                            "PROTOKOL"
+                        ],
+    "allowed_fields":  [
+                           "DOCUMENT_ID",
+                           "TITLE",
+                           "COMPANY_NAME",
+                           "ISSUE_DATE",
+                           "PREPARED_BY",
+                           "SUMMARY",
+                           "BODY",
+                           "HUMAN_GATE_STATUS",
+                           "PROTOKOL"
+                       ],
+    "unknown_fields_allowed":  false,
+    "empty_required_values_allowed":  false,
+    "production_use_allowed":  false,
+    "created_at":  "2026-07-21T16:45:52+02:00"
+}

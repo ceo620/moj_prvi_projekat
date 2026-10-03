@@ -1,0 +1,1 @@
+ValidationId,BuildId,DocxExists,PdfExists,DocxSignatureValid,PdfSignatureValid,DocxHashVerified,PdfHashVerified,TemplateHashContinuity,SourceHashContinuity,ValidatedAt,Validator,Result

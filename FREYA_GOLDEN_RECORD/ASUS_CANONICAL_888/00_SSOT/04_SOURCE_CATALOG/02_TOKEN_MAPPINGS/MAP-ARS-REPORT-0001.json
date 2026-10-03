@@ -1,0 +1,75 @@
+{
+    "mapping_id":  "MAP-ARS-REPORT-0001",
+    "source_data_id":  "SRC-ARS-20260721-0001",
+    "target_template_id":  "TPL-ARS-REPORT-0001",
+    "token_profile_id":  "TOK-ARS-REPORT-0001",
+    "mapping_mode":  "DIRECT_PROPERTY_NAME",
+    "case_sensitive":  true,
+    "unknown_fields_allowed":  false,
+    "mappings":  [
+                     {
+                         "Token":  "DOCUMENT_ID",
+                         "Placeholder":  "{{DOCUMENT_ID}}",
+                         "SourceJsonProperty":  "DOCUMENT_ID",
+                         "Required":  "YES",
+                         "DataType":  "STRING"
+                     },
+                     {
+                         "Token":  "TITLE",
+                         "Placeholder":  "{{TITLE}}",
+                         "SourceJsonProperty":  "TITLE",
+                         "Required":  "YES",
+                         "DataType":  "STRING"
+                     },
+                     {
+                         "Token":  "COMPANY_NAME",
+                         "Placeholder":  "{{COMPANY_NAME}}",
+                         "SourceJsonProperty":  "COMPANY_NAME",
+                         "Required":  "YES",
+                         "DataType":  "STRING"
+                     },
+                     {
+                         "Token":  "ISSUE_DATE",
+                         "Placeholder":  "{{ISSUE_DATE}}",
+                         "SourceJsonProperty":  "ISSUE_DATE",
+                         "Required":  "YES",
+                         "DataType":  "DATE"
+                     },
+                     {
+                         "Token":  "PREPARED_BY",
+                         "Placeholder":  "{{PREPARED_BY}}",
+                         "SourceJsonProperty":  "PREPARED_BY",
+                         "Required":  "YES",
+                         "DataType":  "STRING"
+                     },
+                     {
+                         "Token":  "SUMMARY",
+                         "Placeholder":  "{{SUMMARY}}",
+                         "SourceJsonProperty":  "SUMMARY",
+                         "Required":  "YES",
+                         "DataType":  "MULTILINE_STRING"
+                     },
+                     {
+                         "Token":  "BODY",
+                         "Placeholder":  "{{BODY}}",
+                         "SourceJsonProperty":  "BODY",
+                         "Required":  "YES",
+                         "DataType":  "MULTILINE_STRING"
+                     },
+                     {
+                         "Token":  "HUMAN_GATE_STATUS",
+                         "Placeholder":  "{{HUMAN_GATE_STATUS}}",
+                         "SourceJsonProperty":  "HUMAN_GATE_STATUS",
+                         "Required":  "YES",
+                         "DataType":  "CONTROLLED_STRING"
+                     },
+                     {
+                         "Token":  "PROTOKOL",
+                         "Placeholder":  "{{PROTOKOL}}",
+                         "SourceJsonProperty":  "PROTOKOL",
+                         "Required":  "YES",
+                         "DataType":  "STRING"
+                     }
+                 ],
+    "created_at":  "2026-07-21T16:45:52+02:00"
+}

@@ -1,0 +1,2 @@
+﻿"TokenProfileId","TemplateClass","ProfileRelativePath","TokenCount","RequiredTokenCount","SHA256","CreatedAt","Status"
+"TOK-ARS-REPORT-0001","REPORT","00_SSOT\03_TEMPLATE_CATALOG\02_TOKEN_PROFILES\TOK-ARS-REPORT-0001.json","9","9","03f61a39585b3cc5e6098a656221f22d2771d0bad2fe986460835f549545c58f","2026-07-21T16:33:04+02:00","ACTIVE"

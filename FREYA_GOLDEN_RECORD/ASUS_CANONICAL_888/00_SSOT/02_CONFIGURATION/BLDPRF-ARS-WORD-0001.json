@@ -1,0 +1,19 @@
+{
+    "build_profile_id":  "BLDPRF-ARS-WORD-0001",
+    "build_class":  "NON_PRODUCTION_VALIDATION",
+    "template_id":  "TPL-ARS-REPORT-0001",
+    "source_data_id":  "SRC-ARS-20260721-0001",
+    "renderer":  "LITERAL_CASE_SENSITIVE",
+    "docx_adapter":  "MICROSOFT_WORD_COM",
+    "pdf_adapter":  "MICROSOFT_WORD_COM",
+    "docx_format_code":  16,
+    "pdf_format_code":  17,
+    "visible_word_ui":  false,
+    "display_alerts":  0,
+    "overwrite_allowed":  false,
+    "production_build_allowed":  false,
+    "release_allowed":  false,
+    "network_required":  false,
+    "human_gate_required_for_release":  true,
+    "created_at":  "2026-07-21T16:59:56+02:00"
+}

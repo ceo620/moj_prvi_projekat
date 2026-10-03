@@ -1,0 +1,14 @@
+{
+    "allocator_id":  "DOCUMENT_ID_ALLOCATOR_V1",
+    "product":  "ARS_METAL_DOCUMENT_FACTORY",
+    "prefix":  "DOC-ARS",
+    "format":  "DOC-ARS-{DOCUMENT_CLASS}-{SEQUENCE_6}",
+    "sequence_width":  6,
+    "allocation_strategy":  "MAX_EXISTING_SEQUENCE_PLUS_ONE",
+    "sequence_reuse_allowed":  false,
+    "reservation_required":  false,
+    "registry_is_authoritative":  true,
+    "overwrite_allowed":  false,
+    "created_at":  "2026-07-21T15:40:33+02:00",
+    "schema_version":  "1.0.0"
+}

@@ -1,0 +1,2 @@
+﻿"ValidationId","SourceDataId","ValidationProfileId","RequiredFields","MissingFields","UnknownFields","TypeFailures","HashVerified","ValidatedAt","Validator","Result"
+"VALRUN-ARS-20260721-0001","SRC-ARS-20260721-0001","VAL-ARS-SOURCE-0001","9","0","0","0","YES","2026-07-21T16:45:52+02:00","ASUS_PRIMARY_BUILD_NODE","PASS"

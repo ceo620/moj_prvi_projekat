@@ -1,0 +1,17 @@
+{
+    "source_data_id":  "SRC-ARS-20260721-0001",
+    "revision_id":  "REV-001",
+    "title":  "Controlled Source Data Validation Report",
+    "data_class":  "REPORT_INPUT",
+    "target_template_id":  "TPL-ARS-REPORT-0001",
+    "token_profile_id":  "TOK-ARS-REPORT-0001",
+    "validation_profile_id":  "VAL-ARS-SOURCE-0001",
+    "canonical_relative_path":  "00_SSOT\\04_SOURCE_CATALOG\\00_DATA_PACKAGES\\SRC-ARS-20260721-0001\\REV-001\\SRC-ARS-20260721-0001__REPORT_INPUT__REV-001__REGISTERED.json",
+    "source_data_sha256":  "279970bbd32eeed6f480007a1e3249e83f2602e8569bb214986fa6e294a38d03",
+    "source_data_bytes":  545,
+    "status":  "REGISTERED",
+    "production_use_allowed":  false,
+    "human_gate_required":  true,
+    "network_required":  false,
+    "created_at":  "2026-07-21T16:45:52+02:00"
+}

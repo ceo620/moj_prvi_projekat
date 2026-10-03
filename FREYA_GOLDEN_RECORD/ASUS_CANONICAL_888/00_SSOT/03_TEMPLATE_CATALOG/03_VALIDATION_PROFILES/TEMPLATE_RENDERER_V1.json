@@ -1,0 +1,16 @@
+{
+    "renderer_id":  "TEMPLATE_RENDERER_V1",
+    "input_format":  "UTF8_TEXT_TEMPLATE",
+    "output_format":  "UTF8_RENDERED_TEXT",
+    "placeholder_pattern":  "\\{\\{[A-Z][A-Z0-9_]{1,63}\\}\\}",
+    "placeholder_matching":  "CASE_SENSITIVE",
+    "replacement_mode":  "LITERAL_STRING_REPLACEMENT",
+    "unknown_token_behavior":  "BLOCK",
+    "missing_required_token_behavior":  "BLOCK",
+    "unresolved_token_behavior":  "BLOCK",
+    "source_template_modification_allowed":  false,
+    "overwrite_existing_output_allowed":  false,
+    "network_required":  false,
+    "word_required":  false,
+    "created_at":  "2026-07-21T16:33:04+02:00"
+}

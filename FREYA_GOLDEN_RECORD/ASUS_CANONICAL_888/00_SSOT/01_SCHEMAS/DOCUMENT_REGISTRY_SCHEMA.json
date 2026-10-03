@@ -1,0 +1,29 @@
+{
+    "schema_id":  "DOCUMENT_REGISTRY_SCHEMA_V1",
+    "schema_version":  "1.0.0",
+    "product":  "ARS_METAL_DOCUMENT_FACTORY",
+    "primary_key":  "DocumentId",
+    "fields":  [
+                   "DocumentId",
+                   "Title",
+                   "DocumentClass",
+                   "Status",
+                   "RevisionId",
+                   "CanonicalRelativePath",
+                   "SourceType",
+                   "ProvenanceId",
+                   "CurrentSHA256",
+                   "Bytes",
+                   "CreatedAt",
+                   "UpdatedAt",
+                   "Owner",
+                   "HumanGateRequired",
+                   "ReleaseAllowed"
+               ],
+    "document_id_pattern":  "^DOC-ARS-[A-Z0-9]{2,12}-[0-9]{6}$",
+    "revision_pattern":  "^REV-[0-9]{3}$",
+    "hash_algorithm":  "SHA256",
+    "overwrite_allowed":  false,
+    "release_requires_human_gate":  true,
+    "created_at":  "2026-07-21T15:40:33+02:00"
+}
