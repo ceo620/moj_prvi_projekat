@@ -1,0 +1,6 @@
+STATIC_REVIEW_ONLY
+SOURCE_EXECUTION=NO
+Three JSON report exporters; syntax PASS.
+Existing output files can be overwritten.
+Printed PASS means export completed, not system validation.
+No network calls in reviewed source. Runtime not tested.

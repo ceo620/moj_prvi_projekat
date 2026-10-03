@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+
+import html
+import json
+import sys
+from pathlib import Path
+
+
+def build_html(report):
+
+    body = []
+
+    body.append("<h1>FINAL VALIDATION REPORT</h1>")
+
+    body.append(
+        "<p><b>Total modules:</b> {}</p>".format(
+            report["TOTAL_MODULES"]
+        )
+    )
+
+    body.append(
+        "<p><b>Total files:</b> {}</p>".format(
+            report["TOTAL_FILES"]
+        )
+    )
+
+    body.append(
+        "<p><b>Total errors:</b> {}</p>".format(
+            report["TOTAL_ERRORS"]
+        )
+    )
+
+    body.append(
+        "<table border='1' cellspacing='0' cellpadding='4'>"
+    )
+
+    body.append(
+        "<tr><th>Module</th><th>Files</th><th>Errors</th></tr>"
+    )
+
+    for module in report["REPORTS"]:
+
+        errors = len([
+            x for x in module["RESULTS"]
+            if x["STATUS"] != "PASS"
+        ])
+
+        body.append(
+            "<tr>"
+            "<td>{}</td>"
+            "<td>{}</td>"
+            "<td>{}</td>"
+            "</tr>".format(
+                html.escape(module["MODULE"]),
+                module["TOTAL_RESULTS"],
+                errors
+            )
+        )
+
+    body.append("</table>")
+
+    return (
+        "<html><body>"
+        + "".join(body)
+        + "</body></html>"
+    )
+
+
+def main():
+
+    report = json.loads(
+        Path(
+            "reports/FINAL_VALIDATION_REPORT.json"
+        ).read_text(
+            encoding="utf-8"
+        )
+    )
+
+    output = Path(
+        "reports/FINAL_VALIDATION_REPORT.html"
+    )
+
+    output.write_text(
+        build_html(report),
+        encoding="utf-8"
+    )
+
+    print("MODULE=HTML_REPORT_ENGINE")
+    print("OUTPUT=" + str(output))
+    print("STATUS=PASS")
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+
