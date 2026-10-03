@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+import json,os,sys,tempfile
+def hold(r,c):
+ print("RESULT=HUMAN_HOLD");print("REASON="+r);raise SystemExit(c)
+if len(sys.argv)<4: hold("USAGE",64)
+cmd,path,obj=sys.argv[1:4]
+rows={}
+if os.path.exists(path):
+ try:
+  with open(path,encoding="utf-8") as f:
+   for x in json.load(f): rows[x["object_id"]]=x
+ except Exception: hold("QUEUE_CORRUPTED",70)
+if cmd=="enqueue":
+ if obj not in rows: rows[obj]={"object_id":obj,"status":"PENDING"}
+elif cmd=="claim":
+ if obj not in rows: hold("OBJECT_NOT_FOUND",65)
+ if rows[obj]["status"]!="PENDING": hold("CLAIM_TRANSITION_DENIED",66)
+ rows[obj]["status"]="RUNNING"
+elif cmd=="complete":
+ if obj not in rows: hold("OBJECT_NOT_FOUND",67)
+ if rows[obj]["status"]!="RUNNING": hold("COMPLETE_TRANSITION_DENIED",68)
+ rows[obj]["status"]="COMPLETED"
+else: hold("UNKNOWN_COMMAND",69)
+os.makedirs(os.path.dirname(path) or ".",exist_ok=True)
+fd,tmp=tempfile.mkstemp(prefix=".queue.",dir=os.path.dirname(path) or ".")
+with os.fdopen(fd,"w",encoding="utf-8") as f:
+ json.dump([rows[k] for k in sorted(rows)],f,sort_keys=True,separators=(",",":"))
+ f.write("\n");f.flush();os.fsync(f.fileno())
+os.replace(tmp,path)
+print("OBJECT_ID="+obj)
+print("STATUS="+rows[obj]["status"])
+print("QUEUE_RECORDS="+str(len(rows)))
+print("RESULT=PASS")

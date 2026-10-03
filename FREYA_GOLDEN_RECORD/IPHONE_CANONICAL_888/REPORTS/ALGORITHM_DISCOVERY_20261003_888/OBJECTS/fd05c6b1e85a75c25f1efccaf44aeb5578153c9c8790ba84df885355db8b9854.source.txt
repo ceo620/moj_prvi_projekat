@@ -1,0 +1,6 @@
+{
+  "phase": "ISOLATED_EXTRACTION_AND_LOCAL_READBACK",
+  "error": "RecoveryError: Putanja van ocekivanog root skupa: 'etc/profile'",
+  "source": "/tmp/ISH_EXPORT_888.w75MRJ/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020",
+  "activation_performed": false
+}

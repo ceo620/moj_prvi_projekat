@@ -1,0 +1,14 @@
+class PipelineV2:
+    STAGES=[
+        "DISCOVER",
+        "VALIDATE",
+        "QUEUE",
+        "DISPATCH",
+        "PROCESS",
+        "CHECKPOINT"
+    ]
+    def stages(self):
+        return self.STAGES
+if __name__=="__main__":
+    print("PIPELINE_V2_READY")
+    print(len(PipelineV2().stages()))

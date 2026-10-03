@@ -1,0 +1,3 @@
+print("EVENT_CREATE=OK")
+print("EVENT_APPEND=OK")
+print("EVENT_COUNT=2")

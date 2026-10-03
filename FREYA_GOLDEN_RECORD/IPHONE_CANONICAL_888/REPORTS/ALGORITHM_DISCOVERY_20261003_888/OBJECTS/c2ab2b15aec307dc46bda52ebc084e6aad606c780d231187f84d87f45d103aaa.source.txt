@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+import os
+import glob
+from datetime import datetime
+
+# Putanje unutar enklave
+SOBA_2 = "/root/Documents/SOBA_2_ORCHESTRATOR_BRAIN"
+SOBA_3 = "/root/Documents/SOBA_3_SSOT_CENTRAL_REGISTRY"
+SOBA_4 = "/root/Documents/SOBA_4_EXPORTS_AND_OUTBOX"
+
+print("🧠 [FREYA ORCHESTRATOR] Pokretanje B2B prodajnog engine-a...")
+
+# 1. Dobijanje najnovijeg SHA256 potpisa paketa iz SOBE_4
+sha_files = glob.glob(f"{SOBA_4}/*.sha256")
+if sha_files:
+    latest_sha_file = max(sha_files, key=os.path.getctime)
+    with open(latest_sha_file, 'r') as f:
+        package_sha = f.read().strip().split()[0]
+else:
+    package_sha = "SHA256_NOT_FOUND_GENERATE_NEW_RELEASE"
+
+# 2. VIP Kontakti (Simulacija baze iz SOBE_3)
+vip_contacts = [
+    {"name": "Elon Musk", "email": "e.musk@x.com", "role": "CEO / Tech Leader"},
+    {"name": "Danijela Djurovic Keskin", "email": "d.djurovic@enterprise.eu", "role": "Head of Compliance & Sovereign Data"}
+]
+
+# 3. Generisanje ultra-personalizovanih B2B mejlova
+for vip in vip_contacts:
+    mail_content = f"""TO: {vip['name']} ({vip['email']})
+SUBJECT: FREYA Ecosystem v1.0 - Sovereign Executive Infrastructure Proposal
+DATE: {datetime.now().strftime('%Y-%m-%d')}
+SECURITY_TAG: CONFIDENTIAL / SOVEREIGN ONLY
+
+Poštovani/a {vip['name']},
+
+Kao lideru u oblasti {vip['role']}, predstavljamo Vam FREYA Sovereign Enclave Ekosistem v1.0, kompletno izolovan, autonomni Unix sandboxed sistem optimizovan za rad na ivici mreže (Edge/Mobile).
+
+Vaš namenski Enterprise paket je uspešno spakovan i spreman za lokalnu instalaciju.
+🔒 Verifikacioni SHA256 otisak Vaše instance: {package_sha}
+
+KOMERCIJALNI MODELI LICENCIRANJA:
+- FREYA Sovereign Enclave Core: $250,000 / godišnje (On-premise instanca)
+- TITAN Edge Harvester & Sentinel: $50,000 / mesečno (Data Pipeline fee)
+- FREYA Cyber-Audit Compliance: $15,000 / po uređaju (Hardverski audit)
+
+Sistem je spreman za 14-dnevni izlovani Proof of Concept (PoC) preko eksternog drajva. 
+
+Generisano autonomno od strane FREYA Orkestratora.
+======================================================================
+"""
+    
+    # Upisivanje u Outbox (SOBA_4)
+    file_name = f"{SOBA_4}/OUTBOX_MAIL_{vip['name'].replace(' ', '_').upper()}.txt"
+    with open(file_name, 'w') as mail_file:
+        mail_file.write(mail_content)
+    print(f"🧠 Kreiran vidljivi mail za: {vip['name']} -> {file_name}")
+
+print("🚀 [FREYA] B2B Outbox uspešno ažuriran novim prilozima i ponudama!")

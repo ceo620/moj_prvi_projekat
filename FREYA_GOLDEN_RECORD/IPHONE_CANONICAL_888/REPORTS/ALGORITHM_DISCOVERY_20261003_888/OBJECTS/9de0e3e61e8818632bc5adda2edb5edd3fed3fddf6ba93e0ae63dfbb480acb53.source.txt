@@ -1,0 +1,16 @@
+from pathlib import Path
+import shutil
+I=Path(__file__).resolve().parent.parent/"inbox"
+P=Path(__file__).resolve().parent.parent/"processing"
+C=Path(__file__).resolve().parent.parent/"completed"
+P.mkdir(exist_ok=True)
+C.mkdir(exist_ok=True)
+n=0
+for f in sorted(I.glob("*")):
+    if f.is_file():
+        t=P/f.name
+        shutil.move(str(f),str(t))
+        shutil.move(str(t),str(C/f.name))
+        n+=1
+print("WORKER_V2_PASS")
+print("PROCESSED=%d"%n)

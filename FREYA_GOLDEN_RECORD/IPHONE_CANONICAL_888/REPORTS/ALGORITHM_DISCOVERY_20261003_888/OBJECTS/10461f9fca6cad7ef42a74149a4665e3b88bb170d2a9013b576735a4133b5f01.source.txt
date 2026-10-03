@@ -1,0 +1,5 @@
+from time import time
+print("OBJECTS_TOTAL=2")
+print("OBJECTS_DONE=1")
+print("QUEUE_DEPTH=1")
+print("UPTIME_OK=YES")

@@ -1,0 +1,25 @@
+#!/bin/sh
+set -eu
+R=/root/FREYA_RAD_888
+AF="$R/05_SISTEM/AGENT_FACTORY"
+S="$AF/AUTOPILOT/STATE"
+exec 9>"$S/runtime.lock"
+flock -n 9 || exit 0
+printf '%s  %s\n' \
+'96d8ddba473c6a808a30cdbb46a73e79dbcc8b05eca36496190fe6e1b0274a67' "$AF/RUNTIME/integrated_runtime_00_ulaz.sh" \
+'45a742625b793b0b827e0928bfabc6bc025f89de299b540199862c51cdc5fc8c' "$AF/ROUTER/queue_binder.sh" \
+'8236c31e63747752248df5c70c13e7d3786dd53336387bb115a63fef5cc8f64d' "$AF/RUNTIME/document_processor.py" \
+'7468c027470d8eeb33059367240cfadfbf134783d793056f9b1741e920a13550' "$AF/CONTRACTS/execution_allowlist.tsv" \
+'36c34970bdc66ef019444bd967faef656585ab94fb11a47ecf7fcd7bdd8e01e6' "$AF/CONTRACTS/AGENT_ID" \
+'13ee3ff93a6a9a23d178b8164a868609e06f613acccf6072c80095b9d31bd775' "/root/IPHONE_888_FINAL_LOCAL_PRODUCTION_SEAL_20260921.env" | sha256sum -c - >/dev/null 2>&1 || { echo RESULT=HOLD_PIN_MISMATCH >"$S/LAST_RUN.log"; exit 20; }
+A="$(cat "$AF/CONTRACTS/AGENT_ID")"
+[ "$A" = DAILY_PRIORITY ] || { echo RESULT=HOLD_AGENT_ID >"$S/LAST_RUN.log"; exit 21; }
+RUN="$S/RUN_$(date -u +%Y%m%dT%H%M%SZ)_$$"
+mkdir -p "$RUN"
+set +e
+sh "$AF/RUNTIME/integrated_runtime_00_ulaz.sh" "$R/00_ULAZ" "$AF/RUNTIME/document_processor.py" "$AF/ROUTER/queue_binder.sh" "$AF/CONTRACTS/execution_allowlist.tsv" "$A" "$RUN" >"$S/.last.$$" 2>&1
+rc=$?
+set -e
+if [ "$rc" -eq 4 ]; then echo RESULT=PASS_IDLE_NO_NEW_INPUT >"$S/LAST_RUN.log"; rm -f "$S/.last.$$"; exit 0; fi
+cat "$S/.last.$$" >"$S/LAST_RUN.log"; rm -f "$S/.last.$$"
+exit "$rc"

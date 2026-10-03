@@ -1,0 +1,194 @@
+#!/bin/sh
+set -eu
+umask 077
+
+R=$1
+ID=$2
+CYCLES=$3
+OUT=$4
+
+SCH=$R/03_AGENT_RUNTIME/SCHEDULER_V1.sh
+WD=$R/03_AGENT_RUNTIME/WATCHDOG_V1.sh
+STATE=$R/17_RUNTIME/$ID.state.env
+HISTORY=$R/17_RUNTIME/$ID.lock_history
+
+[ -x "$SCH" ] || exit 10
+[ -x "$WD" ] || exit 11
+[ ! -e "$STATE" ] || exit 12
+[ ! -e "$HISTORY" ] || exit 13
+[ ! -e "$OUT" ] || exit 14
+
+case "$CYCLES" in
+    ''|*[!0-9]*) exit 15 ;;
+esac
+
+[ "$CYCLES" -ge 3 ] || exit 16
+
+mkdir -m 700 "$OUT"
+
+printf 'CYCLE\tSTATE_PATH\tSTATE_SHA256\tWATCHDOG\n' \
+    > "$OUT/CYCLES.tsv"
+
+PKG_BEFORE=$(
+    find "$R/07_PACKAGE_FACTORY/PACKAGES" \
+        -type f -name '*.tar.gz' |
+        wc -l |
+        tr -d ' '
+)
+
+OUTBOX_BEFORE=$(
+    find "$R/08_MSI_TRANSPORT/OUTBOX" \
+        -type f -name '*.tar.gz' |
+        wc -l |
+        tr -d ' '
+)
+
+WAIT_BEFORE=$(
+    find "$R/06_QUEUE/WAITING_FOR_MSI" \
+        -type f -name '*.queue' |
+        wc -l |
+        tr -d ' '
+)
+I=1
+
+while [ "$I" -le "$CYCLES" ]
+do
+    CURRENT=$("$SCH" "$R" "$ID")
+
+    [ "$CURRENT" = "$STATE" ] || exit 20
+    [ -f "$STATE" ] || exit 21
+
+    grep -qx "CYCLE_COUNT=$I" "$STATE" || exit 22
+    grep -qx 'LAST_RESULT=PASS' "$STATE" || exit 23
+    grep -qx 'CHECKPOINT=YES' "$STATE" || exit 24
+    grep -qx 'RESUME_AFTER_SUSPEND=YES' "$STATE" || exit 25
+    grep -qx 'IOS_BACKGROUND_GUARANTEE=NO' "$STATE" || exit 26
+
+    WATCH=$OUT/WATCHDOG_$I.env
+
+    "$WD" "$R" "$ID" "$WATCH"
+
+    grep -qx 'WATCHDOG=PASS' "$WATCH" || exit 27
+    grep -qx "CYCLE_COUNT=$I" "$WATCH" || exit 28
+
+    SH=$(sha256sum "$STATE" | cut -d' ' -f1)
+
+    printf '%s\t%s\t%s\tPASS\n' \
+        "$I" "$STATE" "$SH" \
+        >> "$OUT/CYCLES.tsv"
+
+    I=$((I + 1))
+done
+
+[ ! -e "$R/17_RUNTIME/$ID.lock" ] || exit 29
+
+LOCKS=$(
+    find "$HISTORY" \
+        -mindepth 1 \
+        -maxdepth 1 \
+        -type d |
+        wc -l |
+        tr -d ' '
+)
+
+[ "$LOCKS" -eq "$CYCLES" ] || exit 30
+
+cp "$STATE" "$OUT/CHECKPOINT_BEFORE_PAUSE.env"
+
+CHECKPOINT_HASH=$(
+    sha256sum "$OUT/CHECKPOINT_BEFORE_PAUSE.env" |
+        cut -d' ' -f1
+)
+
+cat > "$OUT/INTERRUPTION.env" <<PAUSE
+INTERRUPTION_CLASS=IOS_SUSPEND_SIMULATED
+LAST_SAFE_STATE=IDLE_CHECKPOINT
+CHECKPOINT_SHA256=$CHECKPOINT_HASH
+NETWORK_CONNECTIONS_OPENED=0
+PAUSE
+
+RESUMED=$("$SCH" "$R" "$ID")
+EXPECTED=$((CYCLES + 1))
+
+[ "$RESUMED" = "$STATE" ] || exit 31
+
+grep -qx "CYCLE_COUNT=$EXPECTED" "$STATE" || exit 32
+grep -qx 'LAST_SAFE_STATE=IDLE_CHECKPOINT' "$STATE" || exit 33
+grep -qx 'RESUME_AFTER_SUSPEND=YES' "$STATE" || exit 34
+
+WATCH=$OUT/WATCHDOG_$EXPECTED.env
+
+"$WD" "$R" "$ID" "$WATCH"
+
+grep -qx 'WATCHDOG=PASS' "$WATCH" || exit 35
+grep -qx "CYCLE_COUNT=$EXPECTED" "$WATCH" || exit 36
+
+SH=$(sha256sum "$STATE" | cut -d' ' -f1)
+
+printf '%s\t%s\t%s\tPASS\n' \
+    "$EXPECTED" "$STATE" "$SH" \
+    >> "$OUT/CYCLES.tsv"
+
+[ ! -e "$R/17_RUNTIME/$ID.lock" ] || exit 37
+
+LOCKS=$(
+    find "$HISTORY" \
+        -mindepth 1 \
+        -maxdepth 1 \
+        -type d |
+        wc -l |
+        tr -d ' '
+)
+
+[ "$LOCKS" -eq "$EXPECTED" ] || exit 38
+PKG_AFTER=$(
+    find "$R/07_PACKAGE_FACTORY/PACKAGES" \
+        -type f -name '*.tar.gz' |
+        wc -l |
+        tr -d ' '
+)
+
+OUTBOX_AFTER=$(
+    find "$R/08_MSI_TRANSPORT/OUTBOX" \
+        -type f -name '*.tar.gz' |
+        wc -l |
+        tr -d ' '
+)
+
+WAIT_AFTER=$(
+    find "$R/06_QUEUE/WAITING_FOR_MSI" \
+        -type f -name '*.queue' |
+        wc -l |
+        tr -d ' '
+)
+
+[ "$PKG_BEFORE" -eq "$PKG_AFTER" ] || exit 39
+[ "$OUTBOX_BEFORE" -eq "$OUTBOX_AFTER" ] || exit 40
+[ "$WAIT_BEFORE" -eq "$WAIT_AFTER" ] || exit 41
+
+cat > "$OUT/SUMMARY.env" <<SUMMARY
+RESULT=PASS
+RUNTIME_STABILITY=PASS
+CONTROLLED_RUNTIME_CYCLES=$EXPECTED
+PROCESS_BOUNDARIES=$EXPECTED
+WATCHDOG_PASS_COUNT=$EXPECTED
+CHECKPOINT_BEFORE_PAUSE=PASS
+SIMULATED_SUSPEND_DETECTED=PASS
+RESUME_AFTER_PROCESS_BOUNDARY=PASS
+LAST_SAFE_STATE=IDLE_CHECKPOINT
+ACTIVE_LOCK_AFTER_TEST=NO
+LOCK_HISTORY_COUNT=$LOCKS
+PACKAGE_ARCHIVE_COUNT_BEFORE=$PKG_BEFORE
+PACKAGE_ARCHIVE_COUNT_AFTER=$PKG_AFTER
+OUTBOX_PACKAGE_COUNT_BEFORE=$OUTBOX_BEFORE
+OUTBOX_PACKAGE_COUNT_AFTER=$OUTBOX_AFTER
+WAITING_FOR_MSI_COUNT_BEFORE=$WAIT_BEFORE
+WAITING_FOR_MSI_COUNT_AFTER=$WAIT_AFTER
+DUPLICATE_PACKAGE_CREATED=NO
+QUEUE_STATE_LOSS=NO
+CONTINUOUS_WHILE_RUNTIME_AVAILABLE=YES
+SAFE_PAUSE_WHEN_IOS_SUSPENDS=YES
+AUTOMATIC_RESUME_WHEN_RUNTIME_RETURNS=YES
+IOS_BACKGROUND_GUARANTEE=NO
+NETWORK_CONNECTIONS_OPENED=0
+SUMMARY

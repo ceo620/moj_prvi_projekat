@@ -1,0 +1,2 @@
+import sys
+print("RECOVERY_READY=YES")

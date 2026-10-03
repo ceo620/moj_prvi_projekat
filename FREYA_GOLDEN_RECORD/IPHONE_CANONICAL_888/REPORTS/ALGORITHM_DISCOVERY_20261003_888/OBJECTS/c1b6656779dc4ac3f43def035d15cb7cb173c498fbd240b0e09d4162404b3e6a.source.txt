@@ -1,0 +1,56 @@
+import hashlib,json,os,sys
+from pathlib import Path
+from datetime import datetime,timezone
+
+FIELDS=("object_id","relative_path","sha256","size_bytes","utc","pipeline_stage","status")
+
+def sha256_file(path):
+    h=hashlib.sha256()
+    with open(path,"rb") as f:
+        for block in iter(lambda:f.read(65536),b""):
+            h.update(block)
+    return h.hexdigest()
+
+def canonical(data):
+    return json.dumps(data,sort_keys=True,separators=(",",":"),ensure_ascii=False)
+
+def build(source,root,stage,status,utc):
+    source=Path(source).resolve()
+    root=Path(root).resolve()
+    digest=sha256_file(source)
+    try:
+        relative=source.relative_to(root).as_posix()
+    except ValueError:
+        raise SystemExit("HUMAN_HOLD:SOURCE_OUTSIDE_ROOT")
+    return {
+        "object_id":digest,
+        "relative_path":relative,
+        "sha256":digest,
+        "size_bytes":source.stat().st_size,
+        "utc":utc,
+        "pipeline_stage":stage,
+        "status":status
+    }
+
+def write_new(path,text):
+    path=Path(path)
+    path.parent.mkdir(parents=True,exist_ok=True)
+    if path.exists():
+        raise SystemExit("HUMAN_HOLD:MANIFEST_OVERWRITE_DENIED")
+    with open(path,"x",encoding="utf-8",newline="\n") as f:
+        f.write(text+"\n")
+
+def main():
+    if len(sys.argv)!=7:
+        raise SystemExit("USAGE: source root stage status utc output")
+    source,root,stage,status,utc,out=sys.argv[1:]
+    data=build(source,root,stage,status,utc)
+    if tuple(sorted(data))!=tuple(sorted(FIELDS)):
+        raise SystemExit("HUMAN_HOLD:MANIFEST_SCHEMA_INVALID")
+    write_new(out,canonical(data))
+    print("OBJECT_ID="+data["object_id"])
+    print("MANIFEST_ENTRY="+out)
+    print("RESULT=PASS")
+
+if __name__=="__main__":
+    main()

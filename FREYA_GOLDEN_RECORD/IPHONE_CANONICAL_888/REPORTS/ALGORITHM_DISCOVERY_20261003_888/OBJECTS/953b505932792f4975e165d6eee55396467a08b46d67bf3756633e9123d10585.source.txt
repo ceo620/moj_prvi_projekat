@@ -1,0 +1,43 @@
+#!/bin/sh
+set -eu
+R=/root/FREYA_RAD_888
+IN="$R/00_ULAZ"
+OUT="$R/01_PROIZVODI"
+DP="$R/CODE/document_processor.py"
+
+echo 'PROTOCOL=888'
+echo 'RUN=FREYA_RUN'
+echo 'HUMAN_GATE=ACTIVE'
+
+[ -d "$IN" ] || { echo 'HOLD=00_ULAZ_MISSING'; exit 1; }
+[ -d "$OUT" ] || { echo 'HOLD=01_PROIZVODI_MISSING'; exit 1; }
+[ -f "$DP" ] || { echo 'HOLD=PROCESSOR_MISSING'; exit 1; }
+
+N=0
+for S in "$IN"/*; do
+  [ -f "$S" ] || continue
+  B=$(basename "$S")
+  SAFE=$(printf '%s' "$B" | tr -c 'A-Za-z0-9._-' '_')
+  D="$OUT/$SAFE"
+
+  if [ -e "$D" ]; then
+    echo "ALREADY_PROCESSED=$B"
+    continue
+  fi
+
+  mkdir "$D"
+  if python3 -I -S -B "$DP" "$S" "$D"; then
+    echo "PASS=$B"
+    N=$((N+1))
+  else
+    echo "HOLD=$B"
+  fi
+done
+
+echo "NEW_PRODUCTS=$N"
+echo 'INTAKE=00_ULAZ'
+echo 'OUTPUT=01_PROIZVODI'
+echo 'LEGACY_ULAZ_USED=NO'
+echo 'DELETIONS=0'
+echo 'NETWORK_ACTIONS=0'
+echo 'STATUS=FREYA_RUN_COMPLETE'

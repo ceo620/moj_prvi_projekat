@@ -1,0 +1,20 @@
+#!/bin/sh
+set -eu
+umask 077
+r=/root/FREYA_IPHONE_ISH_NODE_888
+s="$r/03_ARHIVA/SOBE_IOS_REFERENCE"
+d=$(mktemp -d "$r/03_ARHIVA/SOBE_PAKET_XXXXXX")
+tar -czf "$d/REFERENCE.tar.gz" -C "$s" \
+SOBA_1_FREJA_CORE_KERNEL \
+SOBA_2_ORCHESTRATOR_BRAIN \
+SOBA_3_SSOT_CENTRAL_REGISTRY
+cd "$d"
+tar -tzf REFERENCE.tar.gz >/dev/null
+sha256sum REFERENCE.tar.gz > SHA256SUMS
+sha256sum -c SHA256SUMS
+printf '%s\n' \
+'TYPE=REFERENCE_ONLY' \
+'HUMAN_REVIEW=PENDING' \
+'ENCRYPTED=NO' \
+'SCRIPTS_ACTIVATED=NO' > STATUS.txt
+echo "PACKAGE=$d"

@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+import json,os,sys,tempfile
+def hold(reason,code):
+ print("RESULT=HUMAN_HOLD");print("REASON="+reason);raise SystemExit(code)
+if len(sys.argv)!=5: hold("USAGE",64)
+obj,classification,allowlist,receipt_dir=sys.argv[1:]
+if not obj: hold("OBJECT_ID_EMPTY",65)
+routes={}
+try:
+ with open(allowlist,encoding="utf-8") as f:
+  for line in f:
+   line=line.strip()
+   if not line or line.startswith("#"): continue
+   parts=line.split("\t")
+   if len(parts)!=2: hold("ALLOWLIST_SCHEMA_INVALID",66)
+   cls,agent=parts
+   if cls in routes: hold("DUPLICATE_CLASS_ROUTE",67)
+   routes[cls]=agent
+except FileNotFoundError:
+ hold("ALLOWLIST_NOT_FOUND",68)
+if classification not in routes: hold("CLASS_NOT_ALLOWED",69)
+agent=routes[classification]
+receipt={"object_id":obj,"classification":classification,"agent_id":agent,"route_status":"ROUTED"}
+os.makedirs(receipt_dir,exist_ok=True)
+target=os.path.join(receipt_dir,obj+".json")
+fd,tmp=tempfile.mkstemp(prefix=".route.",dir=receipt_dir)
+with os.fdopen(fd,"w",encoding="utf-8") as f:
+ json.dump(receipt,f,sort_keys=True,separators=(",",":"));f.write("\n");f.flush();os.fsync(f.fileno())
+os.replace(tmp,target)
+print("OBJECT_ID="+obj)
+print("CLASSIFICATION="+classification)
+print("AGENT_ID="+agent)
+print("ROUTE_STATUS=ROUTED")
+print("RESULT=PASS")

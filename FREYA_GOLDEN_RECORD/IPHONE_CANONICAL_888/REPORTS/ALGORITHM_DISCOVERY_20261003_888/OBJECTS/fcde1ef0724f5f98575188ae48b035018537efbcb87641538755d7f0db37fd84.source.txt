@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+import hashlib,json,os,sys,tempfile
+
+def hold(reason,code):
+    print("RESULT=HUMAN_HOLD")
+    print("REASON="+reason)
+    raise SystemExit(code)
+
+def canon(data):
+    return json.dumps(data,sort_keys=True,separators=(",",":")).encode()
+
+def load(path):
+    try:
+        with open(path,encoding="utf-8") as f:
+            wrapper=json.load(f)
+    except Exception:
+        hold("CHECKPOINT_CORRUPTED",70)
+    if set(wrapper)!={"payload","sha256"}:
+        hold("CHECKPOINT_SCHEMA_INVALID",71)
+    actual=hashlib.sha256(canon(wrapper["payload"])).hexdigest()
+    if actual!=wrapper["sha256"]:
+        hold("CHECKPOINT_HASH_MISMATCH",72)
+    return wrapper["payload"]
+
+if len(sys.argv)<3:
+    hold("USAGE",64)
+
+cmd,path=sys.argv[1],sys.argv[2]
+
+if cmd=="save":
+    if len(sys.argv)!=6:
+        hold("SAVE_USAGE",65)
+    try:
+        seq=int(sys.argv[3])
+    except ValueError:
+        hold("SEQUENCE_INVALID",66)
+    if seq<0:
+        hold("SEQUENCE_NEGATIVE",67)
+    payload={"sequence":seq,"object_id":sys.argv[4],"status":sys.argv[5]}
+    if os.path.exists(path):
+        previous=load(path)
+        if seq<previous["sequence"]:
+            hold("SEQUENCE_ROLLBACK_DENIED",68)
+    wrapper={"payload":payload,"sha256":hashlib.sha256(canon(payload)).hexdigest()}
+    os.makedirs(os.path.dirname(path) or ".",exist_ok=True)
+    fd,tmp=tempfile.mkstemp(prefix=".checkpoint.",dir=os.path.dirname(path) or ".")
+    try:
+        with os.fdopen(fd,"w",encoding="utf-8") as f:
+            json.dump(wrapper,f,sort_keys=True,separators=(",",":"))
+            f.write("\n")
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp,path)
+    finally:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+    print("CHECKPOINT_SEQUENCE="+str(seq))
+    print("CHECKPOINT_SAVE=PASS")
+    print("RESULT=PASS")
+
+elif cmd=="load":
+    if len(sys.argv)!=3:
+        hold("LOAD_USAGE",69)
+    payload=load(path)
+    print("CHECKPOINT_SEQUENCE="+str(payload["sequence"]))
+    print("OBJECT_ID="+payload["object_id"])
+    print("STATUS="+payload["status"])
+    print("CHECKPOINT_LOAD=PASS")
+    print("RESULT=PASS")
+
+else:
+    hold("UNKNOWN_COMMAND",73)

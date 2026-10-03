@@ -1,0 +1,39 @@
+from __future__ import annotations
+
+import csv
+from pathlib import Path
+from typing import Dict, Iterable, List
+
+from .config import DATA_DIR
+
+ASSETS_CSV = DATA_DIR / "assets.csv"
+PERF_CSV = DATA_DIR / "performance.csv"
+
+ASSET_FIELDS = [
+    "run_id", "asset_id", "platform", "environment", "wardrobe", "pose", "lighting",
+    "asset_path", "prompt", "identity_score", "brand_score", "platform_score", "total_score",
+    "face_fidelity", "hair_fidelity", "dominance", "precision", "postability",
+    "decision", "hard_fail", "failure_codes"
+]
+
+
+def _ensure_csv(path: Path, fieldnames: List[str]) -> None:
+    if not path.exists():
+        with open(path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+
+
+def append_assets(rows: Iterable[Dict]) -> None:
+    _ensure_csv(ASSETS_CSV, ASSET_FIELDS)
+    with open(ASSETS_CSV, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=ASSET_FIELDS)
+        for row in rows:
+            writer.writerow(row)
+
+
+def read_assets(limit: int = 100) -> List[Dict]:
+    _ensure_csv(ASSETS_CSV, ASSET_FIELDS)
+    with open(ASSETS_CSV, "r", newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    return list(reversed(rows))[:limit]

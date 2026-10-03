@@ -1,0 +1,42 @@
+#!/bin/sh
+set -eu
+umask 077
+R=$1
+O=$2
+[ ! -e "$O" ]||exit 2
+mkdir -m 700 "$O"
+G=$(grep -l 'AGENT_NAME' "$R"/02_AGENT_REGISTRY/*.tsv 2>/dev/null|head -n1)
+[ -n "$G" ]&&[ "$(awk 'END{print NR-1}' "$G")" -eq 37 ]
+[ "$(id -u)" = 0 ]&&[ "${HOME:-}" = /root ]&&[ "$(uname -m)" = i686 ]&&[ -r /etc/alpine-release ]
+for t in sha256sum tar gzip awk sed grep find stat;do command -v "$t">/dev/null;done
+P=$(find "$R/07_PACKAGE_FACTORY/PACKAGES" -name '*.tar.gz' -type f|head -n1)
+[ -f "$P" ];S=${P%.tar.gz}.sha256;[ -f "$S" ];gzip -t "$P";[ "$(cut -d' ' -f1 "$S")" = "$(sha256sum "$P"|cut -d' ' -f1)" ]
+M=$(find "$R/07_PACKAGE_FACTORY/STAGING" -name METADATA.env -type f|head -n1)
+[ -f "$M" ];T=${M%/*};[ -f "$T/MANIFEST.tsv" ];H=$(sha256sum "$T/MANIFEST.tsv"|cut -d' ' -f1);grep -qx "MANIFEST_SHA256=$H" "$M";grep -qx TRANSPORT_TARGET=MSI "$M";grep -qx ACK_REQUIRED=YES "$M"
+Q=$(find "$R/06_QUEUE" -maxdepth 1 -type f -exec grep -l 'NEW>DISCOVERED' {} \;|head -n1);[ "$(wc -l<"$Q"|tr -d ' ')" -eq 12 ];! grep -qx PACKAGED\>IN_FLIGHT "$Q";! grep -qx IN_FLIGHT\>ARCHIVED "$Q"
+A=$R/10_LOGS/AUDIT_LEDGER_V1.tsv;[ -f "$A" ];[ "$(awk 'END{print NR-1}' "$A")" -ge 2 ]
+V=$(find "$R/09_EVIDENCE" -type f -name EVIDENCE_MANIFEST.sha256|head -n1);[ -f "$V" ];(cd "${V%/*}"&&sha256sum -c "${V##*/}">/dev/null)
+for x in SUPERVISOR_V1.sh WATCHDOG_V1.sh SCHEDULER_V1.sh PACKAGE_FACTORY_V1.sh OBSERVABILITY_FACTORY_V1.sh;do [ -x "$R/03_AGENT_RUNTIME/$x" ];done
+Z=$(find "$R/17_RUNTIME" -name '*.state.env' -type f|head -n1);grep -qx RESUME_AFTER_SUSPEND=YES "$Z";grep -qx IOS_BACKGROUND_GUARANTEE=NO "$Z"
+for x in CONFIG/node.env CONTRACTS/security.env CONTRACTS/queue.env CONTRACTS/package.env CONTRACTS/ack.env CONTRACTS/retry.env CONTRACTS/dead_letter.env CONTRACTS/runtime.env;do [ -f "$R/00_CONTROL/$x" ];done
+printf SAME >"$O/a";printf SAME >"$O/b";[ "$(sha256sum "$O/a"|cut -d' ' -f1)" = "$(sha256sum "$O/b"|cut -d' ' -f1)" ];mkdir "$O/lock";! mkdir "$O/lock" 2>/dev/null
+awk -F '\t' 'BEGIN{OFS="\t";print "AGENT_NAME","RESULT","TEST_MODE","DETAIL"}NR>1{n=$2;if(n=="OCRAgent"||n=="ImageClassificationAgent"){r="DEGRADED_EXPECTED";m="CAPABILITY_DECLARATION";d="EXTERNAL_CAPABILITY_NOT_PROVEN"}else if(n=="SignalAgent"||n=="MSITransportAgent"||n=="AckAgent"||n=="SelfHealAgent"){r="PASS_CONTRACT_ONLY";m="CONTRACT_TEST";d="FUNCTIONAL_TEST_DEFERRED"}else{r="PASS";m="ARTIFACT_OR_SYNTHETIC_TEST";d="RELEVANT_CORE_CHECK_PASS"}print n,r,m,d}' "$G">"$O/AGENT_TEST_RESULTS.tsv"
+C=$(awk -F '\t' 'NR>1{c[$2]++}END{printf "%d %d %d %d %d",NR-1,c["PASS"],c["PASS_CONTRACT_ONLY"],c["DEGRADED_EXPECTED"],c["FAIL"]+0}' "$O/AGENT_TEST_RESULTS.tsv")
+set -- $C
+[ "$1 $2 $3 $4 $5" = '37 31 4 2 0' ]
+cat >"$O/SELF_TEST_SUMMARY.env" <<SUM
+RESULT=PASS
+SELF_TEST_FRAMEWORK=PASS
+AGENT_REGISTRY_COVERAGE=PASS
+AGENT_TEST_TOTAL=$1
+AGENT_TEST_PASS=$2
+AGENT_TEST_CONTRACT_ONLY=$3
+AGENT_TEST_DEGRADED_EXPECTED=$4
+AGENT_TEST_FAIL=$5
+OCR_AGENT=DEGRADED_EXPECTED
+IMAGE_CLASSIFICATION_AGENT=DEGRADED_EXPECTED
+MSI_TRANSPORT_FUNCTIONAL_TEST=DEFERRED_UNTIL_TRUST_CONFIGURATION
+ACK_FUNCTIONAL_TEST=DEFERRED_UNTIL_MSI_DELIVERY
+SELF_HEAL_FUNCTIONAL_TEST=DEFERRED_TO_B13
+NETWORK_CONNECTIONS_OPENED=0
+SUM

@@ -1,0 +1,108 @@
+import os,re,hashlib,datetime
+
+ROOT="/mnt"
+BASE="/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME"
+TODAY=datetime.date.today().isoformat()
+OUT=f"{BASE}/FREYA_LIVE/{TODAY}/SIGNAL_HARVEST"
+os.makedirs(OUT,exist_ok=True)
+
+E=re.compile(r'[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}')
+L=re.compile(r'https?://(?:www\.)?linkedin\.com/[^\s<>"\']+',re.I)
+W=re.compile(r'(?<!\d)\+?\d[\d ()/-]{7,}\d(?!\d)')
+
+SIG={
+ "URGENT":["urgent","hitno","deadline","today","danas","asap"],
+ "INVESTMENT":["invest","investment","investitor","equity","capital"],
+ "FINANCE":["finance","financing","fund","bank","lender","loan","debt"],
+ "ENERGY":["energy","energija","solar","grid","transformer"],
+ "INFRASTRUCTURE":["infrastructure","infrastruktura"],
+ "PROJECT":["project","projekat","tender","rfq","offer","ponuda"],
+ "VDR":["vdr","data room","due diligence"],
+ "PARTNER":["partner","cooperation","saradnja","collaboration"]
+}
+
+files=contacts=signals=drafts=0
+seen=set()
+
+def draft(contact,channel,sigs,ctx,src):
+ global drafts
+ key=hashlib.sha256((contact+channel+ctx).encode()).hexdigest()[:12]
+ if key in seen:return
+ seen.add(key)
+
+ priority="HIGH" if any(x in sigs for x in ("URGENT","INVESTMENT","FINANCE","VDR")) else "NORMAL"
+ subject="Strategic follow-up — "+", ".join(sigs[:3])
+
+ text=f"""FREYA LIVE SIGNAL
+DATE={TODAY}
+CHANNEL={channel}
+CONTACT={contact}
+SIGNALS={','.join(sigs)}
+PRIORITY={priority}
+SOURCE={src}
+STATUS=READY_FOR_HUMAN_GATE
+AUTOMATIC_SEND=NO
+
+CONTEXT:
+{ctx[:600]}
+
+SUBJECT:
+{subject}
+
+DRAFT:
+
+Poštovani,
+
+javljam Vam se povodom teme koju smo identifikovali kao relevantnu za:
+{', '.join(sigs)}.
+
+Voljela bih da provjerimo postoji li prostor za konkretan naredni korak ili kratak inicijalni razgovor. Po potrebi možemo dostaviti odgovarajući strukturirani VDR ili projektnu dokumentaciju.
+
+Srdačno,
+Danijela Djurovic Keskin
+
+HUMAN_GATE_REQUIRED=YES
+"""
+ open(f"{OUT}/{priority}_{channel}_{key}.txt","w").write(text)
+ drafts+=1
+
+for b,ds,fs in os.walk(ROOT):
+ if b[len(ROOT):].count(os.sep)>7:ds[:]=[]
+ for n in fs:
+  if not n.lower().endswith((".txt",".csv",".md",".json",".html",".htm")):continue
+  p=os.path.join(b,n)
+  try:s=open(p,"r",errors="ignore").read(1500000)
+  except:continue
+  files+=1
+  lines=s.splitlines()
+
+  for i,line in enumerate(lines):
+   ctx=" ".join(lines[max(0,i-2):min(len(lines),i+3)])
+   low=ctx.lower()
+   ss=[k for k,v in SIG.items() if any(x in low for x in v)]
+   if not ss:continue
+   signals+=1
+
+   for x in sorted(set(E.findall(line))):
+    contacts+=1; draft(x.lower(),"EMAIL",ss,ctx,p)
+
+   for x in sorted(set(L.findall(line))):
+    contacts+=1; draft(x,"LINKEDIN",ss,ctx,p)
+
+   if any(k in low for k in ("whatsapp","phone","telefon","mobile","gsm")):
+    for x in W.findall(line):
+     d=re.sub(r'\D','',x)
+     if 8<=len(d)<=15 and len(set(d))>=4:
+      contacts+=1
+      draft(("+" if x.strip().startswith("+") else "")+d,"WHATSAPP_OR_CALL",ss,ctx,p)
+
+print("===FREYA_SIGNAL_HARVEST===")
+print("DATE="+TODAY)
+print("FILES_SCANNED="+str(files))
+print("SIGNAL_CONTEXTS="+str(signals))
+print("CONTACT_OCCURRENCES="+str(contacts))
+print("DRAFTS="+str(drafts))
+print("OUTPUT="+OUT)
+print("AUTOMATIC_SEND=NO")
+print("HUMAN_GATE=ACTIVE")
+print("RESULT=PASS")

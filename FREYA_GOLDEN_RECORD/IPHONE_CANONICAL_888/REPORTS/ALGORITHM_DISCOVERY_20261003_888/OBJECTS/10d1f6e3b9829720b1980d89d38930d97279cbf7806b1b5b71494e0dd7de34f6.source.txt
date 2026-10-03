@@ -1,0 +1,23 @@
+from queue import QueueV2
+
+class SchedulerV2:
+
+    def __init__(self):
+        self.queue=QueueV2()
+
+    def enqueue(self,path):
+        return self.queue.add(path)
+
+    def next(self):
+        return self.queue.pop()
+
+    def pending(self):
+        return self.queue.count()
+
+    def idle(self):
+        return self.queue.empty()
+
+if __name__=="__main__":
+    s=SchedulerV2()
+    print("SCHEDULER_V2_READY")
+    print("PENDING=%d"%s.pending())

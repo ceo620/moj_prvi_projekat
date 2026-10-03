@@ -1,0 +1,114 @@
+#!/bin/sh
+set -eu
+umask 077
+
+R=$1
+ID=$2
+A=$R/10_LOGS/AUDIT_LEDGER_V1.tsv
+E=$R/09_EVIDENCE/$ID
+T=$R/09_EVIDENCE/.$ID.$$
+L=$R/10_LOGS/$ID.log
+M=$R/11_METRICS/$ID.env
+H=$R/12_HEALTH/$ID.env
+
+[ -f "$A" ] || exit 2
+[ ! -e "$E" ] || exit 3
+[ ! -e "$T" ] || exit 4
+[ ! -e "$L" ] || exit 5
+[ ! -e "$M" ] || exit 6
+[ ! -e "$H" ] || exit 7
+
+mkdir -m 700 "$T"
+
+UTC=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+FREE=$(df -Pk "$R" | awk 'END {print $4}')
+QF=$(find "$R/06_QUEUE" -type f | wc -l | tr -d ' ')
+PF=$(find "$R/07_PACKAGE_FACTORY/PACKAGES" -type f -name '*.tar.gz' |
+    wc -l | tr -d ' ')
+EF=$(find "$R/09_EVIDENCE" -type d | wc -l | tr -d ' ')
+AF=$(find "$R/02_AGENT_REGISTRY" -type f | wc -l | tr -d ' ')
+
+HEALTH=PASS
+[ -d "$R/06_QUEUE" ] || HEALTH=FAIL
+[ -x "$R/03_AGENT_RUNTIME/PACKAGE_FACTORY_V1.sh" ] || HEALTH=FAIL
+[ "$FREE" -ge 524288 ] || HEALTH=FAIL
+
+cat > "$T/EVENT.env" <<EVENT
+EVENT_ID=$ID
+EVENT_TYPE=SYNTHETIC_OBSERVABILITY_TEST
+NODE=FREYA_IPHONE_NODE_888
+PROTOCOL=888
+CREATED_AT_UTC=$UTC
+NETWORK_CONNECTIONS_OPENED=0
+EVENT
+
+cat > "$T/LOG.txt" <<LOG
+UTC=$UTC
+LEVEL=INFO
+EVENT_ID=$ID
+MESSAGE=OBSERVABILITY_SYNTHETIC_CYCLE_COMPLETED
+LOG
+
+cat > "$T/METRICS.env" <<METRICS
+COLLECTED_AT_UTC=$UTC
+FREE_KB=$FREE
+QUEUE_FILE_COUNT=$QF
+PACKAGE_ARCHIVE_COUNT=$PF
+EVIDENCE_DIRECTORY_COUNT=$EF
+AGENT_REGISTRY_FILE_COUNT=$AF
+METRICS
+cat > "$T/HEALTH.env" <<HEALTHFILE
+CHECKED_AT_UTC=$UTC
+NODE_HEALTH=$HEALTH
+PACKAGE_FACTORY_EXECUTABLE=YES
+QUEUE_DIRECTORY_PRESENT=YES
+STORAGE_THRESHOLD=PASS
+RUNTIME_MODE=AVAILABLE_NOW
+IOS_BACKGROUND_GUARANTEE=NO
+HEALTHFILE
+
+EH=$(sha256sum "$T/EVENT.env" | cut -d' ' -f1)
+SEQ=$(wc -l < "$A" | tr -d ' ')
+
+if [ "$SEQ" -eq 1 ]; then
+    PREV=GENESIS
+else
+    PREV=$(tail -n 1 "$A" | awk -F '\t' '{print $6}')
+fi
+
+ROW=$(printf '%s\t%s\t%s\t%s\t%s' \
+    "$SEQ" "$UTC" "$ID" "$EH" "$PREV")
+
+RH=$(printf '%s' "$ROW" |
+    sha256sum |
+    cut -d' ' -f1)
+
+printf '%s\t%s\n' "$ROW" "$RH" >> "$A"
+
+cat > "$T/AUDIT_RECEIPT.env" <<AUDIT
+AUDIT_SEQUENCE=$SEQ
+EVENT_ID=$ID
+EVENT_SHA256=$EH
+PREVIOUS_HASH=$PREV
+ROW_HASH=$RH
+APPEND_RESULT=PASS
+AUDIT
+
+(
+    cd "$T"
+    sha256sum \
+        EVENT.env \
+        LOG.txt \
+        METRICS.env \
+        HEALTH.env \
+        AUDIT_RECEIPT.env \
+        > EVIDENCE_MANIFEST.sha256
+)
+
+mv "$T" "$E"
+cp "$E/LOG.txt" "$L"
+cp "$E/METRICS.env" "$M"
+cp "$E/HEALTH.env" "$H"
+chmod 600 "$L" "$M" "$H"
+
+echo "$E"

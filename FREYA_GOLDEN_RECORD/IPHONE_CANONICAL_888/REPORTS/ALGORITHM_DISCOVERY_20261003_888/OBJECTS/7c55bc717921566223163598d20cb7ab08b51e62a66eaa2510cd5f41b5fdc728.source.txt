@@ -1,0 +1,37 @@
+import hashlib
+import sys
+from pathlib import Path
+
+def sha256(path):
+    h = hashlib.sha256()
+    with Path(path).open("rb") as f:
+        for block in iter(lambda: f.read(65536), b""):
+            h.update(block)
+    return h.hexdigest()
+
+def main():
+    if len(sys.argv) != 4:
+        raise SystemExit("USAGE: before after expected_change")
+
+    before, after, expected = sys.argv[1:]
+    if expected not in ("UNCHANGED", "CHANGED"):
+        raise SystemExit("HUMAN_HOLD:EXPECTED_CHANGE_INVALID")
+
+    hb = sha256(before)
+    ha = sha256(after)
+    actual = "UNCHANGED" if hb == ha else "CHANGED"
+
+    print("SHA256_BEFORE=" + hb)
+    print("SHA256_AFTER=" + ha)
+    print("ACTUAL=" + actual)
+    print("EXPECTED=" + expected)
+
+    if actual != expected:
+        print("RESULT=HUMAN_HOLD")
+        print("REASON=UNEXPECTED_HASH_STATE")
+        raise SystemExit(70)
+
+    print("RESULT=PASS")
+
+if __name__ == "__main__":
+    main()

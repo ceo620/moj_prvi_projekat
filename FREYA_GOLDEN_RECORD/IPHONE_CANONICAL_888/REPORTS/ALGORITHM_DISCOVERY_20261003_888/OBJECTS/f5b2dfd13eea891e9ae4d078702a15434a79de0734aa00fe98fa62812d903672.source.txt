@@ -1,0 +1,76 @@
+from pathlib import Path
+import os,json,stat,hashlib,subprocess,tempfile,fcntl
+r=Path("/root/FREYA_IPHONE_ISH_NODE_888")
+os.umask(0o077)
+e=r/"09_EVIDENCE/V889_AUTO"
+e.mkdir(exist_ok=True)
+lock=(e/"LOCK").open("a")
+try:
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+except BlockingIOError:
+    raise SystemExit("BUSY")
+scanner=r/"05_SYSTEM_RUNTIME/V889_ISH.py"
+scope=json.loads((r/"09_EVIDENCE/V889_SYSTEM_SCOPE.json").read_text())
+assert hashlib.sha256(scanner.read_bytes()).hexdigest()==scope["scanner_sha256"]
+state=e/"STATE.json"
+j=json.loads(state.read_text()) if state.exists() else {
+    "pending":["."],"seen":[],"results":[]}
+def save():
+    q=e/"STATE.tmp"
+    q.write_text(json.dumps(j,ensure_ascii=False,indent=2))
+    os.replace(q,state)
+for cycle in range(8):
+    if not j["pending"]: break
+    rel=j["pending"][0]
+    p=r/rel
+    out=Path(tempfile.mkdtemp(prefix="RUN_",dir=e))
+    result={"folder":rel,"report":str(out)}
+    try:
+        assert not p.is_symlink(), "DIRECTORY_LINK"
+        rows=[]
+        for q in p.iterdir():
+            rows.append(q)
+            if len(rows)>1000:
+                raise ValueError("DIRECTORY_LIMIT_1000")
+        meta=[]
+        code=0
+        for q in sorted(rows):
+            s=q.lstat()
+            n=str(q.relative_to(r)) if r in q.parents else str(q)
+            kind="OTHER"
+            if stat.S_ISLNK(s.st_mode):
+                kind="LINK_NOT_FOLLOWED"
+            elif stat.S_ISDIR(s.st_mode):
+                kind="DIR"
+                if q==e or q.name=="__pycache__":
+                    kind="EXCLUDED_AUDIT_OR_CACHE"
+                elif n not in j["seen"] and n not in j["pending"]:
+                    j["pending"].append(n)
+            elif stat.S_ISREG(s.st_mode):
+                kind="FILE"
+                code+=q.suffix.lower() in {".py",".sh",".ps1",".bat",".cmd"}
+            meta.append([q.name,kind,s.st_size])
+        (out/"METADATA.json").write_text(json.dumps(meta,ensure_ascii=False))
+        result["code_files"]=code
+        result["status"]="METADATA_ONLY"
+        if code:
+            with (out/"SCAN.log").open("w") as log:
+                run=subprocess.run(["/usr/bin/python3","-I","-S","-B",
+                    str(scanner),"--root",str(p),"--output",str(out),
+                    "--strict"],stdout=log,stderr=log,timeout=30)
+            result["exit"]=run.returncode
+            result["status"]={0:"SCANNED",2:"FINDINGS_REVIEW"}.get(
+                run.returncode,"HOLD_SCAN_ERROR")
+    except Exception as ex:
+        result["status"]="HOLD"
+        result["error"]=str(ex)
+    j["pending"].pop(0)
+    j["seen"].append(rel)
+    j["results"].append(result)
+    save()
+print("FOLDERS_RECORDED="+str(len(j["results"])))
+print("PENDING_FOLDERS="+str(len(j["pending"])))
+print("HOLD_OR_REVIEW="+str(sum(
+    x["status"] not in ("SCANNED","METADATA_ONLY") for x in j["results"])))
+print("STATE="+str(state))
+print("CONTENT_APPROVAL=NONE; SCANNED_SCRIPTS_EXECUTED=NO")

@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import os,json,hashlib,tempfile,sys
+def sha(p):
+ h=hashlib.sha256()
+ with open(p,"rb") as f:
+  while True:
+   b=f.read(65536)
+   if not b: break
+   h.update(b)
+ return h.hexdigest()
+if len(sys.argv)!=5 or sys.argv[1]!="register": raise SystemExit(64)
+_,_,src,parent,reg=sys.argv
+obj=sha(src)
+rec={"object_sha256":obj,"parent_sha256":parent,"size_bytes":os.path.getsize(src)}
+rows={}
+if os.path.exists(reg):
+ with open(reg) as f:
+  for l in f:
+   if l.strip():
+    r=json.loads(l);rows[r["object_sha256"]]=r
+if obj in rows and rows[obj]!=rec: raise SystemExit(67)
+rows[obj]=rec
+fd,tmp=tempfile.mkstemp(prefix=".lineage.",dir=os.path.dirname(reg) or ".")
+with os.fdopen(fd,"w") as f:
+ for k in sorted(rows):
+  f.write(json.dumps(rows[k],sort_keys=True,separators=(",",":"))+"\n")
+ f.flush();os.fsync(f.fileno())
+os.replace(tmp,reg)
+print("RESULT=PASS")

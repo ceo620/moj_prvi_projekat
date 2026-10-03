@@ -1,0 +1,26 @@
+#!/bin/sh
+BASE="$(dirname "$(dirname "$0")")"
+CASE="$BASE/04_CASES/CASE_0001.txt"
+OUT="$BASE/05_DECISION_CARDS/DECISION_CARD_0001_AUTO.txt"
+
+QUESTION="$(grep '^QUESTION=' "$CASE" | cut -d= -f2-)"
+EVIDENCE="$(grep '^EVIDENCE=' "$CASE" | cut -d= -f2-)"
+
+if [ -n "$EVIDENCE" ] && [ "$EVIDENCE" != "PENDING" ]; then
+  RECOMMENDATION="REVIEW"
+  REASON="Dokaz postoji, ali treba Human Gate pregled."
+else
+  RECOMMENDATION="HOLD"
+  REASON="Nema dovoljno dokaza."
+fi
+
+cat > "$OUT" <<CARD
+DECISION_CARD_ID=0001_AUTO
+QUESTION=$QUESTION
+EVIDENCE=$EVIDENCE
+RECOMMENDATION=$RECOMMENDATION
+REASON=$REASON
+FINAL_DECISION=PENDING_HUMAN_GATE
+CARD
+
+cat "$OUT"

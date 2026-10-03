@@ -1,0 +1,3 @@
+#!/bin/sh
+unset ENV BASH_ENV PYTHONPATH PYTHONHOME
+exec /usr/bin/python3 -I -S -B /root/FREYA_LOCAL_CONSOLE_011_897ch_y1/freya_gate.py "$@"

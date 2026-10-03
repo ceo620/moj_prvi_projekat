@@ -1,0 +1,35 @@
+#!/bin/sh
+set -eu
+umask 077
+
+R=$1
+ID=$2
+OUT=$3
+STATE=$R/17_RUNTIME/$ID.state.env
+LOCK=$R/17_RUNTIME/$ID.lock
+
+[ -f "$STATE" ] || exit 30
+[ ! -e "$LOCK" ] || exit 31
+[ ! -e "$OUT" ] || exit 32
+
+grep -qx 'LAST_RESULT=PASS' "$STATE"
+grep -qx 'CHECKPOINT=YES' "$STATE"
+grep -qx 'RESUME_AFTER_SUSPEND=YES' "$STATE"
+grep -qx 'IOS_BACKGROUND_GUARANTEE=NO' "$STATE"
+
+COUNT=$(sed -n 's/^CYCLE_COUNT=//p' "$STATE")
+
+case "$COUNT" in
+    ''|*[!0-9]*) exit 33 ;;
+esac
+
+cat > "$OUT" <<WATCH
+WATCHDOG=PASS
+RUNTIME_ID=$ID
+CYCLE_COUNT=$COUNT
+ACTIVE_LOCK=NO
+LAST_RESULT=PASS
+CHECKPOINT=PASS
+RESUME_POLICY=PASS
+IOS_BACKGROUND_GUARANTEE=NO
+WATCH

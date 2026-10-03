@@ -1,0 +1,73 @@
+import json, os, sys
+from pathlib import Path
+
+FLOW = [
+    "DISCOVERED",
+    "QUEUED",
+    "VALIDATED",
+    "PROCESSING",
+    "COMPLETED",
+    "FAILED",
+    "ARCHIVED",
+]
+
+def append(path, row):
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("a", encoding="utf-8", newline="\n") as f:
+        f.write(json.dumps(row, sort_keys=True, separators=(",", ":")) + "\n")
+        f.flush()
+        os.fsync(f.fileno())
+
+def last_state(path, object_id):
+    p = Path(path)
+    if not p.exists():
+        return None
+    state = None
+    for line in p.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        if row.get("object_id") == object_id:
+            state = row.get("state")
+    return state
+
+def allowed(previous, current):
+    if previous is None:
+        return current == "DISCOVERED"
+    if previous == "PROCESSING":
+        return current in ("COMPLETED", "FAILED")
+    if previous == "FAILED":
+        return current == "ARCHIVED"
+    if previous == "COMPLETED":
+        return current == "ARCHIVED"
+    try:
+        return FLOW.index(current) == FLOW.index(previous) + 1
+    except ValueError:
+        return False
+
+def main():
+    if len(sys.argv) != 5:
+        raise SystemExit("USAGE: journal object_id utc state")
+    journal, object_id, utc, state = sys.argv[1:]
+    if state not in FLOW:
+        raise SystemExit("HUMAN_HOLD:LINEAGE_STATE_INVALID")
+    previous = last_state(journal, object_id)
+    if not allowed(previous, state):
+        print("PREVIOUS=" + str(previous))
+        print("REQUESTED=" + state)
+        print("RESULT=HUMAN_HOLD")
+        print("REASON=INVALID_LINEAGE_TRANSITION")
+        raise SystemExit(71)
+    append(journal, {
+        "object_id": object_id,
+        "previous": previous,
+        "state": state,
+        "utc": utc,
+    })
+    print("PREVIOUS=" + str(previous))
+    print("STATE=" + state)
+    print("RESULT=PASS")
+
+if __name__ == "__main__":
+    main()

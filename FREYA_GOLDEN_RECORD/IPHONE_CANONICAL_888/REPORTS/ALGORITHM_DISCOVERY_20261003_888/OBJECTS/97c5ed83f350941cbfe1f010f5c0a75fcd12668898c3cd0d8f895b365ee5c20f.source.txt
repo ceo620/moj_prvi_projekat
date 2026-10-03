@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+import hashlib,json,os,sys,tempfile
+def sha(path):
+ h=hashlib.sha256()
+ with open(path,"rb") as f:
+  for b in iter(lambda:f.read(65536),b""): h.update(b)
+ return h.hexdigest()
+if len(sys.argv)!=3:
+ print("RESULT=HUMAN_HOLD");print("REASON=USAGE");raise SystemExit(64)
+src,reg=sys.argv[1:]
+if not os.path.isfile(src):
+ print("RESULT=HUMAN_HOLD");print("REASON=SOURCE_NOT_FILE");raise SystemExit(65)
+obj=sha(src);rows={}
+if os.path.exists(reg):
+ with open(reg,encoding="utf-8") as f:
+  for line in f:
+   if line.strip():
+    r=json.loads(line);rows[r["sha256"]]=r
+status="DUPLICATE" if obj in rows else "NEW"
+rows[obj]={"sha256":obj,"size_bytes":os.path.getsize(src)}
+os.makedirs(os.path.dirname(reg) or ".",exist_ok=True)
+fd,tmp=tempfile.mkstemp(prefix=".duplicates.",dir=os.path.dirname(reg) or ".")
+with os.fdopen(fd,"w",encoding="utf-8") as f:
+ for key in sorted(rows):
+  f.write(json.dumps(rows[key],sort_keys=True,separators=(",",":"))+"\n")
+ f.flush();os.fsync(f.fileno())
+os.replace(tmp,reg)
+print("OBJECT_SHA256="+obj)
+print("DUPLICATE_STATUS="+status)
+print("REGISTRY_RECORDS="+str(len(rows)))
+print("RESULT=PASS")

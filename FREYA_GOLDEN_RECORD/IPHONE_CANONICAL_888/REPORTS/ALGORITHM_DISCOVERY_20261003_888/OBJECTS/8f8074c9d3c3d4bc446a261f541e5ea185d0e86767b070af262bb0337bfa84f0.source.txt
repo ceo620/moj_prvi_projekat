@@ -1,0 +1,10 @@
+from pathlib import Path
+
+class StateV2:
+    def save(self,path,text):
+        Path(path).write_text(text)
+    def load(self,path):
+        p=Path(path)
+        return p.read_text() if p.exists() else ""
+if __name__=="__main__":
+    print("STATE_V2_READY")

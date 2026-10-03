@@ -1,0 +1,57 @@
+#!/bin/sh
+set -eu
+
+ROOT="$HOME/FREYA_IPHONE_ISH_NODE_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+
+OUT="$ROOT/16_REPORTS/IPHONE_TRANSFORMATION_BATCH_010_$TS"
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS iPHONE TRANSFORMATION BATCH 010"
+echo "RUNTIME UPGRADE DECISION"
+echo "============================================================"
+
+cat > "$OUT/UPGRADE_DECISION.env" <<EOF
+ACTIVE_RUNTIME=15_RUNTIME
+UPGRADE_MODE=SHADOW_ONLY
+ACTIVATION=DENIED
+PRODUCTION_CHANGE=DENIED
+
+KEEP:
+15_RUNTIME
+00_CONTROL
+02_SSOT
+09_EVIDENCE
+17_BACKUP_ROLLBACK
+24_FINAL
+
+IMPROVEMENT_TARGETS:
+QUEUE_VALIDATION
+CONFIG_STANDARDIZATION
+ENTRYPOINT_DOCUMENTATION
+HEALTH_CHECKS
+RECOVERY_CHECKS
+
+STATUS=READY_FOR_DESIGN
+EOF
+
+
+echo "===== DECISION ====="
+cat "$OUT/UPGRADE_DECISION.env"
+
+
+echo
+echo "===== FINAL ====="
+
+echo "BATCH=010"
+echo "MODE=RUNTIME_UPGRADE_DECISION"
+echo "MUTATION=NO"
+echo "ACTIVATION=NO"
+echo "RESULT=PASS"
+echo "NEXT=BATCH_011_SHADOW_IMPROVEMENT_DESIGN"
+
+echo "REPORT=$OUT"
+
+echo "============================================================"
+

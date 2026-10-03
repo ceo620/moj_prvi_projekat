@@ -1,0 +1,159 @@
+#!/bin/sh
+set -eu
+umask 077
+
+COMMAND=$1
+WORK=$2
+PACKAGE_ID=$3
+SOURCE_PACKAGE=$4
+
+CHECKPOINT=$WORK/checkpoint.env
+STATE=$WORK/runtime_state.env
+PACKAGE=$WORK/package.tar.gz
+LOCK=$WORK/runtime.lock
+HISTORY=$WORK/lock_history
+RECEIPT=$WORK/resume_receipt.env
+
+file_hash() {
+    sha256sum "$1" | cut -d' ' -f1
+}
+
+case "$COMMAND" in
+    suspend)
+        [ -f "$SOURCE_PACKAGE" ] || exit 10
+        [ ! -e "$WORK" ] || exit 11
+
+        mkdir -m 700 "$WORK"
+        mkdir -m 700 "$HISTORY"
+        mkdir -m 700 "$LOCK"
+
+        cp "$SOURCE_PACKAGE" "$PACKAGE"
+
+        PACKAGE_HASH=$(file_hash "$PACKAGE")
+        UTC=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+
+        cat > "$WORK/.checkpoint.$$" <<EOF
+PACKAGE_ID=$PACKAGE_ID
+PACKAGE_SHA256=$PACKAGE_HASH
+LAST_SAFE_STATE=VALIDATED
+QUEUE_STATE=VALIDATED
+RUNTIME_STATE=SUSPENDED
+INTERRUPTION_CLASS=IOS_SUSPEND_SIMULATED
+CHECKPOINT_VALID=YES
+RESUME_COUNT=0
+CREATED_AT_UTC=$UTC
+EOF
+
+        mv "$WORK/.checkpoint.$$" "$CHECKPOINT"
+
+        cat > "$LOCK/metadata.env" <<EOF
+PACKAGE_ID=$PACKAGE_ID
+LOCK_CLASS=SUSPENDED_RUNTIME_LOCK
+INTERRUPTION_CLASS=IOS_SUSPEND_SIMULATED
+EOF
+
+        cat > "$WORK/.state.$$" <<EOF
+PACKAGE_ID=$PACKAGE_ID
+PACKAGE_SHA256=$PACKAGE_HASH
+LAST_SAFE_STATE=VALIDATED
+QUEUE_STATE=VALIDATED
+RUNTIME_STATE=SUSPENDED
+RESUME_COUNT=0
+NETWORK_CONNECTIONS_OPENED=0
+EOF
+
+        mv "$WORK/.state.$$" "$STATE"
+
+        exit 75
+        ;;
+    resume)
+        [ -d "$WORK" ] || exit 20
+        [ -f "$CHECKPOINT" ] || exit 21
+        [ -f "$STATE" ] || exit 22
+        [ -f "$PACKAGE" ] || exit 23
+
+        CHECKPOINT_ID=$(
+            sed -n 's/^PACKAGE_ID=//p' "$CHECKPOINT"
+        )
+
+        CHECKPOINT_HASH=$(
+            sed -n 's/^PACKAGE_SHA256=//p' "$CHECKPOINT"
+        )
+
+        CURRENT_STATE=$(
+            sed -n 's/^RUNTIME_STATE=//p' "$STATE"
+        )
+
+        [ "$CHECKPOINT_ID" = "$PACKAGE_ID" ] || exit 24
+        [ "$CHECKPOINT_HASH" = "$(file_hash "$PACKAGE")" ] || exit 25
+
+        if [ "$CURRENT_STATE" = RESUMED ]; then
+            grep -qx 'QUEUE_STATE=WAITING_FOR_MSI' "$STATE"
+            grep -qx 'RESUME_COUNT=1' "$STATE"
+
+            echo "RESULT=PASS"
+            echo "RESUME_ACTION=NOOP_ALREADY_RESUMED"
+            echo "PACKAGE_ID=$PACKAGE_ID"
+            echo "QUEUE_STATE=WAITING_FOR_MSI"
+            echo "RESUME_COUNT=1"
+            exit 0
+        fi
+
+        [ "$CURRENT_STATE" = SUSPENDED ] || exit 26
+        [ -d "$LOCK" ] || exit 27
+
+        grep -qx "PACKAGE_ID=$PACKAGE_ID" \
+            "$LOCK/metadata.env"
+
+        grep -qx \
+            'INTERRUPTION_CLASS=IOS_SUSPEND_SIMULATED' \
+            "$LOCK/metadata.env"
+
+        [ ! -e "$HISTORY/suspend_lock_1" ] || exit 28
+
+        mv "$LOCK" "$HISTORY/suspend_lock_1"
+
+        UTC=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+
+        cat > "$WORK/.state.$$" <<EOF
+PACKAGE_ID=$PACKAGE_ID
+PACKAGE_SHA256=$CHECKPOINT_HASH
+LAST_SAFE_STATE=VALIDATED
+QUEUE_STATE=WAITING_FOR_MSI
+RUNTIME_STATE=RESUMED
+RESUME_COUNT=1
+RESUMED_AT_UTC=$UTC
+CHECKPOINT_RESTORED=YES
+DATA_LOSS_ON_SUSPEND=NO
+DUPLICATE_PACKAGE_CREATED=NO
+NETWORK_CONNECTIONS_OPENED=0
+EOF
+
+        mv "$WORK/.state.$$" "$STATE"
+
+        [ ! -e "$RECEIPT" ] || exit 29
+
+        cat > "$WORK/.receipt.$$" <<EOF
+RESULT=PASS
+PACKAGE_ID=$PACKAGE_ID
+PACKAGE_SHA256=$CHECKPOINT_HASH
+FROM_STATE=VALIDATED
+TO_STATE=WAITING_FOR_MSI
+RESTART_RECOVERY=PASS
+CHECKPOINT_RESTORE=PASS
+RESUME_COUNT=1
+EOF
+
+        mv "$WORK/.receipt.$$" "$RECEIPT"
+
+        echo "RESULT=PASS"
+        echo "RESUME_ACTION=CHECKPOINT_RESTORED"
+        echo "PACKAGE_ID=$PACKAGE_ID"
+        echo "QUEUE_STATE=WAITING_FOR_MSI"
+        echo "RESUME_COUNT=1"
+        ;;
+
+    *)
+        exit 64
+        ;;
+esac

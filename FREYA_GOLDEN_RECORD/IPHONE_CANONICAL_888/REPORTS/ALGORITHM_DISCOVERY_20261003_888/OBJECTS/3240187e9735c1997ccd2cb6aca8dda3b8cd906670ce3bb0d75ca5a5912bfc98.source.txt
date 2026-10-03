@@ -1,0 +1,5 @@
+class DispatcherV2:
+    def dispatch(self,item):
+        return {"status":"READY","item":item}
+if __name__=="__main__":
+    print("DISPATCHER_V2_READY")

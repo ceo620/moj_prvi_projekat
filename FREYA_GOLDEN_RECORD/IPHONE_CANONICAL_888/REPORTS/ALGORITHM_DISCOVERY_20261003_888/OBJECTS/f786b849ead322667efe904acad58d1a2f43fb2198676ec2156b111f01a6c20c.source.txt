@@ -1,0 +1,418 @@
+#!/usr/bin/env python3
+"""FREYA iPhone Node 888 - A39R2 foreground business runtime acceptance.
+
+This candidate is intentionally non-canonical. It validates:
+- real integrated business-logic execution,
+- source hash stability,
+- duplicate-processing prevention,
+- atomic checkpoint writes,
+- single-instance locking,
+- graceful stop handling,
+- foreground-resumable operation without background guarantees.
+"""
+
+import glob
+import hashlib
+import json
+import os
+import shutil
+import subprocess
+import sys
+import time
+from pathlib import Path
+from typing import Dict, Iterable, List, Set, Tuple
+
+
+ROOT = Path("/root/FREYA_IPHONE_ISH_NODE_888")
+CONTROL = ROOT / "00_CONTROL"
+BATCHES = CONTROL / "BATCHES_ACTIVE"
+CHECKPOINTS = CONTROL / "CHECKPOINTS"
+ALLOWLIST = CONTROL / "EXECUTION_ALLOWLIST_V1_2.tsv"
+SELF = Path(__file__).resolve()
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def read_env(path: Path) -> Dict[str, str]:
+    values: Dict[str, str] = {}
+    for line in path.read_text(errors="ignore").splitlines():
+        if "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        values[key] = value
+    return values
+
+
+def latest_summary(pattern: str) -> Path:
+    matches = sorted(glob.glob(str(BATCHES / pattern / "SUMMARY.env")))
+    if not matches:
+        raise RuntimeError("EVIDENCE_MISSING_" + pattern)
+    return Path(matches[-1])
+
+
+def atomic_write(path: Path, text: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(path.name + ".tmp")
+    temporary.write_text(text)
+    os.replace(str(temporary), str(path))
+
+
+def source_files(source_root: Path) -> List[Path]:
+    return sorted(path for path in source_root.rglob("*") if path.is_file())
+
+
+def cycle(arguments: List[str]) -> int:
+    if len(arguments) != 7:
+        print("RESULT=HUMAN_HOLD")
+        print("BLOCKED_REASON=INVALID_ARGUMENT_COUNT")
+        return 2
+
+    source_root = Path(arguments[0])
+    integrated = Path(arguments[1])
+    processor = Path(arguments[2])
+    binder = Path(arguments[3])
+    allowlist = Path(arguments[4])
+    agent_id = arguments[5]
+    state = Path(arguments[6])
+
+    for required in (source_root, integrated, processor, binder, allowlist):
+        if not required.exists():
+            print("RESULT=HUMAN_HOLD")
+            print("BLOCKED_REASON=CYCLE_PREREQUISITE_MISSING")
+            return 3
+
+    state.mkdir(parents=True, exist_ok=True)
+    runs = state / "RUNS"
+    runs.mkdir(exist_ok=True)
+
+    lock = state / "LOCK"
+    stop = state / "STOP"
+    index_file = state / "INDEX.json"
+    checkpoint_file = state / "CHECKPOINT.env"
+
+    try:
+        lock.mkdir()
+    except FileExistsError:
+        print("RESULT=LOCKED")
+        return 73
+
+    try:
+        if stop.exists():
+            print("RESULT=STOPPED")
+            return 75
+
+        if index_file.exists():
+            try:
+                index = json.loads(index_file.read_text())
+            except (OSError, json.JSONDecodeError):
+                print("RESULT=HUMAN_HOLD")
+                print("BLOCKED_REASON=INDEX_INVALID")
+                return 76
+        else:
+            index = {}
+
+        fresh: List[Tuple[Path, str]] = []
+        for source in source_files(source_root):
+            digest = sha256(source)
+            if index.get(str(source)) != digest:
+                fresh.append((source, digest))
+
+        stamp = time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
+        work = runs / (stamp + "_PID" + str(os.getpid()))
+        intake = work / "INTAKE" / "STAGING"
+        intake.mkdir(parents=True, exist_ok=True)
+
+        processed = 0
+        idle = 0
+
+        if fresh:
+            for number, (source, _) in enumerate(fresh, start=1):
+                target = intake / ("%04d_%s" % (number, source.name))
+                shutil.copy2(str(source), str(target))
+
+            runtime_log = work / "RUNTIME.log"
+            with runtime_log.open("wb") as output:
+                result = subprocess.run(
+                    [
+                        "sh",
+                        str(integrated),
+                        str(work),
+                        str(processor),
+                        str(binder),
+                        str(allowlist),
+                        agent_id,
+                        str(work / "OUTPUT"),
+                    ],
+                    stdout=output,
+                    stderr=subprocess.STDOUT,
+                    check=False,
+                )
+
+            output_lines: Set[str] = set(
+                runtime_log.read_text(errors="ignore").splitlines()
+            )
+            required_lines = {
+                "RESULT=PASS",
+                "OBJECTS_COMPLETED=" + str(len(fresh)),
+                "AGENT_CODE_EXECUTED=YES",
+                "SOURCE_HASH_STABLE=YES",
+            }
+
+            if result.returncode != 0 or not required_lines.issubset(output_lines):
+                print("RESULT=HUMAN_HOLD")
+                print("BLOCKED_REASON=INTEGRATED_RUNTIME_FAIL")
+                print("RUNTIME_EXIT=" + str(result.returncode))
+                print("RUNTIME_LOG=" + str(runtime_log))
+                return 4
+
+            for source, digest in fresh:
+                if sha256(source) != digest:
+                    print("RESULT=HUMAN_HOLD")
+                    print("BLOCKED_REASON=SOURCE_HASH_CHANGED")
+                    print("SOURCE=" + str(source))
+                    return 74
+                index[str(source)] = digest
+
+            processed = len(fresh)
+        else:
+            idle = 1
+
+        atomic_write(
+            index_file,
+            json.dumps(index, indent=2, sort_keys=True) + "\n",
+        )
+
+        checkpoint_text = "\n".join(
+            [
+                "RESULT=PASS",
+                "LAST_RUN_DIR=" + str(work),
+                "OBJECTS_PROCESSED=" + str(processed),
+                "IDLE_CYCLES=" + str(idle),
+                "PROCESSED_INDEX_COUNT=" + str(len(index)),
+                "NETWORK_ACTION=NONE",
+                "ORIGINALS_MODIFIED=NO",
+                "",
+            ]
+        )
+        atomic_write(checkpoint_file, checkpoint_text)
+
+        print("RESULT=PASS")
+        print("OBJECTS_PROCESSED=" + str(processed))
+        print("IDLE_CYCLES=" + str(idle))
+        print("PROCESSED_INDEX_COUNT=" + str(len(index)))
+        print("CHECKPOINT_RESUME=PASS")
+        print("DUPLICATE_PROCESSING_PREVENTED=YES")
+        print("NETWORK_ACTION=NONE")
+        print("ORIGINALS_MODIFIED=NO")
+        return 0
+
+    finally:
+        try:
+            lock.rmdir()
+        except OSError:
+            pass
+
+
+def acceptance() -> None:
+    stamp = time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
+    pid = os.getpid()
+    evidence = BATCHES / ("A39R2_%s_%s" % (stamp, pid))
+    canary = ROOT / "99_CANARY" / ("A39R2_%s_%s" % (stamp, pid))
+    source = canary / "INTAKE" / "STAGING"
+    state = canary / "STATE"
+
+    evidence.mkdir(parents=True, exist_ok=False)
+    source.mkdir(parents=True, exist_ok=False)
+    CHECKPOINTS.mkdir(parents=True, exist_ok=True)
+
+    def hold(reason: str) -> None:
+        receipt = "\n".join(
+            [
+                "PROTOCOL=888",
+                "BATCH_ID=A39R2_FOREGROUND_BUSINESS_RUNTIME",
+                "RESULT=HUMAN_HOLD",
+                "BLOCKED_REASON=" + reason,
+                "NETWORK_ACTION=NONE",
+                "ORIGINALS_MODIFIED=NO",
+                "SSOT_MODIFIED=NO",
+                "EVIDENCE_DIR=" + str(evidence),
+                "",
+            ]
+        )
+        (evidence / "HOLD.env").write_text(receipt)
+        print(receipt, end="")
+        raise SystemExit(1)
+
+    try:
+        a37 = read_env(latest_summary("A37_*"))
+        a34 = read_env(latest_summary("A34_*"))
+        a36 = read_env(latest_summary("A36R3_*"))
+
+        if a37.get("RESULT") != "PASS":
+            hold("A37_NOT_PASS")
+        if a34.get("RESULT") != "PASS":
+            hold("A34_NOT_PASS")
+        if a36.get("RESULT") != "PASS":
+            hold("A36R3_NOT_PASS")
+
+        integrated = Path(a37["CANDIDATE"])
+        processor = Path(a34["CANDIDATE"])
+        binder = Path(a36["CANDIDATE"])
+        agent_id = a36["AGENT_ID"]
+    except (KeyError, RuntimeError, OSError) as error:
+        hold("EVIDENCE_ERROR_" + str(error))
+
+    for required_file in (integrated, processor, binder, ALLOWLIST):
+        if not required_file.is_file():
+            hold("PREREQUISITE_MISSING_" + str(required_file))
+
+    if sha256(integrated) != a37.get("CANDIDATE_SHA256"):
+        hold("INTEGRATED_RUNTIME_HASH_FAIL")
+    if sha256(processor) != a34.get("CANDIDATE_SHA256"):
+        hold("PROCESSOR_HASH_FAIL")
+    if sha256(binder) != a36.get("CANDIDATE_SHA256"):
+        hold("BINDER_HASH_FAIL")
+
+    (source / "A.txt").write_text("first\n")
+    (source / "B.csv").write_text("amount,currency\n100,EUR\n")
+
+    original: Dict[str, str] = {
+        str(path): sha256(path) for path in source.iterdir() if path.is_file()
+    }
+
+    def run(name: str) -> Tuple[subprocess.CompletedProcess, Set[str]]:
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(SELF),
+                "--cycle",
+                str(source),
+                str(integrated),
+                str(processor),
+                str(binder),
+                str(ALLOWLIST),
+                agent_id,
+                str(state),
+            ],
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        (evidence / name).write_text(result.stdout + result.stderr)
+        return result, set(result.stdout.splitlines())
+
+    run1, out1 = run("RUN1.log")
+    if run1.returncode != 0 or "OBJECTS_PROCESSED=2" not in out1:
+        hold("FIRST_CYCLE_FAIL")
+
+    run2, out2 = run("RUN2.log")
+    if run2.returncode != 0 or "OBJECTS_PROCESSED=0" not in out2:
+        hold("DUPLICATE_PREVENTION_FAIL")
+    if "IDLE_CYCLES=1" not in out2:
+        hold("IDLE_CYCLE_FAIL")
+
+    (source / "C.md").write_text("third\n")
+    original[str(source / "C.md")] = sha256(source / "C.md")
+
+    run3, out3 = run("RUN3.log")
+    if run3.returncode != 0 or "OBJECTS_PROCESSED=1" not in out3:
+        hold("RESUME_FAIL")
+    if "PROCESSED_INDEX_COUNT=3" not in out3:
+        hold("INDEX_FAIL")
+
+    for name, digest in original.items():
+        if sha256(Path(name)) != digest:
+            hold("SOURCE_HASH_CHANGED")
+
+    (state / "LOCK").mkdir()
+    try:
+        lock_run, _ = run("LOCK.log")
+    finally:
+        try:
+            (state / "LOCK").rmdir()
+        except OSError:
+            pass
+    if lock_run.returncode != 73:
+        hold("LOCK_TEST_FAIL")
+
+    (state / "STOP").touch()
+    try:
+        stop_run, _ = run("STOP.log")
+    finally:
+        try:
+            (state / "STOP").unlink()
+        except OSError:
+            pass
+    if stop_run.returncode != 75:
+        hold("STOP_TEST_FAIL")
+
+    if not (state / "INDEX.json").is_file():
+        hold("INDEX_MISSING")
+    if not (state / "CHECKPOINT.env").is_file():
+        hold("CHECKPOINT_MISSING")
+
+    shutil.copy2(str(state / "INDEX.json"), str(evidence / "INDEX.json"))
+    shutil.copy2(
+        str(state / "CHECKPOINT.env"),
+        str(evidence / "RUNTIME_CHECKPOINT.env"),
+    )
+
+    summary = "\n".join(
+        [
+            "PROTOCOL=888",
+            "BATCH_ID=A39R2_FOREGROUND_BUSINESS_RUNTIME",
+            "RESULT=PASS",
+            "CANDIDATE=" + str(SELF),
+            "CANDIDATE_SHA256=" + sha256(SELF),
+            "EXECUTING_AGENT_ID=" + agent_id,
+            "LOGICAL_AGENTS_REGISTERED=18",
+            "ACTUAL_LOGIC_AGENT_COUNT=1",
+            "OBJECTS_UNIQUE_PROCESSED=3",
+            "DUPLICATE_PROCESSING_PREVENTED=YES",
+            "CHECKPOINT_RESUME=PASS",
+            "ATOMIC_CHECKPOINT_WRITE=PASS",
+            "SINGLE_INSTANCE_LOCK=PASS",
+            "LOCK_DENIAL_EXIT=73",
+            "GRACEFUL_STOP=PASS",
+            "STOP_SIGNAL_EXIT=75",
+            "SOURCE_HASH_STABLE=YES",
+            "FOREGROUND_BOUNDED_LOOP=PASS",
+            "CANONICAL_ACTIVATION=NO",
+            "BACKGROUND_GUARANTEE=NO",
+            "NETWORK_ACTION=NONE",
+            "ORIGINALS_MODIFIED=NO",
+            "SSOT_MODIFIED=NO",
+            "NEXT=A40_FOREGROUND_BUSINESS_RUNTIME_ACCEPTANCE",
+            "EVIDENCE_DIR=" + str(evidence),
+            "",
+        ]
+    )
+
+    (evidence / "SUMMARY.env").write_text(summary)
+    (evidence / "FINAL_RECEIPT.env").write_text(summary)
+    checkpoint_file = CHECKPOINTS / ("A39R2_%s_%s.env" % (stamp, pid))
+    checkpoint_file.write_text(summary)
+
+    manifest: List[str] = []
+    for path in sorted(evidence.rglob("*")):
+        if path.is_file() and path.name != "HASH_MANIFEST.sha256":
+            manifest.append(
+                sha256(path) + "  " + str(path.relative_to(evidence))
+            )
+    (evidence / "HASH_MANIFEST.sha256").write_text(
+        "\n".join(manifest) + "\n"
+    )
+
+    print(summary, end="")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == "--cycle":
+        raise SystemExit(cycle(sys.argv[2:]))
+    acceptance()

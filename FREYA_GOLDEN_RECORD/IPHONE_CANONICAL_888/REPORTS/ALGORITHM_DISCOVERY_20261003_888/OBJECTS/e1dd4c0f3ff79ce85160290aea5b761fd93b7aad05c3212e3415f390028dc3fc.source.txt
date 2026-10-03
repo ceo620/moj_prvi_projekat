@@ -1,0 +1,91 @@
+#!/usr/bin/env python3
+"""Existing TITAN 1 memorandum generator repaired for standard-library DOCX output."""
+from pathlib import Path
+import json, hashlib, zipfile, io, sys
+from xml.sax.saxutils import escape
+import xml.etree.ElementTree as ET
+R=Path('/root/FREYA_IPHONE_ISH_NODE_888')
+K=R/'01_CANONICAL_BASE/KNOWLEDGE'
+S=K/'TITAN1_MASTER_ASSUMPTIONS_V45.json'
+A=K/'TITAN1_V45_ODOBRENJE_20260927.json'
+I=K/'TITAN1_IDENTITET_IZ_REGISTRA_V40.json'
+SH='ea9c69abccabbe86a81bdb1cc25c51c0712345f1043dda069bc66b26c6b34f47'
+IH='0e48b67c613112084747ba9edcb58faa383d78653a8ee020ff49eb6157a35c5e'
+NAME='Signalni_memorandum_TITAN1_2026-09-27_NACRT.docx'
+def need(c,m):
+    if not c:raise RuntimeError(m)
+def sha(b):return hashlib.sha256(b).hexdigest()
+def read(p):
+    need(not any(q.is_symlink() for q in (p,*p.parents)),'SYMLINK')
+    need(p.is_file() and p.stat().st_size<1048576,'INVALID_FILE')
+    return p.read_bytes()
+def contents(identity):
+    return [
+      ('Title','Signalni memorandum za projekat TITAN 1'),
+      ('Subtitle','Institucionalna koordinacija i uslovi priključenja'),
+      ('Meta','Datum: 27.09.2026.  |  NACRT ZA HUMAN GATE PREGLED'),
+      ('Normal','Poštovani,'),
+      ('Normal','Obraćamo vam se radi informacija o elektrodistributivnoj infrastrukturi, uslovima priključenja i narednim koracima institucionalne koordinacije za projekat TITAN 1 – Fabrika transformatorskih kazana (tankova).'),
+      ('Normal','Nosilac projekta je '+identity['company']+'. Planirana lokacija je '+identity['location']+'.'),
+      ('Normal','Ukupni trošak projekta koji koristimo u ovom memorandumu iznosi 27.796.156 EUR. Ovaj iznos je odobren za pripremu novog memoranduma 27.09.2026. i odnosi se na ukupni trošak projekta, a ne samo na direktni CAPEX.'),
+      ('Normal','Molimo da nas uputite u:'),
+      ('List','1. Raspoloživi kapacitet i status elektrodistributivne infrastrukture za navedenu lokaciju.'),
+      ('List','2. Proceduru priključenja, potrebnu dokumentaciju i način pribavljanja tehničkih uslova.'),
+      ('List','3. Nadležne kontakt tačke i naredne korake za institucionalnu koordinaciju.'),
+      ('Normal','Molimo da ovaj memorandum razmotrite kao zahtjev za informacije i proceduralno usmjeravanje radi dalje pripreme projekta.'),
+      ('Normal','Sa poštovanjem,'),
+      ('Signature',identity['director']),
+      ('Normal','Direktor\n'+identity['company']),
+      ('Meta','Nacrt nije potpisan. Konačni tekst i primalac podliježu Human Gate odobrenju prije slanja.')]
+def build(identity):
+    ns='http://schemas.openxmlformats.org/wordprocessingml/2006/main'
+    paras=[]
+    for style,text in contents(identity):
+        runs='<w:br/>'.join('<w:t xml:space="preserve">'+escape(t)+'</w:t>' for t in text.split('\n'))
+        paras.append('<w:p><w:pPr><w:pStyle w:val="'+style+'"/></w:pPr><w:r>'+runs+'</w:r></w:p>')
+    document='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="'+ns+'"><w:body>'+''.join(paras)+'<w:sectPr><w:pgSz w:w="12240" w:h="15840"/><w:pgMar w:top="1080" w:right="1200" w:bottom="1080" w:left="1200"/></w:sectPr></w:body></w:document>'
+    styles='<w:styles xmlns:w="'+ns+'"><w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:sz w:val="22"/><w:color w:val="000000"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr><w:spacing w:after="160" w:line="264" w:lineRule="auto"/><w:widowControl/></w:pPr></w:pPrDefault></w:docDefaults>'
+    for name,size,bold,before,after in [('Normal',22,False,0,160),('Title',32,True,0,160),('Subtitle',24,False,0,180),('Meta',19,False,0,180),('List',22,False,0,120),('Signature',22,True,120,0)]:
+        styles+='<w:style w:type="paragraph" w:styleId="'+name+'"><w:name w:val="'+name+'"/><w:pPr><w:spacing w:before="'+str(before)+'" w:after="'+str(after)+'"/>'+('<w:keepNext/>' if name in ('Title','Subtitle','Signature') else '')+'</w:pPr><w:rPr><w:sz w:val="'+str(size)+'"/><w:color w:val="000000"/>'+('<w:b/>' if bold else '')+'</w:rPr></w:style>'
+    styles+='</w:styles>'
+    types='<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>'
+    rel='<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>'
+    docrel='<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rIdStyles" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>'
+    stream=io.BytesIO()
+    with zipfile.ZipFile(stream,'w',compression=zipfile.ZIP_DEFLATED) as z:
+        for name,text in [('[Content_Types].xml',types),('_rels/.rels',rel),('word/document.xml',document),('word/styles.xml',styles),('word/_rels/document.xml.rels',docrel)]:
+            info=zipfile.ZipInfo(name,(2026,9,27,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
+            z.writestr(info,text.encode())
+    return stream.getvalue()
+def verify(raw):
+    with zipfile.ZipFile(io.BytesIO(raw)) as z:
+        need(z.testzip() is None,'DOCX_CRC')
+        for n in z.namelist():ET.fromstring(z.read(n))
+        text=''.join(ET.fromstring(z.read('word/document.xml')).itertext())
+        need('27.796.156 EUR' in text and '18,2' not in text and '2026-05-10' not in text,'DOCUMENT_VALUES')
+        need('NACRT ZA HUMAN GATE PREGLED' in text,'DRAFT_MARKING')
+def main():
+    if sys.argv[1:]!=['--generisi-888']:
+        print('PREPARED | --generisi-888 | HUMAN_GATE=ACTIVE');return
+    raw=read(S);identity_raw=read(I);approval_raw=read(A)
+    need(sha(raw)==SH and sha(identity_raw)==IH,'SOURCE_HASH')
+    source=json.loads(raw);approval=json.loads(approval_raw);identity=json.loads(identity_raw)
+    need(approval['approved_field']=='tpc_eur' and approval['approved_value']==27796156 and approval['source_sha256']==SH and approval['human_gate']=='ACTIVE','APPROVAL')
+    need(source['tpc_eur']==27796156 and identity['scope']=='TITAN_1_ONLY','SCOPE')
+    output=R/'01_CANONICAL_BASE/DOCUMENTS'/NAME
+    need(output.parent.is_dir() and not any(p.is_symlink() for p in (output,*output.parents)),'OUTPUT_PATH')
+    product=build(identity['canonical_identity']);verify(product)
+    if output.exists():need(read(output)==product,'OUTPUT_EXISTS_DIFFERENT')
+    else:
+        with output.open('xb') as f:f.write(product)
+    verify(read(output))
+    report={'result':'PASS_DOCX_STRUCTURE_AND_APPROVED_AMOUNT','document':str(output),'sha256':sha(product),'source_sha256':SH,'approval_sha256':sha(approval_raw),'identity_source_sha256':IH,'identity_review':'PENDING_HUMAN_REVIEW_OF_ARCHIVAL_IDENTITY','total_project_cost_eur':27796156,'document_signoff':'PENDING','external_send':'NONE','financial_model_validation':'NOT_PERFORMED','visual_review_on_iphone':'PENDING'}
+    receipt=output.with_suffix('.json');data=(json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode()
+    if receipt.exists():need(read(receipt)==data,'RECEIPT_CONFLICT')
+    else:
+        with receipt.open('xb') as f:f.write(data)
+    need(read(S)==raw and read(A)==approval_raw and read(I)==identity_raw,'SOURCE_CHANGED')
+    print('RESULT=PASS_DRAFT_GENERATED\nAPPROVED_TOTAL_PROJECT_COST_EUR=27796156\nDOCX='+str(output)+'\nDOCX_SHA256='+sha(product)+'\nRECEIPT='+str(receipt)+'\nHUMAN_SIGNOFF=PENDING\nNETWORK=NONE')
+if __name__=='__main__':
+    try:main()
+    except Exception as e:print('RESULT=HOLD\nREASON='+str(e));raise SystemExit(2)

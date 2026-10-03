@@ -1,0 +1,94 @@
+import hashlib
+import sys
+from pathlib import Path
+
+REQUIRED = (
+    "RECEIPT.env",
+    "MANIFEST.sha256",
+    "PROCESS.log",
+    "DECISION.env",
+    "STATE.env",
+    "CHECKPOINT.env",
+)
+
+def write_new(path, text):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists():
+        raise SystemExit("HUMAN_HOLD:EVIDENCE_OVERWRITE_DENIED")
+    with path.open("x", encoding="utf-8", newline="\n") as handle:
+        handle.write(text.rstrip("\n") + "\n")
+
+def sha256(path):
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as handle:
+        for block in iter(lambda: handle.read(65536), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+def main():
+    if len(sys.argv) != 8:
+        raise SystemExit(
+            "USAGE: evidence_dir object_id utc stage status decision resume_point"
+        )
+
+    root = Path(sys.argv[1])
+    object_id, utc, stage, status, decision, resume_point = sys.argv[2:]
+
+    if root.exists() and any(root.iterdir()):
+        raise SystemExit("HUMAN_HOLD:EVIDENCE_DIRECTORY_NOT_EMPTY")
+
+    root.mkdir(parents=True, exist_ok=True)
+
+    common = (
+        "OBJECT_ID=" + object_id + "\n"
+        "UTC=" + utc + "\n"
+        "PIPELINE_STAGE=" + stage + "\n"
+        "STATUS=" + status
+    )
+
+    write_new(
+        root / "PROCESS.log",
+        utc + "\t" + object_id + "\t" + stage + "\t" + status,
+    )
+    write_new(
+        root / "DECISION.env",
+        common + "\nDECISION=" + decision,
+    )
+    write_new(
+        root / "STATE.env",
+        common + "\nRUNTIME_STATE=" + status,
+    )
+    write_new(
+        root / "CHECKPOINT.env",
+        common + "\nRESUME_POINT=" + resume_point,
+    )
+    write_new(
+        root / "RECEIPT.env",
+        common
+        + "\nDECISION="
+        + decision
+        + "\nRESUME_POINT="
+        + resume_point
+        + "\nRESULT=PASS",
+    )
+
+    manifest_lines = []
+    for name in REQUIRED:
+        if name == "MANIFEST.sha256":
+            continue
+        path = root / name
+        manifest_lines.append(sha256(path) + "  " + name)
+
+    write_new(root / "MANIFEST.sha256", "\n".join(sorted(manifest_lines)))
+
+    missing = [name for name in REQUIRED if not (root / name).is_file()]
+    if missing:
+        raise SystemExit("HUMAN_HOLD:EVIDENCE_INCOMPLETE")
+
+    print("EVIDENCE_FILES=" + str(len(REQUIRED)))
+    print("EVIDENCE_DIR=" + str(root))
+    print("RESULT=PASS")
+
+if __name__ == "__main__":
+    main()

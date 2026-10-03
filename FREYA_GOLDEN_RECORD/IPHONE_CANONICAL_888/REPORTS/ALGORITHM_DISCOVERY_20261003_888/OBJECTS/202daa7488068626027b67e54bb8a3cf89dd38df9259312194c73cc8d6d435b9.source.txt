@@ -1,0 +1,66 @@
+import json
+import os
+import sys
+import tempfile
+from pathlib import Path
+
+def load(path):
+    p = Path(path)
+    if not p.exists():
+        return []
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        raise SystemExit("HUMAN_HOLD:QUEUE_CORRUPTED")
+    if not isinstance(data, list):
+        raise SystemExit("HUMAN_HOLD:QUEUE_SCHEMA_INVALID")
+    return data
+
+def save(path, rows):
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(prefix=".queue.", dir=str(p.parent))
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as f:
+            json.dump(rows, f, sort_keys=True, separators=(",", ":"))
+            f.write("\n")
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, p)
+    finally:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+
+def main():
+    if len(sys.argv) < 3:
+        raise SystemExit("USAGE: enqueue|pop|count path [item]")
+    cmd, path = sys.argv[1:3]
+    rows = load(path)
+
+    if cmd == "enqueue":
+        if len(sys.argv) != 4:
+            raise SystemExit("USAGE: enqueue path item")
+        item = sys.argv[3]
+        if item not in rows:
+            rows.append(item)
+        save(path, rows)
+        print("QUEUE_DEPTH=" + str(len(rows)))
+        print("RESULT=PASS")
+    elif cmd == "pop":
+        if not rows:
+            print("RESULT=HUMAN_HOLD")
+            print("REASON=QUEUE_EMPTY")
+            raise SystemExit(72)
+        item = rows.pop(0)
+        save(path, rows)
+        print("POPPED=" + item)
+        print("QUEUE_DEPTH=" + str(len(rows)))
+        print("RESULT=PASS")
+    elif cmd == "count":
+        print("QUEUE_DEPTH=" + str(len(rows)))
+        print("RESULT=PASS")
+    else:
+        raise SystemExit("HUMAN_HOLD:QUEUE_COMMAND_INVALID")
+
+if __name__ == "__main__":
+    main()

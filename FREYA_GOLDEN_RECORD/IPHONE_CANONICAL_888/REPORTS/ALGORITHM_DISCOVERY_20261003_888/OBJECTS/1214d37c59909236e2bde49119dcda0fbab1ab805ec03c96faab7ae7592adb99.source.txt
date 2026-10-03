@@ -1,0 +1,96 @@
+from __future__ import annotations
+
+import hashlib
+from typing import Dict, List, Tuple
+
+
+def _score_from_seed(seed: str, start: int, low: int, high: int) -> int:
+    fragment = int(seed[start:start + 4], 16)
+    return low + (fragment % (high - low + 1))
+
+
+def score_asset(prompt: str, row: Dict[str, str]) -> Dict[str, int]:
+    seed = hashlib.md5((prompt + row['platform']).encode("utf-8")).hexdigest()
+
+    face = _score_from_seed(seed, 0, 88, 98)
+    hair = _score_from_seed(seed, 4, 91, 99)
+    skin = _score_from_seed(seed, 8, 84, 97)
+    accessory = _score_from_seed(seed, 12, 90, 99)
+    composition = _score_from_seed(seed, 16, 82, 97)
+    dominance = _score_from_seed(seed, 20, 78, 97)
+    warmth = _score_from_seed(seed, 24, 68, 96)
+    precision = _score_from_seed(seed, 28, 82, 98)
+    stillness = _score_from_seed(seed, 0, 80, 98)
+    authority = _score_from_seed(seed, 4, 80, 98)
+    hook = _score_from_seed(seed, 8, 76, 96)
+    framing = _score_from_seed(seed, 12, 78, 97)
+    hierarchy = _score_from_seed(seed, 16, 80, 97)
+    caption_fit = _score_from_seed(seed, 20, 75, 95)
+    postability = _score_from_seed(seed, 24, 76, 96)
+
+    return {
+        "face_fidelity": face,
+        "hair_fidelity": hair,
+        "skin_texture": skin,
+        "accessory_consistency": accessory,
+        "composition": composition,
+        "dominance": dominance,
+        "warmth_control": warmth,
+        "precision": precision,
+        "stillness": stillness,
+        "authority": authority,
+        "hook_strength": hook,
+        "framing": framing,
+        "visual_hierarchy": hierarchy,
+        "caption_fit": caption_fit,
+        "postability": postability,
+    }
+
+
+def calculate_scores(metrics: Dict[str, int]) -> Dict[str, float]:
+    identity = (
+        0.40 * metrics["face_fidelity"] +
+        0.20 * metrics["hair_fidelity"] +
+        0.15 * metrics["skin_texture"] +
+        0.15 * metrics["accessory_consistency"] +
+        0.10 * metrics["composition"]
+    )
+    brand = (
+        0.25 * metrics["dominance"] +
+        0.15 * metrics["warmth_control"] +
+        0.25 * metrics["precision"] +
+        0.15 * metrics["stillness"] +
+        0.20 * metrics["authority"]
+    )
+    platform = (
+        0.20 * metrics["hook_strength"] +
+        0.25 * metrics["framing"] +
+        0.20 * metrics["visual_hierarchy"] +
+        0.15 * metrics["caption_fit"] +
+        0.20 * metrics["postability"]
+    )
+    total = 0.45 * identity + 0.35 * brand + 0.20 * platform
+
+    return {
+        "identity_score": round(identity, 2),
+        "brand_score": round(brand, 2),
+        "platform_score": round(platform, 2),
+        "total_score": round(total, 2),
+    }
+
+
+def detect_failure_codes(metrics: Dict[str, int], thresholds: Dict[str, int]) -> List[str]:
+    failures: List[str] = []
+    if metrics["face_fidelity"] < thresholds["face_fidelity"]:
+        failures.append("F01_FACE_DRIFT")
+    if metrics["hair_fidelity"] < thresholds["hair_fidelity"]:
+        failures.append("F02_HAIR_MISMATCH")
+    if metrics["dominance"] < thresholds["dominance"]:
+        failures.append("F03_LOW_DOMINANCE")
+    if metrics["precision"] < thresholds["precision"]:
+        failures.append("F04_LOW_PRECISION")
+    if metrics["postability"] < thresholds["postability"]:
+        failures.append("F05_LOW_POSTABILITY")
+    if metrics["warmth_control"] < 70:
+        failures.append("F06_WARM_EXPRESSION")
+    return failures

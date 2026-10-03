@@ -1,0 +1,37 @@
+#!/bin/sh
+set -eu
+P=$1; L=$2; A=$3; F=$4; O=$5
+awk -F '\t' -v a="$A" '
+NR>1{gsub(/\r/,"",$1);if($1==a)ok=1}
+END{exit ok?0:1}' "$L" || {
+ echo UNKNOWN_AGENT_REJECTED=YES
+ exit 77
+}
+mkdir -p "$O/OBJECTS"
+printf 'EVENT\tFROM\tTO\tAGENT\n' >"$O/EVENTS.tsv"
+n=0; p=0
+while IFS= read -r s; do
+ [ -f "$s" ] || continue
+ n=$((n+1)); id=$(printf 'OBJ%03d' "$n")
+ d="$O/OBJECTS/$id"; b=$(sha256sum "$s"|awk '{print $1}')
+ printf '%s_READY\tNEW\tREADY\t%s\n' "$id" "$A" >>"$O/EVENTS.tsv"
+ printf '%s_RUN\tREADY\tPROCESSING\t%s\n' "$id" "$A" >>"$O/EVENTS.tsv"
+ if python3 "$P" "$s" "$d" >/dev/null 2>&1 &&
+    [ "$b" = "$(sha256sum "$s"|awk '{print $1}')" ] &&
+    grep -q "$b" "$d/RECEIPT.json" 2>/dev/null; then
+  z=COMPLETED; p=$((p+1))
+ else
+  z=FAILED_CLOSED
+ fi
+ printf '%s_%s\tPROCESSING\t%s\t%s\n' \
+ "$id" "$z" "$z" "$A" >>"$O/EVENTS.tsv"
+done <"$F"
+e=$(( $(wc -l <"$O/EVENTS.tsv") - 1 ))
+printf 'OBJECTS_TOTAL=%s\nOBJECTS_COMPLETED=%s\n' \
+"$n" "$p" >"$O/CHECKPOINT.env"
+echo RESULT=$([ "$n" -eq "$p" ] && echo PASS || echo HUMAN_HOLD)
+echo AGENT_ID="$A"
+echo OBJECTS_TOTAL="$n"
+echo OBJECTS_COMPLETED="$p"
+echo QUEUE_EVENTS="$e"
+[ "$n" -eq "$p" ]

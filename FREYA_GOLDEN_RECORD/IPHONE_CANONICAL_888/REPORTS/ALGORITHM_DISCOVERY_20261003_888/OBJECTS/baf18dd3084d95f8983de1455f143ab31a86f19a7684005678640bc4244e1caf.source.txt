@@ -1,0 +1,64 @@
+from __future__ import annotations
+
+import csv
+from datetime import datetime
+from pathlib import Path
+from typing import Dict, List
+
+from .config import DATA_DIR, load_brand_dna
+from .decision import decide
+from .generator import generate_asset
+from .prompt_builder import build_prompt
+from .scorer import calculate_scores, detect_failure_codes, score_asset
+from .storage import append_assets
+
+
+def load_prompt_rows() -> List[Dict[str, str]]:
+    with open(DATA_DIR / "prompt_variables.csv", "r", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def run_daily_batch(max_assets: int = 12) -> Dict:
+    dna = load_brand_dna()
+    prompt_rows = load_prompt_rows()[:max_assets]
+    run_id = datetime.utcnow().strftime("RUN_%Y%m%d_%H%M%S")
+
+    output_rows: List[Dict] = []
+    summary = {"APPROVE": 0, "REVISE": 0, "REJECT": 0}
+
+    for row in prompt_rows:
+        prompt = build_prompt(row, dna)
+        asset = generate_asset(prompt, row)
+        metrics = score_asset(prompt, row)
+        scores = calculate_scores(metrics)
+        decision_value, hard_fail_reasons, hard_fail = decide(metrics, scores, dna["thresholds"])
+        failure_codes = detect_failure_codes(metrics, dna["thresholds"])
+
+        summary[decision_value] += 1
+        output_rows.append({
+            "run_id": run_id,
+            "asset_id": asset["asset_id"],
+            "platform": row["platform"],
+            "environment": row["environment"],
+            "wardrobe": row["wardrobe"],
+            "pose": row["pose"],
+            "lighting": row["lighting"],
+            "asset_path": asset["asset_path"],
+            "prompt": prompt,
+            "identity_score": scores["identity_score"],
+            "brand_score": scores["brand_score"],
+            "platform_score": scores["platform_score"],
+            "total_score": scores["total_score"],
+            "face_fidelity": metrics["face_fidelity"],
+            "hair_fidelity": metrics["hair_fidelity"],
+            "dominance": metrics["dominance"],
+            "precision": metrics["precision"],
+            "postability": metrics["postability"],
+            "decision": decision_value,
+            "hard_fail": "YES" if hard_fail else "NO",
+            "failure_codes": "; ".join(failure_codes or hard_fail_reasons),
+        })
+
+    append_assets(output_rows)
+    approved = [r for r in output_rows if r["decision"] == "APPROVE"]
+    return {"run_id": run_id, "summary": summary, "rows": output_rows, "approved": approved}

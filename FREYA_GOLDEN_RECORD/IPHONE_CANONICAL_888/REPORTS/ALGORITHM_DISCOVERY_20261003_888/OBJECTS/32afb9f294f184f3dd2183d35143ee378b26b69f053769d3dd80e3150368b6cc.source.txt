@@ -1,0 +1,22 @@
+#!/bin/sh
+set -eu
+umask 077
+S=$1
+O=$2
+[ -d "$S" ] && [ ! -e "$O" ] || exit 2
+T=$O.tmp.$$
+mkdir -m700 "$T"
+find "$S" -type f | sort >"$T/list"
+printf 'PATH\tSIZE\tSHA256\n' >"$T/HASH_LEDGER.tsv"
+printf 'PATH\tSIZE\n' >"$T/METADATA.tsv"
+while IFS= read -r f; do
+ z=$(stat -c %s "$f")
+ h=$(sha256sum "$f"|cut -d' ' -f1)
+ printf '%s\t%s\t%s\n' "$f" "$z" "$h" >>"$T/HASH_LEDGER.tsv"
+ printf '%s\t%s\n' "$f" "$z" >>"$T/METADATA.tsv"
+done <"$T/list"
+c=$(wc -l <"$T/list"|tr -d ' ')
+b=$(awk -F '\t' 'NR>1{s+=$2}END{print s+0}' "$T/METADATA.tsv")
+sha256sum "$T/HASH_LEDGER.tsv" "$T/METADATA.tsv" >"$T/MANIFEST.sha256"
+printf 'SOURCE_FILE_COUNT=%s\nSOURCE_TOTAL_BYTES=%s\n' "$c" "$b" >"$T/SUMMARY.env"
+mv "$T" "$O"

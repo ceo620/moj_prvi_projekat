@@ -1,0 +1,27 @@
+from __future__ import annotations
+
+from typing import Dict, List, Tuple
+
+
+def decide(metrics: Dict[str, int], scores: Dict[str, float], thresholds: Dict[str, int]) -> Tuple[str, List[str], bool]:
+    hard_fail_reasons = []
+
+    if metrics["face_fidelity"] < thresholds["face_fidelity"]:
+        hard_fail_reasons.append("face_fidelity")
+    if metrics["hair_fidelity"] < thresholds["hair_fidelity"]:
+        hard_fail_reasons.append("hair_fidelity")
+    if metrics["dominance"] < thresholds["dominance"]:
+        hard_fail_reasons.append("dominance")
+    if metrics["precision"] < thresholds["precision"]:
+        hard_fail_reasons.append("precision")
+    if metrics["postability"] < thresholds["postability"]:
+        hard_fail_reasons.append("postability")
+
+    if hard_fail_reasons:
+        return "REJECT", hard_fail_reasons, True
+
+    if scores["total_score"] >= thresholds["approve_total"]:
+        return "APPROVE", [], False
+    if scores["total_score"] >= thresholds["revise_total"]:
+        return "REVISE", [], False
+    return "REJECT", [], False

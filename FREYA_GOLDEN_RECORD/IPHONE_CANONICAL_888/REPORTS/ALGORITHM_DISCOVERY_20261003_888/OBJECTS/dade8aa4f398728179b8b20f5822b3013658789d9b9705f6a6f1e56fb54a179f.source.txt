@@ -1,0 +1,50 @@
+from __future__ import annotations
+
+import hashlib
+from pathlib import Path
+from typing import Dict
+
+from .config import GENERATED_DIR
+
+
+def _slug(value: str) -> str:
+    return "".join(c.lower() if c.isalnum() else "-" for c in value).strip("-")
+
+
+def _placeholder_svg(asset_id: str, row: Dict[str, str], decision_hint: str) -> str:
+    safe_env = row['environment'][:42]
+    safe_wardrobe = row['wardrobe'][:34]
+    safe_pose = row['pose'][:38]
+    safe_platform = row['platform']
+    return f"""<svg xmlns='http://www.w3.org/2000/svg' width='1080' height='1350' viewBox='0 0 1080 1350'>
+  <rect width='1080' height='1350' fill='#111827'/>
+  <rect x='70' y='70' width='940' height='1210' rx='28' fill='#1f2937' stroke='#374151' stroke-width='2'/>
+  <text x='110' y='180' fill='#f9fafb' font-size='42' font-family='Arial'>Controlled Authority</text>
+  <text x='110' y='245' fill='#9ca3af' font-size='28' font-family='Arial'>Asset: {asset_id}</text>
+  <text x='110' y='330' fill='#f3f4f6' font-size='32' font-family='Arial'>Environment</text>
+  <text x='110' y='375' fill='#d1d5db' font-size='26' font-family='Arial'>{safe_env}</text>
+  <text x='110' y='470' fill='#f3f4f6' font-size='32' font-family='Arial'>Wardrobe</text>
+  <text x='110' y='515' fill='#d1d5db' font-size='26' font-family='Arial'>{safe_wardrobe}</text>
+  <text x='110' y='610' fill='#f3f4f6' font-size='32' font-family='Arial'>Pose</text>
+  <text x='110' y='655' fill='#d1d5db' font-size='26' font-family='Arial'>{safe_pose}</text>
+  <text x='110' y='750' fill='#f3f4f6' font-size='32' font-family='Arial'>Platform</text>
+  <text x='110' y='795' fill='#d1d5db' font-size='26' font-family='Arial'>{safe_platform}</text>
+  <text x='110' y='935' fill='#f3f4f6' font-size='32' font-family='Arial'>Generator Mode</text>
+  <text x='110' y='980' fill='#d1d5db' font-size='26' font-family='Arial'>Placeholder creative for QA pipeline testing</text>
+  <text x='110' y='1120' fill='#f9fafb' font-size='58' font-family='Arial'>{decision_hint}</text>
+</svg>"""
+
+
+def generate_asset(prompt: str, row: Dict[str, str]) -> Dict[str, str]:
+    digest = hashlib.sha256(prompt.encode("utf-8")).hexdigest()[:10]
+    asset_id = f"AST_{digest.upper()}"
+    filename = f"{asset_id}_{_slug(row['platform'])}.svg"
+    path: Path = GENERATED_DIR / filename
+    decision_hint = "QA Candidate"
+    svg = _placeholder_svg(asset_id, row, decision_hint)
+    path.write_text(svg, encoding="utf-8")
+    return {
+        "asset_id": asset_id,
+        "asset_path": f"data/generated_assets/{filename}",
+        "prompt_hash": digest,
+    }

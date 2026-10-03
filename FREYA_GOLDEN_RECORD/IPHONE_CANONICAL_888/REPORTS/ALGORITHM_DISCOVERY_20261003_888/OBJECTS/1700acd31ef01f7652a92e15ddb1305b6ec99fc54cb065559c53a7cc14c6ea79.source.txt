@@ -1,0 +1,49 @@
+#!/bin/sh
+set -eu
+umask 077
+
+R=$1
+ID=$2
+LOCK=$R/17_RUNTIME/$ID.lock
+STATE=$R/17_RUNTIME/$ID.state.env
+HISTORY=$R/17_RUNTIME/$ID.lock_history
+
+[ ! -e "$LOCK" ] || exit 20
+
+mkdir -m 700 "$LOCK"
+[ -d "$HISTORY" ] || mkdir -m 700 "$HISTORY"
+
+COUNT=0
+
+if [ -f "$STATE" ]; then
+    COUNT=$(sed -n 's/^CYCLE_COUNT=//p' "$STATE")
+
+    case "$COUNT" in
+        ''|*[!0-9]*) exit 21 ;;
+    esac
+fi
+
+COUNT=$((COUNT + 1))
+UTC=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+STAMP=$(date -u '+%Y%m%dT%H%M%SZ')
+TMP=$R/17_RUNTIME/.$ID.state.$$
+
+cat > "$TMP" <<STATEFILE
+RUNTIME_ID=$ID
+CYCLE_COUNT=$COUNT
+LAST_RUN_UTC=$UTC
+LAST_SAFE_STATE=IDLE_CHECKPOINT
+LAST_RESULT=PASS
+CHECKPOINT=YES
+CONTINUOUS_WHILE_RUNTIME_AVAILABLE=YES
+IOS_BACKGROUND_GUARANTEE=NO
+SAFE_PAUSE_WHEN_IOS_SUSPENDS=YES
+RESUME_AFTER_SUSPEND=YES
+DUPLICATE_REPLAY_PROTECTION=YES
+NETWORK_CONNECTIONS_OPENED=0
+STATEFILE
+
+mv "$TMP" "$STATE"
+mv "$LOCK" "$HISTORY/lock_${COUNT}_${STAMP}"
+
+echo "$STATE"

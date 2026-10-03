@@ -1,0 +1,50 @@
+import hashlib
+import json
+from pathlib import Path
+
+class QueueV2:
+
+    def __init__(self):
+        self.items=[]
+        self.hashes=set()
+
+    def add(self,path):
+        p=Path(path)
+        h=hashlib.sha256(p.read_bytes()).hexdigest()
+        if h in self.hashes:
+            return False
+        self.hashes.add(h)
+        self.items.append((str(p),h))
+        return True
+
+    def pop(self):
+        if not self.items:
+            return None
+        return self.items.pop(0)
+
+    def empty(self):
+        return len(self.items)==0
+
+    def clear(self):
+        self.items.clear()
+        self.hashes.clear()
+
+    def count(self):
+        return len(self.items)
+
+    def __len__(self):
+        return len(self.items)
+
+    def snapshot(self,outfile):
+        Path(outfile).write_text(
+            json.dumps(
+                {"count":len(self.items),
+                 "items":self.items},
+                indent=2
+            )
+        )
+
+if __name__=="__main__":
+    q=QueueV2()
+    print("QUEUE_V2_READY")
+    print("COUNT=%d"%q.count())

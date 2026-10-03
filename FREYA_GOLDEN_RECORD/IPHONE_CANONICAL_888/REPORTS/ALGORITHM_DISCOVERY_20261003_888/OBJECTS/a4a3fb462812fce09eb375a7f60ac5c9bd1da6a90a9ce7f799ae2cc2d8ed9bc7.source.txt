@@ -1,0 +1,31 @@
+#!/bin/sh
+set -eu
+R=$1; P=$2; B=$3; L=$4; A=$5; O=$6
+mkdir -p "$O"
+find "$R" -type f 2>/dev/null |
+grep -Ei '/(INTAKE|INBOX|APP_EXPORTS?|STAGING|PROJECTS?|PILOTS?)/' |
+grep -Ev '/00_CONTROL/|/15_RUNTIME/|/CYCLES/|/VERSIONED/' |
+sort -u >"$O/SELECTED.txt"
+
+N=$(wc -l <"$O/SELECTED.txt"|tr -d ' ')
+[ "$N" -gt 0 ] || exit 4
+
+while IFS= read -r F; do sha256sum "$F"; done \
+<"$O/SELECTED.txt" >"$O/BEFORE.sha256"
+
+sh "$B" "$P" "$L" "$A" "$O/SELECTED.txt" "$O/QUEUE" \
+>"$O/BINDER.log"
+
+while IFS= read -r F; do sha256sum "$F"; done \
+<"$O/SELECTED.txt" >"$O/AFTER.sha256"
+
+cmp -s "$O/BEFORE.sha256" "$O/AFTER.sha256"
+grep -qx RESULT=PASS "$O/BINDER.log"
+
+echo RESULT=PASS
+grep -E '^(AGENT_ID|OBJECTS_TOTAL|OBJECTS_COMPLETED|QUEUE_EVENTS)=' \
+"$O/BINDER.log"
+echo AGENT_CODE_EXECUTED=YES
+echo SOURCE_HASH_STABLE=YES
+echo NETWORK_ACTION=NONE
+echo ORIGINALS_MODIFIED=NO

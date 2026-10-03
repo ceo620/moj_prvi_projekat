@@ -1,0 +1,23 @@
+from scheduler import SchedulerV2
+from dispatcher import DispatcherV2
+from pipeline import PipelineV2
+from state import StateV2
+
+class RuntimeV2:
+    def __init__(self):
+        self.scheduler=SchedulerV2()
+        self.dispatcher=DispatcherV2()
+        self.pipeline=PipelineV2()
+        self.state=StateV2()
+
+    def status(self):
+        return {
+            "stages":len(self.pipeline.stages()),
+            "pending":self.scheduler.pending(),
+            "idle":self.scheduler.idle()
+        }
+
+if __name__=="__main__":
+    r=RuntimeV2()
+    print("RUNTIME_V2_READY")
+    print(r.status())

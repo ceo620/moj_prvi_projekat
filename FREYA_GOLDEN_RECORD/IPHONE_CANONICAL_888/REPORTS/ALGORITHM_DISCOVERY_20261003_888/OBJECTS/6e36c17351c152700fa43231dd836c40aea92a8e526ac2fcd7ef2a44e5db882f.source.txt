@@ -1,0 +1,34 @@
+#!/bin/sh
+set -eu
+umask 077
+r=/root/FREYA_IPHONE_ISH_NODE_888
+d="$r/05_SYSTEM_RUNTIME/SOBE_888"
+s="$r/05_SYSTEM_RUNTIME/STATE"
+exec 9>>"$s/SOBE_DAILY.lock"
+/usr/bin/flock -n 9 || exit 73
+day=$(date -u +%F)
+sh "$d/titan_self_heal.sh" >/dev/null
+if [ -f "$s/SOBE_DAILY_DONE" ] &&
+   [ "$(cat "$s/SOBE_DAILY_DONE")" = "$day" ]; then
+  echo "DAILY_ALREADY_DONE=$day"
+  exit 0
+fi
+out=$(mktemp -d "$r/09_EVIDENCE/SOBE_DAILY_XXXXXX")
+names="freya_scheduler freya_needs_scheduler freya_srednja_klasa freya_generate_whitepaper freya_producer_ready freya_zena_balkanska freya_knjiga_engine"
+for n in $names; do
+  sha256sum "$d/$n.sh"
+done >"$out/CONTENT.sha256"
+if ! cmp -s "$out/CONTENT.sha256" "$s/SOBE_CONTENT_LAST.sha256"; then
+  for n in $names; do
+    /usr/local/bin/freya-sobe pokreni "$n" >"$out/$n.log" 2>&1
+  done
+  cp "$out/CONTENT.sha256" "$s/SOBE_CONTENT_LAST.sha256"
+fi
+for n in freya_dashboard freya_storage_node; do
+  /usr/local/bin/freya-sobe pokreni "$n" >"$out/$n.log" 2>&1
+done
+printf '%s\n' "$day" >"$s/SOBE_DAILY_DONE"
+printf '%s\n' 'RESULT=PASS_DAILY_CYCLE' \
+'HUMAN_REVIEW=PENDING' 'EXTERNAL_SEND=NONE' >"$out/STATUS.txt"
+echo "DAILY_RESULT=PASS"
+echo "EVIDENCE=$out"

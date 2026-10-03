@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+
+s=$1
+o=$2
+p=$3
+
+[ -d "$s" ] || exit 2
+[ ! -e "$o/$p.tar.gz" ] || exit 3
+[ ! -e "$o/$p.sha256" ] || exit 4
+
+t="$o/.$p.$$.tmp"
+[ ! -e "$t" ] || exit 5
+
+tar -czf "$t" -C "$s" .
+gzip -t "$t"
+mv "$t" "$o/$p.tar.gz"
+sha256sum "$o/$p.tar.gz" > "$o/$p.sha256"

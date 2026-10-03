@@ -1,0 +1,250 @@
+import os,sys,hashlib,datetime
+
+ROOT="/mnt"
+
+G="\033[1;32m"; C="\033[1;36m"; Y="\033[1;33m"
+R="\033[1;31m"; W="\033[1;37m"; X="\033[0m"
+
+def cls():
+    print("\033[2J\033[H",end="")
+
+def walk_files(depth=4):
+    for base,dirs,files in os.walk(ROOT):
+        d=base[len(ROOT):].count(os.sep)
+        if d>=depth:
+            dirs[:]=[]
+        for f in files:
+            yield os.path.join(base,f)
+
+def stats():
+    data={"FILES":0,"PDF":0,"DOCX":0,"XLSX":0,"CSV":0,"ARCHIVES":0}
+    for p in walk_files():
+        data["FILES"]+=1
+        q=p.lower()
+        if q.endswith(".pdf"): data["PDF"]+=1
+        if q.endswith(".docx"): data["DOCX"]+=1
+        if q.endswith(".xlsx"): data["XLSX"]+=1
+        if q.endswith(".csv"): data["CSV"]+=1
+        if q.endswith((".zip",".tar",".tar.gz",".tgz",".gz",".bz2",".xz",".7z",".rar")):
+            data["ARCHIVES"]+=1
+    return data
+
+def header():
+    cls()
+    print(G+"╔══════════════════════════════════════╗")
+    print("║       FREYA HUMAN GATE · 888       ║")
+    print("╚══════════════════════════════════════╝"+X)
+    print(C+" iPHONE NODE · HUMAN GATE ACTIVE"+X)
+    print(" Files Gateway: /mnt")
+    print(" Mode: SAFE / READ-ONLY\n")
+
+def status():
+    header()
+    s=stats()
+    print(G+"CONSOLE READY - ENGINE NOT VERIFIED"+X+"\n")
+    for k,v in s.items():
+        print(" %-12s %s"%(k,v))
+    print("\n"+Y+"PROTECTED ACTIONS"+X)
+    print(" DELETE       DENY")
+    print(" MOVE         DENY")
+    print(" RENAME       DENY")
+    print(" OVERWRITE    DENY")
+    print(" SSOT WRITE   DENY")
+    print(" NETWORK      DENY")
+    input("\nReturn ↵ ")
+
+def recent():
+    header()
+    a=[]
+    for p in walk_files():
+        try: a.append((os.path.getmtime(p),p))
+        except: pass
+    a.sort(reverse=True)
+    print(W+"20 MOST RECENT FILES\n"+X)
+    for t,p in a[:20]:
+        dt=datetime.datetime.fromtimestamp(t).strftime("%Y-%m-%d %H:%M")
+        print(dt+"  "+p[len(ROOT)+1:])
+    input("\nReturn ↵ ")
+
+def docs():
+    header()
+    print(W+"DOCUMENT INVENTORY\n"+X)
+    for ext in (".pdf",".docx",".xlsx",".csv"):
+        arr=[p[len(ROOT)+1:] for p in walk_files() if p.lower().endswith(ext)]
+        print(C+ext.upper()+" = "+str(len(arr))+X)
+        for p in arr[:12]: print("  "+p)
+        if len(arr)>12: print("  ...")
+        print()
+    input("Return ↵ ")
+
+def archives():
+    header()
+    a=[p for p in walk_files(6) if p.lower().endswith((".zip",".tar",".tar.gz",".tgz",".gz",".bz2",".xz",".7z",".rar"))]
+    print(W+"ARCHIVES = "+str(len(a))+"\n"+X)
+    for p in a:
+        try: z=os.path.getsize(p)
+        except: z=0
+        print("%9d  %s"%(z,p[len(ROOT)+1:]))
+    print("\nNo extraction or deletion performed.")
+    input("\nReturn ↵ ")
+
+def integrity():
+    header()
+    rows=[]
+    for p in walk_files(3):
+        try:
+            rel=p[len(ROOT)+1:]
+            z=os.path.getsize(p)
+            rows.append(rel+"|"+str(z))
+        except: pass
+    h=hashlib.sha256(("\n".join(sorted(rows))+"\n").encode()).hexdigest()
+    print(W+"READ-ONLY FILE MANIFEST"+X)
+    print("\nObjects:",len(rows))
+    print("SHA256:")
+    print(h)
+    print("\n"+G+"PATH/SIZE MANIFEST ONLY"+X)
+    input("\nReturn ↵ ")
+
+
+def search():
+    header()
+    q=input("Search term > ").strip().lower()
+    if not q:
+        return
+    hits=[]
+    for p in walk_files(5):
+        rel=p[len(ROOT)+1:]
+        if q in rel.lower():
+            hits.append(rel)
+    print("\nRESULTS =",len(hits),"\n")
+    for p in hits[:40]:
+        print(" "+p)
+    if len(hits)>40:
+        print(" ...")
+    input("\nReturn ↵ ")
+
+def freya_status():
+    header()
+    r="/root/FREYA_IPHONE_ISH_NODE_888"
+    print(W+"FREYA NODE STATUS\n"+X)
+    print("NODE ROOT        ", "READY" if os.path.isdir(r) else "MISSING")
+    print("IOS GATEWAY      ", "READY" if os.path.isdir(ROOT) else "MISSING")
+    print("PYTHON ENGINE    ", "NOT VERIFIED")
+    print("HUMAN GATE       ", "ACTIVE")
+    print("MODE             ", "SAFE / READ-ONLY")
+    print("DELETE           ", "DENY")
+    print("MOVE             ", "DENY")
+    print("RENAME           ", "DENY")
+    print("OVERWRITE        ", "DENY")
+    print("SSOT WRITE       ", "DENY")
+    print("NETWORK          ", "DENY")
+    input("\nReturn ↵ ")
+
+
+def recovered_value():
+    header()
+    idx="/root/FREYA_IPHONE_ISH_NODE_888/01_INTAKE/ARCHIVE_RECOVERY_V1/HUMAN_GATE_INDEX.tsv"
+    print(W+"RECOVERED VALUE\n"+X)
+    try:
+        rows=open(idx).read().splitlines()[1:]
+        ro=[r for r in rows if r.endswith("\tNO")]
+        print("Canonical objects:",len(rows))
+        print("Recovery-only:",len(ro))
+        print("\nRECOVERY-ONLY OBJECTS")
+        for r in ro:
+            print(" "+r.split("\t")[0])
+    except:
+        print("INDEX=UNAVAILABLE")
+    input("\nReturn ↵ ")
+
+
+
+def live_todo_verified():
+    import csv,datetime,os
+    header()
+    day=datetime.date.today().isoformat()
+    todo=f"/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_LIVE/{day}/LIVE_TODO_24H_VERIFIED.tsv"
+    drafts=f"/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_LIVE/{day}/FIRST_CONTACT"
+
+    print(W+"LIVE TODO · VERIFIED 24H\n"+X)
+
+    if not os.path.isfile(todo):
+        print("No verified tasks.")
+        input("\nReturn ↵ ")
+        return
+
+    rows=list(csv.DictReader(open(todo),delimiter="\t"))
+
+    for r in rows:
+        entity=r["ENTITY"]
+        print(G+"["+r["RANK"]+"] "+entity+X)
+        print(" Contact: "+r["CONTACT"])
+        print(" Channel: "+r["CHANNEL"])
+        print(" Deadline: "+r["DEADLINE"])
+        print(" Verify: "+r["VERIFY"])
+        print(" Signals: "+r["SIGNALS"])
+
+        fn=entity.replace(" ","_")+".txt"
+        dp=os.path.join(drafts,fn)
+        print(" Draft: "+("READY" if os.path.isfile(dp) else "MISSING"))
+        print()
+
+    print(Y+"AUTOMATIC SEND: DENY"+X)
+    print(G+"HUMAN GATE REQUIRED"+X)
+    input("\nReturn ↵ ")
+
+def live_todo():
+    import os,datetime
+    header()
+    f="/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/HUMAN_GATE_TODO.tsv"
+    print(W+"LIVE TODO · 24H\n"+X)
+    if not os.path.isfile(f):
+        print("No active tasks configured.")
+    else:
+        now=datetime.datetime.now()
+        for line in open(f):
+            x=line.rstrip().split("\t")
+            if len(x)<3: continue
+            task,deadline,status=x[:3]
+            try:
+                d=datetime.datetime.fromisoformat(deadline)
+                sec=(d-now).total_seconds()
+                if status=="DONE": state="DONE"
+                elif sec<0: state="OVERDUE"
+                elif sec<=3600: state="DUE <1H"
+                else: state="ACTIVE"
+                print("[%s] %s"%(state,task))
+                print(" Deadline:",deadline)
+            except: print("[REVIEW]",task)
+    input("\nReturn ↵ ")
+
+def main():
+    while True:
+        header()
+        print(" [1]  SYSTEM STATUS")
+        print(" [2]  RECENT FILES")
+        print(" [3]  DOCUMENTS")
+        print(" [4]  ARCHIVES")
+        print(" [5]  INTEGRITY")
+        print(" [6]  SEARCH")
+        print(" [7]  FREYA STATUS")
+        print(" [8]  RECOVERED VALUE")
+        print(" [9]  LIVE TODO 24H")
+        print(" [0]  EXIT\n")
+        x=input(G+" HUMAN GATE > "+X).strip()
+        if x=="1": status()
+        elif x=="2": recent()
+        elif x=="3": docs()
+        elif x=="4": archives()
+        elif x=="5": integrity()
+        elif x=="6": search()
+        elif x=="7": freya_status()
+        elif x=="8": recovered_value()
+        elif x=="9": live_todo_verified()
+        elif x=="0":
+            header()
+            print("HUMAN_GATE_CONSOLE=CLOSED")
+            break
+
+if __name__=="__main__":
+    main()

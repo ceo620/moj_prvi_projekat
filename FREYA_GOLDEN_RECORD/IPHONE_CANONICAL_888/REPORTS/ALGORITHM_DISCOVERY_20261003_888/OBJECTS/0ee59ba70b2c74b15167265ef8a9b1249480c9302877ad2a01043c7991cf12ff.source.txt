@@ -1,0 +1,79 @@
+import hashlib
+import json
+import os
+import sys
+import tempfile
+from pathlib import Path
+
+def canon(data):
+    return json.dumps(data, sort_keys=True, separators=(",", ":"))
+
+def digest(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+def save(path, payload):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    body = canon(payload)
+    wrapper = {"payload": payload, "sha256": digest(body)}
+
+    fd, tmp = tempfile.mkstemp(prefix=".checkpoint.", dir=str(path.parent))
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(canon(wrapper) + "\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(tmp, path)
+    finally:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+
+def load(path):
+    try:
+        wrapper = json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception:
+        raise SystemExit("HUMAN_HOLD:CHECKPOINT_CORRUPTED")
+
+    if sorted(wrapper) != ["payload", "sha256"]:
+        raise SystemExit("HUMAN_HOLD:CHECKPOINT_SCHEMA_INVALID")
+
+    body = canon(wrapper["payload"])
+    if digest(body) != wrapper["sha256"]:
+        raise SystemExit("HUMAN_HOLD:CHECKPOINT_HASH_MISMATCH")
+
+    return wrapper["payload"]
+
+def main():
+    if len(sys.argv) < 3:
+        raise SystemExit("USAGE: save|load path [fields...]")
+
+    command = sys.argv[1]
+    path = sys.argv[2]
+
+    if command == "save":
+        if len(sys.argv) != 9:
+            raise SystemExit(
+                "USAGE: save path runtime_state queue_state processed failed current_object resume_point"
+            )
+        payload = {
+            "runtime_state": sys.argv[3],
+            "queue_state": sys.argv[4],
+            "processed_count": int(sys.argv[5]),
+            "failed_count": int(sys.argv[6]),
+            "current_object": sys.argv[7],
+            "resume_point": sys.argv[8],
+        }
+        save(path, payload)
+        print("CHECKPOINT_SAVE=PASS")
+        print("RESULT=PASS")
+    elif command == "load":
+        payload = load(path)
+        for key in sorted(payload):
+            print(key.upper() + "=" + str(payload[key]))
+        print("CHECKPOINT_LOAD=PASS")
+        print("RESULT=PASS")
+    else:
+        raise SystemExit("HUMAN_HOLD:CHECKPOINT_COMMAND_INVALID")
+
+if __name__ == "__main__":
+    main()

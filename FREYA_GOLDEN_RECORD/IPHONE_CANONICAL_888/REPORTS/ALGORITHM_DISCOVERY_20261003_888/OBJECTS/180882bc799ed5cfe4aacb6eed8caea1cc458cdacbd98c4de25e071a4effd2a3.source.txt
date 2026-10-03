@@ -1,0 +1,37 @@
+# FREYA_REVIVED_SAFE_PATCH
+# SOURCE=/root/FREYA_SSOT/16_REVIVED_SAFE_COPIES/REVIVED_32_DATA_ROOM_BUILDER.py
+# RUNTIME_DEFAULT=DRY_RUN
+# HUMAN_GATE=ACTIVE
+# ORIGINALS_CHANGED=NO
+
+#!/usr/bin/env python3
+from pathlib import Path
+import csv
+
+ROOT = Path(__file__).resolve().parent
+
+def refresh_tracker_status(new_status="READY_FOR_DRAFTING"):
+    tracker = ROOT / "19_DATA_ROOM_LOG" / "LOG-01_Document_Tracker.csv"
+    rows = []
+    with tracker.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        fieldnames = reader.fieldnames
+        for row in reader:
+            row["Status"] = new_status
+            rows.append(row)
+    with tracker.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+def inject_document_owner(owner_name="TITAN Team"):
+    for md in ROOT.rglob("*.md"):
+        text = md.read_text(encoding="utf-8")
+        if "Owner:" in text and "Owner: " in text:
+            text = text.replace("Owner:\n", f"Owner: {owner_name}\n")
+        md.write_text(text, encoding="utf-8")
+
+if __name__ == "__main__":
+    refresh_tracker_status()
+    inject_document_owner()
+    print("Data room documents refreshed.")

@@ -1,0 +1,148 @@
+#!/bin/sh
+set -eu
+umask 077
+
+CMD=$1
+W=$2
+
+case "$CMD" in
+    stale_lock)
+        LOCK=$W/runtime.lock
+        HIST=$W/lock_history
+
+        [ -d "$LOCK" ] || exit 10
+        [ ! -e "$HIST/stale.lock" ] || exit 11
+        [ -d "$HIST" ] || mkdir -m 700 "$HIST"
+
+        mv "$LOCK" "$HIST/stale.lock"
+
+        printf 'RESULT=PASS\n'
+        printf 'ACTION=STALE_LOCK_ISOLATED\n'
+        ;;
+
+    manifest)
+        STAGE=$W/stage
+        OUT=$W/MANIFEST.tsv
+        TMP=$W/.MANIFEST.$$
+
+        [ -d "$STAGE" ] || exit 20
+        [ ! -e "$OUT" ] || exit 21
+
+        : > "$TMP"
+
+        for X in "$STAGE"/*
+        do
+            [ -f "$X" ] || continue
+
+            printf '%s\t%s\t%s\n' \
+                "$(sha256sum "$X" | cut -d' ' -f1)" \
+                "$(wc -c < "$X" | tr -d ' ')" \
+                "${X##*/}" >> "$TMP"
+        done
+
+        mv "$TMP" "$OUT"
+
+        printf 'RESULT=PASS\n'
+        printf 'ACTION=MANIFEST_REBUILT\n'
+        ;;
+    hash)
+        SRC=$W/source.dat
+        OUT=$W/source.sha256
+        TMP=$W/.source.sha256.$$
+
+        [ -f "$SRC" ] || exit 30
+        [ ! -e "$OUT" ] || exit 31
+
+        sha256sum "$SRC" > "$TMP"
+        mv "$TMP" "$OUT"
+
+        printf 'RESULT=PASS\n'
+        printf 'ACTION=HASH_REBUILT\n'
+        ;;
+
+    queue)
+        SRC=$W/state.env
+        OUT=$W/recovered_state.env
+        TMP=$W/.recovered_state.$$
+
+        [ -f "$SRC" ] || exit 40
+        [ ! -e "$OUT" ] || exit 41
+
+        LAST=$(sed -n 's/^LAST_SAFE_STATE=//p' "$SRC")
+        [ -n "$LAST" ] || exit 42
+
+        printf 'QUEUE_STATE=%s\n' "$LAST" > "$TMP"
+        printf 'RECOVERY_RESULT=PASS\n' >> "$TMP"
+
+        mv "$TMP" "$OUT"
+
+        printf 'RESULT=PASS\n'
+        printf 'ACTION=QUEUE_STATE_RECOVERED\n'
+        ;;
+
+    retry)
+        COUNT=$3
+        MAX=$4
+        OUT=$W/retry_result.env
+        TMP=$W/.retry_result.$$
+
+        [ ! -e "$OUT" ] || exit 50
+
+        case "$COUNT:$MAX" in
+            *[!0-9:]*|:*) exit 51 ;;
+        esac
+
+        if [ "$COUNT" -ge "$MAX" ]; then
+            STATE=DEAD_LETTER
+        else
+            STATE=RETRY
+        fi
+
+        printf 'RETRY_COUNT=%s\n' "$COUNT" > "$TMP"
+        printf 'RETRY_MAX=%s\n' "$MAX" >> "$TMP"
+        printf 'QUEUE_STATE=%s\n' "$STATE" >> "$TMP"
+
+        mv "$TMP" "$OUT"
+
+        printf 'RESULT=PASS\n'
+        printf 'ACTION=RETRY_POLICY_APPLIED\n'
+        ;;
+
+    restart)
+        MAX=$3
+        COUNT_FILE=$W/restart.count
+        OUT=$W/restart_result.env
+        COUNT=0
+
+        [ -f "$COUNT_FILE" ] &&
+            COUNT=$(cat "$COUNT_FILE")
+
+        case "$COUNT:$MAX" in
+            *[!0-9:]*|:*) exit 60 ;;
+        esac
+
+        COUNT=$((COUNT + 1))
+
+        printf '%s\n' "$COUNT" > "$COUNT_FILE.tmp"
+        mv "$COUNT_FILE.tmp" "$COUNT_FILE"
+
+        if [ "$COUNT" -le "$MAX" ]; then
+            ACTION=RESTART_ALLOWED
+        else
+            ACTION=RESTART_LIMIT_REACHED
+        fi
+
+        printf 'RESTART_COUNT=%s\n' "$COUNT" > "$OUT.tmp"
+        printf 'RESTART_MAX=%s\n' "$MAX" >> "$OUT.tmp"
+        printf 'ACTION=%s\n' "$ACTION" >> "$OUT.tmp"
+
+        mv "$OUT.tmp" "$OUT"
+
+        printf 'RESULT=PASS\n'
+        printf 'ACTION=%s\n' "$ACTION"
+        ;;
+
+    *)
+        exit 64
+        ;;
+esac

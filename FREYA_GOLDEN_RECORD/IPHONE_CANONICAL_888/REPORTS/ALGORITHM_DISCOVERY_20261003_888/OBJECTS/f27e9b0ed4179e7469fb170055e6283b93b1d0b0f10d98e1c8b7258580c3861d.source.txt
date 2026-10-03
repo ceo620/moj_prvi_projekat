@@ -1,0 +1,172 @@
+from pathlib import Path
+import os,json,sqlite3,hashlib,re,ast,time,fcntl
+R=Path("/root/FREYA_IPHONE_ISH_NODE_888")
+D=R/"15_RUNTIME/SIGNAL_HARVESTER_V1"
+OUT=R/"04_HUMAN_GATE/SIGNAL_HARVEST"
+os.umask(0o077)
+OUT.mkdir(exist_ok=True)
+lock=(D/"LOCK").open("a")
+try:
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+except BlockingIOError:
+    raise SystemExit("HARVESTER=BUSY")
+cfg=json.loads((D/"SCOPE.json").read_text())
+raw=(D/"harvest.original.py").read_bytes()
+assert hashlib.sha256(raw).hexdigest()==cfg["source_sha256"]
+tree=ast.parse(raw)
+SIG=next(ast.literal_eval(n.value) for n in tree.body
+    if isinstance(n,ast.Assign) and any(
+    isinstance(t,ast.Name) and t.id=="SIG" for t in n.targets))
+E=re.compile(r'(?<![\w.+-])[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}')
+db=sqlite3.connect(str(D/"STATE.db"))
+db.executescript("""
+CREATE TABLE IF NOT EXISTS queue(
+ path TEXT PRIMARY KEY, status TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS files(
+ path TEXT PRIMARY KEY, sha TEXT, status TEXT);
+CREATE TABLE IF NOT EXISTS findings(
+ id TEXT PRIMARY KEY, path TEXT, sha TEXT, report TEXT);
+""")
+for root in cfg["roots"]:
+    db.execute("INSERT OR IGNORE INTO queue VALUES(?,'PENDING')",(root,))
+db.commit()
+started=time.monotonic()
+processed=created=0
+extensions={".txt",".csv",".md",".json",".html",".htm"}
+extensions.update({
+".py",".pl",".env",".sh",".tsv",".sha256",".log",
+".conf",".list",".out",".err",".jsonl",".meta",".stderr"})
+
+import stat
+
+class NotPlainText(Exception):
+    pass
+
+def check_plain(b,final):
+    import codecs
+    if re.search(rb"[\x00-\x08\x0b\x0e-\x1f\x7f]",b):
+        raise NotPlainText()
+    try:
+        codecs.getincrementaldecoder("utf-8")().decode(b,final=final)
+    except UnicodeError:
+        raise NotPlainText()
+
+ARCHIVE_PARTS={'/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_aa': 'd8ec37d81a663df14c4ceaf7e6fb3fbc4075c936e4402fd36b06819f35058089', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ab': '8d534c2bfb2ddf40bb850a740d0878565519b641ec76aa4508cde1aa6785b38f', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ac': '766c159c75a9167f8e58ac68e67e4bbb0ccd248bcbbf0c7709ecc3e01acd677f', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ad': '0f9e43028aea0310d352107ee2c091a634c57937266d270767dc3c2f74f05573', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ae': 'a64b070b09f32b5028d3613288ddeea66ba56d65d4fbf8ea61bd34796f753686', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_af': '34c399e427a0fe4f8698a9ea006a3f6ff977f23f6991695bf189c48c5d1862db', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ag': '1830b94c9905ddf0ff968bde4061d946d7aeb912ba7ccbdb51cb8cd8509159fc', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ah': '646df9dd796ba1c1077125a4363f38fc1f6d5734a836d3f82937f9afc4f21b0a', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ai': '2bd0e6b396d2f2780c55c0bce85ae201709809fc009636fde988375b48c7c3dc', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_aj': '0c80f6f2a2e39384e14b77c403dfe613a9e3af2191dec0ff68d9498bac2cfd05', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ak': '96a0cf2e126d91f25cc58b7a3c6f5a680418b751c544276771aa3a61f2fb1a57', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_al': '3ac790f59c4aa1c3379242d571d4e2cb3330c2774ae7d6633e5eb91b79369360', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_am': '47441a1a47a0b149cacf3848890308533329d7d6f7074547fedaf6e0de189b6d', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_an': 'd181c65f62ad2036dae2c1e5ba4b6741ba2a83c96adabe06e762d451f73c8545', '/mnt/ios_pretraga/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020/PAYLOAD/PART_ao': 'a5bd851935c5799633d65827aca95b15fd444260a21ee88b263d34a136f648f3', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_aa': 'd8ec37d81a663df14c4ceaf7e6fb3fbc4075c936e4402fd36b06819f35058089', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ab': '8d534c2bfb2ddf40bb850a740d0878565519b641ec76aa4508cde1aa6785b38f', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ac': '766c159c75a9167f8e58ac68e67e4bbb0ccd248bcbbf0c7709ecc3e01acd677f', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ad': '0f9e43028aea0310d352107ee2c091a634c57937266d270767dc3c2f74f05573', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ae': 'a64b070b09f32b5028d3613288ddeea66ba56d65d4fbf8ea61bd34796f753686', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_af': '34c399e427a0fe4f8698a9ea006a3f6ff977f23f6991695bf189c48c5d1862db', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ag': '1830b94c9905ddf0ff968bde4061d946d7aeb912ba7ccbdb51cb8cd8509159fc', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ah': '646df9dd796ba1c1077125a4363f38fc1f6d5734a836d3f82937f9afc4f21b0a', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ai': '2bd0e6b396d2f2780c55c0bce85ae201709809fc009636fde988375b48c7c3dc', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_aj': '0c80f6f2a2e39384e14b77c403dfe613a9e3af2191dec0ff68d9498bac2cfd05', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ak': '96a0cf2e126d91f25cc58b7a3c6f5a680418b751c544276771aa3a61f2fb1a57', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_al': '3ac790f59c4aa1c3379242d571d4e2cb3330c2774ae7d6633e5eb91b79369360', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_am': '47441a1a47a0b149cacf3848890308533329d7d6f7074547fedaf6e0de189b6d', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_an': 'd181c65f62ad2036dae2c1e5ba4b6741ba2a83c96adabe06e762d451f73c8545', '/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/VERIFIED_PARTS/PART_ao': 'a5bd851935c5799633d65827aca95b15fd444260a21ee88b263d34a136f648f3'}
+while processed<800 and time.monotonic()-started<20:
+    row=db.execute(
+        "SELECT path FROM queue WHERE status='PENDING' ORDER BY rowid LIMIT 1"
+    ).fetchone()
+    if not row: break
+    path=row[0]
+    p=Path(path)
+    status="DONE"
+    sha=None
+    try:
+        if p==D or p==OUT or p==R/"09_EVIDENCE/V889_AUTO":
+            status="EXCLUDED_OWN_OUTPUT"
+        elif p.is_symlink():
+            status="LINK_NOT_FOLLOWED"
+        elif p.is_dir():
+            with os.scandir(p) as entries:
+                for entry in entries:
+                    db.execute(
+                        "INSERT OR IGNORE INTO queue VALUES(?,'PENDING')",
+                        (entry.path,))
+        elif not p.is_file():
+            status="MISSING_OR_SPECIAL"
+        elif path in ARCHIVE_PARTS:
+            status="HOLD:ARCHIVE_PART_REQUIRES_VERIFICATION"
+        elif p.suffix and p.suffix.lower() not in extensions:
+            status="METADATA_ONLY_UNSUPPORTED_TYPE"
+        else:
+            print("STAGE=READ | "+path,flush=True)
+            with p.open("rb") as f:
+                before=os.fstat(f.fileno())
+                if not stat.S_ISREG(before.st_mode):
+                    raise ValueError("HOLD_NOT_REGULAR")
+                data=f.read(4096)
+                if not p.suffix: check_plain(data,False)
+                data+=f.read(33554433-len(data))
+                after=os.fstat(f.fileno())
+            if len(data)>33554432:
+                raise ValueError("HOLD_FILE_OVER_32MB")
+            if (before.st_size,before.st_mtime_ns)!=(after.st_size,after.st_mtime_ns):
+                raise ValueError("HOLD_SOURCE_CHANGED")
+            if not p.suffix: check_plain(data,True)
+            sha=hashlib.sha256(data).hexdigest()
+            prev=db.execute("SELECT sha FROM files WHERE path=?",(path,)).fetchone()
+            if prev and prev[0]==sha:
+                status="UNCHANGED"
+            else:
+                text=data.decode("utf-8",errors="replace")
+                print("STAGE=CONTACTS | "+path,flush=True)
+                contacts=set()
+                parts=text.split("@")
+                for left,right in zip(parts,parts[1:]):
+                    l=re.match(r"[\w.+-]+",left[::-1])
+                    q=re.match(r"[\w.-]+",right)
+                    if l and q:
+                        m=E.match(l[0][::-1]+"@"+q[0])
+                        if m: contacts.add(m[0])
+                contacts=sorted(contacts)
+                del parts
+                low=text.lower() if contacts else ""
+                print("STAGE=SIGNALS | "+path,flush=True)
+                signals=sorted(k for k,words in SIG.items()
+                    if any(w in low for w in words))
+                if signals and contacts:
+                    key=hashlib.sha256(
+                        (path+"\0"+sha).encode()).hexdigest()
+                    report=OUT/(key+".json")
+                    record={"source":path,"source_sha256":sha,
+                        "signals":signals,"contacts":contacts,
+                        "status":"REVIEW_REQUIRED",
+                        "automatic_send":False,"human_gate":"ACTIVE"}
+                    payload=json.dumps(record,
+                        ensure_ascii=False,indent=2).encode()
+                    if report.exists():
+                        if report.read_bytes()!=payload:
+                            raise ValueError("HOLD_REPORT_CONFLICT")
+                    else:
+                        import tempfile
+                        fd,tmp=tempfile.mkstemp(dir=OUT)
+                        try:
+                            with os.fdopen(fd,"wb") as f:
+                                f.write(payload)
+                                f.flush()
+                                os.fsync(f.fileno())
+                            os.link(tmp,report)
+                        finally:
+                            os.unlink(tmp)
+                        created+=1
+                    db.execute(
+                        "INSERT OR IGNORE INTO findings VALUES(?,?,?,?)",
+                        (key,path,sha,str(report)))
+                status="SCANNED"
+    except NotPlainText:
+        status="METADATA_ONLY_UNSUPPORTED_TYPE"
+    except (OSError,ValueError) as e:
+        status="HOLD:"+type(e).__name__+":"+str(e)[:160]
+    db.execute("INSERT OR REPLACE INTO files VALUES(?,?,?)",
+               (path,sha,status))
+    db.execute("UPDATE queue SET status=? WHERE path=?",
+               (status,path))
+    db.commit()
+    processed+=1
+
+pending=db.execute(
+    "SELECT COUNT(*) FROM queue WHERE status='PENDING'"
+).fetchone()[0]
+holds=db.execute(
+    "SELECT COUNT(*) FROM queue WHERE status LIKE 'HOLD:%'"
+).fetchone()[0]
+print("PROCESSED="+str(processed))
+print("REPORTS_CREATED="+str(created))
+print("PENDING="+str(pending))
+print("HOLDS="+str(holds))
+print("RESULT="+("HOLD_REVIEW_REQUIRED" if holds else
+    "PASS_BOUNDED_CYCLE"))
+print("FULL_COVERAGE=NOT_ESTABLISHED")
+print("EXTERNAL_SEND=NONE\nHUMAN_GATE=ACTIVE")
+db.close()
+lock.close()

@@ -1,0 +1,56 @@
+import json
+import os
+import sys
+from pathlib import Path
+
+FIELDS = (
+    "utc",
+    "object_id",
+    "event_type",
+    "from_state",
+    "to_state",
+    "decision",
+    "status",
+)
+
+def canonical(data):
+    return json.dumps(
+        data,
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+    )
+
+def append_event(path, event):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    if tuple(sorted(event)) != tuple(sorted(FIELDS)):
+        raise SystemExit("HUMAN_HOLD:JOURNAL_SCHEMA_INVALID")
+
+    line = canonical(event) + "\n"
+
+    with path.open("a", encoding="utf-8", newline="\n") as handle:
+        handle.write(line)
+        handle.flush()
+        os.fsync(handle.fileno())
+
+def main():
+    if len(sys.argv) != 9:
+        raise SystemExit(
+            "USAGE: journal utc object_id event_type from_state "
+            "to_state decision status"
+        )
+
+    journal = sys.argv[1]
+    values = sys.argv[2:]
+    event = dict(zip(FIELDS, values))
+
+    append_event(journal, event)
+
+    print("JOURNAL=" + journal)
+    print("EVENT_TYPE=" + event["event_type"])
+    print("RESULT=PASS")
+
+if __name__ == "__main__":
+    main()

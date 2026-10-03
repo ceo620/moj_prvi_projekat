@@ -1,0 +1,59 @@
+#!/bin/sh
+set -eu
+
+ROOT="$HOME/FREYA_IPHONE_ISH_NODE_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+
+OUT="$ROOT/16_REPORTS/IPHONE_TRANSFORMATION_BATCH_015_$TS"
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS iPHONE TRANSFORMATION BATCH 015"
+echo "APPLICATION DECISION MATRIX"
+echo "============================================================"
+
+{
+echo "COMPONENT|DECISION|REASON"
+
+for c in \
+30_APP_CONTROL \
+19_APP_BRIDGES \
+SHORTCUTS_BRIDGE_888 \
+07_AUTOMATION \
+18_HANDOFF \
+09_EXPORT \
+15_RUNTIME
+do
+    if [ -d "$ROOT/$c" ]; then
+        echo "$c|REVIEWED|EXISTS"
+    else
+        echo "$c|NOT_FOUND|NONE"
+    fi
+done
+
+} | tee "$OUT/APPLICATION_DECISION_MATRIX.tsv"
+
+
+echo
+echo "===== COMPONENT COUNTS ====="
+
+find "$ROOT" -type f 2>/dev/null | \
+grep -Ei "app|shortcut|bridge|automation|intent|capability|receipt|manifest" | \
+wc -l | tee "$OUT/COMPONENT_COUNT.txt"
+
+
+echo
+echo "===== FINAL ====="
+
+echo "BATCH=015"
+echo "MODE=APPLICATION_DECISION_MATRIX"
+echo "MUTATION=NO"
+echo "DELETE=NO"
+echo "MOVE=NO"
+echo "RESULT=PASS"
+echo "NEXT=BATCH_016_APPLICATION_OPTIMIZATION"
+
+echo "REPORT=$OUT"
+
+echo "============================================================"
+

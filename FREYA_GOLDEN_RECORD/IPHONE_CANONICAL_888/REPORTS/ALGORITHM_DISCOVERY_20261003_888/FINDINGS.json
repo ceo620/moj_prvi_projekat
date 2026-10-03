@@ -1,0 +1,39 @@
+{
+  "protocol": "00+888",
+  "batch": "2/4",
+  "scope": "Selected discovered sources and provenance; incomplete static review",
+  "harmonization": "PENDING",
+  "runtime_execution": "NOT_PERFORMED",
+  "activation": "NOT_PERFORMED",
+  "git_commit": "NOT_PERFORMED",
+  "git_push": "NOT_PERFORMED",
+  "remote_live_state": "NOT_CHECKED",
+  "prior_user_terminal_observations_not_rerun": {
+    "manifest_matches": 262,
+    "index_hash_matches": 41,
+    "runner_dependencies_match": 6,
+    "local_regular_files": 63373,
+    "outside_manifest_files": 63111,
+    "symlinks_not_followed": 36
+  },
+  "findings": [
+    "Processor hashes and classifies extensions. PASS does not establish financial correctness.",
+    "Financial validator checks XLSX structure, formula presence and keywords; it does not calculate IRR or DSCR.",
+    "Foreground cycle stages changed input copies and checks hashes; it writes runtime state.",
+    "Allowlist approves a module. Binding to FREYA_ONE job approval has not been established.",
+    "Brand scorer derives synthetic metrics from a text hash; generated SVG is a placeholder.",
+    "Recovered worker moves files between directories without demonstrated document processing.",
+    "QueueV2 is an in-memory FIFO with content deduplication; shown code has no snapshot restore.",
+    "Recovered supervisor updates counters and checkpoint text; printed resume claims are not runtime proof.",
+    "Some scheduler scripts emit fixed marketing text. Mock contacts and commercial claims are unverified.",
+    "One recovered mail script fetches RSS and writes drafts; it must not be activated in offline review.",
+    "Recovered engine files were listed but their full semantic review is outstanding."
+  ],
+  "limits": [
+    "This package is not a complete backup or a production approval.",
+    "Brand config.py and prompt_builder.py were absent from the inspected folder.",
+    "Deep recovery reports retain unresolved/truncated archives; giant archive remains unexamined.",
+    "Secret pattern screening is limited; human review remains required before publication.",
+    "Historical reports are preserved as evidence, not adopted as current authority."
+  ]
+}

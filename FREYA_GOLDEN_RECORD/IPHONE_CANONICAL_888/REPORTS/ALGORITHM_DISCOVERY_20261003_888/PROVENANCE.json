@@ -1,0 +1,1185 @@
+[
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SISTEM/AGENT_FACTORY/ROUTER/queue_binder.sh",
+    "sha256": "45a742625b793b0b827e0928bfabc6bc025f89de299b540199862c51cdc5fc8c",
+    "bytes": 1146,
+    "object": "OBJECTS/45a742625b793b0b827e0928bfabc6bc025f89de299b540199862c51cdc5fc8c.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/ADAPTER_PATCHED_32__6f6f336c828c.py",
+    "sha256": "6f6f336c828ce6c63d01305ed2c3e090edc666e3b7a024a088eea70c6c8bec2c",
+    "bytes": 1761,
+    "object": "OBJECTS/6f6f336c828ce6c63d01305ed2c3e090edc666e3b7a024a088eea70c6c8bec2c.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/AUTOMATE_ALL_DOCUMENTS__e885ba6e3c7c.py",
+    "sha256": "e885ba6e3c7c6b1b56aa7d5afe37d1eae7e3cce182c0ae159e27e8ae32805801",
+    "bytes": 1089,
+    "object": "OBJECTS/e885ba6e3c7c6b1b56aa7d5afe37d1eae7e3cce182c0ae159e27e8ae32805801.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/ENGINE__01cd6ee9c07d.py",
+    "sha256": "01cd6ee9c07d76f2b974b655791c4bcb8426e128bdb29ca221cfcce502064525",
+    "bytes": 22773,
+    "object": "OBJECTS/01cd6ee9c07d76f2b974b655791c4bcb8426e128bdb29ca221cfcce502064525.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/FREYA_RUN_V1_BACKUP__953b50593279.sh",
+    "sha256": "953b505932792f4975e165d6eee55396467a08b46d67bf3756633e9123d10585",
+    "bytes": 883,
+    "object": "OBJECTS/953b505932792f4975e165d6eee55396467a08b46d67bf3756633e9123d10585.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/FREYA_RUN_V2__ee7e37bd8707.sh",
+    "sha256": "ed9745973bba49d90cd188b10f9b090609eb865e3a4d790e297eb482864cdf66",
+    "bytes": 2145,
+    "object": "OBJECTS/ed9745973bba49d90cd188b10f9b090609eb865e3a4d790e297eb482864cdf66.source.txt",
+    "role": "pinned_live_source"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/IPHONE_888_AUTOPILOT__d3d409532b34.sh",
+    "sha256": "d3d409532b346c81e54727a1df2f0631eb90d551287c132757cacb76d64c8935",
+    "bytes": 1488,
+    "object": "OBJECTS/d3d409532b346c81e54727a1df2f0631eb90d551287c132757cacb76d64c8935.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/PATCHED_32_DATA_ROOM_BUILDER__180882bc799e.py",
+    "sha256": "180882bc799ed5cfe4aacb6eed8caea1cc458cdacbd98c4de25e071a4effd2a3",
+    "bytes": 1267,
+    "object": "OBJECTS/180882bc799ed5cfe4aacb6eed8caea1cc458cdacbd98c4de25e071a4effd2a3.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/auto_harvest.sh",
+    "sha256": "bfbb691e1dbe41e6da6e9e075289b7ad10327beb3bb5154df6c06479b6ac6ca0",
+    "bytes": 505,
+    "object": "OBJECTS/bfbb691e1dbe41e6da6e9e075289b7ad10327beb3bb5154df6c06479b6ac6ca0.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_dashboard.sh",
+    "sha256": "453956998185b96b033a96708f64e2854ab932d1294d169f1cbeabeaca8683d1",
+    "bytes": 445,
+    "object": "OBJECTS/453956998185b96b033a96708f64e2854ab932d1294d169f1cbeabeaca8683d1.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_enclave_journal.sh",
+    "sha256": "cebd36c332460e6ef31a417a635a87ce37870277c29b374278c66ce9e2a61279",
+    "bytes": 339,
+    "object": "OBJECTS/cebd36c332460e6ef31a417a635a87ce37870277c29b374278c66ce9e2a61279.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_energy_vault.sh",
+    "sha256": "0f44ce41d73bde05bf253149e9b6b233ec27eccbec94e6ccf8e2f2e9f2d54008",
+    "bytes": 135,
+    "object": "OBJECTS/0f44ce41d73bde05bf253149e9b6b233ec27eccbec94e6ccf8e2f2e9f2d54008.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_final_copy.sh",
+    "sha256": "b212e2952e36d98ad9511a2fbd79dc03c5a943380bb4a332786e4e9ae9d72e9e",
+    "bytes": 574,
+    "object": "OBJECTS/b212e2952e36d98ad9511a2fbd79dc03c5a943380bb4a332786e4e9ae9d72e9e.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_focus_reset.sh",
+    "sha256": "7d616603eb01b74d8e97ea62aa23b7a1ade0311748d2c8c51361214950cf507e",
+    "bytes": 143,
+    "object": "OBJECTS/7d616603eb01b74d8e97ea62aa23b7a1ade0311748d2c8c51361214950cf507e.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_generate_whitepaper.sh",
+    "sha256": "af5836446e1675e12e78deeae0704b3ed58b0ca612c2b3bbbfd34880f7169cd6",
+    "bytes": 3604,
+    "object": "OBJECTS/af5836446e1675e12e78deeae0704b3ed58b0ca612c2b3bbbfd34880f7169cd6.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_just_human.sh",
+    "sha256": "7ce10517717262ef481f72e7e7065280e33f1dc28a5a5a7d79e84191028d3004",
+    "bytes": 146,
+    "object": "OBJECTS/7ce10517717262ef481f72e7e7065280e33f1dc28a5a5a7d79e84191028d3004.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_knjiga_engine.sh",
+    "sha256": "5edf611659444bf927baa5aa6419e8cfc126eecaf5e65fa2aa93635cdbcf4195",
+    "bytes": 2689,
+    "object": "OBJECTS/5edf611659444bf927baa5aa6419e8cfc126eecaf5e65fa2aa93635cdbcf4195.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_mail_orchestrator.py",
+    "sha256": "f1f848d31ee3adba44c3650c5c304ca9249ef88674e3f4510b865da30f0f1424",
+    "bytes": 647,
+    "object": "OBJECTS/f1f848d31ee3adba44c3650c5c304ca9249ef88674e3f4510b865da30f0f1424.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_master_node.sh",
+    "sha256": "bf4d5e6029e283ab4d0213362b5297a6c6cc0d442d4130a8a2e46ebe9320f055",
+    "bytes": 703,
+    "object": "OBJECTS/bf4d5e6029e283ab4d0213362b5297a6c6cc0d442d4130a8a2e46ebe9320f055.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_needs_scheduler.sh",
+    "sha256": "abc00697ece01f29c728725b27723da3da1fbcb8338811d49717af60537b1892",
+    "bytes": 2768,
+    "object": "OBJECTS/abc00697ece01f29c728725b27723da3da1fbcb8338811d49717af60537b1892.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_next_steps.sh",
+    "sha256": "371f9bbf1346f0377c574ad8cee40ce1de7a61c2a7efe91cdfb788483d882e77",
+    "bytes": 160,
+    "object": "OBJECTS/371f9bbf1346f0377c574ad8cee40ce1de7a61c2a7efe91cdfb788483d882e77.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_panic_grounding.sh",
+    "sha256": "7f74f56a95be0e9195066261b5730e48de0d3f58631e2e18c139618156eaea26",
+    "bytes": 162,
+    "object": "OBJECTS/7f74f56a95be0e9195066261b5730e48de0d3f58631e2e18c139618156eaea26.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_producer_ready.sh",
+    "sha256": "e0bee08d1f981a0a5b76d9e36c49967587c4d9e70380298e785226d2cf07dbda",
+    "bytes": 3309,
+    "object": "OBJECTS/e0bee08d1f981a0a5b76d9e36c49967587c4d9e70380298e785226d2cf07dbda.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_scheduler.sh",
+    "sha256": "3c2f015a57b7263a832ad5751052462d497221020a9028b32d56221062f43145",
+    "bytes": 2478,
+    "object": "OBJECTS/3c2f015a57b7263a832ad5751052462d497221020a9028b32d56221062f43145.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_secure_dist.sh",
+    "sha256": "af6de1fdd36bec1996cacd129bf12aa3039be5167ba3afe2edf142a82afa0582",
+    "bytes": 516,
+    "object": "OBJECTS/af6de1fdd36bec1996cacd129bf12aa3039be5167ba3afe2edf142a82afa0582.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_shield_active.sh",
+    "sha256": "d6387a45546ca039bbf527733aa36f60dfe909abaeb172d193c7554eab3fadf0",
+    "bytes": 136,
+    "object": "OBJECTS/d6387a45546ca039bbf527733aa36f60dfe909abaeb172d193c7554eab3fadf0.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_srednja_klasa.sh",
+    "sha256": "1f9ae5337e6a2cdd9af3214556673814e215b4046d5beb4eab859d5482d90ae0",
+    "bytes": 2292,
+    "object": "OBJECTS/1f9ae5337e6a2cdd9af3214556673814e215b4046d5beb4eab859d5482d90ae0.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_storage_node.sh",
+    "sha256": "08242adf04f05c5eb1dc346481e3e6fc6802396eda7f52cd8b58252fba465dec",
+    "bytes": 616,
+    "object": "OBJECTS/08242adf04f05c5eb1dc346481e3e6fc6802396eda7f52cd8b58252fba465dec.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/freya_zena_balkanska.sh",
+    "sha256": "7204cafb39d02077cec57e1f664a748cd513e98ad82edb7511dcee68b17e939b",
+    "bytes": 2302,
+    "object": "OBJECTS/7204cafb39d02077cec57e1f664a748cd513e98ad82edb7511dcee68b17e939b.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/hardening_closure.sh",
+    "sha256": "930caa3b957be1d02e5f21c3d1b1c554d0f86da96d0b9ea223a76c76650204e5",
+    "bytes": 134,
+    "object": "OBJECTS/930caa3b957be1d02e5f21c3d1b1c554d0f86da96d0b9ea223a76c76650204e5.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/human_gate_active.sh",
+    "sha256": "d613aa672f97fa772f6c52266c4fce5fb403979d8c7dc30edbbced11da76fdf2",
+    "bytes": 229,
+    "object": "OBJECTS/d613aa672f97fa772f6c52266c4fce5fb403979d8c7dc30edbbced11da76fdf2.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/javi_status.sh",
+    "sha256": "fa0b3d161052d1b6c9d5f015cf2fc7eb3c8fbf8db5acb3f4a2f2c7d8d01d7072",
+    "bytes": 301,
+    "object": "OBJECTS/fa0b3d161052d1b6c9d5f015cf2fc7eb3c8fbf8db5acb3f4a2f2c7d8d01d7072.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/network_comm_audit.sh",
+    "sha256": "d37792be802cc4fd59e38e169f3e36f0d50b9ed485796289b1949014300067dc",
+    "bytes": 135,
+    "object": "OBJECTS/d37792be802cc4fd59e38e169f3e36f0d50b9ed485796289b1949014300067dc.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/neural_shield_wall.sh",
+    "sha256": "068d715d8a0def8f34acf726797911a549b0bdeefa3d4285a28aadfd0111dd15",
+    "bytes": 132,
+    "object": "OBJECTS/068d715d8a0def8f34acf726797911a549b0bdeefa3d4285a28aadfd0111dd15.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/skeniraj_status.sh",
+    "sha256": "5b54661a9c804dbd08100fedb4facd21ba70d3258d8fd501e2cb039c29f3c542",
+    "bytes": 291,
+    "object": "OBJECTS/5b54661a9c804dbd08100fedb4facd21ba70d3258d8fd501e2cb039c29f3c542.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/spyware_jb_detect.sh",
+    "sha256": "87bc72fbe9745219c72786a3601ea6a244ee38187c357544eee92cfafebf3aaa",
+    "bytes": 134,
+    "object": "OBJECTS/87bc72fbe9745219c72786a3601ea6a244ee38187c357544eee92cfafebf3aaa.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/titan_self_heal.sh",
+    "sha256": "a417ce6c5ab6f497b694dbf32b200ed51e64cea6ff82f434e7d194cea26bb1fb",
+    "bytes": 148,
+    "object": "OBJECTS/a417ce6c5ab6f497b694dbf32b200ed51e64cea6ff82f434e7d194cea26bb1fb.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_888/titan_sentinel_d.sh",
+    "sha256": "ed61b39b30ddae25d898ec61846984783032c0cc7b0c81a0615df3af0625364e",
+    "bytes": 298,
+    "object": "OBJECTS/ed61b39b30ddae25d898ec61846984783032c0cc7b0c81a0615df3af0625364e.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/SOBE_DAILY.sh",
+    "sha256": "6e36c17351c152700fa43231dd836c40aea92a8e526ac2fcd7ef2a44e5db882f",
+    "bytes": 1182,
+    "object": "OBJECTS/6e36c17351c152700fa43231dd836c40aea92a8e526ac2fcd7ef2a44e5db882f.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/TITAN_ADAPTER_35__534eb1e03966.py",
+    "sha256": "534eb1e0396617b6f05b022eb8e0b040a3f51f02d9c3b1950bef366bb7be944f",
+    "bytes": 2552,
+    "object": "OBJECTS/534eb1e0396617b6f05b022eb8e0b040a3f51f02d9c3b1950bef366bb7be944f.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/TITAN_ADAPTER_42__50cb6d96d7fb.py",
+    "sha256": "50cb6d96d7fb0615a6a6eb243bc5c13f16b45cf18e83f3778f712cd216ced08a",
+    "bytes": 1823,
+    "object": "OBJECTS/50cb6d96d7fb0615a6a6eb243bc5c13f16b45cf18e83f3778f712cd216ced08a.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/V889_AUTO.py",
+    "sha256": "f5b2dfd13eea891e9ae4d078702a15434a79de0734aa00fe98fa62812d903672",
+    "bytes": 2965,
+    "object": "OBJECTS/f5b2dfd13eea891e9ae4d078702a15434a79de0734aa00fe98fa62812d903672.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/V889_ISH.py",
+    "sha256": "f7914ce4d9469afaa496ae1bea6c0886ada8423884deed8f6b9247b2e43cc43b",
+    "bytes": 22415,
+    "object": "OBJECTS/f7914ce4d9469afaa496ae1bea6c0886ada8423884deed8f6b9247b2e43cc43b.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/document_processor__8236c31e6374.py",
+    "sha256": "8236c31e63747752248df5c70c13e7d3786dd53336387bb115a63fef5cc8f64d",
+    "bytes": 1213,
+    "object": "OBJECTS/8236c31e63747752248df5c70c13e7d3786dd53336387bb115a63fef5cc8f64d.source.txt",
+    "role": "pinned_live_source"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/execution_allowlist.tsv",
+    "sha256": "b88612168b5cd56497ee43751bcdf83120359734987743672d9467c0558d9ae4",
+    "bytes": 1311,
+    "object": "OBJECTS/b88612168b5cd56497ee43751bcdf83120359734987743672d9467c0558d9ae4.source.txt",
+    "role": "pinned_live_source"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/financial_validator_v2_888__97a77c633836.py",
+    "sha256": "97a77c63383646e81e56e2b5712714778dee6e4e9235b0d71e92cd1431a67db1",
+    "bytes": 2127,
+    "object": "OBJECTS/97a77c63383646e81e56e2b5712714778dee6e4e9235b0d71e92cd1431a67db1.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/foreground_business__f786b849ead3.py",
+    "sha256": "f786b849ead322667efe904acad58d1a2f43fb2198676ec2156b111f01a6c20c",
+    "bytes": 13201,
+    "object": "OBJECTS/f786b849ead322667efe904acad58d1a2f43fb2198676ec2156b111f01a6c20c.source.txt",
+    "role": "pinned_live_source"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/generate_SIGNALNI_MEMORANDUM_TITAN1__97a18cecc6af.py",
+    "sha256": "e1dd4c0f3ff79ce85160290aea5b761fd93b7aad05c3212e3415f390028dc3fc",
+    "bytes": 7960,
+    "object": "OBJECTS/e1dd4c0f3ff79ce85160290aea5b761fd93b7aad05c3212e3415f390028dc3fc.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime_00_ulaz__96d8ddba473c.sh",
+    "sha256": "96d8ddba473c6a808a30cdbb46a73e79dbcc8b05eca36496190fe6e1b0274a67",
+    "bytes": 866,
+    "object": "OBJECTS/96d8ddba473c6a808a30cdbb46a73e79dbcc8b05eca36496190fe6e1b0274a67.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime__9d46471b6319.sh",
+    "sha256": "9d46471b631957bd3518526c6b8399dac5fb6393c32ca5149ad50a05906200bc",
+    "bytes": 879,
+    "object": "OBJECTS/9d46471b631957bd3518526c6b8399dac5fb6393c32ca5149ad50a05906200bc.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime_all_files__a4a3fb462812.sh",
+    "sha256": "a4a3fb462812fce09eb375a7f60ac5c9bd1da6a90a9ce7f799ae2cc2d8ed9bc7",
+    "bytes": 863,
+    "object": "OBJECTS/a4a3fb462812fce09eb375a7f60ac5c9bd1da6a90a9ce7f799ae2cc2d8ed9bc7.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/queue_binder__45a742625b79.sh",
+    "sha256": "33d578101df6de8cd70947e8f3ef58eeb82f3e208fad7a1275741d3217b60536",
+    "bytes": 1317,
+    "object": "OBJECTS/33d578101df6de8cd70947e8f3ef58eeb82f3e208fad7a1275741d3217b60536.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_ONE_888/08_BIN/freya_one.py",
+    "sha256": "2d9faabaad68fee14b89f1644d1dc2914fda4c842d8255110fb98610571398f1",
+    "bytes": 4440,
+    "object": "OBJECTS/2d9faabaad68fee14b89f1644d1dc2914fda4c842d8255110fb98610571398f1.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_ONE_888/ORIGINAL.py",
+    "sha256": "33b41d66333ea330c0cbcefe1ff4df25b57a53023b2baa2f5669ea379d66df5f",
+    "bytes": 4240,
+    "object": "OBJECTS/33b41d66333ea330c0cbcefe1ff4df25b57a53023b2baa2f5669ea379d66df5f.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/HUMAN_GATE_CONSOLE_V1/freya_gate.py",
+    "sha256": "134d76080a36e23fdc0be4022df24cde3e4dbf851de9551ac1eea06503e22617",
+    "bytes": 7781,
+    "object": "OBJECTS/134d76080a36e23fdc0be4022df24cde3e4dbf851de9551ac1eea06503e22617.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/HUMAN_GATE_CONSOLE_V1/launcher_before_repair.sh",
+    "sha256": "96b9dfcd6993932e4894ce0837ff2d62349a84eac576eb555e8cb19b2149ff3a",
+    "bytes": 140,
+    "object": "OBJECTS/96b9dfcd6993932e4894ce0837ff2d62349a84eac576eb555e8cb19b2149ff3a.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/SIGNAL_HARVESTER_V1/harvest.original.py",
+    "sha256": "8e54e02eecfc2771936f546bf00d6d9a7c4ec66dfeacefe9ea8bcd99485537ca",
+    "bytes": 3185,
+    "object": "OBJECTS/8e54e02eecfc2771936f546bf00d6d9a7c4ec66dfeacefe9ea8bcd99485537ca.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/SIGNAL_HARVESTER_V1/harvest.py",
+    "sha256": "f27e9b0ed4179e7469fb170055e6283b93b1d0b0f10d98e1c8b7258580c3861d",
+    "bytes": 12184,
+    "object": "OBJECTS/f27e9b0ed4179e7469fb170055e6283b93b1d0b0f10d98e1c8b7258580c3861d.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/SIGNAL_HARVESTER_V1/large_scan.py",
+    "sha256": "8f8bf4f36678b20a1eb9c0d7b595283e8547ad44b20e692b49be58c138139d6d",
+    "bytes": 2991,
+    "object": "OBJECTS/8f8bf4f36678b20a1eb9c0d7b595283e8547ad44b20e692b49be58c138139d6d.source.txt",
+    "role": "live_source_static_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Dubinski_oporavak_016/RUN_1789205916775883000_6f68db2c/SUMMARY.json",
+    "sha256": "6a6865e79d99320f77c39a0a3711da2cba5dd821d061c106554339513c9a5a82",
+    "bytes": 1039,
+    "object": "OBJECTS/6a6865e79d99320f77c39a0a3711da2cba5dd821d061c106554339513c9a5a82.source.txt",
+    "role": "historical_recovery_report"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Dubinski_oporavak_016/RUN_1789208009922981000_cff2f695/SUMMARY_017.json",
+    "sha256": "c17c26dcf575f81b00e0d20b3f221c8e1902498da93f7c912ecb30170b30b0ff",
+    "bytes": 2002,
+    "object": "OBJECTS/c17c26dcf575f81b00e0d20b3f221c8e1902498da93f7c912ecb30170b30b0ff.source.txt",
+    "role": "historical_recovery_report"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/DECISION_MACHINE_V1_20260708_231426/06_LOGS/decision_engine_v1.sh",
+    "sha256": "f964f1428df182e9159884aa06be0ee7e4f9b2a86ba1b9a4275d994017fc90dd",
+    "bytes": 642,
+    "object": "OBJECTS/f964f1428df182e9159884aa06be0ee7e4f9b2a86ba1b9a4275d994017fc90dd.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/FAILURE_RETRY_DEAD_LETTER_TEST_V1.sh",
+    "sha256": "e7f87a55654406dafc9d852b66b3b1b49458f3fcce6eb05abe6a3994a511dd75",
+    "bytes": 5096,
+    "object": "OBJECTS/e7f87a55654406dafc9d852b66b3b1b49458f3fcce6eb05abe6a3994a511dd75.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/HMM_FACTORY_V1.sh",
+    "sha256": "32afb9f294f184f3dd2183d35143ee378b26b69f053769d3dd80e3150368b6cc",
+    "bytes": 705,
+    "object": "OBJECTS/32afb9f294f184f3dd2183d35143ee378b26b69f053769d3dd80e3150368b6cc.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/LOCAL_PIPELINE_V1.sh",
+    "sha256": "fbc761644fb1894b5c12c05f5c91269811ea86d28df1cb1ece093df8fbae8b19",
+    "bytes": 5514,
+    "object": "OBJECTS/fbc761644fb1894b5c12c05f5c91269811ea86d28df1cb1ece093df8fbae8b19.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/OBSERVABILITY_FACTORY_V1.sh",
+    "sha256": "40cfdc36086568f9cf068c73d0634742414c8622a719397bbd6ab175c39761de",
+    "bytes": 2350,
+    "object": "OBJECTS/40cfdc36086568f9cf068c73d0634742414c8622a719397bbd6ab175c39761de.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/PACKAGE_FACTORY_V1.sh",
+    "sha256": "f389f7f2b8ad66fb0349154f874d05ab8d52f81a4fb3aa3443071c042b11bfb2",
+    "bytes": 271,
+    "object": "OBJECTS/f389f7f2b8ad66fb0349154f874d05ab8d52f81a4fb3aa3443071c042b11bfb2.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/RESTART_RESUME_TEST_V1.sh",
+    "sha256": "27fd8d4c5c7b366bc46047a2fcdd05d123e28e0b52f3ae32f956b77cf1133373",
+    "bytes": 3652,
+    "object": "OBJECTS/27fd8d4c5c7b366bc46047a2fcdd05d123e28e0b52f3ae32f956b77cf1133373.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/RUNTIME_STABILITY_V1.sh",
+    "sha256": "bb7b0f7b515570dbd70b75061a79df9eaa5e72d61b21a32f22459b31f561fed8",
+    "bytes": 4326,
+    "object": "OBJECTS/bb7b0f7b515570dbd70b75061a79df9eaa5e72d61b21a32f22459b31f561fed8.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/SCHEDULER_V1.sh",
+    "sha256": "4c1ad0a5589d8bd7cd9a82590aec9370f8de566f12172db61b9fe2860a569d0f",
+    "bytes": 86,
+    "object": "OBJECTS/4c1ad0a5589d8bd7cd9a82590aec9370f8de566f12172db61b9fe2860a569d0f.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/SELF_HEAL_RECOVERY_V1.sh",
+    "sha256": "7beea674fbf4c7f7c77ec1453d4a9df036ff36780a3f5859bc1155a09f648ef1",
+    "bytes": 3214,
+    "object": "OBJECTS/7beea674fbf4c7f7c77ec1453d4a9df036ff36780a3f5859bc1155a09f648ef1.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/SELF_TEST_FRAMEWORK_V1.sh",
+    "sha256": "1b8d8b26df8b50b5165d3cd562e0f89dcf9cc660c285b0bc111623ccb730c097",
+    "bytes": 3145,
+    "object": "OBJECTS/1b8d8b26df8b50b5165d3cd562e0f89dcf9cc660c285b0bc111623ccb730c097.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/SUPERVISOR_V1.sh",
+    "sha256": "1700acd31ef01f7652a92e15ddb1305b6ec99fc54cb065559c53a7cc14c6ea79",
+    "bytes": 932,
+    "object": "OBJECTS/1700acd31ef01f7652a92e15ddb1305b6ec99fc54cb065559c53a7cc14c6ea79.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_888/03_AGENT_RUNTIME/WATCHDOG_V1.sh",
+    "sha256": "2f0961130a378506df362b54751c7e3424f78a0900c689fd0dc73b025f9a491d",
+    "bytes": 627,
+    "object": "OBJECTS/2f0961130a378506df362b54751c7e3424f78a0900c689fd0dc73b025f9a491d.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/__init__.py",
+    "sha256": "c303d24ad8d0b9070bc349407930004013c4467b9754a6dc2f7b5cf7e8ce1e47",
+    "bytes": 62,
+    "object": "OBJECTS/c303d24ad8d0b9070bc349407930004013c4467b9754a6dc2f7b5cf7e8ce1e47.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/contracts/STATUS.env",
+    "sha256": "572d4a99d49bb41b0907764d02069d1dc9578a73afb5824e337a85f9ae6297c7",
+    "bytes": 16,
+    "object": "OBJECTS/572d4a99d49bb41b0907764d02069d1dc9578a73afb5824e337a85f9ae6297c7.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/contracts/pipeline_contract.env",
+    "sha256": "42669d489faef0e581b3dfe7cfc39fb0de0f95e1045f0e78f9ff0e1bc25fdcaa",
+    "bytes": 85,
+    "object": "OBJECTS/42669d489faef0e581b3dfe7cfc39fb0de0f95e1045f0e78f9ff0e1bc25fdcaa.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/contracts/queue_contract.env",
+    "sha256": "5788cc703517eae1977e280b14a27552f1479b452f6ae4bc6bc329e239445e62",
+    "bytes": 138,
+    "object": "OBJECTS/5788cc703517eae1977e280b14a27552f1479b452f6ae4bc6bc329e239445e62.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/contracts/runtime_contract.env",
+    "sha256": "bef52eafd88f2d6593329107bb362a871cf390ae4e9a5bf2a170b0397371d7ff",
+    "bytes": 104,
+    "object": "OBJECTS/bef52eafd88f2d6593329107bb362a871cf390ae4e9a5bf2a170b0397371d7ff.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/contracts/state_contract.env",
+    "sha256": "231afec9cf1faaee52ddd65366d0c81de5bdb36847b740a655006290595a90db",
+    "bytes": 51,
+    "object": "OBJECTS/231afec9cf1faaee52ddd65366d0c81de5bdb36847b740a655006290595a90db.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/core/STATUS.env",
+    "sha256": "71bdac0d93731444371864a1a47707c62663f12bd13a7f2cff0c2effd5289c55",
+    "bytes": 11,
+    "object": "OBJECTS/71bdac0d93731444371864a1a47707c62663f12bd13a7f2cff0c2effd5289c55.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/dispatcher.py",
+    "sha256": "3240187e9735c1997ccd2cb6aca8dda3b8cd906670ce3bb0d75ca5a5912bfc98",
+    "bytes": 153,
+    "object": "OBJECTS/3240187e9735c1997ccd2cb6aca8dda3b8cd906670ce3bb0d75ca5a5912bfc98.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/agent_router.py",
+    "sha256": "5b2e1cf0a3a2faeb997fea6e11e282b8fdf5df3e6a4de247437727c37343fcf6",
+    "bytes": 1305,
+    "object": "OBJECTS/5b2e1cf0a3a2faeb997fea6e11e282b8fdf5df3e6a4de247437727c37343fcf6.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/checkpoint_engine.py",
+    "sha256": "fcde1ef0724f5f98575188ae48b035018537efbcb87641538755d7f0db37fd84",
+    "bytes": 2182,
+    "object": "OBJECTS/fcde1ef0724f5f98575188ae48b035018537efbcb87641538755d7f0db37fd84.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/checkpoint_v2.py",
+    "sha256": "0ee59ba70b2c74b15167265ef8a9b1249480c9302877ad2a01043c7991cf12ff",
+    "bytes": 2357,
+    "object": "OBJECTS/0ee59ba70b2c74b15167265ef8a9b1249480c9302877ad2a01043c7991cf12ff.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/document_processor.py",
+    "sha256": "1d8d111c2dbfd29498924de66baba81cdc2e481a7a60473b0868a20f58ed612b",
+    "bytes": 1162,
+    "object": "OBJECTS/1d8d111c2dbfd29498924de66baba81cdc2e481a7a60473b0868a20f58ed612b.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/duplicate_engine.py",
+    "sha256": "97c5ed83f350941cbfe1f010f5c0a75fcd12668898c3cd0d8f895b365ee5c20f",
+    "bytes": 1146,
+    "object": "OBJECTS/97c5ed83f350941cbfe1f010f5c0a75fcd12668898c3cd0d8f895b365ee5c20f.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/event_engine.py",
+    "sha256": "f4e69358fab241702e2f111c3713cfe43fc98a9c0fd026a36b0faa61359ba37f",
+    "bytes": 73,
+    "object": "OBJECTS/f4e69358fab241702e2f111c3713cfe43fc98a9c0fd026a36b0faa61359ba37f.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/evidence_engine.py",
+    "sha256": "d37a601a7c2422e6a7a11c362d4f80d2aa8df096ba8fb3bfaaf926e5da1565a0",
+    "bytes": 2454,
+    "object": "OBJECTS/d37a601a7c2422e6a7a11c362d4f80d2aa8df096ba8fb3bfaaf926e5da1565a0.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/hash_verification.py",
+    "sha256": "7c55bc717921566223163598d20cb7ab08b51e62a66eaa2510cd5f41b5fdc728",
+    "bytes": 933,
+    "object": "OBJECTS/7c55bc717921566223163598d20cb7ab08b51e62a66eaa2510cd5f41b5fdc728.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/lineage_engine.py",
+    "sha256": "a15ad3a5980c0df4270d47a83b5f454838720d024e34877e345aa67ed5bb9494",
+    "bytes": 874,
+    "object": "OBJECTS/a15ad3a5980c0df4270d47a83b5f454838720d024e34877e345aa67ed5bb9494.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/manifest_engine.py",
+    "sha256": "c1b6656779dc4ac3f43def035d15cb7cb173c498fbd240b0e09d4162404b3e6a",
+    "bytes": 1739,
+    "object": "OBJECTS/c1b6656779dc4ac3f43def035d15cb7cb173c498fbd240b0e09d4162404b3e6a.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/metrics_engine.py",
+    "sha256": "10461f9fca6cad7ef42a74149a4665e3b88bb170d2a9013b576735a4133b5f01",
+    "bytes": 117,
+    "object": "OBJECTS/10461f9fca6cad7ef42a74149a4665e3b88bb170d2a9013b576735a4133b5f01.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/object_lineage.py",
+    "sha256": "40eb282be26ac56e41d6ec965450a909704d030ab5fdeaec067e9dc1c26237a3",
+    "bytes": 2016,
+    "object": "OBJECTS/40eb282be26ac56e41d6ec965450a909704d030ab5fdeaec067e9dc1c26237a3.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/queue_engine.py",
+    "sha256": "678aa7723166f41cee0bc8cd2d66af2bee957cc29fb4a2bc8ba732f16f044998",
+    "bytes": 1287,
+    "object": "OBJECTS/678aa7723166f41cee0bc8cd2d66af2bee957cc29fb4a2bc8ba732f16f044998.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/queue_recovery.py",
+    "sha256": "202daa7488068626027b67e54bb8a3cf89dd38df9259312194c73cc8d6d435b9",
+    "bytes": 1876,
+    "object": "OBJECTS/202daa7488068626027b67e54bb8a3cf89dd38df9259312194c73cc8d6d435b9.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/recovery_engine.py",
+    "sha256": "c423a439fbefb4521242b7b981a442458ac0ba52bb17d5677821b4cf868cdf6e",
+    "bytes": 39,
+    "object": "OBJECTS/c423a439fbefb4521242b7b981a442458ac0ba52bb17d5677821b4cf868cdf6e.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/engines/runtime_journal.py",
+    "sha256": "844a5c550be9ee54967306026d2e3f6a9803492748ffb7fe5c714455103af566",
+    "bytes": 1190,
+    "object": "OBJECTS/844a5c550be9ee54967306026d2e3f6a9803492748ffb7fe5c714455103af566.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/pipeline.py",
+    "sha256": "55f84180baf9f081eb42896102b7df5a309ed8cd64a6634bee3be2373134bdb7",
+    "bytes": 297,
+    "object": "OBJECTS/55f84180baf9f081eb42896102b7df5a309ed8cd64a6634bee3be2373134bdb7.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/queue.py",
+    "sha256": "1bfdccf5256c15d2ac0c0097de71051955fcf9a868fc56a4b4fb8b50a60b1ba8",
+    "bytes": 1046,
+    "object": "OBJECTS/1bfdccf5256c15d2ac0c0097de71051955fcf9a868fc56a4b4fb8b50a60b1ba8.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/runtime.py",
+    "sha256": "e2d78bee1d99192ba7d6f087e38a2dd18f4c4ff897462e5a0c5184a29de983ae",
+    "bytes": 595,
+    "object": "OBJECTS/e2d78bee1d99192ba7d6f087e38a2dd18f4c4ff897462e5a0c5184a29de983ae.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/state.py",
+    "sha256": "8f8074c9d3c3d4bc446a261f541e5ea185d0e86767b070af262bb0337bfa84f0",
+    "bytes": 257,
+    "object": "OBJECTS/8f8074c9d3c3d4bc446a261f541e5ea185d0e86767b070af262bb0337bfa84f0.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/BATCHES_ACTIVE/V2P2_B23_20260806T182731Z_5404/shadow/src/worker.py",
+    "sha256": "9de0e3e61e8818632bc5adda2edb5edd3fed3fddf6ba93e0ae63dfbb480acb53",
+    "bytes": 452,
+    "object": "OBJECTS/9de0e3e61e8818632bc5adda2edb5edd3fed3fddf6ba93e0ae63dfbb480acb53.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/01_INTAKE/ARCHIVE_RECOVERED/FREYA_SYSTEM/freya_mail_orchestrator.py",
+    "sha256": "c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa",
+    "bytes": 2450,
+    "object": "OBJECTS/c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/01_INTAKE/ARCHIVE_RECOVERED/FREYA_SYSTEM/freya_needs_scheduler.sh",
+    "sha256": "2bf13e1f2c150c994fbc3f66b777ffb02589cbdb67c6fd9a3ee0142e3f688cd8",
+    "bytes": 2752,
+    "object": "OBJECTS/2bf13e1f2c150c994fbc3f66b777ffb02589cbdb67c6fd9a3ee0142e3f688cd8.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/01_INTAKE/ARCHIVE_RECOVERED/FREYA_SYSTEM/freya_scheduler.sh",
+    "sha256": "567a6eb166c8d43975b3a40f8db6a3dc8f1261580d01c5e5b024ea2208cff970",
+    "bytes": 2395,
+    "object": "OBJECTS/567a6eb166c8d43975b3a40f8db6a3dc8f1261580d01c5e5b024ea2208cff970.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/07_ARCHIVES/EXTRACTED_BATCH_02_20260821T174627Z/001_04a82bbd573b_FREYA_CORE_BACKUP_20260720_211111.tar.gz/Documents/SOBA_2_ORCHESTRATOR_BRAIN/freya_mail_orchestrator.py",
+    "sha256": "c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa",
+    "bytes": 2450,
+    "object": "OBJECTS/c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/07_ARCHIVES/EXTRACTED_BATCH_02_20260821T174627Z/006_d7cebf28337d_FREYA_IPHONE_V2P2_GOLDEN_MASTER_20260809T144643Z.zip/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/07_ARCHIVES/EXTRACTED_BATCH_02_20260821T174627Z/014_31fd2cfebe9e_IPHONE_TO_ASUS_INTELLIGENCE_PALETTE.tar.gz/PAYLOAD/financial_validator_888.py",
+    "sha256": "117c41b8e0d9cdfe9551875ae7c3660513ea4a66b80b04a8f47ebc71b0782d4a",
+    "bytes": 848,
+    "object": "OBJECTS/117c41b8e0d9cdfe9551875ae7c3660513ea4a66b80b04a8f47ebc71b0782d4a.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/07_ARCHIVES/EXTRACTED_BATCH_02_20260821T174627Z/014_31fd2cfebe9e_IPHONE_TO_ASUS_INTELLIGENCE_PALETTE.tar.gz/PAYLOAD/financial_validator_v2_888.py",
+    "sha256": "9b0fb67df55c8eaaa17a54621659f80970fe265e2cfc60371effce6d1c256612",
+    "bytes": 1658,
+    "object": "OBJECTS/9b0fb67df55c8eaaa17a54621659f80970fe265e2cfc60371effce6d1c256612.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/01_INTAKE/ARCHIVE_RECOVERED/TECHNICAL/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T092938Z_PID9357/EXTRACTED/D0/A_D0_0001_6c01e70428ae/root/Documents/SOBA_2_ORCHESTRATOR_BRAIN/freya_mail_orchestrator.py",
+    "sha256": "c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa",
+    "bytes": 2450,
+    "object": "OBJECTS/c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T092938Z_PID9357/EXTRACTED/D0/A_D0_0001_6c01e70428ae/root/Documents/SOBA_4_EXPORTS_AND_OUTBOX/freya_needs_scheduler.sh",
+    "sha256": "2bf13e1f2c150c994fbc3f66b777ffb02589cbdb67c6fd9a3ee0142e3f688cd8",
+    "bytes": 2752,
+    "object": "OBJECTS/2bf13e1f2c150c994fbc3f66b777ffb02589cbdb67c6fd9a3ee0142e3f688cd8.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T092938Z_PID9357/EXTRACTED/D0/A_D0_0001_6c01e70428ae/root/Documents/SOBA_4_EXPORTS_AND_OUTBOX/freya_scheduler.sh",
+    "sha256": "567a6eb166c8d43975b3a40f8db6a3dc8f1261580d01c5e5b024ea2208cff970",
+    "bytes": 2395,
+    "object": "OBJECTS/567a6eb166c8d43975b3a40f8db6a3dc8f1261580d01c5e5b024ea2208cff970.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T092938Z_PID9357/EXTRACTED/D0/A_D0_0004_9ef97701927a/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T092938Z_PID9357/EXTRACTED/D1/A_D1_0001_04a82bbd573b/Documents/SOBA_2_ORCHESTRATOR_BRAIN/freya_mail_orchestrator.py",
+    "sha256": "c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa",
+    "bytes": 2450,
+    "object": "OBJECTS/c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T093447Z_PID917/EXTRACTED/D0/A_D0_0001_6c01e70428ae/root/Documents/SOBA_2_ORCHESTRATOR_BRAIN/freya_mail_orchestrator.py",
+    "sha256": "c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa",
+    "bytes": 2450,
+    "object": "OBJECTS/c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T093447Z_PID917/EXTRACTED/D0/A_D0_0001_6c01e70428ae/root/Documents/SOBA_4_EXPORTS_AND_OUTBOX/freya_needs_scheduler.sh",
+    "sha256": "2bf13e1f2c150c994fbc3f66b777ffb02589cbdb67c6fd9a3ee0142e3f688cd8",
+    "bytes": 2752,
+    "object": "OBJECTS/2bf13e1f2c150c994fbc3f66b777ffb02589cbdb67c6fd9a3ee0142e3f688cd8.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T093447Z_PID917/EXTRACTED/D0/A_D0_0001_6c01e70428ae/root/Documents/SOBA_4_EXPORTS_AND_OUTBOX/freya_scheduler.sh",
+    "sha256": "567a6eb166c8d43975b3a40f8db6a3dc8f1261580d01c5e5b024ea2208cff970",
+    "bytes": 2395,
+    "object": "OBJECTS/567a6eb166c8d43975b3a40f8db6a3dc8f1261580d01c5e5b024ea2208cff970.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T093447Z_PID917/EXTRACTED/D0/A_D0_0003_d7cebf28337d/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T093447Z_PID917/EXTRACTED/D0/A_D0_0003_d7cebf28337d/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler__ARCHIVE_DUP_0076_10d1f6e3.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T093447Z_PID917/EXTRACTED/D0/A_D0_0004_9ef97701927a/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_ARCHIVE_RECOVERY/RUNS/20260810T093447Z_PID917/EXTRACTED/D1/A_D1_0001_04a82bbd573b/Documents/SOBA_2_ORCHESTRATOR_BRAIN/freya_mail_orchestrator.py",
+    "sha256": "c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa",
+    "bytes": 2450,
+    "object": "OBJECTS/c2ab2b15aec307dc46bda52ebc084e6aad606c780d231187f84d87f45d103aaa.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/agent_intelligence_888/B11_IPHONE_ASUS_PALETTE_20260818T154527Z/PAYLOAD/financial_validator_888.py",
+    "sha256": "117c41b8e0d9cdfe9551875ae7c3660513ea4a66b80b04a8f47ebc71b0782d4a",
+    "bytes": 848,
+    "object": "OBJECTS/117c41b8e0d9cdfe9551875ae7c3660513ea4a66b80b04a8f47ebc71b0782d4a.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/agent_intelligence_888/B11_IPHONE_ASUS_PALETTE_20260818T154527Z/PAYLOAD/financial_validator_v2_888.py",
+    "sha256": "9b0fb67df55c8eaaa17a54621659f80970fe265e2cfc60371effce6d1c256612",
+    "bytes": 1658,
+    "object": "OBJECTS/9b0fb67df55c8eaaa17a54621659f80970fe265e2cfc60371effce6d1c256612.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_V2_DEVELOPMENT/RELEASES/V2DEV_20260806T153702Z/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_V2_DEVELOPMENT/RELEASES/V2P2_20260806T163912Z_3929/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/16_V2_DEVELOPMENT/ROLLBACK/V2P2_RB_20260806T182841Z_5512/payload/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/17_VACATION_CURATED/20260811T230213Z/01_ZIP_EXTRACTED/9ef97701927a8cfe_FREYA_IPHONE_V2P2_GOLDEN_MASTER_R1_20260809T144728Z.zip.d/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_01_20260821T173048Z/EXACT_DUPLICATES/17_VACATION_CURATED/20260811T230213Z/01_ZIP_EXTRACTED/d7cebf28337d8f64_FREYA_IPHONE_V2P2_GOLDEN_MASTER_20260809T144643Z.zip.d/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/12_QUARANTINE/IPHONE_PRO_BATCH_03_20260821T175438Z/EXTRACTED_DUPLICATES/007_9ef97701927a_FREYA_IPHONE_V2P2_GOLDEN_MASTER_R1_20260809T144728Z.zip/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/src/scheduler.py",
+    "sha256": "10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6",
+    "bytes": 445,
+    "object": "OBJECTS/10d1f6e3b9829720b1980d89d38930d97279cbf7806b1b5b71494e0dd7de34f6.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/agent_intelligence_888/financial_validator_888.py",
+    "sha256": "117c41b8e0d9cdfe9551875ae7c3660513ea4a66b80b04a8f47ebc71b0782d4a",
+    "bytes": 848,
+    "object": "OBJECTS/117c41b8e0d9cdfe9551875ae7c3660513ea4a66b80b04a8f47ebc71b0782d4a.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/FREYA_IPHONE_ISH_NODE_888/16_V2_DEVELOPMENT/ACTIVATION_CANDIDATES/V2P2_AC_20260806T182404Z_5320/release/agent_intelligence_888/financial_validator_v2_888.py",
+    "sha256": "9b0fb67df55c8eaaa17a54621659f80970fe265e2cfc60371effce6d1c256612",
+    "bytes": 1658,
+    "object": "OBJECTS/9b0fb67df55c8eaaa17a54621659f80970fe265e2cfc60371effce6d1c256612.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/MAGNUS_IPHONE_TRANSFORMATION_BATCH_006_RUNTIME_DECISION_888.sh",
+    "sha256": "14a2cd4a51cf122e1fa3ed8e64a38cec0e7f405438b01674d90ce5611fbf1aea",
+    "bytes": 1266,
+    "object": "OBJECTS/14a2cd4a51cf122e1fa3ed8e64a38cec0e7f405438b01674d90ce5611fbf1aea.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/MAGNUS_IPHONE_TRANSFORMATION_BATCH_010_RUNTIME_UPGRADE_DECISION_888.sh",
+    "sha256": "eb571772c56d14b5303224c82d4f2131ebeb74cd2377052029be36f0376dd19b",
+    "bytes": 1085,
+    "object": "OBJECTS/eb571772c56d14b5303224c82d4f2131ebeb74cd2377052029be36f0376dd19b.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/MAGNUS_IPHONE_TRANSFORMATION_BATCH_015_APPLICATION_DECISION_MATRIX_888.sh",
+    "sha256": "917ef26f44b1aa16b3606ee2768dca1260f66013460540fcfda8fd205b88e497",
+    "bytes": 1209,
+    "object": "OBJECTS/917ef26f44b1aa16b3606ee2768dca1260f66013460540fcfda8fd205b88e497.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_MCR_RAW_COPY_V2_20260707_205153/08_UNPACKED_RAW/18_brand_engine_replit_app.zip/brand_engine_app/engine/decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_MCR_RAW_COPY_V2_20260707_205153/08_UNPACKED_RAW/18_brand_engine_replit_app.zip/brand_engine_app/engine/generator.py",
+    "sha256": "dade8aa4f398728179b8b20f5822b3013658789d9b9705f6a6f1e56fb54a179f",
+    "bytes": 2574,
+    "object": "OBJECTS/dade8aa4f398728179b8b20f5822b3013658789d9b9705f6a6f1e56fb54a179f.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_MCR_RAW_COPY_V2_20260707_205153/08_UNPACKED_RAW/18_brand_engine_replit_app.zip/brand_engine_app/engine/pipeline.py",
+    "sha256": "baf18dd3084d95f8983de1455f143ab31a86f19a7684005678640bc4244e1caf",
+    "bytes": 2474,
+    "object": "OBJECTS/baf18dd3084d95f8983de1455f143ab31a86f19a7684005678640bc4244e1caf.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_MCR_RAW_COPY_V2_20260707_205153/08_UNPACKED_RAW/18_brand_engine_replit_app.zip/brand_engine_app/engine/scorer.py",
+    "sha256": "1214d37c59909236e2bde49119dcda0fbab1ab805ec03c96faab7ae7592adb99",
+    "bytes": 3414,
+    "object": "OBJECTS/1214d37c59909236e2bde49119dcda0fbab1ab805ec03c96faab7ae7592adb99.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_MCR_RAW_COPY_V2_20260707_205153/08_UNPACKED_RAW/18_brand_engine_replit_app.zip/brand_engine_app/engine/storage.py",
+    "sha256": "8fed4c83819b11807c0a8109f4e5da128f1ca65e0a164607d98bcbe8451f3e1d",
+    "bytes": 1308,
+    "object": "OBJECTS/8fed4c83819b11807c0a8109f4e5da128f1ca65e0a164607d98bcbe8451f3e1d.source.txt",
+    "role": "recovered_dependency_review_partial"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_01_20260707_205955/124_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_01_20260707_205955/214_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_01_20260707_205955/6_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_01_20260707_205955/70_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_03_CORE_20260707_210459/30_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_05_AUTOMATION_20260707_211125/142_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_05_AUTOMATION_20260707_211125/244_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_05_AUTOMATION_20260707_211125/72_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_05_AUTOMATION_20260707_211125/8_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_RESCUE_05A_AUTOMATION_SMALL_20260707_211401/142_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_RESCUE_05A_AUTOMATION_SMALL_20260707_211401/244_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_RESCUE_05A_AUTOMATION_SMALL_20260707_211401/72_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_RESCUE_05A_AUTOMATION_SMALL_20260707_211401/8_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_SIGNAL_RESCUE_20260707_205540/30_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_doktrine/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_SIGNAL_RESCUE_20260707_205540/880_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_skripte/DECISION_MACHINE_V1_20260708_231426/06_LOGS/decision_engine_v1.sh",
+    "sha256": "f964f1428df182e9159884aa06be0ee7e4f9b2a86ba1b9a4275d994017fc90dd",
+    "bytes": 642,
+    "object": "OBJECTS/f964f1428df182e9159884aa06be0ee7e4f9b2a86ba1b9a4275d994017fc90dd.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_skripte/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/IPHONE_ONE_BY_ONE_RESCUE_03_CORE_20260707_210459/30_decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_skripte/FREYA_MASTER_CONTROL_ROOM/08_UNPACKED_RAW/12_brand_engine_replit_app.zip/brand_engine_app/engine/decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_skripte/FREYA_MASTER_CONTROL_ROOM/08_UNPACKED_RAW/13_brand_engine_replit_app.zip/brand_engine_app/engine/decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_skripte/FREYA_MASTER_CONTROL_ROOM/08_UNPACKED_RAW/17_brand_engine_replit_app.zip/brand_engine_app/engine/decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_skripte/FREYA_MASTER_CONTROL_ROOM/08_UNPACKED_RAW/18_brand_engine_replit_app.zip/brand_engine_app/engine/decision.py",
+    "sha256": "011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96",
+    "bytes": 1060,
+    "object": "OBJECTS/011698991ffbd92b13255e564b0a3a7d92528452f227c14c7637e703dae4cd96.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_skripte/IPHONE_TO_MAC_LILITH_BLACKBOX_METATOKEN_PACKET_20260705_200122/02_PAYLOAD/root__FREYA_SSOT__08_EXTRACTED__5_default.tar.gz__usr__lib__python3.9__site-packages__openpyxl__worksheet__scenario.py",
+    "sha256": "565256e298b5393cb5709f66ed9c5acc8cbc3d2968d7b046a675188b198da2d4",
+    "bytes": 2401,
+    "object": "OBJECTS/565256e298b5393cb5709f66ed9c5acc8cbc3d2968d7b046a675188b198da2d4.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RECOVERED/root/faza0_skripte/freya_mail_orchestrator.py",
+    "sha256": "94451fe644e6a598cc5e2bd43628a19f2ca1d5ddc844104519b1837b1b70f8e5",
+    "bytes": 2311,
+    "object": "OBJECTS/94451fe644e6a598cc5e2bd43628a19f2ca1d5ddc844104519b1837b1b70f8e5.source.txt",
+    "role": "recovered_named_candidate"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/RESTORE_REPORT.json",
+    "sha256": "8bc0d5bf236a07676d88fe1e11200ca290d5e350f2b9e6cf03499ba15355c7a0",
+    "bytes": 2776,
+    "object": "OBJECTS/8bc0d5bf236a07676d88fe1e11200ca290d5e350f2b9e6cf03499ba15355c7a0.source.txt",
+    "role": "historical_recovery_report"
+  },
+  {
+    "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/PREGLED_I_POPRAVKA/Oporavak_009/STOP_REPORT.json",
+    "sha256": "fd05c6b1e85a75c25f1efccaf44aeb5578153c9c8790ba84df885355db8b9854",
+    "bytes": 307,
+    "object": "OBJECTS/fd05c6b1e85a75c25f1efccaf44aeb5578153c9c8790ba84df885355db8b9854.source.txt",
+    "role": "historical_recovery_report"
+  },
+  {
+    "source_path": "/usr/local/bin/freya",
+    "sha256": "2fe0eaf017b7a5462650bfdc6f78731b138874fc2f0b7de34a1d50feb543f797",
+    "bytes": 397,
+    "object": "OBJECTS/2fe0eaf017b7a5462650bfdc6f78731b138874fc2f0b7de34a1d50feb543f797.source.txt",
+    "role": "launcher"
+  }
+]

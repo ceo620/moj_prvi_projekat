@@ -1,0 +1,10 @@
+#!/bin/sh
+unset ENV BASH_ENV PYTHONPATH PYTHONHOME
+case "${1-}" in
+  obradi)
+    [ "$#" -eq 1 ] || exit 2
+    exec /bin/sh /root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/FREYA_RUN_V2__ee7e37bd8707.sh
+    ;;
+  "") exec /usr/bin/python3 -I -S -B /root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/HUMAN_GATE_CONSOLE_V1/freya_gate.py ;;
+  *) printf "%s\n" "Upotreba: freya | freya obradi"; exit 2 ;;
+esac

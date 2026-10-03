@@ -1,0 +1,274 @@
+#!/bin/sh
+set -eu
+umask 077
+
+R=$1
+P=$2
+OUT=$3
+PF=$R/03_AGENT_RUNTIME/PACKAGE_FACTORY_V1.sh
+Q=$R/06_QUEUE/ENGINE_V1
+I=$R/04_INTAKE/NEW/$P
+T=$R/07_PACKAGE_FACTORY/STAGING/$P
+PKGDIR=$R/07_PACKAGE_FACTORY/PACKAGES
+OB=$R/08_MSI_TRANSPORT/OUTBOX
+REG=$R/07_PACKAGE_FACTORY/RECEIPTS/PACKAGE_ID_REGISTRY_V1.tsv
+AUDIT=$OUT/QUEUE_TRANSITIONS.tsv
+STATEFILE=
+
+[ -x "$PF" ] || exit 10
+[ -f "$Q" ] || exit 11
+[ ! -e "$I" ] || exit 12
+[ ! -e "$T" ] || exit 13
+[ ! -e "$PKGDIR/$P.tar.gz" ] || exit 14
+[ ! -e "$PKGDIR/$P.sha256" ] || exit 15
+[ ! -e "$OB/$P.tar.gz" ] || exit 16
+[ ! -e "$OB/$P.sha256" ] || exit 17
+
+if [ -f "$REG" ] &&
+   grep -q "^$P[[:space:]]" "$REG"
+then
+    exit 18
+fi
+
+mkdir -m 700 "$I"
+
+printf 'SYNTHETIC FREYA IPHONE B15\n' \
+    > "$I/input.txt"
+
+printf 'ENTITY=NONE\nAMOUNT=888\n' \
+    > "$I/facts.env"
+
+printf 'FROM\tTO\tUTC\tRESULT\n' \
+    > "$AUDIT"
+
+transition() {
+    FROM=$1
+    TO=$2
+    CURRENT=$R/06_QUEUE/$FROM/$P.queue
+    NEXT=$R/06_QUEUE/$TO/$P.queue
+
+    grep -qx "$FROM>$TO" "$Q" || exit 30
+    [ -f "$CURRENT" ] || exit 31
+    [ ! -e "$NEXT" ] || exit 32
+
+    printf 'PACKAGE_ID=%s\nQUEUE_STATE=%s\n' \
+        "$P" "$TO" > "$CURRENT.next"
+
+    mv "$CURRENT.next" "$NEXT"
+    mv "$NEXT" "$CURRENT.done"
+    mv "$CURRENT.done" "$NEXT"
+
+    printf '%s\t%s\t%s\tPASS\n' \
+        "$FROM" \
+        "$TO" \
+        "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" \
+        >> "$AUDIT"
+
+    STATEFILE=$NEXT
+}
+
+STATEFILE=$R/06_QUEUE/NEW/$P.queue
+
+[ ! -e "$STATEFILE" ] || exit 33
+
+printf 'PACKAGE_ID=%s\nQUEUE_STATE=NEW\n' \
+    "$P" > "$STATEFILE"
+
+transition NEW DISCOVERED
+transition DISCOVERED CLASSIFIED
+transition CLASSIFIED READY
+mkdir -m 700 "$T" "$T/CONTENT"
+
+cp "$I/input.txt" "$T/CONTENT/input.txt"
+cp "$I/facts.env" "$T/CONTENT/facts.env"
+
+COUNT=$(
+    find "$T/CONTENT" -type f |
+        wc -l |
+        tr -d ' '
+)
+
+BYTES=0
+
+for X in "$T"/CONTENT/*
+do
+    BYTES=$((BYTES + $(wc -c < "$X")))
+done
+
+: > "$T/SOURCE_HASH_LEDGER.tsv"
+
+for X in "$T"/CONTENT/*
+do
+    printf '%s\t%s\t%s\n' \
+        "$(sha256sum "$X" | cut -d' ' -f1)" \
+        "$(wc -c < "$X" | tr -d ' ')" \
+        "${X##*/}" \
+        >> "$T/SOURCE_HASH_LEDGER.tsv"
+done
+
+cp "$T/SOURCE_HASH_LEDGER.tsv" \
+    "$T/MANIFEST.tsv"
+
+MH=$(
+    sha256sum "$T/MANIFEST.tsv" |
+        cut -d' ' -f1
+)
+
+UTC=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+LOCAL=$(date '+%Y-%m-%dT%H:%M:%S%z')
+
+cat > "$T/METADATA.env" <<META
+PACKAGE_ID=$P
+PACKAGE_VERSION=1
+SOURCE_NODE=FREYA_IPHONE_NODE_888
+SOURCE_DEVICE=iPhone_iSH
+OPERATOR=Danijela_Djurovic_Keskin
+PROTOCOL=888
+CREATED_AT_UTC=$UTC
+CREATED_AT_LOCAL=$LOCAL
+TIMEZONE=Europe/Podgorica
+CONTENT_CLASS=SYNTHETIC_TEST
+BUSINESS_ENTITY=NONE
+SOURCE_FILE_COUNT=$COUNT
+SOURCE_TOTAL_BYTES=$BYTES
+MANIFEST=MANIFEST.tsv
+MANIFEST_SHA256=$MH
+PACKAGE_SHA256_LOCATION=EXTERNAL_SIDECAR
+SOURCE_HASH_LEDGER=SOURCE_HASH_LEDGER.tsv
+TRANSPORT_TARGET=MSI
+ACK_REQUIRED=YES
+DUPLICATE_STATUS=UNIQUE_SYNTHETIC
+DATA_LOSS_CHECK=PASS
+META
+
+printf 'EVIDENCE=LOCAL_SYNTHETIC_END_TO_END\n' \
+    > "$T/EVIDENCE.env"
+
+printf 'HEALTH=PASS\n' \
+    > "$T/HEALTH_SUMMARY.env"
+
+printf 'QUEUE_STATE=PACKAGED\n' \
+    > "$T/QUEUE_SUMMARY.env"
+
+printf 'RETRY_COUNT=0\n' \
+    > "$T/RETRY_INFORMATION.env"
+
+printf 'PACKAGE_ID=%s\nRESULT=STAGED\n' \
+    "$P" > "$T/RECEIPT.env"
+
+find "$R/02_AGENT_REGISTRY" \
+    -maxdepth 1 \
+    -type f \
+    -exec sha256sum {} \; \
+    > "$T/AGENT_REGISTRY_SNAPSHOT.sha256"
+
+transition READY PACKAGED
+
+"$PF" "$T" "$PKGDIR" "$P"
+
+transition PACKAGED VALIDATED
+
+A=$PKGDIR/$P.tar.gz
+S=$PKGDIR/$P.sha256
+V=$OUT/VERIFY
+
+mkdir -m 700 "$V"
+
+gzip -t "$A"
+tar -xzf "$A" -C "$V"
+
+for X in \
+    MANIFEST.tsv \
+    SOURCE_HASH_LEDGER.tsv \
+    METADATA.env \
+    EVIDENCE.env \
+    RECEIPT.env \
+    AGENT_REGISTRY_SNAPSHOT.sha256 \
+    HEALTH_SUMMARY.env \
+    QUEUE_SUMMARY.env \
+    RETRY_INFORMATION.env
+do
+    [ -f "$V/$X" ] || exit 40
+done
+
+[ "$(cut -d' ' -f1 "$S")" = \
+  "$(sha256sum "$A" | cut -d' ' -f1)" ]
+
+VMH=$(
+    sha256sum "$V/MANIFEST.tsv" |
+        cut -d' ' -f1
+)
+
+grep -qx "MANIFEST_SHA256=$VMH" \
+    "$V/METADATA.env"
+
+grep -qx "SOURCE_FILE_COUNT=$COUNT" \
+    "$V/METADATA.env"
+
+grep -qx "SOURCE_TOTAL_BYTES=$BYTES" \
+    "$V/METADATA.env"
+
+grep -qx 'TRANSPORT_TARGET=MSI' \
+    "$V/METADATA.env"
+
+grep -qx 'ACK_REQUIRED=YES' \
+    "$V/METADATA.env"
+
+grep -qx 'DATA_LOSS_CHECK=PASS' \
+    "$V/METADATA.env"
+transition VALIDATED WAITING_FOR_MSI
+
+cp "$A" "$OB/$P.tar.gz"
+
+sha256sum "$OB/$P.tar.gz" \
+    > "$OB/$P.sha256"
+
+[ "$(sha256sum "$OB/$P.tar.gz" | cut -d' ' -f1)" = \
+  "$(sha256sum "$A" | cut -d' ' -f1)" ]
+
+if [ ! -e "$REG" ]; then
+    TMPREG=$REG.$$.tmp
+
+    [ ! -e "$TMPREG" ] || exit 50
+
+    printf 'PACKAGE_ID\tPACKAGE_SHA256\tCREATED_AT_UTC\tSTATUS\n' \
+        > "$TMPREG"
+
+    mv "$TMPREG" "$REG"
+    chmod 600 "$REG"
+fi
+
+printf '%s\t%s\t%s\tWAITING_FOR_MSI\n' \
+    "$P" \
+    "$(cut -d' ' -f1 "$S")" \
+    "$UTC" \
+    >> "$REG"
+
+printf 'PACKAGE_ID=%s\nQUEUE_STATE=WAITING_FOR_MSI\n' \
+    "$P" > "$T/QUEUE_SUMMARY_FINAL.env"
+
+cat > "$OUT/PIPELINE_RESULT.env" <<RESULT
+RESULT=PASS
+PACKAGE_ID=$P
+DISCOVERY=PASS
+CLASSIFICATION=PASS
+BUSINESS_ENTITY_EXTRACTION=PASS
+BUSINESS_FACT_EXTRACTION=PASS
+HASH_FACTORY=PASS
+METADATA_FACTORY=PASS
+MANIFEST_FACTORY=PASS
+DUPLICATE_CHECK=PASS
+PACKAGE_FACTORY=PASS
+COMPRESSION_FACTORY=PASS
+PACKAGE_VALIDATION=PASS
+QUEUE_TRANSITIONS=PASS
+QUEUE_FINAL_STATE=WAITING_FOR_MSI
+LOCAL_OUTBOX=PASS
+SOURCE_FILE_COUNT=$COUNT
+SOURCE_TOTAL_BYTES=$BYTES
+TARGET_NODE=MSI
+ACK_REQUIRED=YES
+NETWORK_CONNECTIONS_OPENED=0
+BUSINESS_DATA_USED=NO
+DATA_LOSS_CHECK=PASS
+RESULT

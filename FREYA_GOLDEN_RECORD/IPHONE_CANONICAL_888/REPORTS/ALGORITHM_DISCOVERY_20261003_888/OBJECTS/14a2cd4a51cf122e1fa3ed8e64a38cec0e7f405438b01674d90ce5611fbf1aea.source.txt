@@ -1,0 +1,75 @@
+#!/bin/sh
+set -eu
+
+ROOT="$HOME/FREYA_IPHONE_ISH_NODE_888"
+TS="$(date -u +%Y%m%dT%H%M%SZ)"
+OUT="$ROOT/16_REPORTS/IPHONE_TRANSFORMATION_BATCH_006_$TS"
+
+mkdir -p "$OUT"
+
+echo "============================================================"
+echo "MAGNUS iPHONE TRANSFORMATION BATCH 006"
+echo "RUNTIME AUTHORITY DECISION"
+echo "============================================================"
+
+cat > "$OUT/RUNTIME_DECISION_MAP.txt" <<EOF
+KEEP_CANDIDATE:
+15_RUNTIME
+
+KEEP_COMPONENTS:
+IPHONE_LIVE_NODE_888
+PRODUCTION_STATE
+SSOT_LAN_888
+AUTOPILOT_RELEASES
+HUMAN_GATE_CONSOLE_V1
+IPHONE_AUTOMATION_888
+
+ANALYZE_MERGE:
+01_RUNTIME
+09_RUNTIME
+13_RUNTIME
+60_RUNTIME
+
+ARCHIVE_REFERENCE:
+07_ARCHIVES
+16_V2_DEVELOPMENT
+
+PROTECTED:
+00_CONTROL
+02_SSOT
+09_EVIDENCE
+17_BACKUP_ROLLBACK
+24_FINAL
+EOF
+
+
+echo
+echo "===== VALIDATION ====="
+
+for x in \
+15_RUNTIME \
+00_CONTROL \
+02_SSOT \
+09_EVIDENCE \
+17_BACKUP_ROLLBACK \
+24_FINAL
+do
+    [ -d "$ROOT/$x" ] && echo "FOUND=$x"
+done | tee "$OUT/VALIDATION.txt"
+
+
+echo
+echo "===== FINAL ====="
+
+echo "BATCH=006"
+echo "MODE=RUNTIME_DECISION"
+echo "MUTATION=NO"
+echo "MOVE=NO"
+echo "DELETE=NO"
+echo "RESULT=PASS"
+echo "NEXT=BATCH_007_CONTROLLED_RUNTIME_UPGRADE"
+
+echo "REPORT=$OUT"
+
+echo "============================================================"
+
