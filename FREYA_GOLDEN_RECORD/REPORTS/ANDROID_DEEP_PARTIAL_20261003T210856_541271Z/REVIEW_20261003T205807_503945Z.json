@@ -1,0 +1,57 @@
+{
+  "schema": "ANDROID_DEEP_RECOVERY_888_V1",
+  "node": "ANDROID_TERMUX",
+  "status": "PARTIAL_DISCOVERY_REVIEW_REQUIRED",
+  "stop_reason": "QUEUE_EXHAUSTED",
+  "observed_at": "2026-10-03T20:58:08.999575+00:00",
+  "tasks": {
+    "deferred": 21,
+    "done": 211880,
+    "done_with_gaps": 790,
+    "error": 19
+  },
+  "issues": {
+    "ARCHIVE_SPECIAL_ENTRY_NOT_READ": 336,
+    "JSON_VALIDATION_SIZE_LIMIT": 31,
+    "LIMIT": 23,
+    "NESTING_DEPTH_LIMIT": 4,
+    "PRIVATE_KEY_CONTENT_NOT_EXPORTED": 71,
+    "PRIVATE_KEY_NAME_EXCLUDED": 3,
+    "RAW_BYTES_ONLY_FORMAT_NOT_DECODED": 802,
+    "READ_ERROR": 19,
+    "SPECIAL_FILE_NOT_READ": 20,
+    "SYMLINK_NOT_FOLLOWED": 4109
+  },
+  "sealed_json_claims": 5,
+  "candidates_file": "CANDIDATES_20261003T205807_503945Z.jsonl",
+  "candidates_sha256": "3217f94dda7ea62ba0bd75b9d7b81e26823b7e5d8a2b38be1f73bde12f93f7f9",
+  "issues_file": "ISSUES_20261003T205807_503945Z.jsonl",
+  "authentication": "NOT_ESTABLISHED",
+  "whole_device_complete": false,
+  "queue_exhausted": true,
+  "network_actions": 0,
+  "source_content_writes": 0,
+  "limits": {
+    "out": "/data/data/com.termux/files/home/TITAN_DEEP_ANDROID_888",
+    "root": null,
+    "minutes": 15.0,
+    "task_seconds": 45,
+    "file_mib": 512,
+    "member_mib": 32,
+    "expanded_mib": 256,
+    "json_mib": 4,
+    "depth": 4,
+    "members": 10000,
+    "retry_deferred": false
+  },
+  "limitations": [
+    "Android app sandbox applies; no rooting or privilege bypass.",
+    "No deleted-block recovery, OCR, encrypted-archive unlocking or database query.",
+    "PDF, RAR, 7z, zstd, SQLite, external bundles/packs: raw bytes only.",
+    "Git blob content searched without historical filenames or archive expansion.",
+    "Symlinks not followed except explicit roots and Git worktree pointers.",
+    "Completed tasks are not rescanned on resume; use a NEW --out for a fresh snapshot.",
+    "Scanner scripts and old recovery reports may contain search tokens themselves.",
+    "Archive hits are provisional if container changes or processing is incomplete."
+  ]
+}
