@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+import sys
+
+def pokreni_analizu(investicija, opex, prihod_mesecno):
+    print("="*50)
+    print("📊 AUTOMATSKI ARS FINANSIJSKI IZVEŠTAJ")
+    print("="*50)
+    
+    godisnji_opex = opex * 12
+    godisnji_prihod = prihod_mesecno * 12
+    cisti_profit_godisnje = godisnji_prihod - godisnji_opex
+    
+    if cisti_profit_godisnje > 0:
+        povrat_investicije_meseci = investicija / (cisti_profit_godisnje / 12)
+    else:
+        povrat_investicije_meseci = float('inf')
+        
+    roi = (cisti_profit_godisnje / investicija) * 100 if investicija > 0 else 0
+
+    print(f"💰 Ukupna Investicija:    {investicija:,.2f} €")
+    print(f"📉 Mesečni OPEX:           {opex:,.2f} € (Godišnje: {godisnji_opex:,.2f} €)")
+    print(f"📈 Mesečni Prihod:         {prihod_mesecno:,.2f} € (Godišnje: {godisnji_prihod:,.2f} €)")
+    print("-" * 50)
+    print(f"💵 Čisti Profit (Godišnje): {cisti_profit_godisnje:,.2f} €")
+    print(f"📊 Očekivani ROI:          {roi:.2f}%")
+    if povrat_investicije_meseci != float('inf'):
+        print(f"⏳ Povrat Investicije (ROI Period): {povrat_investicije_meseci:.1f} meseci")
+    else:
+        print("⚠️ Upozorenje: Prihodi ne pokrivaju troškove!")
+    print("="*50)
+
+if __name__ == "__main__":
+    # Ako su prosleđeni parametri pri pokretanju:
+    if len(sys.argv) == 4:
+        inv = float(sys.argv[1])
+        opx = float(sys.argv[2])
+        prh = float(sys.argv[3])
+        pokreni_analizu(inv, opx, prh)
+    else:
+        # Automatske podrazumevane vrednosti (Za brzi test bez kucanja)
+        print("[!] Pokretanje sa podrazumevanim parametrima ARS Projekta...")
+        pokreni_analizu(investicija=10000, opex=500, prihod_mesecno=2000)

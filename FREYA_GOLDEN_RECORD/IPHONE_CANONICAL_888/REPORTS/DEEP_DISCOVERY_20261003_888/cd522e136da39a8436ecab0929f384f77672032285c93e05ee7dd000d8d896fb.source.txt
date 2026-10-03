@@ -1,0 +1,21 @@
+import os
+
+print("==================================================")
+print("     ⚠️  HITNA TO-DO LISTA ZA ŠEFA (root)  ⚠️     ")
+print("==================================================")
+print("\nBok Danijela! Tvoj Piton te podsjeća na važne stvari:\n")
+
+# Tvoji hitni zadaci
+zadaci = [
+    "🚀 1. Ovladaj iSH Alpine terminalom do kraja",
+    "🐍 2. Pokreni barem jednu novu skriptu danas",
+    "☕ 3. Napravi pauzu, popij kavu ili čaj (zasluženo!)",
+    "🎯 4. Osvoji dan i ne sekiraj se oko sitnica"
+]
+
+for zadatak in zadaci:
+    print(zadatak)
+
+print("\n--------------------------------------------------")
+print(" 'Sve se može kad se root hoće!' - Tvoj Piton 🐍  ")
+print("==================================================")

@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+# SKRIPTA 02: ARS Finansijski Kalkulator i Analitika (Stabilizovano)
+
+print("==================================================")
+print("     📊 FINANSIJSKI KALKULATOR: ARS PROJEKAT     ")
+print("==================================================")
+print("Bok Danijela! Piton je spreman za biznis analizu.\n")
+
+try:
+    # Siguran unos parametara investicije
+    investicija = float(input("💰 Unesi iznos ukupne investicije za ARS (€): "))
+    godisnji_prihod = float(input("📈 Unesi očekivani godišnji neto profit (€): "))
+    
+    if investicija <= 0 or godisnji_prihod <= 0:
+        print("❌ Cifre moraju biti veće od nule!")
+    else:
+        # Investicione kalkulacije
+        roi = (godisnji_prihod / investicija) * 100
+        period_povrata = investicija / godisnji_prihod
+        
+        print("\n--------------------------------------------------")
+        print("📊 REZULTATI NAJVRIJEDNIJIH KALKULACIJA:")
+        print("--------------------------------------------------")
+        print(f"➡️  Ukupna investicija: {investicija:,.2f} €")
+        print(f"➡️  Godišnji povrat (ROI): {roi:.2f}%")
+        print(f"➡️  Novac se potpuno vraća za: {period_povrata:.1f} godina")
+        print("--------------------------------------------------")
+        
+        # Evaluacija profitabilnosti
+        if roi >= 20:
+            print("🔥 Piton kaže: ARS projekat ima brutalan povrat! Sretno!")
+        elif roi >= 10:
+            print("👍 Piton kaže: Solidan povrat resursa, stabilna investicija.")
+        else:
+            print("⚠️ Piton kaže: Povrat je sporiji. Potreban je oprez.")
+
+except ValueError:
+    print("\n❌ Greška: Molimo unesi ispravne numeričke vrednosti (koristi tačku za decimale).")
+except ZeroDivisionError:
+    print("\n❌ Greška: Deljenje sa nulom nije moguće.")

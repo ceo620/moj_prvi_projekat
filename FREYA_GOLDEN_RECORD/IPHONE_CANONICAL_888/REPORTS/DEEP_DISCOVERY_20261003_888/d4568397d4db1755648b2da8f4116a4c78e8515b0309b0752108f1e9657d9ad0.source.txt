@@ -1,0 +1,23 @@
+import os
+import platform
+import sys
+
+print("==================================================")
+print("     RAZGOVOR S PITONOM U iSH ALPINE SUSTAVU     ")
+print("==================================================")
+
+korisnik = os.environ.get('USER') or os.environ.get('HOSTNAME') or "iSH Korisnik"
+arhitektura = platform.machine()
+
+print(f"\n🐍 Python kaže: 'Bok Danijela!'")
+print(f"-> Trenutno se nalaziš unutar iSH Alpine okruženja.")
+print(f"-> Moja verzija na ovom telefonu je: {sys.version.split()[0]}")
+print(f"-> Prepoznajem te u sustavu kao: {korisnik} ({arhitektura})")
+
+print("\n--------------------------------------------------")
+print("ŠTO ZNAM O DANIJELI ĐUROVIĆ KESKIN?")
+print("--------------------------------------------------")
+print("Kao lokalni programski jezik na tvom uređaju, ja sam potpuno privatan.")
+print("Nemam pristup tvojim osobnim podacima, slikama ni računima.")
+print("Za mene si ti moj programer i zakoniti vlasnik ovog terminala! 🫡")
+print("==================================================")

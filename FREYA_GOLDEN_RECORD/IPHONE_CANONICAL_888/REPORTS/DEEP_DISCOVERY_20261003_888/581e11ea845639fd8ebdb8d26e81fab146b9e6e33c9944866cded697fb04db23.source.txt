@@ -1,0 +1,29 @@
+print("==================================================")
+###   🇲🇪 ZVANIČNI INVESTICIONI PREGLED: ARS & UNI-MAK 🇪🇺  ###
+print("==================================================")
+print("Korisnik: root (Danijela Đurović Keskin)")
+print("Status modela: v1.1 | Zaključan na 16M €\n")
+
+# Stvarni podaci iz tvog modela
+ukupna_investicija = 16000000
+grant = 2400000
+kredit = 7000000
+kapacitet = 750
+cijena_po_komadu = 10500
+
+maksimalni_godišnji_prihod = kapacitet * cijena_po_komadu
+
+print("📊 KLJUČNE FINANSIJSKE PROJEKCIJE:")
+print(f"💰 Ukupan budžet projekta: {ukupna_investicija:,.2f} €")
+print(f"🎁 Obezbijeđen EU Grant (15%): {grant:,.2f} €")
+print(f"🏦 Investicioni kredit (6% kamata): {kredit:,.2f} €")
+print(f"🏭 Proizvodni kapacitet: {kapacitet} rezervoara/god")
+print(f"💶 Projektovani maks. godišnji prihod: {maksimalni_godišnji_prihod:,.2f} €")
+
+print("\n--------------------------------------------------")
+print("🔥 SIMULACIJA RAMP-UP FAZE (Prihodi po godinama):")
+print("--------------------------------------------------")
+print(f"📈 2029. Godina (40% kapaciteta): {maksimalni_godišnji_prihod * 0.40:,.2f} €")
+print(f"📈 2030. Godina (70% kapaciteta): {maksimalni_godišnji_prihod * 0.70:,.2f} €")
+print(f"🚀 Puni kapacitet (100%): {maksimalni_godišnji_prihod:,.2f} €")
+print("==================================================")

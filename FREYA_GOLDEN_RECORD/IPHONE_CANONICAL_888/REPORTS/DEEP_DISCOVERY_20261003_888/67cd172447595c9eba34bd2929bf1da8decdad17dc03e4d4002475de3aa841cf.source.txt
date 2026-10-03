@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+# SKRIPTA 03: ARS & UNI-MAK Zvanični Investicioni Model (Konsolidovano)
+
+print("==================================================")
+print(" 🇲🇪 ZVANIČNI INVESTICIONI PREGLED: ARS & UNI-MAK ")
+print("==================================================")
+print("Korisnik: root (Danijela Đurović Keskin)")
+print("Status modela: v1.1 | Zaključan na 16M €\n")
+
+# Stvarni podaci iz tvog modela
+ukupna_investicija = 16000000
+grant = 2400000
+kredit = 7000000
+kamata_stopa = 0.06
+kapacitet = 750
+cijena_po_komadu = 10500
+
+maksimalni_godisnji_prihod = kapacitet * cijena_po_komadu
+
+print("📊 KLJUČNE FINANSIJSKE PROJEKCIJE:")
+print(f"➡️  Ukupan budžet projekta: {ukupna_investicija:,.2f} €")
+print(f"➡️  Obezbijeđen EU Grant (15%): {grant:,.2f} €")
+print(f"➡️  Investicioni kredit (6% kamata): {kredit:,.2f} €")
+print(f"➡️  Proizvodni kapacitet: {kapacitet} rezervoara/god")
+print(f"➡️  Projektovani maks. godišnji prihod: {maksimalni_godisnji_prihod:,.2f} €")
+
+print("\n--------------------------------------------------")
+print("🔥 SIMULACIJA RAMP-UP FAZE (Prihodi po godinama):")
+print("--------------------------------------------------")
+
+# Simulacija postepenog rasta proizvodnje (Ramp-up)
+# Godina 1: 40% kapaciteta, Godina 2: 70%, Godina 3: 100%
+procenti_po_godinama = {1: 0.40, 2: 0.70, 3: 1.00}
+
+for godina, procenat in procenti_po_godinama.items():
+    trenutni_prihod = maksimalni_godisnji_prihod * procenat
+    trenutna_proizvodnja = int(kapacitet * procenat)
+    print(f"📈 Godina {godina} ({int(procenat*100)}% iskorišćenosti):")
+    print(f"   - Proizvedeno rezervoara: {trenutna_proizvodnja} kom")
+    print(f"   - Realizovani prihod: {trenutni_prihod:,.2f} €")
+
+print("--------------------------------------------------")
+print("💸 ANALIZA OBAVEZA I FINANSIJSKI BALANS:")
+print("--------------------------------------------------")
+godisnja_kamata = kredit * kamata_stopa
+print(f"➡️  Godišnji trošak kamate kredita (6%): {godisnja_kamata:,.2f} €")
+
+preostalo_finansiranje = ukupna_investicija - (grant + kredit)
+print(f"➡️  Potrebno sopstveno učešće / equity: {preostalo_finansiranje:,.2f} €")
+print("\n[OK] Model ARS & UNI-MAK je stabilan i spreman za produkciju.")

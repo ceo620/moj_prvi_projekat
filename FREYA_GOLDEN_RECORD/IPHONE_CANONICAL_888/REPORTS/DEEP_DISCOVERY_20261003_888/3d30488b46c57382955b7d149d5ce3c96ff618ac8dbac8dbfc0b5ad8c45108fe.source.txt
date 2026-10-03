@@ -1,0 +1,20 @@
+import argparse
+from pathlib import Path
+from datetime import datetime, timezone
+
+p=argparse.ArgumentParser()
+p.add_argument("prihod",type=float)
+p.add_argument("trosak",type=float)
+p.add_argument("--dry-run",action="store_true")
+p.add_argument("--output")
+a=p.parse_args()
+saldo=a.prihod-a.trosak
+ts=datetime.now(timezone.utc).isoformat()
+text=f"SOURCE=HUMAN_INPUT\nCAPTURED_UTC={ts}\nDATA_STATUS=VERIFIED\nPRIHOD={a.prihod:.2f}\nTROSAK={a.trosak:.2f}\nSALDO={saldo:.2f}\n"
+if a.output and not a.dry_run:
+    q=Path(a.output).resolve()
+    root=Path("/root/FREYA_HUMAN_GATE").resolve()
+    if root not in q.parents: raise SystemExit("BLOCK: output outside Human Gate")
+    q.parent.mkdir(parents=True,exist_ok=True)
+    q.write_text(text,encoding="utf-8")
+print(text,end="")

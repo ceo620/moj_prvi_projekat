@@ -1,0 +1,12 @@
+PROTOCOL=00+888
+SOURCE_EXECUTION=NO
+REVIEW=PARTIAL_STATIC_ONLY
+12 unique source contents; 31 recorded paths.
+10 syntax PASS; 2 syntax FAIL: PATCHED_16 and DELTA_UNITY.
+Syntax PASS does not establish runtime correctness.
+ARS figures are historical assumptions, not verified current SSOT.
+Grant and production-readiness claims are unverified.
+PATCHED_1 writes files; its DRY_RUN comment is not enforced.
+Its truth PASS relies on supplied verification and hash fields.
+PATCHED_17 billion signals is a constant, not measured learning.
+Preserved for review; no activation performed.
