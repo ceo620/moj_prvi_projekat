@@ -1,0 +1,6 @@
+382:def ensure_no_overwrite(path: Path, overwrite: bool = False) -> None:
+1185:def write_json(path: Path, data: Dict[str, Any], overwrite: bool) -> None:
+1190:def write_audit_log(path: Path, events: List[Dict[str, Any]], overwrite: bool) -> None:
+1197:def write_digest(path: Path, digest: str, output_path: Path, overwrite: bool) -> None:
+1303:def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
+1362:def main(argv: Optional[Sequence[str]] = None) -> int:

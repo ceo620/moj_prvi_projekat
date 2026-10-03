@@ -1,0 +1,20 @@
+{
+  "protocol": "888",
+  "human_gate": "ACTIVE",
+  "approval_authority": "Danijela Đurović Keskin",
+  "approval_received_at": "2026-09-27T19:10:44+02:00",
+  "user_statement": "27.796.156 odobravam",
+  "purpose": "New TITAN 1 memorandum",
+  "approved_field": "tpc_eur",
+  "approved_value": 27796156,
+  "currency": "EUR",
+  "source_path": "/root/FREYA_IPHONE_ISH_NODE_888/01_CANONICAL_BASE/KNOWLEDGE/TITAN1_MASTER_ASSUMPTIONS_V45.json",
+  "source_sha256": "ea9c69abccabbe86a81bdb1cc25c51c0712345f1043dda069bc66b26c6b34f47",
+  "archive_path": "/mnt/ios_pretraga/FREYA_HOME_888/FREYA_IPHONE_DODACI_015_20260912T092322Z_5f0b9741.zip",
+  "archive_member": "SEGMENTI_014/DOCTRINE_PROJECT/JSON/00235_8_EXTRACTED__3_IPHONE_TITAN_EXPORT_PACKET.tar.gz__IPHONE_TITAN_EXPORT_PACKET___root_Documents_Titan_grid_Prezentacija_Nove_kalkulacija__24.03_25.03_MASTER_ASSUMPTIONS_V45.json",
+  "scope": "Approval of total project cost for the new memorandum",
+  "other_source_assumptions": "NOT_APPROVED_BY_THIS_RECEIPT",
+  "idc_treatment": "UNRESOLVED_NOT_ADDED_TO_APPROVED_TOTAL",
+  "document_signoff": "PENDING",
+  "external_send": "NOT_AUTHORIZED_BY_THIS_RECEIPT"
+}

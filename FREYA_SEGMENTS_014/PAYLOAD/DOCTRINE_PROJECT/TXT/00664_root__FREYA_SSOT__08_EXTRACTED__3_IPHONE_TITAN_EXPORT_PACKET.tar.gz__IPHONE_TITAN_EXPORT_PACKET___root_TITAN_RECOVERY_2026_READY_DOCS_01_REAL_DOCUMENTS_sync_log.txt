@@ -1,0 +1,87 @@
+nohup: ignoring input
+[26.05.2026 05:23:04] Skripta pokrenuta
+[05:23:04] Proveravam WiFi...
+[05:23:04] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+created directory OVDJE_UBACI_TVOJU_WINDOWS_PUTANJU
+./
+00_TEMPLATE_NOVI_PROMPT.txt
+01_GEMINI_PROMPTI.md
+02_CHATGPT_PROMPTI.md
+03_GROK_PROMPTI.md
+04_MOJI_NAJBOLJI_PROMPTI.md
+05_ZA_MARIJU.md
+
+sent 649 bytes  received 189 bytes  1,676.00 bytes/sec
+total size is 197  speedup is 0.24
+[05:23:05] ✅ Sinhronizacija USPJEŠNA!
+[05:23:35] Proveravam WiFi...
+[05:23:35] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:23:35] ✅ Sinhronizacija USPJEŠNA!
+[05:24:13] Proveravam WiFi...
+[05:24:13] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:24:13] ✅ Sinhronizacija USPJEŠNA!
+[05:24:43] Proveravam WiFi...
+[05:24:43] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:24:43] ✅ Sinhronizacija USPJEŠNA!
+[05:26:34] Proveravam WiFi...
+[05:26:34] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:26:34] ✅ Sinhronizacija USPJEŠNA!
+[05:27:36] Proveravam WiFi...
+[05:27:36] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:27:36] ✅ Sinhronizacija USPJEŠNA!
+[05:28:06] Proveravam WiFi...
+[05:28:06] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:28:06] ✅ Sinhronizacija USPJEŠNA!
+[05:28:45] Proveravam WiFi...
+[05:28:45] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:28:45] ✅ Sinhronizacija USPJEŠNA!
+[05:29:15] Proveravam WiFi...
+[05:29:15] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:29:15] ✅ Sinhronizacija USPJEŠNA!
+[05:30:00] Proveravam WiFi...
+[05:30:00] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:30:00] ✅ Sinhronizacija USPJEŠNA!
+[05:32:24] Proveravam WiFi...
+[05:32:25] WiFi povezan → sinhronizujem Promptovi...
+sending incremental file list
+
+sent 249 bytes  received 12 bytes  522.00 bytes/sec
+total size is 197  speedup is 0.75
+[05:32:25] ✅ Sinhronizacija USPJEŠNA!

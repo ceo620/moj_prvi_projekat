@@ -1,0 +1,72 @@
+{
+  "protocol": 888,
+  "result": "SELECTED_SEGMENTS_RECOVERED",
+  "work": "/root/FREYA_SEGMENTS_014_d_20s9r2",
+  "groups": {
+    "FREYA_AUDIT": {
+      "status": "SELECTED_MEMBERS_VERIFIED",
+      "selected": 20,
+      "verified": 20,
+      "missing": [],
+      "whole_archive_validated": false
+    },
+    "DOCTRINE_PROJECT": {
+      "status": "SELECTED_MEMBERS_VERIFIED",
+      "selected": 2911,
+      "verified": 2911,
+      "missing": [],
+      "whole_archive_validated": false
+    },
+    "ARS_DOCUMENTS": {
+      "status": "SELECTED_MEMBERS_VERIFIED",
+      "selected": 579,
+      "verified": 579,
+      "missing": [],
+      "whole_archive_validated": false
+    },
+    "KNOWLEDGE": {
+      "status": "SELECTED_MEMBERS_VERIFIED",
+      "selected": 10,
+      "verified": 10,
+      "missing": [],
+      "whole_archive_validated": false
+    },
+    "ANDROID_DOCTRINE": {
+      "status": "SELECTED_MEMBERS_VERIFIED",
+      "selected": 75,
+      "verified": 75,
+      "missing": [],
+      "whole_archive_validated": false
+    },
+    "AGENT_CONTRACTS": {
+      "status": "SELECTED_MEMBERS_VERIFIED",
+      "selected": 67,
+      "verified": 67,
+      "missing": [],
+      "whole_archive_validated": false
+    }
+  },
+  "verified_source_members": 3662,
+  "saved_payload_files": 1582,
+  "unique_payload_hashes": 1001,
+  "saved_payload_bytes": 61703395,
+  "comparison_unique_hashes": {
+    "UNRESOLVED_BASELINE_CATALOG": 1001
+  },
+  "baseline_catalog_complete": false,
+  "baseline_files_read": 0,
+  "baseline_bytes_read": 0,
+  "issues": 1,
+  "originals_modified": 0,
+  "project_code_executed": false,
+  "source_archive_266_GB_opened": false,
+  "notes": [
+    "Comparison covers recorded regular files of recovery 009 and the reviewed 013 journal.",
+    "No match means different from that recorded baseline, not globally unique.",
+    "Unresolved comparisons remain unknown and must not be counted as new.",
+    "Archives may contain earlier copies of the same data; dates alone do not prove newer content.",
+    "Compiled .pyc files are preserved as data; they have not been executed or ported.",
+    "A source member absent from ORIGIN_MAP.jsonl is not a verified recovery output.",
+    "Whole source ZIP/TAR archives and unselected files are not verified in this batch."
+  ]
+}

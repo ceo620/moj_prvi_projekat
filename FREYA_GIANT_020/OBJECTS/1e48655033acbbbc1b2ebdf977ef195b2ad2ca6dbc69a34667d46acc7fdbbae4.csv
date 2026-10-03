@@ -1,0 +1,6 @@
+﻿"SignalClass","SSOTRole","DeltaAction","OutputDocument","LedgerRequirement","HumanGate","CanonAuthority","RuntimeAuthority","Status"
+"HASH_VERIFIED_DOCUMENT","Evidence Input","Parse and classify","Governed Document Candidate","Append-only JSONL","Required","NO","NO_AUTONOMOUS_RUNTIME_AUTHORITY","CANDIDATE_ONLY"
+"GRID_INFRASTRUCTURE_SIGNAL","Technical Evidence","Extract voltage and transformer metadata","Grid Technical Summary","Traceable lineage","Required","NO","NO_AUTONOMOUS_RUNTIME_AUTHORITY","HUMAN_REVIEW_REQUIRED"
+"FINANCIAL_MODEL_SIGNAL","Financial Evidence","Generate financial candidate tables","Financial Governance Candidate","Hash + timestamp","Required","NO","NO_AUTONOMOUS_RUNTIME_AUTHORITY","NOT_CANON_CONFIRMED"
+"ESG_OR_EU_TAXONOMY_SIGNAL","Compliance Evidence","Generate ESG candidate section","EU Taxonomy Governance Candidate","Evidence linkage required","Required","NO","NO_AUTONOMOUS_RUNTIME_AUTHORITY","CANDIDATE_ONLY"
+"UNKNOWN_OR_UNVERIFIED_SIGNAL","Unverified Input","Quarantine and preserve","No governed output","Preserve lineage","Mandatory","NO","BLOCKED","QUARANTINE_REQUIRED"

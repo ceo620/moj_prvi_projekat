@@ -1,0 +1,12 @@
+B02: oporavljena radna kopija postoji samo za fajlove navedene u manifestu. Pocetni puni obim nije poznat.
+RECOVERED_VAULTS: biljeske i pasivni prilozi bez aktiviranja sacuvanih konfiguracija i dodataka.
+CONFLICTS: razlicite verzije su odvojene; pobjednik nije izabran. Izvorne arhive i BLOBS ostaju lokalno sacuvani.
+Ne koristiti stari freya launcher za ovu kopiju: B01 je pokazao da on upucuje na istorijski autopilot.
+Prekinuti inventar i zavrseni census su razliciti poslovi. Izvorni inventar nije proglasen zavrsenim.
+Provjera istorije u Obsidianu: Settings > Core plugins > File recovery > Snapshots > View. Izaberi biljesku i pregledaj verzije.
+Za cuvanje u novu biljesku koristi Copy; ovaj batch ne nalaze Restore preko aktivnog fajla.
+Ako je Obsidian Sync vec aktivan: dugo pritisni biljesku > Open version history; pregledaj verziju.
+File recovery istorija je odvojena od vaulta i nije ovdje proglasena oporavljenom.
+Aplikacijsko otvaranje kopije, prikaz Canvas i priloga tek treba provjeriti u okviru B03/B04.
+Shortcuts stvarne akcije ostaju nepregledane dok nema kompletnog izvoza/pregleda akcija. Nista nije pokrenuto.
+Izvori uputstva: https://obsidian.md/help/plugins/file-recovery ; https://obsidian.md/help/sync/version-history

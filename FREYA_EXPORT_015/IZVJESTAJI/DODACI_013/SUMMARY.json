@@ -1,0 +1,55 @@
+{
+  "protocol": 888,
+  "result": "SELECTED_ADDITIONS_RECOVERED",
+  "work": "/root/FREYA_ADDITIONS_013_1e9xhcop",
+  "groups": {
+    "OBSIDIAN": {
+      "status": "EXTRACTED_WITH_READBACK",
+      "files": 1142,
+      "internal_manifest": {
+        "status": "CHECKED",
+        "verified": 1141,
+        "mismatch_or_missing": 0,
+        "unparsed": 0
+      },
+      "content_hashes_within_group": 244,
+      "path": "/root/FREYA_ADDITIONS_013_1e9xhcop/PAYLOAD/OBSIDIAN_20260910"
+    },
+    "OFFLINE_CORE": {
+      "status": "SELECTED_FILES_EXTRACTED_WITH_READBACK",
+      "selected_members": 25,
+      "found_members": 25,
+      "missing": [],
+      "whole_tar_validated": false,
+      "unique_code_contents": null,
+      "path": "/root/FREYA_ADDITIONS_013_1e9xhcop/PAYLOAD/OFFLINE_CORE"
+    },
+    "UNITY_CODE": {
+      "status": "SELECTED_FILES_EXTRACTED_WITH_READBACK",
+      "selected_members": 34,
+      "found_members": 34,
+      "missing": [],
+      "whole_tar_validated": false,
+      "unique_code_contents": 3,
+      "path": "/root/FREYA_ADDITIONS_013_1e9xhcop/PAYLOAD/UNITY_CODE"
+    }
+  },
+  "verified_payload_files": 1170,
+  "verified_payload_bytes": 24369934,
+  "unique_payload_hashes_within_this_batch": 272,
+  "new_unique_vs_previous_3_7_GB": "NOT_YET_ESTABLISHED",
+  "new_archive_index_records": 23243,
+  "issues": 1,
+  "original_files_modified": 0,
+  "project_code_executed": false,
+  "existing_recovery_rehashed_or_overwritten": false,
+  "large_default_tar_opened": false,
+  "notes": [
+    "Isolated recovery only; no activation or SSOT changes.",
+    "Identical selected code stored once; all observed aliases retained.",
+    "Names and metadata do not prove functional completeness.",
+    "Remaining archive indexes do not verify payload bytes.",
+    "Files not present in FILES_VERIFIED.jsonl are not certified outputs.",
+    "Read/write time budgets are cooperative; iOS I/O may block."
+  ]
+}

@@ -1,0 +1,15 @@
+TITAN 1 FINAL SEND PACKAGE - HASH LEDGER
+Datum: 2026-05-10
+CTOS version: v4.0
+Scope: TITAN_1_ONLY
+Canonical CAPEX: 18,2 miliona EUR
+
+Dokumenti u paketu:
+- ANEKS_1_REVIZIJA_CAPEX_TITAN1_v4_2026-05-10.docx
+- SIGNALNI_MEMORANDUM_TITAN1_2026-05-10.docx
+- MASTER_TOKEN_REGISTER_v4.0.json
+- ACTIVE_DOCUMENT_REGISTRY.json
+
+Status: CLEAN | ZERO BLEEDTHROUGH | ACTIVE_TITAN1_SCOPE
+
+Ovo je jedini paket koji smije biti na tabletu.

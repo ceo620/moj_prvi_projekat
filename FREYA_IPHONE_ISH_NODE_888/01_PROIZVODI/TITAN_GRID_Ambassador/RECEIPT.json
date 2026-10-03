@@ -1,0 +1,14 @@
+{
+  "bytes": 32628,
+  "classification": "DOCUMENT",
+  "extension": ".pdf",
+  "mtime_utc": "2026-09-21T23:47:10.933673+00:00",
+  "network_action": "NONE",
+  "original_modified": "NO",
+  "result": "PASS",
+  "risk": [
+    "NONE"
+  ],
+  "sha256": "0d8376c19688c3655e47f648965bebf1a1dcfcc9be5457f2b446012012899fe8",
+  "source": "/root/FREYA_RAD_888/00_ULAZ/TITAN_GRID_Project_Brief_Turkiye_Ambassador.pdf"
+}

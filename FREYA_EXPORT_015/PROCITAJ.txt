@@ -1,0 +1,35 @@
+FREYA — DODACI OPORAVKA ZA PRENOS NA MSI
+
+Ovaj ZIP sadrzi sve evidentirane PAYLOAD fajlove iz koraka 013 i 014:
+- DODACI_013: 1170 fajlova (24.369.934 bajta).
+- SEGMENTI_014: 1582 fajla (61.703.395 bajtova).
+Ukupno: 2752 fajla; 86.073.329 bajtova prije kompresije, bez izvjestaja.
+Obsidian folderi zadrzavaju svoju strukturu. Raniji nazivi/putanje i veze
+sa izvornim arhivama nalaze se u INDEX.jsonl i IZVJESTAJI.
+
+Poredjenje 014R1 je naslo 437 razlicitih sadrzaja koji se ne podudaraju sa
+ranije izdvojenim regularnim fajlovima koraka 009 i 013. To je 38.304.296
+bajtova. Jos 564 sadrzaja se podudaraju. Svi nalazi su zadrzani u paketu.
+Ovo nije tvrdnja o globalnoj jedinstvenosti niti provjera poslovne ispravnosti.
+
+OSNOVNA KOPIJA 009 NIJE SADRZANA U OVOM ZIP-U.
+Za potpun prenos ovog oporavka na flesku/MSI treba kopirati i cijeli folder:
+FREYA_HOME_888/IPHONE_BACKUPS_888/
+IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020
+U njemu su PAYLOAD/PART_aa do PART_ao i kontrolni izvjestaji.
+Ta osnovna kopija ima 3.846.471.680 bajtova u 15 dijelova; u ovom koraku
+nije ponovo procitana. Zadrzati njeno postojece ime i strukturu.
+Osnovna kopija i ovaj ZIP sa pratecim .sha256 fajlom staju u 5 GB
+slobodnog prostora na odredistu. Za raspakovan rad na MSI treba dodatni prostor.
+
+ZIP i .sha256 mogu se prenijeti preko Windowsa kao cijeli fajlovi.
+Raspakivanje je namijenjeno novom folderu u Debianu, zbog Linux putanja.
+Ovaj korak ne instalira FREYA, ne mijenja CAPEX bazu i ne pokrece skripte.
+.PYC fajlovi su sacuvani podaci; njihova upotrebljivost zahtijeva dalji pregled.
+Provjera spoljne .sha256 datoteke potvrdjuje identicnost cijelog ZIP-a.
+MANIFEST.json sadrzi velicine i SHA256 zapise pojedinacnih clanova.
+
+NEPREUZETI DIJELOVI:
+Ogromni default.tar.gz (285.502.110.783 bajta) nije dio ovog paketa.
+Za ranije izostavljene foldere nije utvrdjen potpun oporavak.
+Kopija na USB-u ili MSI-ju nije potvrdena dok je zaista ne prenesemo i provjerimo.

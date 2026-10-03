@@ -1,0 +1,441 @@
+{
+  "capture": [
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": "ca9bea6a2ae84647d9b9c4307fa86f55ecf9b4bd5199459a3fd20104a64d7155",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462289,
+        33188,
+        1,
+        424,
+        1788340989398745524,
+        1788340989407981172
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/.batch_tmp/MAGNUS_RESUME_STATE_888.env",
+      "return_raw": true,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "ca9bea6a2ae84647d9b9c4307fa86f55ecf9b4bd5199459a3fd20104a64d7155",
+      "snapshot": "SOURCE_EVIDENCE/76fcaa5c22687807/MAGNUS_RESUME_STATE_888.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36455143,
+        33152,
+        1,
+        144,
+        1787512455186251882,
+        1787512455186251882
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/.batch_tmp/RECOVERY_STATE.env",
+      "return_raw": true,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "892f0a9dd800b3834bf27e6e58b81245e73e50b2d62688978bc943909ebc1c71",
+      "snapshot": "SOURCE_EVIDENCE/a67939aa659f63e0/RECOVERY_STATE.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36455131,
+        33152,
+        1,
+        464,
+        1787509411296094532,
+        1787509411296094532
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/01_IDENTITY.txt",
+      "return_raw": true,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "a6e55dcf4d54e23c5abd99313530374c8aa58a5bc4741933b45bb125f4797d47",
+      "snapshot": "SOURCE_EVIDENCE/0ea12df18a131ef1/01_IDENTITY.txt",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36455132,
+        33152,
+        1,
+        156615,
+        1787509452002145468,
+        1787509452002145468
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/02_DISCOVERED_SOURCE_ROOTS.tsv",
+      "return_raw": false,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "e70e7674e96d262d22a0d60eefbaac202ca8994f36d14ec7d14069b35ab4de19",
+      "snapshot": "SOURCE_EVIDENCE/5fc4e84c167f2819/02_DISCOVERED_SOURCE_ROOTS.tsv",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": "901246316b40b61ab93d1ad141e50d455c50e5cc5525a66bfc1906f5b2cd7cc0",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36455142,
+        33152,
+        1,
+        2343960,
+        1787512370964946422,
+        1787512370964946422
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/.batch_tmp/remaining.nul",
+      "return_raw": false,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "901246316b40b61ab93d1ad141e50d455c50e5cc5525a66bfc1906f5b2cd7cc0",
+      "snapshot": "SOURCE_EVIDENCE/fa45a8579a05b490/remaining.nul",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": "ef7a137f8490aed34f34c0bc98e5ab41bd01005f537ba8cfbf9414f66e5c5fe7",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36461863,
+        33152,
+        1,
+        526,
+        1788290390866327042,
+        1788290390866906765
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/16_NODE_CHECKPOINT.env",
+      "return_raw": true,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "ef7a137f8490aed34f34c0bc98e5ab41bd01005f537ba8cfbf9414f66e5c5fe7",
+      "snapshot": "SOURCE_EVIDENCE/f676731018a104e5/16_NODE_CHECKPOINT.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36461864,
+        33152,
+        1,
+        1508,
+        1788290393432138200,
+        1788290393432773883
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/MANIFEST.sha256",
+      "return_raw": true,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "c61d479835260ca453e6449fe56c9ffa08bbb2ac7de0d5a1c9decd62e526869b",
+      "snapshot": "SOURCE_EVIDENCE/bfd6136293f3e3d8/MANIFEST.sha256",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:35Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36461862,
+        33152,
+        1,
+        622,
+        1788290390863444176,
+        1788290390864134361
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/15_NODE_EXECUTIVE_SUMMARY.env",
+      "return_raw": true,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "0834abf9149f5fba29fc6b4b30fab3e9e52402ce8c24a7d50002fd4e9186b0c1",
+      "snapshot": "SOURCE_EVIDENCE/6795e4da1bae36ca/15_NODE_EXECUTIVE_SUMMARY.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36461845,
+        33152,
+        1,
+        721,
+        1788290341133266039,
+        1788290341133925306
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/01_NODE_IDENTITY.env",
+      "return_raw": true,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "44663c25eaf6b61e2a93692119f46d9eb5e66aed10d608b65320ead9f23808c9",
+      "snapshot": "SOURCE_EVIDENCE/fbbe6de731d6584c/01_NODE_IDENTITY.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36461850,
+        33152,
+        1,
+        5749,
+        1788290351133974682,
+        1788290351134738660
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/02_SOURCE_ROOTS.tsv",
+      "return_raw": false,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "65862a52615973987be1828cf2ea11953ab654c1ee8229dcb64734a277baad5f",
+      "snapshot": "SOURCE_EVIDENCE/82e8cd1b0f2e24c4/02_SOURCE_ROOTS.tsv",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36461855,
+        33152,
+        1,
+        983,
+        1788290379734796695,
+        1788290379735359918
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/04_ACTIVE_RUNTIME_AND_AUTOMATIONS.tsv",
+      "return_raw": false,
+      "role": "LEGACY_IDENTITY_AND_CHECKPOINT_BINDING",
+      "sha256": "2adf736ff50142a864caa50c93a9541295f33f3a9571ce6ea914f7b14ecd58f5",
+      "snapshot": "SOURCE_EVIDENCE/6cfd37a379f0721f/04_ACTIVE_RUNTIME_AND_AUTOMATIONS.tsv",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": "b620b3bbd64f38c5666dc40ea0eaa0f331ff77bf00bff3012f6dba4db29fd2ab",
+      "hash_scope": "LAST_16384_BYTES",
+      "lstat": [
+        264,
+        36455148,
+        33188,
+        1,
+        294138,
+        1788340988358671336,
+        1788340988358671336
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/MAGNUS_RESUME_ONLY_888.log",
+      "return_raw": true,
+      "role": "BOUNDED_LEGACY_LOG_TAIL",
+      "sha256": "b620b3bbd64f38c5666dc40ea0eaa0f331ff77bf00bff3012f6dba4db29fd2ab",
+      "snapshot": "SOURCE_EVIDENCE/c185c8196ab10c80/MAGNUS_RESUME_ONLY_888.log",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    }
+  ],
+  "census_closure": [
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462294,
+        33188,
+        1,
+        109,
+        1788341800085578435,
+        1788341800085578435
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/CHAIN_CLOSURE_20260902T093633Z/IPHONE_TO_ANDROID_HANDOFF_MANIFEST_888.env.sha256",
+      "return_raw": true,
+      "role": "CENSUS_CLOSURE_REVIEW_ONLY",
+      "sha256": "76d2fa8f535a0bd642b99a40f6a6f8a9410a22505be0402c0504acc9775d1864",
+      "snapshot": "SOURCE_EVIDENCE/40c931b61b5f6450/IPHONE_TO_ANDROID_HANDOFF_MANIFEST_888.env.sha256",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462291,
+        33188,
+        1,
+        997,
+        1788341800060298355,
+        1788341800060298355
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/CHAIN_CLOSURE_20260902T093633Z/IPHONE_NODE_CHAIN_CHECKPOINT_888.env",
+      "return_raw": true,
+      "role": "CENSUS_CLOSURE_REVIEW_ONLY",
+      "sha256": "757d42d40d27fa20e3aadb7d8ccfa54ab8c9c1a3eb1cc52a411c9ac105f4419b",
+      "snapshot": "SOURCE_EVIDENCE/0fb5cd751c188394/IPHONE_NODE_CHAIN_CHECKPOINT_888.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462293,
+        33188,
+        1,
+        103,
+        1788341800081730109,
+        1788341800081730109
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/CHAIN_CLOSURE_20260902T093633Z/IPHONE_NODE_CHAIN_CHECKPOINT_888.env.sha256",
+      "return_raw": true,
+      "role": "CENSUS_CLOSURE_REVIEW_ONLY",
+      "sha256": "a5ff7ace7eb696d64567ac3101e5b0c8736d9e62e3d1b37154289c6a54474519",
+      "snapshot": "SOURCE_EVIDENCE/537e3984a2fb7fd8/IPHONE_NODE_CHAIN_CHECKPOINT_888.env.sha256",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36462292,
+        33188,
+        1,
+        625,
+        1788341800073430373,
+        1788341800073430373
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/CHAIN_CLOSURE_20260902T093633Z/IPHONE_TO_ANDROID_HANDOFF_MANIFEST_888.env",
+      "return_raw": true,
+      "role": "CENSUS_CLOSURE_REVIEW_ONLY",
+      "sha256": "a397778da805b2b93a3b77ae9ec75f67f68fccfb54d290bb596558e16ef3a210",
+      "snapshot": "SOURCE_EVIDENCE/7e532e6fd624664c/IPHONE_TO_ANDROID_HANDOFF_MANIFEST_888.env",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    }
+  ],
+  "census_manifest_checks": [
+    {
+      "matches_manifest": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/01_NODE_IDENTITY.env"
+    },
+    {
+      "matches_manifest": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/02_SOURCE_ROOTS.tsv"
+    },
+    {
+      "matches_manifest": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/04_ACTIVE_RUNTIME_AND_AUTOMATIONS.tsv"
+    },
+    {
+      "matches_manifest": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/15_NODE_EXECUTIVE_SUMMARY.env"
+    },
+    {
+      "matches_manifest": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/16_NODE_CHECKPOINT.env"
+    }
+  ],
+  "census_state": {
+    "ACTIVE_COMPONENTS": "3196",
+    "ARS_RELEVANT_ITEMS": "3416",
+    "BLOCKER": "NONE",
+    "COMPLETED_UTC": "2026-09-01T19:19:50Z",
+    "EXACT_DUPLICATES": "1232",
+    "HASH_PENDING": "114",
+    "HUMAN_GATE_PENDING": "YES",
+    "ITEMS_TOTAL": "12500",
+    "NEAR_DUPLICATES": "726",
+    "NEXT_NODE": "IPHONE_ISH_REVIEW_OR_RESUME",
+    "NODE": "FREYA_IPHONE_ISH_NODE_888",
+    "PROTOCOL": "888",
+    "RELEVANT_ITEMS": "12500",
+    "RESULT": "STAGE_01_COMPLETE",
+    "ROOTS_COMPLETED": "33",
+    "ROOTS_DISCOVERED": "33",
+    "ROOTS_PENDING": "0",
+    "RUN_ID": "IPHONE_20260901T165745Z_PID21",
+    "STARTED_UTC": "2026-09-01T19:18:56Z",
+    "STOP": "HUMAN_GATE",
+    "UNKNOWN_ITEMS": "1548",
+    "UNREADABLE_ITEMS": "114",
+    "VERSION_FAMILIES": "2043"
+  },
+  "census_status": "RECORDED_STAGE_01_COMPLETE",
+  "concrete_next_review": {
+    "approval_needed_now": "NO;MISSING_EVIDENCE_CANNOT_BE_REPLACED_BY_GENERAL_APPROVAL",
+    "proposed_action": "REVIEW_IDENTIFIED_RESUME_SOURCE_AND_ORIGINAL_SOURCE_SEAL_BEFORE_ANY_CONTINUATION",
+    "recovery": "PRESERVED_ORIGINAL_QUEUE_AND_B02_CAPTURES",
+    "risk": "WRONG_QUEUE_OFFSET_OR_CHANGED_SOURCE_CONTENT",
+    "source_checkpoint": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/.batch_tmp/MAGNUS_RESUME_STATE_888.env",
+    "source_queue": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/.batch_tmp/remaining.nul"
+  },
+  "inventory_state": {
+    "ITEMS_COMPLETED_THIS_RUN": "350",
+    "LAST_PATH": "/root/UNITY/SOBA_2_ZNANJE/PHONE_FULL_KNOWLEDGE_COPY_20260704_174201/root/FREYA_SSOT/08_EXTRACTED/3_IPHONE_TITAN_EXPORT_PACKET.tar.gz/IPHONE_TITAN_EXPORT_PACKET/_root_TITAN_RECOVERY_2026_READY_DOCS_01_REAL_DOCUMENTS_11_OLD_VDR_V6_3_FILE_INDEX.txt",
+    "MODE": "RESUME_ONLY",
+    "PROTOCOL": "888",
+    "RESUME_INDEX": "2018",
+    "SOURCE_INVENTORY_RESUME_COMPLETE": "NO",
+    "TOTAL_REMAINING": "11085",
+    "UPDATED_UTC": "2026-09-02T09:23:09Z"
+  },
+  "inventory_status": "RECORDED_INCOMPLETE",
+  "original_scan_closed": false,
+  "queue_summary": {
+    "index_convention": "OBSERVATIONS_ONLY;RUNNER_SOURCE_REVIEW_REQUIRED",
+    "last_path_matches_one_based_index": true,
+    "last_path_matches_zero_based_index": false,
+    "nul_terminated": true,
+    "record_count": 11085,
+    "reported_resume_index": 2018,
+    "reported_total": "11085",
+    "sha256": "901246316b40b61ab93d1ad141e50d455c50e5cc5525a66bfc1906f5b2cd7cc0"
+  },
+  "resume_executed": false,
+  "resume_safe": "NO",
+  "scope_rule": "CENSUS_COMPLETION_DOES_NOT_COMPLETE_THE_OTHER_INVENTORY_RUN",
+  "specific_missing_evidence": [
+    {
+      "evidence": "NO_PRE_INTERRUPTION_SOURCE_SEAL_PROVEN",
+      "requirement": "TRUSTED_CHECKPOINT_TO_ORIGINAL_SOURCE_BINDING"
+    },
+    {
+      "evidence": "SOURCE_MUTATION_NOT_EXCLUDED",
+      "requirement": "UNCHANGED_OR_SAFELY_VERSIONED_SOURCES"
+    },
+    {
+      "evidence": "GLOBAL_RUN_ORDER_NOT_PROVEN",
+      "requirement": "NO_CONFLICTING_NEWER_RUN"
+    },
+    {
+      "evidence": "NO_REVIEWED_RESUME_EXECUTABLE_HASH_SUPPLIED_FOR_THIS_SCAN",
+      "requirement": "REVIEWED_RESUME_CODE_AND_SAFE_STOP"
+    }
+  ]
+}

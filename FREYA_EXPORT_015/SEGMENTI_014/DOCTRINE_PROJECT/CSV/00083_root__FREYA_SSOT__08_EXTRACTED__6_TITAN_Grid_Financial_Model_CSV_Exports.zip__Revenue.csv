@@ -1,0 +1,6 @@
+Revenue Module,,,,,,,,,,,
+,,,,,,,,,,,
+Metric,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,
+Production Index,0,0,0.6,1.0,1.03,1.06,1.09,1.12,1.15,1.18,
+Revenue,0,0,=Assumptions!$B$25,=Assumptions!$B$26/Assumptions!$B$28,=E5*(1+Assumptions!$B$15),=F5*(1+Assumptions!$B$15),=G5*(1+Assumptions!$B$15),=H5*(1+Assumptions!$B$15),=I5*(1+Assumptions!$B$15),=J5*(1+Assumptions!$B$15),
+Stress Revenue (-35%),=B5*(1-Assumptions!$B$29),=C5*(1-Assumptions!$B$29),=D5*(1-Assumptions!$B$29),=E5*(1-Assumptions!$B$29),=F5*(1-Assumptions!$B$29),=G5*(1-Assumptions!$B$29),=H5*(1-Assumptions!$B$29),=I5*(1-Assumptions!$B$29),=J5*(1-Assumptions!$B$29),=K5*(1-Assumptions!$B$29),

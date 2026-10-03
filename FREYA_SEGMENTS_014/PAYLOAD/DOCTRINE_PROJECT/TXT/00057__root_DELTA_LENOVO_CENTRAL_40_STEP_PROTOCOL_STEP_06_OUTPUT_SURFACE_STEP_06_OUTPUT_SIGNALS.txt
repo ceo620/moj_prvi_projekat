@@ -1,0 +1,75 @@
+28:        - manifest
+29:        - SHA-256 audit snapshot
+32:    .xlsx, .xlsm, .csv, .tsv, .txt
+35:    .xlsx workbook
+36:    .json manifest
+37:    .jsonl audit log
+38:    .sha256.txt digest file
+63:import json
+330:    output_path: str
+332:    manifest_path: str
+333:    audit_log_path: str
+334:    digest_path: str
+356:    return h.hexdigest().upper()
+419:    if suffix in [".xlsx", ".xlsm"]:
+420:        return read_xlsx(path)
+423:    # Support double extension .xlsx.xlsx by checking name ending.
+424:    if path.name.lower().endswith(".xlsx.xlsx"):
+425:        return read_xlsx(path)
+429:def read_xlsx(path: Path) -> List[Dict[str, Any]]:
+712:    return hashlib.sha256(base.encode("utf-8")).hexdigest().upper()[:24]
+961:def write_records_sheet(wb: Workbook, records: List[AtomRecord]) -> None:
+988:def write_dashboard_sheet(wb: Workbook, records: List[AtomRecord], input_sha: str) -> None:
+1030:def write_truth_gates_sheet(wb: Workbook) -> None:
+1052:def write_dictionary_sheet(wb: Workbook) -> None:
+1079:        "PATH_HASH_CONTROL": "Needs path/hash/manifest/integrity control.",
+1082:        "BACKLOG_COMPLETION": "Missing extraction/export/self-audit work.",
+1097:def write_readme_sheet(wb: Workbook) -> None:
+1123:def write_workbook(records: List[AtomRecord], output_path: Path, input_sha: str) -> None:
+1125:    write_records_sheet(wb, records)
+1126:    write_dashboard_sheet(wb, records, input_sha)
+1127:    write_truth_gates_sheet(wb)
+1128:    write_dictionary_sheet(wb)
+1129:    write_readme_sheet(wb)
+1136:    wb.save(output_path)
+1143:def build_manifest(
+1146:    output_path: Path,
+1171:            "path": str(output_path),
+1173:            "size_bytes": output_path.stat().st_size if output_path.exists() else None,
+1185:def write_json(path: Path, data: Dict[str, Any], overwrite: bool) -> None:
+1187:    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+1190:def write_audit_log(path: Path, events: List[Dict[str, Any]], overwrite: bool) -> None:
+1194:            f.write(json.dumps(event, ensure_ascii=False) + "\n")
+1197:def write_digest(path: Path, digest: str, output_path: Path, overwrite: bool) -> None:
+1199:    path.write_text(f"{digest}  {output_path.name}\n", encoding="utf-8")
+1208:    output_path: Path,
+1213:    audit: List[Dict[str, Any]] = []
+1215:    ensure_no_overwrite(output_path, overwrite=overwrite)
+1218:    audit.append({
+1223:        "output_path": str(output_path),
+1247:    audit.append({
+1254:    output_path.parent.mkdir(parents=True, exist_ok=True)
+1255:    write_workbook(records, output_path, input_sha)
+1256:    output_sha = sha256_file(output_path)
+1258:    manifest_path = output_path.with_suffix(output_path.suffix + ".manifest.json")
+1259:    audit_path = output_path.with_suffix(output_path.suffix + ".audit.jsonl")
+1260:    digest_path = output_path.with_suffix(output_path.suffix + ".sha256.txt")
+1262:    manifest = build_manifest(
+1265:        output_path=output_path,
+1271:    write_json(manifest_path, manifest, overwrite=overwrite)
+1273:    audit.append({
+1276:        "output_path": str(output_path),
+1278:        "manifest_path": str(manifest_path),
+1282:    write_audit_log(audit_path, audit, overwrite=overwrite)
+1283:    write_digest(digest_path, output_sha, output_path, overwrite=overwrite)
+1288:        output_path=str(output_path),
+1290:        manifest_path=str(manifest_path),
+1291:        audit_log_path=str(audit_path),
+1292:        digest_path=str(digest_path),
+1319:        help="Output .xlsx path. No overwrite unless --overwrite is set.",
+1342:    print(f"OUTPUT_PATH    : {result.output_path}")
+1344:    print(f"MANIFEST       : {result.manifest_path}")
+1345:    print(f"AUDIT_LOG      : {result.audit_log_path}")
+1346:    print(f"DIGEST         : {result.digest_path}")
+1365:    output_path = Path(args.output).expanduser().resolve()
+1370:            output_path=output_path,

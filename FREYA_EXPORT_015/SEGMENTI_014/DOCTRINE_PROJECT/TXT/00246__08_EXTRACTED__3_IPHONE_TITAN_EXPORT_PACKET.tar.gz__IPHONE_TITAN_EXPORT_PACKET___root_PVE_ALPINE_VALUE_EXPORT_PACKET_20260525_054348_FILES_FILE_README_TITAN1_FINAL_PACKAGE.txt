@@ -1,0 +1,18 @@
+FINAL SEND PACKAGE TITAN 1
+Spreman za tablet — 2026-05-10
+
+Sadržaj:
+1. ANEKS_1_REVIZIJA_CAPEX_TITAN1_v4_2026-05-10.docx
+2. SIGNALNI_MEMORANDUM_TITAN1_2026-05-10.docx
+3. MASTER_TOKEN_REGISTER_v4.0.json
+4. ACTIVE_DOCUMENT_REGISTRY.json
+5. HASH_LEDGER.txt
+6. README_TITAN1_FINAL_PACKAGE.txt
+
+Pravila za tablet:
+- Samo ova 2 dokumenta idu institucijama
+- Ne mijenjaj tekst ručno
+- Prije slanja uradi human signoff
+- Sačuvaj originalne hash-ove
+
+Tablet ostaje clean institutional zone.

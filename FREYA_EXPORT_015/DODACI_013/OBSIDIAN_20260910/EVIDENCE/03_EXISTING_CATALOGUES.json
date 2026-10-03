@@ -1,0 +1,61 @@
+{
+  "catalogue_coverage": [
+    {
+      "captured_utc": "2026-09-10T16:21:36Z",
+      "expected_sha256": "ae1909478d1e50431ed2f9f5e340a25ea98be45a7adafe7dbc84caa3a521593f",
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36455137,
+        33152,
+        1,
+        2911735,
+        1788340988345359340,
+        1788340988345359340
+      ],
+      "matches_previous": true,
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/IPHONE_SOURCE_INVENTORY_ASUS_HANDOFF_888_20260823T182331Z_PID29/03_IPHONE_COMPLETE_SOURCE_INVENTORY.tsv",
+      "return_raw": false,
+      "role": "EXISTING_CATALOGUE_REUSE_ONLY",
+      "sha256": "ae1909478d1e50431ed2f9f5e340a25ea98be45a7adafe7dbc84caa3a521593f",
+      "snapshot": "SOURCE_EVIDENCE/7970063a52e90e5d/03_IPHONE_COMPLETE_SOURCE_INVENTORY.tsv",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    },
+    {
+      "captured_utc": "2026-09-10T16:21:50Z",
+      "expected_sha256": null,
+      "hash_scope": "COMPLETE_FILE",
+      "lstat": [
+        264,
+        36461851,
+        33152,
+        1,
+        9858292,
+        1788290376552257992,
+        1788290376553518733
+      ],
+      "matches_previous": "NO_PREVIOUS_HASH",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/16_REPORTS/MAGNUS_IPHONE_FORENSIC_CREATION_CENSUS_STAGE_01_888_ACTIVE/03_COMPLETE_CREATION_CENSUS.tsv",
+      "return_raw": false,
+      "role": "EXISTING_CATALOGUE_REUSE_ONLY",
+      "sha256": "74c8ca1387786c3bcc9ff03c5269eabaffc68638b529574723969c408a174d72",
+      "snapshot": "SOURCE_EVIDENCE/770e424b24a4a031/03_COMPLETE_CREATION_CENSUS.tsv",
+      "status": "CAPTURED_BYTE_VERIFIED"
+    }
+  ],
+  "filesystem_rescan": false,
+  "initial_vault_scope": "UNKNOWN",
+  "max_selected_archives": 4,
+  "other_archive_leads": [],
+  "provider_scope": "NO_PROVIDER_VAULT_CONTENT_READ;MOUNT_NAME_IS_NOT_VAULT_PROOF",
+  "resume_code_candidates": [],
+  "selected_local_archives": [
+    {
+      "expected_sha256": "27636adc8b1240a2e2b9af756fd1ad9be179ecf0d2e4e0855af2070e07ccf075",
+      "origin": "B01_CAPTURE_OF_EXISTING_INVENTORY",
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/18_ARCHIVE/OBSIDIAN_PRE_UNIFY_20260814T103027Z/obsidian_pre_unify.tar.gz",
+      "priority": 0
+    }
+  ],
+  "vault_roots_from_configuration_paths": []
+}

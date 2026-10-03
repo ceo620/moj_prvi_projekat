@@ -1,0 +1,352 @@
+/root
+/root/.cache
+/root/.cache/pip
+/root/.cache/pip/http
+/root/.cache/pip/http-v2
+/root/.cache/pip/http-v2/0
+/root/.cache/pip/http-v2/0/0
+/root/.cache/pip/http-v2/0/0/9
+/root/.cache/pip/http-v2/0/2
+/root/.cache/pip/http-v2/0/2/f
+/root/.cache/pip/http-v2/0/7
+/root/.cache/pip/http-v2/0/7/c
+/root/.cache/pip/http-v2/0/f
+/root/.cache/pip/http-v2/0/f/a
+/root/.cache/pip/http-v2/1
+/root/.cache/pip/http-v2/1/b
+/root/.cache/pip/http-v2/1/b/6
+/root/.cache/pip/http-v2/2
+/root/.cache/pip/http-v2/2/4
+/root/.cache/pip/http-v2/2/4/8
+/root/.cache/pip/http-v2/2/4/c
+/root/.cache/pip/http-v2/2/8
+/root/.cache/pip/http-v2/2/8/3
+/root/.cache/pip/http-v2/3
+/root/.cache/pip/http-v2/3/6
+/root/.cache/pip/http-v2/3/6/5
+/root/.cache/pip/http-v2/4
+/root/.cache/pip/http-v2/4/3
+/root/.cache/pip/http-v2/4/3/6
+/root/.cache/pip/http-v2/4/4
+/root/.cache/pip/http-v2/4/4/e
+/root/.cache/pip/http-v2/4/6
+/root/.cache/pip/http-v2/4/6/b
+/root/.cache/pip/http-v2/4/d
+/root/.cache/pip/http-v2/4/d/2
+/root/.cache/pip/http-v2/5
+/root/.cache/pip/http-v2/5/2
+/root/.cache/pip/http-v2/5/2/3
+/root/.cache/pip/http-v2/5/9
+/root/.cache/pip/http-v2/5/9/d
+/root/.cache/pip/http-v2/6
+/root/.cache/pip/http-v2/6/6
+/root/.cache/pip/http-v2/6/6/d
+/root/.cache/pip/http-v2/6/6/e
+/root/.cache/pip/http-v2/6/f
+/root/.cache/pip/http-v2/6/f/4
+/root/.cache/pip/http-v2/7
+/root/.cache/pip/http-v2/7/d
+/root/.cache/pip/http-v2/7/d/e
+/root/.cache/pip/http-v2/7/e
+/root/.cache/pip/http-v2/7/e/7
+/root/.cache/pip/http-v2/a
+/root/.cache/pip/http-v2/a/2
+/root/.cache/pip/http-v2/a/2/6
+/root/.cache/pip/http-v2/b
+/root/.cache/pip/http-v2/b/7
+/root/.cache/pip/http-v2/b/7/8
+/root/.cache/pip/http-v2/c
+/root/.cache/pip/http-v2/c/8
+/root/.cache/pip/http-v2/c/8/4
+/root/.cache/pip/http-v2/c/c
+/root/.cache/pip/http-v2/c/c/1
+/root/.cache/pip/http-v2/c/d
+/root/.cache/pip/http-v2/c/d/4
+/root/.cache/pip/http-v2/c/d/e
+/root/.cache/pip/http-v2/d
+/root/.cache/pip/http-v2/d/9
+/root/.cache/pip/http-v2/d/9/d
+/root/.cache/pip/http-v2/e
+/root/.cache/pip/http-v2/e/c
+/root/.cache/pip/http-v2/e/c/d
+/root/.cache/pip/http-v2/e/f
+/root/.cache/pip/http-v2/e/f/a
+/root/.cache/pip/http-v2/f
+/root/.cache/pip/http-v2/f/4
+/root/.cache/pip/http-v2/f/4/d
+/root/.cache/pip/http/0
+/root/.cache/pip/http/0/0
+/root/.cache/pip/http/0/0/9
+/root/.cache/pip/http/0/2
+/root/.cache/pip/http/0/2/6
+/root/.cache/pip/http/0/4
+/root/.cache/pip/http/0/4/1
+/root/.cache/pip/http/0/7
+/root/.cache/pip/http/0/7/c
+/root/.cache/pip/http/0/b
+/root/.cache/pip/http/0/b/7
+/root/.cache/pip/http/1
+/root/.cache/pip/http/1/5
+/root/.cache/pip/http/1/5/0
+/root/.cache/pip/http/1/7
+/root/.cache/pip/http/1/7/6
+/root/.cache/pip/http/1/8
+/root/.cache/pip/http/1/8/e
+/root/.cache/pip/http/1/e
+/root/.cache/pip/http/1/e/8
+/root/.cache/pip/http/1/f
+/root/.cache/pip/http/1/f/c
+/root/.cache/pip/http/3
+/root/.cache/pip/http/3/6
+/root/.cache/pip/http/3/6/5
+/root/.cache/pip/http/4
+/root/.cache/pip/http/4/3
+/root/.cache/pip/http/4/3/4
+/root/.cache/pip/http/4/4
+/root/.cache/pip/http/4/4/e
+/root/.cache/pip/http/4/7
+/root/.cache/pip/http/4/7/2
+/root/.cache/pip/http/4/8
+/root/.cache/pip/http/4/8/0
+/root/.cache/pip/http/4/d
+/root/.cache/pip/http/4/d/2
+/root/.cache/pip/http/5
+/root/.cache/pip/http/5/0
+/root/.cache/pip/http/5/0/4
+/root/.cache/pip/http/5/2
+/root/.cache/pip/http/5/2/2
+/root/.cache/pip/http/5/4
+/root/.cache/pip/http/5/4/c
+/root/.cache/pip/http/5/9
+/root/.cache/pip/http/5/9/1
+/root/.cache/pip/http/5/f
+/root/.cache/pip/http/5/f/a
+/root/.cache/pip/http/6
+/root/.cache/pip/http/6/0
+/root/.cache/pip/http/6/0/7
+/root/.cache/pip/http/6/1
+/root/.cache/pip/http/6/1/7
+/root/.cache/pip/http/6/6
+/root/.cache/pip/http/6/6/d
+/root/.cache/pip/http/6/6/e
+/root/.cache/pip/http/6/9
+/root/.cache/pip/http/6/9/a
+/root/.cache/pip/http/6/b
+/root/.cache/pip/http/6/b/5
+/root/.cache/pip/http/7
+/root/.cache/pip/http/7/1
+/root/.cache/pip/http/7/1/a
+/root/.cache/pip/http/7/7
+/root/.cache/pip/http/7/7/d
+/root/.cache/pip/http/7/b
+/root/.cache/pip/http/7/b/d
+/root/.cache/pip/http/8
+/root/.cache/pip/http/8/2
+/root/.cache/pip/http/8/2/d
+/root/.cache/pip/http/8/4
+/root/.cache/pip/http/8/4/c
+/root/.cache/pip/http/8/8
+/root/.cache/pip/http/8/8/0
+/root/.cache/pip/http/8/9
+/root/.cache/pip/http/8/9/f
+/root/.cache/pip/http/9
+/root/.cache/pip/http/9/4
+/root/.cache/pip/http/9/4/8
+/root/.cache/pip/http/9/6
+/root/.cache/pip/http/9/6/7
+/root/.cache/pip/http/9/8
+/root/.cache/pip/http/9/8/b
+/root/.cache/pip/http/9/9
+/root/.cache/pip/http/9/9/1
+/root/.cache/pip/http/a
+/root/.cache/pip/http/a/1
+/root/.cache/pip/http/a/1/2
+/root/.cache/pip/http/a/1/9
+/root/.cache/pip/http/a/2
+/root/.cache/pip/http/a/2/6
+/root/.cache/pip/http/a/7
+/root/.cache/pip/http/a/7/0
+/root/.cache/pip/http/b
+/root/.cache/pip/http/b/e
+/root/.cache/pip/http/b/e/3
+/root/.cache/pip/http/b/f
+/root/.cache/pip/http/b/f/d
+/root/.cache/pip/http/c
+/root/.cache/pip/http/c/0
+/root/.cache/pip/http/c/0/8
+/root/.cache/pip/http/c/7
+/root/.cache/pip/http/c/7/5
+/root/.cache/pip/http/c/c
+/root/.cache/pip/http/c/c/0
+/root/.cache/pip/http/c/c/1
+/root/.cache/pip/http/c/d
+/root/.cache/pip/http/c/d/4
+/root/.cache/pip/http/c/d/e
+/root/.cache/pip/http/c/f
+/root/.cache/pip/http/c/f/a
+/root/.cache/pip/http/d
+/root/.cache/pip/http/d/9
+/root/.cache/pip/http/d/9/d
+/root/.cache/pip/http/d/f
+/root/.cache/pip/http/d/f/9
+/root/.cache/pip/http/e
+/root/.cache/pip/http/e/0
+/root/.cache/pip/http/e/0/b
+/root/.cache/pip/http/e/1
+/root/.cache/pip/http/e/1/5
+/root/.cache/pip/http/e/2
+/root/.cache/pip/http/e/2/0
+/root/.cache/pip/http/e/5
+/root/.cache/pip/http/e/5/1
+/root/.cache/pip/http/e/c
+/root/.cache/pip/http/e/c/a
+/root/.cache/pip/http/e/d
+/root/.cache/pip/http/e/d/0
+/root/.cache/pip/http/e/d/b
+/root/.cache/pip/http/f
+/root/.cache/pip/http/f/0
+/root/.cache/pip/http/f/0/0
+/root/.cache/pip/http/f/f
+/root/.cache/pip/http/f/f/8
+/root/.cache/pip/selfcheck
+/root/.cache/pip/wheels
+/root/.cache/pip/wheels/52
+/root/.cache/pip/wheels/52/d1
+/root/.cache/pip/wheels/52/d1/38
+/root/DELTA_LENOVO_CENTRAL
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_INTAKE/002. Materijal za Tik tok/07.04
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_NOTES_FILES_INTAKE
+/root/DELTA_LENOVO_CENTRAL/00_IPHONE_NOTES_PRIORITY_INTAKE
+/root/DELTA_LENOVO_CENTRAL/01_HASH_REGISTERS
+/root/DELTA_LENOVO_CENTRAL/02_INDEX
+/root/DELTA_LENOVO_CENTRAL/03_SCRIPT_INVENTORY
+/root/DELTA_LENOVO_CENTRAL/04_CORE_CANDIDATE_REVIEW
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_01_CONTROL_SNAPSHOT
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_02_DEPENDENCY_INVENTORY
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_03_MODULE_MAP
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_04_COMPLEXITY_REVIEW
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_05_GOVERNANCE_EXTRACTION
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_06_OUTPUT_SURFACE
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_07_FUNCTION_CLASSIFICATION
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_08_CANONICAL_PACKAGE
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_09_HASH_VERIFICATION
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_10_STATUS_REPORT
+/root/DELTA_LENOVO_CENTRAL/50_HARMONIZATION
+/root/DELTA_LENOVO_CENTRAL/99_DO_NOT_DELETE
+/root/DELTA_LENOVO_CENTRAL/99_STATIC_REPORTS
+/root/DELTA_LENOVO_CENTRAL/99_STATIC_REPORTS/ALPINE_LARGE_FILE_CHECK
+/root/Documents
+/root/Documents/.Trash
+/root/Documents/.Trash/02. Neki LinkedIn postovi
+/root/Documents/000. Titan
+/root/Documents/0000000000000
+/root/Documents/0000000000000/DANASSSSS
+/root/Documents/0000000000000/Skripte
+/root/Documents/0000000000000/untitled folder
+/root/Documents/0000000000000/vDR
+/root/Documents/0000000000000/vDR/Titan 1 and 2
+/root/Documents/001. AKTIVNA DOKUMENTA
+/root/Documents/001. AKTIVNA DOKUMENTA/07.04.2025
+/root/Documents/001. Zakoni i regulative
+/root/Documents/002. Materijal za Tik tok
+/root/Documents/002. Materijal za Tik tok/07.04
+/root/Documents/003 DELTA
+/root/Documents/003 DELTA/001. Skripte manual
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 3
+/root/Documents/003. PPP
+/root/Documents/004. Extrakcije iz chatova
+/root/Documents/00_MASTER_TOKEN_AUTHORITY
+/root/Documents/Ars documents
+/root/Documents/Ars documents/Dokument g
+/root/Documents/Ars documents/Dokumenta b
+/root/Documents/Ars documents/Dokumenta c
+/root/Documents/Ars documents/Dokumenta d
+/root/Documents/Ars documents/Dokumenta e
+/root/Documents/Ars documents/Dokumenta f
+/root/Documents/Ars documents/Ispravljene verzije
+/root/Documents/Ars documents/Nova revizija
+/root/Documents/Ars documents/untitled folder
+/root/Documents/Chatgbt informacije
+/root/Documents/Drive dokumenta 
+/root/Documents/Exeli
+/root/Documents/Exeli/Korigovana
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10
+/root/Documents/Finansiski model 
+/root/Documents/IZVOZ_ZA_WINDOWS
+/root/Documents/Irf
+/root/Documents/M
+/root/Documents/MAREL_TRANSFER
+/root/Documents/Mantre
+/root/Documents/Move to iOS
+/root/Documents/Move to iOS/Android
+/root/Documents/Move to iOS/Android/media
+/root/Documents/Move to iOS/Android/media/com.whatsapp
+/root/Documents/Move to iOS/Android/media/com.whatsapp/WhatsApp
+/root/Documents/O02 chatgbt 
+/root/Documents/O02 chatgbt /Novo harvest 
+/root/Documents/Sistem final 
+/root/Documents/TITAN FINAL
+/root/Documents/TITAN FINAL/01.04
+/root/Documents/TITAN FINAL/03.03
+/root/Documents/TITAN FINAL/03.03/04.04
+/root/Documents/TITAN FINAL/04.04 data room
+/root/Documents/TITAN FINAL/27.03
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/10_TAX
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/16_HR
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/17_IT_SYSTEMS
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/18_AUDIT
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/19_DATA_ROOM_LOG
+/root/Documents/TITAN FINAL/28.03
+/root/Documents/TITAN FINAL/29.03
+/root/Documents/TITAN FINAL/31.03
+/root/Documents/TITAN FINAL/Arhiva informacija
+/root/Documents/TITAN FINAL/Arhiva informacija/003. Excel video tutorial
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre
+/root/Documents/TITAN FINAL/Arhiva informacija/05. Productivity 
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents 
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /Below is your GOVERNMENT INFLUENCE MAP – Montenegro
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /Hitno
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /Linkedin text
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /🇩🇪 GERMANY
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize
+/root/Documents/TITAN FINAL/Marija
+/root/Documents/TITAN1_DEEP_HARVEST_20260510_1153
+/root/Documents/TITAN1_HARMONIZED_REPORT_20260510_1141
+/root/Documents/TITAN_SCRIPT_MODULE_INTAKE
+/root/Documents/TITAN_SCRIPT_MODULE_INTAKE/{00_RAW_ZIPS,01_RAW_SCRIPTS,02_REVIEW_REPORTS,03_INDEX_HASH,04_DO_NOT_RUN}
+/root/Documents/Titan grid
+/root/Documents/Titan grid/Drive
+/root/Documents/Titan grid/Onur
+/root/Documents/Titan grid/Prezentacija
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/26.03
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/untitled folder
+/root/Documents/Titan grid/Prezentacija/Osnovna dokument
+/root/Documents/untitled folder
+/root/IPHONE_LOCAL_STATIC_CENSUS_20260519_082140
+/root/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075526
+/root/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558

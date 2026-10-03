@@ -1,0 +1,320 @@
+/root/Documents/TITAN FINAL/01.04/README_GROK_CENTRAL_BRAIN.txt
+/root/Documents/TITAN FINAL/01.04/grok_central_brain_exporter.py
+/root/Documents/TITAN FINAL/01.04/Instagram 1 story.MOV
+/root/Documents/TITAN FINAL/01.04/brand_engine_replit_app.zip
+/root/Documents/TITAN FINAL/01.04/GROK_CENTRAL_BRAIN_INSTRUCTIONS.txt
+/root/Documents/TITAN FINAL/01.04/grok_central_brain_lookup.csv
+/root/Documents/TITAN FINAL/01.04/grok_central_brain_lookup.json
+/root/Documents/TITAN FINAL/01.04/Voice gemini.m4a
+/root/Documents/TITAN FINAL/01.04/instagram_automation_system.zip
+/root/Documents/TITAN FINAL/31.03/grok_mutation_generator_safe_only.csv
+/root/Documents/TITAN FINAL/31.03/grok_only_step_by_step.txt
+/root/Documents/TITAN FINAL/31.03/avatar_identity_QA_workbook.xlsx
+/root/Documents/TITAN FINAL/31.03/grok_mutation_generator_safe_only.json
+/root/Documents/TITAN FINAL/31.03/grok_mutation_generator_candidates.csv
+/root/Documents/TITAN FINAL/31.03/grok_automated_mutation_generator.py
+/root/Documents/TITAN FINAL/31.03/grok_mutation_generator.xlsx
+/root/Documents/TITAN FINAL/Marija/izvjestaj_Marija_Đurović.pdf
+/root/Documents/TITAN FINAL/Marija/Medical Report Analysis and Research.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/003. Excel video tutorial/v12025gd0000d39bp9vog65sa9ahkf4g.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Analiza snaga tri firme za EU platformu.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/TITAN_Control_Tower_Auto_v2.xlsx
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Kontrola nabavke: Moć u industriji.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Implementacioni Plan: Od Stabilizacije do Hegemoni....pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/ECO + ARS: Komercijalna Ekspanzija i Liderstvo.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Industrijska Transformacija: Od Haosa Ka Sistemu.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateški Plan za Industrijsku Moć.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Ljudski kapital: Mikro-koraci za Fabriku.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strategija Visoko Svjesnog Bića.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Poslovni plan za investitora: 20 tačaka.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Plan Implementacije Industrijske Hegemonije.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Fabrika: Od Kvaliteta do Transformacije.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateški model akvizicije ECO-a.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateške prilike za industrijsku ekspanziju.pdf
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre/ScreenRecording_02-18-2026 00-29-45_1.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre/ScreenRecording_02-18-2026 00-09-48_1.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre/ScreenRecording_02-18-2026 00-14-49_1.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/04. Mantre/ScreenRecording_02-18-2026 00-10-39_1.MP4
+/root/Documents/TITAN FINAL/Arhiva informacija/05. Productivity /CFO_Daily_Balance_ToDo_List_Danijela_Djurovic_Keskin.docx
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /Below is your GOVERNMENT INFLUENCE MAP – Montenegro/Below is your GOVERNMENT INFLUENCE MAP – Montenegro.md
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /100_Step_Leadership_Diplomacy_Manual_DanijelaDjurovicKeskin.docx
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /Pre_Construction_and_Management_Plan_ARS_Metal_Industries.docx
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /50_Step_Construction_and_Management_Plan_ARS_Metal_Industries.docx
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /100_Step_Master_Plan_DanijelaDjurovicKeskin.docx
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /100_Step_Sales_Closing_Power_Plan_DanijelaDjurovicKeskin.docx
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /Hitno/Hitno.md
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /Influence_Strategy_Combined.xlsx
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /🇩🇪 GERMANY/🇩🇪 GERMANY.md
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /Linkedin text/Linkedin text.md
+/root/Documents/TITAN FINAL/Arhiva informacija/06. Chek documents /100_Step_Partner_by_Achievement_Plan_DanijelaDjurovicKeskin.docx
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7750.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7744.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7745.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7751.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7747.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7753.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7752.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7746.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7742.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7756.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7757.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7743.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7755.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7741.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7740.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7754.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7733.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7727.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7726.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7732.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7724.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7730.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7731.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7725.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7735.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7734.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7736.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7723.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7737.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7739.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7738.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7728.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7729.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7759.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7758.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7764.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7763.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7762.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7748.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7760.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7761.PNG
+/root/Documents/TITAN FINAL/Arhiva informacija/01. Nesto o bogu/IMG_7749.PNG
+/root/Documents/TITAN FINAL/29.03/Irf investicioni plan.pdf
+/root/Documents/TITAN FINAL/28.03/Memory Update and Conversation Synthesis.docx
+/root/Documents/TITAN FINAL/28.03/central_brain_excel_engine_v1.xlsx
+/root/Documents/TITAN FINAL/28.03/Memory Update and Conversation Synthesis.pdf
+/root/Documents/TITAN FINAL/28.03/VBA Script Review: DSCR & IRR Calculator.docx
+/root/Documents/TITAN FINAL/28.03/Obrazac 2a  Detaljni biznis plan (veci od 50.000).docx
+/root/Documents/TITAN FINAL/03.03/TITAN_v6_3_Credit_Committee_Pack.xlsx
+/root/Documents/TITAN FINAL/03.03/04.04/Assignment tracker.pdf
+/root/Documents/TITAN FINAL/03.03/TITAN_VDR_Master_List.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_v5_FINAL.pptx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_Governance_Export.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_Memo_v3_FINAL.docx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_v6_export_patch.xlsx
+/root/Documents/TITAN FINAL/03.03/semantic_control_matrix_v1.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_Pack_v3_FINAL.pptx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_Pack_v2_LiveModel.pptx
+/root/Documents/TITAN FINAL/03.03/grok_payload_v6_2.py
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_Finance_Master_v6_1.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_v6_1_Master.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_v7_2_Lender_Model.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_Finance_Master_v6_2 2.xlsx
+/root/Documents/TITAN FINAL/03.03/README.md
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_v6_2_Lender_Grade.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Forensic_Audit_Report_2026-04-03.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_Finance_Master_v6_2.xlsx
+/root/Documents/TITAN FINAL/03.03/bank_grade_eco_ars_3tab_model.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_model_full_integration.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_VDR_150_Document_Register_Template.xlsx
+/root/Documents/TITAN FINAL/03.03/grok_payload_v6_2.json
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_v4_Visual.pptx
+/root/Documents/TITAN FINAL/03.03/build_control_tower_v1.py
+/root/Documents/TITAN FINAL/03.03/Control_Tower_Dashboard_Ready.xlsx
+/root/Documents/TITAN FINAL/03.03/titan_grid_control_tower_v1.xlsx
+/root/Documents/TITAN FINAL/03.03/ECO_Transformer_Bank_Grade_Sensitivity_Model_v1.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_1_Institutional.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-03_WBIF_Eligibility.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-05_Turkey_Industrial_Support.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-09_Grant_Risk_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-04_Montenegro_Incentives.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-08_Grant_Document_Checklist.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-07_Grant_Compliance.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-06_Grant_Timing_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-01_Grant_Strategy_Overview.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-02_EU_IPA_Documentation.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-06_Steel_Price_Sensitivity.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-09_Lead_Time_Analysis.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-05_Pricing_Analysis.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-03_Nearshoring_Analysis.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-02_Grid_Expansion_Pipeline.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-07_Customer_Segments.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-08_Offtake_Pipeline.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-10_Commercial_Assumptions_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-01_EU_Transformer_Demand_Study.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-04_Competitor_Benchmarking.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/18_AUDIT/AUD-02_Technical_Audit.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/18_AUDIT/AUD-01_Financial_Audit.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/18_AUDIT/AUD-03_Environmental_Audit.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/18_AUDIT/AUD-04_Model_Audit_Report.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/18_AUDIT/AUD-06_Close_Out_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/18_AUDIT/AUD-05_Data_Integrity_Checks.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/AUTOMATE_ALL_DOCUMENTS.py
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW/PROJ-06_Capacity_Plan_3600_Units.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW/PROJ-07_Sponsor_Profile_ARS_Metal.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW/PROJ-04_Location_Analysis_Montenegro.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW/PROJ-08_ADS_Ankara_Industrial_Base.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW/PROJ-03_Asset_Map_3_Factories.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW/PROJ-05_Industrial_Layout.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW/PROJ-02_Rollout_Timeline_2026_2029.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/02_PROJECT_OVERVIEW/PROJ-01_Project_Description.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/10_TAX/TAX-03_VAT_Treatment.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/10_TAX/TAX-06_Tax_Compliance_Checklist.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/10_TAX/TAX-05_Tax_Optimization_Memo.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/10_TAX/TAX-01_Corporate_Tax_Structure.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/10_TAX/TAX-04_Cross_Border_Tax_Turkey_Montenegro.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/10_TAX/TAX-02_Montenegro_Incentives.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE/EXE-03_IC_Paper_PE.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE/EXE-06_Strategic_Rationale.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE/EXE-02_Investment_Memo_EBRD.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE/EXE-08_Executive_Risk_Summary.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE/EXE-07_Value_Creation_Plan.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE/EXE-05_Pitch_Deck_Outline.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE/EXE-01_Investment_Memo_EIB.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/01_EXECUTIVE/EXE-04_One_Pager.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-08_Covenant_Risk.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-05_Interest_Rate_Risk.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-10_Risk_Ownership_Map.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-02_CAPEX_Risk.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-03_Market_Risk.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-06_Operational_Risk.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-01_Risk_Matrix.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-07_Mitigation_Strategies.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-09_Liquidity_Risk.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/13_RISK/RISK-04_FX_Risk.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-04_Construction_Timeline.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-02_P90_CAPEX.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-08_Civil_Works_Scope.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-07_Expansion_CAPEX.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-01_Detailed_CAPEX_Breakdown.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-10_CAPEX_Assumptions_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-05_Contingency_Analysis.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-03_Vendor_Quotes_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-06_IDC_Calculation.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-09_Equipment_Scope.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/16_HR/HR-06_Headcount_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/16_HR/HR-02_Hiring_Plan.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/16_HR/HR-01_Org_Structure.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/16_HR/HR-04_Training_Plan.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/16_HR/HR-03_Salary_Benchmarks.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/16_HR/HR-05_Management_Bios.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/16_HR/HR-07_Health_and_Safety.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-07_Variable_Definitions.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-08_Correlation_Matrix.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-02_Python_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-06_Equity_Downside.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-04_DSCR_Distribution.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-03_10000_Run_Results.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-05_IRR_Distribution.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-09_P90_Methodology.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/14_MONTE_CARLO/MC-01_Simulation_Assumptions.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-03_Document_Index_Master.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-04_Data_Room_Access_Matrix.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-06_QA_Log.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-08_Approvals_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-07_Issues_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-01_Executive_Summary.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-02_Version_Control_Log.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-05_NDA_Template.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-01_ESG_Strategy.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-02_EU_Taxonomy_Alignment.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-08_ESG_KPI_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-04_CO2_Reduction_Estimate.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-05_Environmental_Permits.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-07_Governance_Framework.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-03_CBAM_Impact_Analysis.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-06_Social_Impact.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-09_ESG_Risk_Map.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-12_Grant_Integration_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-07_LLCR_PLCR_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-02_Assumptions_Book.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-04_CFADS_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-05_Quarterly_Debt_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-11_Working_Capital_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-08_Sensitivity_Analysis.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-09_Scenario_Analysis.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-03_DSCR_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-06_DSRA_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-01_Central_Brain_Master_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/07_FINANCIAL_MODEL/FIN-10_Dashboard_Notes.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-04_Logistics_Plan.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-05_Procurement_Strategy.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-07_Maintenance_Plan.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-02_OEE_Assumptions.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-01_Production_Plan.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-06_Inventory_Policy.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-09_Ramp_Up_Plan.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-10_KPI_Framework.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-03_Supply_Chain_Map.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/05_OPERATIONS/OPS-08_Shift_Model.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/17_IT_SYSTEMS/IT-01_ERP_System.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/17_IT_SYSTEMS/IT-05_Cybersecurity_Framework.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/17_IT_SYSTEMS/IT-06_Backup_and_Recovery.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/17_IT_SYSTEMS/IT-02_MES_System.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/17_IT_SYSTEMS/IT-03_SCADA_Integration.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/17_IT_SYSTEMS/IT-07_Access_Control_Matrix.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/17_IT_SYSTEMS/IT-04_Central_Brain_Data_Architecture.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-09_Material_Legal_Risks.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-06_Compliance_Certificates.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-07_Corporate_Governance.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-02_Ownership_Structure.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-01_Company_Registration.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-03_Shareholder_Agreements.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-04_Land_Ownership_Lease.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-08_Litigation_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-05_Permits_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/README_AUTOMATION.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-07_Energy_Consumption_Study.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-10_Capacity_Certification.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-01_Product_Specifications.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-06_Layout_Drawings_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-03_ADS_Capability_Proof.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-04_Quality_Standards.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-08_Scrap_Rate_Analysis.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-05_Machinery_List.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-09_Process_QA_QC.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-02_Manufacturing_Process_Flow.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/19_DATA_ROOM_LOG/LOG-03_Investor_Access_Log.csv
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/19_DATA_ROOM_LOG/LOG-02_Update_History.csv
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/19_DATA_ROOM_LOG/LOG-05_Review_Status.csv
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/19_DATA_ROOM_LOG/LOG-04_Missing_Documents.csv
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/19_DATA_ROOM_LOG/LOG-01_Document_Tracker.csv
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-02_Offtake_Agreements.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-04_Equipment_Contracts.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-07_Insurance_Contracts.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-01_Supplier_Contracts_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-08_Key_Terms_Summary.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-06_Utilities_Contracts.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-05_Logistics_Contracts.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-03_EPC_Contracts.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-05_Equity_Story.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-08_Debt_Marketing_List.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-07_Refinancing_Strategy.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-02_Debt_Term_Sheet.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-06_Co_Investment_Strategy.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-04_Lender_Presentation_EBRD.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-03_Lender_Presentation_EIB.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-01_Capital_Structure.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-09_Lender_QA_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_Annex.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_FINAL.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_3_MonteCarlo_PD_P90.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_Morning_Update_2026-03-27.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo.docx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_2_Lender_Model_FINAL.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_Annex.docx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_Forensic_Export.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Control_Tower_Auto_v3_Dashboard.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_Full.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v9_Response_Pack.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated.zip
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_version.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_Finance_Master_v6_2.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_Finance_Master_v6_refresh.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_FINAL.docx
+/root/Documents/TITAN FINAL/27.03/TITAN_Investment_Memo_v6_2.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_1_Lender_Model.xlsx
+/root/Documents/TITAN FINAL/27.03/small_transformer_factory_v4_3_1_bank_patch.xlsx

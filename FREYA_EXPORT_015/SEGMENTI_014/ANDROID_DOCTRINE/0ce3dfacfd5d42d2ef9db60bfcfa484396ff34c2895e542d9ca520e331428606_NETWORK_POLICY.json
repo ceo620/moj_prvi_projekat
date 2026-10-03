@@ -1,0 +1,1 @@
+{"anti_replay":"REQUIRED","cloud_transfer":"FORBIDDEN","content_send":"MAC_ACCEPT_REQUIRED","fallback_host_or_port":"FORBIDDEN","listener_shutdown_receipt":"REQUIRED","manifest_send":"PRIVATE_TLS_HMAC_SESSION_ONLY","network_scan":"FORBIDDEN","public_listener":"FORBIDDEN","schema_id":"FREYA_NETWORK_POLICY_V1_888","single_session":true}

@@ -1,0 +1,18 @@
+{
+  "protocol": "888",
+  "batch": "IPHONE_888_REAL_IO_PRODUCT_VALIDATION_10",
+  "engine": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/ENGINE__01cd6ee9c07d.py",
+  "engine_sha256": "01cd6ee9c07d76f2b974b655791c4bcb8426e128bdb29ca221cfcce502064525",
+  "help_exit": 0,
+  "help_tail": "PREPARED | Pokreni sa --popravi-888 | NETWORK=NONE\n\n",
+  "options": [
+    "--popravi-888"
+  ],
+  "input_options": [],
+  "output_options": [],
+  "execution": {
+    "attempted": false,
+    "reason": "NO_SAFE_EXPLICIT_INPUT_OUTPUT_CLI_CONTRACT"
+  },
+  "products": []
+}

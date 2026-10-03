@@ -1,0 +1,15 @@
+382:def ensure_no_overwrite(path: Path, overwrite: bool = False) -> None:
+561:def detect_forbidden_terms(*texts: str) -> List[str]:
+625:def derive_truth_gate(record: AtomRecord) -> str:
+646:def derive_hallucination_gate(record: AtomRecord) -> str:
+664:def derive_execution_gate(record: AtomRecord) -> str:
+678:def derive_canonical_decision(record: AtomRecord) -> str:
+730:    forbidden = detect_forbidden_terms(combined)
+733:    record.execution_gate = derive_execution_gate(record)
+736:    record.truth_gate = derive_truth_gate(record)
+737:    record.hallucination_gate = derive_hallucination_gate(record)
+738:    record.canonical_decision = derive_canonical_decision(record)
+1186:    ensure_no_overwrite(path, overwrite=overwrite)
+1191:    ensure_no_overwrite(path, overwrite=overwrite)
+1198:    ensure_no_overwrite(path, overwrite=overwrite)
+1215:    ensure_no_overwrite(output_path, overwrite=overwrite)

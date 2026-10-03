@@ -1,0 +1,33 @@
+a8934a86b44d7242da8fc30f1b43a141ae3661d7e8fc9c6b5ee451fa6e25f571  /root/Documents/TITAN FINAL/01.04/README_GROK_CENTRAL_BRAIN.txt
+fcff4c9755243b9b7d27a9433693b06fcb0bbba4cdb988bdab8d6bfce0a45e95  /root/Documents/TITAN FINAL/01.04/grok_central_brain_exporter.py
+7a074a17065637572de362a2625e74e56df3fc2a96d0a8d0bd564902fb833eac  /root/Documents/TITAN FINAL/01.04/Instagram 1 story.MOV
+016bada3d28c9db101251637562327813d50f73e90b0ab6c10f210dea35dc03f  /root/Documents/TITAN FINAL/01.04/brand_engine_replit_app.zip
+7c074eea6523e6332559f122e4bcb208bc4d0334713b7bec14efdcd56e40dfc8  /root/Documents/TITAN FINAL/01.04/GROK_CENTRAL_BRAIN_INSTRUCTIONS.txt
+5e8e6d11bf3310c15aeafad6f5e59a8605831056bd6c6f9e7fa75b7c7ab5f8ca  /root/Documents/TITAN FINAL/01.04/grok_central_brain_lookup.csv
+e6837a20f4b6336305600f2a2cfd50613921f9c2aab352aadc338dd781e444c1  /root/Documents/TITAN FINAL/01.04/grok_central_brain_lookup.json
+55f3d234dc76c8fca21474c1bd6b7165a86d97634b872703d785a1bffb25d19f  /root/Documents/TITAN FINAL/01.04/Voice gemini.m4a
+f9084262a84b6c3173c6e9c911770267ed905fefb37d0c548e68ce6d3dbc65b9  /root/Documents/TITAN FINAL/01.04/instagram_automation_system.zip
+917831ae935e0bcb01bb46bbdc923e851914e04b0d0acfad7a342b2e6f4d7e50  /root/Documents/TITAN FINAL/31.03/grok_mutation_generator_safe_only.csv
+2b7a8f195126f9dd4e4d17c963d28190f18687a0761c8e230cf2ba71110bb904  /root/Documents/TITAN FINAL/31.03/grok_only_step_by_step.txt
+b67a224688e81cc9f8c218db429c95b25209f90f861cdb70ab7a61e580d89e67  /root/Documents/TITAN FINAL/31.03/avatar_identity_QA_workbook.xlsx
+3cf122896a38577d12709a4415aad0a6ce622b4aea05c15288c201dd422697e6  /root/Documents/TITAN FINAL/31.03/grok_mutation_generator_safe_only.json
+bfe6dc934505a0328721ea39831b5222190869df6556bfb19c869a0635cd87b8  /root/Documents/TITAN FINAL/31.03/grok_mutation_generator_candidates.csv
+4fb527807d4c2f6d70e17148719356881587d083cc83b2d58ff78324c9006580  /root/Documents/TITAN FINAL/31.03/grok_automated_mutation_generator.py
+918fcf30d9e5d22203c1938c0fc3e6846ec64fa9f470c62a07180f17c1c8e3b2  /root/Documents/TITAN FINAL/31.03/grok_mutation_generator.xlsx
+7683141333b09abb204341e8f7ffe0a654ce007b528d8f3d48f8eb1f77f799df  /root/Documents/TITAN FINAL/Marija/izvjestaj_Marija_Đurović.pdf
+39cb0b99a7053d2d0c706e6f14aef32a4949f97d91793adece9515784fa86b62  /root/Documents/TITAN FINAL/Marija/Medical Report Analysis and Research.pdf
+ba8621771af49632bb4c14d85832bdf76032e1ed71d9e8c8b2cce4766794bf90  /root/Documents/TITAN FINAL/Arhiva informacija/003. Excel video tutorial/v12025gd0000d39bp9vog65sa9ahkf4g.MP4
+677cbdd7535a861a7fd3177b58897e260918d5e793dc56ea53aaec7412fa03e0  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Analiza snaga tri firme za EU platformu.pdf
+f535f49204468045348f67e2120b6f8966be5e33d587038bd0690a5de1e748b0  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/TITAN_Control_Tower_Auto_v2.xlsx
+1732b10485548d925216745927c0b08bd743b003ea71391f93bc98deb7c4b178  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Kontrola nabavke: Moć u industriji.pdf
+fb28a9fc191b6b9cc5c0ffcfc60b1e618ff73e8732458a2a68ad3b118f931322  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Implementacioni Plan: Od Stabilizacije do Hegemoni....pdf
+744018d3bf4d1416c5e4f45f6addc77a1329389972181610b4d53d3583ccee8c  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/ECO + ARS: Komercijalna Ekspanzija i Liderstvo.pdf
+9e5724eb3be1618134b6f84ad11c747d2eac8aabe7136871148b1c2a8e16b4a2  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Industrijska Transformacija: Od Haosa Ka Sistemu.pdf
+36082bdd9cb51014b6ee2e9db1098390c9b5c89301310ed5d61846ff8ecf22b2  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateški Plan za Industrijsku Moć.pdf
+caf621de7a756004b73133e58bce5f383c16a9d9a5d76360ef1cfa43921ba60c  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Ljudski kapital: Mikro-koraci za Fabriku.pdf
+72917050d7e5c56e8c97b04cb63ecad56e39402590e7b5af4f4d5363ad43f0b1  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strategija Visoko Svjesnog Bića.pdf
+722e377d37837a708014cb7a2f22753b63922cffc843b9d91014865233aa9201  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Poslovni plan za investitora: 20 tačaka.pdf
+688640bd8be16e40266cddabc29885627331778c4c16bfda7df8bb78885bf3c5  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Plan Implementacije Industrijske Hegemonije.pdf
+aa21afb3ac8dd86afbeb4ed6ed2efe8b57533ce69da5d5a1df5cf659b0634885  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Fabrika: Od Kvaliteta do Transformacije.pdf
+779d3c6d2875e5fd07bf8bf8d9a50ba847c6b829c819c7c96f1dd9e39d2a6c12  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateški model akvizicije ECO-a.pdf
+2c118e4b25e22a20ce1fb0789523413394628c41009b759c3a971ff57c4630cf  /root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/Strateške prilike za industrijsku ekspanziju.pdf

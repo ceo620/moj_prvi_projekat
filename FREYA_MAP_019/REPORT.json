@@ -1,0 +1,322 @@
+{
+  "source": "/tmp/ISH_EXPORT_888.w75MRJ/default.tar.gz",
+  "entries": 9378,
+  "types": {
+    "b'5'": 684,
+    "b'2'": 299,
+    "b'0'": 8358,
+    "b'3'": 17,
+    "b'1'": 20
+  },
+  "first_regular": [
+    {
+      "name": "etc/alpine-release",
+      "bytes": 7,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 67584
+    },
+    {
+      "name": "etc/apk/arch",
+      "bytes": 4,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 71168
+    },
+    {
+      "name": "etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 74752
+    },
+    {
+      "name": "etc/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 76800
+    },
+    {
+      "name": "etc/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 78848
+    },
+    {
+      "name": "etc/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+      "bytes": 800,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 80896
+    },
+    {
+      "name": "etc/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+      "bytes": 800,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 83456
+    },
+    {
+      "name": "etc/apk/repositories",
+      "bytes": 281,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 87552
+    },
+    {
+      "name": "etc/fstab",
+      "bytes": 89,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 92672
+    },
+    {
+      "name": "etc/hostname",
+      "bytes": 10,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 94720
+    },
+    {
+      "name": "etc/hosts",
+      "bytes": 79,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 96768
+    },
+    {
+      "name": "etc/inittab",
+      "bytes": 570,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 100352
+    },
+    {
+      "name": "etc/issue",
+      "bytes": 54,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 102912
+    },
+    {
+      "name": "etc/modules",
+      "bytes": 15,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 108032
+    },
+    {
+      "name": "etc/motd",
+      "bytes": 350,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 111616
+    },
+    {
+      "name": "etc/os-release",
+      "bytes": 164,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 127488
+    },
+    {
+      "name": "etc/profile",
+      "bytes": 877,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 138752
+    },
+    {
+      "name": "etc/profile.d/README",
+      "bytes": 249,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 142848
+    },
+    {
+      "name": "etc/profile.d/color_prompt.sh.disabled",
+      "bytes": 295,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 144896
+    },
+    {
+      "name": "etc/profile.d/locale.sh",
+      "bytes": 61,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 146944
+    },
+    {
+      "name": "etc/protocols",
+      "bytes": 2932,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 148992
+    },
+    {
+      "name": "etc/services",
+      "bytes": 12966,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 153600
+    },
+    {
+      "name": "lib/apk/db/lock",
+      "bytes": 0,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 182272
+    },
+    {
+      "name": "lib/libapk.so.3.12.0",
+      "bytes": 199224,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 185344
+    },
+    {
+      "name": "lib/sysctl.d/00-alpine.conf",
+      "bytes": 1278,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 391168
+    },
+    {
+      "name": "sbin/apk",
+      "bytes": 64316,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 412672
+    },
+    {
+      "name": "sbin/mkmntdirs",
+      "bytes": 13428,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 527872
+    },
+    {
+      "name": "usr/bin/scanelf",
+      "bytes": 83140,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 659968
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 844800
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 846848
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 848896
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 850944
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 852992
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 855040
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 857088
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 859136
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub",
+      "bytes": 451,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 861184
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+      "bytes": 800,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 863232
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+      "bytes": 800,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 865792
+    },
+    {
+      "name": "usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+      "bytes": 800,
+      "type": "b'0'",
+      "linkname": "",
+      "tar_offset": 868352
+    }
+  ],
+  "saved": {
+    "9375_05_TITAN_FINAL_FILE_HASHES.txt": {
+      "original_name": "05_TITAN_FINAL_FILE_HASHES.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "9376_06_TITAN_FINAL_FILE_INDEX.txt": {
+      "original_name": "06_TITAN_FINAL_FILE_INDEX.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "9377_07_TITAN_FINAL_SIZE.txt": {
+      "original_name": "07_TITAN_FINAL_SIZE.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "9378_08_TITAN_FINAL_INDEX_HASHES.txt": {
+      "original_name": "08_TITAN_FINAL_INDEX_HASHES.txt",
+      "bytes": 286,
+      "sha256": "0039a6377537823b62c5477811a6cffb015ff648464bfa8957bf9bff1e2ddaad"
+    }
+  },
+  "missing_targets": [],
+  "issues": [],
+  "raw_bytes": 161828571,
+  "tar_bytes": 449372160,
+  "originals_modified": 0,
+  "project_code_executed": false,
+  "scope": "Bounded prefix mapping and four selected index files; whole archive integrity not established."
+}

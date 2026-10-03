@@ -1,0 +1,47 @@
+254:    "No execution, patch, delete, move, overwrite by default.",
+275:    forbidden_actions: str = "execute; patch; delete; move; overwrite; lender_use; final_use"
+350:    with path.open("rb") as f:
+362:    text = str(value).replace("\r\n", "\n").replace("\r", "\n").strip()
+369:    text = text.replace(" ", "_").replace("-", "_").replace("/", "_")
+382:def ensure_no_overwrite(path: Path, overwrite: bool = False) -> None:
+383:    if path.exists() and not overwrite:
+385:            f"Output already exists and overwrite is disabled: {path}"
+395:    sample = path.read_text(encoding="utf-8-sig", errors="replace")[:4096]
+469:    with path.open("r", encoding="utf-8-sig", errors="replace", newline="") as f:
+565:        pattern = re.escape(term).replace("\\_", r"[_\s-]?")
+769:    forbidden = get_value(row, "FORBIDDEN_ACTIONS") or "execute; patch; delete; move; overwrite; lender_use; final_use"
+838:            forbidden_actions="invent; execute; patch; delete; move; overwrite; lender_use; final_use",
+961:def write_records_sheet(wb: Workbook, records: List[AtomRecord]) -> None:
+988:def write_dashboard_sheet(wb: Workbook, records: List[AtomRecord], input_sha: str) -> None:
+1030:def write_truth_gates_sheet(wb: Workbook) -> None:
+1052:def write_dictionary_sheet(wb: Workbook) -> None:
+1097:def write_readme_sheet(wb: Workbook) -> None:
+1104:        ["Output", "No-overwrite by default"],
+1123:def write_workbook(records: List[AtomRecord], output_path: Path, input_sha: str) -> None:
+1125:    write_records_sheet(wb, records)
+1126:    write_dashboard_sheet(wb, records, input_sha)
+1127:    write_truth_gates_sheet(wb)
+1128:    write_dictionary_sheet(wb)
+1129:    write_readme_sheet(wb)
+1159:        "delete": "NO",
+1160:        "move": "NO",
+1161:        "overwrite": "NO_BY_DEFAULT",
+1185:def write_json(path: Path, data: Dict[str, Any], overwrite: bool) -> None:
+1186:    ensure_no_overwrite(path, overwrite=overwrite)
+1187:    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+1190:def write_audit_log(path: Path, events: List[Dict[str, Any]], overwrite: bool) -> None:
+1191:    ensure_no_overwrite(path, overwrite=overwrite)
+1192:    with path.open("w", encoding="utf-8") as f:
+1194:            f.write(json.dumps(event, ensure_ascii=False) + "\n")
+1197:def write_digest(path: Path, digest: str, output_path: Path, overwrite: bool) -> None:
+1198:    ensure_no_overwrite(path, overwrite=overwrite)
+1199:    path.write_text(f"{digest}  {output_path.name}\n", encoding="utf-8")
+1209:    overwrite: bool = False,
+1215:    ensure_no_overwrite(output_path, overwrite=overwrite)
+1255:    write_workbook(records, output_path, input_sha)
+1271:    write_json(manifest_path, manifest, overwrite=overwrite)
+1282:    write_audit_log(audit_path, audit, overwrite=overwrite)
+1283:    write_digest(digest_path, output_sha, output_path, overwrite=overwrite)
+1319:        help="Output .xlsx path. No overwrite unless --overwrite is set.",
+1322:        "--overwrite",
+1371:            overwrite=bool(args.overwrite),

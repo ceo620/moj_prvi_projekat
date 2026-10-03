@@ -1,0 +1,6 @@
+NODE_ID,DEVICE,ROLE,STATUS,RUNTIME_ALLOWED,NETWORK_ALLOWED,NEXT_STEP
+NODE_01,iPhone Alpine iSH,Local hidden source + mobile relay,PREP_ONLY,NO,NO,Inventory
+NODE_02,Android Termux,Relay + packet builder,PREP_ONLY,NO,NO,Inventory
+NODE_03,Mac Control Tower,Main verifier + Human Gate,PREP_ONLY,NO,NO,Control register
+NODE_04,Lenovo CMU,Builder + static classifier,PREP_ONLY,NO,NO,Static map
+NODE_05,MSI Builder Ocean,Deep archive/script source,PREP_ONLY,NO,NO,Static map

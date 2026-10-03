@@ -1,0 +1,44 @@
+{
+  "schema": "TITAN_NODE_RECOVERY_REVIEW_V1",
+  "node": "ANDROID_TERMUX",
+  "observed_at": "2026-10-03T18:59:32.719910+00:00",
+  "status": "PARTIAL_REVIEW_HOLD",
+  "sources": [
+    {
+      "path": "/data/data/com.termux/files/home/projekti/moj_prvi_projekat/FREYA_GOLDEN_RECORD/REPORTS/SSOT_MASTER_MANIFEST_888.json",
+      "bytes": 238,
+      "sha256": "e67d0e014225e0247128526422bd7786becdc363ed03369e15a019955d2be594"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/projekti/moj_prvi_projekat/FREYA_GOLDEN_RECORD/REPORTS/UNIFIED_EVIDENCE_CHAIN.txt",
+      "bytes": 443996,
+      "sha256": "6329e9b8e4c304aef31e937ac7487080829dec95e079e6091ba1d70be23f9c7f"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/projekti/moj_prvi_projekat/FREYA_GOLDEN_RECORD/REPORTS/UNIFIED_DEPENDENCY_GRAPH.txt",
+      "bytes": 18199835,
+      "sha256": "6e0b007bf04befe5e216557510ba36b8ef2386fae8c59752934c0b782d3788e6"
+    }
+  ],
+  "manifest_claim": {
+    "status": "GOLDEN_RECORD_SEALED",
+    "total_evidence_records": 2930,
+    "total_dependency_nodes": 75018
+  },
+  "observed_structure": {
+    "evidence_hash_path_rows": 2422,
+    "evidence_other_nonempty_rows": 507,
+    "evidence_blank_rows": 1,
+    "unique_declared_sha256": 2010,
+    "dependency_source_line_references": 75018,
+    "dependency_unique_path_strings": 8999
+  },
+  "referenced_source_files_verified": false,
+  "authentication": "NOT_ESTABLISHED",
+  "global_search_complete": false,
+  "scan_scope": "Termux HOME; interrupted",
+  "partial_scan_output": "/data/data/com.termux/files/home/TITAN_RECOVERY_ANDROID_TERMUX_gl9s95tg",
+  "conclusion": "Manifest totals match line counts; evidence and dependency-node claims remain unverified.",
+  "source_content_modified": false,
+  "network_actions": 0
+}

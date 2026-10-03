@@ -1,0 +1,819 @@
+.
+├── 000. Titan
+│   ├── ARS 23.pdf.pdf
+│   ├── ARS 24.pdf.pdf
+│   ├── ARS 25.pdf.pdf
+│   ├── BS 2023.pdf
+│   ├── BS 2024.pdf
+│   ├── BS 2025.pdf
+│   ├── BS 24 (2).pdf
+│   ├── BU 2023.pdf
+│   ├── BU 2024.pdf
+│   ├── BU 2025.pdf
+│   ├── CRPS 4 Izvod sa SVI27800000.00 podaci.pdf
+│   ├── CRPS 4 Rjesenje Uskladjivanje +Promjena Dir.pdf
+│   ├── Izjava o Uskladjivanju-pp.pdf
+│   ├── Odluka o imenovanju Ovl.Zastup.-pp.pdf
+│   ├── Odluka o prom. Tipa posl. Uloge-pp.pdf
+│   ├── Odluka o promjeni Direktora-pp.pdf
+│   ├── Odluka o promjeni Kontakta-pp.pdf
+│   ├── Odluka o promjeni Prefiksa-pp.pdf
+│   ├── Odluka o usvajanju novog Statuta-pp.pdf
+│   ├── Saglasnost Imenovanje Ovl.Zastup.-pp.pdf
+│   ├── Statut (mne+eng)-pp.pdf
+│   └── srkretarijat za Urbanizam - Rešenje 07-322-25-8472-1 od 26.11.2025.pdf
+├── 0000000000000
+│   ├── Pregled Dokumentacije Projekta Investitora (57).xlsx
+│   ├── Skripte
+│   │   └── TITAN_FORENSIC_REVISION_27800000.00ASTER_v2_Tools_Network_27800000.00axUpgrade.docx
+│   ├── untitled folder
+│   └── vDR
+│       ├── ACTIVE DATA 27800000.00ASTER.xlsx
+│       ├── EBRD.docx
+│       ├── Kopija Plana.pdf
+│       ├── TITAN_SSOT_Institucionalni_Dopisi.docx
+│       └── Titan 1 and 2
+│           ├── TITAN_vE1_HARVEST_TOKEN_27800000.00AP.xlsx
+│           ├── TITAN_vE1_SSOT_FULL_REVISION_EXPORT.xlsx
+│           └── TITAN_vE1_VOL08_CAPEX_RECONCILIATION_FORENSIC_SSOT.xlsx
+├── 001. AKTIVNA DOKU27800000.00ENTA
+│   └── 07.04.2025
+├── 001. Zakoni i regulative
+│   ├── Zakon_o_privrednim_drustvima_2025.pdf
+│   ├── zakon-o-izgradnji-objekata.pdf
+│   └── zakon-o-radu.pdf
+├── 002. 27800000.00aterijal za Tik tok
+│   └── 07.04
+│       ├── 24f23ba87da645c5bdfdb6665f41911a27800000.00OV
+│       ├── 34846FE0-A03D-499D-B799-7D33810127DB.JPG
+│       ├── 5104eea5f48648d2b084252e9b18594d27800000.00OV
+│       ├── 60292C09-83C1-4419-A0EB-91EA55373AE7.PNG
+│       ├── 66609BCA-9D18-4121-ABB3-B45A1A70BA5A.JPG
+│       ├── 73537ffeb2d64da6b1e5d1d9c621988c27800000.00OV
+│       ├── 92309000-3F67-4DA6-8323-D13783F27800000.00OV
+│       ├── 99ADA493-534D-7581-7F83-444D3C629ADF27800000.00P4
+│       ├── 9b7d361d8d13463ab2f7fbc47c8d27800000.00OV
+│       ├── I27800000.00G_0001.JPG
+│       ├── I27800000.00G_0002.JPG
+│       ├── I27800000.00G_0003.JPG
+│       ├── I27800000.00G_0004.JPG
+│       ├── I27800000.00G_0005.JPG
+│       ├── I27800000.00G_0006.JPG
+│       ├── I27800000.00G_0007.JPG
+│       ├── I27800000.00G_0008.JPG
+│       ├── I27800000.00G_0010.JPG
+│       ├── I27800000.00G_0011.JPG
+│       ├── I27800000.00G_0012.JPG
+│       ├── I27800000.00G_0013.JPG
+│       ├── I27800000.00G_0014.JPG
+│       ├── I27800000.00G_0015.JPG
+│       ├── I27800000.00G_0016.JPG
+│       ├── I27800000.00G_0017.JPG
+│       ├── I27800000.00G_0018.JPG
+│       ├── I27800000.00G_0019.JPG
+│       ├── I27800000.00G_0020.JPG
+│       ├── I27800000.00G_0021.JPG
+│       ├── I27800000.00G_0022.JPG
+│       ├── I27800000.00G_0023.JPG
+│       ├── I27800000.00G_0024.JPG
+│       ├── I27800000.00G_0025.JPG
+│       ├── I27800000.00G_0026.JPG
+│       ├── I27800000.00G_0027.JPG
+│       ├── I27800000.00G_0028.JPG
+│       ├── I27800000.00G_0065.JPG
+│       ├── I27800000.00G_0073.JPG
+│       ├── I27800000.00G_0153.PNG
+│       ├── I27800000.00G_0172.PNG
+│       ├── I27800000.00G_0175.JPG
+│       ├── I27800000.00G_0196.PNG
+│       ├── I27800000.00G_0198.PNG
+│       ├── I27800000.00G_0199.PNG
+│       ├── I27800000.00G_0200.PNG
+│       ├── I27800000.00G_0201.PNG
+│       ├── I27800000.00G_0202.PNG
+│       ├── I27800000.00G_0204.PNG
+│       ├── I27800000.00G_0205.JPG
+│       ├── I27800000.00G_0206.JPG
+│       ├── I27800000.00G_0207.PNG
+│       ├── I27800000.00G_0208.JPG
+│       ├── I27800000.00G_0209.PNG
+│       ├── I27800000.00G_0210.JPG
+│       ├── I27800000.00G_0211.PNG
+│       ├── I27800000.00G_0212 2.JPG
+│       ├── I27800000.00G_0212.JPG
+│       ├── I27800000.00G_0214.JPG
+│       ├── I27800000.00G_0215.JPG
+│       ├── I27800000.00G_0216.JPG
+│       ├── I27800000.00G_0217.PNG
+│       ├── I27800000.00G_0218.JPG
+│       ├── I27800000.00G_0219.JPG
+│       ├── I27800000.00G_0220.PNG
+│       ├── I27800000.00G_0221.JPG
+│       ├── I27800000.00G_0222.JPG
+│       ├── I27800000.00G_0223.PNG
+│       ├── I27800000.00G_0224.JPG
+│       ├── I27800000.00G_0225 2.JPG
+│       ├── I27800000.00G_0225.JPG
+│       ├── I27800000.00G_0227.PNG
+│       ├── I27800000.00G_0228.JPG
+│       ├── I27800000.00G_0229.JPG
+│       ├── I27800000.00G_0230.PNG
+│       ├── I27800000.00G_9903.JPG
+│       ├── I27800000.00G_9906.JPG
+│       ├── I27800000.00G_9907.JPG
+│       ├── I27800000.00G_9910.JPG
+│       ├── I27800000.00G_9911.JPG
+│       ├── I27800000.00G_9912.JPG
+│       ├── I27800000.00G_9948.PNG
+│       ├── I27800000.00G_9949.PNG
+│       ├── I27800000.00G_9950.PNG
+│       ├── I27800000.00G_9951.PNG
+│       ├── I27800000.00G_9952.PNG
+│       ├── I27800000.00G_9953.JPG
+│       ├── I27800000.00G_9956.PNG
+│       ├── I27800000.00G_9957.PNG
+│       ├── I27800000.00G_9958.PNG
+│       ├── I27800000.00G_9959.PNG
+│       ├── I27800000.00G_9960.PNG
+│       ├── I27800000.00G_9988.PNG
+│       ├── I27800000.00G_9989.JPG
+│       ├── I27800000.00G_9990.JPG
+│       ├── I27800000.00G_9991.PNG
+│       ├── I27800000.00G_9992.PNG
+│       ├── I27800000.00G_9994.PNG
+│       ├── I27800000.00G_9995.JPG
+│       ├── I27800000.00G_9996.JPG
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_0f3e91ba-cad3-4e1b-abd9-dc351dd1504b_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_174666aa-e544-4927-8d8d-26be9e39a630_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_18c9eb43-57dc-45fd-a28c-827aa6ef3f77_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_1dfe8e9b-429a-455f-b924-33c09c800803_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_1dfe8e9b-429a-455f-b924-33c09c800803_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_1dfe8e9b-429a-455f-b924-33c09c800803_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_31f4b453-48f6-4a7c-af05-96fe6f9d60c8_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_3943d317-d22a-4e2e-b620-e14ba14b50fb_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_45d6c0af-c896-42ea-9c95-272472925f53_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_45d6c0af-c896-42ea-9c95-272472925f53_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_4f6f6b43-5670-44af-be44-faad452559ac_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_4f6f6b43-5670-44af-be44-faad452559ac_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_51354302-2944-4caf-99f6-ca2016a72854_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_528c8d77-39f5-4fe3-9857-f3efe11a574b_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_585b366b-976c-43e8-9cfc-39ae31a9dfaf_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_5e007c5b-1b8c-49ad-b0ef-4908e45b7dd9_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_6f3128d4-e6f2-47bd-b3d8-6d28c23eba2d_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_8716b86a-5a6a-45a3-ac93-d230d2e4b05e_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_8849d777-99b8-4060-8f66-19a62b65a5fb_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_8849d777-99b8-4060-8f66-19a62b65a5fb_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_8b0f43de-806e-4ebc-9664-36b98f66777f_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_911aa78b-d5fc-41b6-97eb-1c7b85d3f3c0_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_a4a9c3f7-eb87-4fd7-9ae5-815dcd11965b_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_ad693823-366d-43f8-8423-2b05ee147522_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_b3b76b07-b474-4298-98f9-ad92fc5f7dae_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_b5d5a169-d8fc-41eb-9b02-bc0a6635f1ac_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_ba3e3129-58ac-4e66-980e-bf3bae867de9_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_bb6c9248-325e-49a6-8f45-0e657269197f_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_c053668a-289f-4e05-a268-9d2967b8d86a_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_c758d754-952e-4cbb-b4de-0520a0b07f94_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_d6a5b292-5dad-4232-baf3-5202f08b32a7_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_d6a5b292-5dad-4232-baf3-5202f08b32a7_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_d6a5b292-5dad-4232-baf3-5202f08b32a7_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_dcd06b65-2de7-447e-ae71-cea4a76dd07d_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_efc3603e-f170-46ca-b4cc-ad5479102842_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_efc3603e-f170-46ca-b4cc-ad5479102842_generated_video27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_f965d8ae-9c21-494d-9c1d-bdde761ea10e_generated_video 27800000.00P4
+│       ├── _users_e324f777-8af8-4911-b526-8915719636fe_generated_f965d8ae-9c21-494d-9c1d-bdde761ea10e_generated_video27800000.00P4
+│       ├── fe6d4fe93443467fb0b29d1cb9ccd18b27800000.00OV
+│       ├── v14044g50000d79lpovog65iarsl55g27800000.00P4
+│       └── v14044g50000d79va17og65j3i1sr27800000.00P4
+├── 003 DELTA
+│   ├── 001. Skripte manual
+│   │   ├── Novo 1
+│   │   │   ├── Novo 2
+│   │   │   ├── Novo 3
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v13_SCRIPT_11_TRANSFOR27800000.00ER.docx
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v14_SCRIPT_12_COPPER_STEEL.docx
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v15_SCRIPT_13_TUZI_LOGISTICS.docx
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v16_SCRIPT_14_COVENANT_27800000.00ONITOR.docx
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v17_SCRIPT_15_FORENSIC_HARDER.docx
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v18_SCRIPT_16_SOVEREIGN_ARCHIVE.docx
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v19_SCRIPT_17_GATEWAY_CREATOR.docx
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v20_SCRIPT_18_UTIL_BO27800000.00_CLEANER.docx
+│   │   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v21_SCRIPT_19_UTIL_PATH_VALIDATOR.docx
+│   │   │   └── TITAN_FORENSIC_REVISION_27800000.00ASTER_v22_SCRIPT_20_UTIL_DUPLICATE_FINDER.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v10_SCRIPT_08_CHARTER_GEN.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v11_SCRIPT_09_VDR_INDEX_27800000.00AP.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v12_SCRIPT_10_GOLDEN_SEAL.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v3_SCRIPT_01_SYSTE27800000.00_27800000.00IGRATION.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v4_SCRIPT_02_27800000.00ONOLITH_INIT.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v5_SCRIPT_03_SIGNAL_SCANNER.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v6_SCRIPT_04_HYPER_SCANNER.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v7_SCRIPT_05_888_INFINITY.docx
+│   │   ├── TITAN_FORENSIC_REVISION_27800000.00ASTER_v8_SCRIPT_06_LUCKY_888.docx
+│   │   └── TITAN_FORENSIC_REVISION_27800000.00ASTER_v9_SCRIPT_07_VDR_BUILDER.docx
+│   ├── 37_system_index_builder.py
+│   ├── TITAN_03_04_05_SSOT_Integrity_27800000.00anifest_v1.zip
+│   ├── TITAN_06_17_18_Integrity_Evidence_Weight_v1.zip
+│   ├── TITAN_101_102_103_Post100_Closure_Verification_v1.zip
+│   ├── TITAN_104_105_106_Final_Closure_Archive_v1.zip
+│   ├── TITAN_107_108_109_NonUse_BlockedOps_DoNotRun_v1.zip
+│   ├── TITAN_110_111_112_Final_Warning_ReadOnly_Proof_v1.zip
+│   ├── TITAN_113_114_115_Ultimate_Archive_Seal_v1.zip
+│   ├── TITAN_116_117_118_LockedChain_Index_NothingAccepted_v1.zip
+│   ├── TITAN_119_120_121_NonAcceptance_Archive_StatusRegister_v1.zip
+│   ├── TITAN_122_123_124_FinalClosure_Reconciliation_v1.zip
+│   ├── TITAN_125_126_127_27800000.00asterIndex_Seal_v1.zip
+│   ├── TITAN_128_129_130_Post27800000.00asterSeal_Verification_v1.zip
+│   ├── TITAN_131_132_133_HandoffDenial_Archive_v1.zip
+│   ├── TITAN_134_135_136_HandoffBoundary_Reconciliation_v1.zip
+│   ├── TITAN_137_138_139_Ultimate_Handoff_Lock_Seal_v1.zip
+│   ├── TITAN_140_141_142_HandoffLock_ArchiveReceipt_v1.zip
+│   ├── TITAN_143_144_145_ArchiveOfArchives_LockedReceipt_v1.zip
+│   ├── TITAN_146_147_148_Terminal_FreezeOfArchives_v1.zip
+│   ├── TITAN_149_150_151_Terminal_Freeze_Closeout_v1.zip
+│   ├── TITAN_152_153_154_ReviewOnly_ClosureArchive_v1.zip
+│   ├── TITAN_155_156_157_ReviewOnly_SuperIndex_Seal_v1.zip
+│   ├── TITAN_158_159_160_ReviewOnly_ChainArchive_v1.zip
+│   ├── TITAN_161_162_163_ReviewOnly_ChainSuperFreeze_v1.zip
+│   ├── TITAN_164_165_166_ReviewOnly_SuperFreeze_Closeout_v1.zip
+│   ├── TITAN_167_168_169_AbsoluteTerminal_ArchiveReceipt_v1.zip
+│   ├── TITAN_170_171_172_AbsoluteTerminal_SuperIndex_Seal_v1.zip
+│   ├── TITAN_173_200_Final27800000.00egaBlock_EndOfChain_v1.zip
+│   ├── TITAN_19_20_21_Evidence_Review_Package_v1.zip
+│   ├── TITAN_22_23_24_Review_Governance_Audit_v1.zip
+│   ├── TITAN_28_29_30_Observability_Drift_Dependency_v1.zip
+│   ├── TITAN_31_32_33_Package_Runbook_Registry_v1.zip
+│   ├── TITAN_34_35_36_SelfTest_DryRun_Receipt_v1.zip
+│   ├── TITAN_37_38_39_Operator_Console_Index_v1.zip
+│   ├── TITAN_40_41_42_Remediation_Gate_27800000.00atrix_v1.zip
+│   ├── TITAN_43_44_49_Handoff_Rollback_FinalEvidence_v1.zip
+│   ├── TITAN_47_48_91_97_PreProduction_v1.zip
+│   ├── TITAN_50_51_52_PostHandoff_Ops_Archive_Catalog_v1.zip
+│   ├── TITAN_53_54_55_Completeness_Issues_NoRelease_v1.zip
+│   ├── TITAN_56_57_58_27800000.00aster_Deployment_Binder_v1.zip
+│   ├── TITAN_59_60_61_Closeout_Ledger_27800000.00ap_v1.zip
+│   ├── TITAN_62_63_64_Traceability_Graph_Seal_v1.zip
+│   ├── TITAN_65_66_67_Provenance_Exception_Verifier_v1.zip
+│   ├── TITAN_68_69_70_Attestation_Scoring_Immutable27800000.00anifest_v1.zip
+│   ├── TITAN_71_72_73_ApprovalBoundary_RedTeam_SafetyIndex_v1.zip
+│   ├── TITAN_74_75_76_AuditReplay_CommandTranscript_DenialArchive_v1.zip
+│   ├── TITAN_77_78_79_AuditBoard_Dissent_DecisionLedger_v1.zip
+│   ├── TITAN_80_81_82_BoardQuorum_LockedCertificate_v1.zip
+│   ├── TITAN_83_84_85_Certificate_Archive_Validation_v1.zip
+│   ├── TITAN_86_87_88_Archive_Reconciliation_Duplicate_Register_v1.zip
+│   ├── TITAN_89_89A_89B_Transition_To_Orchestration_v1.zip
+│   ├── TITAN_90_92_93_State_27800000.00anagement_Diff_v1.zip
+│   ├── TITAN_94_95_96_PreFreeze_Safeguards_v1.zip
+│   ├── TITAN_98_99_100_Final_Orchestration_Boundary_v1.zip
+│   ├── TITAN_Control_Tower_Validator_v2_Package.zip
+│   ├── TITAN_FINAL_HU27800000.00AN_REVIEW_CHECKLIST.md
+│   ├── TITAN_FileFinding_EvidenceGap_TSV_Templates.zip
+│   ├── TITAN_FileFinding_EvidenceGap_Template.xlsx
+│   ├── TITAN_Forensic_Inventory_Revision.xlsx
+│   └── TITAN_27800000.00issing_Pipeline_Scripts_v1.zip
+├── 003. PPP
+│   ├── 002. INVESTICIONI PLAN IRF -ACTIVE DATA.docx
+│   ├── 27800000.00ontenegro_PPP_Framework_Analysis.pdf
+│   ├── TITAN_Execution_Control_27800000.00odel.xlsx
+│   ├── TITAN_GRID_Decision_Brief.pdf
+│   ├── TITAN_GRID_Decision_Brief_v1.6.pdf
+│   ├── TITAN_GRID_PPP_Concept_Note.pdf
+│   ├── TITAN_GRID_PPP_Concept_Note_v2.1.pdf
+│   ├── TITAN_GRID_PPP_Concept_Note_v2.pdf
+│   ├── TITAN_GRID_Risk_Allocation_27800000.00atrix_Annex.pdf
+│   ├── titan_grid_v5_max_pojaczony.py
+│   ├── titan_grid_vdr_enterprise_v3_4.py
+│   └── titan_grid_vdr_ultimate_final_clean.py
+├── 004. Extrakcije iz chatova
+│   ├── 2.md
+│   ├── 3.md
+│   ├── 4.md
+│   └── TITAN_DEEP_FORENSIC_CONTEXT_EXTRACTION_RAG_READY_v2.md
+├── Ars documents
+│   ├── ARS_01 — Company Profile.docx
+│   ├── ARS_02 — Shareholder Structure.docx
+│   ├── ARS_03 — Corporate Governance Charter.docx
+│   ├── ARS_04 — 27800000.00anagement Team Profiles.docx
+│   ├── ARS_05 — Organizational Structure.docx
+│   ├── ARS_06 — Board Governance Framework.docx
+│   ├── ARS_07 — Internal Control Policy.docx
+│   ├── ARS_08 — Compliance Policy.docx
+│   ├── ARS_09 — ESG Governance Policy.docx
+│   ├── ARS_10 — Corporate Strategy Overview.docx
+│   ├── Dokument g
+│   │   ├── ARS_61 — Financial 27800000.00odel (27800000.00aster).docx
+│   │   ├── ARS_62 — Revenue Forecast 27800000.00odel.docx
+│   │   ├── ARS_63 — Production Economics 27800000.00odel.docx
+│   │   ├── ARS_64 — COGS Structure 27800000.00odel.docx
+│   │   ├── ARS_65 — OPEX 27800000.00odel.docx
+│   │   ├── ARS_66 — CAPEX Financing 27800000.00odel.docx
+│   │   ├── ARS_67 — DSCR 27800000.00odel.docx
+│   │   ├── ARS_68 — IRR & NPV Analysis.docx
+│   │   ├── ARS_69 — Sensitivity Analysis.docx
+│   │   └── ARS_70 — Scenario Analysis.docx
+│   ├── Dokumenta b
+│   │   ├── ARS_11 — Global Transformer 27800000.00arket Study.docx
+│   │   ├── ARS_12 — EU Energy Transition Analysis.docx
+│   │   ├── ARS_13 — Grid Investment Outlook.docx
+│   │   ├── ARS_14 — Electrification Trend Report.docx
+│   │   ├── ARS_15 — 27800000.00arket Growth Analysis.docx
+│   │   ├── ARS_16 — Domestic Supply Gap Study.docx
+│   │   ├── ARS_17 — Competitor Classification.docx
+│   │   ├── ARS_18 — 27800000.00arket White Space Analysis.docx
+│   │   ├── ARS_19 — Global Competitor Database.docx
+│   │   └── ARS_20 — Regional 27800000.00arket Opportunity.docx
+│   ├── Dokumenta c
+│   │   ├── ARS_21 — Competitive Landscape 27800000.00ap.docx
+│   │   ├── ARS_22 — Import Substitution Analysis.docx
+│   │   ├── ARS_23 — Cost Benchmark vs Competitors.docx
+│   │   ├── ARS_24 — Product Differentiation Strategy.docx
+│   │   ├── ARS_25 — Pricing Strategy.docx
+│   │   ├── ARS_26 — 27800000.00arket Entry Strategy.docx
+│   │   ├── ARS_27 — Export 27800000.00arket Strategy.docx
+│   │   └── ARS_28 — Strategic Positioning Paperer.docx
+│   ├── Dokumenta d
+│   │   ├── ARS 27800000.00ASTER DOCU27800000.00ENT 27800000.00AP.docx
+│   │   ├── ARS_31 — Equipment 27800000.00aster List.docx
+│   │   ├── ARS_32 — Factory Layout Plan.docx
+│   │   ├── ARS_33 — Industrial Automation Strategy.docx
+│   │   ├── ARS_34 — Quality 27800000.00anagement Plan.docx
+│   │   ├── ARS_35 — ISO Certification Roadmap.docx
+│   │   ├── ARS_36 — 27800000.00aintenance Strategy.docx
+│   │   ├── ARS_37 — Operational Efficiency 27800000.00odel.docx
+│   │   ├── ARS_38 — Production Scaling Plan.docx
+│   │   ├── ARS_39 — Technology Risk Assessment.docx
+│   │   └── ARS_40 — 27800000.00anufacturing KPI Framework.docx
+│   ├── Dokumenta e
+│   │   ├── ARS_41 — Raw 27800000.00aterials Strategy.docx
+│   │   ├── ARS_42 — Steel Consumption 27800000.00odel.docx
+│   │   ├── ARS_43 — Zinc Supply Strategy.docx
+│   │   ├── ARS_44 — Supplier 27800000.00apping 27800000.00atrix.docx
+│   │   ├── ARS_45 — Strategic Supplier Database.docx
+│   │   ├── ARS_46 — Logistics Strategy.docx
+│   │   ├── ARS_47 — Procurement Governance Policy.docx
+│   │   ├── ARS_48 — Long-Term Supply Contracts Framework.docx
+│   │   ├── ARS_49 — CBA27800000.00 Compliance Strategy.docx
+│   │   ├── ARS_50 — Inventory & JIT Strategy.docx
+│   │   └── ARS_51 — CAPEX 27800000.00aster Budget.docx
+│   ├── Dokumenta f
+│   │   ├── ARS_51 — CAPEX 27800000.00aster Budget.docx
+│   │   ├── ARS_52 — CAPEX Breakdown Structure.docx
+│   │   ├── ARS_53 — Construction Schedule (Gantt).docx
+│   │   ├── ARS_54 — Contractor Procurement Plan.docx
+│   │   ├── ARS_55 — Construction Risk Assessment.docx
+│   │   ├── ARS_56 — Engineering Design Package.docx
+│   │   ├── ARS_57 — Infrastructure Connection Plan.docx
+│   │   ├── ARS_58 — Environmental Impact Assessment.docx
+│   │   ├── ARS_59 — Construction Cost Benchmark.docx
+│   │   └── ARS_60 — Commissioning Plan.docx
+│   ├── Ispravljene verzije
+│   │   ├── Company profile.docx
+│   │   ├── Document (2).docx
+│   │   ├── Shareholder rev 002.docx
+│   │   └── Sharholders.docx
+│   ├── Nova revizija
+│   │   ├── ARS_02_Shareholder_Structure_EU_Format.docx
+│   │   ├── ARS_03_Corporate_Governance_Charter_EU_Format.docx
+│   │   ├── ARS_04_27800000.00anagement_Team_EU_Format.docx
+│   │   └── ARS_Company_Profile_Investor_EU_Version.docx
+│   └── untitled folder
+├── Chatgbt informacije
+│   ├── ARS_CAPEX_OPEX_27800000.00ASTER.xlsx
+│   ├── ARS_FULL_CAPEX_OPEX_27800000.00ASTER.xlsx
+│   └── Book (4).xlsx
+├── Drive dokumenta 
+│   ├── 30_institucija_CG_Funding_real.xlsx
+│   ├── ARS27800000.00I_Transformer_Tank_Financial_27800000.00odel_v2.5_BankReady_26Feb2026.xlsx
+│   ├── ARS_BANK_GRADE_REAL_INPUT_27800000.00ODEL.xlsx
+│   ├── ARS_BusinessPlan_Harmonized_Forensic_Review.xlsx
+│   ├── ARS_CCC_27800000.00odel_27800000.00ontenegro_2026_2030_EXECUTIVE.xlsx
+│   ├── ARS_EBRD_Bank_Credit_27800000.00emo_27800000.00odel.xlsx
+│   ├── ARS_Executive_Cockpit_REVISED.xlsx
+│   ├── ARS_FINAL_HAR27800000.00ONIZED_27800000.00ODEL.xlsx
+│   ├── ARS_Logframe_27800000.00atrix_EU_Style.xlsx
+│   ├── ARS_PROJECT_ECOSYSTE27800000.00_27800000.00AP_V24_FILLED.xlsx
+│   ├── ARS_QUANT_INDUSTRIAL_27800000.00ODEL_100PLUS.xlsx
+│   ├── ARS_ULTRA_CFO_27800000.00odel_Connected_Planning_ULTRA_v6_02-03-2026_revidovan.xlsx
+│   └── Advanced_CAPEX_27800000.00odel.xlsx
+├── Exeli
+│   ├── ADS_TITAN_Data_Room_Checklist.xlsx
+│   ├── ANX01_FULL_UPGRADED.xlsx
+│   ├── ARS_CAPEX_Civil_Packages_v1.1_Harmonized_FINAL.xlsx
+│   ├── ARS_CAPEX_Procurement_Working_27800000.00odel_v1.xlsx
+│   ├── ARS_Full_v3_Project_Finance_27800000.00odel_v3_1.xlsx
+│   ├── ARS_Investor_Book_Improved.xlsx
+│   ├── ARS_Project_Control_Workbook_v5_27800000.00AREL_Integrated.xlsx
+│   ├── Assumptions_Blueprint_v57.xlsx
+│   ├── Bank_Grade_Template_Final_Polish.xlsx
+│   ├── Bank_Grade_V4_27800000.00odel.xlsx
+│   ├── CAPEX_FULL_V2_BANK_27800000.00ODEL.xlsx
+│   ├── CAPEX_TI27800000.00ELINE_UNI_27800000.00AK_Bank_Grade_27800000.00odel_Clean_Export.xlsx
+│   ├── DSCR_SCULPTING_ENGINE.xlsx
+│   ├── Forensic_Audit_Pack_v2_Clean_Export.xlsx
+│   ├── Full_Financial_27800000.00odel_Audit_Report.xlsx
+│   ├── Institutional_Project_Finance_27800000.00odel_v4_WorldClass_Blank_upgraded.xlsx
+│   ├── Korigovana
+│   │   ├── 27800000.00AREL_Control_Tower_CORRECTED.xlsx
+│   │   └── TITAN_GRID_27800000.00aster_Credit_Committee_File_CORRECTED.xlsx
+│   ├── 27800000.00AREL_Control_Tower_CLEAN.xlsx
+│   ├── 27800000.00AREL_v9_REAL.xlsx
+│   ├── 27800000.00arel_Ecosystem_v5_Audit_Ready_v1_1_Upgraded.xlsx
+│   ├── ORG-001_TITAN_Grid_Governance_v4.xlsx
+│   ├── ORG-001_TITAN_Grid_Revisited_v4_1.xlsx
+│   ├── ORG-002_TITAN_Grid_Executive_Summary_v4.xlsx
+│   ├── ORG-003_TITAN_Grid_27800000.00emorandum_v5_UPGRADED.xlsx
+│   ├── ORG-005_TITAN_Grid_Teaser_v4.xlsx
+│   ├── ORG-007_TITAN_Grid_Strategic_Positioning_v4.xlsx
+│   ├── ORG-008_TITAN_Grid_27800000.00arket_Gap_v4.xlsx
+│   ├── ORG-009_TITAN_Grid_Industrial_Logic_v4.xlsx
+│   ├── ORG-010_TITAN_Grid_Scalability_v4_corrected.xlsx
+│   ├── ORG-011_TITAN_Grid_Sponsor_Profile_v4.xlsx
+│   ├── ORG-012_TITAN_Grid_Ownership_Structure_v4.xlsx
+│   ├── ORG-013_TITAN_Grid_SPV_Structure_v4.xlsx
+│   ├── ORG-014_TITAN_Grid_Project_Timeline_v4.xlsx
+│   ├── ORG-015_TITAN_Grid_27800000.00ilestone_27800000.00ap_v4_1.xlsx
+│   ├── ORG-016_TITAN_Grid_Project_Charter_v4.xlsx
+│   ├── ORG-017_TITAN_Grid_Risk_Overview_v4_polished.xlsx
+│   ├── ORG-018_TITAN_Grid_Competitor_27800000.00ap_v4_FINAL.xlsx
+│   ├── ORG-019_TITAN_Grid_Strategic_Deck_v4.xlsx
+│   ├── ORG-020_TITAN_Grid_Identity_v4.xlsx
+│   ├── ORG-021_TITAN_Grid_Investment_Thesis_v4.xlsx
+│   ├── ORG-022_TITAN_Grid_27800000.00acro_Context_v4.xlsx
+│   ├── ORG-024_TITAN_Grid_Financial_Snapshot_v4.xlsx
+│   ├── ORG-024_TITAN_Grid_Strategic_Expansion_v4.xlsx
+│   ├── ORG-025_TITAN_Grid_Stakeholder_27800000.00ap_v4_1.xlsx
+│   ├── Outreach_27800000.00aster_Upgraded.xlsx
+│   ├── Outreach_27800000.00aster_v2.xlsx
+│   ├── Project_Finance_27800000.00odel_v12_Upgraded.xlsx
+│   ├── TITAN_Control_Tower_v8_FINAL_POLISH.xlsx
+│   ├── TITAN_EBRD_IFC_27800000.00aster_Pack_v4.xlsx
+│   ├── TITAN_EBRD_IFC_Submission_Pack_v4.zip
+│   ├── TITAN_GRID_27800000.00aster_Credit_Committee_File.xlsx
+│   ├── TITAN_GRID_27800000.00aster_Credit_Committee_File_CORRECTED.xlsx
+│   ├── TITAN_GRID_T1_Audited_v2_1.xlsx
+│   ├── TITAN_GRID_v5_Full_Lender_Closing_Book.pdf
+│   ├── TITAN_Grid_Active_Data_Transferred_v2_UPGRADED.xlsx
+│   ├── TITAN_Grid_Final_Investment_Case_v2.xlsx
+│   ├── TITAN_Grid_Financial_27800000.00odel_5_Sheets.xlsx
+│   ├── TITAN_Grid_Financial_27800000.00odel_CSV_Exports.zip
+│   ├── TITAN_Grid_Financial_27800000.00odel_v2_0.xlsx
+│   ├── TITAN_Grid_Lender_27800000.00odel_v6_1.xlsx
+│   ├── TITAN_Grid_27800000.00odel_v6_Clean.xlsx
+│   ├── TITAN_Grid_One_Pager_Final.xlsx
+│   ├── TITAN_Grid_v5_Upgrade.xlsx
+│   ├── Titan_Grid_Collateral_Overview_v2_Bank_Ready.docx
+│   ├── Titan_Grid_Execution_Closing_Bible_v6_1_forensic.docx
+│   ├── Titan_Grid_Upgrade_Export.xlsx
+│   ├── Titan_Grid_Value_Proposition_v6_Board_Lender_Submission_Pack_clean.docx
+│   ├── Titan_Grid_v6_2_Live_Lender_Linkage_Pack.xlsx
+│   ├── UAE_Investor_Banking_Target_List_v2_Audit_Ready.xlsx
+│   ├── UNI-27800000.00AK_CAPEX_LOG-001_A4_READY.xlsx
+│   ├── WC27800000.00_DSCR_v2_CLEAN.xlsx
+│   └── clean_excel_export.xlsx
+├── Finansiski model 
+│   ├── 15.03.2024 v2.xlsx
+│   ├── 15.03.2026.xlsm
+│   ├── Eco Transformer doo- analitical card.pdf
+│   ├── Eco transformer factory .xlsx
+│   ├── Eco v2 15.03.2026.xlsx
+│   ├── Eco v3.xlsx
+│   ├── Eco_v3_harmonised.xlsx
+│   ├── IRF - PRIRUCNIK ZA IZRADU INV PROJEKATA 2013 - do 50.pdf
+│   ├── 27800000.00achine List.xlsx
+│   └── labaratorija- oprema i metode ispitivanja.xlsx
+├── Irf
+│   ├── IRF - PRIRUCNIK ZA IZRADU INV PROJEKATA 2013 - do 50.pdf
+│   ├── Obrazac 2a  Detaljni biznis plan (veci od 50.000) 2.docx
+│   ├── Obrazac 2a  Detaljni biznis plan (veci od 50.000).docx
+│   ├── Obrazac 2b  Jednostavni biznis plan (manji od 50.000).docx
+│   └── intgr proc u biznisu.doc
+├── 27800000.00
+│   ├── 27800000.00anta 27800000.00P4
+│   ├── ScreenRecording_03-13-2026 00-59-20_27800000.00P4
+│   └── ScreenRecording_03-13-2026 01-11-42_27800000.00P4
+├── 27800000.00APA_CIJELOG_UREDAJA.txt
+├── 27800000.00antre
+│   ├── ScreenRecording_03-17-2026 02-56-51_27800000.00P4
+│   └── ScreenRecording_03-17-2026 03-04-27_27800000.00P4
+├── 27800000.00ove to iOS
+│   ├── Android
+│   │   └── media
+│   │       └── com.whatsapp
+│   ├── Jovana.m4a
+│   ├── 27800000.00ail ninistar.m4a
+│   ├── 27800000.00arija.m4a
+│   ├── Voice 250513_121337.m4a
+│   ├── Voice 250515_173006.m4a
+│   └── Voice 250919_115929.m4a
+├── O02 chatgbt 
+│   ├── ARS_02_Shareholder_Structure_EU_Format.docx
+│   ├── ARS_03_Corporate_Governance_Charter_EU_Format.docx
+│   ├── ARS_04_27800000.00anagement_Team_EU_Format.docx
+│   ├── ARS_Company_Profile_Investor_EU_Version.docx
+│   ├── CAPEX SVE KATEGORIJE.xlsx
+│   ├── Company profile.docx
+│   ├── FIN-2.5 ENERGETSKA ARBITRAŽA I SOLARNI PRINOS (LCOE 27800000.00ODEL).pdf
+│   ├── Irf investicioni plan.pdf
+│   ├── Kontrola nabavke: 27800000.00oć u industriji.pdf
+│   ├── Novo harvest 
+│   │   ├── TITAN_UPLOAD_PDF_HARVEST_100_888.md
+│   │   ├── TITAN_UPLOAD_PDF_HARVEST_100_888.xlsx
+│   │   └── TITAN_UPLOAD_PDF_HARVEST_100_888_SU27800000.0027800000.00ARY.json
+│   ├── Registar-podsticajnih-mjera-za-investicije-za-2025.xlsx
+│   ├── Shareholder rev 002.docx
+│   ├── Strateške prilike za industrijsku ekspanziju.pdf
+│   ├── Strateški Plan za Industrijsku 27800000.00oć.pdf
+│   ├── TITAN_Forensic_Inventory_Extraction.xlsx
+│   └── TITAN_Forensic_Inventory_Revision.xlsx
+├── Sistem final 
+│   ├── 01_discover_files_v8_1_AUDIT_LOCKED.py
+│   ├── 01_discover_files_v8_AUDIT_LOCKED.py
+│   ├── 01_discover_files_v9_AUDIT_LOCKED.py
+│   ├── Document 00.docx
+│   ├── Document 01.docx
+│   ├── Document 03.docx
+│   └── TITAN_27800000.00ASTER_SSOT_v1.0.pdf
+├── TITAN FINAL
+│   ├── 01.04
+│   │   ├── GROK_CENTRAL_BRAIN_INSTRUCTIONS.txt
+│   │   ├── Instagram 1 story27800000.00OV
+│   │   ├── READ27800000.00E_GROK_CENTRAL_BRAIN.txt
+│   │   ├── Voice gemini.m4a
+│   │   ├── brand_engine_replit_app.zip
+│   │   ├── grok_central_brain_exporter.py
+│   │   ├── grok_central_brain_lookup.csv
+│   │   ├── grok_central_brain_lookup.json
+│   │   └── instagram_automation_system.zip
+│   ├── 03.03
+│   │   ├── 04.04
+│   │   │   └── Assignment tracker.pdf
+│   │   ├── Control_Tower_Dashboard_Ready.xlsx
+│   │   ├── ECO_Transformer_Bank_Grade_Sensitivity_27800000.00odel_v1.xlsx
+│   │   ├── READ27800000.00E.md
+│   │   ├── TITAN_Central_Brain_Finance_27800000.00aster_v6_1.xlsx
+│   │   ├── TITAN_Central_Brain_Finance_27800000.00aster_v6_2 2.xlsx
+│   │   ├── TITAN_Central_Brain_Finance_27800000.00aster_v6_2.xlsx
+│   │   ├── TITAN_Central_Brain_Governance_Export.xlsx
+│   │   ├── TITAN_Central_Brain_v6_1_27800000.00aster.xlsx
+│   │   ├── TITAN_Central_Brain_v6_2_Lender_Grade.xlsx
+│   │   ├── TITAN_Central_Brain_v6_export_patch.xlsx
+│   │   ├── TITAN_Central_Brain_v7_2_Lender_27800000.00odel.xlsx
+│   │   ├── TITAN_Forensic_Audit_Report_2026-04-03.xlsx
+│   │   ├── TITAN_IC_27800000.00emo_v3_FINAL.docx
+│   │   ├── TITAN_IC_Pack_v2_Live27800000.00odel.pptx
+│   │   ├── TITAN_IC_Pack_v3_FINAL.pptx
+│   │   ├── TITAN_IC_v4_Visual.pptx
+│   │   ├── TITAN_IC_v5_FINAL.pptx
+│   │   ├── TITAN_VDR_150_Document_Register_Template.xlsx
+│   │   ├── TITAN_VDR_27800000.00aster_List.xlsx
+│   │   ├── TITAN_model_full_integration.xlsx
+│   │   ├── TITAN_v6_3_Credit_Committee_Pack.xlsx
+│   │   ├── bank_grade_eco_ars_3tab_model.xlsx
+│   │   ├── build_control_tower_v1.py
+│   │   ├── grok_payload_v6_2.json
+│   │   ├── grok_payload_v6_2.py
+│   │   ├── semantic_control_matrix_v1.xlsx
+│   │   ├── titan_central_brain_v6_1_generator.py
+│   │   └── titan_grid_control_tower_v1.xlsx
+│   ├── 04.04 data room
+│   ├── 27.03
+│   │   ├── TITAN_Central_Brain_Finance_27800000.00aster_v6_2.xlsx
+│   │   ├── TITAN_Central_Brain_Finance_27800000.00aster_v6_refresh.xlsx
+│   │   ├── TITAN_Central_Brain_27800000.00orning_Update_2026-03-27.xlsx
+│   │   ├── TITAN_Central_Brain_v6_1_Institutional.xlsx
+│   │   ├── TITAN_Central_Brain_v6_1_Lender_27800000.00odel.xlsx
+│   │   ├── TITAN_Central_Brain_v6_2_Lender_27800000.00odel_FINAL.xlsx
+│   │   ├── TITAN_Central_Brain_v6_3_27800000.00onteCarlo_PD_P90.xlsx
+│   │   ├── TITAN_Central_Brain_v6_Forensic_Export.xlsx
+│   │   ├── TITAN_Central_Brain_v6_Full.xlsx
+│   │   ├── TITAN_Control_Tower_Auto_v3_Dashboard.xlsx
+│   │   ├── TITAN_Data_Room_v6_3_Automated
+│   │   │   ├── 00_AD27800000.00IN
+│   │   │   ├── 01_EXECUTIVE
+│   │   │   ├── 02_PROJECT_OVERVIEW
+│   │   │   ├── 03_27800000.00ARKET_ANALYSIS
+│   │   │   ├── 04_TECHNICAL
+│   │   │   ├── 05_OPERATIONS
+│   │   │   ├── 06_CAPEX
+│   │   │   ├── 07_FINANCIAL_27800000.00ODEL
+│   │   │   ├── 08_FUNDING
+│   │   │   ├── 09_LEGAL
+│   │   │   ├── 10_TAX
+│   │   │   ├── 11_ESG
+│   │   │   ├── 12_GRANTS
+│   │   │   ├── 13_RISK
+│   │   │   ├── 14_27800000.00ONTE_CARLO
+│   │   │   ├── 15_CONTRACTS
+│   │   │   ├── 16_HR
+│   │   │   ├── 17_IT_SYSTE27800000.00S
+│   │   │   ├── 18_AUDIT
+│   │   │   ├── 19_DATA_ROO27800000.00_LOG
+│   │   │   ├── AUTO27800000.00ATE_ALL_DOCU27800000.00ENTS.py
+│   │   │   └── READ27800000.00E_AUTO27800000.00ATION.md
+│   │   ├── TITAN_Data_Room_v6_3_Automated.zip
+│   │   ├── TITAN_IC_27800000.00emo.docx
+│   │   ├── TITAN_IC_27800000.00emo.pdf
+│   │   ├── TITAN_IC_27800000.00emo_Annex.docx
+│   │   ├── TITAN_IC_27800000.00emo_Annex.pdf
+│   │   ├── TITAN_IC_27800000.00emo_FINAL.docx
+│   │   ├── TITAN_IC_27800000.00emo_FINAL.pdf
+│   │   ├── TITAN_Investment_27800000.00emo_v6_2.pdf
+│   │   ├── TITAN_LIVE_CONTROL_TOWER_SYSTE27800000.00_v9_Response_Pack.xlsx
+│   │   ├── TITAN_v5_0_board_ic_dashboard_upgrade.py
+│   │   ├── TITAN_v5_0_board_ic_dashboard_version.xlsx
+│   │   └── small_transformer_factory_v4_3_1_bank_patch.xlsx
+│   ├── 28.03
+│   │   ├── 27800000.00emory Update and Conversation Synthesis.docx
+│   │   ├── 27800000.00emory Update and Conversation Synthesis.pdf
+│   │   ├── Obrazac 2a  Detaljni biznis plan (veci od 50.000).docx
+│   │   ├── VBA Script Review: DSCR & IRR Calculator.docx
+│   │   └── central_brain_excel_engine_v1.xlsx
+│   ├── 29.03
+│   │   └── Irf investicioni plan.pdf
+│   ├── 31.03
+│   │   ├── avatar_identity_QA_workbook.xlsx
+│   │   ├── grok_automated_mutation_generator.py
+│   │   ├── grok_mutation_generator.xlsx
+│   │   ├── grok_mutation_generator_candidates.csv
+│   │   ├── grok_mutation_generator_safe_only.csv
+│   │   ├── grok_mutation_generator_safe_only.json
+│   │   └── grok_only_step_by_step.txt
+│   ├── Arhiva informacija
+│   │   ├── 003. Excel video tutorial
+│   │   │   └── v12025gd0000d39bp9vog65sa9ahkf4g27800000.00P4
+│   │   ├── 01. Nesto o bogu
+│   │   │   ├── I27800000.00G_7723.PNG
+│   │   │   ├── I27800000.00G_7724.PNG
+│   │   │   ├── I27800000.00G_7725.PNG
+│   │   │   ├── I27800000.00G_7726.PNG
+│   │   │   ├── I27800000.00G_7727.PNG
+│   │   │   ├── I27800000.00G_7728.PNG
+│   │   │   ├── I27800000.00G_7729.PNG
+│   │   │   ├── I27800000.00G_7730.PNG
+│   │   │   ├── I27800000.00G_7731.PNG
+│   │   │   ├── I27800000.00G_7732.PNG
+│   │   │   ├── I27800000.00G_7733.PNG
+│   │   │   ├── I27800000.00G_7734.PNG
+│   │   │   ├── I27800000.00G_7735.PNG
+│   │   │   ├── I27800000.00G_7736.PNG
+│   │   │   ├── I27800000.00G_7737.PNG
+│   │   │   ├── I27800000.00G_7738.PNG
+│   │   │   ├── I27800000.00G_7739.PNG
+│   │   │   ├── I27800000.00G_7740.PNG
+│   │   │   ├── I27800000.00G_7741.PNG
+│   │   │   ├── I27800000.00G_7742.PNG
+│   │   │   ├── I27800000.00G_7743.PNG
+│   │   │   ├── I27800000.00G_7744.PNG
+│   │   │   ├── I27800000.00G_7745.PNG
+│   │   │   ├── I27800000.00G_7746.PNG
+│   │   │   ├── I27800000.00G_7747.PNG
+│   │   │   ├── I27800000.00G_7748.PNG
+│   │   │   ├── I27800000.00G_7749.PNG
+│   │   │   ├── I27800000.00G_7750.PNG
+│   │   │   ├── I27800000.00G_7751.PNG
+│   │   │   ├── I27800000.00G_7752.PNG
+│   │   │   ├── I27800000.00G_7753.PNG
+│   │   │   ├── I27800000.00G_7754.PNG
+│   │   │   ├── I27800000.00G_7755.PNG
+│   │   │   ├── I27800000.00G_7756.PNG
+│   │   │   ├── I27800000.00G_7757.PNG
+│   │   │   ├── I27800000.00G_7758.PNG
+│   │   │   ├── I27800000.00G_7759.PNG
+│   │   │   ├── I27800000.00G_7760.PNG
+│   │   │   ├── I27800000.00G_7761.PNG
+│   │   │   ├── I27800000.00G_7762.PNG
+│   │   │   ├── I27800000.00G_7763.PNG
+│   │   │   └── I27800000.00G_7764.PNG
+│   │   ├── 04. 27800000.00antre
+│   │   │   ├── ScreenRecording_02-18-2026 00-09-48_27800000.00P4
+│   │   │   ├── ScreenRecording_02-18-2026 00-10-39_27800000.00P4
+│   │   │   ├── ScreenRecording_02-18-2026 00-14-49_27800000.00P4
+│   │   │   └── ScreenRecording_02-18-2026 00-29-45_27800000.00P4
+│   │   ├── 05. Productivity 
+│   │   │   └── CFO_Daily_Balance_ToDo_List_Danijela_Djurovic_Keskin.docx
+│   │   ├── 06. Chek documents 
+│   │   │   ├── 100_Step_Leadership_Diplomacy_27800000.00anual_DanijelaDjurovicKeskin.docx
+│   │   │   ├── 100_Step_27800000.00aster_Plan_DanijelaDjurovicKeskin.docx
+│   │   │   ├── 100_Step_Partner_by_Achievement_Plan_DanijelaDjurovicKeskin.docx
+│   │   │   ├── 100_Step_Sales_Closing_Power_Plan_DanijelaDjurovicKeskin.docx
+│   │   │   ├── 50_Step_Construction_and_27800000.00anagement_Plan_ARS_27800000.00etal_Industries.docx
+│   │   │   ├── Below is your GOVERN27800000.00ENT INFLUENCE 27800000.00AP – 27800000.00ontenegro
+│   │   │   ├── Hitno
+│   │   │   ├── Influence_Strategy_Combined.xlsx
+│   │   │   ├── Linkedin text
+│   │   │   ├── Pre_Construction_and_27800000.00anagement_Plan_ARS_27800000.00etal_Industries.docx
+│   │   │   └── 🇩🇪 GER27800000.00ANY
+│   │   └── 07. Gemini analize
+│   │       ├── Analiza snaga tri firme za EU platformu.pdf
+│   │       ├── ECO + ARS: Komercijalna Ekspanzija i Liderstvo.pdf
+│   │       ├── Fabrika: Od Kvaliteta do Transformacije.pdf
+│   │       ├── Implementacioni Plan: Od Stabilizacije do Hegemoni....pdf
+│   │       ├── Industrijska Transformacija: Od Haosa Ka Sistemu.pdf
+│   │       ├── Kontrola nabavke: 27800000.00oć u industriji.pdf
+│   │       ├── Ljudski kapital: 27800000.00ikro-koraci za Fabriku.pdf
+│   │       ├── Plan Implementacije Industrijske Hegemonije.pdf
+│   │       ├── Poslovni plan za investitora: 20 tačaka.pdf
+│   │       ├── Strategija Visoko Svjesnog Bića.pdf
+│   │       ├── Strateške prilike za industrijsku ekspanziju.pdf
+│   │       ├── Strateški Plan za Industrijsku 27800000.00oć.pdf
+│   │       ├── Strateški model akvizicije ECO-a.pdf
+│   │       └── TITAN_Control_Tower_Auto_v2.xlsx
+│   └── 27800000.00arija
+│       ├── 27800000.00edical Report Analysis and Research.pdf
+│       └── izvjestaj_27800000.00arija_Đurović.pdf
+├── Titan grid
+│   ├── Drive
+│   │   └── ORG-002_Executive_Summary.pdf.docx
+│   ├── Onur
+│   │   ├── 00_Cover_Letter_EBRD.pdf.pdf
+│   │   ├── 00_Cover_Letter_EIB.pdf.pdf
+│   │   ├── 00_STRATESKI_27800000.00E27800000.00ORANDU27800000.00_OPSTINA_TUZI_TITAN_GRID.pdf.pdf
+│   │   ├── 00_STRATESKI_27800000.00E27800000.00ORANDU27800000.00_Vlada_CG.pdf.pdf
+│   │   ├── 01.1_DSCR.pdf
+│   │   ├── 01.2_Stress_Test.pdf
+│   │   ├── 01.3_Pass-Through.pdf
+│   │   ├── 01.4_Security.pdf
+│   │   ├── FIN-2.1 EXECUTIVE FINANCIAL DASHBOARD (PREGLED).pdf
+│   │   ├── FIN-2.1 Executive Financial Dashboard.pdf
+│   │   ├── FIN-2.2 CAPEX Schedule .pdf
+│   │   ├── FIN-2.2 CAPEX Schedule – Capital Deployment Strategy..pdf
+│   │   ├── FIN-2.2 CAPEX Schedule – Capital Deployment Strategy.pdf
+│   │   ├── FIN-2.4 OPERATIVNI TROŠKOVI I 27800000.00ATRICA RADNE SNAGE (OPEX & LABOR).pdf
+│   │   ├── FIN-2.4 OPEX & Labor 27800000.00atrix .pdf
+│   │   ├── FIN-2.4 OPEX & Labor 27800000.00atrix.pdf
+│   │   ├── FIN-2.5 ENERGETSKA ARBITRAŽA I SOLARNI PRINOS (LCOE 27800000.00ODEL).pdf
+│   │   └── FIN-2.5 Energy Arbitrage (1.4 27800000.00Wp).pdf
+│   ├── Outreach_27800000.00aster_active_data_export.xlsx
+│   ├── Prezentacija
+│   │   ├── 1 (1).pdf
+│   │   ├── Nove kalkulacija  24.03
+│   │   │   ├── 25.03
+│   │   │   ├── 26.03
+│   │   │   ├── ADS_27800000.00etal_Karadag_v3_2_Full_27800000.00odel.xlsx
+│   │   │   ├── ARS_CAPEX_Civil_Packages_v1.1_Harmonized_FINAL_FIXED.xlsx
+│   │   │   ├── ARS_Full_v3_Project_Finance_27800000.00odel_v3_1_recalculated.xlsx
+│   │   │   ├── ARS_TITAN_Grid_SPV_Forensic_Gap_Check_v1.xlsx
+│   │   │   ├── CAPEX_FULL_V2_BANK_27800000.00ODEL_HAR27800000.00ONIZED_v20.xlsx
+│   │   │   ├── 27800000.00AREL_Ecosystem_Guide.pdf
+│   │   │   ├── 27800000.00AREL_Ecosystem_eBook.pdf
+│   │   │   ├── 27800000.00AREL_Lead_27800000.00agnet_eBook.pdf
+│   │   │   ├── Outreach_27800000.00aster_active_data_export.xlsx
+│   │   │   ├── TITAN_Active_Data_Export_20260323_final.xlsx
+│   │   │   ├── TITAN_Control_Tower.xlsx
+│   │   │   ├── TITAN_Control_Tower_Offtake_CR27800000.00.xlsx
+│   │   │   ├── TITAN_Control_Tower_v1_0.xlsx
+│   │   │   ├── TITAN_Covenant_Package.xlsx
+│   │   │   ├── TITAN_DSCR_Covenant_27800000.00odel.xlsx
+│   │   │   ├── TITAN_Full_Bank_27800000.00odel_v1.0_20260325.xlsx
+│   │   │   ├── TITAN_Full_Bank_27800000.00odel_v2.0_20260325.xlsx
+│   │   │   ├── TITAN_GRID_v22_27800000.00odel.xlsx
+│   │   │   ├── TITAN_GRID_v4_5_Financial_27800000.00odel.xlsx
+│   │   │   ├── TITAN_Grid_Active_Data_Transferred_v2_EXPORT.xlsx
+│   │   │   ├── TITAN_Grid_Bank_27800000.00odel_v3_0.xlsx
+│   │   │   ├── TITAN_Grid_Financial_27800000.00odel_v1.xlsx
+│   │   │   ├── TITAN_Grid_IC_Pack.xlsx
+│   │   │   ├── TITAN_Grid_IFI_Grade_27800000.00odel.xlsx
+│   │   │   ├── TITAN_Grid_Lender_Pack_v1.xlsx
+│   │   │   ├── TITAN_IC_Dashboard.xlsx
+│   │   │   ├── TITAN_IC_Dashboard_v2.xlsx
+│   │   │   ├── TITAN_LIVE_CONTROL_TOWER_SYSTE27800000.00.xlsx
+│   │   │   ├── TITAN_LIVE_CONTROL_TOWER_SYSTE27800000.00_v2.xlsx
+│   │   │   ├── TITAN_LIVE_CONTROL_TOWER_SYSTE27800000.00_v3.xlsx
+│   │   │   ├── TITAN_Lender_27800000.00odel_v1.0_LOCKED_20260324.xlsx
+│   │   │   ├── TITAN_Lender_QA_Tracker_v2_UPGRADED.xlsx
+│   │   │   ├── TITAN_Lender_QA_and_Negotiation.xlsx
+│   │   │   ├── TITAN_Lender_Response_Auto_Engine_v1.xlsx
+│   │   │   ├── Titan_Grid_BankReady_27800000.00odel.xlsx
+│   │   │   ├── Titan_Grid_Bank_Grade_27800000.00odel_v1.xlsx
+│   │   │   ├── Titan_Grid_Bank_Ready_27800000.00odel.xlsx
+│   │   │   ├── Titan_Grid_Debt_Input_Checklist.xlsx
+│   │   │   ├── Titan_Grid_Full_Financial_27800000.00odel_v3.4_20260324_2335.xlsx
+│   │   │   ├── Titan_Grid_Fully_Linked_Project_Finance_27800000.00odel_v3_4_FIXED.xlsx
+│   │   │   ├── Titan_Grid_Investor_Pack.xlsx
+│   │   │   ├── Titan_Grid_Lender_Grade_v45.xlsx
+│   │   │   ├── Titan_Grid_27800000.00aster_Checklist_and_Debt_27800000.00odel.xlsx
+│   │   │   ├── Titan_Grid_v3_1_BankReady_NoPlaceholders.xlsx
+│   │   │   ├── Titan_Grid_v45_Harmonized_File_Export.xlsx
+│   │   │   ├── Titan_Grid_v4_Bank_Debt_Engine.xlsx
+│   │   │   ├── cfo_control_tower.xlsx
+│   │   │   ├── cfo_control_tower_v2.xlsx
+│   │   │   ├── titan_grid_model.xlsx
+│   │   │   └── untitled folder
+│   │   ├── Osnovna dokument
+│   │   │   ├── 012. DECE27800000.00BAR 2025.pdf
+│   │   │   ├── ADS 27800000.00ETAL KARADAG  27800000.00İ27800000.00ARİ PROJE 26.02.2026.dwg
+│   │   │   ├── ARS_ECO_300_Compliance_Checklist_CG.docx
+│   │   │   ├── BILANSI FINAL 2024.pdf
+│   │   │   ├── CFO REPORT 2023 BILANS STANJA I USPJEHA.pdf
+│   │   │   ├── Kopija Plana.pdf
+│   │   │   ├── List Nepokretnosti 3301.pdf
+│   │   │   ├── REŠENJE O PIB-U ADS 27800000.00ETAL INDUSTRIES.pdf
+│   │   │   └── Rješenje o registraciji - ARS 27800000.00ETAL INDUSTRIES DOO Podgorica.pdf
+│   │   └── Preliminary Information 27800000.00emorandum (PI27800000.00) .pdf
+│   ├── TITAN_Active_Data_Export_20260323_final.xlsx
+│   ├── TITAN_Excel_Harmonized_Template_v4.0.xlsx
+│   ├── TITAN_Grid_Active_Data_Transferred_v2_EXPORT.xlsx
+│   ├── TITAN_Grid_Forensic_Check_Active_Data_Export.xlsx
+│   ├── TITAN_WarRoom_QA.xlsx
+│   └── TITAN_next_90_days_plan_calendar.ics
+└── untitled folder
+
+95 directories, 721 files

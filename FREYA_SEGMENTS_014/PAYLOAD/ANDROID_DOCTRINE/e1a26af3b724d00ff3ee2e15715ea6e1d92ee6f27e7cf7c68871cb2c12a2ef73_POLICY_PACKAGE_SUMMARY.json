@@ -1,0 +1,81 @@
+{
+  "archives_created": 0,
+  "decision_counts": {
+    "HOLD_CROSS_PILOT_DUPLICATE": 1,
+    "HOLD_UNRESOLVED_PILOT": 388,
+    "PACKAGE_CANDIDATE": 1
+  },
+  "eligible_object_count": 1,
+  "empty_package_candidate_count": 4,
+  "hold_object_count": 389,
+  "network_action": "NONE",
+  "node": "FREYA_ANDROID_NODE_888",
+  "nonempty_package_candidate_count": 1,
+  "original_files_modified": false,
+  "package_candidate_file_count": 5,
+  "package_candidates": [
+    {
+      "object_count": 0,
+      "package_id": "PKGCAND_ARS_METAL_INDUSTRIES_DOO_20260804T120855Z_PID14826",
+      "path": "/data/data/com.termux/files/home/FREYA_ANDROID_888/00_CONTROL/BATCHES/ANDROID_A11_POLICY_VALIDATION_AND_PACKAGE_CANDIDATE_BUILD/20260804T120855Z_PID14826/PACKAGES/PACKAGE_CANDIDATE.ARS_METAL_INDUSTRIES_DOO.20260804T120855Z_PID14826.json",
+      "pilot": "ARS_METAL_INDUSTRIES_DOO",
+      "sha256": "64e7d6e715d8bfa77c62dc45c8901327fbaa05d4a12d5fa1a3108bd1319fffde",
+      "status": "EMPTY_NO_ELIGIBLE_OBJECTS",
+      "total_source_bytes": 0
+    },
+    {
+      "object_count": 0,
+      "package_id": "PKGCAND_ECO_TRANSFORMER_DOO_20260804T120855Z_PID14826",
+      "path": "/data/data/com.termux/files/home/FREYA_ANDROID_888/00_CONTROL/BATCHES/ANDROID_A11_POLICY_VALIDATION_AND_PACKAGE_CANDIDATE_BUILD/20260804T120855Z_PID14826/PACKAGES/PACKAGE_CANDIDATE.ECO_TRANSFORMER_DOO.20260804T120855Z_PID14826.json",
+      "pilot": "ECO_TRANSFORMER_DOO",
+      "sha256": "3ce29a6e747160665282154a338f97187d49cc7a20b4fd29eab2a7c0ae4d16ca",
+      "status": "EMPTY_NO_ELIGIBLE_OBJECTS",
+      "total_source_bytes": 0
+    },
+    {
+      "object_count": 0,
+      "package_id": "PKGCAND_ADS_METAL_TURKEY_20260804T120855Z_PID14826",
+      "path": "/data/data/com.termux/files/home/FREYA_ANDROID_888/00_CONTROL/BATCHES/ANDROID_A11_POLICY_VALIDATION_AND_PACKAGE_CANDIDATE_BUILD/20260804T120855Z_PID14826/PACKAGES/PACKAGE_CANDIDATE.ADS_METAL_TURKEY.20260804T120855Z_PID14826.json",
+      "pilot": "ADS_METAL_TURKEY",
+      "sha256": "4f5f5505037a1ebb13ed7718b71b384a07c20169264d1fb44b9785dd35f2ea2a",
+      "status": "EMPTY_NO_ELIGIBLE_OBJECTS",
+      "total_source_bytes": 0
+    },
+    {
+      "object_count": 0,
+      "package_id": "PKGCAND_MAREL_ENGINEERING_DOO_20260804T120855Z_PID14826",
+      "path": "/data/data/com.termux/files/home/FREYA_ANDROID_888/00_CONTROL/BATCHES/ANDROID_A11_POLICY_VALIDATION_AND_PACKAGE_CANDIDATE_BUILD/20260804T120855Z_PID14826/PACKAGES/PACKAGE_CANDIDATE.MAREL_ENGINEERING_DOO.20260804T120855Z_PID14826.json",
+      "pilot": "MAREL_ENGINEERING_DOO",
+      "sha256": "0ab461482c3d44f9116e2a85ca04ef5ef02fe30fa1d521afaeedd2bc7e270738",
+      "status": "EMPTY_NO_ELIGIBLE_OBJECTS",
+      "total_source_bytes": 0
+    },
+    {
+      "object_count": 1,
+      "package_id": "PKGCAND_FREYA_20260804T120855Z_PID14826",
+      "path": "/data/data/com.termux/files/home/FREYA_ANDROID_888/00_CONTROL/BATCHES/ANDROID_A11_POLICY_VALIDATION_AND_PACKAGE_CANDIDATE_BUILD/20260804T120855Z_PID14826/PACKAGES/PACKAGE_CANDIDATE.FREYA.20260804T120855Z_PID14826.json",
+      "pilot": "FREYA",
+      "sha256": "dcf1bb309c7eb40d7806712f791a86953b69ceffe0f0545c39811d1bc04fa336",
+      "status": "READY_FOR_LOCAL_MATERIALIZATION",
+      "total_source_bytes": 563
+    }
+  ],
+  "packages_materialized": 0,
+  "pilot_eligible_counts": {
+    "ADS_METAL_TURKEY": 0,
+    "ARS_METAL_INDUSTRIES_DOO": 0,
+    "ECO_TRANSFORMER_DOO": 0,
+    "FREYA": 1,
+    "MAREL_ENGINEERING_DOO": 0
+  },
+  "pilot_source_counts": {
+    "FREYA": 2,
+    "UNRESOLVED": 388
+  },
+  "policy_decision_count": 390,
+  "protocol": "888",
+  "schema_version": "FREYA_ANDROID_POLICY_PACKAGE_SUMMARY_V1",
+  "source_content_copied": false,
+  "source_object_count": 390,
+  "started_at_utc": "2026-08-04T12:08:55Z"
+}

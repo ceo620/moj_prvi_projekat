@@ -1,0 +1,435 @@
+/root/DELTA_CORE_v1_0.py
+/root/DELTA_LENOVO_CENTRAL/01_HASH_REGISTERS/IPHONE_NOTES_PRIORITY_SHA256_REGISTER.txt
+/root/DELTA_LENOVO_CENTRAL/02_INDEX/IPHONE_NOTES_PRIORITY_INDEX.txt
+/root/DELTA_LENOVO_CENTRAL/03_SCRIPT_INVENTORY/IPHONE_SCRIPT_FILE_INDEX.txt
+/root/DELTA_LENOVO_CENTRAL/03_SCRIPT_INVENTORY/IPHONE_SCRIPT_SHA256_REGISTER.txt
+/root/DELTA_LENOVO_CENTRAL/04_CORE_CANDIDATE_REVIEW/CORE_SHA256.txt
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_01_CONTROL_SNAPSHOT/STEP_01_CORE_SHA256.txt
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_08_CANONICAL_PACKAGE/STEP_08_ALL_STEP_SHA256.txt
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_09_HASH_VERIFICATION/STEP_09_ARTIFACT_INDEX_HASH.txt
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_09_HASH_VERIFICATION/STEP_09_PACKAGE_HASH.txt
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_10_STATUS_REPORT/STEP_10_DELTA_CORE_STATUS.txt
+/root/DELTA_LENOVO_CENTRAL/40_STEP_PROTOCOL/STEP_10_STATUS_REPORT/STEP_10_DELTA_CORE_STATUS_SHA256.txt
+/root/DELTA_LENOVO_CENTRAL/50_HARMONIZATION/DELTA_HARMONIZATION_STATUS.sha256.txt
+/root/DELTA_LENOVO_CENTRAL/50_HARMONIZATION/DELTA_HARMONIZATION_STATUS.txt
+/root/DELTA_UNITY_ENGINE_v1_7.py
+/root/Documents/.Trash/ORG-005_TITAN_Grid_Teaser_v4.xlsx
+/root/Documents/.Trash/ORG-016_TITAN_Grid_Project_Charter_v4.xlsx
+/root/Documents/.Trash/Shareholder rev 002.docx
+/root/Documents/.Trash/TITAN_122_123_124_FinalClosure_Reconciliation_v1.zip
+/root/Documents/.Trash/TITAN_125_126_127_MasterIndex_Seal_v1.zip
+/root/Documents/.Trash/TITAN_146_147_148_Terminal_FreezeOfArchives_v1.zip
+/root/Documents/.Trash/TITAN_158_159_160_ReviewOnly_ChainArchive_v1.zip
+/root/Documents/.Trash/TITAN_43_44_49_Handoff_Rollback_FinalEvidence_v1.zip
+/root/Documents/.Trash/TITAN_53_54_55_Completeness_Issues_NoRelease_v1.zip
+/root/Documents/.Trash/TITAN_62_63_64_Traceability_Graph_Seal_v1.zip
+/root/Documents/.Trash/TITAN_68_69_70_Attestation_Scoring_ImmutableManifest_v1.zip
+/root/Documents/.Trash/TITAN_FORENSIC_REVISION_MASTER_v26_SCRIPT_24_UI_ICON_PATCHER.docx
+/root/Documents/.Trash/TITAN_FORENSIC_REVISION_MASTER_v33_GOVERNANCE_JSON_ARTIFACT_PACK.docx
+/root/Documents/.Trash/TITAN_GOVERNANCE_JSON_STARTER_PACK_v1 2.zip
+/root/Documents/.Trash/TITAN_GOVERNANCE_JSON_STARTER_PACK_v1.zip
+/root/Documents/.Trash/TITAN_GRID_Decision_Brief.pdf
+/root/Documents/.Trash/TITAN_GRID_Decision_Brief_v1.6.pdf
+/root/Documents/.Trash/TITAN_GRID_v5_Full_Lender_Closing_Book.pdf
+/root/Documents/.Trash/TITAN_Grid_Financial_Model_CSV_Exports.zip
+/root/Documents/.Trash/Titan_Grid_Collateral_Overview_v2_Bank_Ready.docx
+/root/Documents/.Trash/Titan_Grid_v6_2_Live_Lender_Linkage_Pack.xlsx
+/root/Documents/.Trash/titan_grid_vdr_ultimate_final_clean.py
+/root/Documents/0000000000000/DANASSSSS/ADS_TITAN_Data_Room_Checklist.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-001_TITAN_Grid_Governance_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-001_TITAN_Grid_Revisited_v4_1.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-002_TITAN_Grid_Executive_Summary_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-003_TITAN_Grid_Memorandum_v5_UPGRADED.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-005_TITAN_Grid_Teaser_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-007_TITAN_Grid_Strategic_Positioning_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-008_TITAN_Grid_Market_Gap_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-009_TITAN_Grid_Industrial_Logic_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-010_TITAN_Grid_Scalability_v4_corrected.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-011_TITAN_Grid_Sponsor_Profile_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-012_TITAN_Grid_Ownership_Structure_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-014_TITAN_Grid_Project_Timeline_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-016_TITAN_Grid_Project_Charter_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-017_TITAN_Grid_Risk_Overview_v4_polished.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-018_TITAN_Grid_Competitor_Map_v4_FINAL.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-019_TITAN_Grid_Strategic_Deck_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-020_TITAN_Grid_Identity_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-021_TITAN_Grid_Investment_Thesis_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-022_TITAN_Grid_Macro_Context_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-024_TITAN_Grid_Strategic_Expansion_v4.xlsx
+/root/Documents/0000000000000/DANASSSSS/ORG-025_TITAN_Grid_Stakeholder_Map_v4_1.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Central_Brain_Finance_Master_v6_1.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Central_Brain_Finance_Master_v6_2 2.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Central_Brain_v6_3_MonteCarlo_PD_P90.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Control_Tower_Auto_v2.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Control_Tower_v8_FINAL_POLISH.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_EBRD_IFC_Submission_Pack_v4.zip
+/root/Documents/0000000000000/DANASSSSS/TITAN_GRID_Master_Credit_Committee_File.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_GRID_Master_Credit_Committee_File_CORRECTED.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_GRID_Risk_Allocation_Matrix_Annex.pdf
+/root/Documents/0000000000000/DANASSSSS/TITAN_GRID_v5_Full_Lender_Closing_Book.pdf
+/root/Documents/0000000000000/DANASSSSS/TITAN_Grid_Active_Data_Transferred_v2_UPGRADED.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Grid_Financial_Model_CSV_Exports.zip
+/root/Documents/0000000000000/DANASSSSS/TITAN_Grid_Financial_Model_v2_0.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Grid_Model_v6_Clean.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Grid_One_Pager_Final.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_Grid_v5_Upgrade.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_VDR_150_Document_Register_Template.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_VDR_Master_List.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_model_full_integration.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_v472_Final_Bank_Version.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_v5_0_board_ic_dashboard_version.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_v6_3_Credit_Committee_Pack.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_vE1_HARVEST_TOKEN_MAP.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_vE1_SSOT_FULL_REVISION_EXPORT.xlsx
+/root/Documents/0000000000000/DANASSSSS/TITAN_vE1_VOL08_CAPEX_RECONCILIATION_FORENSIC_SSOT.xlsx
+/root/Documents/0000000000000/DANASSSSS/Titan_Grid_Collateral_Overview_v2_Bank_Ready.docx
+/root/Documents/0000000000000/DANASSSSS/Titan_Grid_Execution_Closing_Bible_v6_1_forensic.docx
+/root/Documents/0000000000000/DANASSSSS/Titan_Grid_Upgrade_Export.xlsx
+/root/Documents/0000000000000/DANASSSSS/Titan_Grid_Value_Proposition_v6_Board_Lender_Submission_Pack_clean.docx
+/root/Documents/0000000000000/DANASSSSS/Titan_Grid_v52_Credit_Committee_Pack.pdf
+/root/Documents/0000000000000/DANASSSSS/Titan_Grid_v6_2_Live_Lender_Linkage_Pack.xlsx
+/root/Documents/0000000000000/DELTA_888_NEUROLOGICAL_MAP_ATOMS_000101_000200.xlsx
+/root/Documents/0000000000000/Skripte/TITAN_FORENSIC_REVISION_MASTER_v2_Tools_Network_MaxUpgrade.docx
+/root/Documents/0000000000000/TITANGRID_DELTA_888_DIGITAL_TRANSFORMER.py
+/root/Documents/0000000000000/TITANGRID_DELTA_888_NEURO_MONO_ATOM_SIGNAL_MAP_FULL.xlsx
+/root/Documents/0000000000000/vDR/TITAN_SSOT_Institucionalni_Dopisi.docx
+/root/Documents/0000000000000/vDR/Titan 1 and 2/TITAN_vE1_HARVEST_TOKEN_MAP.xlsx
+/root/Documents/0000000000000/vDR/Titan 1 and 2/TITAN_vE1_SSOT_FULL_REVISION_EXPORT.xlsx
+/root/Documents/0000000000000/vDR/Titan 1 and 2/TITAN_vE1_VOL08_CAPEX_RECONCILIATION_FORENSIC_SSOT.xlsx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v23_SCRIPT_21_DEV_SCRIPT_INC.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v24_SCRIPT_22_DEV_LOG_ANALYZER.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v25_SCRIPT_23_DEV_CODE_BACKUP.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v26_SCRIPT_24_UI_ICON_PATCHER.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v27_SCRIPT_25_UI_ASCII_BANNER.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v28_SCRIPT_00_GUARDIAN.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v29_FINAL_CONSOLIDATED_INDEX_ROADMAP.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v30_IMPLEMENTATION_CONTROL_PACK.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v31_GOVERNANCE_FILES_BLUEPRINT_PACK.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_FORENSIC_REVISION_MASTER_v32_GOVERNANCE_JSON_STARTER_PACK.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 2/TITAN_GOVERNANCE_JSON_STARTER_PACK_v1.zip
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 3/TITAN_FORENSIC_REVISION_MASTER_v33_GOVERNANCE_JSON_ARTIFACT_PACK.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 3/TITAN_FORENSIC_REVISION_MASTER_v34_TEST_HARNESS_STARTER_PACK.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 3/TITAN_GOVERNANCE_JSON_STARTER_PACK_v1.zip
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/Novo 3/TITAN_TEST_HARNESS_STARTER_PACK_v1.zip
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v13_SCRIPT_11_TRANSFORMER.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v14_SCRIPT_12_COPPER_STEEL.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v15_SCRIPT_13_TUZI_LOGISTICS.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v16_SCRIPT_14_COVENANT_MONITOR.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v17_SCRIPT_15_FORENSIC_HARDER.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v18_SCRIPT_16_SOVEREIGN_ARCHIVE.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v19_SCRIPT_17_GATEWAY_CREATOR.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v20_SCRIPT_18_UTIL_BOM_CLEANER.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v21_SCRIPT_19_UTIL_PATH_VALIDATOR.docx
+/root/Documents/003 DELTA/001. Skripte manual/Novo 1/TITAN_FORENSIC_REVISION_MASTER_v22_SCRIPT_20_UTIL_DUPLICATE_FINDER.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v10_SCRIPT_08_CHARTER_GEN.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v11_SCRIPT_09_VDR_INDEX_MAP.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v12_SCRIPT_10_GOLDEN_SEAL.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v3_SCRIPT_01_SYSTEM_MIGRATION.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v4_SCRIPT_02_MONOLITH_INIT.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v5_SCRIPT_03_SIGNAL_SCANNER.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v6_SCRIPT_04_HYPER_SCANNER.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v7_SCRIPT_05_888_INFINITY.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v8_SCRIPT_06_LUCKY_888.docx
+/root/Documents/003 DELTA/001. Skripte manual/TITAN_FORENSIC_REVISION_MASTER_v9_SCRIPT_07_VDR_BUILDER.docx
+/root/Documents/003 DELTA/37_system_index_builder.py
+/root/Documents/003 DELTA/TITAN_03_04_05_SSOT_Integrity_Manifest_v1.zip
+/root/Documents/003 DELTA/TITAN_06_17_18_Integrity_Evidence_Weight_v1.zip
+/root/Documents/003 DELTA/TITAN_101_102_103_Post100_Closure_Verification_v1.zip
+/root/Documents/003 DELTA/TITAN_104_105_106_Final_Closure_Archive_v1.zip
+/root/Documents/003 DELTA/TITAN_107_108_109_NonUse_BlockedOps_DoNotRun_v1.zip
+/root/Documents/003 DELTA/TITAN_110_111_112_Final_Warning_ReadOnly_Proof_v1.zip
+/root/Documents/003 DELTA/TITAN_113_114_115_Ultimate_Archive_Seal_v1.zip
+/root/Documents/003 DELTA/TITAN_116_117_118_LockedChain_Index_NothingAccepted_v1.zip
+/root/Documents/003 DELTA/TITAN_119_120_121_NonAcceptance_Archive_StatusRegister_v1.zip
+/root/Documents/003 DELTA/TITAN_122_123_124_FinalClosure_Reconciliation_v1.zip
+/root/Documents/003 DELTA/TITAN_125_126_127_MasterIndex_Seal_v1.zip
+/root/Documents/003 DELTA/TITAN_128_129_130_PostMasterSeal_Verification_v1.zip
+/root/Documents/003 DELTA/TITAN_131_132_133_HandoffDenial_Archive_v1.zip
+/root/Documents/003 DELTA/TITAN_134_135_136_HandoffBoundary_Reconciliation_v1.zip
+/root/Documents/003 DELTA/TITAN_137_138_139_Ultimate_Handoff_Lock_Seal_v1.zip
+/root/Documents/003 DELTA/TITAN_140_141_142_HandoffLock_ArchiveReceipt_v1.zip
+/root/Documents/003 DELTA/TITAN_143_144_145_ArchiveOfArchives_LockedReceipt_v1.zip
+/root/Documents/003 DELTA/TITAN_146_147_148_Terminal_FreezeOfArchives_v1.zip
+/root/Documents/003 DELTA/TITAN_149_150_151_Terminal_Freeze_Closeout_v1.zip
+/root/Documents/003 DELTA/TITAN_152_153_154_ReviewOnly_ClosureArchive_v1.zip
+/root/Documents/003 DELTA/TITAN_155_156_157_ReviewOnly_SuperIndex_Seal_v1.zip
+/root/Documents/003 DELTA/TITAN_158_159_160_ReviewOnly_ChainArchive_v1.zip
+/root/Documents/003 DELTA/TITAN_161_162_163_ReviewOnly_ChainSuperFreeze_v1.zip
+/root/Documents/003 DELTA/TITAN_164_165_166_ReviewOnly_SuperFreeze_Closeout_v1.zip
+/root/Documents/003 DELTA/TITAN_167_168_169_AbsoluteTerminal_ArchiveReceipt_v1.zip
+/root/Documents/003 DELTA/TITAN_170_171_172_AbsoluteTerminal_SuperIndex_Seal_v1.zip
+/root/Documents/003 DELTA/TITAN_173_200_FinalMegaBlock_EndOfChain_v1.zip
+/root/Documents/003 DELTA/TITAN_19_20_21_Evidence_Review_Package_v1.zip
+/root/Documents/003 DELTA/TITAN_22_23_24_Review_Governance_Audit_v1.zip
+/root/Documents/003 DELTA/TITAN_28_29_30_Observability_Drift_Dependency_v1.zip
+/root/Documents/003 DELTA/TITAN_31_32_33_Package_Runbook_Registry_v1.zip
+/root/Documents/003 DELTA/TITAN_34_35_36_SelfTest_DryRun_Receipt_v1.zip
+/root/Documents/003 DELTA/TITAN_37_38_39_Operator_Console_Index_v1.zip
+/root/Documents/003 DELTA/TITAN_40_41_42_Remediation_Gate_Matrix_v1.zip
+/root/Documents/003 DELTA/TITAN_43_44_49_Handoff_Rollback_FinalEvidence_v1.zip
+/root/Documents/003 DELTA/TITAN_47_48_91_97_PreProduction_v1.zip
+/root/Documents/003 DELTA/TITAN_50_51_52_PostHandoff_Ops_Archive_Catalog_v1.zip
+/root/Documents/003 DELTA/TITAN_53_54_55_Completeness_Issues_NoRelease_v1.zip
+/root/Documents/003 DELTA/TITAN_56_57_58_Master_Deployment_Binder_v1.zip
+/root/Documents/003 DELTA/TITAN_59_60_61_Closeout_Ledger_Map_v1.zip
+/root/Documents/003 DELTA/TITAN_62_63_64_Traceability_Graph_Seal_v1.zip
+/root/Documents/003 DELTA/TITAN_65_66_67_Provenance_Exception_Verifier_v1.zip
+/root/Documents/003 DELTA/TITAN_68_69_70_Attestation_Scoring_ImmutableManifest_v1.zip
+/root/Documents/003 DELTA/TITAN_71_72_73_ApprovalBoundary_RedTeam_SafetyIndex_v1.zip
+/root/Documents/003 DELTA/TITAN_74_75_76_AuditReplay_CommandTranscript_DenialArchive_v1.zip
+/root/Documents/003 DELTA/TITAN_77_78_79_AuditBoard_Dissent_DecisionLedger_v1.zip
+/root/Documents/003 DELTA/TITAN_80_81_82_BoardQuorum_LockedCertificate_v1.zip
+/root/Documents/003 DELTA/TITAN_83_84_85_Certificate_Archive_Validation_v1.zip
+/root/Documents/003 DELTA/TITAN_86_87_88_Archive_Reconciliation_Duplicate_Register_v1.zip
+/root/Documents/003 DELTA/TITAN_89_89A_89B_Transition_To_Orchestration_v1.zip
+/root/Documents/003 DELTA/TITAN_90_92_93_State_Management_Diff_v1.zip
+/root/Documents/003 DELTA/TITAN_94_95_96_PreFreeze_Safeguards_v1.zip
+/root/Documents/003 DELTA/TITAN_98_99_100_Final_Orchestration_Boundary_v1.zip
+/root/Documents/003 DELTA/TITAN_Control_Tower_Validator_v2_Package.zip
+/root/Documents/003 DELTA/TITAN_FINAL_HUMAN_REVIEW_CHECKLIST.md
+/root/Documents/003 DELTA/TITAN_FileFinding_EvidenceGap_TSV_Templates.zip
+/root/Documents/003 DELTA/TITAN_FileFinding_EvidenceGap_Template.xlsx
+/root/Documents/003 DELTA/TITAN_Forensic_Inventory_Revision.xlsx
+/root/Documents/003 DELTA/TITAN_Missing_Pipeline_Scripts_v1.zip
+/root/Documents/003. PPP/TITAN_Execution_Control_Model.xlsx
+/root/Documents/003. PPP/TITAN_GRID_Decision_Brief.pdf
+/root/Documents/003. PPP/TITAN_GRID_Decision_Brief_v1.6.pdf
+/root/Documents/003. PPP/TITAN_GRID_PPP_Concept_Note.pdf
+/root/Documents/003. PPP/TITAN_GRID_PPP_Concept_Note_v2.1.pdf
+/root/Documents/003. PPP/TITAN_GRID_PPP_Concept_Note_v2.pdf
+/root/Documents/003. PPP/TITAN_GRID_Risk_Allocation_Matrix_Annex.pdf
+/root/Documents/003. PPP/titan_grid_v5_max_pojaczony.py
+/root/Documents/003. PPP/titan_grid_vdr_enterprise_v3_4.py
+/root/Documents/003. PPP/titan_grid_vdr_ultimate_final_clean.py
+/root/Documents/004. Extrakcije iz chatova/TITAN_DEEP_FORENSIC_CONTEXT_EXTRACTION_RAG_READY_v2.md
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/MASTER_TOKEN_REGISTER.json
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/MASTER_TOKEN_REGISTER_v4.0.json
+/root/Documents/00_MASTER_TOKEN_AUTHORITY/generate_SIGNALNI_MEMORANDUM_TITAN1.py
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_2026-05-10.docx
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_EU_BRAND_2026-05-10.docx
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_EU_FOOTER_2026-05-10.docx
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_FINAL_2026-05-10.docx
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_IMPROVED_2026-05-10.docx
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_INSTITUTIONAL_FINAL_2026-05-10.docx
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_INSTITUTIONAL_ULTRA_2026-05-10.docx
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_PROFESSIONAL_FINAL_2026-05-10.docx
+/root/Documents/ANEKS_1_REVIZIJA_CAPEX_TITAN1_v4_2026-05-10.docx
+/root/Documents/Ars documents/ARS_02 — Shareholder Structure.docx
+/root/Documents/Ars documents/Ispravljene verzije/Shareholder rev 002.docx
+/root/Documents/Ars documents/Ispravljene verzije/Sharholders.docx
+/root/Documents/Ars documents/Nova revizija/ARS_02_Shareholder_Structure_EU_Format.docx
+/root/Documents/Exeli/ADS_TITAN_Data_Room_Checklist.xlsx
+/root/Documents/Exeli/Korigovana/TITAN_GRID_Master_Credit_Committee_File_CORRECTED.xlsx
+/root/Documents/Exeli/ORG-001_TITAN_Grid_Governance_v4.xlsx
+/root/Documents/Exeli/ORG-001_TITAN_Grid_Revisited_v4_1.xlsx
+/root/Documents/Exeli/ORG-002_TITAN_Grid_Executive_Summary_v4.xlsx
+/root/Documents/Exeli/ORG-003_TITAN_Grid_Memorandum_v5_UPGRADED.xlsx
+/root/Documents/Exeli/ORG-005_TITAN_Grid_Teaser_v4.xlsx
+/root/Documents/Exeli/ORG-007_TITAN_Grid_Strategic_Positioning_v4.xlsx
+/root/Documents/Exeli/ORG-008_TITAN_Grid_Market_Gap_v4.xlsx
+/root/Documents/Exeli/ORG-009_TITAN_Grid_Industrial_Logic_v4.xlsx
+/root/Documents/Exeli/ORG-010_TITAN_Grid_Scalability_v4_corrected.xlsx
+/root/Documents/Exeli/ORG-011_TITAN_Grid_Sponsor_Profile_v4.xlsx
+/root/Documents/Exeli/ORG-012_TITAN_Grid_Ownership_Structure_v4.xlsx
+/root/Documents/Exeli/ORG-013_TITAN_Grid_SPV_Structure_v4.xlsx
+/root/Documents/Exeli/ORG-014_TITAN_Grid_Project_Timeline_v4.xlsx
+/root/Documents/Exeli/ORG-015_TITAN_Grid_Milestone_Map_v4_1.xlsx
+/root/Documents/Exeli/ORG-016_TITAN_Grid_Project_Charter_v4.xlsx
+/root/Documents/Exeli/ORG-017_TITAN_Grid_Risk_Overview_v4_polished.xlsx
+/root/Documents/Exeli/ORG-018_TITAN_Grid_Competitor_Map_v4_FINAL.xlsx
+/root/Documents/Exeli/ORG-019_TITAN_Grid_Strategic_Deck_v4.xlsx
+/root/Documents/Exeli/ORG-020_TITAN_Grid_Identity_v4.xlsx
+/root/Documents/Exeli/ORG-021_TITAN_Grid_Investment_Thesis_v4.xlsx
+/root/Documents/Exeli/ORG-022_TITAN_Grid_Macro_Context_v4.xlsx
+/root/Documents/Exeli/ORG-024_TITAN_Grid_Financial_Snapshot_v4.xlsx
+/root/Documents/Exeli/ORG-024_TITAN_Grid_Strategic_Expansion_v4.xlsx
+/root/Documents/Exeli/ORG-025_TITAN_Grid_Stakeholder_Map_v4_1.xlsx
+/root/Documents/Exeli/TITAN_Control_Tower_v8_FINAL_POLISH.xlsx
+/root/Documents/Exeli/TITAN_EBRD_IFC_Master_Pack_v4.xlsx
+/root/Documents/Exeli/TITAN_EBRD_IFC_Submission_Pack_v4.zip
+/root/Documents/Exeli/TITAN_GRID_Master_Credit_Committee_File.xlsx
+/root/Documents/Exeli/TITAN_GRID_Master_Credit_Committee_File_CORRECTED.xlsx
+/root/Documents/Exeli/TITAN_GRID_T1_Audited_v2_1.xlsx
+/root/Documents/Exeli/TITAN_GRID_v5_Full_Lender_Closing_Book.pdf
+/root/Documents/Exeli/TITAN_Grid_Active_Data_Transferred_v2_UPGRADED.xlsx
+/root/Documents/Exeli/TITAN_Grid_Final_Investment_Case_v2.xlsx
+/root/Documents/Exeli/TITAN_Grid_Financial_Model_5_Sheets.xlsx
+/root/Documents/Exeli/TITAN_Grid_Financial_Model_CSV_Exports.zip
+/root/Documents/Exeli/TITAN_Grid_Financial_Model_v2_0.xlsx
+/root/Documents/Exeli/TITAN_Grid_Lender_Model_v6_1.xlsx
+/root/Documents/Exeli/TITAN_Grid_Model_v6_Clean.xlsx
+/root/Documents/Exeli/TITAN_Grid_One_Pager_Final.xlsx
+/root/Documents/Exeli/TITAN_Grid_v5_Upgrade.xlsx
+/root/Documents/Exeli/Titan_Grid_Collateral_Overview_v2_Bank_Ready.docx
+/root/Documents/Exeli/Titan_Grid_Execution_Closing_Bible_v6_1_forensic.docx
+/root/Documents/Exeli/Titan_Grid_Upgrade_Export.xlsx
+/root/Documents/Exeli/Titan_Grid_Value_Proposition_v6_Board_Lender_Submission_Pack_clean.docx
+/root/Documents/Exeli/Titan_Grid_v6_2_Live_Lender_Linkage_Pack.xlsx
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ANEKS_1_REVIZIJA_CAPEX_TITAN1_2026-05-10.docx
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ANEKS_1_REVIZIJA_CAPEX_TITAN1_INSTITUTIONAL_ULTRA_2026-05-10.docx
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/ANEKS_1_REVIZIJA_CAPEX_TITAN1_v4_2026-05-10.docx
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/HASH_LEDGER.txt
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/MASTER_TOKEN_REGISTER_v4.0.json
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/README_TITAN1_FINAL_PACKAGE.txt
+/root/Documents/FINAL_SEND_PACKAGE_TITAN1_2026-05-10/SIGNALNI_MEMORANDUM_TITAN1_2026-05-10.docx
+/root/Documents/IZVOZ_ZA_WINDOWS/ANEKS_1_REVIZIJA_CAPEX_TITAN1_INSTITUTIONAL_ULTRA_2026-05-10.docx
+/root/Documents/IZVOZ_ZA_WINDOWS/TITAN_Central_Brain_Finance_Master_v6_1.xlsx
+/root/Documents/O02 chatgbt /ARS_02_Shareholder_Structure_EU_Format.docx
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888.md
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888.xlsx
+/root/Documents/O02 chatgbt /Novo harvest /TITAN_UPLOAD_PDF_HARVEST_100_888_SUMMARY.json
+/root/Documents/O02 chatgbt /Shareholder rev 002.docx
+/root/Documents/O02 chatgbt /TITAN_Forensic_Inventory_Extraction.xlsx
+/root/Documents/O02 chatgbt /TITAN_Forensic_Inventory_Revision.xlsx
+/root/Documents/SIGNALNI_MEMORANDUM_TITAN1_2026-05-10.docx
+/root/Documents/SIGNALNI_MEMORANDUM_TITAN1_EU_BRAND_2026-05-10.docx
+/root/Documents/Sistem final /TITAN_MASTER_SSOT_v1.0.pdf
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_Finance_Master_v6_1.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_Finance_Master_v6_2 2.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_Finance_Master_v6_2.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_Governance_Export.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_v6_1_Master.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_v6_2_Lender_Grade.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_v6_export_patch.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Central_Brain_v7_2_Lender_Model.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_Forensic_Audit_Report_2026-04-03.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_Memo_v3_FINAL.docx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_Pack_v2_LiveModel.pptx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_Pack_v3_FINAL.pptx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_v4_Visual.pptx
+/root/Documents/TITAN FINAL/03.03/TITAN_IC_v5_FINAL.pptx
+/root/Documents/TITAN FINAL/03.03/TITAN_VDR_150_Document_Register_Template.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_VDR_Master_List.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_model_full_integration.xlsx
+/root/Documents/TITAN FINAL/03.03/TITAN_v6_3_Credit_Committee_Pack.xlsx
+/root/Documents/TITAN FINAL/03.03/titan_central_brain_v6_1_generator.py
+/root/Documents/TITAN FINAL/03.03/titan_grid_control_tower_v1.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_Finance_Master_v6_2.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_Finance_Master_v6_refresh.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_Morning_Update_2026-03-27.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_1_Institutional.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_1_Lender_Model.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_2_Lender_Model_FINAL.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_3_MonteCarlo_PD_P90.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_Forensic_Export.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Central_Brain_v6_Full.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Control_Tower_Auto_v3_Dashboard.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated.zip
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-03_Document_Index_Master.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-07_Issues_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/00_ADMIN/ADM-08_Approvals_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/03_MARKET_ANALYSIS/MKT-10_Commercial_Assumptions_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/04_TECHNICAL/TECH-06_Layout_Drawings_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-03_Vendor_Quotes_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/06_CAPEX/CAPEX-10_CAPEX_Assumptions_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/08_FUNDING/FUND-09_Lender_QA_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-03_Shareholder_Agreements.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-05_Permits_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/09_LEGAL/LEG-08_Litigation_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/11_ESG/ESG-08_ESG_KPI_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/12_GRANTS/GR-09_Grant_Risk_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/15_CONTRACTS/CON-01_Supplier_Contracts_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_Data_Room_v6_3_Automated/18_AUDIT/AUD-06_Close_Out_Register.md
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo.docx
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_Annex.docx
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_Annex.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_FINAL.docx
+/root/Documents/TITAN FINAL/27.03/TITAN_IC_Memo_FINAL.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_Investment_Memo_v6_2.pdf
+/root/Documents/TITAN FINAL/27.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v9_Response_Pack.xlsx
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_upgrade.py
+/root/Documents/TITAN FINAL/27.03/TITAN_v5_0_board_ic_dashboard_version.xlsx
+/root/Documents/TITAN FINAL/Arhiva informacija/07. Gemini analize/TITAN_Control_Tower_Auto_v2.xlsx
+/root/Documents/TITAN1_DEEP_HARVEST_20260510_1153/TITAN1_DEEP_SIGNALS.json
+/root/Documents/TITAN_Central_Brain_Finance_Master_v6_1.xlsx
+/root/Documents/Titan grid/Onur/00_STRATESKI_MEMORANDUM_OPSTINA_TUZI_TITAN_GRID.pdf.pdf
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/ARS_Titan_v45_Forensic_Review.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/CAPEX_Titan_Bank_Grade_v4_5.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/MAREL_Titan_Smart_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/OPEX_Titan_Bank_Grade_v45.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_Full_Active_Data_Export.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_Grid_IC_Pack.pptx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_Grid_IC_Pack_Designed.pptx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_IC_v3_FINAL.pptx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_Investor_Pack.pptx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v4.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v5_Assumptions_Engine.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v6_Lender_Tracker.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v7_Submission_Readiness.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v8_DD_Registry.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v9_Response_Pack.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_v45_to_Active_Master_Assumptions.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_v472_Final_Bank_Version.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_v47_Calibration_Patch.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/TITAN_v47_Consistency_Lock_Generator_Output.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_Full_System_v4_5.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_True_Bank_Model_Layer_v4_6_1.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v47_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v48_Bank_Grade.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v4_5_1_Recalibrated_Bank_Case.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v4_5_Full_Formula_Linked_Bank_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v4_5_Lender_Submission_Pack.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v4_6_Harmonized_Bank_Ready_recalc.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v51_Credit_Committee.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Credit_Committee_Pack.pdf
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Credit_Committee_Pack.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready.zip
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/01_Model/Titan_Grid_v52_Credit_Committee_Pack.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/02_PDF/Titan_Grid_v52_Credit_Committee_Pack.pdf
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/03_Exports/Titan_Grid_v52_PDF_Export_Copy.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/25.03/Titan_Grid_v52_Data_Room_Ready/99_Admin/Titan_Grid_v52_OneClick_Generator.py
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/26.03/Titan_Grid_v52_Credit_Committee_Pack.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/ARS_TITAN_Grid_SPV_Forensic_Gap_Check_v1.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Active_Data_Export_20260323_final.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Control_Tower.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Control_Tower_Offtake_CRM.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Control_Tower_v1_0.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Covenant_Package.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_DSCR_Covenant_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Full_Bank_Model_v1.0_20260325.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Full_Bank_Model_v2.0_20260325.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_GRID_v22_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_GRID_v4_5_Financial_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Grid_Active_Data_Transferred_v2_EXPORT.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Grid_Bank_Model_v3_0.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Grid_Financial_Model_v1.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Grid_IC_Pack.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Grid_IFI_Grade_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Grid_Lender_Pack_v1.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_IC_Dashboard.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_IC_Dashboard_v2.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v2.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_LIVE_CONTROL_TOWER_SYSTEM_v3.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Lender_Model_v1.0_LOCKED_20260324.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Lender_QA_Tracker_v2_UPGRADED.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Lender_QA_and_Negotiation.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/TITAN_Lender_Response_Auto_Engine_v1.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_BankReady_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_Bank_Grade_Model_v1.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_Bank_Ready_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_Debt_Input_Checklist.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_Full_Financial_Model_v3.4_20260324_2335.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_Fully_Linked_Project_Finance_Model_v3_4_FIXED.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_Investor_Pack.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_Lender_Grade_v45.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_Master_Checklist_and_Debt_Model.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_v3_1_BankReady_NoPlaceholders.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_v45_Harmonized_File_Export.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/Titan_Grid_v4_Bank_Debt_Engine.xlsx
+/root/Documents/Titan grid/Prezentacija/Nove kalkulacija  24.03/titan_grid_model.xlsx
+/root/Documents/Titan grid/TITAN_Active_Data_Export_20260323_final.xlsx
+/root/Documents/Titan grid/TITAN_Excel_Harmonized_Template_v4.0.xlsx
+/root/Documents/Titan grid/TITAN_Grid_Active_Data_Transferred_v2_EXPORT.xlsx
+/root/Documents/Titan grid/TITAN_Grid_Forensic_Check_Active_Data_Export.xlsx
+/root/Documents/Titan grid/TITAN_WarRoom_QA.xlsx
+/root/Documents/Titan grid/TITAN_next_90_days_plan_calendar.ics
+/root/Documents/extract_titan1_deep_harvest.py
+/root/Documents/titan1_light_harmonizer.py
+/root/IPHONE_LOCAL_STATIC_CENSUS_20260519_082140/03_TITAN_SIGNAL_FILES.txt
+/root/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075526/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_STATIC_ONLY_HASH_20260516_075526.txt
+/root/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_STATIC_ONLY_HASH_20260516_075558.txt
+/root/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558_TAR_SHA256.txt
+/root/TITAN_SIMPLE_SEARCH.txt
+/root/TITAN_TOKENS_I_SIGNALI.txt

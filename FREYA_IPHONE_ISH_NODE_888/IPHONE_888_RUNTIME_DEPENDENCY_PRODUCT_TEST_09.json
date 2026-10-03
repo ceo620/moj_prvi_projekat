@@ -1,0 +1,286 @@
+{
+  "protocol": "888",
+  "batch": "IPHONE_888_RUNTIME_DEPENDENCY_PRODUCT_TEST_09",
+  "analysis": [
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/ENGINE__01cd6ee9c07d.py",
+      "sha256": "01cd6ee9c07d76f2b974b655791c4bcb8426e128bdb29ca221cfcce502064525",
+      "syntax_pass": true,
+      "references": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/document_processor__8236c31e6374.py",
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/financial_validator_v2_888__97a77c633836.py"
+      ],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 16,
+      "reasons": [
+        "SYNTAX_PASS",
+        "REFERENCES_RECOVERED_COMPONENTS",
+        "ORCHESTRATION_CONTENT",
+        "CANONICAL_ROOT_REFERENCE"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/foreground_business__f786b849ead3.py",
+      "sha256": "f786b849ead322667efe904acad58d1a2f43fb2198676ec2156b111f01a6c20c",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 12,
+      "reasons": [
+        "SYNTAX_PASS",
+        "ORCHESTRATION_CONTENT",
+        "CANONICAL_ROOT_REFERENCE"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/ADAPTER_PATCHED_32__6f6f336c828c.py",
+      "sha256": "6f6f336c828ce6c63d01305ed2c3e090edc666e3b7a024a088eea70c6c8bec2c",
+      "syntax_pass": true,
+      "references": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/PATCHED_32_DATA_ROOM_BUILDER__180882bc799e.py"
+      ],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 11,
+      "reasons": [
+        "SYNTAX_PASS",
+        "REFERENCES_RECOVERED_COMPONENTS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/FREYA_RUN_V2__ee7e37bd8707.sh",
+      "sha256": "ee7e37bd8707594f0eed9af1181c4454105a82b25c81f9aa5671724698a68f3f",
+      "syntax_pass": true,
+      "references": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/foreground_business__f786b849ead3.py",
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime__9d46471b6319.sh",
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/queue_binder__45a742625b79.sh",
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/document_processor__8236c31e6374.py"
+      ],
+      "stale_root_reference": true,
+      "dangerous": false,
+      "score": 11,
+      "reasons": [
+        "SYNTAX_PASS",
+        "REFERENCES_RECOVERED_COMPONENTS",
+        "ORCHESTRATION_CONTENT",
+        "STALE_ROOT_REFERENCE"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/IPHONE_888_AUTOPILOT__d3d409532b34.sh",
+      "sha256": "d3d409532b346c81e54727a1df2f0631eb90d551287c132757cacb76d64c8935",
+      "syntax_pass": true,
+      "references": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime__9d46471b6319.sh",
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime_00_ulaz__96d8ddba473c.sh",
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/queue_binder__45a742625b79.sh",
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/document_processor__8236c31e6374.py"
+      ],
+      "stale_root_reference": true,
+      "dangerous": false,
+      "score": 11,
+      "reasons": [
+        "SYNTAX_PASS",
+        "REFERENCES_RECOVERED_COMPONENTS",
+        "ORCHESTRATION_CONTENT",
+        "STALE_ROOT_REFERENCE"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/TITAN_ADAPTER_35__534eb1e03966.py",
+      "sha256": "534eb1e0396617b6f05b022eb8e0b040a3f51f02d9c3b1950bef366bb7be944f",
+      "syntax_pass": true,
+      "references": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/generate_SIGNALNI_MEMORANDUM_TITAN1__97a18cecc6af.py"
+      ],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 11,
+      "reasons": [
+        "SYNTAX_PASS",
+        "REFERENCES_RECOVERED_COMPONENTS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/TITAN_ADAPTER_42__50cb6d96d7fb.py",
+      "sha256": "50cb6d96d7fb0615a6a6eb243bc5c13f16b45cf18e83f3778f712cd216ced08a",
+      "syntax_pass": true,
+      "references": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/AUTOMATE_ALL_DOCUMENTS__e885ba6e3c7c.py"
+      ],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 11,
+      "reasons": [
+        "SYNTAX_PASS",
+        "REFERENCES_RECOVERED_COMPONENTS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/AUTOMATE_ALL_DOCUMENTS__e885ba6e3c7c.py",
+      "sha256": "e885ba6e3c7c6b1b56aa7d5afe37d1eae7e3cce182c0ae159e27e8ae32805801",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 9,
+      "reasons": [
+        "SYNTAX_PASS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/PATCHED_32_DATA_ROOM_BUILDER__180882bc799e.py",
+      "sha256": "180882bc799ed5cfe4aacb6eed8caea1cc458cdacbd98c4de25e071a4effd2a3",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 9,
+      "reasons": [
+        "SYNTAX_PASS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/financial_validator_v2_888__97a77c633836.py",
+      "sha256": "97a77c63383646e81e56e2b5712714778dee6e4e9235b0d71e92cd1431a67db1",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 9,
+      "reasons": [
+        "SYNTAX_PASS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime_00_ulaz__96d8ddba473c.sh",
+      "sha256": "96d8ddba473c6a808a30cdbb46a73e79dbcc8b05eca36496190fe6e1b0274a67",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 9,
+      "reasons": [
+        "SYNTAX_PASS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime__9d46471b6319.sh",
+      "sha256": "9d46471b631957bd3518526c6b8399dac5fb6393c32ca5149ad50a05906200bc",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 9,
+      "reasons": [
+        "SYNTAX_PASS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/integrated_runtime_all_files__a4a3fb462812.sh",
+      "sha256": "a4a3fb462812fce09eb375a7f60ac5c9bd1da6a90a9ce7f799ae2cc2d8ed9bc7",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 9,
+      "reasons": [
+        "SYNTAX_PASS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/queue_binder__45a742625b79.sh",
+      "sha256": "45a742625b793b0b827e0928bfabc6bc025f89de299b540199862c51cdc5fc8c",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 9,
+      "reasons": [
+        "SYNTAX_PASS",
+        "ORCHESTRATION_CONTENT"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/FREYA_RUN_V1_BACKUP__953b50593279.sh",
+      "sha256": "953b505932792f4975e165d6eee55396467a08b46d67bf3756633e9123d10585",
+      "syntax_pass": true,
+      "references": [
+        "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/document_processor__8236c31e6374.py"
+      ],
+      "stale_root_reference": true,
+      "dangerous": false,
+      "score": 5,
+      "reasons": [
+        "SYNTAX_PASS",
+        "REFERENCES_RECOVERED_COMPONENTS",
+        "ORCHESTRATION_CONTENT",
+        "STALE_ROOT_REFERENCE"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/document_processor__8236c31e6374.py",
+      "sha256": "8236c31e63747752248df5c70c13e7d3786dd53336387bb115a63fef5cc8f64d",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 5,
+      "reasons": [
+        "SYNTAX_PASS"
+      ]
+    },
+    {
+      "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/generate_SIGNALNI_MEMORANDUM_TITAN1__97a18cecc6af.py",
+      "sha256": "97a18cecc6af347637429d2765731ee758a2b0597568c702430ed27b504507ac",
+      "syntax_pass": true,
+      "references": [],
+      "stale_root_reference": false,
+      "dangerous": false,
+      "score": 5,
+      "reasons": [
+        "SYNTAX_PASS"
+      ]
+    }
+  ],
+  "proven_entrypoint": {
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/ENGINE__01cd6ee9c07d.py",
+    "sha256": "01cd6ee9c07d76f2b974b655791c4bcb8426e128bdb29ca221cfcce502064525",
+    "syntax_pass": true,
+    "references": [
+      "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/document_processor__8236c31e6374.py",
+      "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/financial_validator_v2_888__97a77c633836.py"
+    ],
+    "stale_root_reference": false,
+    "dangerous": false,
+    "score": 16,
+    "reasons": [
+      "SYNTAX_PASS",
+      "REFERENCES_RECOVERED_COMPONENTS",
+      "ORCHESTRATION_CONTENT",
+      "CANONICAL_ROOT_REFERENCE"
+    ]
+  },
+  "controlled_test": {
+    "attempted": true,
+    "path": "/root/FREYA_IPHONE_ISH_NODE_888/05_SYSTEM_RUNTIME/ENGINE__01cd6ee9c07d.py",
+    "args": [
+      "--help"
+    ],
+    "exit": 0,
+    "stdout": "PREPARED | Pokreni sa --popravi-888 | NETWORK=NONE\n",
+    "stderr": ""
+  }
+}

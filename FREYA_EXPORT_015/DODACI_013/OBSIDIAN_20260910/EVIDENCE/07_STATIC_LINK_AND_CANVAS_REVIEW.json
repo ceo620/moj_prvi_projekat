@@ -1,0 +1,230 @@
+{
+  "ambiguous_reference_count": 0,
+  "app_open_test": "NOT_PERFORMED",
+  "canvas_checks": [],
+  "files_by_type": {
+    ".md": 1068,
+    ".txt": 14,
+    ".xlsx": 16
+  },
+  "links": [
+    {
+      "candidates": [
+        "4_DNEVNE_BELESKE/6. CMU-System-Maintenance.md"
+      ],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/1. Daily-ToDo-Advanced.md",
+      "status": "RESOLVED_FILE_PATH",
+      "syntax": "WIKILINK",
+      "target": "6. CMU-System-Maintenance",
+      "vault": "27636adc8b12_0bd9b9e8"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/GROK_META_INJECTION_LEVEL2.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "$(date +%H) -eq 00",
+      "vault": "27636adc8b12_0bd9b9e8"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/GROK_META_INJECTION_LEVEL2.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "$(date +%H) -eq 06",
+      "vault": "27636adc8b12_0bd9b9e8"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/GROK_META_INJECTION_LEVEL2.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "$(date +%H) -eq 12",
+      "vault": "27636adc8b12_0bd9b9e8"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/GROK_META_INJECTION_LEVEL2.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "$(date +%H) -eq 18",
+      "vault": "27636adc8b12_0bd9b9e8"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "05_MODUL_UCENJA.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "ARS METAL DOO",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [
+        "6. CMU-System-Maintenance.md"
+      ],
+      "embedded": false,
+      "note": "1. Daily-ToDo-Advanced.md",
+      "status": "RESOLVED_FILE_PATH",
+      "syntax": "WIKILINK",
+      "target": "6. CMU-System-Maintenance",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [
+        "1. Daily-ToDo-Advanced.md"
+      ],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "RESOLVED_FILE_PATH",
+      "syntax": "WIKILINK",
+      "target": "1. Daily-ToDo-Advanced",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "7. Weekly-Review",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "12. Strategic-Planning",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "00_CONTROL",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "01_CMU",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [
+        "6. CMU-System-Maintenance.md"
+      ],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "RESOLVED_FILE_PATH",
+      "syntax": "WIKILINK",
+      "target": "6. CMU-System-Maintenance",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [
+        "16. Centralni-Modul-Ucenja.md"
+      ],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "RESOLVED_FILE_PATH",
+      "syntax": "WIKILINK",
+      "target": "16. Centralni-Modul-Ucenja",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [
+        "1. Daily-ToDo-Advanced.md"
+      ],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "RESOLVED_FILE_PATH",
+      "syntax": "WIKILINK",
+      "target": "1. Daily-ToDo-Advanced",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "7. Weekly-Review",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [
+        "6. CMU-System-Maintenance.md"
+      ],
+      "embedded": false,
+      "note": "MASTER_INDEX.md",
+      "status": "RESOLVED_FILE_PATH",
+      "syntax": "WIKILINK",
+      "target": "6. CMU-System-Maintenance",
+      "vault": "27636adc8b12_890b318c"
+    },
+    {
+      "candidates": [
+        "4_DNEVNE_BELESKE/6. CMU-System-Maintenance.md"
+      ],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/1. Daily-ToDo-Advanced.md",
+      "status": "RESOLVED_FILE_PATH",
+      "syntax": "WIKILINK",
+      "target": "6. CMU-System-Maintenance",
+      "vault": "27636adc8b12_b91dcf85"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/GROK_META_INJECTION_LEVEL2.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "$(date +%H) -eq 00",
+      "vault": "27636adc8b12_b91dcf85"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/GROK_META_INJECTION_LEVEL2.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "$(date +%H) -eq 06",
+      "vault": "27636adc8b12_b91dcf85"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/GROK_META_INJECTION_LEVEL2.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "$(date +%H) -eq 12",
+      "vault": "27636adc8b12_b91dcf85"
+    },
+    {
+      "candidates": [],
+      "embedded": false,
+      "note": "4_DNEVNE_BELESKE/GROK_META_INJECTION_LEVEL2.md",
+      "status": "UNRESOLVED_WITHIN_RECOVERED_SCOPE",
+      "syntax": "WIKILINK",
+      "target": "$(date +%H) -eq 18",
+      "vault": "27636adc8b12_b91dcf85"
+    }
+  ],
+  "notes_and_canvases_checked": 1068,
+  "scope": "STATIC_FILE_PATH_CHECK;INITIAL_TOTAL_UNKNOWN;HEADINGS_BLOCK_IDS_REFERENCE_STYLE_LINKS_NOT_VALIDATED",
+  "unresolved_attachment_references": 3,
+  "unresolved_note_references": 11
+}

@@ -1,0 +1,240 @@
+=== SAFE EXTRACT START ===
+ARCHIVE=/mnt/ios/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/1_IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558.tar.gz
+---
+ARCHIVE=/mnt/marel_transfer/IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/2_IPHONE_STATIC_EXPORT_PACKET_FOR_MSI_20260516_075558.tar.gz
+---
+ARCHIVE=/mnt/marel_transfer/IPHONE_TITAN_EXPORT/IPHONE_TITAN_EXPORT_PACKET.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/3_IPHONE_TITAN_EXPORT_PACKET.tar.gz
+---
+ARCHIVE=/root/Documents/TITAN_FINALNI_IZVOZ/titan_rad.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/4_titan_rad.tar.gz
+---
+ARCHIVE=/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/default.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/5_default.tar.gz
+tar: ./dev/tty1: Cannot change mode to rw--w----: No such device or address
+tar: ./dev/tty2: Cannot change mode to rw--w----: No such device or address
+tar: ./dev/tty3: Cannot change mode to rw--w----: No such device or address
+tar: ./dev/tty4: Cannot change mode to rw--w----: No such device or address
+tar: ./dev/tty5: Cannot change mode to rw--w----: No such device or address
+tar: ./dev/tty6: Cannot change mode to rw--w----: No such device or address
+tar: ./dev/tty7: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/tty: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/console: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/ptmx: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/null: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/zero: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/full: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/random: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/urandom: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/clipboard: Cannot change mode to rw-rw-rw-: No such device or address
+tar: ./dev/location: Cannot change mode to rw-rw-rw-: No such device or address
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Ignoring unknown extended header keyword 'hdrcharset'
+tar: Exiting with failure status due to previous errors
+EXTRACT_FAILED=/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports 2/default.tar.gz
+---
+ARCHIVE=/root/Documents/TITAN_Grid_Financial_Model_CSV_Exports.zip
+OUT=/root/FREYA_SSOT/08_EXTRACTED/6_TITAN_Grid_Financial_Model_CSV_Exports.zip
+---
+ARCHIVE=/root/FREYA_IPHONE/99_EXPORTS/FREYA_IPHONE_FULL_TO_ANDROID_20260701_201406.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/7_FREYA_IPHONE_FULL_TO_ANDROID_20260701_201406.tar.gz
+---
+ARCHIVE=/root/FREYA_IPHONE/99_EXPORTS/FREYA_IPHONE_KNOWLEDGE_PACKET_V1_20260701_202752.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/8_FREYA_IPHONE_KNOWLEDGE_PACKET_V1_20260701_202752.tar.gz
+---
+ARCHIVE=/root/FREYA_IPHONE/99_EXPORTS/FREYA_IPHONE_TO_ANDROID_PACKET_20260701_195631.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/9_FREYA_IPHONE_TO_ANDROID_PACKET_20260701_195631.tar.gz
+---
+ARCHIVE=/root/FREYA_IPHONE_ISH_INGEST_888.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/10_FREYA_IPHONE_ISH_INGEST_888.tar.gz
+---
+ARCHIVE=/root/TITAN_SPAS.tar.gz
+OUT=/root/FREYA_SSOT/08_EXTRACTED/11_TITAN_SPAS.tar.gz
+---

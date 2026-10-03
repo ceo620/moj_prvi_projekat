@@ -1,0 +1,1 @@
+{"automatic_cleanup":"FORBIDDEN","partial_write_policy":"STOP_PRESERVE_AND_REVIEW","preserve_originals":true,"preserve_outbox":true,"preserve_receipts":true,"preserve_sent_packages":true,"preserve_staging":true,"retry_after_security_failure":"FORBIDDEN","schema_id":"FREYA_RECOVERY_POLICY_V1_888"}

@@ -1,0 +1,43 @@
+{
+  "protocol": "888",
+  "result": "RECOVERY_COMPLETED_IN_ISOLATED_FOLDER",
+  "batch": "009R1_CONTINUE",
+  "stage": "/root/FREYA_RECOVERY_009_888_ugk9zsdm",
+  "source": "/tmp/ISH_EXPORT_888.w75MRJ/FREYA_HOME_888/IPHONE_BACKUPS_888/IPHONE_CRITICAL_RECOVERY_BACKUP_005_888_20260909T124605Z_PID1020",
+  "scope": "CRITICAL_RECOVERY_SET",
+  "backup_completed_utc": "2026-09-09T13:37:13Z",
+  "parts_manifest_sha256": "81262d3d3bcc7b0d0065200e12fc96ea19ebdc1b77758c5c6dd5019809cc9366",
+  "expected_tar_stream_sha256": "7a630df2b2fd95e21cb43a6c096b1c30c1066b2983ac71feb89a6bd23b9d0f91",
+  "prior_validation": "15 source and 15 local part hashes passed in user-returned 009 output; reused, not recomputed in R1",
+  "prior_full_stream_validation": "Inferred from pinned 009 control flow: final local part passed and execution then reached the etc/profile path check",
+  "parts_rehashed_in_this_resume": [
+    "PART_ao"
+  ],
+  "existing_file_validation": "TAR headers matched prior journal; regular-file types, sizes and modification times checked; existing contents not rehashed",
+  "prior_files_preserved": 54449,
+  "new_files_added": 4,
+  "already_matching_tail_files_preserved": 0,
+  "regular_files_total": 54453,
+  "regular_bytes_total": 3749380117,
+  "tar_members": 62004,
+  "deferred_links_and_special_files": 31,
+  "key_files_found": [
+    "root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/HUMAN_GATE_CONSOLE_V1/freya_gate.py",
+    "root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FREYA_ONE_888/08_BIN/freya_one.py",
+    "root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/FOREGROUND_BUSINESS_RELEASES/V1R3_20260805T230000Z_SSOT_EVIDENCE_CANDIDATE/launcher.sh",
+    "root/FREYA_IPHONE_ISH_NODE_888/15_RUNTIME/IPHONE_LIVE_NODE_888/00_CONTROL/live_cycle.sh",
+    "root/FREYA_IPHONE_ISH_NODE_888/00_CONTROL/M09_FINAL_ONLINE_SEAL_888/20260819T221524Z/FINAL_SEAL.env",
+    "root/DOCTRINES_ONLY_20260713_183039.zip",
+    "root/.profile",
+    "root/gate_control.sh"
+  ],
+  "key_files_missing": [],
+  "source_changes": 0,
+  "existing_files_overwritten": 0,
+  "activation_performed": false,
+  "project_code_executed": 0,
+  "permissions": "regular files 0600; original metadata retained in journals",
+  "resume_metadata": "/root/FREYA_RECOVERY_009_888_ugk9zsdm/RESUME_009R1_fhbn8lb3",
+  "header_and_tail_reader_bytes": 82380532,
+  "deferred_source_items": "DEFERRED_ITEMS=6\nDEFER=/root/Documents|FILES_PROVIDER_MOUNT_AND_BACKUP_DESTINATION\nDEFER=/root/freya_audit|LARGE_REQUIRES_EXTERNAL_DISK_BATCH\nDEFER=/root/UNITY|LARGE_REQUIRES_EXTERNAL_DISK_BATCH\nDEFER=/root/FREYA_IPHONE_OUTBOX_888|LARGE_REQUIRES_EXTERNAL_DISK_BATCH\nDEFER=/root/freya_backup.tar|LARGE_EXISTING_ARCHIVE_REQUIRES_EXTERNAL_DISK_BATCH\nDEFER=/root/.ssh|PRIVATE_MATERIAL_REQUIRES_SEPARATE_ENCRYPTED_BACKUP\nDEFERRED_ITEMS_CHANGED=NO\n"
+}

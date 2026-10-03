@@ -1,0 +1,14 @@
+{
+  "protocol": "888",
+  "batch": "IPHONE_888_ENGINE_FILENOTFOUND_TRACE_REPAIR_13",
+  "original_engine_sha256": "01cd6ee9c07d76f2b974b655791c4bcb8426e128bdb29ca221cfcce502064525",
+  "trace_copy": "/root/FREYA_IPHONE_ISH_NODE_888/10_RUNTIME_TEST/ENGINE_TRACE_888.py",
+  "trace_run": {
+    "exit": 2,
+    "stdout": "RESULT=HOLD\nREASON=FileNotFoundError\n",
+    "stderr": ""
+  },
+  "missing_paths": [],
+  "canonical_matches": {},
+  "repairs": []
+}

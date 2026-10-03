@@ -1,0 +1,17 @@
+FIELD_NAME,REQUIRED,DESCRIPTION,EXAMPLE
+OBJECT_ID,YES,Stable metadata row id,IPHONE_FILE_000001
+OBJECT_TYPE,YES,file folder shortcut note export,FILE
+OBJECT_NAME,YES,Object or file name,example.txt
+FILE_PATH,YES,Visible path inside iPhone-accessible export,/private/.../Documents/example.txt
+SOURCE_ZONE,YES,Files/iCloud/Shortcuts/ShellAppSandbox,FilesApp
+SIZE_BYTES,YES,File size in bytes,12345
+LAST_WRITE_TIME,YES,Last modified time,2026-05-25 04:10
+EXTENSION,YES,File extension,txt
+SHA256,YES,SHA-256 fingerprint,ABC123
+METADATA_CLASS,YES,script note shortcut document media report,script
+KNOWLEDGE_SIGNAL,NO,Formula/guardrail/repair/text signal,guardrail_found
+GOLDEN_THREAD_SIGNAL,NO,Single golden thread candidate,CANDIDATE_ONLY
+RUNTIME_ALLOWED,YES,Always NO,NO
+PATCH_ALLOWED,YES,Always NO,NO
+DELETE_ALLOWED,YES,Always NO,NO
+HUMAN_REVIEW_REQUIRED,YES,Always YES,YES

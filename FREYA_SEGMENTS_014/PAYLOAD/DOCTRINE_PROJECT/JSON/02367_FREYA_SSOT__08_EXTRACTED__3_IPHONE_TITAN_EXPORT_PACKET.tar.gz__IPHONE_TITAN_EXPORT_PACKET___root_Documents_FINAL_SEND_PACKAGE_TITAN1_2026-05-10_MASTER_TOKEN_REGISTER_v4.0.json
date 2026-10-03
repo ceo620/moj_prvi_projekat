@@ -1,0 +1,145 @@
+{
+  "system": "TITAN1_CTOS",
+  "version": "v4.0",
+  "last_updated": "2026-05-10",
+  "status": "ACTIVE_CANONICAL",
+  "scope": "TITAN_1_ONLY",
+  "description": "Jedini autoritativni i obavezujući token register za sve aktivne dokumente TITAN 1.",
+  "canonical_identity": {
+    "project_name": "TITAN 1 – Fabrika transformatorskih kazana (tankova)",
+    "short_name": "TITAN 1",
+    "company": "Ars Metal Industries D.O.O. Podgorica",
+    "director": "Danijela Keskin",
+    "location": "Industrijska zona Tuzi / KAP, Crna Gora"
+  },
+  "canonical_capex": {
+    "eur": 18200000,
+    "label": "18,2 miliona EUR",
+    "status": "ACTIVE_CANONICAL_CAPEX"
+  },
+  "allowed_tokens": {
+    "capex": [
+      "18,2 miliona EUR",
+      "18.2 miliona EUR",
+      "18.2M",
+      "18200000 EUR",
+      "investicija od približno 18,2 miliona EUR"
+    ],
+    "identity": [
+      "TITAN 1",
+      "Fabrika transformatorskih kazana",
+      "tankova",
+      "Ars Metal Industries D.O.O. Podgorica",
+      "Danijela Keskin"
+    ],
+    "infrastructure": [
+      "12.5 MW",
+      "CEDIS",
+      "status elektrodistributivne infrastrukture",
+      "raspoloživi kapacitet",
+      "procedura priključenja"
+    ],
+    "development": [
+      "nova radna mjesta",
+      "industrijski razvoj",
+      "jačanje energetskog lanca",
+      "potencijalni doprinos industrijskoj tranziciji"
+    ]
+  },
+  "blocked_tokens": [
+    {
+      "token": "43.5M",
+      "severity": "CRITICAL",
+      "action": "BLOCK",
+      "context": "ALL_ACTIVE_DOCUMENTS"
+    },
+    {
+      "token": "51.4M",
+      "severity": "CRITICAL",
+      "action": "BLOCK",
+      "context": "ALL_ACTIVE_DOCUMENTS"
+    },
+    {
+      "token": "TITAN 2",
+      "severity": "CRITICAL",
+      "action": "BLOCK_IN_ACTIVE_TITAN1_DOCUMENTS",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "TITAN 3",
+      "severity": "CRITICAL",
+      "action": "BLOCK_IN_ACTIVE_TITAN1_DOCUMENTS",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "3 factories",
+      "severity": "CRITICAL",
+      "action": "BLOCK",
+      "context": "ALL_ACTIVE_DOCUMENTS"
+    },
+    {
+      "token": "38%",
+      "severity": "WARNING",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "Equity IRR",
+      "severity": "WARNING",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "Project IRR",
+      "severity": "WARNING",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "DSCR",
+      "severity": "WARNING",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "25% grant",
+      "severity": "CRITICAL",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "lender ready",
+      "severity": "CRITICAL",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "bank-ready",
+      "severity": "CRITICAL",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "država je dužna",
+      "severity": "CRITICAL",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    },
+    {
+      "token": "garantovana",
+      "severity": "CRITICAL",
+      "action": "BLOCK_IN_INSTITUTIONAL",
+      "context": "INSTITUTIONAL"
+    }
+  ],
+  "rules": {
+    "zero_tolerance": true,
+    "manual_review_required": true,
+    "human_signoff_required": true,
+    "hash_required": true,
+    "crosswalk_required": true,
+    "scope_enforcement": "STRICT_TITAN1_ONLY",
+    "bleedthrough_protection": "ZERO_TOLERANCE"
+  },
+  "system_status": "ACTIVE_CANONICAL_WORKING_BASELINE"
+}

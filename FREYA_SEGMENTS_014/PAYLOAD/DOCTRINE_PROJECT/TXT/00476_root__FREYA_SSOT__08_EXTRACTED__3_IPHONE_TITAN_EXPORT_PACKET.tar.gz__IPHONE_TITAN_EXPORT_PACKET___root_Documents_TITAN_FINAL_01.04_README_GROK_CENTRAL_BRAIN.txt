@@ -1,0 +1,24 @@
+GROK CENTRAL BRAIN EXPORTER
+
+Purpose
+This converts your mutation / prompt JSON into a Grok-uploadable lookup brain.
+
+What to upload into Grok
+1. GROK_CENTRAL_BRAIN_INSTRUCTIONS.txt
+2. grok_central_brain_lookup.json
+
+What Grok can do after upload
+- when you type MUT_021, it can return the full stored record
+- when you type prompt only MUT_021, it can return just prompt fields
+- when you type compare MUT_021 vs MUT_047, it can extract both
+
+How to build the brain from your existing safe file
+python grok_central_brain_exporter.py export-central-brain --input-json grok_mutation_generator_safe_only.json --output-dir ./grok_central_brain_pack
+
+Optional local lookup test
+python grok_central_brain_exporter.py lookup-code --lookup-json ./grok_central_brain_pack/grok_central_brain_lookup.json --code MUT_021
+
+Important limitation
+Grok will not execute this Python file after upload.
+The Python file is for preparing the JSON/TXT brain pack.
+Inside Grok, the uploaded JSON + instructions are what matter.

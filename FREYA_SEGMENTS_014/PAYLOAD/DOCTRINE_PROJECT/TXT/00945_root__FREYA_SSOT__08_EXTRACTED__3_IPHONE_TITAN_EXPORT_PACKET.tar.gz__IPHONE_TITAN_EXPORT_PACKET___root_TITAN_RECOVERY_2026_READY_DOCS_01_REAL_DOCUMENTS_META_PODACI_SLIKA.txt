@@ -1,0 +1,5 @@
+======== ./META_PODACI_SLIKA.txt
+[File]          FileModifyDate                  : 2026-05-26 06:33:43
+[File]          FileName                        : META_PODACI_SLIKA.txt
+    1 directories scanned
+    1 image files read

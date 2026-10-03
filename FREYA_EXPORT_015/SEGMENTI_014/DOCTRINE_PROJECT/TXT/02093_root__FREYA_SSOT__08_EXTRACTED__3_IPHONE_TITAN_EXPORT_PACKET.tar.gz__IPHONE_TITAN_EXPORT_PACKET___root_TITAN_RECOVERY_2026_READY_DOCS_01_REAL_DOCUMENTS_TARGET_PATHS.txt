@@ -1,0 +1,6 @@
+/root/DELTA_LENOVO_CENTRAL
+/root/CMU_IPHONE_CENSUS
+/root/DELTA_FINAL_EXPORT
+/root/Documents
+/mnt/ios
+/mnt/marel_transfer
