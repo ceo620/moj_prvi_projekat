@@ -1,0 +1,564 @@
+{
+  "component": "TITAN_V52_GENERATOR",
+  "source_sha256": "c0fec1c32825b2e5ee4543339ec81b089bff7644d45be07591455144951cea60",
+  "verified_source_path": "/data/data/com.termux/files/home/ANDROID_GIT_HARMONIZE_888.OXx7ce/FREYA_EXPORT_015/SEGMENTI_014/FREYA_AUDIT/root/freya_audit/UNITY/SOBA_2_ZNANJE/PHONE_FULL_KNOWLEDGE_COPY_20260704_174201/root/FREYA_SSOT/08_EXTRACTED/3_IPHONE_TITAN_EXPORT_PACKET.tar.gz/IPHONE_TITAN_EXPORT_PACKET/_root_Documents_Titan_grid_Prezentacija_Nove_kalkulacija__24.03_25.03_Titan_Grid_v52_Data_Room_Ready_99_Admin_Titan_Grid_v52_OneClick_Generator.py",
+  "indexed_copy_paths": [
+    "/data/data/com.termux/files/home/ANDROID_GIT_HARMONIZE_888.OXx7ce/FREYA_EXPORT_015/SEGMENTI_014/FREYA_AUDIT/root/freya_audit/UNITY/SOBA_2_ZNANJE/PHONE_FULL_KNOWLEDGE_COPY_20260704_174201/root/FREYA_SSOT/08_EXTRACTED/3_IPHONE_TITAN_EXPORT_PACKET.tar.gz/IPHONE_TITAN_EXPORT_PACKET/_root_Documents_Titan_grid_Prezentacija_Nove_kalkulacija__24.03_25.03_Titan_Grid_v52_Data_Room_Ready_99_Admin_Titan_Grid_v52_OneClick_Generator.py",
+    "/data/data/com.termux/files/home/ANDROID_GIT_HARMONIZE_888.OXx7ce/FREYA_SEGMENTS_014/PAYLOAD/FREYA_AUDIT/root/freya_audit/UNITY/SOBA_2_ZNANJE/PHONE_FULL_KNOWLEDGE_COPY_20260704_174201/root/FREYA_SSOT/08_EXTRACTED/3_IPHONE_TITAN_EXPORT_PACKET.tar.gz/IPHONE_TITAN_EXPORT_PACKET/_root_Documents_Titan_grid_Prezentacija_Nove_kalkulacija__24.03_25.03_Titan_Grid_v52_Data_Room_Ready_99_Admin_Titan_Grid_v52_OneClick_Generator.py",
+    "/data/data/com.termux/files/home/FREYA_ANDROID_888/09_RECOVERY/REVIEW_STAGING/A018_IPHONE_HANDOFF_20260813T201832Z_PID15651/root/freya_audit/UNITY/SOBA_2_ZNANJE/PHONE_FULL_KNOWLEDGE_COPY_20260704_174201/root/FREYA_SSOT/08_EXTRACTED/3_IPHONE_TITAN_EXPORT_PACKET.tar.gz/IPHONE_TITAN_EXPORT_PACKET/_root_Documents_Titan_grid_Prezentacija_Nove_kalkulacija__24.03_25.03_Titan_Grid_v52_Data_Room_Ready_99_Admin_Titan_Grid_v52_OneClick_Generator.py",
+    "/data/data/com.termux/files/home/projekti/moj_prvi_projekat/FREYA_EXPORT_015/SEGMENTI_014/FREYA_AUDIT/root/freya_audit/UNITY/SOBA_2_ZNANJE/PHONE_FULL_KNOWLEDGE_COPY_20260704_174201/root/FREYA_SSOT/08_EXTRACTED/3_IPHONE_TITAN_EXPORT_PACKET.tar.gz/IPHONE_TITAN_EXPORT_PACKET/_root_Documents_Titan_grid_Prezentacija_Nove_kalkulacija__24.03_25.03_Titan_Grid_v52_Data_Room_Ready_99_Admin_Titan_Grid_v52_OneClick_Generator.py",
+    "/data/data/com.termux/files/home/projekti/moj_prvi_projekat/FREYA_SEGMENTS_014/PAYLOAD/FREYA_AUDIT/root/freya_audit/UNITY/SOBA_2_ZNANJE/PHONE_FULL_KNOWLEDGE_COPY_20260704_174201/root/FREYA_SSOT/08_EXTRACTED/3_IPHONE_TITAN_EXPORT_PACKET.tar.gz/IPHONE_TITAN_EXPORT_PACKET/_root_Documents_Titan_grid_Prezentacija_Nove_kalkulacija__24.03_25.03_Titan_Grid_v52_Data_Room_Ready_99_Admin_Titan_Grid_v52_OneClick_Generator.py"
+  ],
+  "inputs": [
+    {
+      "cell": "B4",
+      "parameter": "Total Project Cost (TPC)",
+      "value": 27796156,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B5",
+      "parameter": "Direct CAPEX (BoQ)",
+      "value": 24715200,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B6",
+      "parameter": "Contingency",
+      "value": 2471520,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B7",
+      "parameter": "Escalation",
+      "value": 609436,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B8",
+      "parameter": "Debt",
+      "value": 16677694,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B9",
+      "parameter": "Equity",
+      "value": 11118462,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B10",
+      "parameter": "Total IDC (capitalized) - locked ref",
+      "value": 1031579,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B11",
+      "parameter": "Average DSCR",
+      "value": 3.07,
+      "unit": "x",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B12",
+      "parameter": "Minimum DSCR",
+      "value": 1.68,
+      "unit": "x",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B13",
+      "parameter": "Minimum DSCR Year",
+      "value": 2,
+      "unit": "year",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B14",
+      "parameter": "Revenue Year 1",
+      "value": 8000000,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B15",
+      "parameter": "Revenue Year 5",
+      "value": 28000000,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B16",
+      "parameter": "Revenue Year 12",
+      "value": 32163198,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B17",
+      "parameter": "Steady-state EBITDA margin",
+      "value": 0.22,
+      "unit": "%",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B18",
+      "parameter": "Perpetual growth after Year 5",
+      "value": 0.02,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B19",
+      "parameter": "Cash Conversion Cycle",
+      "value": 100,
+      "unit": "days",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B20",
+      "parameter": "Net WC Year 5",
+      "value": 5753425,
+      "unit": "EUR",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B21",
+      "parameter": "Net WC as % of Revenue",
+      "value": 0.2054794643,
+      "unit": "%",
+      "declared_status": "LOCKED"
+    },
+    {
+      "cell": "B22",
+      "parameter": "Working days",
+      "value": 250,
+      "unit": "days/year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B23",
+      "parameter": "Shifts",
+      "value": 2,
+      "unit": "count",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B24",
+      "parameter": "Target normalized units/year",
+      "value": 291,
+      "unit": "units",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B25",
+      "parameter": "Interest Rate",
+      "value": 0.045,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B26",
+      "parameter": "Tenor",
+      "value": 10,
+      "unit": "years",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B27",
+      "parameter": "Grace Period (Principal)",
+      "value": 2,
+      "unit": "years",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B28",
+      "parameter": "Target Minimum DSCR",
+      "value": 1.3,
+      "unit": "x",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B29",
+      "parameter": "DSRA months",
+      "value": 6,
+      "unit": "months",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B30",
+      "parameter": "Tax Rate",
+      "value": 0.0,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B31",
+      "parameter": "Maintenance CAPEX % Revenue",
+      "value": 0.015,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B32",
+      "parameter": "Cash Interest During Operations?",
+      "value": 1,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B33",
+      "parameter": "Sculpt Principal to DSCR?",
+      "value": 1,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B34",
+      "parameter": "Discount Rate for LLCR/PLCR",
+      "value": 0.1,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B35",
+      "parameter": "Debt Start Year",
+      "value": 3,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B36",
+      "parameter": "Debt End Year",
+      "value": 12,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B37",
+      "parameter": "DSCR Lock Test Start Year",
+      "value": 3,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B38",
+      "parameter": "Debt Tail Years for PLCR",
+      "value": 0,
+      "unit": "years",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B39",
+      "parameter": "Use Post-DSRA CFADS for LLCR?",
+      "value": 1,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B40",
+      "parameter": "Balloon Allowed?",
+      "value": 0,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B41",
+      "parameter": "Balloon Amount",
+      "value": 0,
+      "unit": "EUR",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B42",
+      "parameter": "Active Scenario",
+      "value": "Base",
+      "unit": "text",
+      "declared_status": "CONTROL"
+    },
+    {
+      "cell": "B43",
+      "parameter": "Revenue Shock - Base",
+      "value": 0.0,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B44",
+      "parameter": "Revenue Shock - Downside",
+      "value": -0.2,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B45",
+      "parameter": "Revenue Shock - Upside",
+      "value": 0.1,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B46",
+      "parameter": "EBITDA Margin Shock - Base",
+      "value": 0.0,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B47",
+      "parameter": "EBITDA Margin Shock - Downside",
+      "value": -0.03,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B48",
+      "parameter": "EBITDA Margin Shock - Upside",
+      "value": 0.02,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B49",
+      "parameter": "Delay Months - Base",
+      "value": 0,
+      "unit": "months",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B50",
+      "parameter": "Delay Months - Downside",
+      "value": 6,
+      "unit": "months",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B51",
+      "parameter": "Delay Months - Upside",
+      "value": 0,
+      "unit": "months",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B52",
+      "parameter": "WC Shock - Base",
+      "value": 0.0,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B53",
+      "parameter": "WC Shock - Downside",
+      "value": 0.05,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B54",
+      "parameter": "WC Shock - Upside",
+      "value": -0.02,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B55",
+      "parameter": "Maintenance CAPEX Shock - Base",
+      "value": 0.0,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B56",
+      "parameter": "Maintenance CAPEX Shock - Downside",
+      "value": 0.005,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B57",
+      "parameter": "Maintenance CAPEX Shock - Upside",
+      "value": -0.002,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B58",
+      "parameter": "Covenant Watch Buffer",
+      "value": 0.1,
+      "unit": "x",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B59",
+      "parameter": "LLCR Minimum",
+      "value": 1.2,
+      "unit": "x",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B60",
+      "parameter": "PLCR Minimum",
+      "value": 1.3,
+      "unit": "x",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B61",
+      "parameter": "Grant Amount",
+      "value": 1198356,
+      "unit": "EUR",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B62",
+      "parameter": "Grant % of Eligible CAPEX",
+      "value": 0.07,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B63",
+      "parameter": "Eligible CAPEX % of Direct CAPEX",
+      "value": 0.7,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B64",
+      "parameter": "Non-Eligible CAPEX % of Direct CAPEX",
+      "value": "=1-B63",
+      "unit": "%",
+      "declared_status": "FORMULA"
+    },
+    {
+      "cell": "B65",
+      "parameter": "Grant Disbursement Start Year",
+      "value": 1,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B66",
+      "parameter": "Grant Disbursement End Year",
+      "value": 2,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B67",
+      "parameter": "Debt Drawdown Start Year",
+      "value": 1,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B68",
+      "parameter": "Debt Drawdown End Year",
+      "value": 2,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B69",
+      "parameter": "Equity First Loss Funding?",
+      "value": 1,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B70",
+      "parameter": "Equity Funding % of Non-Grant Residual",
+      "value": 1.0,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B71",
+      "parameter": "Construction Period Years",
+      "value": 2,
+      "unit": "years",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B72",
+      "parameter": "Initial DSRA Funding Required",
+      "value": 0,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B73",
+      "parameter": "Initial DSRA Funding Timing",
+      "value": 2,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B74",
+      "parameter": "Upfront Fees % of Debt",
+      "value": 0.01,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B75",
+      "parameter": "Commitment Fee % on Undrawn Debt",
+      "value": 0.005,
+      "unit": "%",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B76",
+      "parameter": "IDC Rate During Construction",
+      "value": "=B25",
+      "unit": "%",
+      "declared_status": "FORMULA"
+    },
+    {
+      "cell": "B77",
+      "parameter": "Grant Taxable?",
+      "value": 0,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B78",
+      "parameter": "Debt Funds IDC?",
+      "value": 1,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B79",
+      "parameter": "Equity Funds Fees?",
+      "value": 1,
+      "unit": "flag",
+      "declared_status": "ASSUMPTION"
+    },
+    {
+      "cell": "B80",
+      "parameter": "COD Year",
+      "value": 3,
+      "unit": "year",
+      "declared_status": "ASSUMPTION"
+    }
+  ],
+  "findings": {
+    "inputs_embedded_in_code": true,
+    "main_deletes_existing_output_directory": "/mnt/data/Titan_Grid_v52_Data_Room_Ready",
+    "zip_function_removes_existing_destination": true,
+    "pdf_export_calls_libreoffice": true
+  },
+  "source_execution": false,
+  "historical_execution": "NOT_ESTABLISHED",
+  "financial_correctness": "NOT_TESTED",
+  "authorship": "NOT_ESTABLISHED",
+  "review_scope": "Selected source sections and static input list"
+}
