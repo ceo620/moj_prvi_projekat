@@ -1,0 +1,659 @@
+{
+  "MODULE": "COMPLEXITY_ANALYZER",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T18:00:05.146551",
+  "TOTAL_RESULTS": 24,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 7,
+      "MAX_COMPLEXITY": 6,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "_collect_imports",
+          "LINE": 33,
+          "COMPLEXITY": 6,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 137,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "_qualified_name",
+          "LINE": 17,
+          "COMPLEXITY": 4,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "_collect_functions",
+          "LINE": 53,
+          "COMPLEXITY": 4,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "_collect_calls",
+          "LINE": 82,
+          "COMPLEXITY": 4,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "_collect_classes",
+          "LINE": 69,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "validate",
+          "LINE": 99,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 3,
+      "MAX_COMPLEXITY": 5,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "validate",
+          "LINE": 34,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 80,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "_name",
+          "LINE": 17,
+          "COMPLEXITY": 4,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 14,
+      "MAX_COMPLEXITY": 5,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "main",
+          "LINE": 171,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "validate",
+          "LINE": 98,
+          "COMPLEXITY": 4,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "_functions",
+          "LINE": 84,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "__init__",
+          "LINE": 16,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_If",
+          "LINE": 20,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_For",
+          "LINE": 25,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_AsyncFor",
+          "LINE": 30,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_While",
+          "LINE": 35,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_IfExp",
+          "LINE": 40,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_ExceptHandler",
+          "LINE": 45,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_BoolOp",
+          "LINE": 51,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_comprehension",
+          "LINE": 60,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "visit_Match",
+          "LINE": 65,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "calculate_complexity",
+          "LINE": 71,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config_loader.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 2,
+      "MAX_COMPLEXITY": 3,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "load_config",
+          "LINE": 16,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 30,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/__init__.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 0,
+      "MAX_COMPLEXITY": 0,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 3,
+      "MAX_COMPLEXITY": 2,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "run",
+          "LINE": 15,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "validate",
+          "LINE": 12,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "validate",
+          "LINE": 43,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 0,
+      "MAX_COMPLEXITY": 0,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 1,
+      "MAX_COMPLEXITY": 5,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "discover_python_files",
+          "LINE": 16,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 1,
+      "MAX_COMPLEXITY": 2,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "write_json",
+          "LINE": 6,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/logger.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 3,
+      "MAX_COMPLEXITY": 1,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "info",
+          "LINE": 8,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "warn",
+          "LINE": 12,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "error",
+          "LINE": 16,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/report.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 1,
+      "MAX_COMPLEXITY": 1,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "build_report",
+          "LINE": 5,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/utils.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 0,
+      "MAX_COMPLEXITY": 0,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 5,
+      "MAX_COMPLEXITY": 7,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "build_dot",
+          "LINE": 29,
+          "COMPLEXITY": 7,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 132,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "render_svg",
+          "LINE": 99,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "node_id",
+          "LINE": 19,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "dot_escape",
+          "LINE": 9,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 3,
+      "MAX_COMPLEXITY": 7,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "_collect_dependencies",
+          "LINE": 18,
+          "COMPLEXITY": 7,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 76,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "validate",
+          "LINE": 40,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 5,
+      "MAX_COMPLEXITY": 7,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "build_dot",
+          "LINE": 29,
+          "COMPLEXITY": 7,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 126,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "render_svg",
+          "LINE": 93,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "node_id",
+          "LINE": 19,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "dot_escape",
+          "LINE": 9,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/html_report_engine.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 2,
+      "MAX_COMPLEXITY": 3,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "build_html",
+          "LINE": 9,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 69,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 3,
+      "MAX_COMPLEXITY": 6,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "_collect_imports",
+          "LINE": 17,
+          "COMPLEXITY": 6,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 72,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "validate",
+          "LINE": 36,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 2,
+      "MAX_COMPLEXITY": 6,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "main",
+          "LINE": 64,
+          "COMPLEXITY": 6,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "validate",
+          "LINE": 16,
+          "COMPLEXITY": 4,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/markdown_report_engine.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 2,
+      "MAX_COMPLEXITY": 4,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "build_markdown",
+          "LINE": 7,
+          "COMPLEXITY": 4,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 51,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 3,
+      "MAX_COMPLEXITY": 4,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "build_sarif",
+          "LINE": 40,
+          "COMPLEXITY": 4,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "make_result",
+          "LINE": 13,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 86,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 2,
+      "MAX_COMPLEXITY": 5,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "main",
+          "LINE": 49,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "validate",
+          "LINE": 16,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 4,
+      "MAX_COMPLEXITY": 7,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "validate",
+          "LINE": 46,
+          "COMPLEXITY": 7,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 102,
+          "COMPLEXITY": 5,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "_top_level_definitions",
+          "LINE": 16,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "_referenced_names",
+          "LINE": 37,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/utils.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 4,
+      "MAX_COMPLEXITY": 3,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "sha256_file",
+          "LINE": 37,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "ensure_directory",
+          "LINE": 6,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "safe_read",
+          "LINE": 18,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "timestamp",
+          "LINE": 29,
+          "COMPLEXITY": 1,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+      "STATUS": "PASS",
+      "FUNCTION_COUNT": 3,
+      "MAX_COMPLEXITY": 3,
+      "HIGH_COMPLEXITY_COUNT": 0,
+      "FUNCTIONS": [
+        {
+          "NAME": "run_all",
+          "LINE": 29,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "load_reports",
+          "LINE": 43,
+          "COMPLEXITY": 3,
+          "ABOVE_THRESHOLD": false
+        },
+        {
+          "NAME": "main",
+          "LINE": 79,
+          "COMPLEXITY": 2,
+          "ABOVE_THRESHOLD": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "MODULE": "SECURITY_VALIDATOR",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T18:27:40.889596",
+  "TOTAL_RESULTS": 29,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 127
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 68
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 159
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config_loader.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/configuration_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 230
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/__init__.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/logger.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/report.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/utils.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 298
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 64
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 102
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/html_report_engine.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 60
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 52
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/markdown_report_engine.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/package_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 146
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 2,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [
+        {
+          "TYPE": "HTTP_URL_LITERAL",
+          "VALUE": "https://docs.oasis-open.org/sarif/sarif/",
+          "OFFSET": 79
+        },
+        {
+          "TYPE": "HTTP_URL_LITERAL",
+          "VALUE": "https://docs.oasis-open.org/sarif/",
+          "OFFSET": 1580
+        }
+      ],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/security_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 346
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 37
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 1,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": [
+        {
+          "TYPE": "BROAD_EXCEPTION",
+          "NAME": "Exception",
+          "LINE": 91
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/utils.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+      "STATUS": "PASS",
+      "FINDING_COUNT": 0,
+      "DANGEROUS_CALLS": [],
+      "SECRET_CANDIDATES": [],
+      "NETWORK_FINDINGS": [],
+      "HTTP_LITERALS": [],
+      "BROAD_EXCEPTIONS": []
+    }
+  ]
+}

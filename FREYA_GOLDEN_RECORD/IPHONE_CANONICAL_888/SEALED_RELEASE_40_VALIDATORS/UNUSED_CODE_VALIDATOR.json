@@ -1,0 +1,157 @@
+{
+  "MODULE": "UNUSED_CODE_VALIDATOR",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T17:36:28.659749",
+  "TOTAL_RESULTS": 18,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config_loader.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/__init__.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/logger.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/report.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/utils.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/utils.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 4,
+      "UNUSED_FUNCTION_CANDIDATES": [
+        "ensure_directory",
+        "safe_read",
+        "sha256_file",
+        "timestamp"
+      ],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+      "STATUS": "PASS",
+      "UNUSED_FUNCTION_COUNT": 0,
+      "UNUSED_FUNCTION_CANDIDATES": [],
+      "UNUSED_CLASS_COUNT": 0,
+      "UNUSED_CLASS_CANDIDATES": []
+    }
+  ]
+}

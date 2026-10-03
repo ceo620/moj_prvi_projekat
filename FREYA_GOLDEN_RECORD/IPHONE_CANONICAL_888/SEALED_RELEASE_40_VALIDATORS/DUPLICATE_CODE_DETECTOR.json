@@ -1,0 +1,1045 @@
+{
+  "MODULE": "DUPLICATE_CODE_DETECTOR",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T18:09:00.853376",
+  "TOTAL_RESULTS": 26,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 8,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "ASTValidator",
+          "TYPE": "ClassDef",
+          "LINE": 11,
+          "END_LINE": 134,
+          "STATEMENT_COUNT": 7,
+          "HASH": "164ca24e0cea8d88c2e1da3f282f2e2b6b483093d01b0d4394394c2e93bf5e44"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 137,
+          "END_LINE": 160,
+          "STATEMENT_COUNT": 10,
+          "HASH": "dce7402fd410f8cbcc6f8015686a914dd69dce7158bae32b22755f2797984425"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "_qualified_name",
+          "TYPE": "FunctionDef",
+          "LINE": 17,
+          "END_LINE": 29,
+          "STATEMENT_COUNT": 3,
+          "HASH": "f49469d39edcdc477f8201b9aa2be9ea752d21504ee4870099f0177c8f9708f1"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "_collect_imports",
+          "TYPE": "FunctionDef",
+          "LINE": 33,
+          "END_LINE": 49,
+          "STATEMENT_COUNT": 3,
+          "HASH": "eff086924eba7f6f3fa4f308551436079c6ef58f9dc8fd936b0da89266395ac2"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "_collect_functions",
+          "TYPE": "FunctionDef",
+          "LINE": 53,
+          "END_LINE": 65,
+          "STATEMENT_COUNT": 3,
+          "HASH": "9e8290990e368646f1dc934da52a24f7e248f3ac10095ceb84cb8a8141d57210"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "_collect_classes",
+          "TYPE": "FunctionDef",
+          "LINE": 69,
+          "END_LINE": 78,
+          "STATEMENT_COUNT": 3,
+          "HASH": "b558c268d7f43cf20e48dc5cdf1340043eeae1538b72c29ee85b5801733f1594"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "_collect_calls",
+          "TYPE": "FunctionDef",
+          "LINE": 82,
+          "END_LINE": 96,
+          "STATEMENT_COUNT": 3,
+          "HASH": "81a02977bed864fd22d010f66b55770de7525f3f72f5b9ff736e85668e3fbf69"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 99,
+          "END_LINE": 134,
+          "STATEMENT_COUNT": 2,
+          "HASH": "da3b7c6e84a17f3d4024e0f2a8e6688dc3690ca2c59d3ccb786bb67f3b234b58"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 4,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "NAME": "CallGraphValidator",
+          "TYPE": "ClassDef",
+          "LINE": 11,
+          "END_LINE": 76,
+          "STATEMENT_COUNT": 3,
+          "HASH": "0478c39be4558bb470a57deca5fcbd6b920c5aa1efa3f6a3be49d98a1fda3756"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 80,
+          "END_LINE": 103,
+          "STATEMENT_COUNT": 10,
+          "HASH": "1b30c778f65427b1afea5a2f880aefa90909c962e58d582124256eecda5c4f98"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "NAME": "_name",
+          "TYPE": "FunctionDef",
+          "LINE": 17,
+          "END_LINE": 31,
+          "STATEMENT_COUNT": 3,
+          "HASH": "bb1c475b564f1d221d3de4877dec27c4928bee67a716002f9d6911ed6147d9bc"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 34,
+          "END_LINE": 76,
+          "STATEMENT_COUNT": 2,
+          "HASH": "5a93e39450cd9d64a499120d75453a7cabf8fdc90ae7f44c9c0425bf89ec4e42"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 14,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "ComplexityVisitor",
+          "TYPE": "ClassDef",
+          "LINE": 14,
+          "END_LINE": 68,
+          "STATEMENT_COUNT": 10,
+          "HASH": "d00d9246d5f14a7c89c7ace5ec4ced163ca18bc7a0bd90e8f0b5e3188e91d50a"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "calculate_complexity",
+          "TYPE": "FunctionDef",
+          "LINE": 71,
+          "END_LINE": 76,
+          "STATEMENT_COUNT": 3,
+          "HASH": "7181280e5f40105e53392982ea36883c11fd5f15d2af9171482d53ce19f1de4d"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "ComplexityAnalyzer",
+          "TYPE": "ClassDef",
+          "LINE": 79,
+          "END_LINE": 167,
+          "STATEMENT_COUNT": 3,
+          "HASH": "a2c650aab91d0bf85f6aa30d78591e86df49426685399da921c67a9785a385e2"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 171,
+          "END_LINE": 217,
+          "STATEMENT_COUNT": 18,
+          "HASH": "4cccc48b0710cff952bf209932362b408d10cb9549694857ae1c652953a2db13"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_If",
+          "TYPE": "FunctionDef",
+          "LINE": 20,
+          "END_LINE": 23,
+          "STATEMENT_COUNT": 2,
+          "HASH": "ce05bd3187b1faa3dbf49911f5afed3806c3b1aa1596bf02c3dcedb447882fe7"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_For",
+          "TYPE": "FunctionDef",
+          "LINE": 25,
+          "END_LINE": 28,
+          "STATEMENT_COUNT": 2,
+          "HASH": "0cb3f63ed53549146435c0351c98c4900b3d8eb2c958f369487824f59bf91b80"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_AsyncFor",
+          "TYPE": "FunctionDef",
+          "LINE": 30,
+          "END_LINE": 33,
+          "STATEMENT_COUNT": 2,
+          "HASH": "eca5e9be88fa6a7d4d294307da281956e792e22a1ff2470e83c8e31ec19a462d"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_While",
+          "TYPE": "FunctionDef",
+          "LINE": 35,
+          "END_LINE": 38,
+          "STATEMENT_COUNT": 2,
+          "HASH": "a7165adfc6e0da4bba484763db719c313b8c4b3ad7ca95e68a09f83223d33bf2"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_IfExp",
+          "TYPE": "FunctionDef",
+          "LINE": 40,
+          "END_LINE": 43,
+          "STATEMENT_COUNT": 2,
+          "HASH": "5fc2adef6e11729d6ac301f90aa31e9187bb4e3ba5921ceaa6c4184adc7560e8"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_ExceptHandler",
+          "TYPE": "FunctionDef",
+          "LINE": 45,
+          "END_LINE": 48,
+          "STATEMENT_COUNT": 2,
+          "HASH": "0e4f2bc1631b13a63abcdc84e614fa0500360b794de72b48f4cf1914af3fb2ef"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_BoolOp",
+          "TYPE": "FunctionDef",
+          "LINE": 51,
+          "END_LINE": 58,
+          "STATEMENT_COUNT": 2,
+          "HASH": "95f5f1e6117634d8dadca4b39c30b70fe5d9ae310c1719c827793db9ad7a5c9d"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_comprehension",
+          "TYPE": "FunctionDef",
+          "LINE": 60,
+          "END_LINE": 63,
+          "STATEMENT_COUNT": 2,
+          "HASH": "006b72ff0558252da23a11c9f6d0baef81e9385611af45a24b1fcd8cfdbaa137"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "visit_Match",
+          "TYPE": "FunctionDef",
+          "LINE": 65,
+          "END_LINE": 68,
+          "STATEMENT_COUNT": 2,
+          "HASH": "c90bc37b128c57ea4d233456e0e0b0eaf0671e4b412713f96c0c21b5226ebd1b"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 98,
+          "END_LINE": 167,
+          "STATEMENT_COUNT": 2,
+          "HASH": "cdfdf4540c14b13eafff3fbb7b8fb14c5ac416f2ad65d83885b6c69d223df40e"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config_loader.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 2,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "NAME": "load_config",
+          "TYPE": "FunctionDef",
+          "LINE": 16,
+          "END_LINE": 27,
+          "STATEMENT_COUNT": 3,
+          "HASH": "23f4e442acd91fe761d6cd285d12c88dc71f2138e838aeb85a2d1e66ea82b7ce"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 30,
+          "END_LINE": 47,
+          "STATEMENT_COUNT": 8,
+          "HASH": "b3c621cedd940e657c7b7788e80abbe74cec5df35a1d21d9e698e43106f9a752"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/__init__.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 3,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "NAME": "BaseValidator",
+          "TYPE": "ClassDef",
+          "LINE": 8,
+          "END_LINE": 36,
+          "STATEMENT_COUNT": 3,
+          "HASH": "b92a3f771cfa350d1967a5410353044f0d97f120016e725756d874c6bfbca6a9"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "NAME": "DemoValidator",
+          "TYPE": "ClassDef",
+          "LINE": 39,
+          "END_LINE": 48,
+          "STATEMENT_COUNT": 2,
+          "HASH": "51fe4254edaac15f6b138d0fb1f3d9990c2211be5dc0773abc061b0418ee2402"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "NAME": "run",
+          "TYPE": "FunctionDef",
+          "LINE": 15,
+          "END_LINE": 36,
+          "STATEMENT_COUNT": 8,
+          "HASH": "2502f4037128b29cc7b9270b8942955b368a5327795c29d50a9bb6e5469a0164"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 1,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+          "NAME": "discover_python_files",
+          "TYPE": "FunctionDef",
+          "LINE": 16,
+          "END_LINE": 32,
+          "STATEMENT_COUNT": 6,
+          "HASH": "0638de3f44f05aa33ba1a4fbb2761db68012dc07cd2d43135471251441843ce0"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 1,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+          "NAME": "write_json",
+          "TYPE": "FunctionDef",
+          "LINE": 6,
+          "END_LINE": 15,
+          "STATEMENT_COUNT": 4,
+          "HASH": "76d7d1eb493305c38289001f693bed55a812a6c4181281a0023242b05ece944c"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/logger.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 1,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/core/logger.py",
+          "NAME": "Logger",
+          "TYPE": "ClassDef",
+          "LINE": 5,
+          "END_LINE": 17,
+          "STATEMENT_COUNT": 3,
+          "HASH": "c7aeebc310e5e990aa25ef7f03505a6eccf7f2acec204b3744f96873defbc8c9"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/report.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/utils.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 10,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "assigned_names",
+          "TYPE": "FunctionDef",
+          "LINE": 27,
+          "END_LINE": 37,
+          "STATEMENT_COUNT": 3,
+          "HASH": "391a1024f86413f813fdf74ea9688ed50bc2433793ddd65168a5cc41f1a568f7"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "loaded_names",
+          "TYPE": "FunctionDef",
+          "LINE": 40,
+          "END_LINE": 50,
+          "STATEMENT_COUNT": 3,
+          "HASH": "fc8b0b180571d5183a4c66c0082842baa4e7c9430e7570e1bd18fd0a964ea12e"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "unreachable_lines",
+          "TYPE": "FunctionDef",
+          "LINE": 53,
+          "END_LINE": 72,
+          "STATEMENT_COUNT": 4,
+          "HASH": "e0c3ffc39509cbb5a7a2048581c5c698946d963a2e92e2e223290c541b5fa869"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "collect_unreachable",
+          "TYPE": "FunctionDef",
+          "LINE": 75,
+          "END_LINE": 111,
+          "STATEMENT_COUNT": 3,
+          "HASH": "fd7cb90b21243da531c3a489e2d9d576e2e1c63923916a22b23f55358b6b77cd"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "collect_constant_dead_branches",
+          "TYPE": "FunctionDef",
+          "LINE": 114,
+          "END_LINE": 140,
+          "STATEMENT_COUNT": 3,
+          "HASH": "de187af45d7b549a2013f6e46d1bd7d6be018b033e47658b7152ac87078c7b11"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "collect_unused_locals",
+          "TYPE": "FunctionDef",
+          "LINE": 143,
+          "END_LINE": 190,
+          "STATEMENT_COUNT": 3,
+          "HASH": "cd6e7658f8081afcfad0841429ee4d003fcaf18835b24d7742c64c63735ba092"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "collect_unused_imports",
+          "TYPE": "FunctionDef",
+          "LINE": 193,
+          "END_LINE": 244,
+          "STATEMENT_COUNT": 4,
+          "HASH": "a593bd1c59d03f09ea930306203a8bdf21e43d7836895edcc13ada7ed9e66b1c"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "DeadCodeAnalyzer",
+          "TYPE": "ClassDef",
+          "LINE": 247,
+          "END_LINE": 306,
+          "STATEMENT_COUNT": 2,
+          "HASH": "364199ac5c70ff1a95791847b94882b480329561eaae0724dc838116eeb36e39"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 310,
+          "END_LINE": 379,
+          "STATEMENT_COUNT": 21,
+          "HASH": "6f4e1349764d6a5bff1195dab3096a6e15e7e19562a92f286a040e0b2350109c"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 251,
+          "END_LINE": 306,
+          "STATEMENT_COUNT": 2,
+          "HASH": "ba3f9e8a181dae825184fefcb84418ad0e10ce65e0fae03ff4626e489216b14c"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 4,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+          "NAME": "node_id",
+          "TYPE": "FunctionDef",
+          "LINE": 19,
+          "END_LINE": 26,
+          "STATEMENT_COUNT": 2,
+          "HASH": "92a68ec335cd1f3f36a8d5927783bf3cfc3591dfb9a07908ae32c256e3f28f97"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+          "NAME": "build_dot",
+          "TYPE": "FunctionDef",
+          "LINE": 29,
+          "END_LINE": 96,
+          "STATEMENT_COUNT": 7,
+          "HASH": "46479cdfe1be26af0e00128e833774b96639addb832c3d51ba731f0507a7467a"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+          "NAME": "render_svg",
+          "TYPE": "FunctionDef",
+          "LINE": 99,
+          "END_LINE": 129,
+          "STATEMENT_COUNT": 5,
+          "HASH": "8ad796d2e45f0f043c5a301a8c1949c008ec0a49ea370b216df4cfd25b2f7162"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 132,
+          "END_LINE": 188,
+          "STATEMENT_COUNT": 19,
+          "HASH": "c4140e981dd964219e287f1ec4460ed49d81140b4ab6a5e04e5f963e9d057c9f"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 4,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "NAME": "DependencyValidator",
+          "TYPE": "ClassDef",
+          "LINE": 12,
+          "END_LINE": 72,
+          "STATEMENT_COUNT": 3,
+          "HASH": "0c27be6cc891e66cbee3d6e7e389a78e1c70e5f25d2c4f11285d351309f44e06"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 76,
+          "END_LINE": 99,
+          "STATEMENT_COUNT": 10,
+          "HASH": "560dad5ae347e2e7a5e4cbd1b6aa852458831354e056ac51980bfe0448b18e9e"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "NAME": "_collect_dependencies",
+          "TYPE": "FunctionDef",
+          "LINE": 18,
+          "END_LINE": 37,
+          "STATEMENT_COUNT": 5,
+          "HASH": "d18bc3b657a5c67972235e17afb3722f1f15de569a7ffecc68de4d83f0123159"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 40,
+          "END_LINE": 72,
+          "STATEMENT_COUNT": 2,
+          "HASH": "fe9541d2e5aed3c90c42e4823342d08a3b43736eee755a78b181cac888fc8fee"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 6,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+          "NAME": "node_hash",
+          "TYPE": "FunctionDef",
+          "LINE": 25,
+          "END_LINE": 29,
+          "STATEMENT_COUNT": 2,
+          "HASH": "7f8de19c6ff1e504118952ecb6e68092e2717ec660682847f04f70e8366c6b7e"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+          "NAME": "collect_candidates",
+          "TYPE": "FunctionDef",
+          "LINE": 32,
+          "END_LINE": 67,
+          "STATEMENT_COUNT": 3,
+          "HASH": "4b4701c5fd27d69b4a5d46aa1986f80d940c7922e74a7ae9f323b9e34780b72c"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+          "NAME": "DuplicateCodeDetector",
+          "TYPE": "ClassDef",
+          "LINE": 70,
+          "END_LINE": 110,
+          "STATEMENT_COUNT": 2,
+          "HASH": "6598ae884df5f1975635ddb5609195e8b0499eabc174b679d1c4cf73d06a0755"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+          "NAME": "build_duplicate_groups",
+          "TYPE": "FunctionDef",
+          "LINE": 113,
+          "END_LINE": 155,
+          "STATEMENT_COUNT": 6,
+          "HASH": "ada914c6175fb19416a8a61e943a4aae4985f9cf6c77600457a8db593bc0ffcb"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 159,
+          "END_LINE": 229,
+          "STATEMENT_COUNT": 21,
+          "HASH": "8a9a42d0e6d907a7a9ae30c474cadc8141640e19d0875ccfa78e23d0ad688dcd"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 74,
+          "END_LINE": 110,
+          "STATEMENT_COUNT": 2,
+          "HASH": "9f41564245018a6de794732645d955bcebad2058c11b546ae587001ea86366d3"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 4,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+          "NAME": "node_id",
+          "TYPE": "FunctionDef",
+          "LINE": 19,
+          "END_LINE": 26,
+          "STATEMENT_COUNT": 2,
+          "HASH": "92a68ec335cd1f3f36a8d5927783bf3cfc3591dfb9a07908ae32c256e3f28f97"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+          "NAME": "build_dot",
+          "TYPE": "FunctionDef",
+          "LINE": 29,
+          "END_LINE": 90,
+          "STATEMENT_COUNT": 7,
+          "HASH": "af5018ed13f5c5d602e95192fe3c5368cc3ec4ffa22eea04942862e2f10a5fca"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+          "NAME": "render_svg",
+          "TYPE": "FunctionDef",
+          "LINE": 93,
+          "END_LINE": 123,
+          "STATEMENT_COUNT": 5,
+          "HASH": "8ad796d2e45f0f043c5a301a8c1949c008ec0a49ea370b216df4cfd25b2f7162"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 126,
+          "END_LINE": 179,
+          "STATEMENT_COUNT": 19,
+          "HASH": "b996edf2d8a77f1f10e54015cd9be0175e8e403361f963291c2793491adf6f44"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/html_report_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 2,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/html_report_engine.py",
+          "NAME": "build_html",
+          "TYPE": "FunctionDef",
+          "LINE": 9,
+          "END_LINE": 66,
+          "STATEMENT_COUNT": 10,
+          "HASH": "7c8cf0b48d509e7afbe52b96c33553d11307046e6bc776eee754a52d792299f9"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/html_report_engine.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 69,
+          "END_LINE": 92,
+          "STATEMENT_COUNT": 7,
+          "HASH": "5638d0c681b0fb02b2eeac406ae86c06e54c9a4b07e1069d5d79ad3819ee97b5"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 4,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "NAME": "ImportValidator",
+          "TYPE": "ClassDef",
+          "LINE": 11,
+          "END_LINE": 68,
+          "STATEMENT_COUNT": 3,
+          "HASH": "a7150b2e209ed63e690ed7d69296fd4a29712449ea92b97ff2ace7af0c7a6404"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 72,
+          "END_LINE": 95,
+          "STATEMENT_COUNT": 10,
+          "HASH": "2ed438cf0984eab17d415ec5a754a55654421ad7e04172e94df7797cc0e48797"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "NAME": "_collect_imports",
+          "TYPE": "FunctionDef",
+          "LINE": 17,
+          "END_LINE": 33,
+          "STATEMENT_COUNT": 3,
+          "HASH": "eff086924eba7f6f3fa4f308551436079c6ef58f9dc8fd936b0da89266395ac2"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 36,
+          "END_LINE": 68,
+          "STATEMENT_COUNT": 2,
+          "HASH": "e9061c74020efffcafe4e8633d9c76ba6a71044892b3e80933ae8e5750937a40"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 3,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "NAME": "ManifestValidator",
+          "TYPE": "ClassDef",
+          "LINE": 11,
+          "END_LINE": 60,
+          "STATEMENT_COUNT": 2,
+          "HASH": "cea768f79875f81008bc58b7bf225f95137bc1514f998e21c6c32550646a6e31"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 64,
+          "END_LINE": 94,
+          "STATEMENT_COUNT": 12,
+          "HASH": "1e14dfad819da2812b8599a624d99eca01021235b8283cc257e1c0a667da85a3"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 16,
+          "END_LINE": 60,
+          "STATEMENT_COUNT": 3,
+          "HASH": "8a605fc55f427f3072c1747329fd0cb81fb7d96c5e238a437061551fffb09965"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/markdown_report_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 2,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/markdown_report_engine.py",
+          "NAME": "build_markdown",
+          "TYPE": "FunctionDef",
+          "LINE": 7,
+          "END_LINE": 48,
+          "STATEMENT_COUNT": 7,
+          "HASH": "fe175bb17db6c96e1f783074ff66ed36e303de8d9e72811a813ff520e2aedcc4"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/markdown_report_engine.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 51,
+          "END_LINE": 76,
+          "STATEMENT_COUNT": 8,
+          "HASH": "81f9f96121f9b4b8fc8386904c05aa363152ff5be2cb6741a99f2391c09799c7"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 3,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+          "NAME": "make_result",
+          "TYPE": "FunctionDef",
+          "LINE": 13,
+          "END_LINE": 37,
+          "STATEMENT_COUNT": 3,
+          "HASH": "3a12824fed702aa239d68a6ea5e52c1e5bfad4ef390aa390186e31f7d87dca1f"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+          "NAME": "build_sarif",
+          "TYPE": "FunctionDef",
+          "LINE": 40,
+          "END_LINE": 83,
+          "STATEMENT_COUNT": 4,
+          "HASH": "d9bc3073452304df1a47d7604954291ee054203e19d7f777dfc5d8d63c46e1bd"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 86,
+          "END_LINE": 121,
+          "STATEMENT_COUNT": 12,
+          "HASH": "31286cd051f97edf92aeea36335add77336e486e881a1f9efe33153be6702297"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 3,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "NAME": "SyntaxValidator",
+          "TYPE": "ClassDef",
+          "LINE": 11,
+          "END_LINE": 45,
+          "STATEMENT_COUNT": 2,
+          "HASH": "e206b9da7aaa47db994fefb83e4577ed7080246afefc26e676c6e78fcdae23f3"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 49,
+          "END_LINE": 72,
+          "STATEMENT_COUNT": 10,
+          "HASH": "9079c5e69320fa2d2dda714b2865d0b20beab29b06619667f031db1fede93941"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 16,
+          "END_LINE": 45,
+          "STATEMENT_COUNT": 2,
+          "HASH": "5ca0ff11fa7746eb80c633f00e0d86542918ad46e493f3ce7f55fdfc606b3115"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 4,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "NAME": "UnusedCodeValidator",
+          "TYPE": "ClassDef",
+          "LINE": 11,
+          "END_LINE": 98,
+          "STATEMENT_COUNT": 4,
+          "HASH": "7974d88589f539ae1989ee645577020ebff955bbce22eab01910469bced28a80"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 102,
+          "END_LINE": 137,
+          "STATEMENT_COUNT": 14,
+          "HASH": "76ce2a0686be4a0f9a49907144d3b80b9d79bda37dc420f458f4416c0b55bfc6"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "NAME": "_top_level_definitions",
+          "TYPE": "FunctionDef",
+          "LINE": 16,
+          "END_LINE": 33,
+          "STATEMENT_COUNT": 3,
+          "HASH": "2fbfcb6b7c3f96b7a2421b963541e49743c54d9c5d3575909c125b11dee040db"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "NAME": "validate",
+          "TYPE": "FunctionDef",
+          "LINE": 46,
+          "END_LINE": 98,
+          "STATEMENT_COUNT": 2,
+          "HASH": "7d2f449627103d9131782baf41a4f366f777e94384e5f8bb0e76a2f68b102088"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/utils.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 2,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "NAME": "ensure_directory",
+          "TYPE": "FunctionDef",
+          "LINE": 6,
+          "END_LINE": 15,
+          "STATEMENT_COUNT": 3,
+          "HASH": "6574204ae071fecb0b852d3a88763c55d3fcd1830cd3c175f8abb42f88470924"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "NAME": "sha256_file",
+          "TYPE": "FunctionDef",
+          "LINE": 37,
+          "END_LINE": 52,
+          "STATEMENT_COUNT": 3,
+          "HASH": "3c0d1c9bad528d8b5a2deac8aa7cc7bd870708dde43cd259a487be8b5669bd59"
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 2,
+      "CANDIDATES": [
+        {
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "NAME": "load_reports",
+          "TYPE": "FunctionDef",
+          "LINE": 43,
+          "END_LINE": 76,
+          "STATEMENT_COUNT": 5,
+          "HASH": "cec5f77b4892252e3c8326bd7c779f648d82ef4d39f8db2fa7c43d7cda9d0964"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "NAME": "main",
+          "TYPE": "FunctionDef",
+          "LINE": 79,
+          "END_LINE": 105,
+          "STATEMENT_COUNT": 12,
+          "HASH": "1fe2a8a5f5b3d408e2a43a97e8816027d5a4aa65da2e0d201c25aa955055b0b3"
+        }
+      ]
+    }
+  ],
+  "DUPLICATE_GROUP_COUNT": 3,
+  "DUPLICATE_OCCURRENCE_COUNT": 6,
+  "DUPLICATE_GROUPS": [
+    {
+      "HASH": "8ad796d2e45f0f043c5a301a8c1949c008ec0a49ea370b216df4cfd25b2f7162",
+      "OCCURRENCES": 2,
+      "MEMBERS": [
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+          "NAME": "render_svg",
+          "TYPE": "FunctionDef",
+          "LINE": 99,
+          "END_LINE": 129,
+          "STATEMENT_COUNT": 5,
+          "HASH": "8ad796d2e45f0f043c5a301a8c1949c008ec0a49ea370b216df4cfd25b2f7162"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+          "NAME": "render_svg",
+          "TYPE": "FunctionDef",
+          "LINE": 93,
+          "END_LINE": 123,
+          "STATEMENT_COUNT": 5,
+          "HASH": "8ad796d2e45f0f043c5a301a8c1949c008ec0a49ea370b216df4cfd25b2f7162"
+        }
+      ]
+    },
+    {
+      "HASH": "92a68ec335cd1f3f36a8d5927783bf3cfc3591dfb9a07908ae32c256e3f28f97",
+      "OCCURRENCES": 2,
+      "MEMBERS": [
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+          "NAME": "node_id",
+          "TYPE": "FunctionDef",
+          "LINE": 19,
+          "END_LINE": 26,
+          "STATEMENT_COUNT": 2,
+          "HASH": "92a68ec335cd1f3f36a8d5927783bf3cfc3591dfb9a07908ae32c256e3f28f97"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+          "NAME": "node_id",
+          "TYPE": "FunctionDef",
+          "LINE": 19,
+          "END_LINE": 26,
+          "STATEMENT_COUNT": 2,
+          "HASH": "92a68ec335cd1f3f36a8d5927783bf3cfc3591dfb9a07908ae32c256e3f28f97"
+        }
+      ]
+    },
+    {
+      "HASH": "eff086924eba7f6f3fa4f308551436079c6ef58f9dc8fd936b0da89266395ac2",
+      "OCCURRENCES": 2,
+      "MEMBERS": [
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "NAME": "_collect_imports",
+          "TYPE": "FunctionDef",
+          "LINE": 33,
+          "END_LINE": 49,
+          "STATEMENT_COUNT": 3,
+          "HASH": "eff086924eba7f6f3fa4f308551436079c6ef58f9dc8fd936b0da89266395ac2"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "NAME": "_collect_imports",
+          "TYPE": "FunctionDef",
+          "LINE": 17,
+          "END_LINE": 33,
+          "STATEMENT_COUNT": 3,
+          "HASH": "eff086924eba7f6f3fa4f308551436079c6ef58f9dc8fd936b0da89266395ac2"
+        }
+      ]
+    }
+  ]
+}

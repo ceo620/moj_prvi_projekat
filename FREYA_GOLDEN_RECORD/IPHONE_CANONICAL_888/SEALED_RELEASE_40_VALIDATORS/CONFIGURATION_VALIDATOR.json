@@ -1,0 +1,41 @@
+{
+  "MODULE": "CONFIGURATION_VALIDATOR",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T18:22:53.704706",
+  "TOTAL_RESULTS": 3,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/AST_VALIDATION_REPORT.json",
+      "STATUS": "PASS",
+      "FORMAT": "JSON",
+      "PARSER": "JSON",
+      "ROOT_TYPE": "list",
+      "MISSING_KEYS": [],
+      "TYPE_ERRORS": [],
+      "POLICY_ERRORS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config/validator_config.json",
+      "STATUS": "PASS",
+      "FORMAT": "JSON",
+      "PARSER": "JSON",
+      "ROOT_TYPE": "dict",
+      "MISSING_KEYS": [],
+      "TYPE_ERRORS": [],
+      "POLICY_ERRORS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validator_config.json",
+      "STATUS": "PASS",
+      "FORMAT": "JSON",
+      "PARSER": "JSON",
+      "ROOT_TYPE": "dict",
+      "MISSING_KEYS": [],
+      "TYPE_ERRORS": [],
+      "POLICY_ERRORS": []
+    }
+  ],
+  "CONFIG_FILE_COUNT": 3,
+  "ERROR_COUNT": 0,
+  "REVIEW_REQUIRED_COUNT": 0
+}

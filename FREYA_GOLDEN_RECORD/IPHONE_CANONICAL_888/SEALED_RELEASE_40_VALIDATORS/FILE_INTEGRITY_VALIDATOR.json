@@ -1,0 +1,638 @@
+{
+  "MODULE": "FILE_INTEGRITY_VALIDATOR",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T18:43:45.662330",
+  "TOTAL_RESULTS": 50,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/.gitignore",
+      "RELATIVE_PATH": ".gitignore",
+      "STATUS": "PASS",
+      "SHA256": "70813dece82a2a5ae1b2bc4f380bc9fc425a6c615454c063444817a7e4159847",
+      "SIZE_BYTES": 42,
+      "BYTES_READ": 42,
+      "MTIME_NS": 1785329048776218408,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/AST_VALIDATION_REPORT.json",
+      "RELATIVE_PATH": "AST_VALIDATION_REPORT.json",
+      "STATUS": "PASS",
+      "SHA256": "6de3df5f8e1439a33dc6865a01642ca4b0c711d0a201a61e87400859df2362d3",
+      "SIZE_BYTES": 403,
+      "BYTES_READ": 403,
+      "MTIME_NS": 1785328232923965888,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/LICENSE",
+      "RELATIVE_PATH": "LICENSE",
+      "STATUS": "PASS",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0,
+      "BYTES_READ": 0,
+      "MTIME_NS": 1785329037231415000,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/README.md",
+      "RELATIVE_PATH": "README.md",
+      "STATUS": "PASS",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0,
+      "BYTES_READ": 0,
+      "MTIME_NS": 1785329023096241000,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/VERSION",
+      "RELATIVE_PATH": "VERSION",
+      "STATUS": "PASS",
+      "SHA256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
+      "SIZE_BYTES": 6,
+      "BYTES_READ": 6,
+      "MTIME_NS": 1785329030130872590,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py",
+      "RELATIVE_PATH": "ast_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "7278b141dd6725f4047bf51c50a293ddd8ce4290cd1ed98ea376ca3d8157467f",
+      "SIZE_BYTES": 3453,
+      "BYTES_READ": 3453,
+      "MTIME_NS": 1785341343074377642,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py.bak",
+      "RELATIVE_PATH": "ast_validator.py.bak",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785340978213756112,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/backups/ast_validator.py.20260729T160044Z.original",
+      "RELATIVE_PATH": "backups/ast_validator.py.20260729T160044Z.original",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785328570589386478,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+      "RELATIVE_PATH": "call_graph_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "585b081ca009a2dc24be1bc471d7b154e2d4f34e2306d1b13e231914ed4840f0",
+      "SIZE_BYTES": 2170,
+      "BYTES_READ": 2170,
+      "MTIME_NS": 1785343715426846647,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py.bak",
+      "RELATIVE_PATH": "call_graph_validator.py.bak",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785343622198500972,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+      "RELATIVE_PATH": "complexity_analyzer.py",
+      "STATUS": "PASS",
+      "SHA256": "fab682d439ce11dd966a9a1e1493a0d93d22501a35e3d2bf1698947fcbc2df71",
+      "SIZE_BYTES": 4707,
+      "BYTES_READ": 4707,
+      "MTIME_NS": 1785347991486246156,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config/validator_config.json",
+      "RELATIVE_PATH": "config/validator_config.json",
+      "STATUS": "PASS",
+      "SHA256": "d946dae26a93e0f57faf09b46a2e26adf094d9c3797081b376da4867a7969e10",
+      "SIZE_BYTES": 278,
+      "BYTES_READ": 278,
+      "MTIME_NS": 1785349371598722753,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config/validator_config.json.empty.bak",
+      "RELATIVE_PATH": "config/validator_config.json.empty.bak",
+      "STATUS": "PASS",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0,
+      "BYTES_READ": 0,
+      "MTIME_NS": 1785349371587341222,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config_loader.py",
+      "RELATIVE_PATH": "config_loader.py",
+      "STATUS": "PASS",
+      "SHA256": "bc311f73a0ceacc4569bd5c297754b2c1aff8c2b492c75be0cb08134b1ef5549",
+      "SIZE_BYTES": 993,
+      "BYTES_READ": 993,
+      "MTIME_NS": 1785341687308212560,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/configuration_validator.py",
+      "RELATIVE_PATH": "configuration_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "d92ddb2959531e8393e4d5ff658771fee511142f0a72438a1950fa6d8cbabcb5",
+      "SIZE_BYTES": 7063,
+      "BYTES_READ": 7063,
+      "MTIME_NS": 1785349165983312858,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/__init__.py",
+      "RELATIVE_PATH": "core/__init__.py",
+      "STATUS": "PASS",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0,
+      "BYTES_READ": 0,
+      "MTIME_NS": 1785328975750241000,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+      "RELATIVE_PATH": "core/base_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "b84298faac2e00c494c6babb97925866587c2543b5a7d3fedb129c66b58046d0",
+      "SIZE_BYTES": 1002,
+      "BYTES_READ": 1002,
+      "MTIME_NS": 1785329383127275000,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+      "RELATIVE_PATH": "core/config_loader.py",
+      "STATUS": "PASS",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0,
+      "BYTES_READ": 0,
+      "MTIME_NS": 1785328957326208000,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+      "RELATIVE_PATH": "core/file_discovery.py",
+      "STATUS": "PASS",
+      "SHA256": "ead510f702b07213ef67114cec83d5e58b856e427b2e6080dd5d4812af5b5cec",
+      "SIZE_BYTES": 943,
+      "BYTES_READ": 943,
+      "MTIME_NS": 1785329128046144349,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+      "RELATIVE_PATH": "core/json_writer.py",
+      "STATUS": "PASS",
+      "SHA256": "f5cb2a903501dc33ec7d96e0db510e428b6b33d6b008759bfdbb963d75fda638",
+      "SIZE_BYTES": 655,
+      "BYTES_READ": 655,
+      "MTIME_NS": 1785329173436282013,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/logger.py",
+      "RELATIVE_PATH": "core/logger.py",
+      "STATUS": "PASS",
+      "SHA256": "c5642b06739282d1ce04def03cfd3f1e38b44e1bab635f55b11ae0b93d16e48a",
+      "SIZE_BYTES": 510,
+      "BYTES_READ": 510,
+      "MTIME_NS": 1785329287480208298,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/report.py",
+      "RELATIVE_PATH": "core/report.py",
+      "STATUS": "PASS",
+      "SHA256": "1d58a7446813b438851f5e07001e6e81b5f7e2148be564b008f9fcf0739e2686",
+      "SIZE_BYTES": 548,
+      "BYTES_READ": 548,
+      "MTIME_NS": 1785329338236731203,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/utils.py",
+      "RELATIVE_PATH": "core/utils.py",
+      "STATUS": "PASS",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0,
+      "BYTES_READ": 0,
+      "MTIME_NS": 1785328965379217000,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+      "RELATIVE_PATH": "dead_code_analyzer.py",
+      "STATUS": "PASS",
+      "SHA256": "830353b1be3dd7056f09e420b60155676f83142696aad32aaaf37acb093bb385",
+      "SIZE_BYTES": 8178,
+      "BYTES_READ": 8178,
+      "MTIME_NS": 1785348243551316154,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+      "RELATIVE_PATH": "dependency_graph_engine.py",
+      "STATUS": "PASS",
+      "SHA256": "260b0638d1c98f5d31a6a0602874be891a876e74d47154ded10b6a0cbd766f0f",
+      "SIZE_BYTES": 4085,
+      "BYTES_READ": 4085,
+      "MTIME_NS": 1785347717326359212,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+      "RELATIVE_PATH": "dependency_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "24ab28ad78eeb8f924fe6ab8b2f6ce9a47b24a8471832eb3dc14130d8957fd91",
+      "SIZE_BYTES": 2181,
+      "BYTES_READ": 2181,
+      "MTIME_NS": 1785342947411996057,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py.bak",
+      "RELATIVE_PATH": "dependency_validator.py.bak",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785342762313278884,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+      "RELATIVE_PATH": "duplicate_code_detector.py",
+      "STATUS": "PASS",
+      "SHA256": "3dffdd13f5f5301c74cb701e7e17a591b692a7d3341bf0b6adacba8edd261862",
+      "SIZE_BYTES": 4618,
+      "BYTES_READ": 4618,
+      "MTIME_NS": 1785348525610098481,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/file_integrity_validator.py",
+      "RELATIVE_PATH": "file_integrity_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "234f2380076528a6d33e171ec2abccda5244a482368292fbe2a9554454352cb0",
+      "SIZE_BYTES": 6199,
+      "BYTES_READ": 6199,
+      "MTIME_NS": 1785350621958718765,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/file_integrity_validator.py.batch023_run_fix.bak",
+      "RELATIVE_PATH": "file_integrity_validator.py.batch023_run_fix.bak",
+      "STATUS": "PASS",
+      "SHA256": "d7d17e2dac9e490fba003de25500aaf2ec28c60d522faa471d1466257ab435c8",
+      "SIZE_BYTES": 6199,
+      "BYTES_READ": 6199,
+      "MTIME_NS": 1785350621957510868,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/file_integrity_validator.py.broken.bak",
+      "RELATIVE_PATH": "file_integrity_validator.py.broken.bak",
+      "STATUS": "PASS",
+      "SHA256": "d7d17e2dac9e490fba003de25500aaf2ec28c60d522faa471d1466257ab435c8",
+      "SIZE_BYTES": 6199,
+      "BYTES_READ": 6199,
+      "MTIME_NS": 1785350314789434125,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+      "RELATIVE_PATH": "graphviz_call_graph_engine.py",
+      "STATUS": "PASS",
+      "SHA256": "d8b74f8440483e077e6d1a39e08146d8b01be6d2011521c8e1f5c104f2a96835",
+      "SIZE_BYTES": 3856,
+      "BYTES_READ": 3856,
+      "MTIME_NS": 1785347513972283636,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/html_report_engine.py",
+      "RELATIVE_PATH": "html_report_engine.py",
+      "STATUS": "PASS",
+      "SHA256": "fff5f86c0cc3a2521f764d011b718c1d7b07bc407b6b5f3a1b5bbf252f54dc54",
+      "SIZE_BYTES": 1761,
+      "BYTES_READ": 1761,
+      "MTIME_NS": 1785346763249562434,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py",
+      "RELATIVE_PATH": "import_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "940b47183006db4ffbb8279f9543f20d71c61a7ce447781680d567739c14cf0f",
+      "SIZE_BYTES": 1998,
+      "BYTES_READ": 1998,
+      "MTIME_NS": 1785342586462857445,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py.bak",
+      "RELATIVE_PATH": "import_validator.py.bak",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785342147754450192,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+      "RELATIVE_PATH": "manifest_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "c09e54ec9878fa3d3a7f3461b8fcc2f3a5e8c5762e71a3552264eba07daaff81",
+      "SIZE_BYTES": 2192,
+      "BYTES_READ": 2192,
+      "MTIME_NS": 1785343904205095712,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py.bak",
+      "RELATIVE_PATH": "manifest_validator.py.bak",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785343823543941737,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/markdown_report_engine.py",
+      "RELATIVE_PATH": "markdown_report_engine.py",
+      "STATUS": "PASS",
+      "SHA256": "07d373e4b1f3f198bc6a4b1432ea19eb7c3f24d6e968687c7dd57cec465d21a5",
+      "SIZE_BYTES": 1621,
+      "BYTES_READ": 1621,
+      "MTIME_NS": 1785347034916792045,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/package_validator.py",
+      "RELATIVE_PATH": "package_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "1000d4e3ed4122f6de6926a244d2716f9662d32b5d6989a1f13a40667a288c2a",
+      "SIZE_BYTES": 5504,
+      "BYTES_READ": 5504,
+      "MTIME_NS": 1785348857654504582,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+      "RELATIVE_PATH": "sarif_export_engine.py",
+      "STATUS": "PASS",
+      "SHA256": "b03ea5567599576ce2df7b10b9a7cea42a5afda80396058fdad7dab7524d1103",
+      "SIZE_BYTES": 2530,
+      "BYTES_READ": 2530,
+      "MTIME_NS": 1785347193671142634,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/secret_exposure_validator.py",
+      "RELATIVE_PATH": "secret_exposure_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "751cb8e6e2cd969edf1881972b29c3a4c58b37a512085bdcdbfbd978832b42c4",
+      "SIZE_BYTES": 7890,
+      "BYTES_READ": 7890,
+      "MTIME_NS": 1785349941119653134,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/security_validator.py",
+      "RELATIVE_PATH": "security_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "70ba3dbb4c0a88a0b69fd408ce4fe8d9c6004084e995cccd291a35f3f75a829d",
+      "SIZE_BYTES": 9880,
+      "BYTES_READ": 9880,
+      "MTIME_NS": 1785349639752116929,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+      "RELATIVE_PATH": "syntax_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "d31c1624a0226dc002a0fbeb0d1083e708d2cde4bdf430dc2d20e63641c957f2",
+      "SIZE_BYTES": 1496,
+      "BYTES_READ": 1496,
+      "MTIME_NS": 1785343397074761123,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py.bak",
+      "RELATIVE_PATH": "syntax_validator.py.bak",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785343278914553080,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+      "RELATIVE_PATH": "unused_code_validator.py",
+      "STATUS": "PASS",
+      "SHA256": "1cb60322e60b580628640edb3f4bb6270622c3566fa4051d44fb625716ea0027",
+      "SIZE_BYTES": 3378,
+      "BYTES_READ": 3378,
+      "MTIME_NS": 1785346305879094239,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py.bak",
+      "RELATIVE_PATH": "unused_code_validator.py.bak",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785346256816556597,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/utils.py",
+      "RELATIVE_PATH": "utils.py",
+      "STATUS": "PASS",
+      "SHA256": "04a4a2f40f1f4d111fe17b58b52347d6d67bcaeacf4535f57ad9e6cd01f6d8ae",
+      "SIZE_BYTES": 654,
+      "BYTES_READ": 654,
+      "MTIME_NS": 1785341967643421380,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+      "RELATIVE_PATH": "validation_aggregator.py",
+      "STATUS": "PASS",
+      "SHA256": "f88c2646b7d51bc14a7a6bea00cfa03f06b3e83aa4fe74d2ae70a05f60ca91f3",
+      "SIZE_BYTES": 2111,
+      "BYTES_READ": 2111,
+      "MTIME_NS": 1785346569296742635,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py.bak",
+      "RELATIVE_PATH": "validation_aggregator.py.bak",
+      "STATUS": "PASS",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718,
+      "BYTES_READ": 1718,
+      "MTIME_NS": 1785346508825397069,
+      "CHANGED_DURING_READ": false
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validator_config.json",
+      "RELATIVE_PATH": "validator_config.json",
+      "STATUS": "PASS",
+      "SHA256": "d946dae26a93e0f57faf09b46a2e26adf094d9c3797081b376da4867a7969e10",
+      "SIZE_BYTES": 278,
+      "BYTES_READ": 278,
+      "MTIME_NS": 1785341520420482450,
+      "CHANGED_DURING_READ": false
+    }
+  ],
+  "ROOT": "/root/40_VALIDATORS",
+  "FILE_COUNT": 50,
+  "TOTAL_BYTES": 121043,
+  "ERROR_COUNT": 0,
+  "CHANGED_DURING_READ_COUNT": 0,
+  "DUPLICATE_GROUP_COUNT": 4,
+  "DUPLICATE_OCCURRENCE_COUNT": 19,
+  "DUPLICATE_GROUPS": [
+    {
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "OCCURRENCES": 9,
+      "FILES": [
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py.bak",
+          "RELATIVE_PATH": "ast_validator.py.bak",
+          "SIZE_BYTES": 1718
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/backups/ast_validator.py.20260729T160044Z.original",
+          "RELATIVE_PATH": "backups/ast_validator.py.20260729T160044Z.original",
+          "SIZE_BYTES": 1718
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py.bak",
+          "RELATIVE_PATH": "call_graph_validator.py.bak",
+          "SIZE_BYTES": 1718
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py.bak",
+          "RELATIVE_PATH": "dependency_validator.py.bak",
+          "SIZE_BYTES": 1718
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py.bak",
+          "RELATIVE_PATH": "import_validator.py.bak",
+          "SIZE_BYTES": 1718
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py.bak",
+          "RELATIVE_PATH": "manifest_validator.py.bak",
+          "SIZE_BYTES": 1718
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py.bak",
+          "RELATIVE_PATH": "syntax_validator.py.bak",
+          "SIZE_BYTES": 1718
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py.bak",
+          "RELATIVE_PATH": "unused_code_validator.py.bak",
+          "SIZE_BYTES": 1718
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py.bak",
+          "RELATIVE_PATH": "validation_aggregator.py.bak",
+          "SIZE_BYTES": 1718
+        }
+      ]
+    },
+    {
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "OCCURRENCES": 6,
+      "FILES": [
+        {
+          "FILE": "/root/40_VALIDATORS/LICENSE",
+          "RELATIVE_PATH": "LICENSE",
+          "SIZE_BYTES": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/README.md",
+          "RELATIVE_PATH": "README.md",
+          "SIZE_BYTES": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/config/validator_config.json.empty.bak",
+          "RELATIVE_PATH": "config/validator_config.json.empty.bak",
+          "SIZE_BYTES": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/__init__.py",
+          "RELATIVE_PATH": "core/__init__.py",
+          "SIZE_BYTES": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+          "RELATIVE_PATH": "core/config_loader.py",
+          "SIZE_BYTES": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/utils.py",
+          "RELATIVE_PATH": "core/utils.py",
+          "SIZE_BYTES": 0
+        }
+      ]
+    },
+    {
+      "SHA256": "d7d17e2dac9e490fba003de25500aaf2ec28c60d522faa471d1466257ab435c8",
+      "OCCURRENCES": 2,
+      "FILES": [
+        {
+          "FILE": "/root/40_VALIDATORS/file_integrity_validator.py.batch023_run_fix.bak",
+          "RELATIVE_PATH": "file_integrity_validator.py.batch023_run_fix.bak",
+          "SIZE_BYTES": 6199
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/file_integrity_validator.py.broken.bak",
+          "RELATIVE_PATH": "file_integrity_validator.py.broken.bak",
+          "SIZE_BYTES": 6199
+        }
+      ]
+    },
+    {
+      "SHA256": "d946dae26a93e0f57faf09b46a2e26adf094d9c3797081b376da4867a7969e10",
+      "OCCURRENCES": 2,
+      "FILES": [
+        {
+          "FILE": "/root/40_VALIDATORS/config/validator_config.json",
+          "RELATIVE_PATH": "config/validator_config.json",
+          "SIZE_BYTES": 278
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/validator_config.json",
+          "RELATIVE_PATH": "validator_config.json",
+          "SIZE_BYTES": 278
+        }
+      ]
+    }
+  ],
+  "HASH_ALGORITHM": "SHA256",
+  "MODE": "READ_ONLY"
+}

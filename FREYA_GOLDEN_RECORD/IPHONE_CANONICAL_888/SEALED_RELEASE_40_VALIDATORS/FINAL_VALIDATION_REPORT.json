@@ -1,0 +1,1554 @@
+{
+  "MODULE": "FINAL_VALIDATION",
+  "REPORTS": [
+    {
+      "GENERATED_UTC": "2026-07-29T17:36:20.726027",
+      "MODULE": "AST_VALIDATOR",
+      "RESULTS": [
+        {
+          "CALLS": [
+            "ASTValidator",
+            "ASTValidator._qualified_name",
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "ast.parse",
+            "ast.walk",
+            "calls.add",
+            "classes.add",
+            "cls._qualified_name",
+            "file_path.read_text",
+            "functions.add",
+            "imports.add",
+            "isinstance",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "self._collect_calls",
+            "self._collect_classes",
+            "self._collect_functions",
+            "self._collect_imports",
+            "set",
+            "sorted",
+            "str"
+          ],
+          "CLASSES": [
+            "ASTValidator"
+          ],
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "FUNCTIONS": [
+            "_collect_calls",
+            "_collect_classes",
+            "_collect_functions",
+            "_collect_imports",
+            "_qualified_name",
+            "main",
+            "validate"
+          ],
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "CallGraphValidator",
+            "CallGraphValidator._name",
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "ast.parse",
+            "ast.walk",
+            "calls.add",
+            "file_path.read_text",
+            "isinstance",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "self._name",
+            "set",
+            "sorted",
+            "str"
+          ],
+          "CLASSES": [
+            "CallGraphValidator"
+          ],
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "FUNCTIONS": [
+            "_name",
+            "main",
+            "validate"
+          ],
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "ConfigError",
+            "Path",
+            "SystemExit",
+            "cfg.exists",
+            "cfg.open",
+            "json.load",
+            "load_config",
+            "main",
+            "print",
+            "str",
+            "upper",
+            "with_name"
+          ],
+          "CLASSES": [
+            "ConfigError"
+          ],
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "FUNCTIONS": [
+            "load_config",
+            "main"
+          ],
+          "IMPORTS": [
+            "json",
+            "pathlib"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [],
+          "CLASSES": [],
+          "FILE": "/root/40_VALIDATORS/core/__init__.py",
+          "FUNCTIONS": [],
+          "IMPORTS": [],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "DemoValidator",
+            "Logger.info",
+            "build_report",
+            "discover_python_files",
+            "results.append",
+            "run",
+            "self.validate",
+            "str",
+            "write_json"
+          ],
+          "CLASSES": [
+            "BaseValidator",
+            "DemoValidator"
+          ],
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "FUNCTIONS": [
+            "run",
+            "validate"
+          ],
+          "IMPORTS": [
+            "core.file_discovery",
+            "core.json_writer",
+            "core.logger",
+            "core.report"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [],
+          "CLASSES": [],
+          "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+          "FUNCTIONS": [],
+          "IMPORTS": [],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "FileNotFoundError",
+            "NotADirectoryError",
+            "Path",
+            "any",
+            "discover_python_files",
+            "enumerate",
+            "files.append",
+            "len",
+            "print",
+            "resolve",
+            "root.exists",
+            "root.is_dir",
+            "root.rglob",
+            "sorted"
+          ],
+          "CLASSES": [],
+          "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+          "FUNCTIONS": [
+            "discover_python_files"
+          ],
+          "IMPORTS": [
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Path",
+            "json.dump",
+            "path.open",
+            "path.parent.mkdir",
+            "print",
+            "write_json"
+          ],
+          "CLASSES": [],
+          "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+          "FUNCTIONS": [
+            "write_json"
+          ],
+          "IMPORTS": [
+            "json",
+            "pathlib"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Logger.error",
+            "Logger.info",
+            "Logger.warn",
+            "datetime.utcnow",
+            "isoformat",
+            "print"
+          ],
+          "CLASSES": [
+            "Logger"
+          ],
+          "FILE": "/root/40_VALIDATORS/core/logger.py",
+          "FUNCTIONS": [
+            "error",
+            "info",
+            "warn"
+          ],
+          "IMPORTS": [
+            "datetime"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "build_report",
+            "datetime.utcnow",
+            "isoformat",
+            "len",
+            "print"
+          ],
+          "CLASSES": [],
+          "FILE": "/root/40_VALIDATORS/core/report.py",
+          "FUNCTIONS": [
+            "build_report"
+          ],
+          "IMPORTS": [
+            "datetime"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [],
+          "CLASSES": [],
+          "FILE": "/root/40_VALIDATORS/core/utils.py",
+          "FUNCTIONS": [],
+          "IMPORTS": [],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "DependencyValidator",
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "alias.name.split",
+            "ast.parse",
+            "ast.walk",
+            "deps.add",
+            "file_path.read_text",
+            "isinstance",
+            "len",
+            "main",
+            "node.module.split",
+            "print",
+            "resolve",
+            "run",
+            "self._collect_dependencies",
+            "set",
+            "sorted",
+            "stdlib.update",
+            "str",
+            "sysconfig.get_python_version"
+          ],
+          "CLASSES": [
+            "DependencyValidator"
+          ],
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "FUNCTIONS": [
+            "_collect_dependencies",
+            "main",
+            "validate"
+          ],
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys",
+            "sysconfig"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "ImportValidator",
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "ast.parse",
+            "ast.walk",
+            "file_path.read_text",
+            "imports.add",
+            "isinstance",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "self._collect_imports",
+            "set",
+            "sorted",
+            "str"
+          ],
+          "CLASSES": [
+            "ImportValidator"
+          ],
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "FUNCTIONS": [
+            "_collect_imports",
+            "main",
+            "validate"
+          ],
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Logger.error",
+            "ManifestValidator",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "file_path.name.lower",
+            "file_path.read_text",
+            "file_path.suffix.lower",
+            "item.get",
+            "json.loads",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "str",
+            "type"
+          ],
+          "CLASSES": [
+            "ManifestValidator"
+          ],
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "FUNCTIONS": [
+            "main",
+            "validate"
+          ],
+          "IMPORTS": [
+            "core.base_validator",
+            "core.logger",
+            "json",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SyntaxValidator",
+            "SystemExit",
+            "ast.parse",
+            "file_path.read_text",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "str"
+          ],
+          "CLASSES": [
+            "SyntaxValidator"
+          ],
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "FUNCTIONS": [
+            "main",
+            "validate"
+          ],
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "UnusedCodeValidator",
+            "ast.parse",
+            "ast.walk",
+            "file_path.read_text",
+            "isinstance",
+            "item.get",
+            "len",
+            "main",
+            "name.startswith",
+            "print",
+            "resolve",
+            "run",
+            "self._referenced_names",
+            "self._top_level_definitions",
+            "sorted",
+            "str",
+            "sum"
+          ],
+          "CLASSES": [
+            "UnusedCodeValidator"
+          ],
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "FUNCTIONS": [
+            "_referenced_names",
+            "_top_level_definitions",
+            "main",
+            "validate"
+          ],
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Path",
+            "datetime.utcnow",
+            "f.read",
+            "h.hexdigest",
+            "h.update",
+            "hashlib.sha256",
+            "isoformat",
+            "open",
+            "path.mkdir",
+            "read_text"
+          ],
+          "CLASSES": [],
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "FUNCTIONS": [
+            "ensure_directory",
+            "safe_read",
+            "sha256_file",
+            "timestamp"
+          ],
+          "IMPORTS": [
+            "datetime",
+            "hashlib",
+            "pathlib"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Path",
+            "Path.cwd",
+            "RuntimeError",
+            "SystemExit",
+            "json.dumps",
+            "json.loads",
+            "len",
+            "load_reports",
+            "main",
+            "out.write_text",
+            "path.read_text",
+            "print",
+            "resolve",
+            "results.append",
+            "run_all",
+            "str",
+            "subprocess.run"
+          ],
+          "CLASSES": [],
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "FUNCTIONS": [
+            "load_reports",
+            "main",
+            "run_all"
+          ],
+          "IMPORTS": [
+            "json",
+            "pathlib",
+            "subprocess",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        }
+      ],
+      "STATUS": "PASS",
+      "TOTAL_RESULTS": 18
+    },
+    {
+      "GENERATED_UTC": "2026-07-29T17:36:22.258561",
+      "MODULE": "IMPORT_VALIDATOR",
+      "RESULTS": [
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "IMPORTS": [
+            "json",
+            "pathlib"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/__init__.py",
+          "IMPORTS": [],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "IMPORTS": [
+            "core.file_discovery",
+            "core.json_writer",
+            "core.logger",
+            "core.report"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+          "IMPORTS": [],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+          "IMPORTS": [
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+          "IMPORTS": [
+            "json",
+            "pathlib"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/logger.py",
+          "IMPORTS": [
+            "datetime"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/report.py",
+          "IMPORTS": [
+            "datetime"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/utils.py",
+          "IMPORTS": [],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys",
+            "sysconfig"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "IMPORTS": [
+            "core.base_validator",
+            "core.logger",
+            "json",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "IMPORTS": [
+            "ast",
+            "core.base_validator",
+            "core.logger",
+            "pathlib",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "IMPORTS": [
+            "datetime",
+            "hashlib",
+            "pathlib"
+          ],
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "IMPORTS": [
+            "json",
+            "pathlib",
+            "subprocess",
+            "sys"
+          ],
+          "STATUS": "PASS"
+        }
+      ],
+      "STATUS": "PASS",
+      "TOTAL_RESULTS": 18
+    },
+    {
+      "GENERATED_UTC": "2026-07-29T17:36:23.799695",
+      "MODULE": "DEPENDENCY_VALIDATOR",
+      "RESULTS": [
+        {
+          "DEPENDENCIES": [
+            "ast",
+            "core",
+            "pathlib",
+            "sys"
+          ],
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "ast",
+            "core",
+            "pathlib",
+            "sys"
+          ],
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "json",
+            "pathlib"
+          ],
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [],
+          "FILE": "/root/40_VALIDATORS/core/__init__.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "core"
+          ],
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [],
+          "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "pathlib",
+            "sys"
+          ],
+          "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "json",
+            "pathlib"
+          ],
+          "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "datetime"
+          ],
+          "FILE": "/root/40_VALIDATORS/core/logger.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "datetime"
+          ],
+          "FILE": "/root/40_VALIDATORS/core/report.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [],
+          "FILE": "/root/40_VALIDATORS/core/utils.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "ast",
+            "core",
+            "pathlib",
+            "sys",
+            "sysconfig"
+          ],
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "ast",
+            "core",
+            "pathlib",
+            "sys"
+          ],
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "core",
+            "json",
+            "pathlib",
+            "sys"
+          ],
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "ast",
+            "core",
+            "pathlib",
+            "sys"
+          ],
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "ast",
+            "core",
+            "pathlib",
+            "sys"
+          ],
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "datetime",
+            "hashlib",
+            "pathlib"
+          ],
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "STATUS": "PASS"
+        },
+        {
+          "DEPENDENCIES": [
+            "json",
+            "pathlib",
+            "subprocess",
+            "sys"
+          ],
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "STATUS": "PASS"
+        }
+      ],
+      "STATUS": "PASS",
+      "TOTAL_RESULTS": 18
+    },
+    {
+      "GENERATED_UTC": "2026-07-29T17:36:24.881227",
+      "MODULE": "SYNTAX_VALIDATOR",
+      "RESULTS": [
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/__init__.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/logger.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/report.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/utils.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "STATUS": "PASS"
+        }
+      ],
+      "STATUS": "PASS",
+      "TOTAL_RESULTS": 18
+    },
+    {
+      "GENERATED_UTC": "2026-07-29T17:36:26.367247",
+      "MODULE": "CALL_GRAPH_VALIDATOR",
+      "RESULTS": [
+        {
+          "CALLS": [
+            "ASTValidator",
+            "ASTValidator._qualified_name",
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "ast.parse",
+            "ast.walk",
+            "calls.add",
+            "classes.add",
+            "cls._qualified_name",
+            "file_path.read_text",
+            "functions.add",
+            "imports.add",
+            "isinstance",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "self._collect_calls",
+            "self._collect_classes",
+            "self._collect_functions",
+            "self._collect_imports",
+            "set",
+            "sorted",
+            "str"
+          ],
+          "CALL_COUNT": 27,
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "CallGraphValidator",
+            "CallGraphValidator._name",
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "ast.parse",
+            "ast.walk",
+            "calls.add",
+            "file_path.read_text",
+            "isinstance",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "self._name",
+            "set",
+            "sorted",
+            "str"
+          ],
+          "CALL_COUNT": 20,
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "ConfigError",
+            "Path",
+            "SystemExit",
+            "cfg.exists",
+            "cfg.open",
+            "json.load",
+            "load_config",
+            "main",
+            "print",
+            "str",
+            "upper",
+            "with_name"
+          ],
+          "CALL_COUNT": 12,
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [],
+          "CALL_COUNT": 0,
+          "FILE": "/root/40_VALIDATORS/core/__init__.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "DemoValidator",
+            "Logger.info",
+            "build_report",
+            "discover_python_files",
+            "results.append",
+            "run",
+            "self.validate",
+            "str",
+            "write_json"
+          ],
+          "CALL_COUNT": 9,
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [],
+          "CALL_COUNT": 0,
+          "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "FileNotFoundError",
+            "NotADirectoryError",
+            "Path",
+            "any",
+            "discover_python_files",
+            "enumerate",
+            "files.append",
+            "len",
+            "print",
+            "resolve",
+            "root.exists",
+            "root.is_dir",
+            "root.rglob",
+            "sorted"
+          ],
+          "CALL_COUNT": 14,
+          "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Path",
+            "json.dump",
+            "path.open",
+            "path.parent.mkdir",
+            "print",
+            "write_json"
+          ],
+          "CALL_COUNT": 6,
+          "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Logger.error",
+            "Logger.info",
+            "Logger.warn",
+            "datetime.utcnow",
+            "isoformat",
+            "print"
+          ],
+          "CALL_COUNT": 6,
+          "FILE": "/root/40_VALIDATORS/core/logger.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "build_report",
+            "datetime.utcnow",
+            "isoformat",
+            "len",
+            "print"
+          ],
+          "CALL_COUNT": 5,
+          "FILE": "/root/40_VALIDATORS/core/report.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [],
+          "CALL_COUNT": 0,
+          "FILE": "/root/40_VALIDATORS/core/utils.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "DependencyValidator",
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "alias.name.split",
+            "ast.parse",
+            "ast.walk",
+            "deps.add",
+            "file_path.read_text",
+            "isinstance",
+            "len",
+            "main",
+            "node.module.split",
+            "print",
+            "resolve",
+            "run",
+            "self._collect_dependencies",
+            "set",
+            "sorted",
+            "stdlib.update",
+            "str",
+            "sysconfig.get_python_version"
+          ],
+          "CALL_COUNT": 23,
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "ImportValidator",
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "ast.parse",
+            "ast.walk",
+            "file_path.read_text",
+            "imports.add",
+            "isinstance",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "self._collect_imports",
+            "set",
+            "sorted",
+            "str"
+          ],
+          "CALL_COUNT": 19,
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Logger.error",
+            "ManifestValidator",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "file_path.name.lower",
+            "file_path.read_text",
+            "file_path.suffix.lower",
+            "item.get",
+            "json.loads",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "str",
+            "type"
+          ],
+          "CALL_COUNT": 17,
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SyntaxValidator",
+            "SystemExit",
+            "ast.parse",
+            "file_path.read_text",
+            "len",
+            "main",
+            "print",
+            "resolve",
+            "run",
+            "str"
+          ],
+          "CALL_COUNT": 13,
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Logger.error",
+            "Path",
+            "Path.cwd",
+            "SystemExit",
+            "UnusedCodeValidator",
+            "ast.parse",
+            "ast.walk",
+            "file_path.read_text",
+            "isinstance",
+            "item.get",
+            "len",
+            "main",
+            "name.startswith",
+            "print",
+            "resolve",
+            "run",
+            "self._referenced_names",
+            "self._top_level_definitions",
+            "sorted",
+            "str",
+            "sum"
+          ],
+          "CALL_COUNT": 21,
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Path",
+            "datetime.utcnow",
+            "f.read",
+            "h.hexdigest",
+            "h.update",
+            "hashlib.sha256",
+            "isoformat",
+            "open",
+            "path.mkdir",
+            "read_text"
+          ],
+          "CALL_COUNT": 10,
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "STATUS": "PASS"
+        },
+        {
+          "CALLS": [
+            "Path",
+            "Path.cwd",
+            "RuntimeError",
+            "SystemExit",
+            "json.dumps",
+            "json.loads",
+            "len",
+            "load_reports",
+            "main",
+            "out.write_text",
+            "path.read_text",
+            "print",
+            "resolve",
+            "results.append",
+            "run_all",
+            "str",
+            "subprocess.run"
+          ],
+          "CALL_COUNT": 17,
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "STATUS": "PASS"
+        }
+      ],
+      "STATUS": "PASS",
+      "TOTAL_RESULTS": 18
+    },
+    {
+      "GENERATED_UTC": "2026-07-29T17:36:27.165100",
+      "MODULE": "MANIFEST_VALIDATOR",
+      "RESULTS": [
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/__init__.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/logger.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/report.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/utils.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "FORMAT": ".py",
+          "MANIFEST": true,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "MANIFEST": false,
+          "STATUS": "PASS"
+        }
+      ],
+      "STATUS": "PASS",
+      "TOTAL_RESULTS": 18
+    },
+    {
+      "GENERATED_UTC": "2026-07-29T17:36:28.659749",
+      "MODULE": "UNUSED_CODE_VALIDATOR",
+      "RESULTS": [
+        {
+          "FILE": "/root/40_VALIDATORS/ast_validator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/config_loader.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/__init__.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/logger.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/report.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/core/utils.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/import_validator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/utils.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [
+            "ensure_directory",
+            "safe_read",
+            "sha256_file",
+            "timestamp"
+          ],
+          "UNUSED_FUNCTION_COUNT": 4
+        },
+        {
+          "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+          "STATUS": "PASS",
+          "UNUSED_CLASS_CANDIDATES": [],
+          "UNUSED_CLASS_COUNT": 0,
+          "UNUSED_FUNCTION_CANDIDATES": [],
+          "UNUSED_FUNCTION_COUNT": 0
+        }
+      ],
+      "STATUS": "PASS",
+      "TOTAL_RESULTS": 18
+    }
+  ],
+  "STATUS": "PASS",
+  "TOTAL_ERRORS": 0,
+  "TOTAL_FILES": 126,
+  "TOTAL_MODULES": 7
+}

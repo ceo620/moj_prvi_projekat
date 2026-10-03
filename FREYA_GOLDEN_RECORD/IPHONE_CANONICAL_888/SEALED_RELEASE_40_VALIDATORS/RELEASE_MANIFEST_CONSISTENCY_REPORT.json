@@ -1,0 +1,24 @@
+{
+  "CREATED_AT_UTC": "2026-07-29T20:29:49.442683Z",
+  "ERRORS": [
+    {
+      "MISSING_IN_REGISTRY": [
+        "RELEASE_HASH_REGISTRY.json",
+        "RELEASE_HASH_REGISTRY_RECEIPT.json"
+      ]
+    },
+    {
+      "EXTRA_IN_REGISTRY": [
+        "RELEASE_MANIFEST.json",
+        "RELEASE_MANIFEST_RECEIPT.json"
+      ]
+    }
+  ],
+  "ERROR_COUNT": 2,
+  "MANIFEST_FILE_COUNT": 47,
+  "MODE": "READ_ONLY",
+  "MODULE": "RELEASE_MANIFEST_CONSISTENCY",
+  "PROGRAM": "40_VALIDATORS",
+  "REGISTRY_FILE_COUNT": 47,
+  "STATUS": "FAIL"
+}

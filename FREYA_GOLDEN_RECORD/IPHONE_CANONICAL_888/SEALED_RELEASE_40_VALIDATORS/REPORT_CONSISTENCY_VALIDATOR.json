@@ -1,0 +1,168 @@
+{
+  "MODULE": "REPORT_CONSISTENCY_VALIDATOR",
+  "STATUS": "PASS",
+  "MODE": "READ_ONLY",
+  "CREATED_AT": "2026-07-29T19:45:34.361469",
+  "REPORT_COUNT": 22,
+  "VALID_REPORT_COUNT": 22,
+  "INVALID_REPORT_COUNT": 0,
+  "DUPLICATE_MODULE_COUNT": 0,
+  "ERROR_COUNT": 0,
+  "DUPLICATE_MODULES": [],
+  "RESULTS": [
+    {
+      "FILE": "reports/AST_VALIDATOR.json",
+      "MODULE": "AST_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/BASELINE_INTEGRITY_REGISTRY.json",
+      "MODULE": "BASELINE_INTEGRITY_REGISTRY",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/CALL_GRAPH_VALIDATOR.json",
+      "MODULE": "CALL_GRAPH_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/CHANGE_DETECTION_VALIDATOR.json",
+      "MODULE": "CHANGE_DETECTION_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/COMPLEXITY_ANALYZER.json",
+      "MODULE": "COMPLEXITY_ANALYZER",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/CONFIGURATION_VALIDATOR.json",
+      "MODULE": "CONFIGURATION_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/DEAD_CODE_ANALYZER.json",
+      "MODULE": "DEAD_CODE_ANALYZER",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/DEMO_VALIDATOR.json",
+      "MODULE": "DEMO_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/DEPENDENCY_VALIDATOR.json",
+      "MODULE": "DEPENDENCY_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/DUPLICATE_CODE_DETECTOR.json",
+      "MODULE": "DUPLICATE_CODE_DETECTOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/FILE_INTEGRITY_VALIDATOR.json",
+      "MODULE": "FILE_INTEGRITY_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/FINAL_VALIDATION_REPORT.json",
+      "MODULE": "FINAL_VALIDATION",
+      "REPORT_STATUS": null,
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/IMPORT_VALIDATOR.json",
+      "MODULE": "IMPORT_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/INCREMENTAL_SCAN_VALIDATOR.json",
+      "MODULE": "INCREMENTAL_SCAN_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/JSON_WRITER_TEST.json",
+      "MODULE": "json_writer",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/MANIFEST_VALIDATOR.json",
+      "MODULE": "MANIFEST_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/PACKAGE_VALIDATOR.json",
+      "MODULE": "PACKAGE_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/PARALLEL_EXECUTION_VALIDATOR.json",
+      "MODULE": "PARALLEL_EXECUTION_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/SECRET_EXPOSURE_VALIDATOR.json",
+      "MODULE": "SECRET_EXPOSURE_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/SECURITY_VALIDATOR.json",
+      "MODULE": "SECURITY_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/SYNTAX_VALIDATOR.json",
+      "MODULE": "SYNTAX_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    },
+    {
+      "FILE": "reports/UNUSED_CODE_VALIDATOR.json",
+      "MODULE": "UNUSED_CODE_VALIDATOR",
+      "REPORT_STATUS": "PASS",
+      "STATUS": "PASS",
+      "ERRORS": []
+    }
+  ]
+}

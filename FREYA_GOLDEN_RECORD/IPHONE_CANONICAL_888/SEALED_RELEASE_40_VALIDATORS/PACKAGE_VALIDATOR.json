@@ -1,0 +1,288 @@
+{
+  "MODULE": "PACKAGE_VALIDATOR",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T18:14:29.651007",
+  "TOTAL_RESULTS": 27,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "ast_validator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "call_graph_validator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+      "STATUS": "PASS",
+      "MODULE": "complexity_analyzer",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config_loader.py",
+      "STATUS": "PASS",
+      "MODULE": "config_loader",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/__init__.py",
+      "STATUS": "PASS",
+      "MODULE": "core",
+      "IS_ROOT_MODULE": false,
+      "PACKAGE_MARKER_STATUS": "PASS",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "core.base_validator",
+      "IS_ROOT_MODULE": false,
+      "PACKAGE_MARKER_STATUS": "PASS",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+      "STATUS": "PASS",
+      "MODULE": "core.config_loader",
+      "IS_ROOT_MODULE": false,
+      "PACKAGE_MARKER_STATUS": "PASS",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+      "STATUS": "PASS",
+      "MODULE": "core.file_discovery",
+      "IS_ROOT_MODULE": false,
+      "PACKAGE_MARKER_STATUS": "PASS",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+      "STATUS": "PASS",
+      "MODULE": "core.json_writer",
+      "IS_ROOT_MODULE": false,
+      "PACKAGE_MARKER_STATUS": "PASS",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/logger.py",
+      "STATUS": "PASS",
+      "MODULE": "core.logger",
+      "IS_ROOT_MODULE": false,
+      "PACKAGE_MARKER_STATUS": "PASS",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/report.py",
+      "STATUS": "PASS",
+      "MODULE": "core.report",
+      "IS_ROOT_MODULE": false,
+      "PACKAGE_MARKER_STATUS": "PASS",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/utils.py",
+      "STATUS": "PASS",
+      "MODULE": "core.utils",
+      "IS_ROOT_MODULE": false,
+      "PACKAGE_MARKER_STATUS": "PASS",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+      "STATUS": "PASS",
+      "MODULE": "dead_code_analyzer",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+      "STATUS": "PASS",
+      "MODULE": "dependency_graph_engine",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "dependency_validator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/duplicate_code_detector.py",
+      "STATUS": "PASS",
+      "MODULE": "duplicate_code_detector",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+      "STATUS": "PASS",
+      "MODULE": "graphviz_call_graph_engine",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/html_report_engine.py",
+      "STATUS": "PASS",
+      "MODULE": "html_report_engine",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "import_validator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "manifest_validator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/markdown_report_engine.py",
+      "STATUS": "PASS",
+      "MODULE": "markdown_report_engine",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/package_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "package_validator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+      "STATUS": "PASS",
+      "MODULE": "sarif_export_engine",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "syntax_validator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+      "STATUS": "PASS",
+      "MODULE": "unused_code_validator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/utils.py",
+      "STATUS": "PASS",
+      "MODULE": "utils",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+      "STATUS": "PASS",
+      "MODULE": "validation_aggregator",
+      "IS_ROOT_MODULE": true,
+      "PACKAGE_MARKER_STATUS": "NOT_REQUIRED",
+      "IMPORT_SPEC_STATUS": "PASS",
+      "RELATIVE_IMPORT_COUNT": 0,
+      "RELATIVE_IMPORTS": []
+    }
+  ],
+  "PACKAGE_COUNT": 1,
+  "PACKAGES": [
+    {
+      "DIRECTORY": "/root/40_VALIDATORS/core",
+      "PYTHON_FILE_COUNT": 8,
+      "INIT_EXISTS": true
+    }
+  ],
+  "MISSING_PACKAGE_MARKER_COUNT": 0,
+  "INVALID_IMPORT_SPEC_COUNT": 0
+}

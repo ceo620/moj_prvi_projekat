@@ -1,0 +1,168 @@
+{
+  "MODULE": "IMPORT_VALIDATOR",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T17:36:22.258561",
+  "TOTAL_RESULTS": 18,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "ast",
+        "core.base_validator",
+        "core.logger",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "ast",
+        "core.base_validator",
+        "core.logger",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config_loader.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "json",
+        "pathlib"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/__init__.py",
+      "STATUS": "PASS",
+      "IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "core.file_discovery",
+        "core.json_writer",
+        "core.logger",
+        "core.report"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+      "STATUS": "PASS",
+      "IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "json",
+        "pathlib"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/logger.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "datetime"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/report.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "datetime"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/utils.py",
+      "STATUS": "PASS",
+      "IMPORTS": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "ast",
+        "core.base_validator",
+        "core.logger",
+        "pathlib",
+        "sys",
+        "sysconfig"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "ast",
+        "core.base_validator",
+        "core.logger",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "core.base_validator",
+        "core.logger",
+        "json",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "ast",
+        "core.base_validator",
+        "core.logger",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "ast",
+        "core.base_validator",
+        "core.logger",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/utils.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "datetime",
+        "hashlib",
+        "pathlib"
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+      "STATUS": "PASS",
+      "IMPORTS": [
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ]
+    }
+  ]
+}

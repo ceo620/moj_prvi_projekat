@@ -1,0 +1,259 @@
+{
+  "CREATED_AT_UTC": "2026-07-29T20:14:13.306026Z",
+  "ERRORS": [],
+  "ERROR_COUNT": 0,
+  "FAIL_COUNT": 0,
+  "MODE": "READ_ONLY",
+  "MODULE": "VALIDATOR_SELF_TEST_SUITE",
+  "PASS_COUNT": 35,
+  "PROGRAM": "40_VALIDATORS",
+  "REPORT_COUNT": 35,
+  "RESULTS": [
+    {
+      "FILE": "ARCHIVE_MANIFEST.json",
+      "MODULE": "ARCHIVE_MANIFEST",
+      "SELF_TEST": "PASS",
+      "SHA256": "69c899657f3eb1649e960ad1d3ff8285fa49ba6edaa6828c5f9b7a5f54a49c5b",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "ARCHIVE_RECEIPT.json",
+      "MODULE": "ARCHIVE_RECEIPT",
+      "SELF_TEST": "PASS",
+      "SHA256": "35e4fcb29bd8d1892a487e0015fc117bfdc0d6056412c76aad88889018b67a49",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "AST_VALIDATOR.json",
+      "MODULE": "AST_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "55a46af6f3cc8122aa0bcac6d5b80e33b91032c21bc8170dd8f66e1d8bcae04e",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "BASELINE_INTEGRITY_REGISTRY.json",
+      "MODULE": "BASELINE_INTEGRITY_REGISTRY",
+      "SELF_TEST": "PASS",
+      "SHA256": "b335cc7f61c97f3e2ce82ab586f8bd049cf403a6b9a28a9ae8486d23ceed5dec",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "CALL_GRAPH_VALIDATOR.json",
+      "MODULE": "CALL_GRAPH_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "e7b04a1871ae1ac3f31bb5c9c76f36875138555e89375f85a06b279d3a5932d9",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "CHANGE_DETECTION_VALIDATOR.json",
+      "MODULE": "CHANGE_DETECTION_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "90e89e62aa7ba800c5d31058c954eb51b832f468ee3c62a7d29bb009950d464a",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "COMPLEXITY_ANALYZER.json",
+      "MODULE": "COMPLEXITY_ANALYZER",
+      "SELF_TEST": "PASS",
+      "SHA256": "5ef204d86449c5974dbedc9b22a7c0c0e5c5c93e98803410d6f6b48702578932",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "CONFIGURATION_VALIDATOR.json",
+      "MODULE": "CONFIGURATION_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "20da80529a976bcfd89ccf1bbe83cb97388b5c39846b2a3397172c8c444f206b",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "DEAD_CODE_ANALYZER.json",
+      "MODULE": "DEAD_CODE_ANALYZER",
+      "SELF_TEST": "PASS",
+      "SHA256": "8fc623616e431d3cf45450333bfa49fff76b90fec607a4c34510c3111fc7c933",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "DEMO_VALIDATOR.json",
+      "MODULE": "DEMO_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "ff5ce61971bdcc599b43843a2c07d35b0b1532a2507fdb04d463485fd7acf145",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "DEPENDENCY_VALIDATOR.json",
+      "MODULE": "DEPENDENCY_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "9f79b34c4d264c553d5db8f67cbffe8965b7173345ed3db3101a8bdee1545de8",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "DUPLICATE_CODE_DETECTOR.json",
+      "MODULE": "DUPLICATE_CODE_DETECTOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "96c9aca53a7928bcd435cc5222220d49f8eb1e8cf6e48fdf5e3a834c3d897af3",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "FILE_INTEGRITY_VALIDATOR.json",
+      "MODULE": "FILE_INTEGRITY_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "56c9fa3a356844636b10b8408b52f38a8a62b79b03bd1490dc10d34cca543f8d",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "FINAL_RELEASE_SEAL.json",
+      "MODULE": "FINAL_RELEASE_SEAL",
+      "SELF_TEST": "PASS",
+      "SHA256": "a3341df3de548a111aaee6ed770bde0c7e808c7e30f2ae33fd688fbb1a9d9ad2",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "FINAL_VALIDATION_REPORT.json",
+      "MODULE": "FINAL_VALIDATION",
+      "SELF_TEST": "PASS",
+      "SHA256": "56f5c8d39489f86ccb6d506a0ca52c3d7803c2eec4be0c27f3756fd9e83f10a1",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "IMPORT_VALIDATOR.json",
+      "MODULE": "IMPORT_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "464ee6e5b71fa57d15452efaa5fd0b32ce40b917ed85713f8c3ac98fbc06582b",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "INCREMENTAL_SCAN_VALIDATOR.json",
+      "MODULE": "INCREMENTAL_SCAN_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "886b5a1dba4efa0653ad31c63172ca2fce6507b3db87c5639bdb0e702a396dd3",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "JSON_WRITER_TEST.json",
+      "MODULE": "json_writer",
+      "SELF_TEST": "PASS",
+      "SHA256": "8a348ca057b91378cec831c831c5a8f04ccb8f7e1e728d8df46d161b0160d601",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "MANIFEST_VALIDATOR.json",
+      "MODULE": "MANIFEST_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "4b918b1213524386b1f613665e9d893e724b62af6a7917a80ab0495dde1c3ba7",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "PACKAGE_VALIDATOR.json",
+      "MODULE": "PACKAGE_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "f46d024f74a6336b465696f8a84a58812dcad5d23807a2bd12ecf5fd93831e76",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "PARALLEL_EXECUTION_VALIDATOR.json",
+      "MODULE": "PARALLEL_EXECUTION_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "a48346f257d5a89e52b6a88395a44e1fb692db6e9a79cb066f74d287a851d80b",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "PRODUCTION_GOLD_SEAL.json",
+      "MODULE": "PRODUCTION_GOLD_SEAL",
+      "SELF_TEST": "PASS",
+      "SHA256": "fd0cb7438cbf2c359f9028f8784da844f4ec1b681bc509d1c448eb67babfdb7a",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "PRODUCTION_RECEIPT.json",
+      "MODULE": "PRODUCTION_RECEIPT",
+      "SELF_TEST": "PASS",
+      "SHA256": "d9f3d57f1f563802435dcaf68fab35f88b8cf17e1bfddd53cb4fedd867b722c3",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "RELEASE_INDEX.json",
+      "MODULE": "RELEASE_INDEX",
+      "SELF_TEST": "PASS",
+      "SHA256": "eefd3a6d5bb04ac710c9992337c97528fe45f91ab00a64676bf242a4505834f3",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "RELEASE_INDEX_RECEIPT.json",
+      "MODULE": "RELEASE_INDEX_RECEIPT",
+      "SELF_TEST": "PASS",
+      "SHA256": "e96598403d77f56af4e7f61bc306622bbb7c51e29f90dfd1d21d18efd8c2d13d",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "RELEASE_MANIFEST.json",
+      "MODULE": "RELEASE_MANIFEST",
+      "SELF_TEST": "PASS",
+      "SHA256": "3b004637fd2e0d7e0f999b94343d92d5f11ef2f84b51e7b147e1178175bdebe1",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "RELEASE_RECEIPT.json",
+      "MODULE": "RELEASE_RECEIPT",
+      "SELF_TEST": "PASS",
+      "SHA256": "8ed46c27d0b9b546ae14d8a4099e6bbd7f4475aaa55ad9bae3c16969f141cd4f",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "REPORT_CONSISTENCY_VALIDATOR.json",
+      "MODULE": "REPORT_CONSISTENCY_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "06c88a03f3c02e53dce6c78c8ad32069d949d3427936654cb5903aa56c844066",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "SECRET_EXPOSURE_VALIDATOR.json",
+      "MODULE": "SECRET_EXPOSURE_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "74defd98fa7d6177846a337a8ee021f160b9e2a43c607f222a95dd0177caae20",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "SECURITY_VALIDATOR.json",
+      "MODULE": "SECURITY_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "7e6d34015c918a4ca58fbc8d93d1ac3d2b6e216002b7cf2f2af62b3b79348269",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "SYNTAX_VALIDATOR.json",
+      "MODULE": "SYNTAX_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "8a92f4089ea712d0a7685928d88b80a7766c3118c8ff344ddb1bae5d8d00a083",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "UNUSED_CODE_VALIDATOR.json",
+      "MODULE": "UNUSED_CODE_VALIDATOR",
+      "SELF_TEST": "PASS",
+      "SHA256": "0a0fa55cf14fdbb7e254556cbca2710478e7363d8a3efcdf6683cfa5ebd55ab2",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "VALIDATOR_CATALOG.json",
+      "MODULE": "VALIDATOR_CATALOG",
+      "SELF_TEST": "PASS",
+      "SHA256": "dada2b3b3dc90c2515b84569aca7baee50d3cdd3832875c4c2b2afb779e3f7d2",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "VALIDATOR_REGISTRY.json",
+      "MODULE": "VALIDATOR_REGISTRY",
+      "SELF_TEST": "PASS",
+      "SHA256": "479dcb8d07d40e8380c39eb6d4dab8000177ff4c0a4fdece515ba2a96b29d4fa",
+      "STATUS": "PASS"
+    },
+    {
+      "FILE": "VALIDATOR_REGISTRY_RECEIPT.json",
+      "MODULE": "VALIDATOR_REGISTRY_RECEIPT",
+      "SELF_TEST": "PASS",
+      "SHA256": "811447941dad446428ef5fb41e980a7e6f0d602e485831a16b36d87049e88ef4",
+      "STATUS": "PASS"
+    }
+  ],
+  "STATUS": "PASS"
+}

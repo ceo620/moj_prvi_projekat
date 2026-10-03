@@ -1,0 +1,239 @@
+{
+  "MODULE": "DEAD_CODE_ANALYZER",
+  "STATUS": "PASS",
+  "GENERATED_UTC": "2026-07-29T18:04:22.264031",
+  "TOTAL_RESULTS": 25,
+  "RESULTS": [
+    {
+      "FILE": "/root/40_VALIDATORS/ast_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/call_graph_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/complexity_analyzer.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/config_loader.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/__init__.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/base_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/config_loader.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/file_discovery.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/json_writer.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/logger.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/report.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/core/utils.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dead_code_analyzer.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_graph_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/dependency_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/graphviz_call_graph_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/html_report_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 1,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": [
+        {
+          "NAME": "sys",
+          "MODULE": "sys",
+          "LINE": 5
+        }
+      ]
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/import_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/manifest_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/markdown_report_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/sarif_export_engine.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/syntax_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/unused_code_validator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/utils.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    },
+    {
+      "FILE": "/root/40_VALIDATORS/validation_aggregator.py",
+      "STATUS": "PASS",
+      "CANDIDATE_COUNT": 0,
+      "UNREACHABLE_LINES": [],
+      "CONSTANT_DEAD_BRANCHES": [],
+      "UNUSED_LOCAL_CANDIDATES": [],
+      "UNUSED_IMPORT_CANDIDATES": []
+    }
+  ]
+}

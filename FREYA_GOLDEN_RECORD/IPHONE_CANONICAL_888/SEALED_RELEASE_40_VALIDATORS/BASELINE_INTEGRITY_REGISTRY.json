@@ -1,0 +1,464 @@
+{
+  "CREATED_AT": "2026-07-29T19:20:42.138777",
+  "ERROR_COUNT": 0,
+  "FILE_COUNT": 50,
+  "HASH_ALGORITHM": "SHA256",
+  "MODE": "READ_ONLY",
+  "MODULE": "BASELINE_INTEGRITY_REGISTRY",
+  "PROFILE_VERSION": 1,
+  "RESULTS": [
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329048776218408,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": ".gitignore",
+      "SHA256": "70813dece82a2a5ae1b2bc4f380bc9fc425a6c615454c063444817a7e4159847",
+      "SIZE_BYTES": 42
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785328232923965888,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "AST_VALIDATION_REPORT.json",
+      "SHA256": "6de3df5f8e1439a33dc6865a01642ca4b0c711d0a201a61e87400859df2362d3",
+      "SIZE_BYTES": 403
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329037231415000,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "LICENSE",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329023096241000,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "README.md",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329030130872590,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "VERSION",
+      "SHA256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
+      "SIZE_BYTES": 6
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785341343074377642,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "ast_validator.py",
+      "SHA256": "7278b141dd6725f4047bf51c50a293ddd8ce4290cd1ed98ea376ca3d8157467f",
+      "SIZE_BYTES": 3453
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785340978213756112,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "ast_validator.py.bak",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785328570589386478,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "backups/ast_validator.py.20260729T160044Z.original",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785343715426846647,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "call_graph_validator.py",
+      "SHA256": "585b081ca009a2dc24be1bc471d7b154e2d4f34e2306d1b13e231914ed4840f0",
+      "SIZE_BYTES": 2170
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785343622198500972,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "call_graph_validator.py.bak",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785347991486246156,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "complexity_analyzer.py",
+      "SHA256": "fab682d439ce11dd966a9a1e1493a0d93d22501a35e3d2bf1698947fcbc2df71",
+      "SIZE_BYTES": 4707
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785349371598722753,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "config/validator_config.json",
+      "SHA256": "d946dae26a93e0f57faf09b46a2e26adf094d9c3797081b376da4867a7969e10",
+      "SIZE_BYTES": 278
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785349371587341222,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "config/validator_config.json.empty.bak",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785341687308212560,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "config_loader.py",
+      "SHA256": "bc311f73a0ceacc4569bd5c297754b2c1aff8c2b492c75be0cb08134b1ef5549",
+      "SIZE_BYTES": 993
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785349165983312858,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "configuration_validator.py",
+      "SHA256": "d92ddb2959531e8393e4d5ff658771fee511142f0a72438a1950fa6d8cbabcb5",
+      "SIZE_BYTES": 7063
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785328975750241000,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "core/__init__.py",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329383127275000,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "core/base_validator.py",
+      "SHA256": "b84298faac2e00c494c6babb97925866587c2543b5a7d3fedb129c66b58046d0",
+      "SIZE_BYTES": 1002
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785328957326208000,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "core/config_loader.py",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329128046144349,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "core/file_discovery.py",
+      "SHA256": "ead510f702b07213ef67114cec83d5e58b856e427b2e6080dd5d4812af5b5cec",
+      "SIZE_BYTES": 943
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329173436282013,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "core/json_writer.py",
+      "SHA256": "f5cb2a903501dc33ec7d96e0db510e428b6b33d6b008759bfdbb963d75fda638",
+      "SIZE_BYTES": 655
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329287480208298,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "core/logger.py",
+      "SHA256": "c5642b06739282d1ce04def03cfd3f1e38b44e1bab635f55b11ae0b93d16e48a",
+      "SIZE_BYTES": 510
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785329338236731203,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "core/report.py",
+      "SHA256": "1d58a7446813b438851f5e07001e6e81b5f7e2148be564b008f9fcf0739e2686",
+      "SIZE_BYTES": 548
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785328965379217000,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "core/utils.py",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "SIZE_BYTES": 0
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785348243551316154,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "dead_code_analyzer.py",
+      "SHA256": "830353b1be3dd7056f09e420b60155676f83142696aad32aaaf37acb093bb385",
+      "SIZE_BYTES": 8178
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785347717326359212,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "dependency_graph_engine.py",
+      "SHA256": "260b0638d1c98f5d31a6a0602874be891a876e74d47154ded10b6a0cbd766f0f",
+      "SIZE_BYTES": 4085
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785342947411996057,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "dependency_validator.py",
+      "SHA256": "24ab28ad78eeb8f924fe6ab8b2f6ce9a47b24a8471832eb3dc14130d8957fd91",
+      "SIZE_BYTES": 2181
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785342762313278884,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "dependency_validator.py.bak",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785348525610098481,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "duplicate_code_detector.py",
+      "SHA256": "3dffdd13f5f5301c74cb701e7e17a591b692a7d3341bf0b6adacba8edd261862",
+      "SIZE_BYTES": 4618
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785350621958718765,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "file_integrity_validator.py",
+      "SHA256": "234f2380076528a6d33e171ec2abccda5244a482368292fbe2a9554454352cb0",
+      "SIZE_BYTES": 6199
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785350621957510868,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "file_integrity_validator.py.batch023_run_fix.bak",
+      "SHA256": "d7d17e2dac9e490fba003de25500aaf2ec28c60d522faa471d1466257ab435c8",
+      "SIZE_BYTES": 6199
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785350314789434125,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "file_integrity_validator.py.broken.bak",
+      "SHA256": "d7d17e2dac9e490fba003de25500aaf2ec28c60d522faa471d1466257ab435c8",
+      "SIZE_BYTES": 6199
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785347513972283636,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "graphviz_call_graph_engine.py",
+      "SHA256": "d8b74f8440483e077e6d1a39e08146d8b01be6d2011521c8e1f5c104f2a96835",
+      "SIZE_BYTES": 3856
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785346763249562434,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "html_report_engine.py",
+      "SHA256": "fff5f86c0cc3a2521f764d011b718c1d7b07bc407b6b5f3a1b5bbf252f54dc54",
+      "SIZE_BYTES": 1761
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785342586462857445,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "import_validator.py",
+      "SHA256": "940b47183006db4ffbb8279f9543f20d71c61a7ce447781680d567739c14cf0f",
+      "SIZE_BYTES": 1998
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785342147754450192,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "import_validator.py.bak",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785343904205095712,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "manifest_validator.py",
+      "SHA256": "c09e54ec9878fa3d3a7f3461b8fcc2f3a5e8c5762e71a3552264eba07daaff81",
+      "SIZE_BYTES": 2192
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785343823543941737,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "manifest_validator.py.bak",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785347034916792045,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "markdown_report_engine.py",
+      "SHA256": "07d373e4b1f3f198bc6a4b1432ea19eb7c3f24d6e968687c7dd57cec465d21a5",
+      "SIZE_BYTES": 1621
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785348857654504582,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "package_validator.py",
+      "SHA256": "1000d4e3ed4122f6de6926a244d2716f9662d32b5d6989a1f13a40667a288c2a",
+      "SIZE_BYTES": 5504
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785347193671142634,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "sarif_export_engine.py",
+      "SHA256": "b03ea5567599576ce2df7b10b9a7cea42a5afda80396058fdad7dab7524d1103",
+      "SIZE_BYTES": 2530
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785349941119653134,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "secret_exposure_validator.py",
+      "SHA256": "751cb8e6e2cd969edf1881972b29c3a4c58b37a512085bdcdbfbd978832b42c4",
+      "SIZE_BYTES": 7890
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785349639752116929,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "security_validator.py",
+      "SHA256": "70ba3dbb4c0a88a0b69fd408ce4fe8d9c6004084e995cccd291a35f3f75a829d",
+      "SIZE_BYTES": 9880
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785343397074761123,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "syntax_validator.py",
+      "SHA256": "d31c1624a0226dc002a0fbeb0d1083e708d2cde4bdf430dc2d20e63641c957f2",
+      "SIZE_BYTES": 1496
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785343278914553080,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "syntax_validator.py.bak",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785346305879094239,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "unused_code_validator.py",
+      "SHA256": "1cb60322e60b580628640edb3f4bb6270622c3566fa4051d44fb625716ea0027",
+      "SIZE_BYTES": 3378
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785346256816556597,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "unused_code_validator.py.bak",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785341967643421380,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "utils.py",
+      "SHA256": "04a4a2f40f1f4d111fe17b58b52347d6d67bcaeacf4535f57ad9e6cd01f6d8ae",
+      "SIZE_BYTES": 654
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785346569296742635,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "validation_aggregator.py",
+      "SHA256": "f88c2646b7d51bc14a7a6bea00cfa03f06b3e83aa4fe74d2ae70a05f60ca91f3",
+      "SIZE_BYTES": 2111
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785346508825397069,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "validation_aggregator.py.bak",
+      "SHA256": "251822dc4bb0b5a4af83e0aa31f01556a85c76cd81de92ee5c51b59e9f60e57f",
+      "SIZE_BYTES": 1718
+    },
+    {
+      "HASH_ALGORITHM": "SHA256",
+      "MTIME_NS": 1785341520420482450,
+      "PROFILE_VERSION": 1,
+      "READ_STATUS": "PASS",
+      "RELATIVE_PATH": "validator_config.json",
+      "SHA256": "d946dae26a93e0f57faf09b46a2e26adf094d9c3797081b376da4867a7969e10",
+      "SIZE_BYTES": 278
+    }
+  ],
+  "ROOT": "/root/40_VALIDATORS",
+  "STATUS": "PASS",
+  "TOTAL_BYTES": 121043
+}
